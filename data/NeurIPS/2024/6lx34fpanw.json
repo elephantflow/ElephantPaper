@@ -1,0 +1,38 @@
+{
+  "id": "6lx34fpanw",
+  "or_id": "6lx34fpanw",
+  "title": "Improving Generalization in Federated Learning with Model-Data Mutual Information Regularization: A Posterior Inference Approach",
+  "title_zh": "",
+  "authors": [
+    "Hao Zhang",
+    "Chenglin Li",
+    "Nuowen Kan",
+    "Ziyang Zheng",
+    "Wenrui Dai",
+    "Junni Zou",
+    "Hongkai Xiong"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Most of existing federated learning (FL) formulation is treated as a point-estimate of models, inherently prone to overfitting on scarce client-side data with overconfident decisions. Though Bayesian inference can alleviate this issue, a direct posterior inference at clients may result in biased local posterior estimates due to data heterogeneity, leading to a sub-optimal global posterior. From an information-theoretic perspective, we propose FedMDMI, a federated posterior inference framework based on model-data mutual information (MI). Specifically, a global model-data MI term is introduced as regularization to enforce the global model to learn essential information from the heterogeneous local data, alleviating the bias caused by data heterogeneity and hence enhancing generalization. To make this global MI tractable, we decompose it into local MI terms at the clients, converting the global objective with MI regularization into several locally optimizable objectives based on local data. For these local objectives, we further show that the optimal local posterior is a Gibbs posterior, which can be efficiently sampled with stochastic gradient Langevin dynamics methods. Finally, at the server, we approximate sampling from the global Gibbs posterior by simply averaging samples from the local posteriors. Theoretical analysis provides a generalization bound for FL w.r.t. the model-data MI, which, at different levels of regularization, represents a federated version of the bias-variance trade-off. Experimental results demonstrate a better generalization behavior with better calibrated uncertainty estimates of FedMDMI.",
+  "abstract_zh": "",
+  "tldr": "We propose FedMD for federated posterior inference, which incorporates a global model-data mutual information term as regularization to enhance generalization of the global posterior by alleviating bias of inferred local posteriors.",
+  "keywords": [
+    "Federated learning",
+    "posterior inference",
+    "model-data mutual information"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6lx34fpanw",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e1d67a5571cddbccb08960b7bb37f3df9f6b20a3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose FedMD for federated posterior inference, which incorporates a global model-data mutual information term as regularization to enhance generalization of the global posterior by alleviating bias of inferred local posteriors."
+  },
+  "collected_at": "2026-03-07T17:20:43.055Z"
+}

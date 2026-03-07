@@ -1,0 +1,41 @@
+{
+  "id": "PRBsEz8rnV",
+  "or_id": "PRBsEz8rnV",
+  "title": "No Train, all Gain: Self-Supervised Gradients Improve Deep Frozen Representations",
+  "title_zh": "",
+  "authors": [
+    "Walter Simoncini",
+    "Andrei Bursuc",
+    "Spyros Gidaris",
+    "Yuki M Asano"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This paper introduces FUNGI, **F**eatures from **UN**supervised **G**rad**I**ents, a method to enhance the features of transformer encoders by leveraging self-supervised gradients. Our method is simple: given any pretrained model, we first compute gradients from various self-supervised objectives for each input. These gradients are projected to a lower dimension and then concatenated with the model's output embedding. The resulting features are evaluated on k-nearest neighbor classification over 11 datasets from vision, 5 from natural language processing, and 2 from audio. Across backbones spanning various sizes and pretraining strategies, FUNGI features provide consistent performance improvements over the embeddings. We also show that using FUNGI features can benefit linear classification, clustering and image retrieval, and that they significantly improve the retrieval-based in-context scene understanding abilities of pretrained models, for example improving upon DINO by +17% for semantic segmentation - without any training. Code is available at https://github.com/WalterSimoncini/fungivision.",
+  "abstract_zh": "",
+  "tldr": "We propose using self-supervised gradients to enhance pretrained embedding features and achieve significant improvements in k-nearest neighbor classification, in-context scene understanding, linear probing and clustering.",
+  "keywords": [
+    "self-supervised",
+    "gradients",
+    "computer vision",
+    "transformers",
+    "k-nearest neighbor",
+    "classification",
+    "in-context learning",
+    "clustering",
+    "retrieval"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=PRBsEz8rnV",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ffadefca70fa81a22880a8e2f94f055571ef67a5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose using self-supervised gradients to enhance pretrained embedding features and achieve significant improvements in k-nearest neighbor classification, in-context scene understanding, linear probing and clustering."
+  },
+  "collected_at": "2026-03-07T17:20:43.054Z"
+}

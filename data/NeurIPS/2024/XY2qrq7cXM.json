@@ -1,0 +1,39 @@
+{
+  "id": "XY2qrq7cXM",
+  "or_id": "XY2qrq7cXM",
+  "title": "Gradient Rewiring for Editable Graph Neural Network Training",
+  "title_zh": "",
+  "authors": [
+    "Zhimeng Jiang",
+    "Zirui Liu",
+    "Xiaotian Han",
+    "Qizhang Feng",
+    "Hongye Jin",
+    "Qiaoyu Tan",
+    "Kaixiong Zhou",
+    "Na Zou",
+    "Xia Hu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Deep neural networks are ubiquitously adopted in many applications, such as computer vision, natural language processing, and graph analytics. However, well-trained neural networks can make prediction errors after deployment as the world changes. \\textit{Model editing} involves updating the base model to correct prediction errors with less accessible training data and computational resources.\nDespite recent advances in model editors in computer vision and natural language processing, editable training in graph neural networks (GNNs) is rarely explored. The challenge with editable GNN training lies in the inherent information aggregation across neighbors, which can lead model editors to affect the predictions of other nodes unintentionally. In this paper, we first observe the gradient of cross-entropy loss for the target node and training nodes with significant inconsistency, which indicates that directly fine-tuning the base model using the loss on the target node deteriorates the performance on training nodes. Motivated by the gradient inconsistency observation, we propose a simple yet effective \\underline{G}radient \\underline{R}ewiring method for \\underline{E}ditable graph neural network training, named \\textbf{GRE}. Specifically, we first store the anchor gradient of the loss on training nodes to preserve the locality. Subsequently, we rewire the gradient of the loss on the target node to preserve performance on the training node using anchor gradient. Experiments demonstrate the effectiveness of GRE on various model architectures and graph datasets in terms of multiple editing situations. The source code is available at \\url{https://github.com/zhimengj0326/Gradient_rewiring_editing}.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Gradient",
+    "Graph Neural Networks"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=XY2qrq7cXM",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/cdb6b5e674b8a283d4e199e4d40141c5ae6dbd86.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Deep neural networks are ubiquitously adopted in many applications, such as computer vision, natural language processing, and graph analytics. However, well-trained neural networks can make prediction errors after deployment as the world changes. \\textit{Model editing} involves updating the base mod"
+  },
+  "collected_at": "2026-03-07T17:20:43.057Z"
+}
