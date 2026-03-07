@@ -1,0 +1,34 @@
+{
+  "id": "YbsvNFD21C",
+  "or_id": "YbsvNFD21C",
+  "title": "Robust Sparse Regression with Non-Isotropic Designs",
+  "title_zh": "",
+  "authors": [
+    "Chih-Hung Liu",
+    "Gleb Novikov"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We develop a technique to design efficiently computable estimators for sparse linear regression in the simultaneous presence of two adversaries: oblivious and adaptive.\nConsider the model $y^*=X^*\\beta^*+ \\eta$ where $X^*$ is an $n\\times d$ random design matrix, $\\beta^*\\in \\mathbb{R}^d$ is a $k$-sparse vector, and the noise $\\eta$ is independent of $X^*$ and chosen by the \\emph{oblivious adversary}. \nApart from the independence of $X^*$, we only require a small fraction entries of $\\eta$ to have magnitude at most $1$. \nThe \\emph{adaptive adversary} is allowed to arbitrarily corrupt an $\\varepsilon$-fraction of the samples $(X_1^*, y_1^*),\\ldots, (X_n^*, y_n^*)$.\nGiven the $\\varepsilon$-corrupted samples $(X_1, y_1),\\ldots, (X_n, y_n)$, the goal is to estimate $\\beta^*$.  \nWe assume that the rows of $X^*$ are iid samples from some $d$-dimensional distribution $\\mathcal{D}$  with zero mean and (unknown) covariance matrix $\\Sigma$ with bounded condition number.\n\nWe design several robust algorithms that outperform the state of the art even in the special case of Gaussian noise $\\eta \\sim N(0,1)^n$. \nIn particular, we provide a polynomial-time algorithm that with high probability recovers $\\beta^*$ up to error $O(\\sqrt{\\varepsilon})$  as long as  $n \\ge \\tilde{O}(k^2/\\varepsilon)$, only assuming some bounds on the third and the fourth moments of $\\mathcal{D}$. \nIn addition, prior to this work, even in the special case of Gaussian design $\\mathcal{D} = N(0,\\Sigma)$ and noise $\\eta \\sim N(0,1)$, no polynomial time algorithm was known to achieve error $o(\\sqrt{\\varepsilon})$ in the sparse setting $n < d^2$.  \nWe show that under some assumptions on the fourth and the eighth moments of $\\mathcal{D}$, there is a polynomial-time algorithm that achieves error $o(\\sqrt{\\varepsilon})$ as long as $n \\ge \\tilde{O}(k^4 / \\varepsilon^3)$. \nFor Gaussian distribution $\\mathcal{D} = N(0,\\Sigma)$, this algorithm achieves error $O(\\varepsilon^{3/4})$. \nMoreover, our algorithm achieves err",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "linear regression",
+    "sparse regression",
+    "robust regression",
+    "sum-of-squares"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=YbsvNFD21C",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/596a7e71bdd4f751004bddc30a5cc802ab3b730e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We develop a technique to design efficiently computable estimators for sparse linear regression in the simultaneous presence of two adversaries: oblivious and adaptive.\nConsider the model $y^*=X^*\\beta^*+ \\eta$ where $X^*$ is an $n\\times d$ random design matrix, $\\beta^*\\in \\mathbb{R}^d$ is a $k$-sp"
+  },
+  "collected_at": "2026-03-07T18:00:36.641Z"
+}

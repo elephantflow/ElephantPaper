@@ -1,0 +1,38 @@
+{
+  "id": "recsheQ7e8",
+  "or_id": "recsheQ7e8",
+  "title": "Aligning to Thousands of Preferences via System Message Generalization",
+  "title_zh": "",
+  "authors": [
+    "Seongyun Lee",
+    "Sue Hyun Park",
+    "Seungone Kim",
+    "Minjoon Seo"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Although humans inherently have diverse values, current large language model (LLM) alignment methods often assume that aligning LLMs with the general public’s preferences is optimal. A major challenge in adopting a more individualized approach to LLM alignment is its lack of scalability, as it involves repeatedly acquiring preference data and training new reward models and LLMs for each individual’s preferences. To address these challenges, we propose a new paradigm where users specify what they value most within the system message, steering the LLM’s generation behavior to better align with the user’s intentions. However, a naive application of such an approach is non-trivial since LLMs are typically trained on a uniform system message (e.g., “You are a helpful assistant”), which limits\ntheir ability to generalize to diverse, unseen system messages. To improve this generalization, we create Multifaceted Collection, augmenting 66k user instructions into 197k system messages through hierarchical user value combinations. Using this dataset, we train a 7B LLM called Janus and test it on 921 prompts from 5 benchmarks (AlpacaEval 2.0, FLASK, Koala, MT-Bench, and Self-Instruct)\nby adding system messages that reflect unseen user values. JANUS achieves tie+win rate of 75.2%, 72.4%, and 66.4% against Mistral 7B Instruct v0.2, GPT-3.5 Turbo, and GPT-4, respectively. Unexpectedly, on three benchmarks focused on response helpfulness (AlpacaEval 2.0, MT-Bench, Arena Hard Auto v0.1), JANUS also outperforms LLaMA 3 8B Instruct by a +4.0%p, +0.1%p, +3.0%p margin, underscoring that training with a vast array of system messages could also enhance alignment to the general public’s preference as well. Our code, dataset, benchmark, and models are available at https://lklab.kaist.ac.kr/Janus/.",
+  "abstract_zh": "",
+  "tldr": "Approach to align LLMs more closely with individual user values by training a model, Janus, using a diverse preference datasets including system prompts.",
+  "keywords": [
+    "Large language model",
+    "Preference alignment",
+    "Pluralistic alignment",
+    "Multifacetedness",
+    "System message",
+    "Instruction tuning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=recsheQ7e8",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9cf4d38da0e04837fc03f019034443e46e38e454.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Approach to align LLMs more closely with individual user values by training a model, Janus, using a diverse preference datasets including system prompts."
+  },
+  "collected_at": "2026-03-07T18:00:36.642Z"
+}

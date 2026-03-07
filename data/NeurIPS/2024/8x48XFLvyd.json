@@ -1,0 +1,32 @@
+{
+  "id": "8x48XFLvyd",
+  "or_id": "8x48XFLvyd",
+  "title": "Globally Convergent Variational Inference",
+  "title_zh": "",
+  "authors": [
+    "Declan McNamara",
+    "Jackson Loper",
+    "Jeffrey Regier"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In variational inference (VI), an approximation of the posterior distribution is selected from a family of distributions through numerical optimization. With the most common variational objective function, known as the evidence lower bound (ELBO), only convergence to a *local* optimum can be guaranteed. In this work, we instead establish the *global* convergence of a particular VI method. This VI method, which may be considered an instance of neural posterior estimation (NPE), minimizes an expectation of the inclusive (forward) KL divergence to fit a variational distribution that is parameterized by a neural network. Our convergence result relies on the neural tangent kernel (NTK) to characterize the gradient dynamics that arise from considering the variational objective in function space. In the asymptotic regime of a fixed, positive-definite neural tangent kernel, we establish conditions under which the variational objective admits a unique solution in a reproducing kernel Hilbert space (RKHS). Then, we show that the gradient descent dynamics in function space converge to this unique function. In ablation studies and practical problems, we demonstrate that our results explain the behavior of NPE in non-asymptotic finite-neuron settings, and show that NPE outperforms ELBO-based optimization, which often converges to shallow local optima.",
+  "abstract_zh": "",
+  "tldr": "Utilizing convexity of the forward KL divergence, we establish a global convergence result for fitting an amortized variational posterior by analyzing neural tangent kernel (NTK) dynamics in the large-width setting.",
+  "keywords": [
+    "forward KL divergence; neural posterior estimation; neural tangent kernel; convex optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=8x48XFLvyd",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/36b4786293fd7305cd49963e02f7c3fa8a32f3f4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Utilizing convexity of the forward KL divergence, we establish a global convergence result for fitting an amortized variational posterior by analyzing neural tangent kernel (NTK) dynamics in the large-width setting."
+  },
+  "collected_at": "2026-03-07T18:00:36.643Z"
+}

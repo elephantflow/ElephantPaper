@@ -1,0 +1,36 @@
+{
+  "id": "Ye0O4Nyn21",
+  "or_id": "Ye0O4Nyn21",
+  "title": "realSEUDO for real-time calcium imaging analysis",
+  "title_zh": "",
+  "authors": [
+    "Iuliia Dmitrieva",
+    "Sergey Babkin",
+    "Adam Shabti Charles"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Closed-loop neuroscience experimentation, where recorded neural activity is used to modify the experiment on-the-fly, is critical for deducing causal connections and optimizing experimental time. Thus while new optical methods permit on-line recording (via Multi-photon calcium imaging) and stimulation (via holographic stimulation) of large neural populations, a critical barrier in creating closed-loop experiments that can target and modulate single neurons is the real-time inference of neural activity from streaming recordings. In particular, while multi-photon calcium imaging (CI) is crucial in monitoring neural populations, extracting a single neuron's activity from the fluorescence videos often requires batch processing of the video data. Without batch processing, dimmer neurons and events are harder to identify and unrecognized neurons can create false positives when computing the activity of known neurons. We solve these issues by adapting a recently proposed robust time-trace estimator---Sparse Emulation of Unused Dictionary Objects (SEUDO) algorithm---as a basis for a new on-line processing algorithm that simultaneously identifies neurons in the fluorescence video and infers their time traces in a way that is robust to as-yet unidentified neurons. To achieve real-time SEUDO (realSEUDO), we introduce a combination of new algorithmic improvements, a fast C-based implementation, and a new cell finding loop to enable realSEUDO to identify new cells on-the-fly with no \"warm-up\" period. We demonstrate comparable performance to offline algorithms (e.g., CNMF), and improved performance over the current on-line approach (OnACID) at speeds of 120 Hz on average. This speed is faster than the typical 30 Hz framerate, leaving critical computation time for the computation of feedback in a closed-loop setting.",
+  "abstract_zh": "",
+  "tldr": "This paper presents a new real-time calcium imaging processing algorithm that is fast, robust, and flexible.",
+  "keywords": [
+    "Calcium imaging",
+    "Real-time processing",
+    "Neuroimaging",
+    "Robust estimation",
+    "Sparse models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Ye0O4Nyn21",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/68a6706c567daf5b6d856c6c5ee3732355e56942.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper presents a new real-time calcium imaging processing algorithm that is fast, robust, and flexible."
+  },
+  "collected_at": "2026-03-07T18:00:36.642Z"
+}
