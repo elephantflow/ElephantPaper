@@ -1,0 +1,39 @@
+{
+  "id": "Rd4pGjTcTj",
+  "or_id": "Rd4pGjTcTj",
+  "title": "Parrot: Enhancing Multi-Turn Chat Models by Learning to Ask Questions",
+  "title_zh": "",
+  "authors": [
+    "Yuchong Sun",
+    "Che Liu",
+    "Jinwen Huang",
+    "Ruihua Song",
+    "Fuzheng Zhang",
+    "Zhongyuan Wang",
+    "Di ZHANG",
+    "Kun Gai"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Impressive progress has been made on chat models based on Large Language Models (LLMs) recently; however, there is a noticeable lag in multi-turn conversations between open-source chat models (e.g., Alpaca and Vicuna) and the leading chat models (e.g., ChatGPT and GPT-4). Through a series of analyses, we attribute the lag to the lack of enough high-quality multi-turn instruction-tuning\ndata. The available instruction-tuning data for the community are either singleturn conversations or multi-turn ones with certain issues, such as non-human-like instructions, less detailed responses, or rare topic shifts. In this paper, we address these challenges by introducing Parrot, a highly scalable solution designed to automatically generate high-quality instruction-tuning data, which are then used to enhance the effectiveness of chat models in multi-turn conversations. Specifically, we start by training the Parrot-Ask model, which is designed to emulate real users in generating instructions. We then utilize Parrot-Ask to engage in multiturn conversations with ChatGPT across a diverse range of topics, resulting in a collection of 40K high-quality multi-turn dialogues (Parrot-40K). These data are subsequently employed to train a chat model that we have named Parrot-Chat. We demonstrate that the dialogues gathered from Parrot-Ask markedly outperform existing multi-turn instruction-following datasets in critical metrics, including topic diversity, number of turns, and resemblance to human conversation. With only 40K training examples, Parrot-Chat achieves strong performance against other 13B open-source models across a range of instruction-following benchmarks, and particularly excels in evaluations of multi-turn capabilities. All codes and datasets will be publicly available to facilitate future research.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "large language model",
+    "instruction tuning",
+    "multi-turn conversation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Rd4pGjTcTj",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f324d7f69065ffea167f74dc9ef992e95c6e3eb9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Impressive progress has been made on chat models based on Large Language Models (LLMs) recently; however, there is a noticeable lag in multi-turn conversations between open-source chat models (e.g., Alpaca and Vicuna) and the leading chat models (e.g., ChatGPT and GPT-4). Through a series of analyse"
+  },
+  "collected_at": "2026-03-07T16:40:53.331Z"
+}

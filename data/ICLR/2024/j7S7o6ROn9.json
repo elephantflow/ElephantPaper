@@ -1,0 +1,33 @@
+{
+  "id": "j7S7o6ROn9",
+  "or_id": "j7S7o6ROn9",
+  "title": "Distributional Structured Pruning by Lower bounding the Total Variation Distance using Witness functions",
+  "title_zh": "",
+  "authors": [
+    "Chaitanya Murti",
+    "Chiranjib Bhattacharyya"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Recent literature introduced the notion of distributional structured pruning (DSP) in Deep Neural Networks by retaining discriminative filters that can effectively differentiate between classes.  Crucial to  DSP is the ability to estimate the discriminative ability of a filter, which is defined by the minimum pairwise Total Variation (TV) distance between the class-conditional feature distributions. Since the computation of TV distance is generally intractable, existing literature assumes the class-conditional feature distributions are Gaussian, thereby enabling the use of the tractable Hellinger lower bound to estimate discriminative ability. However, the Gaussian assumption is not only restrictive but also does not typically hold. In this work, we address this gap by deriving a lower bound on TV Distance which depends only on the moments of witness functions. Using linear witness functions, the bound establishes new relationships between the TV Distance and well-known discriminant-based classifiers, such as Fisher Discriminants and Minimax Probability machines. The lower bounds are used to produce a variety of pruning algorithms called WitnessPrune by varying the choice of witness function. We empirically show that we can achieve up to 7\\% greater accuracy for similar sparsity in hard-to-prune layers using a polynomial witness function as compared to the state-of-the-art.",
+  "abstract_zh": "",
+  "tldr": "Discrimination-based structured pruning using novel lower bounds on the TV distance.",
+  "keywords": [
+    "Pruning",
+    "Structured Pruning",
+    "Total Variation Distance"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=j7S7o6ROn9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1f9501e4ed6ee2651e55a037541600ac4c08e62f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Discrimination-based structured pruning using novel lower bounds on the TV distance."
+  },
+  "collected_at": "2026-03-07T16:40:53.329Z"
+}

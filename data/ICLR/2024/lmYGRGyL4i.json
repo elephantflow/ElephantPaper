@@ -1,0 +1,37 @@
+{
+  "id": "lmYGRGyL4i",
+  "or_id": "lmYGRGyL4i",
+  "title": "Uncovering the Spectrum of Graph Generative Models: From One-Shot to Sequential",
+  "title_zh": "",
+  "authors": [
+    "Samuel Cognolato",
+    "Alessandro Sperduti",
+    "Luciano Serafini"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "In the field of deep graph generative models, two families coexist: one-shot models, which fill the graph content in one go given a number of nodes, and sequential models, where new nodes and edges are inserted sequentially and autoregressively. Recently, one-shot models are seeing great popularity due to their rising sample quality and lower sampling time compared to the more costly autoregressive models. With this paper we unify the two worlds in a single framework, unlocking the whole spectrum of options where one-shot and sequential models are but the two extremes. We use the denoising diffusion models' theory to develop a node removal process, which destroys a given graph through many steps. An insertion model reverses this process by predicting how many nodes have been removed from the intermediate subgraphs. Then, generation happens by iteratively adding new blocks of nodes, with size sampled from the insertion model, and content generated using any one-shot model. By adjusting the knob on node removal, the framework allows for any degree of sequentiality, from one-shot to fully sequential, and any node ordering, e.g., random and BFS. Based on this, we conduct the first analysis of the sample quality-time trade-off across a range of molecular and generic graphs datasets. As a case study, we adapt DiGress, a diffusion-based one-shot model, to the whole spectrum of sequentiality, reaching new state of the art results, and motivating a renewed interest in developing autoregressive graph generative models.",
+  "abstract_zh": "",
+  "tldr": "We propose a mathematical framework called Insert-Fill-Halt which unifies one-shot and sequential graph generative models. One-shot models adapted for autoregressive generation are competitive with the state of the art.",
+  "keywords": [
+    "Graph generation",
+    "One-shot generation",
+    "Autoregressive generation",
+    "Unified framework",
+    "Diffusion Model",
+    "Molecule generation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=lmYGRGyL4i",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/38202c3792785b24ad70fc1db5c4c294229086ea.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a mathematical framework called Insert-Fill-Halt which unifies one-shot and sequential graph generative models. One-shot models adapted for autoregressive generation are competitive with the state of the art."
+  },
+  "collected_at": "2026-03-07T16:40:53.330Z"
+}

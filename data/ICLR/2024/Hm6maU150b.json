@@ -1,0 +1,35 @@
+{
+  "id": "Hm6maU150b",
+  "or_id": "Hm6maU150b",
+  "title": "NeFL: Nested Federated Learning for Heterogeneous Clients",
+  "title_zh": "",
+  "authors": [
+    "Honggu Kang",
+    "Seohyeon Cha",
+    "Jinwoo Shin",
+    "Jongmyeong Lee",
+    "Joonhyuk Kang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Federated learning (FL) is a promising approach in distributed learning keeping privacy. However, during the training pipeline of FL, slow or incapable clients (i.e., stragglers) slow down the total training time and degrade performance. System heterogeneity, including heterogeneous computing and network bandwidth, has been addressed to mitigate the impact of stragglers. Previous studies tackle the system heterogeneity by splitting a model into submodels, but with less degree-of-freedom in terms of model architecture. We propose nested federated learning (NeFL), a generalized framework that efficiently divides a model into submodels using both depthwise and widthwise scaling. NeFL is implemented by interpreting forward propagation of models as solving ordinary differential equations (ODEs) with adaptive step sizes. To address the inconsistency that arises when training multiple submodels of different architecture, we decouple a few parameters from parameters being trained for each submodel. NeFL enables resource-constrained clients to effectively join the FL pipeline and the model to be trained with a larger amount of data. Through a series of experiments, we demonstrate that NeFL leads to significant performance gains, especially for the worst-case submodel. Furthermore, we demonstrate NeFL aligns with recent studies in FL, regarding pre-trained models of FL and the statistical heterogeneity.",
+  "abstract_zh": "",
+  "tldr": "NeFL divides models into submodels by widthwise or/and depthwise to incorporate resource-constrained clients in the FL pipeline.",
+  "keywords": [
+    "federated learning",
+    "system heterogeneity"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Hm6maU150b",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6b41a8a3fd7329e11c323439f9866136e8f5a2f3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "NeFL divides models into submodels by widthwise or/and depthwise to incorporate resource-constrained clients in the FL pipeline."
+  },
+  "collected_at": "2026-03-07T16:40:53.330Z"
+}
