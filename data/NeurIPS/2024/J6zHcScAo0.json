@@ -1,0 +1,35 @@
+{
+  "id": "J6zHcScAo0",
+  "or_id": "J6zHcScAo0",
+  "title": "Transcoders find interpretable LLM feature circuits",
+  "title_zh": "",
+  "authors": [
+    "Jacob Dunefsky",
+    "Philippe Chlenski",
+    "Neel Nanda"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "A key goal in mechanistic interpretability is circuit analysis: finding sparse subgraphs of models corresponding to specific behaviors or capabilities. However, MLP sublayers make fine-grained circuit analysis on transformer-based language models difficult. In particular, interpretable features—such as those found by sparse autoencoders (SAEs)—are typically linear combinations of extremely many neurons, each with its own nonlinearity to account for. Circuit analysis in this setting thus either yields intractably large circuits or fails to disentangle local and global behavior. To address this we explore **transcoders**, which seek to faithfully approximate a densely activating MLP layer with a wider, sparsely-activating MLP layer. We introduce a novel method for using transcoders to perform weights-based circuit analysis through MLP sublayers. The resulting circuits neatly factorize into input-dependent and input-invariant terms. We then successfully train transcoders on language models with 120M, 410M, and 1.4B parameters, and find them to perform at least on par with SAEs in terms of sparsity, faithfulness, and human-interpretability. Finally, we apply transcoders to reverse-engineer unknown circuits in the model, and we obtain novel insights regarding the \"greater-than circuit\" in GPT2-small. Our results suggest that transcoders can prove effective in decomposing model computations involving MLPs into interpretable circuits. Code is available at https://github.com/jacobdunefsky/transcoder_circuits/",
+  "abstract_zh": "",
+  "tldr": "Modifying sparse autoencoders to approximate MLP behavior enables clean, fine-grained, interpretable circuit analysis for transformers",
+  "keywords": [
+    "mechanistic interpretability",
+    "transcoders",
+    "sparse autoencoders",
+    "circuit analysis"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=J6zHcScAo0",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/20a0530f0331aae85e466d5fee25592cb794700f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Modifying sparse autoencoders to approximate MLP behavior enables clean, fine-grained, interpretable circuit analysis for transformers"
+  },
+  "collected_at": "2026-03-07T15:40:37.286Z"
+}

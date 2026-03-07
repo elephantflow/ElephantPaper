@@ -1,0 +1,34 @@
+{
+  "id": "eXNyq8FGSz",
+  "or_id": "eXNyq8FGSz",
+  "title": "Active Learning of General Halfspaces: Label Queries vs Membership Queries",
+  "title_zh": "",
+  "authors": [
+    "Ilias Diakonikolas",
+    "Daniel Kane",
+    "Mingchen Ma"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We study the problem of learning general (i.e., not necessarily homogeneous) \nhalfspaces under the Gaussian distribution on $\\mathbb{R}^d$ \nin the presence of some form of query access. \nIn the classical pool-based active learning model, where the algorithm is\nallowed to make adaptive label queries to previously sampled points, \nwe establish a strong information-theoretic lower bound ruling out non-trivial\nimprovements over the passive setting. Specifically, we show that\nany active learner requires label complexity of \n$\\tilde{\\Omega}(d/(\\log(m)\\epsilon))$, where $m$ is the number of unlabeled examples. \nSpecifically, to beat the passive label complexity of $\\tilde{O}(d/\\epsilon)$, \nan active learner requires a pool of $2^{\\mathrm{poly}(d)}$ unlabeled samples.\nOn the positive side, we show that this lower bound \ncan be circumvented with membership query access, \neven in the agnostic model. Specifically, we give a computationally efficient \nlearner with query complexity of $\\tilde{O}(\\min(1/p, 1/\\epsilon) + d\\mathrm{polylog}(1/\\epsilon))$\nachieving error guarantee of $O(\\mathrm{opt}+\\epsilon)$. Here $p \\in [0, 1/2]$ \nis the bias and $\\mathrm{opt}$ is the 0-1 loss of the optimal halfspace. \nAs a corollary, we obtain a strong separation \nbetween the active and membership query models. \nTaken together, our results characterize the complexity of learning \ngeneral halfspaces under Gaussian marginals in these models.",
+  "abstract_zh": "",
+  "tldr": "We study learning general halfspaces under Gaussian marginals using queries, proving a strong separation between the classic active learning model and membership query learning model for the problem.",
+  "keywords": [
+    "Active Learning",
+    "Membership Query",
+    "Linear Separator"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=eXNyq8FGSz",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c0bd524db456bde587b8773b7b2be7c20b25713b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study learning general halfspaces under Gaussian marginals using queries, proving a strong separation between the classic active learning model and membership query learning model for the problem."
+  },
+  "collected_at": "2026-03-07T15:40:37.287Z"
+}

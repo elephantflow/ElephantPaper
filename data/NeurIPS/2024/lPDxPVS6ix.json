@@ -1,0 +1,37 @@
+{
+  "id": "lPDxPVS6ix",
+  "or_id": "lPDxPVS6ix",
+  "title": "SPEAR: Exact Gradient Inversion of Batches in Federated Learning",
+  "title_zh": "",
+  "authors": [
+    "Dimitar Iliev Dimitrov",
+    "Maximilian Baader",
+    "Mark Niklas Mueller",
+    "Martin Vechev"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Federated learning is a framework for collaborative machine learning where clients only share gradient updates and not their private data with a server. However, it was recently shown that gradient inversion attacks can reconstruct this data from the shared gradients. In the important honest-but-curious setting, existing attacks enable exact reconstruction only for batch size of $b=1$, with larger batches permitting only approximate reconstruction. In this work, we propose SPEAR, *the first algorithm reconstructing whole batches with $b >1$ exactly*. SPEAR combines insights into the explicit low-rank structure of gradients with a sampling-based algorithm. Crucially, we leverage ReLU-induced gradient sparsity to precisely filter out large numbers of incorrect samples, making a final reconstruction step tractable. We provide an efficient GPU implementation for fully connected networks and show that it recovers high-dimensional ImageNet inputs in batches of up to $b \\lesssim 25$ exactly while scaling to large networks. Finally, we show theoretically that much larger batches can be reconstructed with high probability given exponential time.",
+  "abstract_zh": "",
+  "tldr": "We present the first algorithm for exact gradient inversion on batch sizes $>1$ to reconstruct inputs in the honest-but-curious federated learning setting.",
+  "keywords": [
+    "Federated Learning",
+    "Exact Gradient Inversion",
+    "Gradient Leakage",
+    "Privacy",
+    "Attack"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=lPDxPVS6ix",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/61205805e58614e9dd0c5acf4f4f9f6a0ca0d7c1.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present the first algorithm for exact gradient inversion on batch sizes $>1$ to reconstruct inputs in the honest-but-curious federated learning setting."
+  },
+  "collected_at": "2026-03-07T15:40:37.288Z"
+}
