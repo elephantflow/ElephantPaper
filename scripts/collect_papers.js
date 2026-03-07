@@ -20,23 +20,17 @@ const BATCH_SIZE = 30;
 const SS_DELAY_MS = 1200;
 
 const COLLECT_QUEUE = [
-  // 2024 顶会优先级顺序
+  // 仅限五个核心顶会：NeurIPS (NIPS) / ICLR / ICML / CVPR / ICCV
+  // 2024 & 2023：OpenReview API
   { conference: 'NeurIPS', year: 2024, method: 'openreview', invitation: 'NeurIPS.cc/2024/Conference/-/Submission' },
   { conference: 'ICLR', year: 2024, method: 'openreview', invitation: 'ICLR.cc/2024/Conference/-/Submission' },
   { conference: 'ICML', year: 2024, method: 'openreview', invitation: 'ICML.cc/2024/Conference/-/Submission' },
-  { conference: 'CVPR', year: 2024, method: 'dblp', dblpVenue: 'CVPR 2024' },
-  { conference: 'ECCV', year: 2024, method: 'dblp', dblpVenue: 'ECCV 2024' },
-  { conference: 'ACL', year: 2024, method: 'dblp', dblpVenue: 'ACL 2024' },
-  { conference: 'EMNLP', year: 2024, method: 'dblp', dblpVenue: 'EMNLP 2024' },
-  // 2023 备选
   { conference: 'NeurIPS', year: 2023, method: 'openreview', invitation: 'NeurIPS.cc/2023/Conference/-/Submission' },
   { conference: 'ICLR', year: 2023, method: 'openreview', invitation: 'ICLR.cc/2023/Conference/-/Submission' },
   { conference: 'ICML', year: 2023, method: 'openreview', invitation: 'ICML.cc/2023/Conference/-/Submission' },
-  // 2022 及 2021（DBLP）
-  { conference: 'NeurIPS', year: 2022, method: 'dblp', dblpVenue: 'NeurIPS 2022' },
-  { conference: 'ICLR', year: 2022, method: 'dblp', dblpVenue: 'ICLR 2022' },
-  { conference: 'ICML', year: 2022, method: 'dblp', dblpVenue: 'ICML 2022' },
-  { conference: 'NeurIPS', year: 2021, method: 'dblp', dblpVenue: 'NeurIPS 2021' },
+  // CVPR 和 ICCV 只采 2024 作为示例（DBLP方式）
+  { conference: 'CVPR', year: 2024, method: 'dblp', dblpVenue: 'CVPR 2024' },
+  { conference: 'ICCV', year: 2024, method: 'dblp', dblpVenue: 'ICCV 2024' },
 ];
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
