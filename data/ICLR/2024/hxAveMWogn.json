@@ -1,0 +1,37 @@
+{
+  "id": "hxAveMWogn",
+  "or_id": "hxAveMWogn",
+  "title": "InstaTAP: Instance Motion Estimation for Tracking Any Point",
+  "title_zh": "",
+  "authors": [
+    "Seong Hyeon Park",
+    "Sukmin Yun",
+    "Paul Hongsuck Seo",
+    "Jinwoo Shin"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "This paper tackles a challenge in learning the long-term point trajectories in videos, like the Tracking Any Point (TAP) task. Fundamentally, the estimation of point-level motions is hindered by the significant uncertainty inherent in comprehensive comparisons across the entire video frame. While existing models attempt to mitigate this issue by considering a regularized comparison space (e.g., the cost volumes), point-level motion remains highly noisy, often leading to failures on individual points. To tackle the issue, our key idea is to jointly track multiple points within a given semantic object: since points in an object tend to move together on average, individual noise trajectories can be effectively marginalized, subsequently obtaining fine-grained motion information. Specifically, we predict the object mask using point-prompted segmentation provided by Segment Anything Models (SAM) and enhance the performance of existing models through a systematic two-stage procedure: (a) estimating the average motion of points within the object mask (predicted by SAM) as the initial estimate, and (b) refining this estimate to achieve point-level tracking. In stage (b), we actively generate fine-grained features around the initial estimate, preserving high-frequency details for precise tracking. Consequently, our method not only overcomes the failure modes seen in existing state-of-the-art methods but also demonstrates superior precision in tracking results. For example, on the recent TAP-Vid benchmark, our method advances the state-of-the-art performance, achieving up to a 25% improvement in accuracy at the 1-pixel error threshold. Furthermore, we showcase the advantages of our method in two downstream tasks: video depth estimation and video frame interpolation, exploiting the point-wise correspondence in each task.",
+  "abstract_zh": "",
+  "tldr": "Enhanced video point tracking via semantic-level tracking on the segmentation masks.",
+  "keywords": [
+    "Video Point Tracking",
+    "Point Tracking",
+    "Tracking",
+    "Spatial-Temporal Vision",
+    "Segment Anything Model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hxAveMWogn",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/eb3f27a7895491aa05f8e288da0966edd516d46f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Enhanced video point tracking via semantic-level tracking on the segmentation masks."
+  },
+  "collected_at": "2026-03-07T13:21:07.557Z"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rEQ8OiBxbZ",
+  "or_id": "rEQ8OiBxbZ",
+  "title": "3D Molecular Pretraining via Localized Geometric Generation",
+  "title_zh": "基于局部几何生成的3D分子预训练",
+  "authors": [
+    "Yuancheng SUN",
+    "Kai Chen",
+    "Kang Liu",
+    "Qiwei Ye"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Self-supervised learning on 3D molecular structures has gained prominence in AI-driven drug discovery due to the high cost of annotating biochemical data. \nHowever, few have studied the selection of proper modeling semantic units within 3D molecular data, which is critical for an expressive pre-trained model as recognized in natural language processing and computer vision.\nIn this study, we introduce \\textbf{L}ocalized G\\textbf{e}ometric \\textbf{G}enerati\\textbf{o}n (LEGO), a novel approach that treats tetrahedrons within 3D molecular structures as fundamental building blocks , leveraging their simplicity in three-dimension and their prevalence in molecular structural patterns such as carbon skeletons and functional groups.\nInspired by masked language/image modeling, LEGO perturbs a portion of tetrahedrons and learns to reconstruct them in pretraining.\nThe reconstruction of the noised local structures can be divided into a two-step process, namely spatial orientation prediction and internal arrangement generation.\nFirst, we predict the global orientation of the noised local structure within the whole molecule, equipping the model with positional information for these foundational components.\nThen, we geometrically reconstruct the internal arrangements of the noised local structures revealing their functional semantics.\nTo address the atom-bond inconsistency problem in previous denoising methods and utilize the prior of chemical bonds, we propose to model the graph as a set of nodes and edges and explicitly generate the edges during pre-training.\nIn this way, LEGO exploits the advantages of encoding structural geometry features as well as leveraging the expressiveness of self-supervised learning.\nExtensive experiments on molecular quantum and biochemical property prediction tasks demonstrate the effectiveness of our approach.",
+  "abstract_zh": "3D分子结构的自监督学习因生物化学数据标注成本高昂而在AI驱动的药物研发领域受到广泛关注。然而，极少有研究探讨3D分子数据中合适建模语义单元的选择，而这对于构建具有强表达能力的预训练模型至关重要，正如自然语言处理和计算机视觉领域所认识到的。本研究引入局部几何生成（LEGO），一种新型方法，将3D分子结构中的四面体视为基本构建块，利用其在三维空间中的几何简洁性和在分子结构模式（如碳骨架和官能团）中的普遍存在性。受掩码语言/图像建模启发，LEGO在预训练期间扰动部分四面体并学习重建它们。噪声局部结构的重建可分为两个步骤：空间方向预测和内部排列生成。首先，我们预测噪声局部结构在整个分子内的全局方向，使模型具备对这些基础组件的位置信息。然后，我们几何地重建噪声局部结构的内部排列，揭示其功能语义。为解决之前去噪方法中的原子-键不一致性问题并利用化学键的先验知识，我们提出将分子图建模为节点与边的集合，并在预训练期间显式生成边。通过这种方式，LEGO既利用了编码结构几何特征的优势，又利用了自监督学习的表达能力。在分子量子性质和生化性质预测任务上的大量实验证明了我们方法的有效性。",
+  "tldr": "",
+  "keywords": [
+    "molecular repsentation; self-supervised learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=rEQ8OiBxbZ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e05872d119738e683732f498b9bc51f1329b5200.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Self-supervised learning on 3D molecular structures has gained prominence in AI-driven drug discovery due to the high cost of annotating biochemical data. \nHowever, few have studied the selection of proper modeling semantic units within 3D molecular data, which is critical for an expressive pre-trai"
+  },
+  "collected_at": "2026-03-07T13:21:07.556Z"
+}

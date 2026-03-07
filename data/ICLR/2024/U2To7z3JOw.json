@@ -1,0 +1,34 @@
+{
+  "id": "U2To7z3JOw",
+  "or_id": "U2To7z3JOw",
+  "title": "Bi-GCL: Efficient Search on Networks",
+  "title_zh": "",
+  "authors": [
+    "Zhaochong Yu",
+    "Shuyang Feng"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Recent research shows the promising potential of node continuous embedding methods in Top-K network node similarity search, which often involves finding nearest neighbors measured by similarity in a continuous embedding space.However, these methods poorly scale to searching on large networks, since their embeddings demand significant storage and entail tremendous computation costs.In this paper, we introduce a graph contrastive learning framework for compressing continuous node embeddings into binary codes that enable customized bits per dimension, striking a balance between retrieval accuracy, speed, and storage.Specifically, a recurrent binarization with GNNs is presented, which consists of two components, a GNN encoder for learning node continuous representations, and a residual multilayer perception module for encoding representations to binary codes.The whole architecture is trained end-to-end by jointly optimizing three losses, i.e., contrastive loss from giving closely aligned representations to  positives, information bottleneck loss from superfluous information minimization, and representation distillation loss from aligning binary codes and their continuous counterparts.Extensive experiments demonstrates that our method achieves approximately 6x-19x faster retrieval and 16x-32x space reduction compared to traditional continuous-based embedding methods.Moreover, it significantly outperforms state-of-the-art continuous- and hash-based network embedding methods on several real-world networks.",
+  "abstract_zh": "",
+  "tldr": "A new graph contrastive learning approach to enhance network node similarity search with binary node embeddings.",
+  "keywords": [
+    "Graph Contrastive Learning",
+    "Similarity Search",
+    "Binary Coding",
+    "Efficiency"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=U2To7z3JOw",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5e1b2a9b55cc04aeb5eef4e0aa1458b9f61355eb.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A new graph contrastive learning approach to enhance network node similarity search with binary node embeddings."
+  },
+  "collected_at": "2026-03-07T13:21:07.558Z"
+}

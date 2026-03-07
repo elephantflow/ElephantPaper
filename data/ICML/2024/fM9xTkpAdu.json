@@ -1,0 +1,30 @@
+{
+  "id": "fM9xTkpAdu",
+  "or_id": "fM9xTkpAdu",
+  "title": "Reshape and Adapt for Output Quantization (RAOQ): Quantization-aware Training for In-memory Computing Systems",
+  "title_zh": "",
+  "authors": [
+    "Bonan Zhang",
+    "Chia-Yu Chen",
+    "Naveen Verma"
+  ],
+  "conference": "ICML",
+  "year": 2024,
+  "venue": "ICML 2024 Poster",
+  "abstract": "In-memory computing (IMC) has emerged as a promising solution to address both computation and data-movement challenges, by performing computation on data in-place directly in the memory array. IMC typically relies on analog operation, which makes analog-to-digital converters (ADCs) necessary, for converting results back to the digital domain. However, ADCs maintain computational efficiency by having limited precision, leading to substantial quantization errors in compute outputs. This work proposes RAOQ (Reshape and Adapt for Output Quantization) to overcome this issue, which comprises two classes of mechanisms including: 1) mitigating ADC quantization error by adjusting the statistics of activations and weights, through an activation-shifting approach (A-shift) and a weight reshaping technique (W-reshape); 2) adapting AI models to better tolerate ADC quantization through a bit augmentation method (BitAug), complemented by the introduction of ADC-LoRA, a low-rank approximation technique, to reduce the training overhead. RAOQ demonstrates consistently high performance across different scales and domains of neural network models for computer vision and natural language processing (NLP) tasks at various bit precisions, achieving state-of-the-art results with practical IMC implementations.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=fM9xTkpAdu",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e2b51f7bd7794737a678b389a2d7b8183cf3bca1.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In-memory computing (IMC) has emerged as a promising solution to address both computation and data-movement challenges, by performing computation on data in-place directly in the memory array. IMC typically relies on analog operation, which makes analog-to-digital converters (ADCs) necessary, for co"
+  },
+  "collected_at": "2026-03-07T13:01:35.316Z"
+}
