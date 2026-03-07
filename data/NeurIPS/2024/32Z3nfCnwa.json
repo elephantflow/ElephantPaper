@@ -1,0 +1,34 @@
+{
+  "id": "32Z3nfCnwa",
+  "or_id": "32Z3nfCnwa",
+  "title": "How Does Variance Shape the Regret in Contextual Bandits?",
+  "title_zh": "",
+  "authors": [
+    "Zeyu Jia",
+    "Jian Qian",
+    "Alexander Rakhlin",
+    "Chen-Yu Wei"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We consider realizable contextual bandits with general function approximation, investigating how small reward variance can lead to better-than-minimax regret bounds.  Unlike in minimax regret bounds, we show that the eluder dimension \n$d_{\\text{elu}}$$-$a measure of the complexity of the function class$-$plays a crucial role in variance-dependent bounds. We consider two types of adversary: \n\n(1) Weak adversary: The adversary sets the reward variance before observing the learner's action. In this setting, we prove that a regret of $\\Omega( \\sqrt{ \\min (A, d_{\\text{elu}}) \\Lambda } + d_{\\text{elu}} )$ is unavoidable when $d_{\\text{elu}} \\leq \\sqrt{A T}$, where $A$ is the number of actions, $T$ is the total number of rounds, and $\\Lambda$ is the total variance over $T$ rounds. For the $A\\leq d_{\\text{elu}}$ regime, we derive a nearly matching upper bound $\\tilde{O}( \\sqrt{ A\\Lambda } + d_{\\text{elu} } )$ for the special case where the variance is revealed at the beginning of each round.  \n\n(2) Strong adversary: The adversary sets the reward variance after observing the learner's action. We show that a regret of $\\Omega( \\sqrt{ d_{\\text{elu}} \\Lambda } + d_{\\text{elu}} )$ is unavoidable when $\\sqrt{ d_{\\text{elu}} \\Lambda } + d_{\\text{elu}} \\leq \\sqrt{A T}$. In this setting, we provide an upper bound of order $\\tilde{O}( d_{\\text{elu}}\\sqrt{ \\Lambda } + d_{\\text{elu}} )$.\n\nFurthermore, we examine the setting where the function class additionally provides distributional information of the reward, as studied by Wang et al. (2024). We demonstrate that the regret bound \n$\\tilde{O}(\\sqrt{d_{\\text{elu}} \\Lambda} + d_{\\text{elu}})$ established in their work is unimprovable when $\\sqrt{d_{\\text{elu}} \\Lambda} + d_{\\text{elu}}\\leq \\sqrt{AT}$. However, with a slightly different definition of the total variance and with the assumption that the reward follows a Gaussian distribution, one can achieve a regret of $\\tilde{O}(\\sqrt{A\\Lambda} + d_{\\text{elu}})$.",
+  "abstract_zh": "",
+  "tldr": "We study realizable contextual bandits with general function approximation, and derive near-optimal variance-dependent bounds that demonstrate the role of eluder dimension in this case.",
+  "keywords": [
+    "contextual bandit",
+    "regret analysis"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=32Z3nfCnwa",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f549376be2b5d6aaccad8cf47a803e72e0e1a9bc.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study realizable contextual bandits with general function approximation, and derive near-optimal variance-dependent bounds that demonstrate the role of eluder dimension in this case."
+  },
+  "collected_at": "2026-03-07T17:00:36.538Z"
+}

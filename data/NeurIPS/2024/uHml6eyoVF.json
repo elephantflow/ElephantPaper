@@ -1,0 +1,37 @@
+{
+  "id": "uHml6eyoVF",
+  "or_id": "uHml6eyoVF",
+  "title": "Learning from higher-order correlations, efficiently: hypothesis tests, random features, and neural networks",
+  "title_zh": "",
+  "authors": [
+    "Eszter Szekely",
+    "Lorenzo Bardone",
+    "Federica Gerace",
+    "Sebastian Goldt"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Neural networks excel at discovering statistical patterns in\nhigh-dimensional data sets. In practice, higher-order cumulants, which quantify\nthe non-Gaussian correlations between three or more variables, are particularly\nimportant for the performance of neural networks. But how efficient are neural\nnetworks at extracting features from higher-order cumulants? We study this\nquestion in the spiked cumulant model, where the statistician needs to recover a\nprivileged direction or \"spike'' from the order-$p\\ge 4$ cumulants\nof $d$-dimensional inputs. \nWe first discuss the fundamental statistical and\ncomputational limits of recovering the spike by analysing the number of\n samples $n$ required to strongly distinguish between inputs from the spiked\ncumulant model and isotropic Gaussian inputs. \nExisting literature established the presence of a wide statistical-to-computational gap in this problem. We deepen this line of work by finding an exact formula for the likelihood ratio norm which proves that statistical\ndistinguishability requires $n\\gtrsim d$ samples, while distinguishing the two\ndistributions in polynomial time requires $n \\gtrsim d^2$ samples for a wide\nclass of algorithms, i.e. those covered by the low-degree conjecture. \nNumerical experiments show that neural networks do indeed learn to distinguish\nthe two distributions with quadratic sample complexity, while ``lazy'' methods\nlike random features are not better than random guessing in this regime. Our\nresults show that neural networks extract information from higher-order\ncorrelations in the spiked cumulant model efficiently, and reveal a large gap in\nthe amount of data required by neural networks and random features to learn from\nhigher-order cumulants.",
+  "abstract_zh": "",
+  "tldr": "We analyse the statistical-to-computational gap in learning from higher-order data correlations and show that neural networks learn these correlations more efficiently than kernel methods.",
+  "keywords": [
+    "higher-order cumulant",
+    "hypothesis test",
+    "neural network",
+    "random features",
+    "low-degree method"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=uHml6eyoVF",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3458a2f739a06864f346678b6092e63a157de8b5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We analyse the statistical-to-computational gap in learning from higher-order data correlations and show that neural networks learn these correlations more efficiently than kernel methods."
+  },
+  "collected_at": "2026-03-07T17:00:36.541Z"
+}

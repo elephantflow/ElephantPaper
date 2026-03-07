@@ -1,0 +1,38 @@
+{
+  "id": "hXgLvYsG2c",
+  "or_id": "hXgLvYsG2c",
+  "title": "CoMERA: Computing- and Memory-Efficient Training via Rank-Adaptive Tensor Optimization",
+  "title_zh": "",
+  "authors": [
+    "Zi Yang",
+    "Ziyue Liu",
+    "Samridhi Choudhary",
+    "Xinfeng Xie",
+    "Cao Gao",
+    "Siegfried Kunzmann",
+    "Zheng Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Training large AI models such as LLMs and DLRMs costs massive GPUs and computing time. The high training cost has become only affordable to big tech companies, meanwhile also causing increasing concerns about the environmental impact. This paper presents CoMERA, a **Co**mputing- and **M**emory-**E**fficient training method via **R**ank-**A**daptive tensor optimization. CoMERA achieves end-to-end rank-adaptive tensor-compressed training via a multi-objective optimization formulation, and improves the training to provide both a high compression ratio and excellent accuracy in the training process. Our optimized numerical computation (e.g., optimized tensorized embedding and tensor-vector contractions) and GPU implementation eliminate part of the run-time overhead in the tensorized training on GPU. This leads to, for the first time, $2-3\\times$ speedup per training epoch compared with standard training. CoMERA also outperforms the recent GaLore in terms of both memory and computing efficiency. Specifically, CoMERA is $2\\times$ faster per training epoch and $9\\times$ more memory-efficient than GaLore on a tested six-encoder transformer with single-batch training. Our method also shows $\\sim 2\\times$ speedup than standard pre-training on a BERT-like code-generation LLM while achieving $4.23\\times$  compression ratio in pre-training.\nWith further HPC optimization, CoMERA may reduce the pre-training cost of many other LLMs.  An implementation of CoMERA is available at <https://github.com/ziyangjoy/CoMERA>.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Compressed Training",
+    "Memory-efficient",
+    "Tensor"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hXgLvYsG2c",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/05d842bc2f4840bf07ce7316ca2a4e6317b4d6a9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Training large AI models such as LLMs and DLRMs costs massive GPUs and computing time. The high training cost has become only affordable to big tech companies, meanwhile also causing increasing concerns about the environmental impact. This paper presents CoMERA, a **Co**mputing- and **M**emory-**E**"
+  },
+  "collected_at": "2026-03-07T17:00:36.540Z"
+}

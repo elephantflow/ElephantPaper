@@ -1,0 +1,33 @@
+{
+  "id": "g1HxCIc0wi",
+  "or_id": "g1HxCIc0wi",
+  "title": "Speculative Monte-Carlo Tree Search",
+  "title_zh": "",
+  "authors": [
+    "Scott Cheng",
+    "Mahmut Kandemir",
+    "Ding-Yong Hong"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Monte-Carlo tree search (MCTS) is an influential sequential decision-making algorithm notably employed in AlphaZero. Despite its success, the primary challenge in AlphaZero training lies in its prolonged time-to-solution due to the high latency imposed by the sequential MCTS process. To address this challenge, this paper proposes and evaluates an inter-decision parallelization strategy called speculative MCTS, a new type of parallelism in AlphaZero which implements speculative execution. This approach allows for the parallel execution of future moves before the current MCTS computations are completed, thus reducing the latency. Additionally, we analyze factors contributing to the overall speedup by studying the synergistic effects of speculation and neural network caching in MCTS. We also provide an analytical model that can be used to evaluate the potential of different speculation strategies before they are implemented and deployed. Our empirical findings indicate that the proposed speculative MCTS can reduce training latency by 5.81$\\times$ in 9x9 Go games. Moreover, our study shows that speculative execution can enhance the NN cache hit rate by 26\\% during midgame. Overall, our end-to-end evaluation indicates 1.91$\\times$ speedup in 19x19 Go training time, compared to the state-of-the-art KataGo program.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Monte-Carlo Tree Search",
+    "MCTS"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=g1HxCIc0wi",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ced3bdf5155a372c15a9dca150b9b25a17a3f900.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Monte-Carlo tree search (MCTS) is an influential sequential decision-making algorithm notably employed in AlphaZero. Despite its success, the primary challenge in AlphaZero training lies in its prolonged time-to-solution due to the high latency imposed by the sequential MCTS process. To address this"
+  },
+  "collected_at": "2026-03-07T17:00:36.541Z"
+}

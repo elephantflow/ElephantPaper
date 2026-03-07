@@ -1,0 +1,34 @@
+{
+  "id": "M7zNXntzsp",
+  "or_id": "M7zNXntzsp",
+  "title": "Building a stable classifier with the inflated argmax",
+  "title_zh": "",
+  "authors": [
+    "Jake A Soloff",
+    "Rina Foygel Barber",
+    "Rebecca Willett"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We propose a new framework for algorithmic stability in the context of multiclass classification. In practice, classification algorithms often operate by first assigning a continuous score (for instance, an estimated probability) to each possible label, then taking the maximizer---i.e., selecting the class that has the highest score. A drawback of this type of approach is that it is inherently unstable, meaning that it is very sensitive to slight perturbations of the training data, since taking the maximizer is discontinuous. Motivated by this challenge, we propose a pipeline for constructing stable classifiers from data, using bagging (i.e., resampling and averaging) to produce stable continuous scores, and then using a stable relaxation of argmax, which we call the \"inflated argmax\", to convert these scores to a set of candidate labels. The resulting stability guarantee places no distributional assumptions on the data, does not depend on the number of classes or dimensionality of the covariates, and holds for any base classifier. Using a common benchmark data set, we demonstrate that the inflated argmax provides necessary protection against unstable classifiers, without loss of accuracy.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Algorithmic stability",
+    "set-valued classification",
+    "bagging"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=M7zNXntzsp",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e751ec675159a661a0724eba6f762d7105df100a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a new framework for algorithmic stability in the context of multiclass classification. In practice, classification algorithms often operate by first assigning a continuous score (for instance, an estimated probability) to each possible label, then taking the maximizer---i.e., selecting th"
+  },
+  "collected_at": "2026-03-07T17:00:36.541Z"
+}
