@@ -1,0 +1,40 @@
+{
+  "id": "CrADAX7h23",
+  "or_id": "CrADAX7h23",
+  "title": "DAGER: Exact Gradient Inversion for Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Ivo Petrov",
+    "Dimitar Iliev Dimitrov",
+    "Maximilian Baader",
+    "Mark Niklas Mueller",
+    "Martin Vechev"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Federated learning works by aggregating locally computed gradients from multiple clients, thus enabling collaborative training without sharing private client data. However, prior work has shown that the data can actually be recovered by the server using so-called gradient inversion attacks. While these attacks perform well when applied on images, they are limited in the text domain and only permit approximate reconstruction of small batches and short input sequences. In this work, we propose DAGER, the first algorithm to recover whole batches of input text exactly. DAGER leverages the low-rank structure of self-attention layer gradients and the discrete nature of token embeddings to efficiently check if a given token sequence is part of the client data. We use this check to exactly recover full batches in the honest-but-curious setting without any prior on the data for both encoder and decoder-based architectures using exhaustive heuristic search and a greedy approach, respectively. We provide an efficient GPU implementation of DAGER and show experimentally that it recovers full batches of size up to 128 on large language models (LLMs), beating prior attacks in speed (20x at same batch size), scalability (10x larger batches), and reconstruction quality (ROUGE-1/2 > 0.99).",
+  "abstract_zh": "",
+  "tldr": "We introduce the first exact gradient leakage attack for batches of sequnces on LLMs and show that it works on significantly larger token sequences and batch sizes while being faster and more price than prior work.",
+  "keywords": [
+    "Federated Learning",
+    "Exact Gradient Inversion",
+    "Gradient Leakage",
+    "Privacy",
+    "Language Model",
+    "LLM",
+    "Attack"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=CrADAX7h23",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/39ee090fdff083eb8639f3885ed6b0ed12f72601.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce the first exact gradient leakage attack for batches of sequnces on LLMs and show that it works on significantly larger token sequences and batch sizes while being faster and more price than prior work."
+  },
+  "collected_at": "2026-03-07T11:40:38.691Z"
+}

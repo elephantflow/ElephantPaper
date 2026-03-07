@@ -1,0 +1,34 @@
+{
+  "id": "6gzPSMUAz2",
+  "or_id": "6gzPSMUAz2",
+  "title": "MATES: Model-Aware Data Selection for Efficient Pretraining with Data Influence Models",
+  "title_zh": "MATES：利用数据影响模型的高效预训练模型感知数据选择",
+  "authors": [
+    "Zichun Yu",
+    "Spandan Das",
+    "Chenyan Xiong"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Pretraining data selection has the potential to improve language model pretraining efficiency by utilizing higher-quality data from massive web data corpora. Current data selection methods, which rely on either hand-crafted rules or larger reference models, are conducted statically and do not capture the evolving data preferences during pretraining. In this paper, we introduce *model-aware data selection with data influence models (MATES)*, where a data influence model continuously adapts to the evolving data preferences of the pretraining model and then selects the data most effective for the current pretraining progress. Specifically, we collect oracle data influence by locally probing the pretraining model and fine-tune a small data influence model to approximate it accurately. The data influence model then predicts data influence over the whole pretraining corpus and selects the most influential data for the next pretraining stage. Experiments of pretraining 410M and 1B models on the C4 dataset demonstrate that MATES significantly outperforms random data selection on extensive downstream tasks. It doubles the gains achieved by the state-of-the-art data selection approach that leverages larger reference models and reduces the total FLOPs required to reach certain performances by half. Further analyses validate the effectiveness of the locally probed oracle data influence and the approximation with data influence models. Our code is open-sourced at https://github.com/cxcscmu/MATES.",
+  "abstract_zh": "预训练数据选择通过利用来自海量网络数据语料库的更高质量数据，有潜力提升语言模型预训练效率。当前的数据选择方法要么依赖于人工制定的规则，要么依赖于更大的参考模型，它们以静态方式进行，无法捕捉预训练期间不断变化的数据偏好。本文中，我们提出了*模型感知数据选择与数据影响模型（Model-Aware data selection with data influence models, MATES）*，其中数据影响模型持续适应预训练模型不断演化的数据偏好，然后选择对当前预训练进展最有效的数据。具体而言，我们通过局部探测预训练模型收集原始数据影响，并微调一个小的数据影响模型以准确近似它。数据影响模型随后预测对整个预训练语料库的数据影响，并为下一预训练阶段选择最具影响的数据。在C4数据集上预训练410M和1B参数的模型实验表明，MATES在广泛的下游任务中显著优于随机数据选择。它在利用更大参考模型的最先进数据选择方法所取得的增益基础上翻倍，并减少了达到特定性能所需的总浮点运算量（FLOPs）一半。进一步分析验证了局部探测的原始数据影响的有效性以及数据影响模型的逼近性能。代码已在 https://github.com/cxcscmu/MATES 开源。",
+  "tldr": "We introduce model-aware data selection with data influence models (MATES), where a data influence model continuously adapts to the evolving data preferences of the pretraining model and selects the data to optimize the efficacy of the pretraining.",
+  "keywords": [
+    "Large Language Models",
+    "Pretraining",
+    "Data Curation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6gzPSMUAz2",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/df436b4845d7f71eabbc56788d11ae04ed20eed2.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce model-aware data selection with data influence models (MATES), where a data influence model continuously adapts to the evolving data preferences of the pretraining model and selects the data to optimize the efficacy of the pretraining."
+  },
+  "collected_at": "2026-03-07T11:40:38.690Z"
+}

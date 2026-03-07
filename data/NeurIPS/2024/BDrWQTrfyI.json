@@ -1,0 +1,41 @@
+{
+  "id": "BDrWQTrfyI",
+  "or_id": "BDrWQTrfyI",
+  "title": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+  "title_zh": "",
+  "authors": [
+    "Qizhen Zhang",
+    "Nikolas Gritsch",
+    "Dwaraknath Gnaneshwar",
+    "Simon Guo",
+    "David Cairuz",
+    "Bharat Venkitesh",
+    "Jakob Nicolaus Foerster",
+    "Phil Blunsom",
+    "Sebastian Ruder",
+    "Ahmet Üstün",
+    "Acyr Locatelli"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Mixture of Experts (MoE) framework has become a popular architecture for large language models due to its superior performance compared to dense models. However, training MoEs from scratch in a large-scale regime is prohibitively expensive. Previous work addresses this challenge by independently training multiple dense expert models and using them to initialize an MoE. In particular, state-of-the-art approaches initialize MoE layers using experts' feed-forward parameters while merging all other parameters, limiting the advantages of the specialized dense models when upcycling them as MoEs.  We propose BAM (Branch-Attend-Mix), a simple yet effective improvement to MoE training. BAM makes full use of specialized dense models by not only using their feed-forward network (FFN) to initialize the MoE layers but also leveraging experts' attention weights fully by leveraging them as mixture-of-attention (MoA) layers. We explore two methods for upcycling MoA layers: 1) initializing separate attention experts from dense models including key, value, and query matrices; and 2) initializing only Q projections while sharing key-value pairs across all experts to facilitate efficient inference. Our experiments using seed models ranging from 590 million to 2 billion parameters show that our approach outperforms state-of-the-art approaches under the same data and compute budget in both perplexity and downstream tasks evaluations, confirming the effectiveness of BAM.",
+  "abstract_zh": "",
+  "tldr": "A simple but efficient improvement for upcycle dense models parameters and use them to initialise Mixture of Experts Models.",
+  "keywords": [
+    "Mixture of Experts",
+    "Large Language Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=BDrWQTrfyI",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ba1f5beb28c09110bef51e6e94702504d0072557.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A simple but efficient improvement for upcycle dense models parameters and use them to initialise Mixture of Experts Models."
+  },
+  "collected_at": "2026-03-07T11:40:38.692Z"
+}

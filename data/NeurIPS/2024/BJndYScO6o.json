@@ -1,0 +1,37 @@
+{
+  "id": "BJndYScO6o",
+  "or_id": "BJndYScO6o",
+  "title": "Model-based Diffusion for Trajectory Optimization",
+  "title_zh": "基于扩散模型的轨迹优化",
+  "authors": [
+    "Chaoyi Pan",
+    "Zeji Yi",
+    "Guanya Shi",
+    "Guannan Qu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recent advances in diffusion models have demonstrated their strong capabilities in generating high-fidelity samples from complex distributions through an iterative refinement process. Despite the empirical success of diffusion models in motion planning and control, the model-free nature of these methods does not leverage readily available model information and limits their generalization to new scenarios beyond the training data (e.g., new robots with different dynamics). In this work, we introduce Model-Based Diffusion (MBD), an optimization approach using the diffusion process to solve trajectory optimization (TO) problems without data. The key idea is to explicitly compute the score function by leveraging the model information in TO problems, which is why we refer to our approach as model-based diffusion. Moreover, although MBD does not require external data, it can be naturally integrated with data of diverse qualities to steer the diffusion process. We also reveal that MBD has interesting connections to sampling-based optimization. Empirical evaluations show that MBD outperforms state-of-the-art reinforcement learning and sampling-based TO methods in challenging contact-rich tasks. Additionally, MBD’s ability to integrate with data enhances its versatility and practical applicability, even with imperfect and infeasible data (e.g., partial-state demonstrations for high-dimensional humanoids), beyond the scope of standard diffusion models. Videos and codes are available in the supplementary materials.",
+  "abstract_zh": "扩散模型的最新进展已展示了通过迭代细化过程从复杂分布中生成高保真样本的强大能力。尽管扩散模型在运动规划和控制方面已取得实证成功，但这些方法的无模型性质无法充分利用现成的模型信息，并限制了它们对训练数据以外新场景（例如，具有不同动态的新机器人）的泛化能力。本文中，我们提出基于模型的扩散（Model-Based Diffusion, MBD）方法，这是一种利用扩散过程解决轨迹优化（Trajectory Optimization, TO）问题而无需数据的优化方法。核心思想是通过利用轨迹优化问题中的模型信息显式计算分数函数，这也是我们将该方法称为基于模型扩散的原因。此外，尽管MBD不需要外部数据，但它可以自然地与多种质量的数据集成以引导扩散过程。我们还揭示MBD与基于采样的优化方法之间存在着有趣的关联。实证评估表明，在涉及丰富接触的挑战性任务中，MBD优于最先进的强化学习和基于采样的轨迹优化方法。此外，MBD与数据集成的能力增强了其通用性和实际适用性，即使使用不完美和不可行的数据（例如，用于高维人形机器人的部分状态演示），也超出了标准扩散模型的范围。视频和代码见补充材料。",
+  "tldr": "Model-Based Diffusion (MBD) solves trajectory optimization by using model information for score computation.",
+  "keywords": [
+    "Diffusion",
+    "Trajectory Optimization",
+    "Motion Planning",
+    "Robotics",
+    "Sampling-based Control"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=BJndYScO6o",
+    "arxiv": "https://arxiv.org/abs/2407.01573",
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/de9314b0cb13ef6263570ff2f4dcc2e0c40b3c12.pdf"
+  },
+  "citationCount": 43,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Model-Based Diffusion (MBD) solves trajectory optimization by using model information for score computation."
+  },
+  "collected_at": "2026-03-07T11:40:38.361Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "6gMnj9oc6d",
+  "or_id": "6gMnj9oc6d",
+  "title": "Scalable DP-SGD: Shuffling vs. Poisson Subsampling",
+  "title_zh": "",
+  "authors": [
+    "Lynn Chua",
+    "Badih Ghazi",
+    "Pritish Kamath",
+    "Ravi Kumar",
+    "Pasin Manurangsi",
+    "Amer Sinha",
+    "Chiyuan Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We provide new lower bounds on the privacy guarantee of _multi-epoch_ Adaptive Batch Linear Queries (ABLQ) mechanism with _shuffled batch sampling_, demonstrating substantial gaps when compared to _Poisson subsampling_; prior analysis was limited to a single epoch.\nSince the privacy analysis of Differentially Private Stochastic Gradient Descent (DP-SGD) is obtained by analyzing the ABLQ mechanism, this brings into serious question the common practice of implementing Shuffling based DP-SGD, but reporting privacy parameters as if Poisson subsampling was used.\nTo understand the impact of this gap on the utility of trained machine learning models, we introduce a novel practical approach to implement Poisson subsampling _at scale_ using massively parallel computation, and efficiently train models with the same.\nWe provide a comparison between the utility of models trained with Poisson subsampling based DP-SGD, and the optimistic estimates of utility when using shuffling, via our new lower bounds on the privacy guarantee of ABLQ with shuffling.",
+  "abstract_zh": "",
+  "tldr": "Establishes new lower bounds on privacy analysis of DP-SGD with shuffling and provides a first comparative study of DP-SGD with Shuffling vs Poisson Subsampling in the light of the gaps in privacy analysis between the two approaches.",
+  "keywords": [
+    "DPSGD",
+    "Differential Privacy",
+    "Shuffling",
+    "Poisson subsampling"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6gMnj9oc6d",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/893009b0a5e05f0b6aff73956cac3c6f45a0fb89.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Establishes new lower bounds on privacy analysis of DP-SGD with shuffling and provides a first comparative study of DP-SGD with Shuffling vs Poisson Subsampling in the light of the gaps in privacy analysis between the two approaches."
+  },
+  "collected_at": "2026-03-07T11:40:38.692Z"
+}

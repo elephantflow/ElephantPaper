@@ -1,0 +1,37 @@
+{
+  "id": "jwh9MHEfmY",
+  "or_id": "jwh9MHEfmY",
+  "title": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+  "title_zh": "正则化隐藏状态使大型语言模型习得更具泛化性的奖励模型",
+  "authors": [
+    "Rui Yang",
+    "Ruomeng Ding",
+    "Yong Lin",
+    "Huan Zhang",
+    "Tong Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Reward models trained on human preference data have been proven to effectively align Large Language Models (LLMs) with human intent within the framework of reinforcement learning from human feedback (RLHF). However, current reward models have limited generalization capabilities to unseen prompts and responses, which can lead to an unexpected phenomenon known as reward over-optimization, resulting in a decline in actual performance due to excessive optimization of rewards. While previous research has advocated for constraining policy optimization, our study introduces a novel approach to enhance the reward model's generalization ability against distribution shifts by regularizing the hidden states. Specifically, we retain the base model's language model head and incorporate a suite of text-generation losses to preserve the hidden states' text-generation capabilities, while concurrently learning a reward head behind the same hidden states. Our experimental results demonstrate that the introduced regularization technique markedly improves the accuracy of learned reward models across a variety of out-of-distribution (OOD) tasks and effectively alleviates the over-optimization issue in RLHF, offering a more reliable and robust preference learning paradigm.",
+  "abstract_zh": "在人类反馈强化学习（reinforcement learning from human feedback, RLHF）框架下，基于人类偏好数据训练的奖励模型已被证明能有效对齐大型语言模型（Large Language Models, LLMs）与人类意图。然而，当前的奖励模型对未见过的提示和响应的泛化能力有限，可能导致一种已知为奖励过优化的意外现象，即由于对奖励的过度优化导致实际性能下降。虽然先前的研究建议约束策略优化，但本研究提出一种通过正则化隐藏状态来增强奖励模型对抗分布偏移泛化能力的新方法。具体而言，我们保留基础模型的语言模型头部（language model head），并引入一系列文本生成损失以保持隐藏状态的文本生成能力，同时在相同隐藏状态后学习一个奖励头部。实验结果显示，引入的正则化技术显著提高了学习的奖励模型在各种分布外（out-of-distribution, OOD）任务上的准确性，并有效缓解了RLHF中的过优化问题，提供了一种更可靠、更鲁棒的偏好学习范式。",
+  "tldr": "We propose to enhance the generalization ability of reward models for LLMs by regularizing the hidden states, effectively improving accuracy in various out-of-distribution tasks and mitigating over-optimization in RLHF.",
+  "keywords": [
+    "Large Language Model",
+    "Reward Model",
+    "Out-of-distribution Generalization",
+    "Alignment"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=jwh9MHEfmY",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/aa8f9094028e92c33e814d2dc3fd1984d3ac7924.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose to enhance the generalization ability of reward models for LLMs by regularizing the hidden states, effectively improving accuracy in various out-of-distribution tasks and mitigating over-optimization in RLHF."
+  },
+  "collected_at": "2026-03-07T11:40:38.690Z"
+}
