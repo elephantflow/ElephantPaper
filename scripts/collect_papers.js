@@ -20,9 +20,22 @@ const BATCH_SIZE = 30;
 const SS_DELAY_MS = 1200;
 
 const COLLECT_QUEUE = [
+  // 2024 顶会优先级顺序
   { conference: 'NeurIPS', year: 2024, method: 'openreview', invitation: 'NeurIPS.cc/2024/Conference/-/Submission' },
+  { conference: 'ICLR', year: 2024, method: 'openreview', invitation: 'ICLR.cc/2024/Conference/-/Submission' },
+  { conference: 'ICML', year: 2024, method: 'openreview', invitation: 'ICML.cc/2024/Conference/-/Submission' },
+  { conference: 'CVPR', year: 2024, method: 'dblp', dblpVenue: 'CVPR 2024' },
+  { conference: 'ECCV', year: 2024, method: 'dblp', dblpVenue: 'ECCV 2024' },
+  { conference: 'ACL', year: 2024, method: 'dblp', dblpVenue: 'ACL 2024' },
+  { conference: 'EMNLP', year: 2024, method: 'dblp', dblpVenue: 'EMNLP 2024' },
+  // 2023 备选
   { conference: 'NeurIPS', year: 2023, method: 'openreview', invitation: 'NeurIPS.cc/2023/Conference/-/Submission' },
+  { conference: 'ICLR', year: 2023, method: 'openreview', invitation: 'ICLR.cc/2023/Conference/-/Submission' },
+  { conference: 'ICML', year: 2023, method: 'openreview', invitation: 'ICML.cc/2023/Conference/-/Submission' },
+  // 2022 及 2021（DBLP）
   { conference: 'NeurIPS', year: 2022, method: 'dblp', dblpVenue: 'NeurIPS 2022' },
+  { conference: 'ICLR', year: 2022, method: 'dblp', dblpVenue: 'ICLR 2022' },
+  { conference: 'ICML', year: 2022, method: 'dblp', dblpVenue: 'ICML 2022' },
   { conference: 'NeurIPS', year: 2021, method: 'dblp', dblpVenue: 'NeurIPS 2021' },
 ];
 
@@ -38,7 +51,17 @@ function curlGet(url, timeoutSec = 20) {
 }
 
 function loadStats() {
-  if (fs.existsSync(STATS_FILE)) return JSON.parse(fs.readFileSync(STATS_FILE, 'utf8'));
+  if (fs.existsSync(STATS_FILE)) {
+    const stats = JSON.parse(fs.readFileSync(STATS_FILE, 'utf8'));
+    // 确保所有队列中的任务都有进度记录（向前兼容）
+    COLLECT_QUEUE.forEach(q => {
+      const key = `${q.conference}_${q.year}`;
+      if (!stats.progress[key]) {
+        stats.progress[key] = { offset: 0, collected: 0, done: false };
+      }
+    });
+    return stats;
+  }
   const stats = { progress: {}, totalCollected: 0, totalTranslated: 0, lastUpdated: null };
   COLLECT_QUEUE.forEach(q => {
     stats.progress[`${q.conference}_${q.year}`] = { offset: 0, collected: 0, done: false };
@@ -158,7 +181,8 @@ async function collectBatch() {
     if (progress.done) continue;
 
     const remaining = BATCH_SIZE - collected;
-    console.log(`\n📚 采集 ${task.conference} ${task.year} (${task.method})，offset=${progress.offset}，剩余配额=${remaining}...`);
+    const plural = BATCH_SIZE > 1 ? 's' : '';
+    console.log(`\n📚 [${key}] 采集 ${task.conference} ${task.year} (${task.method})，已收 ${progress.collected} 篇，offset=${progress.offset}，拟采 ${Math.min(remaining, remaining)} 篇`);
 
     let notes = [];
     if (task.method === 'openreview') {

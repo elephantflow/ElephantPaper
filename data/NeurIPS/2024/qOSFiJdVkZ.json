@@ -1,0 +1,37 @@
+{
+  "id": "qOSFiJdVkZ",
+  "or_id": "qOSFiJdVkZ",
+  "title": "Continual learning with the neural tangent ensemble",
+  "title_zh": "使用神经正切集进行持续学习",
+  "authors": [
+    "Ari S Benjamin",
+    "Christian-Gernot Pehle",
+    "Kyle Daruwalla"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "A natural strategy for continual learning is to weigh a Bayesian ensemble of fixed functions. This suggests that if a (single) neural network could be interpreted as an ensemble, one could design effective algorithms that learn without forgetting. To realize this possibility, we observe that a neural network classifier with N parameters can be interpreted as a weighted ensemble of N classifiers, and that in the lazy regime limit these classifiers are fixed throughout learning. We call these classifiers the *neural tangent experts* and show they output valid probability distributions over the labels. We then derive the likelihood and posterior probability of each expert given past data. Surprisingly,  the posterior updates for these experts are equivalent to a scaled and projected form of stochastic gradient descent (SGD) over the network weights. Away from the lazy regime, networks can be seen as ensembles of adaptive experts which improve over time. These results offer a new interpretation of neural networks as Bayesian ensembles of experts, providing a principled framework for understanding and mitigating catastrophic forgetting in continual learning settings.",
+  "abstract_zh": "持续学习的一种自然策略是对固定函数的贝叶斯集成进行加权。这表明，如果单个神经网络可以被解释为一个集成，就可以设计出有效的不遗忘学习算法。为了实现这种可能性，我们观察到具有N个参数的神经网络分类器可以解释为N个分类器的加权集成，并且在惰性机制限制下，这些分类器在整个学习过程中保持不变。我们称这些分类器为*神经正切专家*，并证明它们输出有效的标签概率分布。然后我们推导出每个专家给定过去数据的似然和后验概率。令人惊讶的是，这些专家的后验更新等同于网络权重上缩放和投影形式的随机梯度下降（SGD）。在远离惰性机制的区域，网络可以看作是适应专家的集成，这些专家随时间改进。这些结果为神经网络作为专家贝叶斯集成提供了新的解释，为理解和缓解持续学习设置中的灾难性遗忘提供了原则性框架。",
+  "tldr": "All network classifiers are ensembles; each edge provides a classifier. If you weigh them by their posterior probability you (almost) get SGD.",
+  "keywords": [
+    "continual learning",
+    "catastrophic forgetting",
+    "Bayesian ensembles",
+    "Boosting and Ensemble Methods",
+    "mixture of experts"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=qOSFiJdVkZ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7ca99de5c6a3ad1c6a158db1bba6a3eb0841e7bc.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "All network classifiers are ensembles; each edge provides a classifier. If you weigh them by their posterior probability you (almost) get SGD."
+  },
+  "collected_at": "2026-03-07T09:01:10.536Z"
+}

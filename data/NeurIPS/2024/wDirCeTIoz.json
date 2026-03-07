@@ -1,0 +1,37 @@
+{
+  "id": "wDirCeTIoz",
+  "or_id": "wDirCeTIoz",
+  "title": "Communication Efficient Distributed Training with Distributed Lion",
+  "title_zh": "",
+  "authors": [
+    "Bo Liu",
+    "Lemeng Wu",
+    "Lizhang Chen",
+    "Kaizhao Liang",
+    "Jiaxu Zhu",
+    "Chen Liang",
+    "Raghuraman Krishnamoorthi",
+    "qiang liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The Lion optimizer has been a promising competitor with the AdamW for training large AI models, with advantages in memory, computation, and sample efficiency. In this paper, we introduce Distributed Lion, an innovative adaptation of Lion for distributed training environments. Leveraging the sign operator in Lion, our Distributed Lion only requires to communicate binary or lower-precision vectors\nbetween workers to the center server, significantly reducing the communication cost.  \nOur theoretical analysis confirms Distributed Lion's convergence properties. Empirical results demonstrate its robustness across a range of tasks, worker counts, and batch sizes, on both vision and language problems. Notably, Distributed Lion attains comparable performance to standard Lion or AdamW optimizers applied on aggregated gradients, but with significantly reduced communication bandwidth. This feature is particularly advantageous for training large models. In addition, we also demonstrate that \\mavolion{} presents a more favorable performance-bandwidth balance compared to existing efficient distributed methods such as deep gradient compression and ternary gradients.",
+  "abstract_zh": "",
+  "tldr": "We introduce the distributed version of the Lion optimizer with efficient binary/low-precision communication. We provide both theoretical and empirical evidence to demonstrate it is a simple yet strong method.",
+  "keywords": [
+    "Distributed Optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=wDirCeTIoz",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/12306ef9133c7e08f53a436d98a8c343b914f091.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce the distributed version of the Lion optimizer with efficient binary/low-precision communication. We provide both theoretical and empirical evidence to demonstrate it is a simple yet strong method."
+  },
+  "collected_at": "2026-03-07T09:01:10.538Z"
+}

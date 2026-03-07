@@ -1,0 +1,36 @@
+{
+  "id": "S7THlpvH8i",
+  "or_id": "S7THlpvH8i",
+  "title": "Normalization Layer Per-Example Gradients are Sufficient to Predict Gradient Noise Scale in Transformers",
+  "title_zh": "",
+  "authors": [
+    "Gavia Gray",
+    "Aman Tiwari",
+    "Shane Bergsma",
+    "Joel Hestness"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Per-example gradient norms are a vital ingredient for estimating gradient noise scale (GNS) with minimal variance. Observing the tensor contractions required to compute them, we propose a method with minimal FLOPs in 3D or greater tensor regimes by simultaneously computing the norms while computing the parameter gradients. Using this method we are able to observe the GNS of different layers at higher accuracy than previously possible. We find that the total GNS of contemporary transformer models is predicted well by the GNS of only the normalization layers. As a result, focusing only on the normalization layer, we develop a custom kernel to compute the per-example gradient norms while performing the LayerNorm backward pass with zero throughput overhead. Tracking GNS on only those layers, we are able to guide a practical batch size schedule that reduces training time by 18% on a Chinchilla-optimal language model.",
+  "abstract_zh": "",
+  "tldr": "While using a trick to compute per-example gradients efficiently we discover that normalization layers statistics predict GNS accurately.",
+  "keywords": [
+    "Efficient deep learning",
+    "gradient noise scale",
+    "critical batch size",
+    "language models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=S7THlpvH8i",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/79e5936b7e0de175d888d3daf5d92fb33ab065d0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "While using a trick to compute per-example gradients efficiently we discover that normalization layers statistics predict GNS accurately."
+  },
+  "collected_at": "2026-03-07T09:01:10.537Z"
+}

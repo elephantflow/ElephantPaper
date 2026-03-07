@@ -1,0 +1,39 @@
+{
+  "id": "JEflV4nRlH",
+  "or_id": "JEflV4nRlH",
+  "title": "What Makes and Breaks Safety Fine-tuning? A Mechanistic Study",
+  "title_zh": "什么造就和破坏了安全微调？一项机理研究",
+  "authors": [
+    "Samyak Jain",
+    "Ekdeep Singh Lubana",
+    "Kemal Oksuz",
+    "Tom Joy",
+    "Philip Torr",
+    "Amartya Sanyal",
+    "Puneet K. Dokania"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Safety fine-tuning helps align Large Language Models (LLMs) with human preferences for their safe deployment. To better understand the underlying factors that make models safe via safety fine-tuning, we design a synthetic data generation framework that captures salient aspects of an unsafe input by modeling the interaction between the task the model is asked to perform (e.g., “design”) versus the specific concepts the task is asked to be performed upon (e.g., a “cycle” vs. a “bomb”). Using this, we investigate three well-known safety fine-tuning methods—supervised safety fine-tuning, direct preference optimization, and unlearning—and provide significant evidence demonstrating that these methods minimally transform MLP weights to specifically align unsafe inputs into its weights’ null space. This yields a clustering of inputs based on whether the model deems them safe or not. Correspondingly, when an adversarial input (e.g., a jailbreak) is provided, its activations are closer to safer samples, leading to the model processing such an input as if it were safe. Code is available at https://github.com/fiveai/understanding_safety_finetuning.",
+  "abstract_zh": "安全微调有助于将大型语言模型（LLMs）与人类对其安全部署的偏好保持一致。为了更好地理解通过安全微调使模型安全的基本因素，我们设计了一个合成数据生成框架，通过建模模型被要求执行的任务（如'设计'）与任务被执行的具体概念（如'自行车'与'炸弹'）之间的交互来捕捉不安全输入的显著方面。利用此框架，我们研究了三种知名的安全微调方法——监督安全微调、直接偏好优化和遗忘学习——并提供重要证据表明，这些方法最小化地变换MLP权重，以特别将不安全输入对齐到其权重的零空间。基于模型是否认为输入安全，这产生了输入的聚类。相应地，当提供对抗性输入（如越狱攻击）时，其激活更接近更安全的样本，导致模型处理此类输入时仿佛它们是安全的。代码可在 https://github.com/fiveai/understanding_safety_finetuning 获取。",
+  "tldr": "",
+  "keywords": [
+    "Mechanistic Interpretability",
+    "AI Safety",
+    "Safety fine tuning",
+    "Large Language Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=JEflV4nRlH",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/81116601d33b2f8062d8349ffea18be421ec92bf.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Safety fine-tuning helps align Large Language Models (LLMs) with human preferences for their safe deployment. To better understand the underlying factors that make models safe via safety fine-tuning, we design a synthetic data generation framework that captures salient aspects of an unsafe input by "
+  },
+  "collected_at": "2026-03-07T09:01:10.537Z"
+}

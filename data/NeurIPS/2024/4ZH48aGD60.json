@@ -1,0 +1,35 @@
+{
+  "id": "4ZH48aGD60",
+  "or_id": "4ZH48aGD60",
+  "title": "Active, anytime-valid risk controlling prediction sets",
+  "title_zh": "主动、任意时有效的风险控制预测集",
+  "authors": [
+    "Ziyu Xu",
+    "Nikos Karampatziakis",
+    "Paul Mineiro"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Rigorously establishing the safety of black-box machine learning models with respect to critical risk measures is important for providing guarantees about the behavior of the model.\nRecently, a notion of a risk controlling prediction set (RCPS) has been introduced by Bates et. al. (JACM '24) for producing prediction sets that are statistically guaranteed to have low risk from machine learning models.\nOur method extends this notion to the sequential setting, where we provide guarantees even when the data is collected adaptively, and ensures the risk guarantee is anytime-valid, i.e., simultaneously holds at all time steps. Further, we propose a framework for constructing RCPSes for active labeling, i.e., allowing one to use a labeling policy that chooses whether to query the true label for each received data point, and ensures the expected proportion data points whose labels are queried are below a predetermined label budget. We also describe how to use predictors (e.g., the machine learning model we are providing risk control guarantees for) to further improve the utility of our RCPSes by estimating the expected risk conditioned on the covariates.\nWe characterize the optimal choices of label policy under a fixed label budget, and predictor, and show a regret result that relates the estimation error of the optimal labeling policy and predictor to the wealth process that underlies our RCPSes.\nLastly, we present practical ways of formulating label policies and we empirically show that our label policies use fewer labels to reach higher utility than naive baseline labeling strategies on both simulations and real data.",
+  "abstract_zh": "严格建立黑盒机器学习模型在关键风险度量上的安全性对于提供模型行为保障至关重要。最近，Bates等人（JACM '24）引入了风险控制预测集（RCPS）的概念，用于从机器学习模型中产生统计上保证低风险的预测集。我们的方法将这一概念扩展到顺序设置，即使在数据被自适应收集时也能提供保障，并确保风险保证是任意时有效的，即在所有时间步同时成立。进一步，我们提出了一个构建适用于主动标注的RCPS框架，即允许使用标注策略来选择是否为每个接收到的数据点查询真实标签，并确保预期查询标签的数据点比例低于预定的标注预算。我们还描述了如何使用预测器（例如，我们正在为之提供风险控制保证的机器学习模型）通过估计基于协变量的条件风险来进一步提高RCPS的效用。我们刻画了在固定标注预算和预测器下的最优标签策略选择，并展示了将最优标注策略和预测器的估计误差与我们RCPS背后的财富过程相关的遗憾结果。最后，我们提出了制定标签策略的实用方法，并通过实验证明，在模拟和真实数据上，我们的标签策略使用更少的标签达到比朴素基线标注策略更高的效用。",
+  "tldr": "An extension of risk controlling prediction sets to anytime-valid and active labeling regime.",
+  "keywords": [
+    "distribution free",
+    "conformal prediction",
+    "e-process",
+    "confidence sequence"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=4ZH48aGD60",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9809df27c7a7e37e240b7d1cb1de1d54e9e5389e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "An extension of risk controlling prediction sets to anytime-valid and active labeling regime."
+  },
+  "collected_at": "2026-03-07T09:01:10.536Z"
+}

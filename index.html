@@ -53,6 +53,13 @@
     .quality-toggle { display: flex; gap: 6px; }
     .quality-btn { flex: 1; padding: 6px; border-radius: 5px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; font-size: 11px; text-align: center; transition: all 0.15s; }
     .quality-btn.active { border-color: var(--gold); color: var(--gold); background: rgba(212,160,23,0.1); }
+    .progress-section { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+    .progress-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .progress-label { flex: 0 0 50px; font-size: 11px; font-weight: 600; color: var(--muted); }
+    .progress-bar { flex: 1; height: 6px; background: var(--card2); border-radius: 3px; overflow: hidden; }
+    .progress-fill { height: 100%; background: linear-gradient(90deg, var(--green), var(--blue)); border-radius: 3px; transition: width 0.3s; }
+    .progress-count { flex: 0 0 60px; font-size: 10px; color: var(--muted); text-align: right; }
+    .progress-status { font-size: 10px; color: var(--green); padding: 1px 5px; border-radius: 3px; background: rgba(63,185,80,0.12); }
 
     /* Main */
     .main { min-width: 0; }

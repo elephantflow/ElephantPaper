@@ -1,0 +1,36 @@
+{
+  "id": "NfOFbPpYII",
+  "or_id": "NfOFbPpYII",
+  "title": "Non-asymptotic Convergence of Training Transformers for Next-token Prediction",
+  "title_zh": "下一词预测训练Transformer的非渐进收敛性分析",
+  "authors": [
+    "Ruiquan Huang",
+    "Yingbin Liang",
+    "Jing Yang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Transformers have achieved extraordinary success in modern machine learning due to their excellent ability to handle sequential data, especially in next-token prediction (NTP) tasks. However, the theoretical understanding of their performance in NTP is limited, with existing studies focusing mainly on asymptotic performance. This paper provides a fine-grained non-asymptotic analysis of the training dynamics of a one-layer transformer consisting of a self-attention module followed by a feed-forward layer. We first characterize the essential structural properties of training datasets for NTP using a mathematical framework based on partial orders. \nThen, we design a two-stage training algorithm, where the pre-processing stage for training the feed-forward layer and the main stage for training the attention layer exhibit fast convergence performance. Specifically, both layers converge sub-linearly to the direction of their corresponding max-margin solutions. We also show that the cross-entropy loss enjoys a linear convergence rate. Furthermore, we show that the trained transformer presents non-trivial prediction ability with dataset shift, which sheds light on the remarkable generalization performance of transformers. Our analysis technique involves the development of novel properties on the attention gradient and further in-depth analysis of how these properties contribute to the convergence of the training process. Our experiments further validate our theoretical findings.",
+  "abstract_zh": "Transformer因其出色的序列数据处理能力在现代机器学习中取得了非凡成功，特别是在下一词预测（NTP）任务中。然而，对其在NTP任务中性能的理论理解仍有限，现有研究主要关注渐进性能。本文针对由一个自注意力模块后接一个前馈层构成的单层Transformer的训练动态进行了细粒度的非渐进分析。我们首先使用基于偏序的数学框架描述了NTP训练数据集的关键结构特性。接着，我们设计了一个两阶段训练算法，其中预处理阶段用于训练前馈层，主阶段用于训练注意力层，均展现出快速收敛性能。具体而言，这两层均以次线性速率收敛到其对应的最大间隔解方向。我们还展示了交叉熵损失具有线性收敛速率。此外，我们证明了训练后的Transformer在数据集偏移下展现出非平凡的预测能力，这有助于理解Transformer卓越的泛化性能。我们的分析技术涉及开发注意力梯度的新性质，并进一步深入分析这些性质如何贡献于训练过程的收敛。实验进一步验证了我们的理论发现。",
+  "tldr": "We show fast convergence rate of training transformers for next-token prediction.",
+  "keywords": [
+    "Transformer",
+    "Convergence Rate",
+    "Next-token Prediction",
+    "Self-attention",
+    "Implicit Bias"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=NfOFbPpYII",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/178f840237f55323dbf16fecc093375a7c25bc65.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show fast convergence rate of training transformers for next-token prediction."
+  },
+  "collected_at": "2026-03-07T09:01:10.535Z"
+}
