@@ -1,0 +1,37 @@
+{
+  "id": "Pox8jNQOo5",
+  "or_id": "Pox8jNQOo5",
+  "title": "Second-order forward-mode optimization of recurrent neural networks for neuroscience",
+  "title_zh": "",
+  "authors": [
+    "Youjing Yu",
+    "Rui Xia",
+    "Qingxi Ma",
+    "Máté Lengyel",
+    "Guillaume Hennequin"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "A common source of anxiety for the computational neuroscience student is the question “will my recurrent neural network (RNN) model finally learn that task?”. Unlike in machine learning where any architectural modification of an RNN (e.g. GRU or LSTM) is acceptable if it speeds up training, the RNN models trained as _models of brain dynamics_ are subject to plausibility constraints that fundamentally exclude the usual machine learning hacks. The “vanilla” RNNs commonly used in computational neuroscience find themselves plagued by ill-conditioned loss surfaces that complicate training and significantly hinder our capacity to investigate the brain dynamics underlying complex tasks. Moreover, some tasks may require very long time horizons which backpropagation cannot handle given typical GPU memory limits. Here, we develop SOFO, a second-order optimizer that efficiently navigates loss surfaces whilst _not_ requiring backpropagation. By relying instead on easily parallelized batched forward-mode differentiation, SOFO enjoys constant memory cost in time. Morever, unlike most second-order optimizers which involve inherently sequential operations, SOFO's effective use of GPU parallelism yields a per-iteration wallclock time essentially on par with first-order gradient-based optimizers. We show vastly superior performance compared to Adam on a number of RNN tasks, including a difficult double-reaching motor task and the learning of an adaptive Kalman filter algorithm trained over a long horizon.",
+  "abstract_zh": "",
+  "tldr": "A second-order, memory-efficient optimization method for RNNs that does not require backpropagation, runs in wallclock time comparable to first-order methods, and successfully trains RNNs where Adam fails",
+  "keywords": [
+    "computational neuroscience",
+    "recurrent neural networks",
+    "motor control"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Pox8jNQOo5",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/62423d9a8c2b8341d8bce0d3c16d6bae50fd2ed1.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "A second-order, memory-efficient optimization method for RNNs that does not require backpropagation, runs in wallclock time comparable to first-order methods, and successfully trains RNNs where Adam fails"
+  },
+  "collected_at": "2026-03-07T19:00:31.357Z"
+}

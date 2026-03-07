@@ -1,0 +1,34 @@
+{
+  "id": "aNHEqFMS0N",
+  "or_id": "aNHEqFMS0N",
+  "title": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+  "title_zh": "",
+  "authors": [
+    "Tong Wu",
+    "Yanpeng Zhao",
+    "Zilong Zheng"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recently, many methods have been developed to extend the context length of pre-trained large language models (LLMs), but they often require fine-tuning at the target length ($\\gg4K$) and struggle to effectively utilize information from the middle part of the context. To address these issues, we propose $\\textbf{C}$ontinuity-$\\textbf{R}$elativity ind$\\textbf{E}$xing with g$\\textbf{A}$ussian $\\textbf{M}$iddle ($\\texttt{CREAM}$), which interpolates positional encodings by manipulating position indices. Apart from being simple, $\\texttt{CREAM}$ is training-efficient: it only requires fine-tuning at the pre-trained context window (e.g., Llama 2-4K) and can extend LLMs to a much longer target context length (e.g., 256K). To ensure that the model focuses more on the information in the middle, we introduce a truncated Gaussian to encourage sampling from the middle part of the context during fine-tuning, thus alleviating the ''Lost-in-the-Middle'' problem faced by long-context LLMs. Experimental results show that $\\texttt{CREAM}$ successfully extends LLMs to the target length for both Base and Chat versions of $\\texttt{Llama2-7B}$ with ``Never Miss A Beat''. Our code is publicly available at https://github.com/bigai-nlco/cream.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Large Language Model",
+    "Long Context",
+    "Position Encoding"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=aNHEqFMS0N",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/da63a28ed54a1daed1a88368ff2bf20715fb10bd.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Recently, many methods have been developed to extend the context length of pre-trained large language models (LLMs), but they often require fine-tuning at the target length ($\\gg4K$) and struggle to effectively utilize information from the middle part of the context. To address these issues, we prop"
+  },
+  "collected_at": "2026-03-07T19:00:31.358Z"
+}

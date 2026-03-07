@@ -1,0 +1,38 @@
+{
+  "id": "isZ8XRe3De",
+  "or_id": "isZ8XRe3De",
+  "title": "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+  "title_zh": "",
+  "authors": [
+    "Xiaoyu Kong",
+    "Jiancan Wu",
+    "An Zhang",
+    "Leheng Sheng",
+    "Hui Lin",
+    "Xiang Wang",
+    "Xiangnan He"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Sequential recommendation systems predict the next interaction item based on users' past interactions, aligning recommendations with individual preferences. Leveraging the strengths of Large Language Models (LLMs) in knowledge comprehension and reasoning, recent approaches  are eager to apply LLMs to sequential recommendation. A common  paradigm is converting user behavior sequences into instruction data, and fine-tuning the LLM with parameter-efficient fine-tuning (PEFT) methods like Low-Rank Adaption (LoRA). However, the uniform application of LoRA across diverse user behaviors is insufficient to capture individual variability, resulting in negative transfer between disparate sequences.\nTo address these challenges, we propose Instance-wise LoRA (iLoRA). We innovatively treat the sequential recommendation task as a form of multi-task learning, integrating LoRA with the Mixture of Experts (MoE) framework. This approach encourages different experts to capture various aspects of user behavior. Additionally, we introduce a sequence representation guided gate function that generates customized expert participation weights for each user sequence, which allows dynamic parameter adjustment for instance-wise recommendations. \nIn sequential recommendation, iLoRA achieves an average relative improvement of 11.4\\% over basic LoRA in the hit ratio metric, with less than a 1\\% relative increase in trainable parameters.\nExtensive experiments on three benchmark datasets demonstrate the effectiveness of iLoRA, highlighting its superior performance compared to existing methods in mitigating negative transfer and improving recommendation accuracy.\nOur data and code are available at https://github.com/AkaliKong/iLoRA.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Sequential Recommendation",
+    "Large Language Models",
+    "Mixture of Experts"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=isZ8XRe3De",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/bec132faac8d05feaf2e7a2a3dc5627ab24bcdb9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Sequential recommendation systems predict the next interaction item based on users' past interactions, aligning recommendations with individual preferences. Leveraging the strengths of Large Language Models (LLMs) in knowledge comprehension and reasoning, recent approaches  are eager to apply LLMs t"
+  },
+  "collected_at": "2026-03-07T19:00:31.360Z"
+}

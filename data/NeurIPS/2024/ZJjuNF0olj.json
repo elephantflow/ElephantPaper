@@ -1,0 +1,36 @@
+{
+  "id": "ZJjuNF0olj",
+  "or_id": "ZJjuNF0olj",
+  "title": "DeTrack: In-model Latent Denoising Learning for Visual Object Tracking",
+  "title_zh": "",
+  "authors": [
+    "Xinyu Zhou",
+    "Jinglun Li",
+    "Lingyi Hong",
+    "Kaixun Jiang",
+    "Pinxue Guo",
+    "Weifeng Ge",
+    "Wenqiang Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Previous visual object tracking methods employ image-feature regression models or coordinate autoregression models for bounding box prediction. Image-feature regression methods heavily depend on matching results and do not utilize positional prior, while the autoregressive approach can only be trained using bounding boxes available in the training set, potentially resulting in suboptimal performance during testing with unseen data. Inspired by the diffusion model, denoising learning enhances the model’s robustness to unseen data. Therefore, We introduce noise to bounding boxes, generating noisy boxes for training, thus enhancing model robustness on testing data. We propose a new paradigm to formulate the visual object tracking problem as a denoising learning process. However, tracking algorithms are usually asked to run in real-time, directly applying the diffusion model to object tracking would severely impair tracking speed. Therefore, we decompose the denoising learning process into every denoising block within a model, not by running the model multiple times, and thus we summarize the proposed paradigm as an in-model latent denoising learning process. Specifically, we propose a denoising Vision Transformer (ViT), which is composed of multiple denoising blocks. In the denoising block, template and search embeddings are projected into every denoising block as conditions. A denoising block is responsible for removing the noise in a predicted bounding box, and multiple stacked denoising blocks cooperate to accomplish the whole denoising process. Subsequently, we\nutilize image features and trajectory information to refine the denoised bounding box. Besides, we also utilize trajectory memory and visual memory to improve tracking stability. Experimental results validate the effectiveness of our approach, achieving competitive performance on several challenging datasets. The proposed in-model latent denoising tracker achieve real-time speed, rendering denoising learning",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "visual object tracking; denoising learning;in-model latent;"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ZJjuNF0olj",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7ac050bd4d1ee2a8b42e83083321dd7bb0e8cac7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Previous visual object tracking methods employ image-feature regression models or coordinate autoregression models for bounding box prediction. Image-feature regression methods heavily depend on matching results and do not utilize positional prior, while the autoregressive approach can only be train"
+  },
+  "collected_at": "2026-03-07T19:00:31.359Z"
+}
