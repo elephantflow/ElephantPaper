@@ -1,0 +1,35 @@
+{
+  "id": "zApFYcLg6K",
+  "or_id": "zApFYcLg6K",
+  "title": "On Differentially Private U Statistics",
+  "title_zh": "",
+  "authors": [
+    "Kamalika Chaudhuri",
+    "Po-Ling Loh",
+    "Shourya Pandey",
+    "Purnamrita Sarkar"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We consider the problem of privately estimating a parameter $\\mathbb{E}[h(X_1,\\dots,X_k)]$, where $X_1$, $X_2$, $\\dots$, $X_k$ are i.i.d. data from some distribution and $h$ is a permutation-invariant function. Without privacy constraints, the standard estimators for this task are U-statistics, which commonly arise in a wide range of problems, including nonparametric signed rank tests, symmetry testing, uniformity testing, and subgraph counts in random networks, and are the unique minimum variance unbiased estimators under mild conditions. Despite the recent outpouring of interest in private mean estimation, privatizing U-statistics has received little attention. While existing private mean estimation algorithms can be applied in a black-box manner to obtain confidence intervals, we show that they can lead to suboptimal private error, e.g., constant-factor inflation in the leading term, or even $\\Theta(1/n)$ rather than $O(1/n^2)$ in degenerate settings. To remedy this, we propose a new thresholding-based approach that reweights different subsets of the data using _local Hájek projections_. This leads to nearly optimal private error for non-degenerate U-statistics and a strong indication of near-optimality for degenerate U-statistics.",
+  "abstract_zh": "",
+  "tldr": "We devise efficient algorithms for differentially private U-statistics in the Central DP model, achieving nearly optimal error rates in various settings. Previously, this was studied in the local DP model and with U-statistics of degree 2.",
+  "keywords": [
+    "Differential Privacy",
+    "Statistics",
+    "Mean Estimation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=zApFYcLg6K",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a34864164d8a57ea128abf709b53e25e642b7a1b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We devise efficient algorithms for differentially private U-statistics in the Central DP model, achieving nearly optimal error rates in various settings. Previously, this was studied in the local DP model and with U-statistics of degree 2."
+  },
+  "collected_at": "2026-03-07T22:22:02.060Z"
+}

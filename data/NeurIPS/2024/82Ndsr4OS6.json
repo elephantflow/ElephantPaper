@@ -1,0 +1,35 @@
+{
+  "id": "82Ndsr4OS6",
+  "or_id": "82Ndsr4OS6",
+  "title": "Adversarially Trained Weighted Actor-Critic for Safe Offline Reinforcement Learning",
+  "title_zh": "",
+  "authors": [
+    "Honghao Wei",
+    "Xiyue Peng",
+    "Arnob Ghosh",
+    "Xin Liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We propose WSAC (Weighted Safe Actor-Critic), a novel algorithm for Safe Offline Reinforcement Learning (RL) under functional approximation, which can robustly optimize policies to improve upon an arbitrary reference policy with limited data coverage. WSAC is designed as a two-player Stackelberg game to optimize a refined objective function. The actor optimizes the policy against two adversarially trained value critics with small importance-weighted Bellman errors, which focus on scenarios where the actor's performance is inferior to the reference policy. In theory, we demonstrate that when the actor employs a no-regret optimization oracle, WSAC achieves a number of guarantees: $(i)$ For the first time in the safe offline  RL setting, we establish that WSAC can produce a policy that outperforms {\\bf any} reference policy while maintaining the same level of safety, which is critical to designing a safe algorithm for offline RL. $(ii)$ WSAC achieves the optimal statistical convergence rate of $1/\\sqrt{N}$ to the reference policy, where $N$ is the size of the offline dataset. $(iii)$ We theoretically show that WSAC guarantees a safe policy improvement across a broad range of hyperparameters that control the degree of pessimism, indicating its practical robustness. Additionally, we offer a practical version of WSAC and compare it with existing state-of-the-art safe offline RL algorithms in several continuous control environments. WSAC outperforms all baselines across a range of tasks, supporting the theoretical results.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel algorithm for Safe Offline RL under functional approximation; our algorithm achieves robust safe policy improvement (first such result) using only single policy concentrability assumption.",
+  "keywords": [
+    "RL",
+    "safe-RL",
+    "Offline RL"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=82Ndsr4OS6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5ba7a69199856eabfdb32d4ab0d297eebada39bc.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel algorithm for Safe Offline RL under functional approximation; our algorithm achieves robust safe policy improvement (first such result) using only single policy concentrability assumption."
+  },
+  "collected_at": "2026-03-07T22:22:02.060Z"
+}
