@@ -1,0 +1,35 @@
+{
+  "id": "leqD3bJ4Ly",
+  "or_id": "leqD3bJ4Ly",
+  "title": "OPEL: Optimal Transport Guided ProcedurE Learning",
+  "title_zh": "",
+  "authors": [
+    "Sayeed Shafayet Chowdhury",
+    "Soumyadeep Chandra",
+    "Kaushik Roy"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Procedure learning refers to the task of identifying the key-steps and determining their logical order, given several videos of the same task. For both third-person and first-person (egocentric) videos, state-of-the-art (SOTA) methods aim at finding correspondences across videos in time to accomplish procedure learning. However, to establish temporal relationships within the sequences, these methods often rely on frame-to-frame mapping, or assume monotonic alignment of video pairs, leading to sub-optimal results. To this end, we propose to treat the video frames as  samples from an unknown distribution, enabling us to frame their distance calculation as an optimal transport (OT) problem. Notably, the OT-based formulation allows us to relax the previously mentioned assumptions. To further improve performance, we enhance the OT formulation by introducing two regularization terms. The first,  inverse difference moment regularization, promotes transportation between instances that are homogeneous in the embedding space as well as being temporally closer. The second, regularization based on the KL-divergence with an exponentially decaying prior smooths the alignment while enforcing conformity to the optimality (alignment obtained from vanilla OT optimization) and temporal priors. The resultant optimal transport guided procedure learning framework (`OPEL') significantly outperforms the SOTA on benchmark datasets. Specifically, we achieve 22.4\\% (IoU) and 26.9\\% (F1) average improvement compared to the current SOTA on large scale egocentric benchmark, EgoProceL. Furthermore, for the third person benchmarks (ProCeL and CrossTask), the proposed approach obtains 46.2\\% (F1) average enhancement over SOTA.",
+  "abstract_zh": "",
+  "tldr": "An unsupervised optimal transport guided method for procedure learning, which achieves state-of-the-art results",
+  "keywords": [
+    "Procedure learning",
+    "Egocentric vision",
+    "EgoProceL",
+    "Optimal Transport"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=leqD3bJ4Ly",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5806637acc87823d00dc8ff1945b86c1c0462612.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "An unsupervised optimal transport guided method for procedure learning, which achieves state-of-the-art results"
+  },
+  "collected_at": "2026-03-07T18:40:30.647Z"
+}

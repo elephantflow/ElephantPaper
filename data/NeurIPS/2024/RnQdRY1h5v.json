@@ -1,0 +1,41 @@
+{
+  "id": "RnQdRY1h5v",
+  "or_id": "RnQdRY1h5v",
+  "title": "B'MOJO: Hybrid State Space Realizations of Foundation Models with Eidetic and Fading Memory",
+  "title_zh": "",
+  "authors": [
+    "Luca Zancato",
+    "Arjun Seshadri",
+    "Yonatan Dukler",
+    "Aditya Golatkar",
+    "Yantao Shen",
+    "Benjamin Bowman",
+    "Matthew Trager",
+    "Alessandro Achille",
+    "Stefano Soatto"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We describe a family of architectures to support transductive inference by allowing memory to grow to a finite but a-priori unknown bound while making efficient use of finite resources for inference. Current architectures use such resources to represent data either eidetically over a finite span ('context' in Transformers), or fading over an infinite span (in State Space Models, or SSMs). Recent hybrid architectures have combined eidetic and fading memory, but with limitations that do not allow the designer or the learning process to seamlessly modulate the two, nor to extend the eidetic memory span. We leverage ideas from Stochastic Realization Theory to develop a class of models called B'MOJO to seamlessly combine eidetic and fading memory within an elementary composable module. The overall architecture can be used to implement models that can access short-term eidetic memory 'in-context,' permanent structural memory 'in-weights,' fading memory 'in-state,' and long-term eidetic memory 'in-storage' by natively incorporating retrieval from an asynchronously updated memory. We show that Transformers, existing SSMs such as Mamba, and hybrid architectures such as Jamba are special cases of B'MOJO and describe a basic implementation that can be stacked and scaled efficiently in hardware. We test B'MOJO on transductive inference tasks, such as associative recall, where it outperforms existing SSMs and Hybrid models; as a baseline, we test ordinary language modeling where B'MOJO achieves perplexity comparable to similarly-sized Transformers and SSMs up to 1.4B parameters, while being up to 10% faster to train. Finally, we test whether models trained inductively on a-priori bounded sequences (up to 8K tokens) can still perform transductive inference on sequences many-fold longer. B'MOJO's ability to modulate eidetic and fading memory results in better inference on longer sequences tested up to 32K tokens, four-fold the length of the longest sequences seen during training.",
+  "abstract_zh": "",
+  "tldr": "We introduce a novel hybrid architecture (State Space Models + Attention)  that efficiently processes past information using both fading and eidetic memory.",
+  "keywords": [
+    "Sequence Models",
+    "Language Models",
+    "State Space Models",
+    "Hybrid Architectures"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=RnQdRY1h5v",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7e6d66c19548b38081f7dab7696bb96a6f9916eb.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce a novel hybrid architecture (State Space Models + Attention)  that efficiently processes past information using both fading and eidetic memory."
+  },
+  "collected_at": "2026-03-07T18:40:30.648Z"
+}

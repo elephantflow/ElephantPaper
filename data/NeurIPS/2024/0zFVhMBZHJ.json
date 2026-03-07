@@ -1,0 +1,44 @@
+{
+  "id": "0zFVhMBZHJ",
+  "or_id": "0zFVhMBZHJ",
+  "title": "Mixture of Tokens: Continuous MoE through Cross-Example Aggregation",
+  "title_zh": "",
+  "authors": [
+    "Szymon Antoniak",
+    "Michał Krutul",
+    "Maciej Pióro",
+    "Jakub Krajewski",
+    "Jan Ludziejewski",
+    "Kamil Ciebiera",
+    "Krystian Król",
+    "Tomasz Odrzygóźdź",
+    "Marek Cygan",
+    "Sebastian Jaszczur"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Mixture of Experts (MoE) models based on Transformer architecture are pushing the boundaries of language and vision tasks. The allure of these models lies in their ability to substantially increase the parameter count without a corresponding increase in FLOPs. Most widely adopted MoE models are discontinuous with respect to their parameters - often referred to as *sparse*. At the same time, existing continuous MoE designs either lag behind their sparse counterparts or are incompatible with autoregressive decoding. Motivated by the observation that the adaptation of fully continuous methods has been an overarching trend in Deep Learning, we develop Mixture of Tokens (MoT), a simple, continuous architecture that is capable of scaling the number of parameters similarly to sparse MoE models. Unlike conventional methods, MoT assigns mixtures of tokens from different examples to each expert. This architecture is fully compatible with autoregressive training and generation. Our best models not only achieve a 3x increase in training speed over dense Transformer models in language pretraining but also match the performance of state-of-the-art MoE architectures. Additionally, a close connection between MoT and MoE is demonstrated through a novel technique we call *transition tuning*.",
+  "abstract_zh": "",
+  "tldr": "Introducing Mixture of Tokens, a fully-differentiable architecture retaining scalability of sparse MoE in language modeling.",
+  "keywords": [
+    "LLM",
+    "Mixture of Experts",
+    "MoE",
+    "conditional computation",
+    "fully-differentiable",
+    "language modeling"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=0zFVhMBZHJ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/92695ca7faf45a3e3436cc7eefd480ef7c06d0d3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Introducing Mixture of Tokens, a fully-differentiable architecture retaining scalability of sparse MoE in language modeling."
+  },
+  "collected_at": "2026-03-07T18:40:30.648Z"
+}
