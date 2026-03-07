@@ -1,0 +1,34 @@
+{
+  "id": "uM3rQ14iex",
+  "or_id": "uM3rQ14iex",
+  "title": "Partial Structure Discovery is Sufficient for No-regret Learning in Causal Bandits",
+  "title_zh": "部分结构发现足以实现因果赌博机中的无后悔学习",
+  "authors": [
+    "Muhammad Qasim Elahi",
+    "Mahsa Ghasemi",
+    "Murat Kocaoglu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Causal knowledge about the relationships among decision variables and a reward variable in a bandit setting can accelerate the learning of an optimal decision. Current works often assume the causal graph is known, which may not always be available a priori. Motivated by this challenge, we focus on the causal bandit problem in scenarios where the underlying causal graph is unknown and may include latent confounders. While intervention on the parents of the reward node is optimal in the absence of latent confounders, this is not necessarily the case in general. Instead, one must consider a set of possibly optimal arms/interventions, each being a special subset of the ancestors of the reward node, making causal discovery beyond the parents of the reward node essential. For regret minimization, we identify that discovering the full causal structure is unnecessary; however, no existing work provides the necessary and sufficient components of the causal graph. We formally characterize the set of necessary and sufficient latent confounders one needs to detect or learn to ensure that all possibly optimal arms are identified correctly. We also propose a randomized algorithm for learning the causal graph with a limited number of samples, providing a sample complexity guarantee for any desired confidence level. In the causal bandit setup, we propose a two-stage approach. In the first stage, we learn the induced subgraph on ancestors of the reward, along with a necessary and sufficient subset of latent confounders, to construct the set of possibly optimal arms. We show that for our proposed algorithm, the number of intervention samples required to learn the set of possibly optimal arms scales polynomially with respect to the number of nodes. The second phase involves the application of a standard bandit algorithm, such as the UCB algorithm. We also establish a regret bound for our two-phase approach, which is sublinear in the number of rounds.",
+  "abstract_zh": "关于赌博机设置中决策变量与奖励变量之间关系的因果知识可以加速最优决策的学习。现有研究通常假设因果图已知，但这并非总是先验可得。受此挑战驱动，我们关注底层因果图未知且可能包含潜伏混杂因素的因果赌博机问题。虽然在无潜伏混杂因素时对奖励节点的父节点进行干预是最优的，但一般情况下并非如此。相反，必须考虑一组可能最优的臂/干预，每个臂都是奖励节点祖先节点的特定子集，这使得超越奖励节点父节点的因果发现至关重要。针对后悔最小化",
+  "tldr": "We propose a two-phase algorithm for causal bandits with unknown causal graphs: Phase one learns the subgraph on reward's ancestors to identify all possibly optimal arms, followed by a standard bandit algorithm with analysis of the cumulative regret.",
+  "keywords": [
+    "Causal Bandits",
+    "No-regret Learning",
+    "Causal Discovery"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=uM3rQ14iex",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d0114b817255971d1cf775616aeaace91ed92a7b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a two-phase algorithm for causal bandits with unknown causal graphs: Phase one learns the subgraph on reward's ancestors to identify all possibly optimal arms, followed by a standard bandit algorithm with analysis of the cumulative regret."
+  },
+  "collected_at": "2026-03-07T12:40:37.958Z"
+}

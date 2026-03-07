@@ -1,0 +1,34 @@
+{
+  "id": "RZk2rxJT55",
+  "or_id": "RZk2rxJT55",
+  "title": "Hamiltonian Mechanics of Feature Learning: Bottleneck Structure in Leaky ResNets",
+  "title_zh": "",
+  "authors": [
+    "Arthur Jacot",
+    "Alexandre Kaiser"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "We study Leaky ResNets, which interpolate between ResNets ($\\tilde{L}=0$)\nand Fully-Connected nets ($\\tilde{L}\\to\\infty$) depending on an 'effective\ndepth' hyper-parameter $\\tilde{L}$. In the infinite depth limit,\nwe study 'representation geodesics' $A_{p}$: continuous paths in\nrepresentation space (similar to NeuralODEs) from input $p=0$ to\noutput $p=1$ that minimize the parameter norm of the network. We\ngive a Lagrangian and Hamiltonian reformulation, which highlight the\nimportance of two terms: a kinetic energy which favors small layer\nderivatives $\\partial_{p}A_{p}$ and a potential energy that favors\nlow-dimensional representations, as measured by the 'Cost of Identity'.\nThe balance between these two forces offers an intuitive understanding\nof feature learning in ResNets. We leverage this intuition to explain\nthe emergence of a bottleneck structure, as observed in previous work:\nfor large $\\tilde{L}$ the potential energy dominates and leads to\na separation of timescales, where the representation jumps rapidly\nfrom the high dimensional inputs to a low-dimensional representation,\nmove slowly inside the space of low-dimensional representations, before\njumping back to the potentially high-dimensional outputs. Inspired\nby this phenomenon, we train with an adaptive layer step-size\nto adapt to the separation of timescales.",
+  "abstract_zh": "",
+  "tldr": "The path of representations from input to output, optimizes a kinetic energy that favors `short' paths, and a potential energy that favors low dimensional representations.",
+  "keywords": [
+    "Feature Learning",
+    "Bottleneck Structure",
+    "NeuralODE",
+    "Hamiltonian mechanics"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=RZk2rxJT55",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5e3a80fd54dbdda8365fe488e095fc0a33beec82.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The path of representations from input to output, optimizes a kinetic energy that favors `short' paths, and a potential energy that favors low dimensional representations."
+  },
+  "collected_at": "2026-03-07T12:40:37.959Z"
+}

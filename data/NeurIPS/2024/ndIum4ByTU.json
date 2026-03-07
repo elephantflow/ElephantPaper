@@ -1,0 +1,40 @@
+{
+  "id": "ndIum4ByTU",
+  "or_id": "ndIum4ByTU",
+  "title": "Meta Flow Matching: Integrating Vector Fields on the Wasserstein Manifold",
+  "title_zh": "",
+  "authors": [
+    "Xi Zhang",
+    "Lazar Atanackovic",
+    "Brandon Amos",
+    "Mathieu Blanchette",
+    "Leo J Lee",
+    "Yoshua Bengio",
+    "Alexander Tong",
+    "Kirill Neklyudov"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Numerous biological and physical processes can be modeled as systems of interacting samples evolving continuously over time, e.g. the dynamics of communicating cells or physical particles. Flow-based models allow for learning these dynamics at the population level --- they model the evolution of the entire distribution of samples. However, current flow-based models are limited to a single initial population and a set of predefined conditions which describe different dynamics. We argue that multiple processes in natural sciences have to be represented as vector fields on the Wasserstein manifold of probability densities. That is, the change of the population at any moment in time depends on the population itself due to the interactions between samples. In particular, this is crucial for personalized medicine where the development of diseases and their treatments depend on the microenvironment of cells specific to each patient. We propose _Meta Flow Matching_ (MFM), a practical approach to integrating along these vector fields on the Wasserstein manifold by amortizing the flow model over the initial populations. Namely, we embed the population of samples using a Graph Neural Network (GNN) and use these embeddings to train a _Flow Matching_ model. This gives Meta Flow Matching the ability to generalize over the initial distributions unlike previously proposed methods. Finally, we demonstrate the ability of MFM to improve prediction of individual treatment responses on a large scale multi-patient single-cell drug screen dataset.",
+  "abstract_zh": "",
+  "tldr": "We propose a new framework, Meta Flow Matching, for integrating vector fields on the Wasserstein manifold of probability densities and show the use case to improve prediction of patient specific treatment responses.",
+  "keywords": [
+    "Flow matching",
+    "Diffusion",
+    "Dynamics",
+    "Cell dynamics"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ndIum4ByTU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1d5d4fa67ddbd07d08439d1c3d6d2ed240703109.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a new framework, Meta Flow Matching, for integrating vector fields on the Wasserstein manifold of probability densities and show the use case to improve prediction of patient specific treatment responses."
+  },
+  "collected_at": "2026-03-07T12:40:37.958Z"
+}

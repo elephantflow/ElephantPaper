@@ -1,0 +1,41 @@
+{
+  "id": "wH36UKML4x",
+  "or_id": "wH36UKML4x",
+  "title": "Trained Models Tell Us How to Make Them Robust to Spurious Correlation without Group Annotation",
+  "title_zh": "",
+  "authors": [
+    "Mahdi Ghaznavi",
+    "Hesam Asadollahzadeh",
+    "Fahimeh Hosseini Noohdani",
+    "Soroush Vafaie Tabar",
+    "Hosein Hasani",
+    "Taha Akbari Alvanagh",
+    "Mohammad Hossein Rohban",
+    "Mahdieh Soleymani Baghshah"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Classifiers trained with Empirical Risk Minimization (ERM) tend to rely on attributes that have high spurious correlation with the target. This can degrade the performance on underrepresented (or 'minority') groups that lack these attributes, posing significant challenges for both out-of-distribution generalization and fairness objectives. Many studies aim to improve robustness to spurious correlation, yet nearly all require group annotation for training and/or model selection. This constrains their applicability in situations where the nature of the spurious correlation is not known, or when group labels for certain spurious attributes are either insufficient or completely absent. To meet the demand for effectively enhancing the model robustness under minimal assumptions about group annotation, we propose Environment-based Validation and Loss-based Sampling (EVaLS). It uses the losses from a trained model to construct a balanced dataset of high-loss and low-loss samples in which the training data group imbalance is mitigated. This results in a significant robustness to group shifts when equipped with a simple mechanism of last layer retraining. Furthermore, by utilizing environment inference methods for creating diverse environments with correlation shifts, EVaLS can potentially eliminate the need for group annotation in the validation data. In such a context, the worst environment accuracy acts as a reliable surrogate throughout the retraining process for tuning hyperparameters and finding a model that performs well across diverse group shifts. EVaLS effectively achieves group robustness, showing that group annotation is not necessary even for validation. It is a fast, straightforward, and effective approach that reaches near-optimal worst group accuracy without needing group annotations, marking a new chapter in the robustness of trained models against spurious correlation.",
+  "abstract_zh": "",
+  "tldr": "We provide a method for making trained models robust to spurious correlation with zero group annotation using environment-based validation and loss-based sampling.",
+  "keywords": [
+    "Spurious Correlation",
+    "Group Robustness",
+    "Zero Group Annotation",
+    "Distribution Shift",
+    "Out-of-Distribution Generalization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=wH36UKML4x",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/128fdcdc1fc3e96ce8bd902eb45b7eeb87c64f61.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We provide a method for making trained models robust to spurious correlation with zero group annotation using environment-based validation and loss-based sampling."
+  },
+  "collected_at": "2026-03-07T12:20:45.357Z"
+}

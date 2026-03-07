@@ -1,0 +1,39 @@
+{
+  "id": "Y5DPSJzpra",
+  "or_id": "Y5DPSJzpra",
+  "title": "Harnessing small projectors and multiple views for efficient vision pretraining",
+  "title_zh": "利用小型投影器与多视角进行高效的视觉预训练",
+  "authors": [
+    "Arna Ghosh",
+    "Kumar Krishna Agrawal",
+    "Shagun Sodhani",
+    "Adam Oberman",
+    "Blake Aaron Richards"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recent progress in self-supervised (SSL) visual representation learning has led to the development of several different proposed frameworks that rely on augmentations of images but use different loss functions. \nHowever, there are few theoretically grounded principles to guide practice, so practical implementation of each SSL framework requires several heuristics to achieve competitive performance.\nIn this work, we build on recent analytical results to design practical recommendations for competitive and efficient SSL that are grounded in theory. \nSpecifically, recent theory tells us that existing SSL frameworks are actually minimizing the same idealized loss, which is to learn features that best match the data similarity kernel defined by the augmentations used.\nWe show how this idealized loss can be reformulated to a functionally equivalent loss that is more efficient to compute.\nWe study the implicit bias of using gradient descent to minimize our reformulated loss function, and find that using a stronger orthogonalization constraint with a reduced projector dimensionality should yield good representations.\nFurthermore, the theory tells us that approximating the reformulated loss should be improved by increasing the number of augmentations, and as such using multiple augmentations should lead to improved convergence.\nWe empirically verify our findings on CIFAR, STL and Imagenet datasets, wherein we demonstrate an improved linear readout performance when training a ResNet-backbone using our theoretically grounded recommendations.  \nRemarkably, we also demonstrate that by leveraging these insights, we can reduce the pretraining dataset size by up to 2$\\times$ while maintaining downstream accuracy simply by using more data augmentations. \nTaken together, our work provides theoretically grounded recommendations that can be used to improve SSL convergence and efficiency.",
+  "abstract_zh": "自监督学习在视觉表示学习领域的最新进展催生了多种不同框架，这些框架都依赖于图像增强但使用不同的损失函数。然而，指导实践的基于理论的原则很少，因此每种自监督学习框架的实际实施都需要多种启发式方法才能达到有竞争力的性能。在本工作中，我们基于最近的分析结果设计出有理论基础的实用建议，以实现有竞争力且高效的自监督学习。具体来说，最近的理论告诉我们，现有的自监督学习框架实际上都在最小化相同的理想化损失，即学习最能匹配由所用增强定义的数据相似性核的特征。我们展示了如何将这种理想化损失重新表述为功能等价但计算更高效的损失函数。我们研究了使用梯度下降最小化重新表述的损失函数时的隐式偏差，发现使用更强的正交化约束并结合降低投影器维度应能产生良好的表示。此外，理论告诉我们通过增加增强的数量应该改进对重新表述损失的近似，因此使用多个增强应能改善收敛性。我们在CIFAR、STL和Imagenet数据集上实证验证了我们的发现，展示了在使用基于理论的建议训练ResNet骨干时线性读出性能的改进。值得注意的是，我们还证明通过利用这些洞察，我们可以将预训练数据集大小减少高达2倍，同时仅通过使用更多数据增强来保持下游准确性。综合起来，我们的工作提供了基于理论的建议，可用于改进自监督学习的收敛性和效率。",
+  "tldr": "We characterize the implicit biases imposed by learning dynamics along with architecture and loss function for self-supervised representation learning, leading to practical recommendations for improving its sample and compute efficiency.",
+  "keywords": [
+    "representation learning",
+    "self-supervised learning",
+    "data-augmentation",
+    "learning dynamics",
+    "sample efficient SSL",
+    "compute efficient SSL"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Y5DPSJzpra",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/645ff0d556b851c50effff7b89105b09e64789f0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We characterize the implicit biases imposed by learning dynamics along with architecture and loss function for self-supervised representation learning, leading to practical recommendations for improving its sample and compute efficiency."
+  },
+  "collected_at": "2026-03-07T12:20:45.354Z"
+}

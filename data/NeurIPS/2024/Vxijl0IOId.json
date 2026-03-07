@@ -1,0 +1,33 @@
+{
+  "id": "Vxijl0IOId",
+  "or_id": "Vxijl0IOId",
+  "title": "Learning Generalized Linear Programming Value Functions",
+  "title_zh": "",
+  "authors": [
+    "Tu Anh-Nguyen",
+    "Joey Huchette",
+    "Christian Tjandraatmadja"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "We develop a theoretically-grounded learning method for the Generalized Linear Programming Value Function (GVF), which models the optimal value of a linear programming (LP) problem as its objective and constraint bounds vary. This function plays a fundamental role in algorithmic techniques for large-scale optimization, particularly in decomposition for two-stage mixed-integer linear programs (MILPs). This paper establishes a structural characterization of the GVF that enables it to be modeled as a particular neural network architecture, which we then use to learn the GVF in a way that benefits from three notable properties. First, our method produces a true under-approximation of the value function with respect to the constraint bounds. Second, the model is input-convex in the constraint bounds, which not only matches the structure of the GVF but also enables the trained model to be efficiently optimized over using LP. Finally, our learning method is unsupervised, meaning that training data generation does not require computing LP optimal values, which can be prohibitively expensive at large scales.  We numerically show that our method can approximate the GVF well, even when compared to supervised methods that collect training data by solving an LP for each data point. Furthermore, as an application of our framework, we develop a fast heuristic method for large-scale two-stage MILPs with continuous second-stage variables, via a compact reformulation that can be solved faster than the full model linear relaxation at large scales and orders of magnitude faster than the original model.",
+  "abstract_zh": "",
+  "tldr": "We develop a theoretically-grounded method for learning approximations of Generalized Linear Programming Value Functions, and use it to construct a heuristic for large-scale two-stage Mixed-Integer Linear Programs.",
+  "keywords": [
+    "Linear Programming; Mixed-Integer Programming; Neural Networks; Constrained Optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Vxijl0IOId",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7ef012b4970fced95be8425bc6e03ba6f3a1cc9b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We develop a theoretically-grounded method for learning approximations of Generalized Linear Programming Value Functions, and use it to construct a heuristic for large-scale two-stage Mixed-Integer Linear Programs."
+  },
+  "collected_at": "2026-03-07T12:40:37.958Z"
+}

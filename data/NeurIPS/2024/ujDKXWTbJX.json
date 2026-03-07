@@ -1,0 +1,40 @@
+{
+  "id": "ujDKXWTbJX",
+  "or_id": "ujDKXWTbJX",
+  "title": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+  "title_zh": "",
+  "authors": [
+    "Kun Zhou",
+    "Beichen Zhang",
+    "jiapeng wang",
+    "Zhipeng Chen",
+    "Xin Zhao",
+    "Jing Sha",
+    "Zhichao Sheng",
+    "Shijin Wang",
+    "Ji-Rong Wen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Mathematical reasoning is an important capability of large language models~(LLMs) for real-world applications.\nTo enhance this capability, existing work either collects large-scale math-related texts for pre-training, or relies on stronger LLMs (\\eg GPT-4) to synthesize massive math problems. Both types of work generally lead to large costs in training or synthesis.\nTo reduce the cost, based on open-source available texts, we propose an efficient way that trains a small LLM for math problem synthesis, to efficiently generate sufficient high-quality pre-training data.\nTo achieve it, we create a dataset using GPT-4 to distill its data synthesis capability into the small LLM.\nConcretely, we craft a set of prompts based on human education stages to guide GPT-4, to synthesize problems covering diverse math knowledge and difficulty levels.\nBesides, we adopt the gradient-based influence estimation method to select the most valuable math-related texts.\nThe both are fed into GPT-4 for creating the knowledge distillation dataset to train the small LLM.\nWe leverage it to synthesize 6 million math problems for pre-training our JiuZhang3.0 model. The whole process only needs to invoke GPT-4 API 9.3k times and use 4.6B data for training.\nExperimental results have shown that JiuZhang3.0 achieves state-of-the-art performance on several mathematical reasoning datasets, under both natural language reasoning and tool manipulation settings.\nOur code and data will be publicly released in \\url{https://github.com/RUCAIBox/JiuZhang3.0}.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Large Language Models",
+    "Mathematical Reasoning",
+    "Data Synthesis"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ujDKXWTbJX",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b61328368f8231b0bef39a7ed803d8db25907822.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Mathematical reasoning is an important capability of large language models~(LLMs) for real-world applications.\nTo enhance this capability, existing work either collects large-scale math-related texts for pre-training, or relies on stronger LLMs (\\eg GPT-4) to synthesize massive math problems. Both t"
+  },
+  "collected_at": "2026-03-07T12:40:37.958Z"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "XEbPJUQzs3",
+  "or_id": "XEbPJUQzs3",
+  "title": "Prospective Learning: Learning for a Dynamic Future",
+  "title_zh": "前瞻性学习：面向动态未来的学习",
+  "authors": [
+    "Ashwin De Silva",
+    "Rahul Ramesh",
+    "Rubing Yang",
+    "Siyu Yu",
+    "Joshua T Vogelstein",
+    "Pratik Chaudhari"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In real-world applications, the distribution of the data, and our goals, evolve over time. The prevailing theoretical framework for studying machine learning, namely probably approximately correct (PAC) learning, largely ignores time. As a consequence, existing strategies to address the dynamic nature of data and goals exhibit poor real-world performance. This paper develops a theoretical framework called\n\"Prospective Learning\" that is tailored for situations when the optimal hypothesis changes over time. In PAC learning, empirical risk minimization (ERM) is known to be consistent. We develop a learner called Prospective ERM, which returns a sequence of predictors that  make predictions on future data.  We prove that the risk of prospective ERM converges to the Bayes risk under certain assumptions on the stochastic process  generating the data. Prospective ERM, roughly speaking, incorporates time as an input in addition to the data. We show that standard ERM as done in PAC learning, without incorporating time, can result in failure to learn when distributions are dynamic. Numerical experiments illustrate that prospective ERM can learn synthetic and visual recognition problems constructed from MNIST and CIFAR-10. Code at https://github.com/neurodata/prolearn.",
+  "abstract_zh": "在现实应用中，数据的分布以及我们的目标会随时间演变。研究机器学习的主流理论框架——可能近似正确（PAC）学习，在很大程度上忽略了时间因素。因此，现有应对数据和目标动态性的策略在实际应用中表现不佳。本文开发了名为'前瞻性学习'的理论框架，专门针对最优假设随时间变化的情况。在PAC学习中，经验风险最小化（ERM）已知是一致的。我们开发了称为前瞻性ERM的学习器，它返回一系列对未来数据进行预测的预测器。我们证明在前述假设下，前瞻性ERM的风险收敛到贝叶斯风险",
+  "tldr": "We incorporate time into the PAC framework, demonstrating both theoretically and empirically that time-aware empirical risk minimization outperforms time-agnostic methods for certain problems where the data distribution varies predictably over time.",
+  "keywords": [
+    "Distribution Shifts",
+    "Learning Theory"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=XEbPJUQzs3",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f02b627ad2408802e8462b2baaf7a4d2af4a3768.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We incorporate time into the PAC framework, demonstrating both theoretically and empirically that time-aware empirical risk minimization outperforms time-agnostic methods for certain problems where the data distribution varies predictably over time."
+  },
+  "collected_at": "2026-03-07T12:40:37.956Z"
+}

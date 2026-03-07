@@ -1,0 +1,41 @@
+{
+  "id": "CAdBTYBlOv",
+  "or_id": "CAdBTYBlOv",
+  "title": "Improving Linear System Solvers for Hyperparameter Optimisation in Iterative Gaussian Processes",
+  "title_zh": "",
+  "authors": [
+    "Jihao Andreas Lin",
+    "Shreyas Padhy",
+    "Bruno Kacper Mlodozeniec",
+    "Javier Antoran",
+    "José Miguel Hernández-Lobato"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Scaling hyperparameter optimisation to very large datasets remains an open problem in the Gaussian process community. This paper focuses on iterative methods, which use linear system solvers, like conjugate gradients, alternating projections or stochastic gradient descent, to construct an estimate of the marginal likelihood gradient. We discuss three key improvements which are applicable across solvers: (i) a pathwise gradient estimator, which reduces the required number of solver iterations and amortises the computational cost of making predictions, (ii) warm starting linear system solvers with the solution from the previous step, which leads to faster solver convergence at the cost of negligible bias, (iii) early stopping linear system solvers after a limited computational budget, which synergises with warm starting, allowing solver progress to accumulate over multiple marginal likelihood steps. These techniques provide speed-ups of up to $72\\times$ when solving to tolerance, and decrease the average residual norm by up to $7\\times$ when stopping early.",
+  "abstract_zh": "",
+  "tldr": "We accelerate iterative linear system solvers in the context of marginal likelihood optimisation for Gaussian processes.",
+  "keywords": [
+    "Gaussian process",
+    "marginal likelihood",
+    "iterative linear system solver",
+    "pathwise",
+    "warm start",
+    "conjugate gradient",
+    "alternating projection",
+    "stochastic gradient descent"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=CAdBTYBlOv",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a18f68d36f87215400833052d9832b820167a5f8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We accelerate iterative linear system solvers in the context of marginal likelihood optimisation for Gaussian processes."
+  },
+  "collected_at": "2026-03-07T12:20:45.357Z"
+}

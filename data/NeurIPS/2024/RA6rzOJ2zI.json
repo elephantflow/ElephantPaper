@@ -1,0 +1,38 @@
+{
+  "id": "RA6rzOJ2zI",
+  "or_id": "RA6rzOJ2zI",
+  "title": "Navigating Extremes: Dynamic Sparsity in Large Output Spaces",
+  "title_zh": "",
+  "authors": [
+    "Nasib Ullah",
+    "Erik Schultheis",
+    "Mike Lasby",
+    "Yani Ioannou",
+    "Rohit Babbar"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In recent years, Dynamic Sparse Training (DST) has emerged as an alternative to post-training pruning \nfor generating efficient models. In principle, DST allows for a much more memory efficient training process,\nas it maintains sparsity throughout the entire training run. However, current DST implementations fail to capitalize on this. Because sparse matrix multiplication is much less efficient than dense matrix multiplication on GPUs, most\nimplementations simulate sparsity by masking weights. \nIn this paper, we leverage recent advances in semi-structured sparse training to apply DST in the domain of classification\nwith large output spaces, where memory-efficiency is paramount. With a label space of possibly millions of candidates,\nthe classification layer alone will consume several gigabytes of memory. Switching from a dense to a fixed fan-in \nsparse layer updated with sparse evolutionary training (SET); however, severely hampers training convergence, especially\nat the largest label spaces. We find that the gradients fed back from the classifier into the text encoder make it\nmuch more difficult to learn good input representations, despite using a dense encoder.\nBy employing an intermediate layer or adding an auxiliary training objective, we recover most of the generalisation performance of the dense model. \nOverall, we demonstrate the applicability of DST in a challenging domain, characterized by a highly skewed label distribution, \nthat lies outside of DST's typical benchmark datasets, and enable end-to-end training with millions of labels on commodity hardware.",
+  "abstract_zh": "",
+  "tldr": "Investigates Dynamic Sparse Training for large output spaces. Leveraging semi-structured sparsity, intermediate layers, and auxiliary loss, it enables end-to-end training with millions of labels on commodity hardware with near-dense performance.",
+  "keywords": [
+    "Dynamic sparse training",
+    "extreme classification",
+    "memory efficient training",
+    "large output spaces",
+    "scalable machine learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=RA6rzOJ2zI",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/851a08210a7a383320900314eb5c17aceeb376fe.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Investigates Dynamic Sparse Training for large output spaces. Leveraging semi-structured sparsity, intermediate layers, and auxiliary loss, it enables end-to-end training with millions of labels on commodity hardware with near-dense performance."
+  },
+  "collected_at": "2026-03-07T12:40:37.959Z"
+}

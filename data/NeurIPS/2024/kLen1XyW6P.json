@@ -1,0 +1,40 @@
+{
+  "id": "kLen1XyW6P",
+  "or_id": "kLen1XyW6P",
+  "title": "On the Robustness of Spectral Algorithms for Semirandom Stochastic Block Models",
+  "title_zh": "谱算法在半随机随机块模型中的鲁棒性分析",
+  "authors": [
+    "Aditya Bhaskara",
+    "Agastya Vibhuti Jha",
+    "Michael Kapralov",
+    "Naren Sarayu Manoj",
+    "Davide Mazzali",
+    "Weronika Wrzos-Kaminska"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In a graph bisection problem, we are given a graph $G$ with two equally-sized unlabeled communities, and the goal is to recover the vertices in these communities. A popular heuristic, known as spectral clustering, is to output an estimated community assignment based on the eigenvector corresponding to the second-smallest eigenvalue of the Laplacian of $G$. Spectral algorithms can be shown to provably recover the cluster structure for graphs generated from probabilistic models, such as the Stochastic Block Model (SBM). However, spectral clustering is known to be non-robust to model mis-specification. Techniques based on semidefinite programming have been shown to be more robust, but they incur significant computational overheads. \n\nIn this work, we study the robustness of spectral algorithms against semirandom adversaries. Informally, a semirandom adversary is allowed to ``helpfully'' change the specification of the model in a way that is consistent with the ground-truth solution. Our semirandom adversaries in particular are allowed to add edges inside clusters or increase the probability that an edge appears inside a cluster. Semirandom adversaries are a useful tool to determine the extent to which an algorithm has overfit to statistical assumptions on the input. \n\nOn the positive side, we identify a wide range of semirandom adversaries under which spectral bisection using the _unnormalized_ Laplacian is strongly consistent, i.e., it exactly recovers the planted partitioning. On the negative side, we show that in many of these settings, _normalized_ spectral bisection outputs a partitioning that makes a classification mistake on a constant fraction of the vertices. Finally, we demonstrate numerical experiments that complement our theoretical findings.",
+  "abstract_zh": "在图的二分问题中，给定一个包含两个相同大小未标记社区的图$G$，目标是恢复这些社区中的顶点。一种常用的启发式方法称为谱聚类，它基于$G$的拉普拉斯矩阵第二小特征值对应的特征向量输出估计的社区分配。谱算法可以被证明能确定性地恢复由概率模型生成的图的聚类结构，如随机块模型（SBM）。然而，谱聚类已知对模型设定误差不具鲁棒性。基于半定规划的技术已被证明更为鲁棒，但带来显著的计算开销。在本工作中，我们研究谱算法在半随机随机块模型中的鲁棒性",
+  "tldr": "We investigate the robustness of spectral clustering algorithms against various semirandom adversaries.",
+  "keywords": [
+    "stochastic block model",
+    "clustering",
+    "spectral algorithms",
+    "random matrices",
+    "semirandom model",
+    "monotone adversary"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=kLen1XyW6P",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5a9d1312a2385c283f86a5a81131f54ed15f0605.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We investigate the robustness of spectral clustering algorithms against various semirandom adversaries."
+  },
+  "collected_at": "2026-03-07T12:40:37.957Z"
+}

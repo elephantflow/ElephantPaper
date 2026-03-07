@@ -1,0 +1,39 @@
+{
+  "id": "hEKSSsv5Q9",
+  "or_id": "hEKSSsv5Q9",
+  "title": "DALD: Improving Logits-based Detector without Logits from Black-box LLMs",
+  "title_zh": "DALD：无需黑盒大语言模型logits改进基于logits的检测器",
+  "authors": [
+    "Cong Zeng",
+    "Shengkun Tang",
+    "Xianjun Yang",
+    "Yuanzhou Chen",
+    "Yiyou Sun",
+    "zhiqiang xu",
+    "Yao Li",
+    "Haifeng Chen",
+    "Wei Cheng",
+    "Dongkuan Xu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The advent of Large Language Models (LLMs) has revolutionized text generation, producing outputs that closely mimic human writing. This blurring of lines between machine- and human-written text presents new challenges in distinguishing one from the other – a task further complicated by the frequent updates and closed nature of leading proprietary LLMs. Traditional logits-based detection methods leverage surrogate models for identifying LLM-generated content when the exact logits are unavailable from black-box LLMs. However, these methods grapple with the misalignment between the distributions of the surrogate and the often undisclosed target models, leading to performance degradation, particularly with the introduction of new, closed-source models. Furthermore, while current methodologies are generally effective when the source model is identified, they falter in scenarios where the model version remains unknown, or the test set comprises outputs from various source models. To address these limitations, we present \\textbf{D}istribution-\\textbf{A}ligned \\textbf{L}LMs \\textbf{D}etection (DALD), an innovative framework that redefines the state-of-the-art performance in black-box text detection even without logits from source LLMs. DALD is designed to align the surrogate model's distribution with that of unknown target LLMs, ensuring enhanced detection capability and resilience against rapid model iterations with minimal training investment. By leveraging corpus samples from publicly accessible outputs of advanced models such as ChatGPT, GPT-4 and Claude-3, DALD fine-tunes surrogate models to synchronize with unknown source model distributions effectively. Our approach achieves SOTA performance in black-box settings on different advanced closed-source and open-source models. The versatility of our method enriches widely adopted zero-shot detection frameworks (DetectGPT, DNA-GPT, Fast-DetectGPT) with a `plug-and-play' enhancement feature. \nExtensive experiments validate ",
+  "abstract_zh": "大语言模型的兴起彻底改变了文本生成，产生了高度模仿人类写作的输出。机器生成文本与人类文本之间界限的模糊给区分两者带来了新的挑战——当领先的专有大语言模型频繁更新且封闭时，这一任务变得更加复杂。传统的基于logits的检测方法利用代理模型来识别大语言模型生成的内容，当无法从黑盒大语言模型获取确切logits时。然而，这些方法面临着代理模型与通常未公开的目标模型分布之间的不对齐问题，导致性能下降，特别是在引入新的闭源模型时。此外，尽管当前的方法通常在识别出源模型时有效，但在模型版本未知或测试集包含来自各种源模型的输出的情况下，它们会表现不佳。为了解决这些局限性，我们提出了**分布对齐大语言模型检测**（DALD），这是一个创新的框架，即使没有源大语言模型的logits，也能重新定义黑盒文本检测的最先进性能。DALD旨在将代理模型的分布与未知目标大语言模型的分布对齐，确保增强检测能力并对快速模型迭代具有弹性，同时只需最少的训练投入。通过利用来自先进模型（如ChatGPT、GPT-4和Claude-3）公开可用输出的语料样本，DALD微调代理模型以有效同步未知源模型分布。我们的方法在不同先进闭源和开源模型的黑盒设置中实现了SOTA性能。我们方法的通用性丰富了广泛采用的零样本检测框架（DetectGPT、DNA-GPT、Fast-DetectGPT），带有即插即用的增强功能。广泛的实验验证了...",
+  "tldr": "",
+  "keywords": [
+    "LLM Detection"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hEKSSsv5Q9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a20be487252f7eb1d9820a8119333f1734b46d59.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The advent of Large Language Models (LLMs) has revolutionized text generation, producing outputs that closely mimic human writing. This blurring of lines between machine- and human-written text presents new challenges in distinguishing one from the other – a task further complicated by the frequent "
+  },
+  "collected_at": "2026-03-07T12:20:45.354Z"
+}
