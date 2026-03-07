@@ -1,0 +1,35 @@
+{
+  "id": "unMRtFfNhF",
+  "or_id": "unMRtFfNhF",
+  "title": "Data Debugging is NP-hard for Classifiers Trained with SGD",
+  "title_zh": "",
+  "authors": [
+    "Zizheng Guo",
+    "Pengyu Chen",
+    "Yanzhang Fu",
+    "Dongjing Miao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Data debugging is to find a subset of the training data such that the model obtained by retraining on the subset has a better accuracy.\nA bunch of heuristic approaches are proposed, however, none of them are guaranteed to solve this problem effectively.\nThis leaves an open issue whether there exists an efficient algorithm to find the subset such that the model obtained by retraining on it has a better accuracy.\nTo answer this open question and provide theoretical basis for further study on developing better algorithms for data debugging, we investigate the computational complexity of the problem named \\textsc{Debuggable}.\nGiven a machine learning model $\\mathcal{M}$ obtained by training on dataset $D$ and a test instance $(\\mathbf{x}_\\text{test},y_\\text{test})$ where $\\mathcal{M}(\\mathbf{x}_\\text{test})\\neq y_\\text{test}$, \\textsc{Debuggable} is to determine whether there exists a subset $D^\\prime$ of $D$ such that the model $\\mathcal{M}^\\prime$ obtained by retraining on $D^\\prime$ satisfies $\\mathcal{M}^\\prime(\\mathbf{x}_\\text{test})=y_\\text{test}$.\nTo cover a wide range of commonly used models, we take SGD-trained linear classifier as the model and derive the following main results.\n(1) If the loss function and the dimension of the model are not fixed, \\textsc{Debuggable} is NP-complete regardless of the training order in which all the training samples are processed during SGD.\n(2) For hinge-like loss functions, a comprehensive analysis on the computational complexity of \\textsc{Debuggable} is provided;\n(3) If the loss function is a linear function, \\textsc{Debuggable} can be solved in linear time, that is, data debugging can be solved easily in this case.\nThese results not only highlight the limitations of current approaches but also offer new insights into data debugging.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "data debugging",
+    "machine learning interpretations",
+    "computational complexity"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=unMRtFfNhF",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d2900655f45258dc3e2465fd419974d0a61f3aa5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Data debugging is to find a subset of the training data such that the model obtained by retraining on the subset has a better accuracy.\nA bunch of heuristic approaches are proposed, however, none of them are guaranteed to solve this problem effectively.\nThis leaves an open issue whether there exists"
+  },
+  "collected_at": "2026-03-07T15:00:43.679Z"
+}

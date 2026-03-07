@@ -1,0 +1,35 @@
+{
+  "id": "4vp0edVY4o",
+  "or_id": "4vp0edVY4o",
+  "title": "Continual Learning with Global Alignment",
+  "title_zh": "",
+  "authors": [
+    "Xueying Bai",
+    "Jinghuan Shang",
+    "Yifan Sun",
+    "Niranjan Balasubramanian"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Continual learning aims to sequentially learn new tasks without forgetting previous tasks' knowledge (catastrophic forgetting). One factor that can cause forgetting is the interference between the gradients on losses from different tasks. When the gradients on the current task's loss are in opposing directions to those on previous tasks' losses, updating the model for the current task may cause performance degradation on previous tasks. In this paper, we first identify causes of the above interference, and hypothesize that correlations between data representations are a key factor of interference. We then propose a method for promoting appropriate correlations between arbitrary tasks' data representations (i.e., global alignment) in individual task learning. Specifically, we learn the data representation as a task-specific composition of pre-trained token representations shared across all tasks. Then the correlations between different tasks' data representations are grounded by correlations between pre-trained token representations. We explore different ways to learn such compositions. Without experience replay, our model achieves SOTA performance in continual learning tasks. It also achieves advanced class-incremental performance through task-incremental training.",
+  "abstract_zh": "",
+  "tldr": "To address interference when continually learning across tasks, we learn globally aligned data representations by interpolating pre-trained token representations; and apply probing first strategy to reduce interference caused by the classifier.",
+  "keywords": [
+    "Continual Learning",
+    "Global Alignment",
+    "Composition Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=4vp0edVY4o",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fedfe4fa0acf634d34232dcdfaf7186b6bd84f00.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "To address interference when continually learning across tasks, we learn globally aligned data representations by interpolating pre-trained token representations; and apply probing first strategy to reduce interference caused by the classifier."
+  },
+  "collected_at": "2026-03-07T15:00:43.677Z"
+}

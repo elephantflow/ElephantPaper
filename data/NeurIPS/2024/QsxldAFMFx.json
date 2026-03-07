@@ -1,0 +1,41 @@
+{
+  "id": "QsxldAFMFx",
+  "or_id": "QsxldAFMFx",
+  "title": "Generative Modeling of Individual Behavior at Scale",
+  "title_zh": "",
+  "authors": [
+    "Nabil Omi",
+    "Lucas Caccia",
+    "Anurag Sarkar",
+    "Jordan T. Ash",
+    "Siddhartha Sen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Recent years have seen a growing interest in using AI to model human behavior, particularly in domains where humans learn from or collaborate with this technology. While most existing work attempts to model human behavior at an aggregate level, our goal is to model behavior at the individual level. Recent work in the domain of chess has shown that behavioral stylometry, or the task of identifying a person from their actions alone, can be achieved with high accuracy among a pool of a few thousand players. However, this approach cannot generate actions in the style of each player, and hence cannot reason about or influence player behavior in practice. We provide a new perspective on behavioral stylometry that addresses these limitations, by drawing a connection to the vast literature of transfer learning in NLP. Specifically, by casting the stylometry problem as a multi-task learning problem---where each task represents a distinct---we show that parameter-efficient fine-tuning (PEFT) methods can be adapted to model individual behavior in an explicit and generative manner, at unprecedented scale. We apply our approach at scale to two very different games: chess (47,864 players) and Rocket League (2,000 players).\n\nOur approach leverages recent modular PEFT methods to learn a shared set of skill parameters that can be combined in different ways via style vectors. Style vectors enable two important capabilities. First, they are generative: we can generate actions in the style of a player simply by conditioning on the player's style vector. Second, they induce a latent style space that we can interpret and manipulate algorithmically. This allows us to compare different player styles, as well as synthesize new (human-like) styles, e.g. by interpolating between the style vectors of two players.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "style",
+    "parameter efficient fine-tuning",
+    "peft",
+    "chess",
+    "stylometry",
+    "playstyle",
+    "representation learning",
+    "steerability"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=QsxldAFMFx",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7e6f072af85fe6ee1f882d01c3cccbc68d0b54b3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Recent years have seen a growing interest in using AI to model human behavior, particularly in domains where humans learn from or collaborate with this technology. While most existing work attempts to model human behavior at an aggregate level, our goal is to model behavior at the individual level. "
+  },
+  "collected_at": "2026-03-07T15:00:43.677Z"
+}

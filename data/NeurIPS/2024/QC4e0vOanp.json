@@ -1,0 +1,34 @@
+{
+  "id": "QC4e0vOanp",
+  "or_id": "QC4e0vOanp",
+  "title": "Leveraging partial stragglers within gradient coding",
+  "title_zh": "",
+  "authors": [
+    "Aditya Ramamoorthy",
+    "Ruoyu meng",
+    "Vrinda S Girimaji"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Within distributed learning, workers typically compute gradients on their assigned dataset chunks and send them to the parameter server (PS), which aggregates them to compute either an exact or approximate version of $\\nabla L$ (gradient of the loss function $L$). However, in large-scale clusters, many workers are slower than their promised speed or even failure-prone. A gradient coding solution introduces redundancy within the assignment of chunks to the workers and uses coding theoretic ideas to allow the PS to recover $\\nabla L$ (exactly or approximately), even in the presence of stragglers. Unfortunately, most existing gradient coding protocols are inefficient from a computation perspective as they coarsely classify workers as operational or failed; the potentially valuable work performed by slow workers (partial stragglers) is ignored. In this work, we present novel gradient coding protocols that judiciously leverage the work performed by partial stragglers. Our protocols are efficient from a computation and communication perspective and numerically stable. For an important class of chunk assignments, we present efficient algorithms for optimizing the relative ordering of chunks within the workers; this ordering affects the overall execution time. For exact gradient reconstruction, our protocol is around $2\\times$ faster than the original class of protocols and for approximate gradient reconstruction, the mean-squared-error of our reconstructed gradient is several orders of magnitude better.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel gradient coding protocol that efficiently utilizes partial stragglers and is simultaneously computation-efficient and communication-efficient.",
+  "keywords": [
+    "gradient coding",
+    "stragglers",
+    "communication-efficient"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=QC4e0vOanp",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c57d0962f908671ea6f062c969c2937fc2690276.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel gradient coding protocol that efficiently utilizes partial stragglers and is simultaneously computation-efficient and communication-efficient."
+  },
+  "collected_at": "2026-03-07T15:00:43.676Z"
+}

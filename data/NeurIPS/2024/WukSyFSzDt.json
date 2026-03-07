@@ -1,0 +1,38 @@
+{
+  "id": "WukSyFSzDt",
+  "or_id": "WukSyFSzDt",
+  "title": "Stabilized Proximal-Point Methods for Federated Optimization",
+  "title_zh": "",
+  "authors": [
+    "Xiaowen Jiang",
+    "Anton Rodomanov",
+    "Sebastian U Stich"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "In developing efficient optimization algorithms, it is crucial to account for communication constraints&mdash;a significant challenge in modern Federated Learning. \n    The best-known communication complexity among non-accelerated algorithms is achieved by DANE, a distributed proximal-point algorithm that solves local subproblems at each iteration and that can exploit second-order similarity among individual functions.\n    However, to achieve such communication efficiency, the algorithm\n    requires solving local subproblems sufficiently accurately resulting in slightly sub-optimal local complexity.\n    Inspired by the hybrid-projection proximal-point method, in this work, we propose a novel distributed algorithm S-DANE. Compared to DANE, this method uses an auxiliary sequence of prox-centers while maintaining the same deterministic communication complexity. Moreover, the accuracy condition for solving the subproblem is milder, leading to enhanced local computation efficiency. Furthermore, S-DANE supports partial client participation and arbitrary stochastic local solvers, making it attractive in practice. We further accelerate S-DANE and show that the resulting algorithm achieves the best-known communication complexity among all existing methods for distributed convex optimization while still enjoying good local computation efficiency as S-DANE.\n    Finally, we propose adaptive variants of both methods using line search, obtaining the first provably efficient adaptive algorithms that could exploit local second-order similarity without the prior knowledge of any parameters.",
+  "abstract_zh": "",
+  "tldr": "We propose novel federated optimization algorithms (both basic and accelerated) that are efficient in terms of both communication and computation.",
+  "keywords": [
+    "Convex Optimization",
+    "Distributed Optimization",
+    "Proximal-Point Method",
+    "Second-order Dissimilarity",
+    "Acceleration",
+    "Line search"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=WukSyFSzDt",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/839b99d9710e24ed126a5710e53c26313662fa1f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We propose novel federated optimization algorithms (both basic and accelerated) that are efficient in terms of both communication and computation."
+  },
+  "collected_at": "2026-03-07T15:00:43.677Z"
+}
