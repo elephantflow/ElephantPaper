@@ -1,0 +1,33 @@
+{
+  "id": "hc9GkYw9kR",
+  "or_id": "hc9GkYw9kR",
+  "title": "LORA-MOO: Learning Ordinal Relations and Angles for Expensive Many-Objective Optimization",
+  "title_zh": "",
+  "authors": [
+    "Xunzhao Yu",
+    "Miqing Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Many-objective optimization (MOO) simultaneously optimizes many conflicting objectives to identify the Pareto front - a set of diverse solutions that represent different optimal balances between conflicting objectives. For expensive MOO problems, due to their costly function evaluations, computationally cheap surrogates have been widely used in MOO to save evaluation budget. However, as the number of objectives increases, the cost of learning and surrogation, as well as the difficulty of maintaining solution diversity, increases rapidly. In this paper, we propose LORA-MOO, a surrogate-assisted MOO algorithm that learns surrogates from spherical coordinates. This includes an ordinal-regression-based surrogate for convergence and $M-1$ regression-based surrogates for diversity. $M$ is the number of objectives. Such a surrogate modeling method makes it possible to use a single ordinal surrogate to do the surrogate-assisted search, and the remaining surrogates are used to select solution for expensive evaluations, which enhances the optimization efficiency. The ordinal regression surrogate is developed to predict ordinal relation values as radial coordinates, estimating how desirable the candidate solutions are in terms of convergence. The solution diversity is maintained via angles between solutions, which is a parameter-free. Experimental results show that LORA-MOO significantly outperforms other surrogate-assisted MOO methods on most MOO benchmark problems and real-world applications.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Expensive optimization",
+    "many-objective optimization",
+    "Gaussian Processes."
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hc9GkYw9kR",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f7ed4ef6c613130f22d344f69b2f7ecb08174664.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Many-objective optimization (MOO) simultaneously optimizes many conflicting objectives to identify the Pareto front - a set of diverse solutions that represent different optimal balances between conflicting objectives. For expensive MOO problems, due to their costly function evaluations, computation"
+  },
+  "collected_at": "2026-03-07T10:20:41.114Z"
+}

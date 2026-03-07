@@ -1,0 +1,42 @@
+{
+  "id": "kQPzFiwVIu",
+  "or_id": "kQPzFiwVIu",
+  "title": "Synthetic Programming Elicitation for Text-to-Code in Very Low-Resource Programming and Formal Languages",
+  "title_zh": "",
+  "authors": [
+    "Federico Mora",
+    "Justin Wong",
+    "Haley Lepe",
+    "Sahil Bhatia",
+    "Karim Elmaaroufi",
+    "George Varghese",
+    "Joseph E. Gonzalez",
+    "Elizabeth Polgreen",
+    "Sanjit A. Seshia"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recent advances in large language models (LLMs) for code applications have demonstrated remarkable zero-shot fluency and instruction following on challenging code related tasks ranging from test case generation to self-repair. Unsurprisingly, however, models struggle to compose syntactically valid programs in programming languages unrepresented in pre-training, referred to as very low-resource Programming Languages (VLPLs). VLPLs appear in crucial settings, including domain-specific languages for internal tools, tool-chains for legacy languages, and formal verification frameworks. Inspired by a technique called natural programming elicitation, we propose designing an intermediate language that LLMs ``naturally'' know how to use and which can be automatically compiled to a target VLPL. When LLMs generate code that lies outside of this intermediate language, we use compiler techniques to repair the code into programs in the intermediate language. Overall, we introduce _synthetic programming elicitation and compilation_ (SPEAC), an approach that enables LLMs to generate syntactically valid code even for VLPLs. We empirically evaluate the performance of SPEAC in a case study for the UCLID5 formal verification language and find that, compared to existing retrieval and fine-tuning baselines, SPEAC produces syntactically correct programs more frequently and without sacrificing semantic correctness.",
+  "abstract_zh": "",
+  "tldr": "Design an intermediate language and use a MAX-SAT solver to improve LLM-based text-to-code for very low resource programming langauges.",
+  "keywords": [
+    "Text-to-Code",
+    "Low-Resource Programming Languages",
+    "MAX-SAT",
+    "Parsing",
+    "Program Repair"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=kQPzFiwVIu",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fb296b40f1d3c4fd79e6e3ea90f07eef6954f0ea.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Design an intermediate language and use a MAX-SAT solver to improve LLM-based text-to-code for very low resource programming langauges."
+  },
+  "collected_at": "2026-03-07T10:20:41.116Z"
+}

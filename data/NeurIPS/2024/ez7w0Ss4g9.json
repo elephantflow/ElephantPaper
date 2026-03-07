@@ -1,0 +1,37 @@
+{
+  "id": "ez7w0Ss4g9",
+  "or_id": "ez7w0Ss4g9",
+  "title": "How JEPA Avoids Noisy Features: The Implicit Bias of Deep Linear Self Distillation Networks",
+  "title_zh": "JEPA如何避免噪声特征：深度线性自蒸馏网络的隐式偏置",
+  "authors": [
+    "Etai Littwin",
+    "Omid Saremi",
+    "Madhu Advani",
+    "Vimal Thilak",
+    "Preetum Nakkiran",
+    "Chen Huang",
+    "Joshua M. Susskind"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Two competing paradigms exist for self-supervised learning of data representations. \n    Joint Embedding Predictive Architectures (JEPAs) is a class of architectures in which semantically similar inputs are encoded into representations that are predictive of each other. A recent successful approach that falls under the JEPA framework is self-distillation, where an online encoder is trained to predict the output of the target encoder, sometimes with a lightweight predictor network. This is contrasted with the Masked Auto Encoder (MAE) paradigm, where an encoder and decoder are trained to reconstruct missing parts of the input in ambient space rather than its latent representation. A common motivation for using the JEPA approach over MAE is that the JEPA objective prioritizes abstract features over fine-grained pixel information (which can be unpredictable and uninformative).\n    In this work, we seek to understand the mechanism behind this empirical observation by analyzing deep linear models. We uncover a surprising mechanism: in a simplified linear setting where both approaches learn similar representations, JEPAs are biased to learn high influence features, or features characterized by having high regression coefficients. Our results point to a distinct implicit bias of predicting in latent space that may shed light on its success in practice.",
+  "abstract_zh": "自监督学习的数据表示存在两种竞争范式。联合嵌入预测架构(JEPA)是一类架构，其中语义相似的输入被编码为互相预测的表示。最近JEPA框架下的一个成功方法是自蒸馏，其中在线编码器被训练来预测目标编码器的输出，有时配合轻量级预测网络。这与掩码自编码器(MAE)范式形成对比，后者训练编码器和解码器在环境空间中重建输入的缺失部分而非其潜在表示。选择JEPA而非MAE的常见动机是JEPA目标优先考虑抽象特征而非细粒度像素信息（后者可能不可预测且信息量不足）。在这项工作中，我们通过分析深度线性模型来理解这一经验观察背后的机制。我们揭示了一个令人惊讶的机制：在两者学习相似表示的简化线性设定中，JEPA偏向于学习高影响力特征，即具有高回归系数的特征。我们的结果指出了潜在空间预测的一种独特隐式偏置，这可能解释其在实践中的成功。",
+  "tldr": "We show that JEPA architectures are biased towards learning highly influential features",
+  "keywords": [
+    "SSL",
+    "JEPA"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ez7w0Ss4g9",
+    "arxiv": "https://arxiv.org/abs/2407.03475",
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/57102015900c78b2349245b28beca0370b087879.pdf"
+  },
+  "citationCount": 18,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show that JEPA architectures are biased towards learning highly influential features"
+  },
+  "collected_at": "2026-03-07T10:20:39.010Z"
+}

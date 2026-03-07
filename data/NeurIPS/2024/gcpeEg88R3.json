@@ -1,0 +1,37 @@
+{
+  "id": "gcpeEg88R3",
+  "or_id": "gcpeEg88R3",
+  "title": "Quasi-Bayes meets Vines",
+  "title_zh": "准贝叶斯遇见藤Copula",
+  "authors": [
+    "David Huk",
+    "Yuanhe Zhang",
+    "Ritabrata Dutta",
+    "Mark Steel"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recently developed quasi-Bayesian (QB) methods \\cite{fong2023martingale}  proposed a stimulating change of paradigm in Bayesian computation by directly constructing the Bayesian predictive distribution through recursion, removing the need for expensive computations involved in sampling the Bayesian posterior distribution. This has proved to be data-efficient for univariate predictions, however, existing constructions for higher dimensional densities are only possible by relying on restrictive assumptions on the model's multivariate structure. Here, we propose a wholly different approach to extend Quasi-Bayesian prediction to high dimensions through the use of Sklar's theorem, by decomposing the predictive distribution into one-dimensional predictive marginals and a high-dimensional copula. We use the efficient recursive QB construction for the one-dimensional marginals and model the dependence using highly expressive vine copulas. Further, we tune hyperparameters using robust divergences (eg. energy score) and show that our proposed Quasi-Bayesian Vine (QB-Vine) is a fully non-parametric density estimator with \\emph{an analytical form} and convergence rate independent of the dimension of the data in some situations. Our experiments illustrate that the QB-Vine is appropriate for high dimensional distributions ($\\sim$64), needs very few samples to train ($\\sim$200) and outperforms state-of-the-art methods with analytical forms for density estimation and supervised tasks by a considerable margin.",
+  "abstract_zh": "最近发展的准贝叶斯方法提出了一种有启发性的贝叶斯计算范式转变。它通过递归直接构建贝叶斯预测分布，免去了采样贝叶斯后验分布所需的昂贵计算。这已被证明在单变量预测中具有数据效率，然而，现有的高维密度构造只能依赖模型多元结构上的限制性假设。在此，我们提出一种完全不同的方法，通过使用Sklar定理将准贝叶斯预测扩展到高维：将预测分布分解为一维预测边缘分布和高维Copula。我们使用高效的递归准贝叶斯构造来处理一维边缘分布，并使用高表达能力藤Copula建模依赖关系。此外，我们使用鲁棒散度（如能量分数）调整超参数，并证明我们提出的准贝叶斯藤（QB-Vine）是一个具有解析形式、在某些情况下收敛率独立于数据维度的完全非参数密度估计器。我们的实验表明，QB-Vine适用于高维分布（~64维），需要极少的训练样本数（~200个），在密度估计和监督任务上以显著优势超越了具有解析形式的最先进方法。",
+  "tldr": "We introduced the Quasi-Bayesian Vine, which combines the strength of recursive joint Bayesian predictive densities with vines for varied tasks in high-dimensions, outperforming benchmark methods.",
+  "keywords": [
+    "Quasi-Bayesian",
+    "Copula",
+    "Vine Copula",
+    "Nonparametric Bayesian",
+    "density estimation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=gcpeEg88R3",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/023de631b175ded4a58c6738161d28950a2bd270.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduced the Quasi-Bayesian Vine, which combines the strength of recursive joint Bayesian predictive densities with vines for varied tasks in high-dimensions, outperforming benchmark methods."
+  },
+  "collected_at": "2026-03-07T10:20:41.112Z"
+}
