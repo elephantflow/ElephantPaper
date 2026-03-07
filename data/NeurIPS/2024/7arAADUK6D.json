@@ -1,0 +1,39 @@
+{
+  "id": "7arAADUK6D",
+  "or_id": "7arAADUK6D",
+  "title": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+  "title_zh": "",
+  "authors": [
+    "Yichong Huang",
+    "Xiaocheng Feng",
+    "Baohang Li",
+    "Yang Xiang",
+    "Hui Wang",
+    "Ting Liu",
+    "Bing Qin"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Large language models (LLMs) exhibit complementary strengths in various tasks, motivating the research of LLM ensembling.\nHowever, existing work focuses on training an extra reward model or fusion model to select or combine all candidate answers, posing a great challenge to the generalization on unseen data distributions.\nBesides, prior methods use textual responses as communication media, ignoring the valuable information in the internal representations.\nIn this work, we propose a training-free ensemble framework \\textsc{DeePEn}, fusing the informative probability distributions yielded by different LLMs at each decoding step.\nUnfortunately, the vocabulary discrepancy between heterogeneous LLMs directly makes averaging the distributions unfeasible due to the token misalignment.\nTo address this challenge, \\textsc{DeePEn} maps the probability distribution of each model from its own probability space to a universal \\textit{relative space} based on the relative representation theory, and performs aggregation.\nNext, we devise a search-based inverse transformation to transform the aggregated result back to the probability space of one of the ensembling LLMs (main model), in order to determine the next token.\nWe conduct extensive experiments on ensembles of different number of LLMs, ensembles of LLMs with different architectures, and ensembles between the LLM and the specialist model.\nExperimental results show that (i) \\textsc{DeePEn} achieves consistent improvements across six benchmarks covering subject examination, reasoning, and knowledge, (ii) a well-performing specialist model can benefit from a less effective LLM through distribution fusion, and (iii) \\textsc{DeePEn} has complementary strengths with other ensemble methods such as voting.",
+  "abstract_zh": "",
+  "tldr": "Enable the probability distribution averaging between heterogeneous large language models",
+  "keywords": [
+    "Ensemble Learning",
+    "Large Language Model",
+    "Relative Representation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=7arAADUK6D",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4f1e94d2e04c04725fc7f351d7d0330a23d3e27e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "Enable the probability distribution averaging between heterogeneous large language models"
+  },
+  "collected_at": "2026-03-07T20:40:32.197Z"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "ISa7mMe7Vg",
+  "or_id": "ISa7mMe7Vg",
+  "title": "Exploiting LLM Quantization",
+  "title_zh": "",
+  "authors": [
+    "Kazuki Egashira",
+    "Mark Vero",
+    "Robin Staab",
+    "Jingxuan He",
+    "Martin Vechev"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Quantization leverages lower-precision weights to reduce the memory usage of large language models (LLMs) and is a key technique for enabling their deployment on commodity hardware. While LLM quantization's impact on utility has been extensively explored, this work for the first time studies its adverse effects from a security perspective. We reveal that widely used quantization methods can be exploited to produce a harmful quantized LLM, even though the full-precision counterpart appears benign, potentially tricking users into deploying the malicious quantized model. \nWe demonstrate this threat using a three-staged attack framework: (i) first, we obtain a malicious LLM through fine-tuning on an adversarial task; (ii) next, we quantize the malicious model and calculate constraints that characterize all full-precision models that map to the same quantized model; (iii) finally, using projected gradient descent, we tune out the poisoned behavior from the full-precision model while ensuring that its weights satisfy the constraints computed in step (ii). This procedure results in an LLM that exhibits benign behavior in full precision but when quantized, it follows the adversarial behavior injected in step (i). We experimentally demonstrate the feasibility and severity of such an attack across three diverse scenarios: vulnerable code generation, content injection, and over-refusal attack. In practice, the adversary could host the resulting full-precision model on an LLM community hub such as Hugging Face, exposing millions of users to the threat of deploying its malicious quantized version on their devices.",
+  "abstract_zh": "",
+  "tldr": "We show that popular quantization methods for language models (LMs) can be exploited to produce a malicious quantized LM, even when the corresponding full-precision LM appears to function normally.",
+  "keywords": [
+    "quantization",
+    "large language models",
+    "security",
+    "poisoning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ISa7mMe7Vg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/56af49104f10d63e4a98f92841ee6d013065011f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show that popular quantization methods for language models (LMs) can be exploited to produce a malicious quantized LM, even when the corresponding full-precision LM appears to function normally."
+  },
+  "collected_at": "2026-03-07T20:40:32.198Z"
+}

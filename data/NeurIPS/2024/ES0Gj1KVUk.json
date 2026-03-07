@@ -1,0 +1,34 @@
+{
+  "id": "ES0Gj1KVUk",
+  "or_id": "ES0Gj1KVUk",
+  "title": "Data subsampling for Poisson regression with pth-root-link",
+  "title_zh": "",
+  "authors": [
+    "Han Cheng Lie",
+    "Alexander Munteanu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We develop and analyze data subsampling techniques for Poisson regression, the standard model for count data $y\\in\\mathbb{N}$. In particular, we consider the Poisson generalized linear model with ID- and square root-link functions. We consider the method of \\emph{coresets}, which are small weighted subsets that approximate the loss function of Poisson regression up to a factor of $1\\pm\\varepsilon$. We show $\\Omega(n)$ lower bounds against coresets for Poisson regression that continue to hold against arbitrary data reduction techniques up to logarithmic factors. By introducing a novel complexity parameter and a domain shifting approach, we show that sublinear coresets with $1\\pm\\varepsilon$ approximation guarantee exist when the complexity parameter is small. In particular, the dependence on the number of input points can be reduced to polylogarithmic. We show that the dependence on other input parameters can also be bounded sublinearly, though not always logarithmically. In particular, we show that the square root-link admits an $O(\\log(y_{\\max}))$ dependence, where $y_{\\max}$ denotes the largest count presented in the data, while the ID-link requires a $\\Theta(\\sqrt{y_{\\max}/\\log(y_{\\max})})$ dependence. As an auxiliary result for proving the tightness of the bound with respect to $y_{\\max}$ in the case of the ID-link, we show an improved bound on the principal branch of the Lambert $W_0$ function, which may be of independent interest. We further show the limitations of our analysis when $p$th degree root-link functions for $p\\geq 3$ are considered, which indicate that other analytical or computational methods would be required if such a generalization is even possible.",
+  "abstract_zh": "",
+  "tldr": "We show novel results on data subsampling for approximating Poisson regression via coresets, as well as their limitations.",
+  "keywords": [
+    "Poisson regression",
+    "subsampling",
+    "coresets",
+    "Lambert function"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ES0Gj1KVUk",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/403fba517bfd0408bcbcaf4ca07efeb8cdb5d14b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show novel results on data subsampling for approximating Poisson regression via coresets, as well as their limitations."
+  },
+  "collected_at": "2026-03-07T20:40:32.198Z"
+}
