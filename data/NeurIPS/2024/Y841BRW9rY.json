@@ -1,0 +1,38 @@
+{
+  "id": "Y841BRW9rY",
+  "or_id": "Y841BRW9rY",
+  "title": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+  "title_zh": "",
+  "authors": [
+    "Zhaorun Chen",
+    "Zhen Xiang",
+    "Chaowei Xiao",
+    "Dawn Song",
+    "Bo Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "LLM agents have demonstrated remarkable performance across various applications, primarily due to their advanced capabilities in reasoning, utilizing external knowledge and tools, calling APIs, and executing actions to interact with environments. Current agents typically utilize a memory module or a retrieval-augmented generation (RAG) mechanism, retrieving past knowledge and instances with similar embeddings from knowledge bases to inform task planning and execution. However, the reliance on unverified knowledge bases raises significant concerns about their safety and trustworthiness. To uncover such vulnerabilities, we propose a novel red teaming approach AgentPoison, the first backdoor attack targeting generic and RAG-based LLM agents by poisoning their long-term memory or\nRAG knowledge base. In particular, we form the trigger generation process as a constrained optimization to optimize backdoor triggers by mapping the triggered instances to a unique embedding space, so as to ensure that whenever a user instruction contains the optimized backdoor trigger, the malicious demonstrations are retrieved from the poisoned memory or knowledge base with high probability. In the meantime, benign instructions without the trigger will still maintain normal performance. Unlike conventional backdoor attacks, AgentPoison requires no additional model training or fine-tuning, and the optimized backdoor trigger exhibits superior transferability, resilience, and stealthiness. Extensive experiments demonstrate AgentPoison's effectiveness in attacking\nthree types of real-world LLM agents: RAG-based autonomous driving agent, knowledge-intensive QA agent, and healthcare EHRAgent. We inject the poisoning instances into the RAG knowledge base and long-term memories of these agents, respectively, demonstrating the generalization of AgentPoison. On each agent, AgentPoison achieves an average attack success rate of $\\ge$ 80% with minimal\nimpact on benign performance ($\\le$ 1%) with a poison",
+  "abstract_zh": "",
+  "tldr": "We propose  a novel red teaming approach AgentPoison, the first backdoor attack targeting generic and RAG-based LLM agents by poisoning their long-term memory or RAG knowledge base.",
+  "keywords": [
+    "LLM Agent",
+    "LLM Red-teaming",
+    "Retrieval-Augmented Generation",
+    "Backdoor Poisoning",
+    "Trustworthy LLM"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Y841BRW9rY",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/707fb9874a6d1beb97c9103c8db11c3d963ee36a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose  a novel red teaming approach AgentPoison, the first backdoor attack targeting generic and RAG-based LLM agents by poisoning their long-term memory or RAG knowledge base."
+  },
+  "collected_at": "2026-03-07T21:40:29.777Z"
+}

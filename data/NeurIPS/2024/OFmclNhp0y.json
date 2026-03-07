@@ -1,0 +1,35 @@
+{
+  "id": "OFmclNhp0y",
+  "or_id": "OFmclNhp0y",
+  "title": "Deterministic Uncertainty Propagation for Improved Model-Based Offline Reinforcement Learning",
+  "title_zh": "",
+  "authors": [
+    "Abdullah Akgül",
+    "Manuel Haussmann",
+    "Melih Kandemir"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Current approaches to model-based offline reinforcement learning often incorporate uncertainty-based reward penalization to address the distributional shift problem. These approaches, commonly known as pessimistic value iteration, use Monte Carlo sampling to estimate the Bellman target to perform temporal difference-based policy evaluation. We find out that the randomness caused by this sampling step significantly delays convergence. We present a theoretical result demonstrating the strong dependency of suboptimality on the number of Monte Carlo samples taken per Bellman target calculation. Our main contribution is a deterministic approximation to the Bellman target that uses progressive moment matching, a method developed originally for deterministic variational inference. The resulting algorithm, which we call Moment Matching Offline Model-Based Policy Optimization (MOMBO), propagates the uncertainty of the next state through a nonlinear Q-network in a deterministic fashion by approximating the distributions of hidden layer activations by a normal distribution. We show that it is possible to provide tighter guarantees for the suboptimality of MOMBO than the existing Monte Carlo sampling approaches. We also observe MOMBO to converge faster than these approaches in a large set of benchmark tasks.",
+  "abstract_zh": "",
+  "tldr": "Prior model-based offline reinforcement learning suffers from high variance due to sampling-based estimation, but MOMBO addresses this by deterministically propagating uncertainties through the value function, providing novel suboptimality guarantees",
+  "keywords": [
+    "offline reinforcement learning",
+    "offline model-based reinforcement learning",
+    "uncertainty propagation",
+    "moment matching"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=OFmclNhp0y",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/46b78adce76bd2c4e68feff70967b7f601ffe19c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Prior model-based offline reinforcement learning suffers from high variance due to sampling-based estimation, but MOMBO addresses this by deterministically propagating uncertainties through the value function, providing novel suboptimality guarantees"
+  },
+  "collected_at": "2026-03-07T21:40:29.778Z"
+}

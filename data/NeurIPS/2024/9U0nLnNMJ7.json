@@ -1,0 +1,41 @@
+{
+  "id": "9U0nLnNMJ7",
+  "or_id": "9U0nLnNMJ7",
+  "title": "Compact Language Models via Pruning and Knowledge Distillation",
+  "title_zh": "",
+  "authors": [
+    "Saurav Muralidharan",
+    "Sharath Turuvekere Sreenivas",
+    "Raviraj Bhuminand Joshi",
+    "Marcin Chochowski",
+    "Mostofa Patwary",
+    "Mohammad Shoeybi",
+    "Bryan Catanzaro",
+    "Jan Kautz",
+    "Pavlo Molchanov"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large language models (LLMs) targeting different deployment scales and sizes are currently produced by training each variant from scratch; this is extremely compute-intensive. In this paper, we investigate if pruning an existing LLM and then re-training it with a fraction <3% of the original training data can be a suitable alternative to repeated, full retraining. To this end, we develop a set of practical and effective **compression best practices** for LLMs that combine depth, width, attention and MLP pruning with knowledge distillation-based retraining; we arrive at these best practices through a detailed empirical exploration of pruning strategies for each axis, methods to combine axes, distillation strategies, and search techniques for arriving at optimal compressed architectures. We use this guide to compress the Nemotron-4 family of LLMs by a factor of 2-4x, and compare their performance to similarly-sized models on a variety of language modeling tasks. On these tasks, we perform better than Nemotron-3 8B and LLaMa2 7B using **up to 40x** fewer training tokens}, on par with Mistral 7B and Gemma 7B using **up to 85x fewer tokens** and slightly worse than LLaMa3 8B using **up to 159x fewer tokens**. Our models also compare favorably to state-of-the-art compression techniques from the literature.",
+  "abstract_zh": "",
+  "tldr": "A novel structured pruning and retraining approach for LLMs that produces strong models using a small fraction of original training data",
+  "keywords": [
+    "llm",
+    "pruning",
+    "distillation",
+    "compression"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=9U0nLnNMJ7",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/63550299773eaa07b54df33156dc0865e34fb540.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A novel structured pruning and retraining approach for LLMs that produces strong models using a small fraction of original training data"
+  },
+  "collected_at": "2026-03-07T21:40:29.777Z"
+}

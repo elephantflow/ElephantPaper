@@ -1,0 +1,35 @@
+{
+  "id": "01qa1ZJs65",
+  "or_id": "01qa1ZJs65",
+  "title": "Bridge the Modality and Capability Gaps in Vision-Language Model Selection",
+  "title_zh": "",
+  "authors": [
+    "Chao Yi",
+    "Yuhang He",
+    "De-Chuan Zhan",
+    "Han-Jia Ye"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Vision Language Models (VLMs) excel in zero-shot image classification by pairing images with textual category names. The expanding variety of Pre-Trained VLMs enhances the likelihood of identifying a suitable VLM for specific tasks. To better reuse the VLM resource and fully leverage its potential on different zero-shot image classification tasks, a promising strategy is selecting appropriate Pre-Trained VLMs from the VLM Zoo, relying solely on the text data of the target dataset without access to the dataset’s images. In this paper, we analyze two inherent challenges in assessing the ability of a VLM in this Language-Only VLM selection: the “Modality Gap”—the disparity in VLM’s embeddings across two different modalities, making text a less reliable substitute for images; and the “Capability Gap”— the discrepancy between the VLM’s overall ranking and its ranking for target dataset, hindering direct prediction of a model’s dataset-specific performance from its general performance. We propose VLM Selection With gAp Bridging (SWAB) to mitigate the negative impact of two gaps. SWAB first adopts optimal transport to capture the relevance between open-source and target datasets with a transportation matrix. It then uses this matrix to transfer useful statistics of VLMs from open-source datasets to the target dataset for bridging two gaps. By bridging two gaps to obtain better substitutes for test images, SWAB can accurately predict the performance ranking of different VLMs on the target task without the need for the dataset’s images. Experiments across various VLMs and image classification datasets validate SWAB’s effectiveness. Code is available at: https://github.com/YCaigogogo/SWAB.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Vision-Language Model",
+    "Model Selection",
+    "Zero-Shot Image Classification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=01qa1ZJs65",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5b952c94f858327b7c28f21c05fb943af4ee8717.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Vision Language Models (VLMs) excel in zero-shot image classification by pairing images with textual category names. The expanding variety of Pre-Trained VLMs enhances the likelihood of identifying a suitable VLM for specific tasks. To better reuse the VLM resource and fully leverage its potential o"
+  },
+  "collected_at": "2026-03-07T21:40:29.776Z"
+}
