@@ -1,0 +1,40 @@
+{
+  "id": "Yu6cDt7q9Z",
+  "or_id": "Yu6cDt7q9Z",
+  "title": "Schedule Your Edit: A Simple yet Effective Diffusion Noise Schedule for Image Editing",
+  "title_zh": "",
+  "authors": [
+    "Haonan Lin",
+    "Yan Chen",
+    "Jiahao Wang",
+    "Wenbin An",
+    "Mengmeng Wang",
+    "Feng Tian",
+    "Yong Liu",
+    "Guang Dai",
+    "Jingdong Wang",
+    "QianYing Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Text-guided diffusion models have significantly advanced image editing, enabling high-quality and diverse modifications driven by text prompts. However, effective editing requires inverting the source image into a latent space, a process often hindered by prediction errors inherent in DDIM inversion. \nThese errors accumulate during the diffusion process, resulting in inferior content preservation and edit fidelity, especially with conditional inputs. \nWe address these challenges by investigating the primary contributors to error accumulation in DDIM inversion and identify the singularity problem in traditional noise schedules as a key issue. \nTo resolve this, we introduce the *Logistic Schedule*, a novel noise schedule designed to eliminate singularities, improve inversion stability, and provide a better noise space for image editing. This schedule reduces noise prediction errors, enabling more faithful editing that preserves the original content of the source image. Our approach requires no additional retraining and is compatible with various existing editing methods. \nExperiments across eight editing tasks demonstrate the Logistic Schedule's superior performance in content preservation and edit fidelity compared to traditional noise schedules, highlighting its adaptability and effectiveness. \nThe project page is available at https://lonelvino.github.io/SYE/.",
+  "abstract_zh": "",
+  "tldr": "The Logistic Schedule is designed for diffusion-based image editing, to eliminate singularities, improve inversion stability, and mitigate exposure bias, thereby enhancing content preservation and edit fidelity.",
+  "keywords": [
+    "image editing",
+    "diffusion model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Yu6cDt7q9Z",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/070a6d2a68155559f12d2ca7255e5998bb8c445a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The Logistic Schedule is designed for diffusion-based image editing, to eliminate singularities, improve inversion stability, and mitigate exposure bias, thereby enhancing content preservation and edit fidelity."
+  },
+  "collected_at": "2026-03-07T22:41:58.345Z"
+}

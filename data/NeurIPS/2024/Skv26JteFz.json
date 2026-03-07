@@ -1,0 +1,36 @@
+{
+  "id": "Skv26JteFz",
+  "or_id": "Skv26JteFz",
+  "title": "Optimal Hypothesis Selection in (Almost) Linear Time",
+  "title_zh": "",
+  "authors": [
+    "Maryam Aliakbarpour",
+    "Mark Bun",
+    "Adam Smith"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Hypothesis selection, also known as density estimation, is a fundamental problem in statistics and learning theory. Suppose we are given a sample set from an unknown distribution $P$ and a finite class of candidate distributions (called hypotheses) $\\mathcal{H} \\coloneqq \\{H_1, H_2, \\ldots, H_n\\}$. The aim is to design an algorithm that selects a distribution $\\hat H$ in  $\\mathcal{H}$ that best fits the data. The algorithm's accuracy is measured based on the distance between $\\hat{H}$ and $P$ compared to the distance of the closest distribution in $\\mathcal{H}$ to $P$ (denoted by $OPT$). Concretely, we aim for $\\|\\hat{H} - P\\|_{TV}$ to be at most $ \\alpha \\cdot OPT + \\epsilon$ for some small $\\epsilon$ and $\\alpha$. \nWhile it is possible to decrease the value of $\\epsilon$ as the number of samples increases, $\\alpha$ is an inherent characteristic of the algorithm. In fact, one cannot hope to achieve $\\alpha < 3$ even when there are only two candidate hypotheses, unless the number of samples is proportional to the domain size of $P$ [Bousquet, Kane, Moran '19]. Finding the best $\\alpha$ has been one of the main focuses of studies of the problem since early work of [Devroye, Lugosi '01]. Prior to our work, no algorithm was known that achieves $\\alpha = 3$ in near-linear time. We provide the first algorithm that operates in almost linear time ($\\tilde{O}(n/\\epsilon^3)$ time) and achieves $\\alpha = 3$.  This result improves upon a long list of results in hypothesis selection. Previously known algorithms either had worse time complexity, a larger factor  $\\alpha$, or extra assumptions about the problem setting.\nIn addition to this algorithm, we provide another (almost) linear-time algorithm with better dependency on the additive accuracy parameter $\\epsilon$, albeit with a slightly worse accuracy parameter, $\\alpha = 4$.",
+  "abstract_zh": "",
+  "tldr": "We introduce the first near-linear-time algorithm for hypothesis selection that achieves optimal accuracy, significantly advancing previous methods.",
+  "keywords": [
+    "hypothesis selection",
+    "distribution learning",
+    "density estimation",
+    "time efficient algorithms",
+    "computational constraints"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Skv26JteFz",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4946d1ad4357c92fffcfa922cd795b884a9f25d7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce the first near-linear-time algorithm for hypothesis selection that achieves optimal accuracy, significantly advancing previous methods."
+  },
+  "collected_at": "2026-03-07T22:41:58.345Z"
+}

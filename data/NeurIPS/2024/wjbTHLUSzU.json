@@ -1,0 +1,36 @@
+{
+  "id": "wjbTHLUSzU",
+  "or_id": "wjbTHLUSzU",
+  "title": "TSDS: Data Selection for Task-Specific Model Finetuning",
+  "title_zh": "",
+  "authors": [
+    "Zifan Liu",
+    "Amin Karbasi",
+    "Theodoros Rekatsinas"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Finetuning foundation models for specific tasks is an emerging paradigm in modern machine learning. The efficacy of task-specific finetuning largely depends on the selection of appropriate training data. We present TSDS (Task-Specific Data Selection), a framework to select data for task-specific model finetuning, guided by a small but representative set of examples from the target task. To do so, we formulate data selection for task-specific finetuning as an optimization problem with a distribution alignment loss based on optimal transport to capture the discrepancy between the selected data and the target distribution. In addition, we add a regularizer to encourage the diversity of the selected data and incorporate kernel density estimation into the regularizer to reduce the negative effects of near-duplicates among the candidate data.\nWe connect our optimization problem to nearest neighbor search and design efficient algorithms to compute the optimal solution based on approximate nearest neighbor search techniques.\nWe evaluate our method on data selection for both continued pretraining and instruction tuning of language models.\nWe show that instruction tuning using data selected by our method with a 1\\% selection ratio often outperforms using the full dataset and beats the baseline selection methods by 1.5 points in F1 score on average.",
+  "abstract_zh": "",
+  "tldr": "We present a framework to select data for task-specific model finetuning, guided by a small but representative set of examples from the target task.",
+  "keywords": [
+    "data selection",
+    "finetuning",
+    "foundation model",
+    "large language model",
+    "optimal transport"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=wjbTHLUSzU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/dd38be7e2aeaa0617ca80c18333fe34e51c4dcb6.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present a framework to select data for task-specific model finetuning, guided by a small but representative set of examples from the target task."
+  },
+  "collected_at": "2026-03-07T22:41:58.344Z"
+}

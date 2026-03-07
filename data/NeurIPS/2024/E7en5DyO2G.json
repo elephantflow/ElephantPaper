@@ -1,0 +1,35 @@
+{
+  "id": "E7en5DyO2G",
+  "or_id": "E7en5DyO2G",
+  "title": "Bayesian Online Natural Gradient (BONG)",
+  "title_zh": "",
+  "authors": [
+    "Matt Jones",
+    "Peter G. Chang",
+    "Kevin Patrick Murphy"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We propose a novel approach to  sequential Bayesian inference based on variational Bayes (VB).\n  The key insight is that,\n  in the online setting,\n  we do not need to add the KL term to regularize to the prior (which comes from the posterior at the previous timestep);\n  instead we can optimize just the expected log-likelihood,\n  performing a single step of natural gradient descent\n  starting at the prior predictive.\n  We prove this method\n recovers exact Bayesian inference \n  if the model is conjugate.\n We also  show how to compute an\n efficient deterministic \n approximation to the VB objective,\n  as well as our simplified objective,\n when the variational distribution is\n Gaussian or a sub-family, including the case of\n a diagonal plus low-rank\nprecision matrix.\nWe show empirically that our\nmethod outperforms other online VB methods\n  in the  non-conjugate setting,\n  such as online learning for neural networks,\n  especially when controlling for computational costs.",
+  "abstract_zh": "",
+  "tldr": "We improve on online variational Bayes using natural gradient descent on expected log-likelihood.",
+  "keywords": [
+    "online learning",
+    "Bayesian neural networks",
+    "variational inference",
+    "natural gradient descent"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=E7en5DyO2G",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b53a4188e41baa448c0697738f29b3fb48646ced.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We improve on online variational Bayes using natural gradient descent on expected log-likelihood."
+  },
+  "collected_at": "2026-03-07T22:41:58.343Z"
+}
