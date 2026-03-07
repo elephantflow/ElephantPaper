@@ -1,0 +1,39 @@
+{
+  "id": "Tck41RANGK",
+  "or_id": "Tck41RANGK",
+  "title": "MicroAdam: Accurate Adaptive Optimization with Low Space Overhead and Provable Convergence",
+  "title_zh": "",
+  "authors": [
+    "Ionut-Vlad Modoranu",
+    "Mher Safaryan",
+    "Grigory Malinovsky",
+    "Eldar Kurtic",
+    "Thomas Robert",
+    "Peter Richtárik",
+    "Dan Alistarh"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We propose a new variant of the Adam optimizer called MicroAdam that specifically minimizes memory overheads, while maintaining theoretical convergence guarantees. We achieve this by compressing the gradient information before it is fed into the optimizer state, \nthereby reducing its memory footprint significantly. We control the resulting compression  error via a novel instance of the classical *error feedback* mechanism from distributed optimization in which *the error correction information is itself compressed* to allow for practical memory gains. We prove that the resulting approach maintains theoretical convergence guarantees competitive to those of AMSGrad, while providing good practical performance. Specifically, we show that MicroAdam can be implemented efficiently on GPUs: on both million-scale (BERT) and billion-scale (LLaMA) models, MicroAdam provides practical convergence competitive to that of the uncompressed Adam baseline, with  lower memory usage and similar running time. Our code is available at https://github.com/IST-DASLab/MicroAdam.",
+  "abstract_zh": "",
+  "tldr": "We propose a new memory-efficient version of Adam with strong theoretical and practical convergence, and low space overheads in practice.",
+  "keywords": [
+    "adaptive optimization",
+    "adam",
+    "efficiency",
+    "memory efficiency"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Tck41RANGK",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/afb10183db7f685b6cf9f66ed31fcb9b9f8b321a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a new memory-efficient version of Adam with strong theoretical and practical convergence, and low space overheads in practice."
+  },
+  "collected_at": "2026-03-07T20:20:32.407Z"
+}

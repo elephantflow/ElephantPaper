@@ -1,0 +1,38 @@
+{
+  "id": "CKgNgKmHYp",
+  "or_id": "CKgNgKmHYp",
+  "title": "HYDRA: Model Factorization Framework for Black-Box LLM Personalization",
+  "title_zh": "",
+  "authors": [
+    "Yuchen Zhuang",
+    "Haotian Sun",
+    "Yue Yu",
+    "Rushi Qiang",
+    "Qifan Wang",
+    "Chao Zhang",
+    "Bo Dai"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Personalization has emerged as a critical research area in modern intelligent systems, focusing on mining users' behavioral history and adapting to their preferences for delivering tailored experiences. Despite the remarkable few-shot capabilities exhibited by black-box large language models (LLMs), the inherent opacity of their model parameters presents significant challenges in aligning the generated output with individual expectations. Existing solutions have primarily focused on prompt design to incorporate user-specific profiles and behaviors; however, such approaches often struggle to generalize effectively due to their inability to capture shared knowledge among all users. To address these challenges, we propose HYDRA, a model factorization framework that captures both user-specific behavior patterns from historical data and shared general knowledge among all users to deliver personalized generation. In order to capture user-specific behavior patterns, we first train a reranker to prioritize the most useful information from top-retrieved relevant historical records.\nBy combining the prioritized history with the corresponding query, we train an adapter to align the output with individual user-specific preferences, eliminating the reliance on access to inherent model parameters of black-box LLMs. Both the reranker and the adapter can be decomposed into a base model with multiple user-specific heads, resembling a hydra. The base model maintains shared knowledge across users, while the multiple personal heads capture user-specific preferences. Experimental results demonstrate that \\method outperforms existing state-of-the-art prompt-based methods by an average relative improvement of 9.01% across five diverse personalization tasks in the LaMP benchmark.",
+  "abstract_zh": "",
+  "tldr": "We introduce a model factorization method for black-box LLM personalization.",
+  "keywords": [
+    "LLM",
+    "LLM Personalization",
+    "Black-Box LLMs"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=CKgNgKmHYp",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ecbfd8db7fb1de69a64f0c0edac03bd88bdf9fc4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce a model factorization method for black-box LLM personalization."
+  },
+  "collected_at": "2026-03-07T20:20:32.406Z"
+}

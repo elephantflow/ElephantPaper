@@ -1,0 +1,32 @@
+{
+  "id": "qpeAtfUWOQ",
+  "or_id": "qpeAtfUWOQ",
+  "title": "Variational Multi-scale Representation for Estimating Uncertainty in 3D Gaussian Splatting",
+  "title_zh": "",
+  "authors": [
+    "Ruiqi Li",
+    "Yiu-ming Cheung"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recently, 3D Gaussian Splatting (3DGS) has become popular in reconstructing dense 3D representations of appearance and geometry. However, the learning pipeline in 3DGS inherently lacks the ability to quantify uncertainty, which is an important factor in applications like robotics mapping and navigation. In this paper, we propose an uncertainty estimation method built upon the Bayesian inference framework. Specifically, we propose a method to build variational multi-scale 3D Gaussians, where we leverage explicit scale information in 3DGS parameters to construct diversified parameter space samples. We develop an offset table technique to draw local multi-scale samples efficiently by offsetting selected attributes and sharing other base attributes. Then, the offset table is learned by variational inference with multi-scale prior. The learned offset posterior can quantify the uncertainty of each individual Gaussian component, and be used in the forward pass to infer the predictive uncertainty. Extensive experimental results on various benchmark datasets show that the proposed method provides well-aligned calibration performance on estimated uncertainty and better rendering quality compared with the previous methods that enable uncertainty quantification with view synthesis. Besides, by leveraging the model parameter uncertainty estimated by our method, we can remove noisy Gaussians automatically, thereby obtaining a high-fidelity part of the reconstructed scene, which is of great help in improving the visual quality.",
+  "abstract_zh": "",
+  "tldr": "We quantify the uncertainty in 3D Gaussian Splatting by deviating Gaussians to construction model space samples and learn with variational inference. .",
+  "keywords": [
+    "Neural Rendering",
+    "Uncertainty Quantification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=qpeAtfUWOQ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8f70d2aaf3fde28609d247eee1e0166da808d459.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We quantify the uncertainty in 3D Gaussian Splatting by deviating Gaussians to construction model space samples and learn with variational inference. ."
+  },
+  "collected_at": "2026-03-07T20:20:32.406Z"
+}

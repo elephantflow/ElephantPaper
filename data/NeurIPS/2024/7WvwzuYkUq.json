@@ -1,0 +1,36 @@
+{
+  "id": "7WvwzuYkUq",
+  "or_id": "7WvwzuYkUq",
+  "title": "Progressive Entropic Optimal Transport Solvers",
+  "title_zh": "",
+  "authors": [
+    "Parnian Kassraie",
+    "Aram-Alexandre Pooladian",
+    "Michal Klein",
+    "James Thornton",
+    "Jonathan Niles-Weed",
+    "marco cuturi"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Optimal transport (OT) has profoundly impacted machine learning by providing theoretical and computational tools to realign datasets.\nIn this context, given two large point clouds of sizes $n$ and $m$ in $\\mathbb{R}^d$, entropic OT (EOT) solvers have emerged as the most reliable tool to either solve the Kantorovich problem and output a $n\\times m$ coupling matrix, or to solve the Monge problem and learn a vector-valued push-forward map. \nWhile the robustness of EOT couplings/maps makes them a go-to choice in practical applications, EOT solvers remain difficult to tune because of a small but influential set of hyperparameters, notably the omnipresent entropic regularization strength $\\varepsilon$. Setting $\\varepsilon$ can be difficult, as it simultaneously impacts various performance metrics, such as compute speed, statistical performance, generalization, and bias. In this work, we propose a new class of EOT solvers (ProgOT), that can estimate both plans and transport maps.\nWe take advantage of several opportunities to optimize the computation of EOT solutions by *dividing* mass displacement using a time discretization, borrowing inspiration from dynamic OT formulations, and *conquering* each of these steps using EOT with properly scheduled parameters. We provide experimental evidence demonstrating that ProgOT is a faster and more robust alternative to *standard solvers* when computing couplings at large scales, even outperforming neural network-based approaches. We also prove statistical consistency of our approach for estimating OT maps.",
+  "abstract_zh": "",
+  "tldr": "We propose a progressive algorithm for estimation of OT maps and plans. We prove its statistically consistency and demonstrate its performance on synthetic and single-cell data.",
+  "keywords": [
+    "Optimal Transport",
+    "Entropy Regularization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=7WvwzuYkUq",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5d23c22c658dab0b5904018fac881801904773ae.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a progressive algorithm for estimation of OT maps and plans. We prove its statistically consistency and demonstrate its performance on synthetic and single-cell data."
+  },
+  "collected_at": "2026-03-07T20:20:32.406Z"
+}
