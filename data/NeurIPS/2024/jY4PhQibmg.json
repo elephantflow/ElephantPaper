@@ -1,0 +1,44 @@
+{
+  "id": "jY4PhQibmg",
+  "or_id": "jY4PhQibmg",
+  "title": "Gated Slot Attention for Efficient Linear-Time Sequence Modeling",
+  "title_zh": "",
+  "authors": [
+    "Yu Zhang",
+    "Songlin Yang",
+    "Rui-Jie Zhu",
+    "Yue Zhang",
+    "Leyang Cui",
+    "Yiqiao Wang",
+    "Bolun Wang",
+    "Freda Shi",
+    "Bailin Wang",
+    "Wei Bi",
+    "Peng Zhou",
+    "Guohong Fu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Linear attention Transformers and their gated variants, celebrated for enabling parallel training and efficient recurrent inference, still fall short in recall-intensive tasks compared to traditional Transformers and demand significant resources for training from scratch.\nThis paper introduces Gated Slot Attention (GSA), which enhances Attention with Bounded-memory-Control (ABC) by incorporating a gating mechanism inspired by Gated Linear Attention (GLA).\nEssentially, GSA comprises a two-layer GLA linked via $\\operatorname{softmax}$, utilizing context-aware memory reading and adaptive forgetting to improve memory capacity while maintaining compact recurrent state size.\nThis design greatly enhances both training and inference efficiency through GLA's hardware-efficient training algorithm and reduced state size.\nAdditionally, retaining the $\\operatorname{softmax}$ operation is particularly beneficial in ``finetuning pretrained Transformers to RNNs'' (T2R) settings, reducing the need for extensive training from scratch.\nExtensive experiments confirm GSA's superior performance in scenarios requiring in-context recall and in T2R settings.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "sequence modeling",
+    "language modeling",
+    "hardware-efficient",
+    "linear attention"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=jY4PhQibmg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1bda433926edbbc8370e798a20b99c748ba22694.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Linear attention Transformers and their gated variants, celebrated for enabling parallel training and efficient recurrent inference, still fall short in recall-intensive tasks compared to traditional Transformers and demand significant resources for training from scratch.\nThis paper introduces Gated"
+  },
+  "collected_at": "2026-03-07T22:01:59.816Z"
+}

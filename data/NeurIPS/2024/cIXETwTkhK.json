@@ -1,0 +1,36 @@
+{
+  "id": "cIXETwTkhK",
+  "or_id": "cIXETwTkhK",
+  "title": "Training Binary Neural Networks via Gaussian Variational Inference and Low-Rank Semidefinite Programming",
+  "title_zh": "",
+  "authors": [
+    "Lorenzo Orecchia",
+    "Jiawei Hu",
+    "Xue He",
+    "Wang Zhe Mark",
+    "Xulei Yang",
+    "Min Wu",
+    "Xue Geng"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Current methods for training Binarized Neural Networks (BNNs) heavily rely on the heuristic straight-through estimator (STE), which crucially enables the application of SGD-based optimizers to the combinatorial training problem. Although the STE heuristics and their variants have led to significant improvements in BNN performance, their theoretical underpinnings remain unclear and relatively understudied. In this paper, we propose a theoretically motivated optimization framework for BNN training based on Gaussian variational inference. In its simplest form, our approach yields a non-convex linear programming formulation whose variables and associated gradients motivate the use of latent weights and STE gradients. More importantly, our framework allows us to  formulate  semidefinite programming (SDP) relaxations to the BNN training task. Such formulations are able to explicitly models pairwise correlations between weights during training, leading to a more accurate optimization characterization of the training problem. As the size of such formulations grows quadratically in the number of weights, quickly becoming intractable for large networks, we apply the Burer-Monteiro approach and only optimize over linear-size low-rank SDP solutions. Our empirical evaluation on CIFAR-10, CIFAR-100, Tiny-ImageNet and ImageNet datasets shows our method consistently outperforming all state-of-the-art algorithms for training BNNs.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Binarized Neural Networks; Variational Inference; Semi-definite Programming;"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=cIXETwTkhK",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/797b71f76a7ae91ef1b522cd5c25d19949842124.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Current methods for training Binarized Neural Networks (BNNs) heavily rely on the heuristic straight-through estimator (STE), which crucially enables the application of SGD-based optimizers to the combinatorial training problem. Although the STE heuristics and their variants have led to significant "
+  },
+  "collected_at": "2026-03-07T22:01:59.819Z"
+}

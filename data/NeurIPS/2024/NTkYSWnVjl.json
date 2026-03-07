@@ -1,0 +1,36 @@
+{
+  "id": "NTkYSWnVjl",
+  "or_id": "NTkYSWnVjl",
+  "title": "Amnesia as a Catalyst for Enhancing Black Box Pixel Attacks in Image Classification and Object Detection",
+  "title_zh": "",
+  "authors": [
+    "Dongsu Song",
+    "Daehwa Ko",
+    "Jay Hoon Jung"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "It is well known that query-based attacks tend to have relatively higher success\nrates in adversarial black-box attacks. While research on black-box attacks is actively\nbeing conducted, relatively few studies have focused on pixel attacks that\ntarget only a limited number of pixels. In image classification, query-based pixel\nattacks often rely on patches, which heavily depend on randomness and neglect\nthe fact that scattered pixels are more suitable for adversarial attacks. Moreover, to\nthe best of our knowledge, query-based pixel attacks have not been explored in the\nfield of object detection. To address these issues, we propose a novel pixel-based\nblack-box attack called Remember and Forget Pixel Attack using Reinforcement\nLearning(RFPAR), consisting of two main components: the Remember and Forget\nprocesses. RFPAR mitigates randomness and avoids patch dependency by\nleveraging rewards generated through a one-step RL algorithm to perturb pixels.\nRFPAR effectively creates perturbed images that minimize the confidence scores\nwhile adhering to limited pixel constraints. Furthermore, we advance our proposed\nattack beyond image classification to object detection, where RFPAR reduces\nthe confidence scores of detected objects to avoid detection. Experiments\non the ImageNet-1K dataset for classification show that RFPAR outperformed\nstate-of-the-art query-based pixel attacks. For object detection, using the MSCOCO\ndataset with YOLOv8 and DDQ, RFPAR demonstrates comparable mAP\nreduction to state-of-the-art query-based attack while requiring fewer query. Further\nexperiments on the Argoverse dataset using YOLOv8 confirm that RFPAR\neffectively removed objects on a larger scale dataset. Our code is available at\nhttps://github.com/KAU-QuantumAILab/RFPAR.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Adversarial attack",
+    "Query-based pixel attack",
+    "Image classification",
+    "Object detection",
+    "RL"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=NTkYSWnVjl",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/41e5fd843fbdc69b23bbdb5150d1f72699a1441f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "It is well known that query-based attacks tend to have relatively higher success\nrates in adversarial black-box attacks. While research on black-box attacks is actively\nbeing conducted, relatively few studies have focused on pixel attacks that\ntarget only a limited number of pixels. In image classif"
+  },
+  "collected_at": "2026-03-07T22:01:59.819Z"
+}

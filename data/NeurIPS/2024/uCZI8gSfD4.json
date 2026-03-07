@@ -1,0 +1,37 @@
+{
+  "id": "uCZI8gSfD4",
+  "or_id": "uCZI8gSfD4",
+  "title": "Training Compute-Optimal Protein Language Models",
+  "title_zh": "",
+  "authors": [
+    "Xingyi Cheng",
+    "Bo Chen",
+    "Pan Li",
+    "Jing Gong",
+    "Jie Tang",
+    "Le Song"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "We explore optimally training protein language models, an area of significant interest in biological research where guidance on best practices is limited.\nMost models are trained with extensive compute resources until performance gains plateau, focusing primarily on increasing model sizes rather than optimizing the efficient compute frontier that balances performance and compute budgets.\nOur investigation is grounded in a massive dataset consisting of 939 million protein sequences. \nWe trained over 300 models ranging from 3.5 million to 10.7 billion parameters on 5 to 200 billion unique tokens, to investigate the relations between model sizes, training token numbers, and objectives.\nFirst, we observed the effect of diminishing returns for the Causal Language Model (CLM) and that of overfitting for Masked Language Model (MLM) when repeating the commonly used Uniref database. To address this, we included metagenomic protein sequences in the training set to increase the diversity and avoid the plateau or overfitting effects. \nSecond, we obtained the scaling laws of CLM and MLM on Transformer, tailored to the specific characteristics of protein sequence data. \nThird, we observe a transfer scaling phenomenon from CLM to MLM, further demonstrating the effectiveness of transfer through scaling behaviors based on estimated Effectively Transferred Tokens.\nFinally, to validate our scaling laws, we compare the large-scale versions of ESM-2 and PROGEN2 on downstream tasks, encompassing evaluations of protein generation as well as structure- and function-related tasks, all within less or equivalent pre-training compute budgets.",
+  "abstract_zh": "",
+  "tldr": "We explore optimally training protein language models and propose the scaling law, an area of significant interest in biological research with limited guidance on best practices.",
+  "keywords": [
+    "Protein Language Model",
+    "Scaling Law"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=uCZI8gSfD4",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5b6ca1e41c84b9d1e3cae244f0de73392b8e685d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We explore optimally training protein language models and propose the scaling law, an area of significant interest in biological research with limited guidance on best practices."
+  },
+  "collected_at": "2026-03-07T22:01:59.820Z"
+}

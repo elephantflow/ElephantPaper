@@ -1,0 +1,34 @@
+{
+  "id": "2NKumsITFw",
+  "or_id": "2NKumsITFw",
+  "title": "Learning from Noisy Labels via Conditional Distributionally Robust Optimization",
+  "title_zh": "",
+  "authors": [
+    "Hui Guo",
+    "Grace Yi",
+    "Boyu Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "While crowdsourcing has emerged as a practical solution for labeling large datasets, it presents a significant challenge in learning accurate models due to noisy labels from annotators with varying levels of expertise. Existing methods typically estimate the true label posterior, conditioned on the instance and noisy annotations, to infer true labels or adjust loss functions. These estimates, however, often overlook potential misspecification in the true label posterior, which can degrade model performances, especially in high-noise scenarios. To address this issue, we investigate learning from noisy annotations with an estimated true label posterior through the framework of conditional distributionally robust optimization (CDRO). We propose formulating the problem as minimizing the worst-case risk within a distance-based ambiguity set centered around a reference distribution. By examining the strong duality of the formulation, we derive upper bounds for the worst-case risk and develop an analytical solution for the dual robust risk for each data point. This leads to a novel robust pseudo-labeling algorithm that leverages the likelihood ratio test to construct a pseudo-empirical distribution, providing a robust reference probability distribution in CDRO. Moreover, to devise an efficient algorithm for CDRO, we derive a closed-form expression for the empirical robust risk and the optimal Lagrange multiplier of the dual problem, facilitating a principled balance between robustness and model fitting. Our experimental results on both synthetic and real-world datasets demonstrate the superiority of our method.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "noisy label",
+    "conditional distributionally robust optimization (CDRO)",
+    "crowdsourcing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=2NKumsITFw",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6c6f3a2146dbd1bcafc5e8782b1b8e788bdcfd95.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "While crowdsourcing has emerged as a practical solution for labeling large datasets, it presents a significant challenge in learning accurate models due to noisy labels from annotators with varying levels of expertise. Existing methods typically estimate the true label posterior, conditioned on the "
+  },
+  "collected_at": "2026-03-07T22:01:59.818Z"
+}

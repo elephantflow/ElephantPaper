@@ -1,0 +1,35 @@
+{
+  "id": "lsd27JUJ8v",
+  "or_id": "lsd27JUJ8v",
+  "title": "Exploiting the Replay Memory Before Exploring the Environment: Enhancing Reinforcement Learning Through Empirical MDP Iteration",
+  "title_zh": "",
+  "authors": [
+    "Hongming Zhang",
+    "Chenjun Xiao",
+    "Chao Gao",
+    "Han Wang",
+    "bo xu",
+    "Martin Müller"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Reinforcement learning (RL) algorithms are typically based on optimizing a Markov Decision Process (MDP) using the optimal Bellman equation. Recent studies have revealed that focusing the optimization of Bellman equations solely on in-sample actions tends to result in more stable optimization, especially in the presence of function approximation. Upon on these findings, in this paper, we propose an Empirical MDP Iteration (EMIT) framework. EMIT constructs a sequence of empirical MDPs using data from the growing replay memory. For each of these empirical MDPs, it learns an estimated Q-function denoted as $\\widehat{Q}$. The key strength is that by restricting the Bellman update to in-sample bootstrapping, each empirical MDP converges to a unique optimal $\\widehat{Q}$ function. Furthermore, gradually expanding from the empirical MDPs to the original MDP induces a monotonic policy improvement. Instead of creating entirely new algorithms, we demonstrate that EMIT can be seamlessly integrated with existing online RL algorithms, effectively acting as a regularizer for contemporary Q-learning methods. We show this by implementing EMIT for two representative RL algorithms, DQN and TD3. Experimental results on Atari and MuJoCo benchmarks show that EMIT significantly reduces estimation errors and substantially improves the performance of both algorithms.",
+  "abstract_zh": "",
+  "tldr": "Improving online reinforcement learning by regularizing such algorithms with Empirical MDP ITeration (EMIT).",
+  "keywords": [
+    "Deep Reinforcement Learning; Empirical MDP Iteration;"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=lsd27JUJ8v",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d5d1e05131fd8693629b3b9ba2421406fc72f7f0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Improving online reinforcement learning by regularizing such algorithms with Empirical MDP ITeration (EMIT)."
+  },
+  "collected_at": "2026-03-07T22:01:59.819Z"
+}

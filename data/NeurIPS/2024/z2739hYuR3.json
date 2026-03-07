@@ -1,0 +1,36 @@
+{
+  "id": "z2739hYuR3",
+  "or_id": "z2739hYuR3",
+  "title": "Provably Efficient Reinforcement Learning with Multinomial Logit Function Approximation",
+  "title_zh": "",
+  "authors": [
+    "Long-Fei Li",
+    "Yu-Jie Zhang",
+    "Peng Zhao",
+    "Zhi-Hua Zhou"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We study a new class of MDPs that employs multinomial logit (MNL) function approximation to ensure valid probability distributions over the state space. Despite its significant benefits, incorporating the non-linear function raises substantial challenges in both *statistical* and *computational* efficiency. The best-known result of Hwang and Oh [2023] has achieved an $\\widetilde{\\mathcal{O}}(\\kappa^{-1}dH^2\\sqrt{K})$ regret upper bound, where $\\kappa$ is a problem-dependent quantity, $d$ is the feature dimension, $H$ is the episode length, and $K$ is the number of episodes. However, we observe that $\\kappa^{-1}$ exhibits polynomial dependence on the number of reachable states, which can be as large as the state space size in the worst case and thus undermines the motivation for function approximation. Additionally, their method requires storing all historical data and the time complexity scales linearly with the episode count, which is computationally expensive. In this work, we propose a statistically efficient algorithm that achieves a regret of $\\widetilde{\\mathcal{O}}(dH^2\\sqrt{K} + \\kappa^{-1}d^2H^2)$, eliminating the dependence on $\\kappa^{-1}$ in the dominant term for the first time. We then address the computational challenges by introducing an enhanced algorithm that achieves the same regret guarantee but with only constant cost. Finally, we establish the first lower bound for this problem, justifying the optimality of our results in $d$ and $K$.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "MNL function approximation",
+    "regret analysis",
+    "reinforcement learning",
+    "Markov decision process"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=z2739hYuR3",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c78403d8fed222d4a519ebbc82ee3a1bdfa7dc83.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study a new class of MDPs that employs multinomial logit (MNL) function approximation to ensure valid probability distributions over the state space. Despite its significant benefits, incorporating the non-linear function raises substantial challenges in both *statistical* and *computational* eff"
+  },
+  "collected_at": "2026-03-07T22:01:59.817Z"
+}

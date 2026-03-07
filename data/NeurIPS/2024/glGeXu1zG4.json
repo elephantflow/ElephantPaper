@@ -1,0 +1,39 @@
+{
+  "id": "glGeXu1zG4",
+  "or_id": "glGeXu1zG4",
+  "title": "Learning to Understand: Identifying Interactions via the Möbius Transform",
+  "title_zh": "",
+  "authors": [
+    "Justin Singh Kang",
+    "Yigit Efe Erginbas",
+    "Landon Butler",
+    "Ramtin Pedarsani",
+    "Kannan Ramchandran"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "One of the key challenges in machine learning is to find interpretable representations of learned functions. The Möbius transform is essential for this purpose, as its coefficients correspond to unique *importance scores* for *sets of input variables*. This transform is closely related to widely used game-theoretic notions of importance like the *Shapley* and *Bhanzaf value*, but it also captures crucial higher-order interactions. Although computing the Möbius Transform of a function with $n$ inputs involves $2^n$ coefficients, it becomes tractable when the function is *sparse* and of *low-degree* as we show is the case for many real-world functions. Under these conditions, the complexity of the transform computation is significantly reduced. When there are $K$ non-zero coefficients, our algorithm recovers the Möbius transform in $O(Kn)$ samples and $O(Kn^2)$ time asymptotically under certain assumptions, the first non-adaptive algorithm to do so. We also uncover a surprising connection between group testing and the Möbius transform. For functions where all interactions involve at most $t$ inputs, we use group testing results to compute the Möbius transform with $O(Kt\\log n)$ sample complexity and $O(K\\mathrm{poly}(n))$ time.  A robust version of this algorithm withstands noise and maintains this complexity. This marks the first $n$ sub-linear query complexity, noise-tolerant algorithm for the Möbius transform. While our algorithms are conceptualized in an idealized setting, they indicate that the Möbius transform is a potent tool for interpreting deep learning models.",
+  "abstract_zh": "",
+  "tldr": "Learning explainable representations of functions efficiently using ideas from signal processing and group testing",
+  "keywords": [
+    "Shapley Value",
+    "Importance Scores",
+    "Transforms",
+    "Signal Processing",
+    "Interactions",
+    "Group Testing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=glGeXu1zG4",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c55b9c4dae086102f5747c88777ac62b5073b307.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Learning explainable representations of functions efficiently using ideas from signal processing and group testing"
+  },
+  "collected_at": "2026-03-07T22:01:59.818Z"
+}
