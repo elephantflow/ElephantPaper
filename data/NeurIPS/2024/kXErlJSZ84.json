@@ -1,0 +1,35 @@
+{
+  "id": "kXErlJSZ84",
+  "or_id": "kXErlJSZ84",
+  "title": "General Detection-based Text Line Recognition",
+  "title_zh": "",
+  "authors": [
+    "Raphael Baena",
+    "Syrine Kalleli",
+    "Mathieu Aubry"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We introduce a general detection-based approach to text line recognition, be it printed (OCR) or handwritten text (HTR), with latin, chinese or ciphered characters. Detection-based approaches have until now largely been discarded for HTR because reading characters separately is often challenging, and character-level annotation is difficult and expensive. We overcome these challenges thanks to three main insights: (i) synthetic pre-training with diverse enough data to learn reasonable character localization in any script; (ii) modern transformer-based detectors can jointly detect a large number of instances and, if trained with an adequate masking strategy, leverage consistency between the different detections; (iii) once a pre-trained detection model with approximate character localization is available, it is possible to fine-tune it with line-level annotation on real data, even with a different alphabet.  Our approach thus builds on a completely different paradigm than most state-of-the-art methods, which rely on autoregressive decoding, predicting character values one by one, while we treat a complete line in parallel. Remarkably, our method demonstrates good performance on range of scripts, usually tackled with specialized approaches: latin script, chinese script, and ciphers, for which we significantly improve state-of-the-art performances. \nOur code and models are available at [https://github.com/raphael-baena/DTLR](https://github.com/raphael-baena/DTLR).",
+  "abstract_zh": "",
+  "tldr": "A transformer-based OCR/HTR approach that performs explicit character detection and we demonstrate to be very general.",
+  "keywords": [
+    "Text Recognition",
+    "Handwritten Text Recognition",
+    "Optical Character Recognition",
+    "Transformer"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=kXErlJSZ84",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b8d5175bef8ceea82145cbd46834f32f5fa9df51.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A transformer-based OCR/HTR approach that performs explicit character detection and we demonstrate to be very general."
+  },
+  "collected_at": "2026-03-07T20:00:28.536Z"
+}

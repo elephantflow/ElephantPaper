@@ -1,0 +1,37 @@
+{
+  "id": "biAqUbAuG7",
+  "or_id": "biAqUbAuG7",
+  "title": "Adam on Local Time: Addressing Nonstationarity in RL with Relative Adam Timesteps",
+  "title_zh": "",
+  "authors": [
+    "Benjamin Ellis",
+    "Matthew Thomas Jackson",
+    "Andrei Lupu",
+    "Alexander D. Goldie",
+    "Mattie Fellows",
+    "Shimon Whiteson",
+    "Jakob Nicolaus Foerster"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In reinforcement learning (RL), it is common to apply techniques used broadly in \nmachine learning such as neural network function approximators and momentum-based optimizers. However, such tools were largely developed for supervised learning rather than nonstationary RL, leading practitioners to adopt target networks, clipped policy updates, and other RL-specific implementation tricks to combat this mismatch, rather than directly adapting this toolchain for use in RL. \nIn this paper, we take a different approach and instead address the effect of nonstationarity by adapting the widely used Adam optimiser. \nWe first analyse the impact of nonstationary gradient magnitude --- such as that caused by a change in target network --- on Adam's update size, demonstrating that such a change can lead to large updates and hence sub-optimal performance.\nTo address this, we introduce Adam-Rel.\nRather than using the global timestep in the Adam update, Adam-Rel uses the *local* timestep within an epoch, essentially resetting Adam's timestep to 0 after target changes.\nWe demonstrate that this avoids large updates and reduces to learning rate annealing in the absence of such increases in gradient magnitude. Evaluating Adam-Rel in both on-policy and off-policy RL, we demonstrate improved performance in both Atari and Craftax.\nWe then show that increases in gradient norm occur in RL in practice, and examine the differences between our \ntheoretical model and the observed data.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Reinforcement Learning",
+    "Deep Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=biAqUbAuG7",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1e18479cc243fed9e1e7fbec285bc06666532a0f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In reinforcement learning (RL), it is common to apply techniques used broadly in \nmachine learning such as neural network function approximators and momentum-based optimizers. However, such tools were largely developed for supervised learning rather than nonstationary RL, leading practitioners to ad"
+  },
+  "collected_at": "2026-03-07T20:00:28.538Z"
+}

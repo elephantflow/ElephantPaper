@@ -1,0 +1,39 @@
+{
+  "id": "7txPaUpUnc",
+  "or_id": "7txPaUpUnc",
+  "title": "Identifying Functionally Important Features with End-to-End Sparse Dictionary Learning",
+  "title_zh": "",
+  "authors": [
+    "Dan Braun",
+    "Jordan Taylor",
+    "Nicholas Goldowsky-Dill",
+    "Lee Sharkey"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Identifying the features learned by neural networks is a core challenge in mechanistic interpretability. Sparse autoencoders (SAEs), which learn a sparse, overcomplete dictionary that reconstructs a network's internal activations, have been used to identify these features. However, SAEs may learn more about the structure of the datatset than the computational structure of the network. There is therefore only indirect reason to believe that the directions found in these dictionaries are functionally important to the network. We propose end-to-end (e2e) sparse dictionary learning, a method for training SAEs that ensures the features learned are functionally important by minimizing the KL divergence between the output distributions of the original model and the model with SAE activations inserted. Compared to standard SAEs, e2e SAEs offer a Pareto improvement: They explain more network performance, require fewer total features, and require fewer simultaneously active features per datapoint, all with no cost to interpretability. We explore geometric and qualitative differences between e2e SAE features and standard SAE features. E2e dictionary learning brings us closer to methods that can explain network behavior concisely and accurately. We release our library for training e2e SAEs and reproducing our analysis at\nhttps://github.com/ApolloResearch/e2e_sae.",
+  "abstract_zh": "",
+  "tldr": "We introduce end-to-end sparse autoencoders, which aim to learn functionally relevant features from network activations. They are a pareto improvement over standard sparse autoencoders.",
+  "keywords": [
+    "Mechnastic Interpretability",
+    "Interpretability",
+    "Explainability",
+    "Transparency",
+    "Sparse Coding",
+    "Causal mediation analysis",
+    "High dimensional data analysis"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=7txPaUpUnc",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d901f0cc3f8904bc2dfb0d75edf53a864fae1782.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce end-to-end sparse autoencoders, which aim to learn functionally relevant features from network activations. They are a pareto improvement over standard sparse autoencoders."
+  },
+  "collected_at": "2026-03-07T20:00:28.535Z"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "dg3tI3c2B1",
+  "or_id": "dg3tI3c2B1",
+  "title": "Molecule Design by Latent Prompt Transformer",
+  "title_zh": "",
+  "authors": [
+    "Deqian Kong",
+    "Yuhao Huang",
+    "Jianwen Xie",
+    "Edouardo Honig",
+    "Ming Xu",
+    "Shuanghong Xue",
+    "Pei Lin",
+    "Sanping Zhou",
+    "Sheng Zhong",
+    "Nanning Zheng",
+    "Ying Nian Wu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "This work explores the challenging problem of molecule design by framing it as a conditional generative modeling task, where target biological properties or desired chemical constraints serve as conditioning variables.\nWe propose the Latent Prompt Transformer (LPT), a novel generative model comprising three components: (1) a latent vector with a learnable prior distribution modeled by a neural transformation of Gaussian white noise; (2) a molecule generation model based on a causal Transformer, which uses the latent vector as a prompt; and (3) a property prediction model that predicts a molecule's target properties and/or constraint values using the latent prompt. LPT can be learned by maximum likelihood estimation on molecule-property pairs. During property optimization, the latent prompt is inferred from target properties and constraints through posterior sampling and then used to guide the autoregressive molecule generation.\nAfter initial training on existing molecules and their properties, we adopt an online learning algorithm to progressively shift the model distribution towards regions that support desired target properties. Experiments demonstrate that LPT not only effectively discovers useful molecules across single-objective, multi-objective, and structure-constrained optimization tasks, but also exhibits strong sample efficiency.",
+  "abstract_zh": "",
+  "tldr": "We propose the Latent Prompt Transformer, a novel latent space generative model with both offline and online learning algorithms for molecule design.",
+  "keywords": [
+    "latent space generative modeling; Latent Prompt Transformer; molecule design"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=dg3tI3c2B1",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e7eaaedb41ae00a838add8075c7268647e02467d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We propose the Latent Prompt Transformer, a novel latent space generative model with both offline and online learning algorithms for molecule design."
+  },
+  "collected_at": "2026-03-07T20:00:28.534Z"
+}
