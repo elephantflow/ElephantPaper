@@ -1,0 +1,38 @@
+{
+  "id": "pEhvscmSgG",
+  "or_id": "pEhvscmSgG",
+  "title": "Constrained Latent Action Policies for Model-Based Offline Reinforcement Learning",
+  "title_zh": "",
+  "authors": [
+    "Marvin Alles",
+    "Philip Becker-Ehmck",
+    "Patrick van der Smagt",
+    "Maximilian Karl"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In offline reinforcement learning, a policy is learned using a static dataset in the absence of costly feedback from the environment. In contrast to the online setting, only using static datasets poses additional challenges, such as policies generating out-of-distribution samples. Model-based offline reinforcement learning methods try to overcome these by learning a model of the underlying dynamics of the environment and using it to guide policy search. It is beneficial but, with limited datasets, errors in the model and the issue of value overestimation among out-of-distribution states can worsen performance. Current model-based methods apply some notion of conservatism to the Bellman update, often implemented using uncertainty estimation derived from model ensembles. In this paper, we propose Constrained Latent Action Policies (C-LAP) which learns a generative model of the joint distribution of observations and actions. We cast policy learning as a constrained objective to always stay within the support of the latent action distribution, and use the generative capabilities of the model to impose an implicit constraint on the generated actions. Thereby eliminating the need to use additional uncertainty penalties on the Bellman update and significantly decreasing the number of gradient steps required to learn a policy. We empirically evaluate C-LAP on the D4RL and V-D4RL benchmark, and show that C-LAP is competitive to state-of-the-art methods, especially outperforming on datasets with visual observations.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Offline Reinforcement Learning",
+    "Model-Based Reinforcement Learning",
+    "Latent Action",
+    "Constrained Policy",
+    "Generative Model",
+    "Applied Reinforcement Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=pEhvscmSgG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/58e3180fda4db56e3a9b66538eb1714ad00f3837.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In offline reinforcement learning, a policy is learned using a static dataset in the absence of costly feedback from the environment. In contrast to the online setting, only using static datasets poses additional challenges, such as policies generating out-of-distribution samples. Model-based offlin"
+  },
+  "collected_at": "2026-03-07T13:40:38.851Z"
+}

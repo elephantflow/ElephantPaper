@@ -1,0 +1,38 @@
+{
+  "id": "kzJ9P7VPnS",
+  "or_id": "kzJ9P7VPnS",
+  "title": "LP-3DGS: Learning to Prune 3D Gaussian Splatting",
+  "title_zh": "",
+  "authors": [
+    "Zhaoliang Zhang",
+    "Tianchen Song",
+    "Yongjae Lee",
+    "Li Yang",
+    "Cheng Peng",
+    "Rama Chellappa",
+    "Deliang Fan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recently, 3D Gaussian Splatting (3DGS) has become one of the mainstream methodologies for novel view synthesis (NVS) due to its high quality and fast rendering speed. However, as a point-based scene representation, 3DGS potentially generates a large number of Gaussians to fit the scene, leading to high memory usage. Improvements that have been proposed require either an empirical pre-set pruning ratio or importance score threshold to prune the point cloud. Such hyperparameters require multiple rounds of training to optimize and achieve the maximum pruning ratio while maintaining the rendering quality for each scene. In this work, we propose learning-to-prune 3DGS (LP-3DGS), where a trainable binary mask is applied to the importance score to automatically find a favorable pruning ratio. Instead of using the traditional straight-through estimator (STE) method to approximate the binary mask gradient, we redesign the masking function to leverage the Gumbel-Sigmoid method, making it differentiable and compatible with the existing training process of 3DGS. Extensive experiments have shown that LP-3DGS consistently achieves a good balance between efficiency and high quality.",
+  "abstract_zh": "",
+  "tldr": "We propose a learning method to prune the points in 3D Gaussian Splatting by applying trainable mask to the importance score of points and minimize the model size with only one-time training while maintaining the rendering quality.",
+  "keywords": [
+    "Novel view synthesis",
+    "Gaussian splatting",
+    "Learn to prune"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=kzJ9P7VPnS",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a0617a04ee1110a70438b1ec2b77aa4464ec2eb2.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a learning method to prune the points in 3D Gaussian Splatting by applying trainable mask to the importance score of points and minimize the model size with only one-time training while maintaining the rendering quality."
+  },
+  "collected_at": "2026-03-07T14:20:41.315Z"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "0rl5vWOzRU",
+  "or_id": "0rl5vWOzRU",
+  "title": "Score-Optimal Diffusion Schedules",
+  "title_zh": "分数最优的扩散调度",
+  "authors": [
+    "Christopher Williams",
+    "Andrew Campbell",
+    "Arnaud Doucet",
+    "Saifuddin Syed"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Denoising diffusion models (DDMs) offer a flexible framework for sampling from high dimensional data distributions. DDMs generate a path of probability distributions interpolating between a reference Gaussian distribution and a data distribution by incrementally injecting noise into the data. To numerically simulate the sampling process, a discretisation schedule from the reference back towards clean data must be chosen. An appropriate discretisation schedule is crucial to obtain high quality samples. However, beyond hand crafted heuristics, a general method for choosing this schedule remains elusive. This paper presents a novel algorithm for adaptively selecting an optimal discretisation schedule with respect to a cost that we derive. Our cost measures the work done by the simulation procedure to transport samples from one point in the diffusion path to the next. Our method does not require hyperparameter tuning and adapts to the dynamics and geometry of the diffusion path. Our algorithm only involves the evaluation of the estimated Stein score, making it scalable to existing pre-trained models at inference time and online during training. We find that our learned schedule recovers performant schedules previously only discovered through manual search and obtains competitive FID scores on image datasets.",
+  "abstract_zh": "去噪扩散模型（DDMs）提供了一个灵活的框架，用于从高维数据分布中采样。DDMs通过在数据中逐步注入噪声，生成一个在参考高斯分布和数据分布之间插值的概率分布路径。为了数值模拟采样过程，必须选择从参考返回到干净数据的离散调度。适当的离散调度对于获得高质量样本至关重要。然而，除了手工启发的启发式方法外，尚无选择此调度的通用方法。本文提出一种新颖算法，根据我们推导的成本自适应选择最优离散调度。我们的成本衡量模拟程序将样本从扩散路径中的一点传输到另一点所做的功。我们的方法无需超参数调优，并能适应扩散路径的动力学和几何结构。我们的算法仅涉及评估估计的Stein分数，使其在推理时和在训练期间在线可扩展至现有预训练模型。我们发现，学习得到的调度能够恢复先前仅通过手动搜索发现的高性能调度，并在图像数据集上获得有竞争力的FID分数。",
+  "tldr": "",
+  "keywords": [
+    "Diffusion model",
+    "adaptive schedule",
+    "Annealed Langevin"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=0rl5vWOzRU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/37520edacf164e2d99163983c5d52ea2b42bec46.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Denoising diffusion models (DDMs) offer a flexible framework for sampling from high dimensional data distributions. DDMs generate a path of probability distributions interpolating between a reference Gaussian distribution and a data distribution by incrementally injecting noise into the data. To num"
+  },
+  "collected_at": "2026-03-07T13:40:38.850Z"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "npJQ6qS4bg",
+  "or_id": "npJQ6qS4bg",
+  "title": "Understanding and Minimising Outlier Features in Transformer Training",
+  "title_zh": "",
+  "authors": [
+    "Bobby He",
+    "Lorenzo Noci",
+    "Daniele Paliotta",
+    "Imanol Schlag",
+    "Thomas Hofmann"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Outlier Features (OFs) are neurons whose activation magnitudes significantly exceed the average over a neural network's (NN) width. They are well known to emerge during standard transformer training and have the undesirable effect of hindering quantisation in afflicted models. Despite their practical importance, little is known behind why OFs emerge during training, nor how one can minimise them.\n\nOur work focuses on the above questions, first identifying several quantitative metrics, such as the kurtosis over neuron activation norms, to measure OFs. With these metrics, we study how architectural and optimisation choices influence OFs, and provide practical insights to minimise OFs during training. As highlights, we introduce a novel unnormalised transformer block, the Outlier Protected block, and present a previously unknown benefit of non-diagonal preconditioning optimisers, finding both approaches to significantly reduce OFs and improve quantisation without compromising convergence speed, at scales of up to 7B parameters. Notably, our combination of OP block and non-diagonal preconditioner (SOAP) achieves 14.87 weight-and-activation int8 perplexity (from 14.71 in standard precision), compared to 63.4 int8 perplexity (from 16.00) with a default OF-prone combination of Pre-Norm model and Adam, when quantising OPT-125m models post-training.",
+  "abstract_zh": "",
+  "tldr": "We study why Outlier Features occur during standard NN training dynamics, and which algorithmic choices one can make to minimise them.",
+  "keywords": [
+    "Outlier Features",
+    "Training Dynamics",
+    "Normalisation Layers",
+    "Signal Propagation",
+    "NN Optimisers",
+    "NN Architectures",
+    "Transformers",
+    "Understanding Deep Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=npJQ6qS4bg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1a1a6d4bbd44ce3da3b7fbb33b801d55f1582c16.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study why Outlier Features occur during standard NN training dynamics, and which algorithmic choices one can make to minimise them."
+  },
+  "collected_at": "2026-03-07T14:00:33.048Z"
+}

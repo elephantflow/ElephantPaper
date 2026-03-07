@@ -1,0 +1,34 @@
+{
+  "id": "Mrs9a1XQAp",
+  "or_id": "Mrs9a1XQAp",
+  "title": "Beyond Slow Signs in High-fidelity Model Extraction",
+  "title_zh": "超越高保真模型提取中的缓慢征兆",
+  "authors": [
+    "Hanna Foerster",
+    "Robert D. Mullins",
+    "Ilia Shumailov",
+    "Jamie Hayes"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Deep neural networks, costly to train and rich in intellectual property value, are\nincreasingly threatened by model extraction attacks that compromise their confiden-\ntiality. Previous attacks have succeeded in reverse-engineering model parameters\nup to a precision of float64 for models trained on random data with at most three\nhidden layers using cryptanalytical techniques. However, the process was identified\nto be very time consuming and not feasible for larger and deeper models trained on\nstandard benchmarks. Our study evaluates the feasibility of parameter extraction\nmethods of Carlini et al. [1] further enhanced by Canales-Martínez et al. [2] for\nmodels trained on standard benchmarks. We introduce a unified codebase that\nintegrates previous methods and reveal that computational tools can significantly\ninfluence performance. We develop further optimisations to the end-to-end attack\nand improve the efficiency of extracting weight signs by up to 14.8 times com-\npared to former methods through the identification of easier and harder to extract\nneurons. Contrary to prior assumptions, we identify extraction of weights, not\nextraction of weight signs, as the critical bottleneck. With our improvements, a\n16,721 parameter model with 2 hidden layers trained on MNIST is extracted within\nonly 98 minutes compared to at least 150 minutes previously. Finally, addressing\nmethodological deficiencies observed in previous studies, we propose new ways of\nrobust benchmarking for future model extraction attacks.",
+  "abstract_zh": "深度神经网络训练成本高，具有丰富知识产权价值，正日益受到威胁其保密性的模型提取攻击。先前攻击已成功通过密码分析技术，对使用随机数据训练且最多三层隐藏层的模型进行反向工程，精度达到float64。然而，该过程被认为非常耗时，并且对于在标准基准上训练的更大和更深层模型不可行。我们的研究评估了Carlini等[1]方法以及Canales-Martínez等[2]进一步增强的参数提取方法在标准基准训练模型上的可行性。我们引入一个统一代码库，集成先前方法并揭示计算工具可显著影响性能。我们对端到端攻击进一步优化，并通过对更易和更难提取神经元的识别，将提取权重偏好的效率比先前方法提高多达14.8倍。与先前假设相反，我们确定权重提取（而非权重偏好提取）是关键瓶颈。通过我们的改进，在MNIST上训练且具有2个隐藏层、16,721参数的模型在仅98分钟内被提取，而先前至少需要150分钟。最后，针对先前研究中观察到的方淥缺陷，我们提出了未来模型提取攻击的稳健基准测试新方法。",
+  "tldr": "significantly improve performance of high fidelity model extraction, importantly removing prior bottlenecks of the attack",
+  "keywords": [
+    "model extraction",
+    "cryptanalytic extraction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Mrs9a1XQAp",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/da3ba887027b7a91d7ac7421ce6831f8b1a3467d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "significantly improve performance of high fidelity model extraction, importantly removing prior bottlenecks of the attack"
+  },
+  "collected_at": "2026-03-07T13:40:38.850Z"
+}

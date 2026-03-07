@@ -1,0 +1,41 @@
+{
+  "id": "BrvLTxEx08",
+  "or_id": "BrvLTxEx08",
+  "title": "Learning Equilibria in Adversarial Team Markov Games: A Nonconvex-Hidden-Concave Min-Max Optimization Problem",
+  "title_zh": "",
+  "authors": [
+    "Fivos Kalogiannis",
+    "Jingming Yan",
+    "Ioannis Panageas"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We study the problem of learning a Nash equilibrium (NE) in Markov games which is a cornerstone in multi-agent reinforcement learning (MARL). In particular, we focus on infinite-horizon adversarial team Markov games (ATMGs) in which agents that share a common reward function compete against a single opponent, *the adversary*. These games unify two-player zero-sum Markov games and Markov potential games, resulting in a setting that encompasses both collaboration and competition. Kalogiannis et al. (2023) provided an efficient equilibrium computation algorithm for ATMGs which presumes knowledge of the reward and transition functions and has no sample complexity guarantees. We contribute a learning algorithm that utilizes MARL policy gradient methods with iteration and sample complexity that is polynomial in the approximation error $\\epsilon$ and the natural parameters of the ATMG, resolving the main caveats of the solution by (Kalogiannis et al., 2023). It is worth noting that previously, the existence of learning algorithms for NE was known for Markov two-player zero-sum and potential games but not for ATMGs.\n    \nSeen through the lens of min-max optimization, computing a NE in these games consists a nonconvex--nonconcave saddle-point problem. Min-max optimization has received an extensive study. Nevertheless, the case of nonconvex--nonconcave landscapes remains elusive: in full generality, finding saddle-points is computationally intractable (Daskalakis et al., 2021). We circumvent the aforementioned intractability by developing techniques that exploit the hidden structure of the objective function via a nonconvex--concave reformulation. However, this introduces a challenge of a feasibility set with coupled constraints. We tackle these challenges by establishing novel techniques for optimizing weakly-smooth nonconvex functions, extending the framework of (Devolder et al., 2014).",
+  "abstract_zh": "",
+  "tldr": "We develop a policy gradient method to learn a Nash equilibrium in a MARL setting which encompasses both cooperation and competition",
+  "keywords": [
+    "MARL",
+    "Convex RL",
+    "Nash Equilibrium",
+    "Non-smooth Optimization",
+    "Minimax Optimization",
+    "Hidden Convexity",
+    "Nonconvex-nonconcave",
+    "Markov Games",
+    "Stochastic Games",
+    "Learning in Games"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=BrvLTxEx08",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/70041b9c835eb2b8d758e97ef7edc162c51141d7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We develop a policy gradient method to learn a Nash equilibrium in a MARL setting which encompasses both cooperation and competition"
+  },
+  "collected_at": "2026-03-07T14:00:33.051Z"
+}

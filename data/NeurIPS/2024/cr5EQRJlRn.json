@@ -1,0 +1,42 @@
+{
+  "id": "cr5EQRJlRn",
+  "or_id": "cr5EQRJlRn",
+  "title": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Bowen Ping",
+    "Shuo Wang",
+    "Hanqing Wang",
+    "Xu Han",
+    "Yuzhuang Xu",
+    "Yukun Yan",
+    "Yun Chen",
+    "Baobao Chang",
+    "Zhiyuan Liu",
+    "Maosong Sun"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Fine-tuning is a crucial process for adapting large language models (LLMs) to diverse applications. In certain scenarios, such as multi-tenant serving, deploying multiple LLMs becomes necessary to meet complex demands. Recent studies suggest decomposing a fine-tuned LLM into a base model and corresponding delta weights, which are then compressed using low-rank or low-bit approaches to reduce costs. In this work, we observe that existing low-rank and low-bit compression methods can significantly harm the model performance for task-specific fine-tuned LLMs (e.g., WizardMath for math problems). Motivated by the long-tail distribution of singular values in the delta weights, we propose a delta quantization approach using mixed-precision. This method employs higher-bit representation for singular vectors corresponding to larger singular values. We evaluate our approach on various fine-tuned LLMs, including math LLMs, code LLMs, chat LLMs, and even VLMs. Experimental results demonstrate that our approach performs comparably to full fine-tuned LLMs, surpassing both low-rank and low-bit baselines by a considerable margin. Additionally, we show that our method is compatible with various backbone LLMs, such as Llama-2, Llama-3, and Mistral, highlighting its generalizability.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Large Language Model",
+    "Delta Compression",
+    "Efficient Serving",
+    "Multi-Tenant Serving"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=cr5EQRJlRn",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/323de5402a52c258609e754c32768b9f49ed0b35.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Fine-tuning is a crucial process for adapting large language models (LLMs) to diverse applications. In certain scenarios, such as multi-tenant serving, deploying multiple LLMs becomes necessary to meet complex demands. Recent studies suggest decomposing a fine-tuned LLM into a base model and corresp"
+  },
+  "collected_at": "2026-03-07T14:00:33.050Z"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "6ZXrvoIox1",
+  "or_id": "6ZXrvoIox1",
+  "title": "Beating Adversarial Low-Rank MDPs with Unknown Transition and Bandit Feedback",
+  "title_zh": "击败具有未知转移和老虎机反馈的对抗性低秩MDPs",
+  "authors": [
+    "Haolin Liu",
+    "Zakaria Mhammedi",
+    "Chen-Yu Wei",
+    "Julian Zimmert"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We consider regret minimization in low-rank MDPs with fixed transition and adversarial losses. Previous work has investigated this problem under either full-information loss feedback with unknown transitions (Zhao et al., 2024), or bandit loss feedback with known transitions (Foster et al., 2022). First, we improve the $poly(d, A, H)T^{5/6}$ regret bound of Zhao et al. (2024) to $poly(d, A, H)T^{2/3}$ for the full-information unknown transition setting, where $d$ is the rank of the transitions, $A$ is the number of actions, $H$ is the horizon length, and $T$ is the number of episodes. Next, we initiate the study on the setting with bandit loss feedback and unknown transitions. Assuming that the loss has a linear structure, we propose both model-based and model-free algorithms achieving $poly(d, A, H)T^{2/3}$ regret, though they are computationally inefficient. We also propose oracle-efficient model-free algorithms with $poly(d, A, H)T^{4/5}$ regret. We show that the linear structure is necessary for the bandit case—without structure on the reward function, the regret has to scale polynomially with the number of states. This is contrary to the full-information case (Zhao et al., 2024), where the regret can be independent of the number of states even for unstructured reward functions.",
+  "abstract_zh": "我们考虑在具有固定转移和对抗性损失的低秩MDPs中进行遗憾最小化。先前的研究要么在具有未知转移的完全信息损失反馈下（Zhao等, 2024）、要么在具有已知转移的老虎机损失反馈下（Foster等, 2022）研究此问题。首先，我们将Zhao等（2024）在完全信息未知转移设置下的$poly(d, A, H)T^{5/6}$遗憾边界改进为$poly(d, A, H)T^{2/3}$，其中$d$是转移的秩，$A$是动作数量，$H$是水平长度，$T$是回合数。接下来，我们启动对具有老虎机损失反馈和未知转移设置的研究。假设损失具有线性结构，我们提出基于模型和无模型的算法，实现$poly(d, A, H)T^{2/3}$遗憾，尽管它们计算效率较低。我们还提出预言机高效的无模型算法，遗憾为$poly(d, A, H)T^{4/5}$。我们证明线性结构对老虎机情况是必要的——若奖励函数无结构，遗憾必须与状态数量成多项式比例。这与完全信息情况（Zhao等, 2024）相反，后者的遗憾甚至可以独立于状态数量，即使对于无结构奖励函数也是如此。",
+  "tldr": "We study episodic reinforcement learning for low-rank MDPs with adversarial losses and unknown transition, achieving sublinear regret with bandit feedback for the first time and establishing a tight bound for full information settings.",
+  "keywords": [
+    "low-rank MDPs",
+    "adversarial losses",
+    "bandit feedback"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6ZXrvoIox1",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4bf2a2f87a4da02bab0a526a4205f1c8e02f7323.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study episodic reinforcement learning for low-rank MDPs with adversarial losses and unknown transition, achieving sublinear regret with bandit feedback for the first time and establishing a tight bound for full information settings."
+  },
+  "collected_at": "2026-03-07T13:40:38.849Z"
+}

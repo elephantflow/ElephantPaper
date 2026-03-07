@@ -1,0 +1,37 @@
+{
+  "id": "AdS3H8SaPi",
+  "or_id": "AdS3H8SaPi",
+  "title": "What does guidance do? A fine-grained analysis in a simple setting",
+  "title_zh": "",
+  "authors": [
+    "Muthu Chidambaram",
+    "Khashayar Gatmiry",
+    "Sitan Chen",
+    "Holden Lee",
+    "Jianfeng Lu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The use of guidance in diffusion models was originally motivated by the premise that the guidance-modified score is that of the data distribution tilted by a conditional likelihood raised to some power. In this work we clarify this misconception by rigorously proving that guidance fails to sample from the intended tilted distribution. Our main result is to give a fine-grained characterization of the dynamics of guidance in two cases, (1) mixtures of compactly supported distributions and (2) mixtures of Gaussians, which reflect salient properties of guidance that manifest on real-world data. In both cases, we prove that as the guidance parameter increases, the guided model samples more heavily from the boundary of the support of the conditional distribution. We also prove that for any nonzero level of score estimation error, sufficiently large guidance will result in sampling away from the support, theoretically justifying the empirical finding that large guidance results in distorted generations. In addition to verifying these results empirically in synthetic settings, we also show how our theoretical insights can offer useful prescriptions for practical deployment.",
+  "abstract_zh": "",
+  "tldr": "Diffusion with guidance does not do what its motivation suggests; in linearly separable settings it samples from the edges of each class",
+  "keywords": [
+    "diffusion",
+    "guidance",
+    "sampling",
+    "probability flow ode"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=AdS3H8SaPi",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2d9524cbc61edd7e4fb82eb624c6fefd86e277e3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Diffusion with guidance does not do what its motivation suggests; in linearly separable settings it samples from the edges of each class"
+  },
+  "collected_at": "2026-03-07T14:20:41.318Z"
+}

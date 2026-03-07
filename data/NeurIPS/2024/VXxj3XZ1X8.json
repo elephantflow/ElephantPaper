@@ -1,0 +1,36 @@
+{
+  "id": "VXxj3XZ1X8",
+  "or_id": "VXxj3XZ1X8",
+  "title": "Reproducibility of predictive networks for mouse visual cortex",
+  "title_zh": "",
+  "authors": [
+    "Polina Turishcheva",
+    "Max F Burg",
+    "Fabian H. Sinz",
+    "Alexander S Ecker"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Deep predictive models of neuronal activity have recently enabled several new discoveries about the selectivity and invariance of neurons in the visual cortex.\nThese models learn a shared set of nonlinear basis functions, which are linearly combined via a learned weight vector to represent a neuron's function.\nSuch weight vectors, which can be thought as embeddings of neuronal function, have been proposed to define functional cell types via unsupervised clustering.\nHowever, as deep models are usually highly overparameterized, the learning problem is unlikely to have a unique solution, which raises the question if such embeddings can be used in a meaningful way for downstream analysis.\nIn this paper, we investigate how stable neuronal embeddings are with respect to changes in model architecture and initialization. \nWe find that $L_1$ regularization to be an important ingredient for structured embeddings and develop an adaptive regularization that adjusts the strength of regularization per neuron.  \nThis regularization improves both predictive performance and how consistently neuronal embeddings cluster across model fits  compared to uniform regularization.\nTo overcome overparametrization, we propose an iterative feature pruning strategy which reduces the dimensionality of performance-optimized models by half without loss of performance and improves the consistency of neuronal embeddings with respect to clustering neurons.\nOur results suggest that to achieve an objective taxonomy of cell types or a compact representation of the functional landscape, we need novel architectures or learning techniques that improve identifiability. \nThe code is available https://github.com/pollytur/readout_reproducibility.",
+  "abstract_zh": "",
+  "tldr": "Better performing predictive models for V1 might be less consistent that the older generation. Step towards solving it: pruning and adaptive regularisation.",
+  "keywords": [
+    "reproducibility",
+    "predictive models for visual cortex",
+    "neuroscience"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=VXxj3XZ1X8",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e37322f120845748e036c62e87d167cfecaa2df5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "Better performing predictive models for V1 might be less consistent that the older generation. Step towards solving it: pruning and adaptive regularisation."
+  },
+  "collected_at": "2026-03-07T14:00:33.049Z"
+}

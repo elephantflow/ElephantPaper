@@ -1,0 +1,39 @@
+{
+  "id": "4fN2REs0Ma",
+  "or_id": "4fN2REs0Ma",
+  "title": "Unveiling Induction Heads: Provable Training Dynamics and Feature Learning in Transformers",
+  "title_zh": "",
+  "authors": [
+    "Siyu Chen",
+    "Heejune Sheen",
+    "Tianhao Wang",
+    "Zhuoran Yang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In-context learning (ICL) is a cornerstone of large language model (LLM) functionality, yet its theoretical foundations remain elusive due to the complexity of transformer architectures. In particular, most existing work only theoretically explains how the attention mechanism facilitates ICL under certain data models. It remains unclear how the other building blocks of the transformer contribute to ICL. To address this question, we study how a two-attention-layer transformer is trained to perform ICL on $n$-gram Markov chain data, where each token in the Markov chain statistically depends on the previous n tokens. \nWe analyze a sophisticated transformer model featuring relative positional embedding, multi-head softmax attention,  and a feed-forward layer with normalization. \nWe prove that the gradient flow with respect to a cross-entropy ICL loss converges to a limiting model that performs a generalized version of the \"induction head\" mechanism with a learned feature, resulting from the congruous contribution of all the building blocks. \nSpecifically, the first attention layer acts as a copier, copying past tokens within a given window to each position, and the feed-forward network with normalization acts as a selector that generates a feature vector by only looking at informationally relevant parents from the window. \nFinally, the second attention layer is a classifier that\ncompares these features with the feature at the output position, and uses the resulting similarity scores to generate the desired output. Our theory is further validated by simulation experiments.",
+  "abstract_zh": "",
+  "tldr": "We theoretically prove that a two-layer transformer model learns to perform \"induction head\" after training on n-gram Markovian data",
+  "keywords": [
+    "transformer",
+    "in context learning",
+    "Markov chain",
+    "n-gram model",
+    "feature learning",
+    "training dynamics",
+    "induction head"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=4fN2REs0Ma",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/15e5da26765f7a9139a50406af6e1815c55f8860.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We theoretically prove that a two-layer transformer model learns to perform \"induction head\" after training on n-gram Markovian data"
+  },
+  "collected_at": "2026-03-07T14:00:33.047Z"
+}

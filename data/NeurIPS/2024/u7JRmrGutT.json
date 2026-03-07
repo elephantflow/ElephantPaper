@@ -1,0 +1,35 @@
+{
+  "id": "u7JRmrGutT",
+  "or_id": "u7JRmrGutT",
+  "title": "Graph Edit Distance with General Costs Using Neural Set Divergence",
+  "title_zh": "",
+  "authors": [
+    "Eeshaan Jain",
+    "Indradyumna Roy",
+    "Saswat Meher",
+    "Soumen Chakrabarti",
+    "Abir De"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Graph Edit Distance (GED) measures the (dis-)similarity between two given graphs in terms of the minimum-cost edit sequence, which transforms one graph to the other.\nGED is related to other notions of graph similarity, such as graph and subgraph isomorphism, maximum common subgraph, etc. However, the computation of exact GED is NP-Hard, which has recently motivated the design of neural models for GED estimation.\nHowever, they do not explicitly account for edit operations with different costs. In response, we propose $\\texttt{GraphEdX}$, a neural GED estimator that can work with general costs specified for the four edit operations, viz., edge deletion, edge addition, node deletion, and node addition.\nWe first present GED as a quadratic assignment problem (QAP) that incorporates these four costs.\nThen, we represent each graph as a set of node and edge embeddings and use them to design a family of neural set divergence surrogates. We replace the QAP terms corresponding to each operation with their surrogates. \nComputing such neural set divergence requires aligning nodes and edges of the two graphs.\nWe learn these alignments using a Gumbel-Sinkhorn permutation generator, additionally ensuring that the node and edge alignments are consistent with each other. Moreover, these alignments are cognizant of both the presence and absence of edges between node pairs.\nThrough extensive experiments on several datasets, along with a variety of edit cost settings, we show that $\\texttt{GraphEdX}$ consistently outperforms state-of-the-art methods and heuristics in terms of prediction error. The code is available at https://github.com/structlearning/GraphEdX.",
+  "abstract_zh": "",
+  "tldr": "Neural graph edit distance network with uniform and non-uniform costs",
+  "keywords": [
+    "graph neural network",
+    "graph edit distance"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=u7JRmrGutT",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/405e32e6f9667c1d8b6932a8b230ad111ba7d111.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Neural graph edit distance network with uniform and non-uniform costs"
+  },
+  "collected_at": "2026-03-07T14:00:33.049Z"
+}

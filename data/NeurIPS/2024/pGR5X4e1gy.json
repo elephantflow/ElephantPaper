@@ -1,0 +1,38 @@
+{
+  "id": "pGR5X4e1gy",
+  "or_id": "pGR5X4e1gy",
+  "title": "Learning on Large Graphs using Intersecting Communities",
+  "title_zh": "",
+  "authors": [
+    "Ben Finkelshtein",
+    "Ismail Ilkan Ceylan",
+    "Michael M. Bronstein",
+    "Ron Levie"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Message Passing Neural Networks (MPNNs) are a staple of graph machine learning. MPNNs iteratively update each node’s representation in an input graph by aggregating messages from the node’s neighbors, which necessitates a memory complexity of the order of the __number of graph edges__. This complexity might quickly become  prohibitive for large graphs provided they are not very sparse.  In this paper, we propose a novel approach to alleviate this problem by  approximating the input graph as an  intersecting community graph (ICG) -- a combination of intersecting cliques. The key insight is that the number of communities required to approximate a graph  __does not depend on the graph size__. We develop a new constructive version of the Weak Graph Regularity Lemma to efficiently construct an approximating ICG for any input graph. We then devise an efficient graph learning algorithm operating directly on ICG in linear memory and time with respect to the __number of nodes__ (rather than edges).  This offers a new and fundamentally different pipeline for learning on very large non-sparse graphs, whose applicability is demonstrated empirically on node classification tasks and spatio-temporal data processing.",
+  "abstract_zh": "",
+  "tldr": "We show how to approximate graphs by intersecting communities, which allows an efficient learning algorithm on large non-sparse graphs.",
+  "keywords": [
+    "graph representation learning",
+    "graph neural networks",
+    "regularity lemma",
+    "intersecting communities",
+    "graphon",
+    "scalability"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=pGR5X4e1gy",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/eb52e00ead76e6512bdb87aeb1eaa15ba3c6f652.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show how to approximate graphs by intersecting communities, which allows an efficient learning algorithm on large non-sparse graphs."
+  },
+  "collected_at": "2026-03-07T14:20:41.317Z"
+}

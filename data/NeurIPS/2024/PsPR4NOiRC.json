@@ -1,0 +1,42 @@
+{
+  "id": "PsPR4NOiRC",
+  "or_id": "PsPR4NOiRC",
+  "title": "Generative Hierarchical Materials Search",
+  "title_zh": "",
+  "authors": [
+    "Sherry Yang",
+    "Simon Batzner",
+    "Ruiqi Gao",
+    "Muratahan Aykol",
+    "Alexander L Gaunt",
+    "Brendan McMorrow",
+    "Danilo Jimenez Rezende",
+    "Dale Schuurmans",
+    "Igor Mordatch",
+    "Ekin Dogus Cubuk"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Generative models trained at scale can now produce novel text, video, and more recently, scientific data such as crystal structures. The ultimate goal for materials discovery, however, goes beyond generation: we desire a fully automated system that proposes, generates, and verifies crystal structures given a high-level user instruction. In this work, we formulate end-to-end language-to-structure generation as a multi-objective optimization problem, and propose Generative Hierarchical Materials Search (GenMS) for controllable generation of crystal structures. GenMS consists of (1) a language model that takes high-level natural language as input and generates intermediate textual information about a crystal (e.g., chemical formulae), and (2) a diffusion model that takes intermediate information as input and generates low-level continuous value crystal structures. GenMS additionally uses a graph neural network to predict properties (e.g., formation energy) from the generated crystal structures. During inference, GenMS leverages all three components to conduct a forward tree search over the space of possible structures. Experiments show that GenMS outperforms other alternatives both in satisfying user request and in generating low-energy structures. GenMS is able to generate complex structures such as double perovskites (or elpasolites), layered structures, and spinels, solely from natural language input.",
+  "abstract_zh": "",
+  "tldr": "We propose Generative Hierarchical Materials Search, a language-to-structure generative framework that uses LLMs to generate crystal formulas, diffusion models to generate crystal structures, and hierarchical search to find the best structure.",
+  "keywords": [
+    "Generative models for materials",
+    "diffusion models",
+    "multimodality",
+    "hierarchical search"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=PsPR4NOiRC",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/52089b5549ff19f9116d5df680c86403efd39f02.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose Generative Hierarchical Materials Search, a language-to-structure generative framework that uses LLMs to generate crystal formulas, diffusion models to generate crystal structures, and hierarchical search to find the best structure."
+  },
+  "collected_at": "2026-03-07T14:20:41.317Z"
+}

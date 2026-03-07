@@ -1,0 +1,34 @@
+{
+  "id": "5tIG2KZogL",
+  "or_id": "5tIG2KZogL",
+  "title": "Supervised Kernel Thinning",
+  "title_zh": "",
+  "authors": [
+    "Albert Gong",
+    "Kyuseong Choi",
+    "Raaz Dwivedi"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The kernel thinning algorithm of Dwivedi & Mackey (2024) provides a better-than-i.i.d. compression of a generic set of points. By generating high-fidelity coresets of size significantly smaller than the input points, KT is known to speed up unsupervised tasks like Monte Carlo integration, uncertainty quantification, and non-parametric hypothesis testing, with minimal loss in statistical accuracy. In this work, we generalize the KT algorithm to speed up supervised learning problems involving kernel methods. \nSpecifically, we combine two classical algorithms---Nadaraya-Watson (NW) regression or kernel smoothing, and kernel ridge regression (KRR)---with KT to provide a quadratic speed-up in both training and inference times. We show how distribution compression with KT in each setting reduces to constructing an appropriate kernel, and introduce the Kernel-Thinned NW and Kernel-Thinned KRR estimators. We prove that KT-based regression estimators enjoy significantly superior computational efficiency over the full-data estimators and improved statistical efficiency over i.i.d. subsampling of the training data. En route, we also provide a novel multiplicative error guarantee for compressing with KT.  We validate our design choices with both simulations and real data experiments.",
+  "abstract_zh": "",
+  "tldr": "We apply recent advances in distribution compression (Kernel Thinning) to speed up kernel smoothing and kernel ridge regression.",
+  "keywords": [
+    "Kernel methods",
+    "distribution compression",
+    "non-parametric regression"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=5tIG2KZogL",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f5a258e81fe5466497ddb5796842f3e78a9c61e8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We apply recent advances in distribution compression (Kernel Thinning) to speed up kernel smoothing and kernel ridge regression."
+  },
+  "collected_at": "2026-03-07T14:20:41.318Z"
+}

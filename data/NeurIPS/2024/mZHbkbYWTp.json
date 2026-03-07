@@ -1,0 +1,38 @@
+{
+  "id": "mZHbkbYWTp",
+  "or_id": "mZHbkbYWTp",
+  "title": "Stochastic Optimal Control and Estimation with Multiplicative and Internal Noise",
+  "title_zh": "",
+  "authors": [
+    "Francesco Damiani",
+    "Akiyuki Anzai",
+    "Jan Drugowitsch",
+    "Gregory C DeAngelis",
+    "Rubén Moreno-Bote"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "A pivotal brain computation relies on the ability to sustain perception-action loops. Stochastic optimal control theory offers a mathematical framework to explain these processes at the algorithmic level through optimality principles. However, incorporating a realistic noise model of the sensorimotor system — accounting for multiplicative noise in feedback and motor output, as well as internal noise in estimation — makes the problem challenging. Currently, the algorithm that is commonly used is the one proposed in the seminal study in (Todorov, 2005). After discovering some pitfalls in the original derivation, i.e., unbiased estimation does not hold, we improve the algorithm by proposing an efficient gradient descent-based optimization that minimizes the cost-to-go while only imposing linearity of the control law. The optimal solution is obtained by iteratively propagating in closed form the sufficient statistics to compute the expected cost and then minimizing this cost with respect to the filter and control gains. We demonstrate that this approach results in a significantly lower overall cost than current state-of-the-art solutions, particularly in the presence of internal noise, though the improvement is present in other circumstances as well, with theoretical explanations for this enhanced performance. Providing the optimal control law is key for inverse control inference, especially in explaining behavioral data under rationality assumptions.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel iterative algorithm to solve a stochastic optimal control problem under multiplicative and internal noise, outperforming state-of-the-art solutions in the presence of internal noise and before algorithmic convergence.",
+  "keywords": [
+    "control theory",
+    "stochastic optimal control",
+    "sensorimotor system",
+    "multiplicative and internal noise",
+    "motor control"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=mZHbkbYWTp",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a826f11781a5d55afb6dcd697be52fca839946f6.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel iterative algorithm to solve a stochastic optimal control problem under multiplicative and internal noise, outperforming state-of-the-art solutions in the presence of internal noise and before algorithmic convergence."
+  },
+  "collected_at": "2026-03-07T14:00:33.050Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "LLuSjg59an",
+  "or_id": "LLuSjg59an",
+  "title": "Where does In-context Learning Happen in Large Language Models?",
+  "title_zh": "",
+  "authors": [
+    "Suzanna Sia",
+    "David Mueller",
+    "Kevin Duh"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Self-supervised large language models have demonstrated the ability to perform various tasks via in-context learning, but little is known about where the model locates the task with respect to prompt instructions and demonstration examples. In this work, we attempt to characterize the region where large language models transition from recognizing the task to performing the task. Through a series of layer-wise context-masking experiments on GPTNeo2.7B, Bloom3B, Starcoder2-7B, Llama3.1-8B, Llama3.1-8B-Instruct, on Machine Translation and Code generation, we demonstrate evidence of a \"task recognition\" point where the task is encoded into the input representations and attention to context is no longer necessary. Taking advantage of this redundancy results in 45% computational savings when prompting with 5 examples, and task recognition achieved at layer 14 / 32 using an example with Machine Translation. Our findings also have implications for resource and parameter efficient fine-tuning; we observe a correspondence between strong fine-tuning performance of individual LoRA layers and the task recognition layers.",
+  "abstract_zh": "",
+  "tldr": "We report that LLMs have a 'task recognition' point, where self-attention over the context is no longer necessary.",
+  "keywords": [
+    "Explainability",
+    "self-attention layers",
+    "redundancy",
+    "LLM",
+    "in-context learning",
+    "machine translation",
+    "text to code"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=LLuSjg59an",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6d42a25006403f314c27789e5a726566fbb5d05d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We report that LLMs have a 'task recognition' point, where self-attention over the context is no longer necessary."
+  },
+  "collected_at": "2026-03-07T14:20:41.317Z"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "Wc0vlQuoLb",
+  "or_id": "Wc0vlQuoLb",
+  "title": "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+  "title_zh": "",
+  "authors": [
+    "Roi Cohen",
+    "Konstantin Dobler",
+    "Eden Biran",
+    "Gerard de Melo"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large Language Models are known to capture real-world knowledge, allowing them to excel in many downstream tasks. Despite recent advances, these models are still prone to what are commonly known as hallucinations, causing them to emit unwanted and factually incorrect text. In this work, we propose a novel calibration method that can be used to combat hallucinations. \nWe add a special [IDK] (“I Don't Know”) token to the model's vocabulary and introduce an objective function that shifts probability mass to the [IDK] token for incorrect predictions. \nThis approach allows the model to express uncertainty in its output explicitly. \nWe evaluate our proposed method across multiple model architectures and factual downstream tasks.\nWe find that models trained with our method are able to express uncertainty in places where they would previously make mistakes while suffering only a small loss of encoded knowledge. We further perform extensive ablation studies of multiple variations of our approach and provide a detailed analysis of the precision-recall tradeoff of our method.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel IDK objective which models uncertainty in a model's prediction as probability mass put on a special [IDK] token. Experimental results show that our method improves factual precision without significantly harming factual recall.",
+  "keywords": [
+    "LLMs",
+    "Factuality",
+    "Uncertainty",
+    "Factual Knowledge",
+    "Pretraining"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Wc0vlQuoLb",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/acfdfe8446e20d1927a0abe5954c39a25067a253.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel IDK objective which models uncertainty in a model's prediction as probability mass put on a special [IDK] token. Experimental results show that our method improves factual precision without significantly harming factual recall."
+  },
+  "collected_at": "2026-03-07T14:20:41.317Z"
+}

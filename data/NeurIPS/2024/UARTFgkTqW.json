@@ -1,0 +1,37 @@
+{
+  "id": "UARTFgkTqW",
+  "or_id": "UARTFgkTqW",
+  "title": "MagR: Weight Magnitude Reduction for Enhancing Post-Training Quantization",
+  "title_zh": "",
+  "authors": [
+    "Aozhong Zhang",
+    "Naigang Wang",
+    "Yanxia Deng",
+    "Xin Li",
+    "Zi Yang",
+    "Penghang Yin"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In this paper, we present a simple optimization-based preprocessing technique called Weight Magnitude Reduction (MagR) to improve the performance of post-training quantization. For each linear layer, we adjust the pre-trained floating-point weights by solving an $\\ell_\\infty$-regularized optimization problem. This process greatly diminishes the maximum magnitude of the weights and smooths out outliers, while preserving the layer's output. The preprocessed weights are centered more towards zero, which facilitates the subsequent quantization process. To implement MagR, we address the $\\ell_\\infty$-regularization by employing an efficient proximal gradient descent algorithm. Unlike existing preprocessing methods that involve linear transformations and subsequent post-processing steps, which can introduce significant overhead at inference time, MagR functions as a non-linear transformation, eliminating the need for any additional post-processing. This ensures that MagR introduces no overhead whatsoever during inference. Our experiments demonstrate that MagR achieves state-of-the-art performance on the Llama family of models. For example, we achieve a Wikitext2 perplexity of 6.7 on the LLaMA2-70B model for per-channel INT2 weight quantization without incurring any inference overhead.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "post-training quantization",
+    "model compression",
+    "$\\ell_\\infty$-regularization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=UARTFgkTqW",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5df0a35bae4b0c14f6f87dfff7c87ff26628534f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In this paper, we present a simple optimization-based preprocessing technique called Weight Magnitude Reduction (MagR) to improve the performance of post-training quantization. For each linear layer, we adjust the pre-trained floating-point weights by solving an $\\ell_\\infty$-regularized optimizatio"
+  },
+  "collected_at": "2026-03-07T14:00:33.048Z"
+}

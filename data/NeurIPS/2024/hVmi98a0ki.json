@@ -1,0 +1,35 @@
+{
+  "id": "hVmi98a0ki",
+  "or_id": "hVmi98a0ki",
+  "title": "Optimizing Automatic Differentiation with Deep Reinforcement Learning",
+  "title_zh": "使用深度强化学习优化自动微分",
+  "authors": [
+    "Jamie Lohoff",
+    "Emre Neftci"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Computing Jacobians with automatic differentiation is ubiquitous in many scientific domains such as machine learning, computational fluid dynamics, robotics and finance. \nEven small savings in the number of computations or memory usage in Jacobian computations can already incur massive savings in energy consumption and runtime. \nWhile there exist many methods that allow for such savings, they generally trade computational efficiency for approximations of the exact Jacobian.\n\nIn this paper, we present a novel method to optimize the number of necessary multiplications for Jacobian computation by leveraging deep reinforcement learning (RL) and a concept called cross-country elimination while still computing the exact Jacobian. \nCross-country elimination is a framework for automatic differentiation that phrases Jacobian accumulation as ordered elimination of all vertices on the computational graph where every elimination incurs a certain computational cost.\nFinding the optimal elimination order that minimizes the number of necessary multiplications can be seen as a single player game which in our case is played by an RL agent.\nWe demonstrate that this method achieves up to 33% improvements over state-of-the-art methods on several relevant tasks taken from relevant domains.\nFurthermore, we show that these theoretical gains translate into actual runtime improvements by providing a cross-country elimination interpreter in JAX that can execute the obtained elimination orders.",
+  "abstract_zh": "在机器学习、计算流体动力学、机器人学和金融等许多科学领域中，使用自动微分计算雅可比矩阵是普遍存在的。在雅可比计算中，即使是计算数量或内存使用的小幅节省，也能显著节约能耗和运行时间。虽然存在许多允许此类节省的方法，但它们通常以计算效率换取对精确雅可比的近似。\n\n在本文中，我们提出一种新颖方法，通过利用深度强化学习（RL）和一个称为跨国家消除（cross-country elimination）的概念来优化雅可比计算所需的乘法次数，同时仍计算精确雅可比。跨国家消除是一个自动微分框架，将雅可比累积表述为计算图上所有顶点的有序消除，每次消除都会产生一定的计算成本。寻找最小化必要乘法次数的最优消除顺序可以被视为单人游戏，在我们的案例中由RL智能体进行。我们证明，在来自相关领域的几个相关任务上，该方法相比最先进方法实现了高达33%的改进。此外，我们通过提供JAX中的跨国家消除解释器（可执行获得的消除顺序）表明，这些理论收益转化为实际的运行时间改进。",
+  "tldr": "We trained a neural network to produce new automatic differentiation algorithms using Deep RL.",
+  "keywords": [
+    "Reinforcement Learning",
+    "Automatic Differentiation",
+    "AlphaZero",
+    "Deep Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hVmi98a0ki",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5e8452cabdcbe57ca595b5b7a5bc46375ef01533.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We trained a neural network to produce new automatic differentiation algorithms using Deep RL."
+  },
+  "collected_at": "2026-03-07T13:40:38.850Z"
+}
