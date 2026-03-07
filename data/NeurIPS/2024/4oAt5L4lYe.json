@@ -1,0 +1,41 @@
+{
+  "id": "4oAt5L4lYe",
+  "or_id": "4oAt5L4lYe",
+  "title": "ArkVale: Efficient Generative LLM Inference with Recallable Key-Value Eviction",
+  "title_zh": "",
+  "authors": [
+    "Renze Chen",
+    "Zhuofeng Wang",
+    "Beiquan Cao",
+    "Tong Wu",
+    "Size Zheng",
+    "Xiuhong Li",
+    "Xuechao Wei",
+    "Shengen Yan",
+    "Meng Li",
+    "Yun Liang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large Language Models (LLMs) are widely used in today's tasks of natural language processing. \nTo support applications like multi-turn chats, document understanding, and content generation, models with long context lengths are growing in importance.\nHowever, managing long contexts brings substantial challenges due to the expansion of key-value cache (KV cache). Longer KV cache requires larger memory, limiting the batch-size thus decreasing throughput. Also, computing attention over long KV cache incurs more memory access, hurting the end-to-end latency.\nPrior works find that it is sufficient to use only the recent and high-impact tokens for attention computation, allowing the eviction of less vital tokens to shrink cache size.\nNonetheless, we observe a dynamic shift in token importance across different decoding steps. Tokens initially evicted might regain importance after certain decoding steps.\nTo address this, we propose ArkVale, a page-based KV cache manager that can recognize and recall currently important tokens evicted before. We asynchronously copy the filled page into external memory (e.g., CPU memory) as backup and summarize it into a much smaller digest by constructing the bounding-volume of its keys. Before attention computation, we measure all pages' importance based on their digests, recall the important ones, evict the unimportant ones, and select the top-ranked pages for attention computation. \nExperiment results show that ArkVale performs well on various long context tasks with negligible accuracy loss under 2k$\\sim$4k cache budget and can improve decoding latency to $2.2\\times$ and batching throughput to $4.6\\times$ because it applies attention on only a small subset of pages and reduce per-sample memory usage of KV cache.",
+  "abstract_zh": "",
+  "tldr": "We propose a method to dynamically evict some KV cache tokens (pages) or recall evicted ones for different query tokens, reducing the memory usage of the KV cache and the latency of attention computation with few accuracy loss.",
+  "keywords": [
+    "Machine Learning System",
+    "Large Language Model Inference",
+    "Key-Value Cache Eviction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=4oAt5L4lYe",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fc7d6c105320063bd046924651f65ecd45ef8647.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a method to dynamically evict some KV cache tokens (pages) or recall evicted ones for different query tokens, reducing the memory usage of the KV cache and the latency of attention computation with few accuracy loss."
+  },
+  "collected_at": "2026-03-07T18:20:34.549Z"
+}

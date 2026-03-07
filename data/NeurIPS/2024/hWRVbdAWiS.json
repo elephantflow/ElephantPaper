@@ -1,0 +1,34 @@
+{
+  "id": "hWRVbdAWiS",
+  "or_id": "hWRVbdAWiS",
+  "title": "Entropy-regularized Diffusion Policy with Q-Ensembles for Offline Reinforcement Learning",
+  "title_zh": "",
+  "authors": [
+    "Ruoqi Zhang",
+    "Ziwei Luo",
+    "Jens Sjölund",
+    "Thomas B. Schön",
+    "Per Mattsson"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Diffusion policy has shown a strong ability to express complex action distributions in offline reinforcement learning (RL). However, it suffers from overestimating Q-value functions on out-of-distribution (OOD) data points due to the offline dataset limitation. To address it, this paper proposes a novel entropy-regularized diffusion policy and takes into account the confidence of the Q-value prediction with Q-ensembles. At the core of our diffusion policy is a mean-reverting stochastic differential equation (SDE) that transfers the action distribution into a standard Gaussian form and then samples actions conditioned on the environment state with a corresponding reverse-time process. We show that the entropy of such a policy is tractable and that can be used to increase the exploration of OOD samples in offline RL training. Moreover, we propose using the lower confidence bound of Q-ensembles for pessimistic Q-value function estimation. The proposed approach demonstrates state-of-the-art performance across a range of tasks in the D4RL benchmarks, significantly improving upon existing diffusion-based policies. The code is available at https://github.com/ruoqizzz/entropy-offlineRL.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Offline Reinforcement Learning; Diffusion Model; Stochastic Differential Equation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hWRVbdAWiS",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/cb7a4dcb7083e0c62f313b06bde0b2b1329abb01.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Diffusion policy has shown a strong ability to express complex action distributions in offline reinforcement learning (RL). However, it suffers from overestimating Q-value functions on out-of-distribution (OOD) data points due to the offline dataset limitation. To address it, this paper proposes a n"
+  },
+  "collected_at": "2026-03-07T18:20:34.550Z"
+}

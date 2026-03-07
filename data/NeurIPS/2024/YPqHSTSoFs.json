@@ -1,0 +1,39 @@
+{
+  "id": "YPqHSTSoFs",
+  "or_id": "YPqHSTSoFs",
+  "title": "Cross-model Control: Improving Multiple Large Language Models in One-time Training",
+  "title_zh": "",
+  "authors": [
+    "Jiayi Wu",
+    "Hao Sun",
+    "Hengyi Cai",
+    "Lixin Su",
+    "Shuaiqiang Wang",
+    "Dawei Yin",
+    "Xiang Li",
+    "Ming Gao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The number of large language models (LLMs) with varying parameter scales and vocabularies is increasing. While they deliver powerful performance, they also face a set of common optimization needs to meet specific requirements or standards, such as instruction following or avoiding the output of sensitive information from the real world. However, how to reuse the fine-tuning outcomes of one model to other models to reduce training costs remains a challenge. To bridge this gap, we introduce Cross-model Control (CMC), a method that improves multiple LLMs in one-time training with a portable tiny language model. Specifically, we have observed that the logit shift before and after fine-tuning is remarkably similar across different models. Based on this insight, we incorporate a tiny language model with a minimal number of parameters. By training alongside a frozen template LLM, the tiny model gains the capability to alter the logits output by the LLMs. To make this tiny language model applicable to models with different vocabularies, we propose a novel token mapping strategy named PM-MinED. We have conducted extensive experiments on instruction tuning and unlearning tasks, demonstrating the effectiveness of CMC. Our code is available at https://github.com/wujwyi/CMC",
+  "abstract_zh": "",
+  "tldr": "We propose Cross-model Control (CMC), a method that could improve multiple LLMs in one-time training with a portable tiny language model.",
+  "keywords": [
+    "Large Language Model",
+    "Fine-tune",
+    "model transfer"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=YPqHSTSoFs",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d2c90991424db125f1c8b245fd6b4d656b697834.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose Cross-model Control (CMC), a method that could improve multiple LLMs in one-time training with a portable tiny language model."
+  },
+  "collected_at": "2026-03-07T18:20:34.550Z"
+}
