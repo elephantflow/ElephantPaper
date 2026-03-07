@@ -1,0 +1,36 @@
+{
+  "id": "74c9EOng9C",
+  "or_id": "74c9EOng9C",
+  "title": "Diffusion Policies Creating a Trust Region for Offline Reinforcement Learning",
+  "title_zh": "",
+  "authors": [
+    "Tianyu Chen",
+    "Zhendong Wang",
+    "Mingyuan Zhou"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Offline reinforcement learning (RL) leverages pre-collected datasets to train optimal policies. Diffusion Q-Learning (DQL), introducing diffusion models as a powerful and expressive policy class, significantly boosts the performance of offline RL. However, its reliance on iterative denoising sampling to generate actions slows down both training and inference. While several recent attempts have tried to accelerate diffusion-QL, the improvement in training and/or inference speed often results in degraded performance. In this paper, we introduce a dual policy approach, Diffusion Trusted Q-Learning (DTQL), which comprises a diffusion policy for pure behavior cloning and a practical one-step policy. We bridge the two polices by a newly introduced diffusion trust region loss. The diffusion policy maintains expressiveness, while the trust region loss directs the one-step policy to explore freely and seek modes within the region defined by the diffusion policy. DTQL eliminates the need for iterative denoising sampling during both training and inference, making it remarkably computationally efficient. We evaluate its effectiveness and algorithmic characteristics against popular Kullback-Leibler (KL) based distillation methods in 2D bandit scenarios and gym tasks. We then show that DTQL could not only outperform other methods on the majority of the D4RL benchmark tasks but also demonstrate efficiency in training and inference speeds. The PyTorch implementation is available at https://github.com/TianyuCodings/Diffusion_Trusted_Q_Learning.",
+  "abstract_zh": "",
+  "tldr": "efficient diffusion q learning in both training and inference.",
+  "keywords": [
+    "offline RL",
+    "diffusion models",
+    "behavior cloning",
+    "policy regularization",
+    "Q-learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=74c9EOng9C",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3657da566a8072b2ff690836997394848c824749.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "efficient diffusion q learning in both training and inference."
+  },
+  "collected_at": "2026-03-07T23:01:56.469Z"
+}
