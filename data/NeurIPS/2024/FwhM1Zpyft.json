@@ -1,0 +1,33 @@
+{
+  "id": "FwhM1Zpyft",
+  "or_id": "FwhM1Zpyft",
+  "title": "Scalable Neural Network Verification with Branch-and-bound Inferred Cutting Planes",
+  "title_zh": "",
+  "authors": [
+    "Duo Zhou",
+    "Christopher Brix",
+    "Grani A. Hanasusanto",
+    "Huan Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recently, cutting-plane methods such as GCP-CROWN have been explored to enhance neural network verifiers and made significant advancements. However, GCP-CROWN currently relies on ${\\it generic}$ cutting planes (\"cuts\") generated from external mixed integer programming (MIP) solvers. Due to the poor scalability of MIP solvers, large neural networks cannot benefit from these cutting planes. In this paper, we exploit the structure of the neural network verification problem to generate efficient and scalable cutting planes ${\\it specific}$ to this problem setting. We propose a novel approach, Branch-and-bound Inferred Cuts with COnstraint Strengthening (BICCOS), that leverages the logical relationships of neurons within verified subproblems in the branch-and-bound search tree, and we introduce cuts that preclude these relationships in other subproblems. We develop a mechanism that assigns influence scores to neurons in each path to allow the strengthening of these cuts. Furthermore, we design a multi-tree search technique to identify more cuts, effectively narrowing the search space and accelerating the BaB algorithm. Our results demonstrate that BICCOS can generate hundreds of useful cuts during the branch-and-bound process and consistently increase the number of verifiable instances compared to other state-of-the-art neural network verifiers on a wide range of benchmarks, including large networks that previous cutting plane methods could not scale to.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Neuron Network Verification; AI Safety; Robustness; Formal Methods"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=FwhM1Zpyft",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/187023b441629105b917d6e9b656ca633d4b9a9c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Recently, cutting-plane methods such as GCP-CROWN have been explored to enhance neural network verifiers and made significant advancements. However, GCP-CROWN currently relies on ${\\it generic}$ cutting planes (\"cuts\") generated from external mixed integer programming (MIP) solvers. Due to the poor "
+  },
+  "collected_at": "2026-03-07T10:40:37.101Z"
+}

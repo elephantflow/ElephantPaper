@@ -1,0 +1,43 @@
+{
+  "id": "G0LfcMiRkc",
+  "or_id": "G0LfcMiRkc",
+  "title": "Linguistic Collapse: Neural Collapse in (Large) Language Models",
+  "title_zh": "",
+  "authors": [
+    "Robert Wu",
+    "Vardan Papyan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Neural collapse ($\\mathcal{NC}$) is a phenomenon observed in classification tasks where top-layer representations collapse into their class means, which become equinorm, equiangular and aligned with the classifiers.\nThese behaviors -- associated with generalization and robustness -- would manifest under specific conditions: models are trained towards zero loss, with noise-free labels belonging to balanced classes, which do not outnumber the model's hidden dimension.\nRecent studies have explored $\\mathcal{NC}$ in the absence of one or more of these conditions to extend and capitalize on the associated benefits of ideal geometries.\nLanguage modeling presents a curious frontier, as \\textit{training by token prediction} constitutes a classification task where none of the conditions exist: the vocabulary is imbalanced and exceeds the embedding dimension; different tokens might correspond to similar contextual embeddings; and large language models (LLMs) in particular are typically only trained for a few epochs.\nThis paper empirically investigates the impact of scaling the architectures and training of causal language models (CLMs) on their progression towards $\\mathcal{NC}$.\nWe find that $\\mathcal{NC}$ properties that develop with scale (and regularization) are linked to generalization.\nMoreover, there is evidence of some relationship between $\\mathcal{NC}$ and generalization independent of scale.\nOur work thereby underscores the generality of $\\mathcal{NC}$ as it extends to the novel and more challenging setting of language modeling.\nDownstream, we seek to inspire further research on the phenomenon to deepen our understanding of LLMs -- and neural networks at large -- and improve existing architectures based on $\\mathcal{NC}$-related properties.\nOur code is hosted on GitHub: [`https://github.com/rhubarbwu/linguistic-collapse`](https://github.com/rhubarbwu/linguistic-collapse).",
+  "abstract_zh": "",
+  "tldr": "Analysis of the development of neural collapse in (large) language models and its relationship with generalization.",
+  "keywords": [
+    "neural collapse",
+    "uniformity",
+    "large language models",
+    "LLM",
+    "GPT",
+    "language modeling",
+    "geometry",
+    "unconstrained features",
+    "generative model",
+    "transformer",
+    "attention",
+    "causal",
+    "autoregressive"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=G0LfcMiRkc",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/90683e10fe052468efca9262de53b88c6f422097.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Analysis of the development of neural collapse in (large) language models and its relationship with generalization."
+  },
+  "collected_at": "2026-03-07T10:40:37.102Z"
+}

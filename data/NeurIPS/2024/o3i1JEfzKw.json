@@ -1,0 +1,39 @@
+{
+  "id": "o3i1JEfzKw",
+  "or_id": "o3i1JEfzKw",
+  "title": "Provable Partially Observable Reinforcement Learning with Privileged Information",
+  "title_zh": "",
+  "authors": [
+    "Yang Cai",
+    "Xiangyu Liu",
+    "Argyris Oikonomou",
+    "Kaiqing Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Partial observability of the underlying states generally presents significant challenges for reinforcement learning (RL). In practice, certain *privileged information* , e.g., the access to states from simulators, has been exploited in training and achieved prominent empirical successes. To better understand the benefits of privileged information, we revisit and examine several simple and practically used paradigms in this setting, with both computation and sample efficiency analyses. Specifically, we first formalize the empirical paradigm of *expert distillation* (also known as  *teacher-student* learning), demonstrating its pitfall in finding near-optimal policies. We then identify a condition of the partially observable environment, the deterministic filter condition, under which expert distillation achieves sample and computational complexities that are *both* polynomial. Furthermore, we investigate another successful empirical paradigm of *asymmetric actor-critic*, and focus on the more challenging setting of observable partially observable Markov decision processes. We develop a belief-weighted optimistic asymmetric actor-critic algorithm with polynomial sample and quasi-polynomial computational complexities, where one key component is a new provable oracle for learning belief states that preserve *filter stability* under a misspecified model, which may be of independent interest. Finally, we also investigate the provable efficiency of partially observable multi-agent RL (MARL) with privileged information. We develop algorithms with the feature of centralized-training-with-decentralized-execution, a popular framework in empirical MARL, with polynomial sample and (quasi-)polynomial computational complexity in both paradigms above. Compared with a few recent related theoretical studies, our focus is on understanding practically inspired algorithmic paradigms, without computationally intractable oracles.",
+  "abstract_zh": "",
+  "tldr": "We study the provable efficiency of partially observable RL with privileged information to the latent state during training for both single-agent and multi-player settings.",
+  "keywords": [
+    "reinforcement learning",
+    "pomdp",
+    "partial observability",
+    "computational",
+    "privileged information",
+    "expert distillation",
+    "teacher-student learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=o3i1JEfzKw",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/03143b8a208debf6ba3bc9c75fd4b72224323628.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study the provable efficiency of partially observable RL with privileged information to the latent state during training for both single-agent and multi-player settings."
+  },
+  "collected_at": "2026-03-07T11:00:38.406Z"
+}

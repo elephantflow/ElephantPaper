@@ -1,0 +1,42 @@
+{
+  "id": "VajjTXRj6J",
+  "or_id": "VajjTXRj6J",
+  "title": "Robust Preference Optimization through Reward Model Distillation",
+  "title_zh": "",
+  "authors": [
+    "Adam Fisch",
+    "Jacob Eisenstein",
+    "Vicky Zayats",
+    "Alekh Agarwal",
+    "Ahmad Beirami",
+    "Chirag Nagpal",
+    "Peter Shaw",
+    "Jonathan Berant"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Language model (LM) post-training (or alignment) involves maximizing a reward function that is derived from preference annotations. Recently, Direct Preference Optimization (DPO) has gained popularity as an offline alignment method that is directly supervised with human preference annotations. However, DPO is overconfident about preference annotations, implicitly assigning them rewards of infinite magnitude. This frequently leads to degenerate policies, sometimes causing even the probability of the preferred output to go to zero. In this work, we propose to use distillation to combat overconfidence: we train the LM to match the reward distribution induced by a model trained on the preference data. Moreover, to account for uncertainty in the reward model we are distilling from, we optimize against a family of reward models, which may be instantiated either implicitly or explicitly. Our results show that both measures lead to improved robustness to distribution shift in preference annotations, while preserving the supervised nature of DPO.",
+  "abstract_zh": "",
+  "tldr": "We propose a robust objective for offline preference alignment where an LM's implicit reward model is trained to match the scores of an explicit reward model through a distillation loss.",
+  "keywords": [
+    "alignment",
+    "dpo",
+    "preferences",
+    "pessimism",
+    "rlhf",
+    "llms"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=VajjTXRj6J",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/be7d607869a822ae311849dd62cf89329e882a92.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a robust objective for offline preference alignment where an LM's implicit reward model is trained to match the scores of an explicit reward model through a distillation loss."
+  },
+  "collected_at": "2026-03-07T11:00:38.406Z"
+}

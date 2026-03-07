@@ -1,0 +1,36 @@
+{
+  "id": "9zQl27mqWE",
+  "or_id": "9zQl27mqWE",
+  "title": "Mixed Dynamics In Linear Networks: Unifying the Lazy and Active Regimes",
+  "title_zh": "",
+  "authors": [
+    "Zhenfeng Tu",
+    "Santiago Aranguri",
+    "Arthur Jacot"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The training dynamics of linear networks are well studied in two distinct\nsetups: the lazy regime and balanced/active regime, depending on the\ninitialization and width of the network. We provide a surprisingly\nsimple unifying formula for the evolution of the learned matrix that\ncontains as special cases both lazy and balanced regimes but also\na mixed regime in between the two. In the mixed regime, a part of\nthe network is lazy while the other is balanced. More precisely the\nnetwork is lazy along singular values that are below a certain threshold\nand balanced along those that are above the same threshold. At initialization,\nall singular values are lazy, allowing for the network to align itself\nwith the task, so that later in time, when some of the singular value\ncross the threshold and become active they will converge rapidly (convergence\nin the balanced regime is notoriously difficult in the absence of\nalignment). The mixed regime is the `best of both worlds': it converges\nfrom any random initialization (in contrast to balanced dynamics which\nrequire special initialization), and has a low rank bias (absent in\nthe lazy dynamics). This allows us to prove an almost complete phase\ndiagram of training behavior as a function of the variance at initialization\nand the width, for a MSE training task.",
+  "abstract_zh": "",
+  "tldr": "We derive a simple formula for training dynamics of linear networks that not only unifies the lazy and balanced dynamics, but reveals the existence of mixed dynamics.",
+  "keywords": [
+    "Linear Networks",
+    "Lazy Regime",
+    "Active Regime",
+    "Training Dynamics",
+    "Phase Diagram"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=9zQl27mqWE",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/704a6c9c809023554c632572ed54615fa25ac4e4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We derive a simple formula for training dynamics of linear networks that not only unifies the lazy and balanced dynamics, but reveals the existence of mixed dynamics."
+  },
+  "collected_at": "2026-03-07T10:40:37.103Z"
+}

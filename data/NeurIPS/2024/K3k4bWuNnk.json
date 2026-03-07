@@ -1,0 +1,37 @@
+{
+  "id": "K3k4bWuNnk",
+  "or_id": "K3k4bWuNnk",
+  "title": "Even Sparser Graph Transformers",
+  "title_zh": "",
+  "authors": [
+    "Hamed Shirzad",
+    "Honghao Lin",
+    "Balaji Venkatachalam",
+    "Ameya Velingker",
+    "David Woodruff",
+    "Danica J. Sutherland"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Graph Transformers excel in long-range dependency modeling, but generally require quadratic memory complexity in the number of nodes in an input graph, and hence have trouble scaling to large graphs. Sparse attention variants such as Exphormer can help, but may require high-degree augmentations to the input graph for good performance, and do not attempt to sparsify an already-dense input graph. As the learned attention mechanisms tend to use few of these edges, however, such high-degree connections may be unnecessary. We show (empirically and with theoretical backing) that attention scores on graphs are usually quite consistent across network widths, and use this observation to propose a two-stage procedure, which we call Spexphormer: first, train a narrow network on the full augmented graph. Next, use only the active connections to train a wider network on a much sparser graph. We establish theoretical conditions when a narrow network's attention scores can match those of a wide network, and show that Spexphormer achieves good performance with drastically reduced memory requirements on various graph datasets.",
+  "abstract_zh": "",
+  "tldr": "Attention scores on graphs are consistent across network widths; find which edges matter with a narrow network first",
+  "keywords": [
+    "Graph Transformers",
+    "Expander Graphs",
+    "Sparsification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=K3k4bWuNnk",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7fe926e5cadd2fed753b0d6286ae2410bb55f717.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Attention scores on graphs are consistent across network widths; find which edges matter with a narrow network first"
+  },
+  "collected_at": "2026-03-07T10:40:37.101Z"
+}

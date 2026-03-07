@@ -1,0 +1,35 @@
+{
+  "id": "BptJGaPn9C",
+  "or_id": "BptJGaPn9C",
+  "title": "QWO: Speeding Up Permutation-Based Causal Discovery in LiGAMs",
+  "title_zh": "QWO：加速线性高斯非循环模型中的基于排列的因果发现",
+  "authors": [
+    "Mohammad Shahverdikondori",
+    "Ehsan Mokhtarian",
+    "Negar Kiyavash"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Causal discovery is essential for understanding relationships among variables of interest in many scientific domains. In this paper, we focus on permutation-based methods for learning causal graphs in Linear Gaussian Acyclic Models (LiGAMs), where the permutation encodes a causal ordering of the variables. Existing methods in this setting are not scalable due to their high computational complexity. These methods are comprised of two main components: (i) constructing a specific DAG, $\\mathcal{G}^\\pi$, for a given permutation $\\pi$, which represents the best structure that can be learned from the available data while adhering to $\\pi$, and (ii) searching over the space of permutations (i.e., causal orders) to minimize the number of edges in $\\mathcal{G}^\\pi$. We introduce QWO, a novel approach that significantly enhances the efficiency of computing $\\mathcal{G}^\\pi$ for a given permutation $\\pi$. QWO has a speed-up of $O(n^2)$ ($n$ is the number of variables) compared to the state-of-the-art BIC-based method, making it highly scalable. We show that our method is theoretically sound and can be integrated into existing search strategies such as GRASP and hill-climbing-based methods to improve their performance.",
+  "abstract_zh": "因果关系发现对于理解诸多科学领域中所关注变量间的关系至关重要。本文专注于线性高斯非循环模型（LiGAMs）中学习因果图的基于排列的方法，其中排列编码了变量的因果顺序。该场景下现有方法由于计算复杂度高而缺乏可扩展性。这些方法主要由两个核心组件组成：(i) 为给定排列$\\pi$构建一个特定的DAG，$\\mathcal{G}^\\pi$，代表在遵循$\\pi$的前提下能从可用数据中学习到的最优结构；(ii) 在排列（即因果顺序）空间中搜索以最小化$\\mathcal{G}^\\pi$中的边数。我们引入QWO，一种新方法显著提升给定排列$\\pi$下计算$\\mathcal{G}^\\pi$的效率。QWO相较于基于BIC的最新方法具有$O(n^2)$（n为变量数）的加速比，使其极具可扩展性。我们证明该方法理论完整，并且能够集成至如GRASP和爬山法在内的现有搜索策略中以提升其性能。",
+  "tldr": "We propose a method that enhances the time complexity of permutation-based causal discovery approaches in linear gaussian acyclic models.",
+  "keywords": [
+    "causal discovery",
+    "permutation-based",
+    "linear gaussian acyclic model",
+    "DAG learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=BptJGaPn9C",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/371aace23dbeed4b232f07124b02c6a205446743.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a method that enhances the time complexity of permutation-based causal discovery approaches in linear gaussian acyclic models."
+  },
+  "collected_at": "2026-03-07T11:00:36.944Z"
+}
