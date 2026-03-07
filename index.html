@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐘 ElephantPaper · 顶会论文索引</title>
+  <style>
+    :root {
+      --bg: #0d1117; --card: #161b22; --card2: #1c2128;
+      --border: #30363d; --text: #e6edf3; --muted: #8b949e;
+      --blue: #58a6ff; --green: #3fb950; --purple: #bc8cff;
+      --gold: #d4a017; --red: #f85149; --accent: #1f6feb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif; font-size: 14px; line-height: 1.6; }
+
+    /* Header */
+    header { border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; background: rgba(13,17,23,0.95); backdrop-filter: blur(8px); }
+    .header-left { display: flex; align-items: center; gap: 10px; }
+    .logo { font-size: 24px; }
+    .site-name { font-size: 17px; font-weight: 700; }
+    .site-sub { font-size: 11px; color: var(--muted); }
+    .stats-badge { display: flex; gap: 10px; }
+    .badge { background: var(--card2); border: 1px solid var(--border); border-radius: 20px; padding: 3px 10px; font-size: 11px; color: var(--muted); }
+    .badge span { color: var(--blue); font-weight: 600; }
+
+    /* Layout */
+    .container { max-width: 1400px; margin: 0 auto; padding: 20px 24px; display: grid; grid-template-columns: 260px 1fr; gap: 20px; }
+
+    /* Sidebar */
+    .sidebar { position: sticky; top: 70px; height: fit-content; display: flex; flex-direction: column; gap: 14px; }
+    .filter-section { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+    .filter-title { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 10px; }
+    .filter-group { display: flex; flex-direction: column; gap: 4px; }
+    .filter-btn { padding: 6px 10px; border-radius: 5px; border: 1px solid transparent; background: transparent; color: var(--muted); cursor: pointer; font-size: 12px; text-align: left; transition: all 0.15s; display: flex; justify-content: space-between; align-items: center; }
+    .filter-btn:hover { background: var(--card2); color: var(--text); }
+    .filter-btn.active { background: var(--accent); border-color: var(--accent); color: white; }
+    .filter-count { font-size: 10px; opacity: 0.7; }
+    .search-box { width: 100%; padding: 8px 12px; background: var(--card2); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-size: 13px; outline: none; transition: border 0.15s; }
+    .search-box:focus { border-color: var(--blue); }
+    .search-box::placeholder { color: var(--muted); }
+    .quality-toggle { display: flex; gap: 6px; }
+    .quality-btn { flex: 1; padding: 6px; border-radius: 5px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; font-size: 11px; text-align: center; transition: all 0.15s; }
+    .quality-btn.active { border-color: var(--gold); color: var(--gold); background: rgba(212,160,23,0.1); }
+
+    /* Main */
+    .main { min-width: 0; }
+    .results-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+    .results-count { font-size: 13px; color: var(--muted); }
+    .sort-select { background: var(--card2); border: 1px solid var(--border); color: var(--text); padding: 5px 10px; border-radius: 5px; font-size: 12px; cursor: pointer; outline: none; }
+
+    /* Paper Card */
+    .paper-list { display: flex; flex-direction: column; gap: 10px; }
+    .paper-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; cursor: pointer; transition: border-color 0.15s; }
+    .paper-card:hover { border-color: var(--blue); }
+    .paper-card.expanded { border-color: var(--accent); }
+    .paper-card.high-quality { border-left: 3px solid var(--gold); }
+    .paper-header { display: flex; gap: 10px; align-items: flex-start; }
+    .paper-meta-left { flex: 1; min-width: 0; }
+    .paper-title { font-size: 14px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; color: var(--text); }
+    .paper-title:hover { color: var(--blue); }
+    .paper-authors { font-size: 12px; color: var(--muted); margin-bottom: 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .paper-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+    .tag { padding: 2px 7px; border-radius: 10px; font-size: 10px; font-weight: 600; }
+    .tag-conference { background: rgba(88,166,255,0.15); color: var(--blue); }
+    .tag-year { background: rgba(63,185,80,0.15); color: var(--green); }
+    .tag-oral { background: rgba(212,160,23,0.2); color: var(--gold); }
+    .tag-keyword { background: rgba(188,140,255,0.12); color: var(--purple); }
+    .paper-meta-right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex-shrink: 0; }
+    .citation-badge { font-size: 11px; color: var(--muted); white-space: nowrap; }
+    .citation-badge.high { color: var(--gold); font-weight: 600; }
+    .link-row { display: flex; gap: 6px; }
+    .ext-link { font-size: 10px; padding: 2px 7px; border-radius: 4px; border: 1px solid var(--border); color: var(--muted); text-decoration: none; transition: all 0.15s; }
+    .ext-link:hover { border-color: var(--blue); color: var(--blue); }
+
+    /* Expanded content */
+    .paper-detail { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); display: none; }
+    .paper-card.expanded .paper-detail { display: block; }
+    .detail-section { margin-bottom: 12px; }
+    .detail-label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+    .detail-text { font-size: 13px; color: var(--text); line-height: 1.7; }
+    .detail-text-muted { font-size: 12px; color: var(--muted); line-height: 1.7; font-style: italic; }
+
+    /* Progress bar */
+    .progress-section { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+    .progress-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+    .progress-label { font-size: 12px; color: var(--muted); }
+    .progress-val { font-size: 12px; color: var(--blue); font-weight: 600; }
+    .progress-bar-bg { background: var(--card2); border-radius: 4px; height: 4px; margin-bottom: 10px; overflow: hidden; }
+    .progress-bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--accent), var(--blue)); transition: width 0.5s; }
+
+    /* Pagination */
+    .pagination { display: flex; justify-content: center; gap: 6px; margin-top: 20px; flex-wrap: wrap; }
+    .page-btn { padding: 5px 10px; border-radius: 5px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; font-size: 12px; transition: all 0.15s; }
+    .page-btn:hover, .page-btn.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+    /* Loading */
+    .loading { text-align: center; padding: 60px 20px; color: var(--muted); }
+    .loading-spinner { display: inline-block; width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--blue); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 12px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    footer { text-align: center; color: var(--muted); font-size: 12px; padding: 20px; border-top: 1px solid var(--border); margin-top: 20px; }
+
+    @media (max-width: 768px) {
+      .container { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      header { flex-direction: column; gap: 8px; align-items: flex-start; }
+      .stats-badge { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <span class="logo">🐘</span>
+    <div>
+      <div class="site-name">ElephantPaper</div>
+      <div class="site-sub">顶会论文索引 · NeurIPS / ICLR / ICML / CVPR / ICCV</div>
+    </div>
+  </div>
+  <div class="stats-badge">
+    <div class="badge">总收录 <span id="totalCount">-</span> 篇</div>
+    <div class="badge">优质论文 <span id="highQualityCount">-</span> 篇</div>
+    <div class="badge">更新于 <span id="lastUpdated">-</span></div>
+  </div>
+</header>
+
+<div class="container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="filter-section">
+      <div class="filter-title">🔍 搜索</div>
+      <input type="text" class="search-box" id="searchInput" placeholder="标题、作者、关键词...">
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-title">📋 会议</div>
+      <div class="filter-group" id="conferenceFilters">
+        <button class="filter-btn active" onclick="setFilter('conference','all',this)">全部 <span class="filter-count" id="cnt-all"></span></button>
+        <button class="filter-btn" onclick="setFilter('conference','NeurIPS',this)">NeurIPS <span class="filter-count" id="cnt-NeurIPS"></span></button>
+        <button class="filter-btn" onclick="setFilter('conference','ICLR',this)">ICLR <span class="filter-count" id="cnt-ICLR"></span></button>
+        <button class="filter-btn" onclick="setFilter('conference','ICML',this)">ICML <span class="filter-count" id="cnt-ICML"></span></button>
+        <button class="filter-btn" onclick="setFilter('conference','CVPR',this)">CVPR <span class="filter-count" id="cnt-CVPR"></span></button>
+        <button class="filter-btn" onclick="setFilter('conference','ICCV',this)">ICCV <span class="filter-count" id="cnt-ICCV"></span></button>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-title">📅 年份</div>
+      <div class="filter-group" id="yearFilters">
+        <button class="filter-btn active" onclick="setFilter('year','all',this)">全部</button>
+        <button class="filter-btn" onclick="setFilter('year',2024,this)">2024</button>
+        <button class="filter-btn" onclick="setFilter('year',2023,this)">2023</button>
+        <button class="filter-btn" onclick="setFilter('year',2022,this)">2022</button>
+        <button class="filter-btn" onclick="setFilter('year',2021,this)">2021</button>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-title">⭐ 质量</div>
+      <div class="quality-toggle">
+        <button class="quality-btn active" id="qualityAll" onclick="setQuality('all')">全部</button>
+        <button class="quality-btn" id="qualityHigh" onclick="setQuality('high')">🔴 优质</button>
+      </div>
+    </div>
+
+    <div class="progress-section">
+      <div class="filter-title">📊 采集进度</div>
+      <div id="progressContent">
+        <div class="loading" style="padding:20px 0;font-size:12px">加载中...</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <div class="results-header">
+      <div class="results-count" id="resultsCount">加载中...</div>
+      <select class="sort-select" onchange="setSort(this.value)">
+        <option value="citations">按引用数排序</option>
+        <option value="year_desc">按年份（新→旧）</option>
+        <option value="year_asc">按年份（旧→新）</option>
+        <option value="title">按标题</option>
+      </select>
+    </div>
+    <div class="paper-list" id="paperList">
+      <div class="loading">
+        <div class="loading-spinner"></div>
+        <div>正在加载论文索引...</div>
+      </div>
+    </div>
+    <div class="pagination" id="pagination"></div>
+  </main>
+</div>
+
+<footer>
+  🐘 ElephantPaper · 数据来源：OpenReview · Semantic Scholar · arXiv<br>
+  持续采集中 · 每30分钟更新约30篇
+</footer>
+
+<script>
+  let allPapers = [];
+  let filteredPapers = [];
+  let currentPage = 1;
+  const PAGE_SIZE = 20;
+
+  let filters = { conference: 'all', year: 'all', quality: 'all' };
+  let searchQuery = '';
+  let sortMode = 'citations';
+  let expandedId = null;
+
+  async function loadData() {
+    try {
+      const resp = await fetch('./index/all-index.json?t=' + Date.now());
+      allPapers = await resp.json();
+    } catch (e) {
+      document.getElementById('paperList').innerHTML = '<div class="loading" style="color:var(--red)">⚠️ 数据加载失败，请稍后刷新</div>';
+      return;
+    }
+    updateStats();
+    applyFilters();
+    loadStats();
+  }
+
+  function updateStats() {
+    const hq = allPapers.filter(p => p.isHighQuality).length;
+    document.getElementById('totalCount').textContent = allPapers.length.toLocaleString();
+    document.getElementById('highQualityCount').textContent = hq.toLocaleString();
+
+    // 更新各会议计数
+    ['NeurIPS','ICLR','ICML','CVPR','ICCV'].forEach(conf => {
+      const cnt = allPapers.filter(p => p.conference === conf).length;
+      const el = document.getElementById(`cnt-${conf}`);
+      if (el) el.textContent = cnt || '';
+    });
+    document.getElementById('cnt-all').textContent = allPapers.length || '';
+  }
+
+  async function loadStats() {
+    try {
+      const resp = await fetch('./index/stats.json?t=' + Date.now());
+      const stats = await resp.json();
+      const lastUpdated = stats.lastUpdated ? new Date(stats.lastUpdated).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',hour12:false}).slice(0,16) : '-';
+      document.getElementById('lastUpdated').textContent = lastUpdated;
+
+      let html = '';
+      const targets = {NeurIPS_2024:3544,NeurIPS_2023:3218,NeurIPS_2022:2836,NeurIPS_2021:2344};
+      for (const [key, target] of Object.entries(targets)) {
+        const p = stats.progress?.[key] || {};
+        const collected = p.collected || 0;
+        const pct = target ? Math.min(100, Math.round(collected/target*100)) : 0;
+        const [conf, year] = key.split('_');
+        const done = p.done ? '✅' : '⏳';
+        html += `
+          <div class="progress-row">
+            <span class="progress-label">${done} ${conf} ${year}</span>
+            <span class="progress-val">${collected}/${target}</span>
+          </div>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
+        `;
+      }
+      html += `<div style="font-size:11px;color:var(--muted);margin-top:6px">累计采集 <b style="color:var(--blue)">${stats.totalCollected||0}</b> 篇</div>`;
+      document.getElementById('progressContent').innerHTML = html;
+    } catch(e) {}
+  }
+
+  function applyFilters() {
+    let result = [...allPapers];
+
+    if (filters.conference !== 'all') result = result.filter(p => p.conference === filters.conference);
+    if (filters.year !== 'all') result = result.filter(p => p.year == filters.year);
+    if (filters.quality === 'high') result = result.filter(p => p.isHighQuality);
+
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      result = result.filter(p =>
+        p.title?.toLowerCase().includes(q) ||
+        p.authors?.some(a => a.toLowerCase().includes(q)) ||
+        p.keywords?.some(k => k.toLowerCase().includes(q))
+      );
+    }
+
+    // Sort
+    if (sortMode === 'citations') result.sort((a,b) => (b.citationCount||0)-(a.citationCount||0));
+    else if (sortMode === 'year_desc') result.sort((a,b) => b.year-a.year || (b.citationCount||0)-(a.citationCount||0));
+    else if (sortMode === 'year_asc') result.sort((a,b) => a.year-b.year || (b.citationCount||0)-(a.citationCount||0));
+    else if (sortMode === 'title') result.sort((a,b) => a.title?.localeCompare(b.title));
+
+    filteredPapers = result;
+    currentPage = 1;
+    renderList();
+  }
+
+  function renderList() {
+    const start = (currentPage-1)*PAGE_SIZE;
+    const end = start + PAGE_SIZE;
+    const page = filteredPapers.slice(start, end);
+
+    document.getElementById('resultsCount').textContent = `找到 ${filteredPapers.length.toLocaleString()} 篇论文`;
+
+    if (page.length === 0) {
+      document.getElementById('paperList').innerHTML = '<div class="loading" style="padding:40px">未找到匹配论文</div>';
+      document.getElementById('pagination').innerHTML = '';
+      return;
+    }
+
+    document.getElementById('paperList').innerHTML = page.map(p => renderCard(p)).join('');
+    renderPagination();
+  }
+
+  function renderCard(p) {
+    const isHQ = p.isHighQuality;
+    const venueLC = (p.venue||'').toLowerCase();
+    const isOral = /oral/.test(venueLC);
+    const isSpotlight = /spotlight/.test(venueLC);
+    const authors = (p.authors||[]).slice(0,4).join(', ') + (p.authors?.length > 4 ? ' et al.' : '');
+    const keywords = (p.keywords||[]).slice(0,4);
+    const cit = p.citationCount || 0;
+
+    return `
+      <div class="paper-card ${isHQ?'high-quality':''} ${expandedId===p.id?'expanded':''}" id="card-${p.id}" onclick="toggleCard('${p.id}')">
+        <div class="paper-header">
+          <div class="paper-meta-left">
+            <div class="paper-title">${escHtml(p.title||'')}</div>
+            <div class="paper-authors">${escHtml(authors)}</div>
+            <div class="paper-tags">
+              <span class="tag tag-conference">${p.conference}</span>
+              <span class="tag tag-year">${p.year}</span>
+              ${isOral?'<span class="tag tag-oral">Oral</span>':''}
+              ${isSpotlight?'<span class="tag tag-oral" style="background:rgba(63,185,80,0.2);color:var(--green)">Spotlight</span>':''}
+              ${keywords.map(k=>`<span class="tag tag-keyword">${escHtml(k)}</span>`).join('')}
+            </div>
+          </div>
+          <div class="paper-meta-right">
+            <div class="citation-badge ${cit>=50?'high':''}">📚 ${cit} 引用</div>
+            <div class="link-row">
+              ${p.links?.openreview?`<a class="ext-link" href="${p.links.openreview}" target="_blank" onclick="event.stopPropagation()">OR</a>`:''}
+              ${p.links?.arxiv?`<a class="ext-link" href="${p.links.arxiv}" target="_blank" onclick="event.stopPropagation()">arXiv</a>`:''}
+            </div>
+          </div>
+        </div>
+        <div class="paper-detail" id="detail-${p.id}">
+          <div class="loading" style="padding:12px 0;font-size:12px">加载详情中...</div>
+        </div>
+      </div>`;
+  }
+
+  async function toggleCard(id) {
+    if (expandedId === id) {
+      expandedId = null;
+      document.getElementById(`card-${id}`)?.classList.remove('expanded');
+      return;
+    }
+    if (expandedId) document.getElementById(`card-${expandedId}`)?.classList.remove('expanded');
+    expandedId = id;
+    const card = document.getElementById(`card-${id}`);
+    card?.classList.add('expanded');
+
+    // 找论文
+    const paper = filteredPapers.find(p => p.id === id);
+    if (!paper) return;
+
+    const detail = document.getElementById(`detail-${id}`);
+    try {
+      const resp = await fetch(`./data/${paper.conference}/${paper.year}/${id}.json?t=${Date.now()}`);
+      const data = await resp.json();
+      detail.innerHTML = `
+        <div class="detail-section">
+          <div class="detail-label">摘要</div>
+          <div class="detail-text">${escHtml(data.abstract||'')}</div>
+        </div>
+        ${data.tldr?`<div class="detail-section"><div class="detail-label">TL;DR</div><div class="detail-text-muted">${escHtml(data.tldr)}</div></div>`:''}
+        ${data.sections?.method_summary||data.sections?.note?`
+        <div class="detail-section">
+          <div class="detail-label">${data.isHighQuality?'方法详情':'核心方法'}</div>
+          <div class="detail-text">${escHtml(data.sections?.method_summary||data.sections?.note||'')}</div>
+        </div>`:''}
+        <div class="detail-section">
+          <div class="detail-label">来源链接</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            ${data.links?.openreview?`<a href="${data.links.openreview}" target="_blank" class="ext-link" style="font-size:12px;padding:4px 10px">OpenReview ↗</a>`:''}
+            ${data.links?.arxiv?`<a href="${data.links.arxiv}" target="_blank" class="ext-link" style="font-size:12px;padding:4px 10px">arXiv ↗</a>`:''}
+            ${data.links?.pdf?`<a href="${data.links.pdf}" target="_blank" class="ext-link" style="font-size:12px;padding:4px 10px">PDF ↗</a>`:''}
+          </div>
+        </div>
+      `;
+    } catch(e) {
+      detail.innerHTML = '<div style="color:var(--muted);font-size:12px">详情加载失败</div>';
+    }
+  }
+
+  function renderPagination() {
+    const totalPages = Math.ceil(filteredPapers.length/PAGE_SIZE);
+    if (totalPages <= 1) { document.getElementById('pagination').innerHTML=''; return; }
+    let pages = [];
+    pages.push(1);
+    for (let i = Math.max(2,currentPage-2); i <= Math.min(totalPages-1,currentPage+2); i++) pages.push(i);
+    if (totalPages > 1) pages.push(totalPages);
+    pages = [...new Set(pages)].sort((a,b)=>a-b);
+    let html = '';
+    let prev = 0;
+    for (const p of pages) {
+      if (p - prev > 1) html += '<span style="color:var(--muted);padding:5px 4px">…</span>';
+      html += `<button class="page-btn ${p===currentPage?'active':''}" onclick="goPage(${p})">${p}</button>`;
+      prev = p;
+    }
+    document.getElementById('pagination').innerHTML = html;
+  }
+
+  function goPage(p) { currentPage=p; renderList(); window.scrollTo(0,0); }
+  function setFilter(type, val, btn) {
+    filters[type] = val;
+    btn.closest('.filter-group').querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilters();
+  }
+  function setQuality(q) {
+    filters.quality = q;
+    document.getElementById('qualityAll').classList.toggle('active', q==='all');
+    document.getElementById('qualityHigh').classList.toggle('active', q==='high');
+    applyFilters();
+  }
+  function setSort(v) { sortMode=v; applyFilters(); }
+  function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+  let searchTimer;
+  document.getElementById('searchInput').addEventListener('input', e => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => { searchQuery=e.target.value.trim(); applyFilters(); }, 300);
+  });
+
+  loadData();
+</script>
+</body>
+</html>

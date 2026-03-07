@@ -1,0 +1,34 @@
+{
+  "id": "eHzIwAhj06",
+  "or_id": "eHzIwAhj06",
+  "title": "The Group Robustness is in the Details: Revisiting Finetuning under Spurious Correlations",
+  "authors": [
+    "Tyler LaBonte",
+    "John Collins Hill",
+    "Xinchen zhang",
+    "Vidya Muthukumar",
+    "Abhishek Kumar"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Modern machine learning models are prone to over-reliance on spurious correlations, which can often lead to poor performance on minority groups. In this paper, we identify surprising and nuanced behavior of finetuned models on worst-group accuracy via comprehensive experiments on four well-established benchmarks across vision and language tasks. We first show that the commonly used class-balancing techniques of mini-batch upsampling and loss upweighting can induce a decrease in worst-group accuracy (WGA) with training epochs, leading to performance no better than without class-balancing. While in some scenarios, removing data to create a class-balanced subset is more effective, we show this depends on group structure and propose a mixture method which can outperform both techniques. Next, we show that scaling pretrained models is generally beneficial for worst-group accuracy, but only in conjunction with appropriate class-balancing. Finally, we identify spectral imbalance in finetuning features as a potential source of group disparities --- minority group covariance matrices incur a larger spectral norm than majority groups once conditioned on the classes. Our results show more nuanced interactions of modern finetuned models with group robustness than was previously known. Our code is available at https://github.com/tmlabonte/revisiting-finetuning.",
+  "tldr": "We identify surprising and nuanced behavior of finetuned models on worst-group accuracy in settings including class-balancing, model scaling, and spectral analysis.",
+  "keywords": [
+    "spurious correlations",
+    "group robustness",
+    "distribution shift",
+    "class balancing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=eHzIwAhj06",
+    "arxiv": null,
+    "pdf": "https://openreview.net/pdf/de43893b167ffd92fa7be295fbe3cc22ed9d8d07.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "collected_at": "2026-03-07T08:01:19.574Z",
+  "sections": {
+    "method_summary": "We identify surprising and nuanced behavior of finetuned models on worst-group accuracy in settings including class-balancing, model scaling, and spectral analysis."
+  }
+}

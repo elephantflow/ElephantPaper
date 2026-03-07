@@ -1,0 +1,34 @@
+{
+  "id": "iEeiZlTbts",
+  "or_id": "iEeiZlTbts",
+  "title": "No Regrets: Investigating and Improving Regret Approximations for Curriculum Discovery",
+  "authors": [
+    "Alexander Rutherford",
+    "Michael Beukman",
+    "Timon Willi",
+    "Bruno Lacerda",
+    "Nick Hawes",
+    "Jakob Nicolaus Foerster"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "What data or environments to use for training to improve downstream performance is a longstanding and very topical question in reinforcement learning. \nIn particular, Unsupervised Environment Design (UED) methods have gained recent attention as their adaptive curricula promise to enable agents to be robust to in- and out-of-distribution tasks.\nThis work investigates how existing UED methods select training environments, focusing on task prioritisation metrics.\nSurprisingly, despite methods aiming to maximise regret in theory, the practical approximations do not correlate with regret but with success rate.\nAs a result, a significant portion of an agent's experience comes from environments it has already mastered, offering little to no contribution toward enhancing its abilities. Put differently, current methods fail to predict intuitive measures of *learnability*. Specifically, they are unable to consistently identify those scenarios that the agent can sometimes solve, but not always.\nBased on our analysis, we develop a method that directly trains on scenarios with high learnability. This simple and intuitive approach outperforms existing UED methods in several binary-outcome environments, including the standard domain of Minigrid and a novel setting closely inspired by a real-world robotics problem. \nWe further introduce a new adversarial evaluation procedure for directly measuring robustness, closely mirroring the conditional value at risk (CVaR).\nWe open-source all our code and present visualisations of final policies here: https://github.com/amacrutherford/sampling-for-learnability.",
+  "tldr": "An improved score function for unsupervised environment design in binary outcome settings, which we use to train agents for real-world tasks, and an improved adversarial evaluation protocol that assesses policy robustness.",
+  "keywords": [
+    "MARL",
+    "UED",
+    "Robotics"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=iEeiZlTbts",
+    "arxiv": null,
+    "pdf": "https://openreview.net/pdf/450f8065819bc0d3298b71c62f255c51668b3b69.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "collected_at": "2026-03-07T08:01:01.806Z",
+  "sections": {
+    "method_summary": "An improved score function for unsupervised environment design in binary outcome settings, which we use to train agents for real-world tasks, and an improved adversarial evaluation protocol that assesses policy robustness."
+  }
+}
