@@ -1,0 +1,36 @@
+{
+  "id": "UGlDVc0GTU",
+  "or_id": "UGlDVc0GTU",
+  "title": "LLM-based Skill Diffusion for Zero-shot Policy Adaptation",
+  "title_zh": "",
+  "authors": [
+    "Woo Kyung Kim",
+    "Youngseok Lee",
+    "Jooyoung Kim",
+    "Honguk Woo"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recent advances in data-driven imitation learning and offline reinforcement learning have highlighted the use of expert data for skill acquisition and the development of hierarchical policies based on these skills. However, these approaches have not significantly advanced in adapting these skills to unseen contexts, which may involve changing environmental conditions or different user requirements. In this paper, we present a novel LLM-based policy adaptation framework LDuS which leverages an LLM to guide the generation process of a skill diffusion model upon contexts specified in language, facilitating zero-shot skill-based policy adaptation to different contexts. To implement the skill diffusion model, we adapt the loss-guided diffusion with a sequential in-painting technique, where target trajectories are conditioned by masking them with past state-action sequences, thereby enabling the robust and controlled generation of skill trajectories in test-time. To have a loss function for a given context, we employ the LLM-based code generation with iterative refinement, by which the code and controlled trajectory are validated to align with the context in a closed-loop manner. Through experiments, we demonstrate the zero-shot adaptability of LDuS to various context types including different specification levels, multi-modality, and varied temporal conditions for several robotic manipulation tasks, outperforming other language-conditioned imitation and planning methods.",
+  "abstract_zh": "",
+  "tldr": "LLM-based Skill Diffusion for Zero-shot Policy Adaptation",
+  "keywords": [
+    "Imitation Learning",
+    "Planning",
+    "Diffusion Model",
+    "Large Language Model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=UGlDVc0GTU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b6f0b49a3aa38dc5aaa6b697129957b4d3fabfcb.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "LLM-based Skill Diffusion for Zero-shot Policy Adaptation"
+  },
+  "collected_at": "2026-03-07T21:00:34.143Z"
+}
