@@ -1,0 +1,35 @@
+{
+  "id": "RTaSjoxmw9",
+  "or_id": "RTaSjoxmw9",
+  "title": "Outlier-Robust Phase Retrieval in Nearly-Linear Time",
+  "title_zh": "",
+  "authors": [
+    "Haichen Dong",
+    "Alessio Mazzetto",
+    "Yu Cheng",
+    "Rong Ge"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Phase retrieval is a fundamental problem in signal processing, where the goal is to recover a (complex-valued) signal from phaseless intensity measurements. It is well-known that natural nonconvex formulations of phase retrieval do not have spurious local optima. However, the theoretical analyses of such landscape results often rely on strong assumptions, such as the sampled measurements are (complex) Gaussian. In this paper, we propose and study the problem of outlier robust phase retrieval. We focus on the real-valued case, where we seek to recover a vector $x \\in \\mathbb{R}^d$ from $n$ intensity measurements $y_i = (a_i^\\top x )^2$, under the assumption that the $a_i$'s are initially i.i.d. Gaussian but a small fraction of the $(y_i, a_i)$ pairs are adversarially corrupted. Our main result is a near sample-optimal nearly-linear time algorithm that provably recovers the ground-truth vector $x$ in the presence of outliers. We first solve a lightweight convex program to find a vector close to the ground truth. We then run robust gradient descent starting from this initial solution, leveraging recent advances in high-dimensional robust statistics. Our approach is conceptually simple and provides a framework for developing robust algorithms for tractable nonconvex problems.",
+  "abstract_zh": "",
+  "tldr": "We provide a robust algorithm for the phase retrieval problem when a small fraction of the input is adversarially corrupted.",
+  "keywords": [
+    "phase retrieval",
+    "high-dimensional robust statistics",
+    "learning theory"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=RTaSjoxmw9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5b17a10d0738b4c9a3c5c704376d54733ed5016c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We provide a robust algorithm for the phase retrieval problem when a small fraction of the input is adversarially corrupted."
+  },
+  "collected_at": "2026-03-07T23:42:12.924Z"
+}

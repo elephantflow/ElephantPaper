@@ -1,245 +1,5 @@
 [
   {
-    "id": "GnAfyR8AhC",
-    "filePath": "data/NeurIPS/2024/GnAfyR8AhC.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Towards Calibrated Robust Fine-Tuning of Vision-Language Models",
-    "abstract": "Improving out-of-distribution (OOD) generalization during in-distribution (ID) adaptation is a primary goal of robust fine-tuning of zero-shot models beyond naive fine-tuning. However, despite decent OOD generalization performance from recent robust fine-tuning methods, confidence calibration for reliable model output has not been fully addressed. This work proposes a robust fine-tuning method that improves both OOD accuracy and confidence calibration simultaneously in vision language models. Firstly, we show that both OOD classification and OOD calibration errors have a shared upper bound consisting of two terms of ID data: 1) ID calibration error and 2) the smallest singular value of the ID input covariance matrix. Based on this insight, we design a novel framework that conducts fine-tun"
-  },
-  {
-    "id": "FV4an2OuFM",
-    "filePath": "data/NeurIPS/2024/FV4an2OuFM.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Conditioning non-linear and infinite-dimensional diffusion processes",
-    "abstract": "Generative diffusion models and many stochastic models in science and engineering naturally live in infinite dimensions before discretisation. To incorporate observed data for statistical and learning tasks, one needs to condition on observations. While recent work has treated conditioning linear processes in infinite dimensions, conditioning non-linear processes in infinite dimensions has not been explored. This paper conditions function valued stochastic processes without prior discretisation. To do so, we use an infinite-dimensional version of Girsanov's theorem to condition a function-valued stochastic process, leading to a stochastic differential equation (SDE) for the conditioned process involving the score. We apply this technique to do time series analysis for shapes of organisms i"
-  },
-  {
-    "id": "S93hrwT8u9",
-    "filePath": "data/NeurIPS/2024/S93hrwT8u9.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Activation Map Compression through Tensor Decomposition for Deep Learning",
-    "abstract": "Internet of Things and Deep Learning are synergetically and exponentially growing industrial fields with a massive call for their unification into a common framework called Edge AI. While on-device inference is a well-explored topic in recent research, backpropagation remains an open challenge due to its prohibitive computational and memory costs compared to the extreme resource constraints of embedded devices. Drawing on tensor decomposition research, we tackle the main bottleneck of backpropagation, namely the memory footprint of activation map storage. We investigate and compare the effects of activation compression using Singular Value Decomposition and its tensor variant, High-Order Singular Value Decomposition. The application of low-order decomposition results in considerable memory"
-  },
-  {
-    "id": "AqcPvWwktK",
-    "filePath": "data/NeurIPS/2024/AqcPvWwktK.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Semi-supervised Multi-label Learning with Balanced Binary Angular Margin Loss",
-    "abstract": "Semi-supervised multi-label learning (SSMLL) refers to inducing classifiers using a small number of samples with multiple labels and many unlabeled samples. The prevalent solution of SSMLL involves forming pseudo-labels for unlabeled samples and inducing classifiers using both labeled and pseudo-labeled samples in a self-training manner. Unfortunately, with the commonly used binary type of loss and negative sampling, we have empirically found that learning with labeled and pseudo-labeled samples can result in the variance bias problem between the feature distributions of positive and negative samples for each label. To alleviate this problem, we aim to balance the variance bias between positive and negative samples from the perspective of the feature angle distribution for each label. Spec"
-  },
-  {
-    "id": "APSBwuMopO",
-    "filePath": "data/NeurIPS/2024/APSBwuMopO.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Optimized Feature Generation for Tabular Data via LLMs with Decision Tree Reasoning",
-    "abstract": "In tabular prediction tasks, tree-based models combined with automated feature engineering methods often outperform deep learning approaches that rely on learned representations. While these feature engineering techniques are effective, they typically depend on a pre-defined search space and primarily use validation scores for feature selection, thereby missing valuable insights from previous experiments.\nTo address these limitations, we propose a novel tabular learning framework that utilizes large language models (LLMs), termed Optimizing Column feature generator with decision Tree reasoning (OCTree). Our key idea is to leverage the reasoning capabilities of LLMs to identify effective feature generation rules without manually specifying the search space and provide language-based reasoni"
-  },
-  {
-    "id": "faBXeVBNqz",
-    "filePath": "data/NeurIPS/2024/faBXeVBNqz.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Higher-Rank Irreducible Cartesian Tensors for Equivariant Message Passing",
-    "abstract": "The ability to perform fast and accurate atomistic simulations is crucial for advancing the chemical sciences. By learning from high-quality data, machine-learned interatomic potentials achieve accuracy on par with ab initio and first-principles methods at a fraction of their computational cost. The success of machine-learned interatomic potentials arises from integrating inductive biases such as equivariance to group actions on an atomic system, e.g., equivariance to rotations and reflections. In particular, the field has notably advanced with the emergence of equivariant message passing. Most of these models represent an atomic system using spherical tensors, tensor products of which require complicated numerical coefficients and can be computationally demanding. Cartesian tensors offer "
-  },
-  {
-    "id": "wfU2CdgmWt",
-    "filePath": "data/NeurIPS/2024/wfU2CdgmWt.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Stochastic Optimal Control Matching",
-    "abstract": "Stochastic optimal control, which has the goal of driving the behavior of noisy systems, is broadly applicable in science, engineering and artificial intelligence. Our work introduces Stochastic Optimal Control Matching (SOCM), a novel Iterative Diffusion Optimization (IDO) technique for stochastic optimal control that stems from the same philosophy as the conditional score matching loss for diffusion models. That is, the control is learned via a least squares problem by trying to fit a matching vector field. The training loss, which is closely connected to the cross-entropy loss, is optimized with respect to both the control function and a family of reparameterization matrices which appear in the matching vector field. The optimization with respect to the reparameterization matrices aims "
-  },
-  {
-    "id": "0cgDDa4OFr",
-    "filePath": "data/NeurIPS/2024/0cgDDa4OFr.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Sourcerer: Sample-based Maximum Entropy Source Distribution Estimation",
-    "abstract": "Scientific modeling applications often require estimating a distribution of parameters consistent with a dataset of observations - an inference task also known as source distribution estimation. This problem can be ill-posed, however, since many different source distributions might produce the same distribution of data-consistent simulations. To make a principled choice among many equally valid sources, we propose an approach which targets the maximum entropy distribution, i.e., prioritizes retaining as much uncertainty as possible. Our method is purely sample-based - leveraging the Sliced-Wasserstein distance to measure the discrepancy between the dataset and simulations - and thus suitable for simulators with intractable likelihoods. We benchmark our method on several tasks, and show tha"
-  },
-  {
-    "id": "0sycTGl4In",
-    "filePath": "data/NeurIPS/2024/0sycTGl4In.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "4D Gaussian Splatting in the Wild with Uncertainty-Aware Regularization",
-    "abstract": "Novel view synthesis of dynamic scenes is becoming important in various applications, including augmented and virtual reality.\nWe propose a novel 4D Gaussian Splatting (4DGS) algorithm for dynamic scenes from casually recorded monocular videos. \nTo overcome the overfitting problem of existing work for these real-world videos, we introduce an uncertainty-aware regularization that identifies uncertain regions with few observations and selectively imposes additional priors based on diffusion models and depth smoothness on such regions.\nThis approach improves both the performance of novel view synthesis and the quality of training image reconstruction. \nWe also identify the initialization problem of 4DGS in fast-moving dynamic regions, where the Structure from Motion (SfM) algorithm fails to p"
-  },
-  {
-    "id": "y6JotynERr",
-    "filePath": "data/NeurIPS/2024/y6JotynERr.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Towards Diverse Device Heterogeneous Federated Learning via Task Arithmetic Knowledge Integration",
-    "abstract": "Federated Learning (FL) has emerged as a promising paradigm for collaborative machine learning, while preserving user data privacy. Despite its potential, standard FL algorithms lack support for diverse heterogeneous device prototypes, which vary significantly in model and dataset sizes---from small IoT devices to large workstations. This limitation is only partially addressed by existing knowledge distillation (KD) techniques, which often fail to transfer knowledge effectively across a broad spectrum of device prototypes with varied capabilities. This failure primarily stems from two issues: the dilution of informative logits from more capable devices by those from less capable ones, and the use of a single integrated logits as the distillation target across all devices, which neglects th"
-  },
-  {
-    "id": "RcPAJAnpnm",
-    "filePath": "data/NeurIPS/2024/RcPAJAnpnm.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Incremental Learning of Retrievable Skills For Efficient Continual Task Adaptation",
-    "abstract": "Continual Imitation Learning (CiL) involves extracting and accumulating task knowledge from demonstrations across multiple stages and tasks to achieve a multi-task policy. With recent advancements in foundation models, there has been a growing interest in adapter-based CiL approaches, where adapters are established parameter-efficiently for tasks newly demonstrated. While these approaches isolate parameters for specific tasks and tend to mitigate catastrophic forgetting, they limit knowledge sharing among different demonstrations. We introduce IsCiL, an adapter-based CiL framework that addresses this limitation of knowledge sharing by incrementally learning shareable skills from different demonstrations, thus enabling sample-efficient task adaptation using the skills particularly in non-st"
-  },
-  {
-    "id": "owHj0G15cd",
-    "filePath": "data/NeurIPS/2024/owHj0G15cd.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Direct Preference-Based Evolutionary Multi-Objective Optimization with Dueling Bandits",
-    "abstract": "The ultimate goal of multi-objective optimization (MO) is to assist human decision-makers (DMs) in identifying solutions of interest (SOI) that optimally reconcile multiple objectives according to their preferences. Preference-based evolutionary MO (PBEMO) has emerged as a promising framework that progressively approximates SOI by involving human in the optimization-cum-decision-making process. Yet, current PBEMO approaches are prone to be inefficient and misaligned with the DM’s true aspirations, especially when inadvertently exploiting mis-calibrated reward models. This is further exacerbated when considering the stochastic nature of human feedback. This paper proposes a novel framework that navigates MO to SOI by directly leveraging human feedback without being restricted by a predefine"
-  },
-  {
-    "id": "gnnmB7y0Xx",
-    "filePath": "data/NeurIPS/2024/gnnmB7y0Xx.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "In-Context Learning State Vector with Inner and Momentum Optimization",
-    "abstract": "Large Language Models (LLMs) have exhibited an impressive ability to perform In-Context Learning (ICL) from only a few examples. Recent works have indicated that the functions learned by ICL can be represented through compressed vectors derived from the transformer. However, the working mechanisms and optimization of these vectors are yet to be thoroughly explored. In this paper, we address this gap by presenting a comprehensive analysis of these compressed vectors, drawing parallels to the parameters trained with gradient descent, and introducing the concept of state vector. Inspired by the works on model soup and momentum-based gradient descent, we propose inner and momentum optimization methods that are applied to refine the state vector progressively as test-time adaptation. Moreover, "
-  },
-  {
-    "id": "9utMGIbHBt",
-    "filePath": "data/NeurIPS/2024/9utMGIbHBt.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "UDPM: Upsampling Diffusion Probabilistic Models",
-    "abstract": "Denoising Diffusion Probabilistic Models (DDPM) have recently gained significant attention. DDPMs compose a Markovian process that begins in the data domain and gradually adds noise until reaching pure white noise. DDPMs generate high-quality samples from complex data distributions by defining an inverse process and training a deep neural network to learn this mapping. However, these models are inefficient because they require many diffusion steps to produce aesthetically pleasing samples. Additionally, unlike generative adversarial networks (GANs), the latent space of diffusion models is less interpretable. In this work, we propose to generalize the denoising diffusion process into an Upsampling Diffusion Probabilistic Model (UDPM). In the forward process, we reduce the latent variable di"
-  },
-  {
-    "id": "ntV5xZfzEk",
-    "filePath": "data/NeurIPS/2024/ntV5xZfzEk.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Constrained Binary Decision Making",
-    "abstract": "Binary statistical decision making involves choosing between two states based on statistical evidence. The optimal decision strategy is typically formulated through a constrained optimization problem, where both the objective and constraints are expressed as integrals involving two Lebesgue measurable functions, one of which represents the strategy being optimized. In this work, we present a comprehensive formulation of the binary decision making problem and provide a detailed characterization of the optimal solution. Our framework encompasses a wide range of well-known and recently proposed decision making problems as specific cases. We demonstrate how our generic approach can be used to derive the optimal decision strategies for these diverse instances. Our results offer a robust mathema"
-  },
-  {
-    "id": "O23XfTnhWR",
-    "filePath": "data/NeurIPS/2024/O23XfTnhWR.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Graphcode: Learning from multiparameter persistent homology using graph neural networks",
-    "abstract": "We introduce graphcodes, a novel multi-scale summary of the topological properties of a dataset that is based on the well-established theory of persistent homology. Graphcodes handle datasets that are filtered along two real-valued scale parameters. Such multi-parameter topological summaries are usually based on complicated theoretical foundations and difficult to compute; in contrast, graphcodes yield an informative and interpretable summary and can be computed as efficient as one-parameter summaries. Moreover, a graphcode is simply an embedded graph and can therefore be readily integrated in machine learning pipelines using graph neural networks. We describe such a pipeline and demonstrate that graphcodes achieve better classification accuracy than state-of-the-art approaches on various "
-  },
-  {
-    "id": "exATQD4HSv",
-    "filePath": "data/NeurIPS/2024/exATQD4HSv.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "A scalable generative model for dynamical system reconstruction from neuroimaging data",
-    "abstract": "Data-driven inference of the generative dynamics underlying a set of observed time series is of growing interest in machine learning and the natural sciences. In neuroscience, such methods promise to alleviate the need to handcraft models based on biophysical principles and allow to automatize the inference of inter-individual differences in brain dynamics. \nRecent breakthroughs in training techniques for state space models (SSMs) specifically geared toward dynamical systems (DS) reconstruction (DSR) enable to recover the underlying system including its geometrical (attractor) and long-term statistical invariants from even short time series. These techniques are based on control-theoretic ideas, like modern variants of teacher forcing (TF), to ensure stable loss gradient propagation while "
-  },
-  {
-    "id": "7ANmKBfP88",
-    "filePath": "data/NeurIPS/2024/7ANmKBfP88.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Right this way: Can VLMs Guide Us to See More to Answer Questions?",
-    "abstract": "In question-answering scenarios, humans can assess whether the available information is sufficient and seek additional information if necessary, rather than providing a forced answer. In contrast, Vision Language Models (VLMs) typically generate direct, one-shot responses without evaluating the sufficiency of the information. To investigate this gap, we identify a critical and challenging task in the Visual Question Answering (VQA) scenario: can VLMs indicate how to adjust an image when the visual information is insufficient to answer a question? This capability is especially valuable for assisting visually impaired individuals who often need guidance to capture images correctly. To evaluate this capability of current VLMs, we introduce a human-labeled dataset as a benchmark for this task."
-  },
-  {
-    "id": "OEWBkLrRZu",
-    "filePath": "data/NeurIPS/2024/OEWBkLrRZu.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Towards Stable Representations for Protein Interface Prediction",
-    "abstract": "The knowledge of protein interactions is crucial but challenging for drug discovery applications. This work focuses on protein interface prediction, which aims to determine whether a pair of residues from different proteins interact. Existing data-driven methods have made significant progress in effectively learning protein structures. Nevertheless, they overlook the conformational changes (i.e., flexibility) within proteins upon binding, leading to poor generalization ability. In this paper, we regard the protein flexibility as an attack on the trained model and aim to defend against it for improved generalization. To fulfill this purpose, we propose ATProt, an adversarial training framework for protein representations to robustly defend against the attack of protein flexibility. ATProt c"
-  },
-  {
-    "id": "pGOBEYcXzs",
-    "filePath": "data/NeurIPS/2024/pGOBEYcXzs.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Mixture of Scales: Memory-Efficient Token-Adaptive Binarization for Large Language Models",
-    "abstract": "Binarization, which converts weight parameters to binary values, has emerged as an effective strategy to reduce the size of large language models (LLMs). However, typical binarization techniques significantly diminish linguistic effectiveness of LLMs.\nTo address this issue, we introduce a novel binarization technique called Mixture of Scales (BinaryMoS). Unlike conventional methods, BinaryMoS employs multiple scaling experts for binary weights, dynamically merging these experts for each token to adaptively generate scaling factors. This token-adaptive approach boosts the representational power of binarized LLMs by enabling contextual adjustments to the values of binary weights. Moreover, because this adaptive process only involves the scaling factors rather than the entire weight matrix, B"
-  },
-  {
-    "id": "zv9gYC3xgF",
-    "filePath": "data/NeurIPS/2024/zv9gYC3xgF.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Toward Global Convergence of Gradient EM for Over-Paramterized Gaussian Mixture Models",
-    "abstract": "We study the gradient Expectation-Maximization (EM) algorithm for Gaussian Mixture Models (GMM) in the over-parameterized setting, where a general GMM with $n>1$ components learns from data that are generated by a single ground truth Gaussian distribution. \nWhile results for the special case of 2-Gaussian mixtures are well-known, a general global convergence analysis for arbitrary $n$ remains unresolved and faces several new technical barriers since the convergence becomes sub-linear and non-monotonic. To address these challenges, we construct a novel likelihood-based convergence analysis framework and rigorously prove that gradient EM converges globally with a sublinear rate $O(1/\\sqrt{t})$. This is the first global convergence result for Gaussian mixtures with more than $2$ components. T"
-  },
-  {
-    "id": "VqkAKQibpq",
-    "filePath": "data/NeurIPS/2024/VqkAKQibpq.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "SGLang: Efficient Execution of Structured Language Model Programs",
-    "abstract": "Large language models (LLMs) are increasingly used for complex tasks that require multiple generation calls, advanced prompting techniques, control flow, and structured inputs/outputs. However, efficient systems are lacking for programming and executing these applications. We introduce SGLang, a system for efficient execution of complex language model programs. SGLang consists of a frontend language and a runtime. The frontend simplifies programming with primitives for generation and parallelism control. The runtime accelerates execution with novel optimizations like RadixAttention for KV cache reuse and compressed finite state machines for faster structured output decoding. Experiments show that SGLang achieves up to $6.4\\times$ higher throughput compared to state-of-the-art inference sys"
-  },
-  {
-    "id": "qwl3EiDi9r",
-    "filePath": "data/NeurIPS/2024/qwl3EiDi9r.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Integrating GNN and Neural ODEs for Estimating Non-Reciprocal Two-Body Interactions in Mixed-Species Collective Motion",
-    "abstract": "Analyzing the motion of multiple biological agents, be it cells or individual animals, is pivotal for the understanding of complex collective behaviors. \nWith the advent of advanced microscopy, detailed images of complex tissue formations involving multiple cell types have become more accessible in recent years. However, deciphering the underlying rules that govern cell movements is far from trivial. Here, we present a novel deep learning framework for estimating the underlying equations of motion from observed trajectories, a pivotal step in decoding such complex dynamics. \nOur framework integrates graph neural networks with neural differential equations, enabling effective prediction of two-body interactions based on the states of the interacting entities. We demonstrate the efficacy of "
-  },
-  {
-    "id": "ojFEP11Cqj",
-    "filePath": "data/NeurIPS/2024/ojFEP11Cqj.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "NRGBoost: Energy-Based Generative Boosted Trees",
-    "abstract": "Despite the rise to dominance of deep learning in unstructured data domains, \ntree-based methods such as Random Forests (RF) and Gradient Boosted Decision Trees (GBDT) are still the workhorses for handling discriminative tasks on tabular data.\nWe explore generative extensions of these popular algorithms with a focus on explicitly modeling the data density (up to a normalization constant), \nthus enabling other applications besides sampling.\nAs our main contribution we propose an effective energy-based generative boosting algorithm that is analogous to the\nsecond order boosting algorithm implemented in popular packages like XGBoost.\nWe show that, despite producing a generative model capable of handling inference tasks over any input variable, \nour proposed algorithm can achieve similar discr"
-  },
-  {
-    "id": "01qa1ZJs65",
-    "filePath": "data/NeurIPS/2024/01qa1ZJs65.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Bridge the Modality and Capability Gaps in Vision-Language Model Selection",
-    "abstract": "Vision Language Models (VLMs) excel in zero-shot image classification by pairing images with textual category names. The expanding variety of Pre-Trained VLMs enhances the likelihood of identifying a suitable VLM for specific tasks. To better reuse the VLM resource and fully leverage its potential on different zero-shot image classification tasks, a promising strategy is selecting appropriate Pre-Trained VLMs from the VLM Zoo, relying solely on the text data of the target dataset without access to the dataset’s images. In this paper, we analyze two inherent challenges in assessing the ability of a VLM in this Language-Only VLM selection: the “Modality Gap”—the disparity in VLM’s embeddings across two different modalities, making text a less reliable substitute for images; and the “Capabili"
-  },
-  {
-    "id": "fG8TukiXa5",
-    "filePath": "data/NeurIPS/2024/fG8TukiXa5.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "How Transformers Utilize Multi-Head Attention in In-Context Learning? A Case Study on Sparse Linear Regression",
-    "abstract": "Despite the remarkable success of transformer-based models in various real-world tasks, their underlying mechanisms remain poorly understood. Recent studies have suggested that transformers can implement gradient descent as an in-context learner for linear regression problems and have developed various theoretical analyses accordingly. However, these works mostly focus on the expressive power of transformers by designing specific parameter constructions, lacking a comprehensive understanding of their inherent working mechanisms post-training. In this study, we consider a sparse linear regression problem and investigate how a trained multi-head transformer performs in-context learning. We experimentally discover that the utilization of multi-heads exhibits different patterns across layers: "
-  },
-  {
-    "id": "xCUXJqQySD",
-    "filePath": "data/NeurIPS/2024/xCUXJqQySD.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Med-Real2Sim: Non-Invasive Medical Digital Twins using Physics-Informed Self-Supervised Learning",
-    "abstract": "A digital twin is a virtual replica of a real-world physical phenomena that uses mathematical modeling to characterize and simulate its defining features. By constructing digital twins for disease processes, we can perform in-silico simulations that mimic patients' health conditions and counterfactual outcomes under hypothetical interventions in a virtual setting. This eliminates the need for invasive procedures or uncertain treatment decisions. In this paper, we propose a method to identify digital twin model parameters using only noninvasive patient health data. We approach the digital twin modeling as a composite inverse problem, and observe that its structure resembles pretraining and finetuning in self-supervised learning (SSL). Leveraging this, we introduce a physics-informed SSL alg"
-  },
-  {
-    "id": "Mi853QaJx6",
-    "filePath": "data/NeurIPS/2024/Mi853QaJx6.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "On the Worst Prompt Performance of Large Language Models",
-    "abstract": "The performance of large language models (LLMs) is acutely sensitive to the phrasing of prompts, which raises significant concerns about their reliability in real-world scenarios. Existing studies often divide prompts into task-level instructions and case-level inputs and primarily focus on evaluating and improving robustness against variations in tasks-level instructions. However, this setup fails to fully address the diversity of real-world user queries and assumes the existence of task-specific datasets. To address these limitations, we introduce RobustAlpacaEval, a new benchmark that consists of semantically equivalent case-level queries and emphasizes the importance of using the worst prompt performance to gauge the lower bound of model performance. Extensive experiments on RobustAlpa"
-  },
-  {
-    "id": "Y841BRW9rY",
-    "filePath": "data/NeurIPS/2024/Y841BRW9rY.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
-    "abstract": "LLM agents have demonstrated remarkable performance across various applications, primarily due to their advanced capabilities in reasoning, utilizing external knowledge and tools, calling APIs, and executing actions to interact with environments. Current agents typically utilize a memory module or a retrieval-augmented generation (RAG) mechanism, retrieving past knowledge and instances with similar embeddings from knowledge bases to inform task planning and execution. However, the reliance on unverified knowledge bases raises significant concerns about their safety and trustworthiness. To uncover such vulnerabilities, we propose a novel red teaming approach AgentPoison, the first backdoor attack targeting generic and RAG-based LLM agents by poisoning their long-term memory or\nRAG knowledge"
-  },
-  {
-    "id": "R0bnWrpIeN",
-    "filePath": "data/NeurIPS/2024/R0bnWrpIeN.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "CoSy: Evaluating Textual Explanations of Neurons",
-    "abstract": "A crucial aspect of understanding the complex nature of Deep Neural Networks (DNNs) is the ability to explain learned concepts within their latent representations. While methods exist to connect neurons to human-understandable textual descriptions, evaluating the quality of these explanations is challenging due to the lack of a unified quantitative approach. We introduce CoSy (Concept Synthesis), a novel, architecture-agnostic framework for evaluating textual explanations of latent neurons. Given textual explanations, our proposed framework uses a generative model conditioned on textual input to create data points representing the explanations. By comparing the neuron's response to these generated data points and control data points, we can estimate the quality of the explanation. We valid"
-  },
-  {
     "id": "15Jm9v7wCo",
     "filePath": "data/NeurIPS/2024/15Jm9v7wCo.json",
     "conference": "NeurIPS",
@@ -1598,5 +1358,245 @@
     "year": 2024,
     "title": "What is my quantum computer good for? Quantum capability learning with physics-aware neural networks",
     "abstract": "Quantum computers have the potential to revolutionize diverse fields, including quantum chemistry, materials science, and machine learning. However, contemporary quantum computers experience errors that often cause quantum programs run on them to fail. Until quantum computers can reliably execute large quantum programs, stakeholders will need fast and reliable methods for assessing a quantum computer’s capability—i.e., the programs it can run and how well it can run them. Previously, off-the-shelf neural network architectures have been used to model quantum computers' capabilities, but with limited success, because these networks fail to learn the complex quantum physics that determines real quantum computers' errors. We address this shortcoming with a new quantum-physics-aware neural netw"
+  },
+  {
+    "id": "9Nsa4lVZeD",
+    "filePath": "data/NeurIPS/2024/9Nsa4lVZeD.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Stability and Generalization of Adversarial Training for Shallow Neural Networks with Smooth Activation",
+    "abstract": "Adversarial training has emerged as a popular approach for training models that are robust to inference-time adversarial attacks. However, our theoretical understanding of why and when it works remains limited. Prior work has offered generalization analysis of adversarial training, but they are either restricted to the Neural Tangent Kernel (NTK) regime or they make restrictive assumptions about data such as (noisy) linear separability or robust realizability. In this work, we study the stability and generalization of adversarial training for two-layer networks **without any data distribution assumptions** and **beyond the NTK regime**. Our findings suggest that for networks with *any given initialization* and *sufficiently large width*, the generalization bound can be effectively controll"
+  },
+  {
+    "id": "T5Cerv7PT2",
+    "filePath": "data/NeurIPS/2024/T5Cerv7PT2.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Simplifying Constraint Inference with Inverse Reinforcement Learning",
+    "abstract": "Learning safe policies has presented a longstanding challenge for the reinforcement learning (RL) community. Various formulations of safe RL have been proposed; However, fundamentally, tabula rasa RL must learn safety constraints through experience, which is problematic for real-world applications. Imitation learning is often preferred in real-world settings because the experts' safety preferences are embedded in the data the agent imitates. However, imitation learning is limited in its extensibility to new tasks, which can only be learned by providing the agent with expert trajectories. For safety-critical applications with sub-optimal or inexact expert data, it would be preferable to learn only the safety aspects of the policy through imitation, while still allowing for task learning wit"
+  },
+  {
+    "id": "WCnJmb7cv1",
+    "filePath": "data/NeurIPS/2024/WCnJmb7cv1.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Learning to Assist Humans without Inferring Rewards",
+    "abstract": "Assistive agents should make humans' lives easier. Classically, such assistance is studied through the lens of inverse reinforcement learning, where an assistive agent (e.g., a chatbot, a robot) infers a human's intention and then selects actions to help the human reach that goal. This approach requires inferring intentions, which can be difficult in high-dimensional settings. We build upon prior work that studies assistance through the lens of empowerment: an assistive agent aims to maximize the influence of the human's actions such that they exert a greater control over the environmental outcomes and can solve tasks in fewer steps. We lift the major limitation of prior work in this area—scalability to high-dimensional settings—with contrastive successor representations. We formally prove"
+  },
+  {
+    "id": "0Lr9HQijA1",
+    "filePath": "data/NeurIPS/2024/0Lr9HQijA1.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Imprecise Label Learning: A Unified Framework for Learning with Various Imprecise Label Configurations",
+    "abstract": "Learning with reduced labeling standards, such as noisy label, partial label, and supplementary unlabeled data, which we generically refer to as imprecise label, is a commonplace challenge in machine learning tasks. Previous methods tend to propose specific designs for every emerging imprecise label configuration, which is usually unsustainable when multiple configurations of imprecision coexist. \nIn this paper, we introduce imprecise label learning (ILL), a framework for the unification of learning with various imprecise label configurations. ILL leverages expectation-maximization (EM) for modeling the imprecise label information, treating the precise labels as latent variables. Instead of approximating the correct labels for training, it considers the entire distribution of all possible "
+  },
+  {
+    "id": "Pa8jsrdOnU",
+    "filePath": "data/NeurIPS/2024/Pa8jsrdOnU.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Hollowed Net for On-Device Personalization of Text-to-Image Diffusion Models",
+    "abstract": "Recent advancements in text-to-image diffusion models have enabled the personalization of these models to generate custom images from textual prompts. This paper presents an efficient LoRA-based personalization approach for on-device subject-driven generation, where pre-trained diffusion models are fine-tuned with user-specific data on resource-constrained devices. Our method, termed Hollowed Net, enhances memory efficiency during fine-tuning by modifying the architecture of a diffusion U-Net to temporarily remove a fraction of its deep layers, creating a hollowed structure. This approach directly addresses on-device memory constraints and substantially reduces GPU memory requirements for training, in contrast to previous methods that primarily focus on minimizing training steps and reduci"
+  },
+  {
+    "id": "uDD44NROOt",
+    "filePath": "data/NeurIPS/2024/uDD44NROOt.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "SPRINQL: Sub-optimal Demonstrations driven Offline Imitation Learning",
+    "abstract": "We focus on offline imitation learning (IL), which aims to mimic an expert's behavior using demonstrations without any interaction with the environment. One of the main challenges in offline IL is the limited support of expert demonstrations, which typically cover only a small fraction of the state-action space. While it may not be feasible to obtain numerous expert demonstrations, it is often possible to gather a larger set of sub-optimal demonstrations. For example, in treatment optimization problems, there are varying levels of doctor treatments available for different chronic conditions. These range from treatment specialists and experienced general practitioners to less experienced general practitioners. Similarly, when robots are trained to imitate humans in routine tasks, they might"
+  },
+  {
+    "id": "X1QeUYBXke",
+    "filePath": "data/NeurIPS/2024/X1QeUYBXke.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Gradient Guidance for Diffusion Models: An Optimization Perspective",
+    "abstract": "Diffusion models have demonstrated empirical successes in various applications and can be adapted to task-specific needs via guidance. This paper studies a form of gradient guidance for adapting a pre-trained diffusion model towards optimizing user-specified objectives. We establish a mathematical framework for guided diffusion to systematically study its optimization theory and algorithmic design. Our theoretical analysis spots a strong link between guided diffusion models and optimization: gradient-guided diffusion models are essentially sampling solutions to a regularized optimization problem, where the regularization is imposed by the pre-training data. As for guidance design, directly bringing in the gradient of an external objective function as guidance would  jeopardize the structur"
+  },
+  {
+    "id": "ncYGjx2vnE",
+    "filePath": "data/NeurIPS/2024/ncYGjx2vnE.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Chimera: Effectively Modeling Multivariate Time Series with 2-Dimensional State Space Models",
+    "abstract": "Modeling multivariate time series is a well-established problem with a wide range of applications from healthcare to financial markets. It, however, is challenging as it requires methods to (1) have high expressive power of representing complicated dependencies along the time axis to capture both long-term progression and seasonal patterns, (2) capture the inter-variate dependencies when it is informative, (3) dynamically model the dependencies of variate and time dimensions, and (4) have efficient training and inference for very long sequences. Traditional State Space Models (SSMs) are classical approaches for univariate time series modeling due to their simplicity and expressive power to represent linear dependencies. They, however, have fundamentally limited expressive power to capture "
+  },
+  {
+    "id": "s3icZC2NLq",
+    "filePath": "data/NeurIPS/2024/s3icZC2NLq.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "A Nearly Optimal and Low-Switching Algorithm for Reinforcement Learning with General Function Approximation",
+    "abstract": "The exploration-exploitation dilemma has been a central challenge in reinforcement learning (RL) with complex model classes. In this paper, we propose a new algorithm, Monotonic  Q-Learning with Upper Confidence Bound (MQL-UCB) for RL with general function approximation. Our key algorithmic design includes (1) a general deterministic policy-switching strategy that achieves low switching cost, (2) a monotonic value function structure with carefully controlled function class complexity, and (3) a variance-weighted regression scheme that exploits historical trajectories with high data efficiency. MQL-UCB achieves minimax optimal regret of $\\tilde{O}(d\\sqrt{HK})$ when $K$ is sufficiently large and near-optimal policy switching cost of $\\tilde{O}(dH)$, with $d$ being the eluder dimension of the"
+  },
+  {
+    "id": "bKuxygBW2Y",
+    "filePath": "data/NeurIPS/2024/bKuxygBW2Y.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "VQ-Map: Bird's-Eye-View Map Layout Estimation in Tokenized Discrete Space via Vector Quantization",
+    "abstract": "Bird's-eye-view (BEV) map layout estimation requires an accurate and full understanding of the semantics for the environmental elements around the ego car to make the results coherent and realistic. Due to the challenges posed by occlusion, unfavourable imaging conditions and low resolution, \\emph{generating} the BEV semantic maps corresponding to corrupted or invalid areas in the perspective view (PV) is appealing very recently. \\emph{The question is how to align the PV features with the generative models to facilitate the map estimation}. In this paper, we propose to utilize a generative model similar to the Vector Quantized-Variational AutoEncoder (VQ-VAE) to acquire prior knowledge for the high-level BEV semantics in the tokenized discrete space. Thanks to the obtained BEV tokens accom"
+  },
+  {
+    "id": "RTaSjoxmw9",
+    "filePath": "data/NeurIPS/2024/RTaSjoxmw9.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Outlier-Robust Phase Retrieval in Nearly-Linear Time",
+    "abstract": "Phase retrieval is a fundamental problem in signal processing, where the goal is to recover a (complex-valued) signal from phaseless intensity measurements. It is well-known that natural nonconvex formulations of phase retrieval do not have spurious local optima. However, the theoretical analyses of such landscape results often rely on strong assumptions, such as the sampled measurements are (complex) Gaussian. In this paper, we propose and study the problem of outlier robust phase retrieval. We focus on the real-valued case, where we seek to recover a vector $x \\in \\mathbb{R}^d$ from $n$ intensity measurements $y_i = (a_i^\\top x )^2$, under the assumption that the $a_i$'s are initially i.i.d. Gaussian but a small fraction of the $(y_i, a_i)$ pairs are adversarially corrupted. Our main res"
+  },
+  {
+    "id": "3LZHatxUa9",
+    "filePath": "data/NeurIPS/2024/3LZHatxUa9.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "On the Impact of Feature Heterophily on Link Prediction with Graph Neural Networks",
+    "abstract": "Heterophily, or the tendency of connected nodes in networks to have different class labels or dissimilar features, has been identified as challenging for many Graph Neural Network (GNN) models. While the challenges of applying GNNs for node classification when class labels display strong heterophily are well understood, it is unclear how heterophily affects GNN performance in other important graph learning tasks where class labels are not available. In this work, we focus on the link prediction task and systematically analyze the impact of heterophily in node features on GNN performance. We first introduce formal definitions of homophilic and heterophilic link prediction tasks, and present a theoretical framework that highlights the different optimizations needed for the respective tasks. "
+  },
+  {
+    "id": "7G362fgJFd",
+    "filePath": "data/NeurIPS/2024/7G362fgJFd.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Factorized Diffusion Architectures for Unsupervised Image Generation and Segmentation",
+    "abstract": "We develop a neural network architecture which, trained in an unsupervised manner as a denoising diffusion model, simultaneously learns to both generate and segment images.  Learning is driven entirely by the denoising diffusion objective, without any annotation or prior knowledge about regions during training.  A computational bottleneck, built into the neural architecture, encourages the denoising network to partition an input into regions, denoise them in parallel, and combine the results.  Our trained model generates both synthetic images and, by simple examination of its internal predicted partitions, semantic segmentations of those images.  Without fine-tuning, we directly apply our unsupervised model to the downstream task of segmenting real images via noising and subsequently denoi"
+  },
+  {
+    "id": "181llen2gw",
+    "filePath": "data/NeurIPS/2024/181llen2gw.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "A Unified Debiasing Approach for Vision-Language Models across Modalities and Tasks",
+    "abstract": "Recent advancements in Vision-Language Models (VLMs) have enabled complex multimodal tasks by processing text and image data simultaneously, significantly enhancing the field of artificial intelligence. However, these models often exhibit biases that can skew outputs towards societal stereotypes, thus necessitating debiasing strategies. Existing debiasing methods focus narrowly on specific modalities or tasks, and require extensive retraining. To address these limitations, this paper introduces Selective Feature Imputation for Debiasing (SFID), a novel methodology that integrates feature pruning and low confidence imputation (LCI) to effectively reduce biases in VLMs. SFID is versatile, maintaining the semantic integrity of outputs and costly effective by eliminating the need for retrainin"
+  },
+  {
+    "id": "XPhSbybD73",
+    "filePath": "data/NeurIPS/2024/XPhSbybD73.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Probabilistic Decomposed Linear Dynamical Systems for Robust Discovery of Latent Neural Dynamics",
+    "abstract": "Time-varying linear state-space models are powerful tools for obtaining mathematically interpretable representations of neural signals. For example, switching and decomposed models describe complex systems using latent variables that evolve according to simple locally linear dynamics. However, existing methods for latent variable estimation are not robust to dynamical noise and system nonlinearity due to noise-sensitive inference procedures and limited model formulations. This can lead to inconsistent results on signals with similar dynamics, limiting the model's ability to provide scientific insight. In this work, we address these limitations and propose a probabilistic approach to latent variable estimation in decomposed models that improves robustness against dynamical noise. Additional"
+  },
+  {
+    "id": "MlADRQI0Wf",
+    "filePath": "data/NeurIPS/2024/MlADRQI0Wf.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Implicit Regularization of Decentralized Gradient Descent for Sparse Regression",
+    "abstract": "We consider learning a sparse model from linear measurements taken by a network of agents. Different from existing decentralized methods designed based on the LASSO regression with explicit  $\\ell_1$ norm regularization, we exploit the implicit regularization of decentralized optimization method applied to an over-parameterized nonconvex least squares formulation without penalization. Our first result shows that despite nonconvexity, if the network connectivity is good, the well-known decentralized gradient descent algorithm (DGD) with small initialization and early stopping can compute the statistically optimal solution. Sufficient conditions on the initialization scale,  choice of step size, network connectivity, and stopping time are further provided to achieve convergence. Our result r"
+  },
+  {
+    "id": "CgGjT8EG8A",
+    "filePath": "data/NeurIPS/2024/CgGjT8EG8A.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Universal Exact Compression of Differentially Private Mechanisms",
+    "abstract": "To reduce the communication cost of differential privacy mechanisms, we introduce a novel construction, called Poisson private representation (PPR), designed to compress and simulate any local randomizer while ensuring local differential privacy. Unlike previous simulation-based local differential privacy mechanisms, PPR exactly preserves the joint distribution of the data and the output of the original local randomizer. Hence, the PPR-compressed privacy mechanism retains all desirable statistical properties of the original privacy mechanism such as unbiasedness and Gaussianity. Moreover, PPR achieves a compression size within a logarithmic gap from the theoretical lower bound. Using the PPR, we give a new order-wise trade-off between communication, accuracy, central and local differential"
+  },
+  {
+    "id": "HFS800reZK",
+    "filePath": "data/NeurIPS/2024/HFS800reZK.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Learning Representations for Hierarchies with Minimal Support",
+    "abstract": "When training node embedding models to represent large directed graphs (digraphs), it is impossible to observe all entries of the adjacency matrix during training. As a consequence most methods employ sampling. For very large digraphs, however, this means many (most) entries may be unobserved during training. In general, observing every entry would be necessary to uniquely identify a graph, however if we know the graph has a certain property some entries can be omitted - for example, only half the entries would be required for a symmetric graph. \nIn this work, we develop a novel framework to identify a subset of entries required to uniquely distinguish a graph among all transitively-closed DAGs. We give an explicit algorithm to compute the provably minimal set of entries, and demonstrate e"
+  },
+  {
+    "id": "rle9X7DQuH",
+    "filePath": "data/NeurIPS/2024/rle9X7DQuH.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "OwMatch: Conditional Self-Labeling with Consistency for Open-World Semi-Supervised Learning",
+    "abstract": "Semi-supervised learning (SSL) offers a robust framework for harnessing the potential of unannotated data. Traditionally, SSL mandates that all classes possess labeled instances. However, the emergence of open-world SSL (OwSSL) introduces a more practical challenge, wherein unlabeled data may encompass samples from unseen classes. This scenario leads to misclassification of unseen classes as known ones, consequently undermining classification accuracy. To overcome this challenge, this study revisits two methodologies from self-supervised and semi-supervised learning, self-labeling and consistency, tailoring them to address the OwSSL problem. Specifically, we propose an effective framework called _OwMatch_, combining conditional self-labeling and open-world hierarchical thresholding.  Theor"
+  },
+  {
+    "id": "bEunGps83o",
+    "filePath": "data/NeurIPS/2024/bEunGps83o.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Fair Allocation in Dynamic Mechanism Design",
+    "abstract": "We consider a dynamic mechanism design problem where an auctioneer sells an indivisible good to two groups of buyers in every round, for a total of $T$ rounds. The auctioneer aims to maximize their discounted overall revenue while adhering to a fairness constraint that guarantees a minimum average allocation for each group. We begin by studying the static case ($T=1$) and establish that the optimal mechanism involves two types of subsidization: one that increases the overall probability of allocation to all buyers, and another that favors the group which otherwise has a lower probability of winning the item. We then extend our results to the dynamic case by characterizing a set of recursive functions that determine the optimal allocation and payments in each round. Notably, our results est"
+  },
+  {
+    "id": "MN7d0S2i1d",
+    "filePath": "data/NeurIPS/2024/MN7d0S2i1d.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Sample and Computationally Efficient Robust Learning of Gaussian Single-Index Models",
+    "abstract": "A single-index model (SIM) is a function of the form $\\sigma(\\mathbf{w}^{\\ast} \\cdot \\mathbf{x})$, where\n$\\sigma: \\mathbb{R} \\to \\mathbb{R}$ is a known link function and $\\mathbf{w}^{\\ast}$ is a hidden unit vector. \nWe study the task of learning SIMs in the agnostic (a.k.a. adversarial label noise) model \nwith respect to the $L^2_2$-loss under the Gaussian distribution. \nOur main result is a sample and computationally efficient agnostic proper learner \nthat attains $L^2_2$-error of $O(\\mathrm{OPT})+\\epsilon$, where $\\mathrm{OPT}$ is the optimal loss. The sample complexity of our algorithm is \n$\\tilde{O}(d^{\\lceil k^{\\ast}/2\\rceil}+d/\\epsilon)$, where \n$k^{\\ast}$ is the information-exponent of $\\sigma$ \ncorresponding to the degree of its first non-zero Hermite coefficient. \nThis sample boun"
+  },
+  {
+    "id": "manHbkpIW6",
+    "filePath": "data/NeurIPS/2024/manHbkpIW6.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Once Read is Enough: Domain-specific Pretraining-free Language Models with Cluster-guided Sparse Experts for Long-tail Domain Knowledge",
+    "abstract": "Language models (LMs) only pretrained on a general and massive corpus usually cannot attain satisfying performance on domain-specific downstream tasks, and hence, applying domain-specific pretraining to LMs is a common and indispensable practice.\nHowever, domain-specific pretraining can be costly and time-consuming, hindering LMs' deployment in real-world applications.\nIn this work, we consider the incapability to memorize domain-specific knowledge embedded in the general corpus with rare occurrences and long-tail distributions as the leading cause for pretrained LMs' inferior downstream performance. \nAnalysis of Neural Tangent Kernels (NTKs) reveals that those long-tail data are commonly overlooked in the model's gradient updates and, consequently, are not effectively memorized, leading t"
+  },
+  {
+    "id": "znBiAp5ISn",
+    "filePath": "data/NeurIPS/2024/znBiAp5ISn.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "TAS-GNN: Topology-Aware Spiking Graph Neural Networks for Graph Classification",
+    "abstract": "The recent integration of spiking neurons into graph neural networks has been gaining much attraction due to its superior energy efficiency. \nEspecially because the irregular connection among graph nodes fits the nature of the spiking neural networks, spiking graph neural networks are considered strong alternatives to vanilla graph neural networks. \nHowever, there is still a large performance gap for graph tasks between the spiking neural networks and artificial neural networks. \nThe gaps are especially large when they are adapted to graph classification tasks, where none of the nodes in the testset graphs are connected to the training set graphs.\nWe diagnose the problem as the existence of neurons under starvation, caused by the irregular connections among the nodes and the neurons. To al"
+  },
+  {
+    "id": "JhqyeppMiD",
+    "filePath": "data/NeurIPS/2024/JhqyeppMiD.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+    "abstract": "Vision-Language Models (VLMs) excel in generating textual responses from visual inputs, but their versatility raises security concerns. This study takes the first step in exposing VLMs’ susceptibility to data poisoning attacks that can manipulate responses to innocuous, everyday prompts. We introduce Shadowcast, a stealthy data poisoning attack where poison samples are visually indistinguishable from benign images with matching texts. Shadowcast demonstrates effectiveness in two attack types. The first is a traditional Label Attack, tricking VLMs into misidentifying class labels, such as confusing Donald Trump for Joe Biden. The second is a novel Persuasion Attack, leveraging VLMs’ text generation capabilities to craft persuasive and seemingly rational narratives for misinformation, such a"
+  },
+  {
+    "id": "ziehA15y8k",
+    "filePath": "data/NeurIPS/2024/ziehA15y8k.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Enhancing Robustness of Graph Neural Networks on Social Media with Explainable Inverse Reinforcement Learning",
+    "abstract": "Adversarial attacks against graph neural networks (GNNs) through perturbations of the graph structure are increasingly common in social network tasks like rumor detection. Social media platforms capture diverse attack sequence samples through both machine and manual screening processes. Investigating effective ways to leverage these adversarial samples to enhance robustness is imperative. We improve the maximum entropy inverse reinforcement learning (IRL) method with the mixture-of-experts approach to address multi-source graph adversarial attacks. This method reconstructs the attack policy, integrating various attack models and providing feature-level explanations, subsequently generating additional adversarial samples to fortify the robustness of detection models. We develop precise samp"
+  },
+  {
+    "id": "NnAi0L5H8J",
+    "filePath": "data/NeurIPS/2024/NnAi0L5H8J.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Multi-Instance Partial-Label Learning with Margin Adjustment",
+    "abstract": "Multi-instance partial-label learning (MIPL) is an emerging learning framework where each training sample is represented as a multi-instance bag associated with a candidate label set. Existing MIPL algorithms often overlook the margins for attention scores and predicted probabilities, leading to suboptimal generalization performance. A critical issue with these algorithms is that the highest prediction probability of the classifier may appear on a non-candidate label. In this paper, we propose an algorithm named MIPLMA, i.e., Multi-Instance Partial-Label learning with Margin Adjustment, which adjusts the margins for attention scores and predicted probabilities. We introduce a margin-aware attention mechanism to dynamically adjust the margins for attention scores and propose a margin distri"
+  },
+  {
+    "id": "GN2GXjPyN8",
+    "filePath": "data/NeurIPS/2024/GN2GXjPyN8.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Antigen-Specific Antibody Design via Direct Energy-based Preference Optimization",
+    "abstract": "Antibody design, a crucial task with significant implications across various disciplines such as therapeutics and biology, presents considerable challenges due to its intricate nature. In this paper, we tackle antigen-specific antibody sequence-structure co-design as an optimization problem towards specific preferences, considering both rationality and functionality. Leveraging a pre-trained conditional diffusion model that jointly models sequences and structures of antibodies with equivariant neural networks, we propose direct energy-based preference optimization to guide the generation of antibodies with both rational structures and considerable binding affinities to given antigens. Our method involves fine-tuning the pre-trained diffusion model using a residue-level decomposed energy pr"
+  },
+  {
+    "id": "5WoYFypPv0",
+    "filePath": "data/NeurIPS/2024/5WoYFypPv0.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Deep Support Vectors",
+    "abstract": "Deep learning has achieved tremendous success. However, unlike SVMs, which provide direct decision criteria and can be trained with a small dataset, it still has significant weaknesses due to its requirement for massive datasets during training and the black-box characteristics on decision criteria. This paper addresses these issues by identifying support vectors in deep learning models. To this end, we propose the DeepKKT condition, an adaptation of the traditional Karush-Kuhn-Tucker (KKT) condition for deep learning models, and confirm that generated Deep Support Vectors (DSVs) using this condition exhibit properties similar to traditional support vectors. This allows us to apply our method to few-shot dataset distillation problems and alleviate the black-box characteristics of deep lear"
+  },
+  {
+    "id": "VaJ4XOW7Ey",
+    "filePath": "data/NeurIPS/2024/VaJ4XOW7Ey.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Balancing Context Length and Mixing Times for Reinforcement Learning at Scale",
+    "abstract": "Due to the recent remarkable advances in artificial intelligence, researchers have begun to consider challenging learning problems such as learning to generalize behavior from large offline datasets or learning online in non-Markovian environments. Meanwhile, recent advances in both of these areas have increasingly relied on conditioning policies on large context lengths. A natural question is if there is a limit to the performance benefits of increasing the context length if the computation needed is available. In this work, we establish a novel theoretical result that links the context length of a policy to the time needed to reliably evaluate its performance (i.e., its mixing time) in large scale partially observable reinforcement learning environments that exhibit latent sub-task struc"
+  },
+  {
+    "id": "D80tRH9CXF",
+    "filePath": "data/NeurIPS/2024/D80tRH9CXF.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Prediction Risk and Estimation Risk of the Ridgeless Least Squares Estimator under General Assumptions on Regression Errors",
+    "abstract": "In recent years, there has been a significant growth in research focusing on minimum $\\ell_2$ norm (ridgeless) interpolation least squares estimators. However, the majority of these analyses have been limited to an unrealistic regression error structure, assuming independent and identically distributed errors with zero mean and common variance. In this paper, we explore prediction risk as well as estimation risk under more general regression error assumptions, highlighting the benefits of overparameterization in a more realistic setting that allows for clustered or serial dependence. Notably, we establish that the estimation difficulties associated with the variance components of both risks can be summarized through the trace of the variance-covariance matrix of the regression errors. Our "
   }
 ]

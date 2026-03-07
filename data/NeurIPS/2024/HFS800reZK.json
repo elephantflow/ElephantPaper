@@ -1,0 +1,37 @@
+{
+  "id": "HFS800reZK",
+  "or_id": "HFS800reZK",
+  "title": "Learning Representations for Hierarchies with Minimal Support",
+  "title_zh": "",
+  "authors": [
+    "Benjamin Rozonoyer",
+    "Michael Boratko",
+    "Dhruvesh Patel",
+    "Wenlong Zhao",
+    "Shib Sankar Dasgupta",
+    "Hung Le",
+    "Andrew McCallum"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "When training node embedding models to represent large directed graphs (digraphs), it is impossible to observe all entries of the adjacency matrix during training. As a consequence most methods employ sampling. For very large digraphs, however, this means many (most) entries may be unobserved during training. In general, observing every entry would be necessary to uniquely identify a graph, however if we know the graph has a certain property some entries can be omitted - for example, only half the entries would be required for a symmetric graph. \nIn this work, we develop a novel framework to identify a subset of entries required to uniquely distinguish a graph among all transitively-closed DAGs. We give an explicit algorithm to compute the provably minimal set of entries, and demonstrate empirically that one can train node embedding models with greater efficiency and performance, provided the energy function has an appropriate inductive bias. We achieve robust performance on synthetic hierarchies and a larger real-world taxonomy, observing improved convergence rates in a resource-constrained setting while reducing the set of training examples by as much as 99%.",
+  "abstract_zh": "",
+  "tldr": "We provide the provably minimal set of entries from the adjacency matrix necessary to train representations for transitively-closed DAGs, provided our energy function has transitivity bias.",
+  "keywords": [
+    "graph embeddings",
+    "representation learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=HFS800reZK",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/98c7ccf6ef86019ffc994aba434e5c6603739459.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We provide the provably minimal set of entries from the adjacency matrix necessary to train representations for transitively-closed DAGs, provided our energy function has transitivity bias."
+  },
+  "collected_at": "2026-03-07T23:42:12.925Z"
+}
