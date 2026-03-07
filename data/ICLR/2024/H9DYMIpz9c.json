@@ -1,0 +1,38 @@
+{
+  "id": "H9DYMIpz9c",
+  "or_id": "H9DYMIpz9c",
+  "title": "Farzi Data: Autoregressive Data Distillation",
+  "title_zh": "",
+  "authors": [
+    "Noveen Sachdeva",
+    "Zexue He",
+    "Wang-Cheng Kang",
+    "Jianmo Ni",
+    "Derek Zhiyuan Cheng",
+    "Julian McAuley"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "We study data distillation for auto-regressive machine learning tasks, where the input and output have a strict left-to-right causal structure. More specifically, we propose Farzi, which summarizes an event sequence dataset into a small number of synthetic sequences — Farzi Data — which are optimized to maintain (if not improve) model performance compared to training on the full dataset. Under the hood, FARZI conducts memory-efficient data distillation by (i) deriving efficient reverse-mode differentiation of the Adam optimizer by leveraging Hessian-Vector Products; and (ii) factorizing the high-dimensional discrete event-space into a latent-space which provably promotes implicit regularization. Empirically, for sequential recommendation and language modeling tasks, we are able to achieve 98 − 120% of downstream full-data performance when training state-of-the-art models on Farzi Data of size as little as 0.1% of the original dataset. Notably, being able to train better models with significantly less data sheds light on the design of future large auto-regressive models, and opens up new opportunities to further scale up model and data sizes.",
+  "abstract_zh": "",
+  "tldr": "We propose an efficient data distillation method for autoregressive machine learning tasks that achieves up to 120% downstream performance when training on synthetic data with as little as 0.1% of the original dataset size.",
+  "keywords": [
+    "Data Distillation",
+    "Meta Learning",
+    "Recommender Systems",
+    "Language Modeling"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=H9DYMIpz9c",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c2039562a8f9e0be209b8a58cce8414264bb7a48.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose an efficient data distillation method for autoregressive machine learning tasks that achieves up to 120% downstream performance when training on synthetic data with as little as 0.1% of the original dataset size."
+  },
+  "collected_at": "2026-03-07T09:20:51.160Z"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "5bR2l1b2eh",
+  "or_id": "5bR2l1b2eh",
+  "title": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+  "title_zh": "SIRIUS：上下文稀疏性与校正的高效LLMs",
+  "authors": [
+    "Yang Zhou",
+    "Zhuoming Chen",
+    "Zhaozhuo Xu",
+    "Xi Victoria Lin",
+    "Beidi Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "With the blossom of large language models (LLM), inference efficiency becomes increasingly important. Various approximate methods are proposed to reduce the cost at inference time. Contextual Sparsity (CS) is appealing for its training-free nature and its ability to reach a higher compression ratio seemingly without significant performance degradation. However, after a comprehensive evaluation of contextual sparsity methods on various complex generation tasks, we find that although CS succeeds in prompt-understanding tasks, it significantly degrades the model performance for reasoning, deduction, and knowledge-based tasks. Despite the gap in end-to-end accuracy, we observed that sparse models and original models often share the general problem-solving logic and require only a few token corrections to recover the original model performance. This paper introduces SIRIUS, an efficient correction mechanism, which significantly boosts CS models on reasoning tasks while maintaining its efficiency gain. SIRIUS is evaluated on 6 models with 8 difficult generation tasks in reasoning, deduction, and coding and shows consistent effectiveness and efficiency. Also, we carefully develop a system implementation for SIRIUS and show that SIRIUS delivers theoretical latency reduction with roughly a 20% reduction in latency for 8B model on-chip and a 35% reduction in latency for 70B model offloading. We open-source our implementation of Sirius at https://github.com/Infini-AI-Lab/Sirius.git.",
+  "abstract_zh": "随着大语言模型的蓬勃发展，推理效率变得越来越重要。各种近似方法被提出来降低推理时间的成本。上下文稀疏性因其无需训练的性质和似乎无需显著性能退化就能达到更高压缩率的特点而具有吸引力。然而，在对上下文稀疏性方法在各种复杂生成任务上进行全面评估后，我们发现虽然CS在提示理解任务上成功，但在推理、演绎和基于知识的任务上显著降低了模型性能。尽管在端到端准确性上存在差距，我们观察到稀疏模型和原始模型通常共享通用的问题解决逻辑，仅需少量令牌校正。",
+  "tldr": "",
+  "keywords": [
+    "Contextual Sparsity",
+    "LLM inference",
+    "Knowledge Distillation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=5bR2l1b2eh",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/898385c8f82211966b9ec8720e075b5638d2b2a5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "With the blossom of large language models (LLM), inference efficiency becomes increasingly important. Various approximate methods are proposed to reduce the cost at inference time. Contextual Sparsity (CS) is appealing for its training-free nature and its ability to reach a higher compression ratio "
+  },
+  "collected_at": "2026-03-07T09:40:44.726Z"
+}

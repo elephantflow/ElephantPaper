@@ -1,0 +1,35 @@
+{
+  "id": "hOcsUrOY0D",
+  "or_id": "hOcsUrOY0D",
+  "title": "Attack-Aware Noise Calibration for Differential Privacy",
+  "title_zh": "差分隐私的攻击感知噪声校准",
+  "authors": [
+    "Bogdan Kulynych",
+    "Juan Felipe Gomez",
+    "Georgios Kaissis",
+    "Flavio Calmon",
+    "Carmela Troncoso"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Differential privacy (DP) is a widely used approach for mitigating privacy risks when training machine learning models on sensitive data. DP mechanisms add noise during training to limit the risk of information leakage. The scale of the added noise is critical, as it determines the trade-off between privacy and utility. The standard practice is to select the noise scale to satisfy a given privacy budget ε. This privacy budget is in turn interpreted in terms of operational attack risks, such as accuracy, sensitivity, and specificity of inference attacks aimed to recover\ninformation about the training data records. We show that first calibrating the noise scale to a privacy budget ε, and then translating ε to attack risk leads to overly conservative risk assessments and unnecessarily low utility. Instead, we propose methods to directly calibrate the noise scale to a desired attack risk level, bypassing the step of choosing ε. For a given notion of attack risk, our approach significantly\ndecreases noise scale, leading to increased utility at the same level of privacy. We empirically demonstrate that calibrating noise to attack sensitivity/specificity, rather than ε, when training privacy-preserving ML models substantially improves model accuracy for the same risk level. Our work provides a principled and practical way to improve the utility of privacy-preserving ML without compromising on privacy.",
+  "abstract_zh": "差分隐私是训练敏感数据上机器学习模型时降低隐私风险的一种广泛使用方法。DP机制在训练过程中添加噪声以限制信息泄露风险。添加噪声的规模是关键的，因为它决定了隐私和效用之间的权衡。标准实践是选择噪声规模以满足给定的隐私预算ε。这个隐私预算又被解释为操作攻击风险，例如旨在恢复训练数据记录信息的推理攻击的准确性、敏感性和特异性。我们证明首先将噪声规模校准到隐私预算ε，然后将ε转换为攻击风险会导致过于保守的风险评估和不必要的低效用。",
+  "tldr": "Direct calibration of noise to attack risk increases utility of DP mechanisms at the same level of risk, compared to calibration of noise to a given level of epsilon.",
+  "keywords": [
+    "differential privacy",
+    "DP-SGD"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hOcsUrOY0D",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2ff39869c612a7bbef84ddca4b9e48a96163a680.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Direct calibration of noise to attack risk increases utility of DP mechanisms at the same level of risk, compared to calibration of noise to a given level of epsilon."
+  },
+  "collected_at": "2026-03-07T09:40:44.726Z"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "pH3XAQME6c",
+  "or_id": "pH3XAQME6c",
+  "title": "Refusal in Language Models Is Mediated by a Single Direction",
+  "title_zh": "语言模型中的拒绝行为由单一方向介导",
+  "authors": [
+    "Andy Arditi",
+    "Oscar Balcells Obeso",
+    "Aaquib Syed",
+    "Daniel Paleka",
+    "Nina Rimsky",
+    "Wes Gurnee",
+    "Neel Nanda"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Conversational large language models are fine-tuned for both instruction-following and safety, resulting in models that obey benign requests but refuse harmful ones. While this refusal behavior is widespread across chat models, its underlying mechanisms remain poorly understood. In this work, we show that refusal is mediated by a one-dimensional subspace, across 13 popular open-source chat models up to 72B parameters in size. Specifically, for each model, we find a single direction such that erasing this direction from the model's residual stream activations prevents it from refusing harmful instructions, while adding this direction elicits refusal on even harmless instructions. Leveraging this insight, we propose a novel white-box jailbreak method that surgically disables a model's ability to refuse, with minimal effect on other capabilities. This interpretable rank-one weight edit results in an effective jailbreak technique that is simpler and more efficient than fine-tuning. Finally, we mechanistically analyze how adversarial suffixes suppress propagation of the refusal-mediating direction. Our findings underscore the brittleness of current safety fine-tuning methods. More broadly, our work showcases how an understanding of model internals can be leveraged to develop practical methods for controlling model behavior.",
+  "abstract_zh": "对话式大语言模型都经过指令遵循和安全性微调，导致模型接受无害请求但拒绝有害请求。虽然这种拒绝行为在聊天模型中普遍存在，但其底层机制仍知之甚少。在本工作中，我们证明拒绝由一维子空间介导，该结论在13个流行的开源聊天模型（参数规模最大达720亿）中均成立。具体而言，对于每个模型，我们找到一个单一方向，使得从模型残差流激活中擦除该方向可防止其拒绝有害指令，而添加该方向则会在即使是无害指令上引发拒绝。利用这一洞察，我们提出一种新颖的白盒越狱方法，精准地禁用模型的拒绝能力。",
+  "tldr": "",
+  "keywords": [
+    "mechanistic interpretability",
+    "refusal",
+    "jailbreaks",
+    "language models",
+    "steering vectors",
+    "representation engineering"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=pH3XAQME6c",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8671368b91e68640bc816aa01b23ac6335bb2bf0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Conversational large language models are fine-tuned for both instruction-following and safety, resulting in models that obey benign requests but refuse harmful ones. While this refusal behavior is widespread across chat models, its underlying mechanisms remain poorly understood. In this work, we sho"
+  },
+  "collected_at": "2026-03-07T09:40:44.726Z"
+}

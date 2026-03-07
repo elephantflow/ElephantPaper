@@ -1,0 +1,33 @@
+{
+  "id": "fMX07g3prp",
+  "or_id": "fMX07g3prp",
+  "title": "FR-NAS: Forward-and-Reverse Graph Predictor for Efficient Neural Architecture Search",
+  "title_zh": "",
+  "authors": [
+    "Haoming Zhang",
+    "Ran Cheng"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Neural Architecture Search (NAS) has risen to prominence as a pivotal tool for identifying optimal configurations for deep neural networks suited to particular tasks. However, the process of training and assessing numerous architectures introduces considerable computational overhead. One approach to mitigate this is through performance predictors, which offer a means to estimate an architecture's potential without exhaustive training. Given that neural architectures fundamentally resemble directed acyclic graphs (DAGs), graph neural networks (GNNs) become an apparent choice for such predictive tasks. Nevertheless, the scarcity of training data can impact the precision of GNN-based predictors.\nTo address this, we introduce a novel GNN predictor for NAS. This predictor renders neural architectures into vector representations by combining both the conventional and inverse graph views. Additionally, we incorporate a tailored feature loss within the GNN predictor to ensure efficient utilization of both types of representations.\nWe subsequently assess our method's efficacy through experiments on benchmark datasets including NASBench-101, NASBench-201, and the DARTS search space, with a training data range of 50 to 400 samples. The results demonstrated a notable performance improvement, achieving an enhancement of 3\\%-16\\% in terms of prediction accuracy when compared to state-of-the-art GNN predictors across the board.\nThe source code will be made publicly available.",
+  "abstract_zh": "",
+  "tldr": "We introduce a novel GNN predictor for NAS that efficiently combines conventional and inverse graph representations, demonstrating improved accuracy up to 16% over leading predictors on benchmark datasets.",
+  "keywords": [
+    "Neural Architecture Search",
+    "Performance Predictor",
+    "Graph Neural Network"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=fMX07g3prp",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7f9544f40910418069f642bcc32bcae5906ff521.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce a novel GNN predictor for NAS that efficiently combines conventional and inverse graph representations, demonstrating improved accuracy up to 16% over leading predictors on benchmark datasets."
+  },
+  "collected_at": "2026-03-07T09:20:51.160Z"
+}

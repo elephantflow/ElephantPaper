@@ -1,0 +1,43 @@
+{
+  "id": "rniiAVjHi5",
+  "or_id": "rniiAVjHi5",
+  "title": "Universality of AdaGrad Stepsizes for Stochastic Optimization: Inexact Oracle, Acceleration and Variance Reduction",
+  "title_zh": "",
+  "authors": [
+    "Anton Rodomanov",
+    "Xiaowen Jiang",
+    "Sebastian U Stich"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We present adaptive gradient methods (both basic and accelerated) for solving\nconvex composite optimization problems in which the main part is approximately\nsmooth (a.k.a. $(\\delta, L)$-smooth) and can be accessed only via a\n(potentially biased) stochastic gradient oracle.\nThis setting covers many interesting examples including Hölder smooth problems\nand various inexact computations of the stochastic gradient.\nOur methods use AdaGrad stepsizes and are adaptive in the sense that they do\nnot require knowing any problem-dependent constants except an estimate of the\ndiameter of the feasible set but nevertheless achieve the best possible\nconvergence rates as if they knew the corresponding constants.\nWe demonstrate that AdaGrad stepsizes work in a variety of situations\nby proving, in a unified manner, three types of new results.\nFirst, we establish efficiency guarantees for our methods in the classical\nsetting where the oracle's variance is uniformly bounded.\nWe then show that, under more refined assumptions on the variance,\nthe same methods without any modifications enjoy implicit variance\nreduction properties allowing us to express their complexity estimates in\nterms of the variance only at the minimizer.\nFinally, we show how to incorporate explicit SVRG-type variance reduction into\nour methods and obtain even faster algorithms.\nIn all three cases, we present both basic and accelerated algorithms\nachieving state-of-the-art complexity bounds.\nAs a direct corollary of our results, we obtain universal stochastic gradient\nmethods for Hölder smooth problems which can be used in all situations.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "convex optimization",
+    "stochastic optimization",
+    "adaptive methods",
+    "universal algorithms",
+    "acceleration",
+    "variance reduction",
+    "AdaGrad",
+    "SVRG",
+    "weakly smooth functions",
+    "Hölder condition",
+    "inexact oracle",
+    "complexity estimates"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=rniiAVjHi5",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/dd912aeb19dbd3162f55e416834322f2e59ce066.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present adaptive gradient methods (both basic and accelerated) for solving\nconvex composite optimization problems in which the main part is approximately\nsmooth (a.k.a. $(\\delta, L)$-smooth) and can be accessed only via a\n(potentially biased) stochastic gradient oracle.\nThis setting covers many i"
+  },
+  "collected_at": "2026-03-07T09:40:44.727Z"
+}

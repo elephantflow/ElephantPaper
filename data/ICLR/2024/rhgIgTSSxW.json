@@ -1,0 +1,39 @@
+{
+  "id": "rhgIgTSSxW",
+  "or_id": "rhgIgTSSxW",
+  "title": "TabR: Tabular Deep Learning Meets Nearest Neighbors",
+  "title_zh": "TabR：表格深度学习与最近邻方法的结合",
+  "authors": [
+    "Yury Gorishniy",
+    "Ivan Rubachev",
+    "Nikolay Kartashev",
+    "Daniil Shlenskii",
+    "Akim Kotelnikov",
+    "Artem Babenko"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Deep learning (DL) models for tabular data problems (e.g. classification, regression) are currently receiving increasingly more attention from researchers.\nHowever, despite the recent efforts, the non-DL algorithms based on gradient-boosted decision trees (GBDT) remain a strong go-to solution for these problems.\nOne of the research directions aimed at improving the position of tabular DL involves designing so-called retrieval-augmented models.\nFor a target object, such models retrieve other objects (e.g. the nearest neighbors) from the available training data and use their features and labels to make a better prediction.\n\nIn this work, we present TabR -- essentially, a feed-forward network with a custom k-Nearest-Neighbors-like component in the middle.\nOn a set of public benchmarks with datasets up to several million objects, TabR marks a big step forward for tabular DL: it demonstrates the best average performance among tabular DL models, becomes the new state-of-the-art on several datasets, and even outperforms GBDT models on the recently proposed \"GBDT-friendly\" benchmark (see Figure 1).\nAmong the important findings and technical details powering TabR, the main ones lie in the attention-like mechanism that is responsible for retrieving the nearest neighbors and extracting valuable signal from them.\nIn addition to the higher performance, TabR is simple and significantly more efficient compared to prior retrieval-based tabular DL models.",
+  "abstract_zh": "面向表格数据问题（如分类、回归）的深度学习（DL）模型目前正受到研究者越来越多的关注。然而，尽管近期付出了诸多努力，基于梯度提升决策树（GBDT）的非DL算法仍然是解决这些问题的重要首选方案。旨在提升表格DL地位的研究方向之一涉及设计所谓的检索增强模型。对于目标对象，此类模型会从可用训练数据中检索其他对象（如最近邻），并利用其特征和标签做出更好的预测。在这项工作中，我们提出了TabR——本质上是一个在前向传播网络中嵌入自定义k最近邻类组件的模型。在一系列包含数百万对象数据集的公共基准测试中，TabR标志着表格DL迈出了重要一步：它在表格DL模型中展示了最佳平均性能，在多个数据集上成为新的最先进技术，甚至在最近提出的\"GBDT友好\"基准测试中优于GBDT模型（见图1）。支撑TabR的重要发现和技术细节主要包括负责检索最近邻并从中提取有价值信号的类注意力机制。除了更高的性能外，TabR相比以往的基于检索的表格DL模型更加简单且显著更高效。",
+  "tldr": "TabR is a new tabular DL model with a k-nearest-neighbors-like component and strong results on public benchmarks.",
+  "keywords": [
+    "tabular",
+    "tabular data",
+    "architecture",
+    "deep learning",
+    "neural networks"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=rhgIgTSSxW",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/178e173a880d7872c0a79d88e005426c20501329.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "TabR is a new tabular DL model with a k-nearest-neighbors-like component and strong results on public benchmarks."
+  },
+  "collected_at": "2026-03-07T09:20:51.159Z"
+}
