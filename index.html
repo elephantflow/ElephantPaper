@@ -385,10 +385,10 @@
       const resp = await fetch(`./data/${paper.conference}/${paper.year}/${id}.json?t=${Date.now()}`);
       const data = await resp.json();
       detail.innerHTML = `
-        <div class="detail-section">
+        ${data.abstract_zh ? `<div class="detail-section">
           <div class="detail-label">摘要（中文）</div>
-          <div class="detail-text">${data.abstract_zh ? escHtml(data.abstract_zh) : '<span style="color:var(--muted);font-style:italic">翻译进行中...</span>'}</div>
-        </div>
+          <div class="detail-text">${escHtml(data.abstract_zh)}</div>
+        </div>` : ''}
         <div class="detail-section">
           <div class="detail-label">Abstract</div>
           <div class="detail-text-muted">${escHtml(data.abstract||'')}</div>
