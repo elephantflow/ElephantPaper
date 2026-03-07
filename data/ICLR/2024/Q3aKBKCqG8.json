@@ -1,0 +1,33 @@
+{
+  "id": "Q3aKBKCqG8",
+  "or_id": "Q3aKBKCqG8",
+  "title": "UBERT: Unsupervised adaptive early exits in BERT",
+  "title_zh": "",
+  "authors": [
+    "Divya Jyoti Bajpai",
+    "Manjesh Kumar Hanawal"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Inference latency is an issue in pre-trained networks like BERT due to their large size. To overcome this, side branches are attached at the intermediary layers with provision for early inference instead of inference only at the last layer. This facilitates the early exit of 'easy' samples and requires only 'hard' samples to pass through all layers, thus reducing inference latency.  However, the hardness of the samples is unknown a priori. This leads to the question of how to exit so that the accuracy and latency are well balanced. Also, the optimal choice of parameters involved in deciding exits can depend on the sample domain and hence need to be adapted. We develop an online learning algorithm named UBERT to decide if a sample can exit early. The decisions are based on confidence in inference exceeding a threshold at each exit point, and the algorithm simultaneously learns the optimal thresholds for all the exits. UBERT learns the optimal threshold for the sample domain using confidence observed at the intermediary layers without requiring any ground truth labels. We perform extensive experiments on five datasets with one and two early exits. We compare the performance against the case with no early exits, i.e., all samples exit at the last layer. UBERT achieves a 10\\%-53\\% reduction in time with a drop in accuracy in the range of 0.3\\% - 5.7\\% with one early exit. For the case with two exits, the time reduction increases to 32\\%-70\\% with only a marginal drop in accuracy of 0.1\\%-3.9\\%. The anonymized source code is available at https://anonymous.4open.science/r/UBERT-F2DF/README.md.",
+  "abstract_zh": "",
+  "tldr": "Adaptive threshold learning to decide early exits during inference.",
+  "keywords": [
+    "Early exits",
+    "Deep Neural Networks",
+    "BERT"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Q3aKBKCqG8",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/19303852ca327e88d34d348cbb6814a79c74aac9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Adaptive threshold learning to decide early exits during inference."
+  },
+  "collected_at": "2026-03-07T16:20:38.390Z"
+}

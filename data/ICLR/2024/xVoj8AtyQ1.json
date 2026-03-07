@@ -1,0 +1,45 @@
+{
+  "id": "xVoj8AtyQ1",
+  "or_id": "xVoj8AtyQ1",
+  "title": "Vision Transformer with Irregular Attention",
+  "title_zh": "",
+  "authors": [
+    "Dmitry Ermilov",
+    "Nikolay Kozyrskiy",
+    "Igor Vorona",
+    "ANH-HUY PHAN",
+    "Andrzej Cichocki"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Compression of Transformer is a natural request that arose in the computer vision community. Apart from quantization that hardly rely on hardware, sparsification is another way to remove redundant parts, usually based on mask training or sparsity regularization. We propose the novel compressed structure of multi-head self-attention (MHSA) mechanism called Irregular Attention (IAtt). IAtt is built on BTD-LL1 tensor decomposition and is aimed at sparsifying pre-trained Vision Transformer by pruning query and key (QK) contraction dimension in MHSA block. We derive the algorithm of rank selection procedure for BTD-LL1 based on the structure of fusion layer obtained from CP decomposition of original MHSA kernels. In order to improve the compression ratio with least possible quality loss we introduce the fine-tuning schemes that yield each head its own sub-optimal rank for QK in the IAtt. We validated the proposed scheme for DeiT architectures on ILSVRC-2012 dataset. Our results show that IAtt has better performance compared to original MHSA compressed by SVD. It indicates that attention heads have non-uniform importance and require different QK contract dimensions.",
+  "abstract_zh": "",
+  "tldr": "A novel method for reducing the computation complexity of multi-head self-attention mechanism in Vision Transformer based on BTD-LL1 decomposition.",
+  "keywords": [
+    "Deep Learning",
+    "DNN",
+    "Transformer",
+    "ViT",
+    "DeiT",
+    "Tensor Decomposition",
+    "Tensor Network",
+    "BTD",
+    "BTD-LL1",
+    "CPD",
+    "DNN Compression",
+    "DNN Acceleration"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=xVoj8AtyQ1",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/34f3efa61b584157d9343bf0c864ccb32a61002e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A novel method for reducing the computation complexity of multi-head self-attention mechanism in Vision Transformer based on BTD-LL1 decomposition."
+  },
+  "collected_at": "2026-03-07T16:20:38.389Z"
+}

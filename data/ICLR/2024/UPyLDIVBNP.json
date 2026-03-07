@@ -1,0 +1,37 @@
+{
+  "id": "UPyLDIVBNP",
+  "or_id": "UPyLDIVBNP",
+  "title": "Fully Identical Initialization",
+  "title_zh": "",
+  "authors": [
+    "Yu Pan",
+    "Chaozheng Wang",
+    "Zekai Wu",
+    "Qifan Wang",
+    "Min Zhang",
+    "Zenglin Xu"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Deep neural networks (DNNs) have achieved numerous remarkable accomplishments in practice. The success of these networks hinges on effective initialization methods, which are vital for ensuring stable and rapid convergence during training. Recently, initialization methods that maintain identity transition within layers have shown good efficiency in network training. These techniques (e.g., Fixup) set specific weights to zero to achieve identity control. However, settings of remaining weight (e.g., Fixup uses random values to initialize non-zero weights) will affect inductive bias that is achieved only by a zero weight, which may be harmful to training. Addressing this concern, we introduce fully identical initialization (IDInit), an innovative method that preserves identity in both the main and sub-stem layers of residual networks. IDInit employs a padded identity-like matrix to overcome rank constraints in non-square weight matrices. Furthermore, we show a convergence problem of an identity matrix can be solved by adding a momentum term into the optimizer. Additionally, we explore enhancing the universality of IDInit by processing higher-order weights and addressing dead neuron problems. IDInit is a straightforward yet effective initialization method, promising improved convergence, stability, and performance across various settings, including large-scale datasets and deep models. It stands as a novel solution for initializing non-standard weight matrices, offering significant advantages in network training.",
+  "abstract_zh": "",
+  "tldr": "A initialization method for fast and stable training of deep neural networks based on identity matrix.",
+  "keywords": [
+    "Initialization",
+    "Idetity Matrix",
+    "Dynamic Isometry"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=UPyLDIVBNP",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/101dabfd8a041c55e07d23a38008decac5d96239.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A initialization method for fast and stable training of deep neural networks based on identity matrix."
+  },
+  "collected_at": "2026-03-07T16:20:38.390Z"
+}

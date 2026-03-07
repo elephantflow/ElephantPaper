@@ -1,0 +1,37 @@
+{
+  "id": "DwcV654WBP",
+  "or_id": "DwcV654WBP",
+  "title": "TVTSv2: Learning Out-of-the-box Spatiotemporal Visual Representations at Scale",
+  "title_zh": "",
+  "authors": [
+    "Ziyun Zeng",
+    "Zhan Tong",
+    "Xihui Liu",
+    "Bin Chen",
+    "Shu-Tao Xia",
+    "Yixiao Ge"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "The ultimate goal for foundation models is realizing task-agnostic, i.e., supporting out-of-the-box usage without task-specific fine-tuning. Although breakthroughs have been made in natural language processing and image representation learning, it is still challenging for video models to reach it due to the increasing uncertainty of spatiotemporal signals. To ease training, existing works leverage image foundation models' prior knowledge and equip them with efﬁcient temporal modules. Despite the satisfactory fine-tuning performance, we empirically find they fall short of out-of-the-box usage, given the even degraded performance in zero-shot/linear protocols compared to their baseline counterparts. In this work, we analyze the factor that leads to degradation from the perspective of language supervision distortion. We argue that tuning a text encoder end-to-end, as done in previous work, is suboptimal since it may overfit in terms of styles, thereby losing its original generalization ability to capture the semantics of various language registers. The overfitted text encoder, in turn, provides a harmful supervision signal, degrading the video representation. To tackle this issue, we propose a degradation-free pre-training strategy to retain the generalization ability of the text encoder via freezing shallow layers while enabling the task-related semantics capturing in tunable deep layers. As for the training objective, we adopted the transcript sorting task in TVTS incorporated with masking techniques to enable scalable training. As a result, we produce a series of models, dubbed TVTSv2, with up to one billion parameters. We achieve new state-of-the-arts on various video benchmarks with a frozen backbone, surpassing the recent ImageBind, InternVideo, etc. Code and models will be released publicly.",
+  "abstract_zh": "",
+  "tldr": "We tackle the language supervision distortion issue and scale up video training via masking and transcript sorting, achieving state-of-the-art performance in out-of-the-box evaluation.",
+  "keywords": [
+    "Video Representation Learning",
+    "Out-of-the-box Video Representation",
+    "Scalable Video Pre-training"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=DwcV654WBP",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1f67f6852c2d0446cd1dd54356b308bdba45beac.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We tackle the language supervision distortion issue and scale up video training via masking and transcript sorting, achieving state-of-the-art performance in out-of-the-box evaluation."
+  },
+  "collected_at": "2026-03-07T16:20:38.386Z"
+}
