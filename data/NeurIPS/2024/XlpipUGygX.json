@@ -1,0 +1,43 @@
+{
+  "id": "XlpipUGygX",
+  "or_id": "XlpipUGygX",
+  "title": "Amortized Planning with Large-Scale Transformers: A Case Study on Chess",
+  "title_zh": "",
+  "authors": [
+    "Anian Ruoss",
+    "Gregoire Deletang",
+    "Sourabh Medapati",
+    "Jordi Grau-Moya",
+    "Li Kevin Wenliang",
+    "Elliot Catt",
+    "John Reid",
+    "Cannada A. Lewis",
+    "Joel Veness",
+    "Tim Genewein"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This paper uses chess, a landmark planning problem in AI, to assess transformers’ performance on a planning task where memorization is futile — even at a large scale. To this end, we release ChessBench, a large-scale benchmark dataset of 10 million chess games with legal move and value annotations (15 billion data points)  provided by Stockfish 16, the state-of-the-art chess engine. We train transformers with up to 270 million parameters on ChessBench via supervised learning and perform extensive ablations to assess the impact of dataset size, model size, architecture type, and different prediction targets (state-values, action-values, and behavioral cloning). Our largest models learn to predict action-values for novel boards quite accurately, implying highly non-trivial generalization. Despite performing no explicit search, our resulting chess policy solves challenging chess puzzles and achieves a surprisingly strong Lichess blitz Elo of 2895 against humans (grandmaster level). We also compare to Leela Chess Zero and AlphaZero (trained without supervision via self-play) with and without search. We show that, although a remarkably good approximation of Stockfish’s search-based algorithm can be distilled into large-scale transformers via supervised learning, perfect distillation is still beyond reach, thus making ChessBench well-suited for future research.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "chess",
+    "supervised learning",
+    "transformer",
+    "scaling",
+    "benchmark"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=XlpipUGygX",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/94398e27ccf0d114ead22d244a6bd055c2b73f38.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper uses chess, a landmark planning problem in AI, to assess transformers’ performance on a planning task where memorization is futile — even at a large scale. To this end, we release ChessBench, a large-scale benchmark dataset of 10 million chess games with legal move and value annotations ("
+  },
+  "collected_at": "2026-03-07T19:40:29.450Z"
+}

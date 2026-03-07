@@ -1,0 +1,36 @@
+{
+  "id": "TKbGTj0YCZ",
+  "or_id": "TKbGTj0YCZ",
+  "title": "Robust Conformal Prediction under Joint Distribution Shift",
+  "title_zh": "",
+  "authors": [
+    "Rui Xu",
+    "Chao Chen",
+    "Yue Sun",
+    "Parvathinathan Venkitasubramaniam",
+    "Sihong Xie"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Uncertainty prevails due to the lack of knowledge about data or model,\nand conformal prediction (CP) predicts multiple potential targets,\nhoping to cover the true target with a high probability. \nRegarding CP robustness,\nimportance weighting can address covariate shifts,\nbut CP under joint distribution shifts remains more challenging.\nPrior attempts addressing joint shift via $f$-divergence\nignores the nuance of calibration and test distributions\nthat are critical for coverage guarantees.\nMore generally, with multiple test distributions shifted from the calibration distribution,\nsimultaneous coverage guarantees for all test domains requires a new paradigm.\nWe design Multi-domain Robust Conformal Prediction (mRCP) that first formulates the coverage difference that importance weighting fails to capture under any joint shift.\nTo squeeze such coverage difference and guarantee the $(1-\\alpha)$ coverage in all test domains,\nwe propose Normalized Truncated Wasserstein distance (NTW) to comprehensively capture the nuance of any test and calibration conformal score distributions, and design an end-to-end training algorithm incorporating NTW to provide elasticity for simultaneous coverage guarantee over distinct test domains.\nWith diverse tasks (seven datasets) and architectures (black-box and physics-informed models), NTW strongly correlates (Pearson coefficient=0.905) with coverage differences beyond covariate shifts, while mRCP reduces coverage gap by 50% on average robustly over multiple distinct test domains.",
+  "abstract_zh": "",
+  "tldr": "We propose Normalized Truncated Wasserstein distance of conformal score CDFs to capture coverage difference of conformal prediction (CP) under data shift and develop Multi-domain Robust CP to make coverages approach confidences in all test domains.",
+  "keywords": [
+    "conformal prediction",
+    "data distribution shift",
+    "coverage robustness"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=TKbGTj0YCZ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/23b3785b36b5d1f9236e5a3ccaaf351cf47a3e3f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose Normalized Truncated Wasserstein distance of conformal score CDFs to capture coverage difference of conformal prediction (CP) under data shift and develop Multi-domain Robust CP to make coverages approach confidences in all test domains."
+  },
+  "collected_at": "2026-03-07T19:40:29.450Z"
+}

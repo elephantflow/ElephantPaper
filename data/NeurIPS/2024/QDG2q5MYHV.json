@@ -1,0 +1,36 @@
+{
+  "id": "QDG2q5MYHV",
+  "or_id": "QDG2q5MYHV",
+  "title": "A Gradient Accumulation Method for Dense Retriever under Memory Constraint",
+  "title_zh": "",
+  "authors": [
+    "Jaehee Kim",
+    "Yukyung Lee",
+    "Pilsung Kang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "InfoNCE loss is commonly used to train dense retriever in information retrieval tasks. It is well known that a large batch is essential to stable and effective training with InfoNCE loss, which requires significant hardware resources. Due to the dependency of large batch, dense retriever has bottleneck of application and research. Recently, memory reduction methods have been broadly adopted to resolve the hardware bottleneck by decomposing forward and backward or using a memory bank. However, current methods still suffer from slow and unstable train. To address these issues, we propose Contrastive Accumulation (ContAccum), a stable and efficient memory reduction method for dense retriever trains that uses a dual memory bank structure to leverage previously generated query and passage representations. Experiments on widely used five information retrieval datasets indicate that ContAccum can surpass not only existing memory reduction methods but also high-resource scenarios. Moreover, theoretical analysis and experimental results confirm that ContAccum provides more stable dual-encoder training than current memory bank utilization methods.",
+  "abstract_zh": "",
+  "tldr": "Our proposed method (ContAccum) reduces hardware needs for large batch training in information retrieval, outperforming not only memory reduction methods but also high-resource scenario in low-resource settings with stable dual encoder training.",
+  "keywords": [
+    "Dense Retriever",
+    "Efficient Training",
+    "Memory Reduction",
+    "Memory Bank",
+    "Dual Encoder"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=QDG2q5MYHV",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2a48e2979d5c7781bb25dc33b707c73d81a231e7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Our proposed method (ContAccum) reduces hardware needs for large batch training in information retrieval, outperforming not only memory reduction methods but also high-resource scenario in low-resource settings with stable dual encoder training."
+  },
+  "collected_at": "2026-03-07T19:40:29.451Z"
+}

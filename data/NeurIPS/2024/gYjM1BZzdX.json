@@ -1,0 +1,35 @@
+{
+  "id": "gYjM1BZzdX",
+  "or_id": "gYjM1BZzdX",
+  "title": "Diffeomorphic interpolation for efficient persistence-based topological optimization",
+  "title_zh": "",
+  "authors": [
+    "Mathieu Carrière",
+    "Marc Theveneau",
+    "Théo Lacombe"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Topological Data Analysis (TDA) provides a pipeline to extract quantitative and powerful topological descriptors from structured objects. \nThis enables the definition of topological loss functions, which assert to which extent a given object exhibits some topological properties. \nOne can then use these losses to perform topological optimization via gradient descent routines. \nWhile theoretically sounded, topological optimization faces an important challenge: gradients tend to be extremely sparse, in the sense that the loss function typically depends (locally) on only very few coordinates of the input object, yielding dramatically slow optimization schemes in practice. \n\nIn this work, focusing on the central case of topological optimization for point clouds, we propose to overcome this limitation using diffeomorphic interpolation, turning sparse gradients into smooth vector fields defined on the whole space. \nIn particular, this approach combines efficiently with subsampling techniques routinely used in TDA, as the diffeomorphism derived from the gradient computed on the subsample can be used to update the coordinates of the full and possibly large input object. We then illustrate the usefulness of our approach on black-box autoencoder (AE) regularization, where we aim at applying some topological priors on the latent spaces associated to fixed, black-box AE models without modifying their (unknown) architectures and parameters. We empirically show that, while vanilla topological optimization has to be re-run every time that new data comes out of the black-box models, learning a diffeomorphic flow can be done once and then re-applied to new data in linear time. Moreover, reverting the flow allows us to generate data by sampling the topologically-optimized latent space directly, allowing for better interpretability of the model.",
+  "abstract_zh": "",
+  "tldr": "We propose a diffeomorphic interpolation of (typically sparse) gradients appearing in Topological Data Analysis, yielding substantially faster and smoother optimization schemes.",
+  "keywords": [
+    "Persistent Homology",
+    "Persistence Diagrams",
+    "Optimization",
+    "Topological Data Analysis"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=gYjM1BZzdX",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2bf234a6054dce81ff680eceb5a31165763d1d7a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a diffeomorphic interpolation of (typically sparse) gradients appearing in Topological Data Analysis, yielding substantially faster and smoother optimization schemes."
+  },
+  "collected_at": "2026-03-07T19:40:29.450Z"
+}

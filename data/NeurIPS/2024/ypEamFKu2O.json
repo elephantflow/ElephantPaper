@@ -1,0 +1,38 @@
+{
+  "id": "ypEamFKu2O",
+  "or_id": "ypEamFKu2O",
+  "title": "PGN: The RNN's New Successor is Effective for Long-Range Time Series Forecasting",
+  "title_zh": "",
+  "authors": [
+    "Yuxin Jia",
+    "Youfang Lin",
+    "Jing Yu",
+    "Shuo Wang",
+    "Tianhao Liu",
+    "Huaiyu Wan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Due to the recurrent structure of RNN, the long information propagation path poses limitations in capturing long-term dependencies, gradient explosion/vanishing issues, and inefficient sequential execution. Based on this, we propose a novel paradigm called Parallel Gated Network (PGN) as the new successor to RNN. PGN directly captures information from previous time steps through the designed Historical Information Extraction (HIE) layer and leverages gated mechanisms to select and fuse it with the current time step information. This reduces the information propagation path to $\\mathcal{O}(1)$, effectively addressing the limitations of RNN. To enhance PGN's performance in long-range time series forecasting tasks, we propose a novel temporal modeling framework called Temporal PGN (TPGN). TPGN incorporates two branches to comprehensively capture the semantic information of time series. One branch utilizes PGN to capture long-term periodic patterns while preserving their local characteristics. The other branch employs patches to capture short-term information and aggregate the global representation of the series. TPGN achieves a theoretical complexity of $\\mathcal{O}(\\sqrt{L})$, ensuring efficiency in its operations. Experimental results on five benchmark datasets demonstrate the state-of-the-art (SOTA) performance and high efficiency of TPGN, further confirming the effectiveness of PGN as the new successor to RNN in long-range time series forecasting. The code is available in this repository: https://github.com/Water2sea/TPGN.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel paradigm, PGN, as the new successor to RNN, and propose a novel temporal modeling framework called TPGN, based on PGN.",
+  "keywords": [
+    "information propagation paths",
+    "the RNN's new successor",
+    "long-range time series forecasting",
+    "comprehensive semantic information"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ypEamFKu2O",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fedcae5d40b0b77e815930762cf718eaa6edbdff.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel paradigm, PGN, as the new successor to RNN, and propose a novel temporal modeling framework called TPGN, based on PGN."
+  },
+  "collected_at": "2026-03-07T19:40:29.448Z"
+}

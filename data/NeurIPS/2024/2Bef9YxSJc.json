@@ -1,0 +1,38 @@
+{
+  "id": "2Bef9YxSJc",
+  "or_id": "2Bef9YxSJc",
+  "title": "Language Models Encode Collaborative Signals in Recommendation",
+  "title_zh": "",
+  "authors": [
+    "Leheng Sheng",
+    "An Zhang",
+    "Yi Zhang",
+    "Yuxin Chen",
+    "Xiang Wang",
+    "Tat-Seng Chua"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Recent studies empirically indicate that language models (LMs) encode rich world knowledge beyond mere semantics, attracting significant attention across various fields. \nHowever, in the recommendation domain, it remains uncertain whether LMs implicitly encode user preference information. Contrary to the prevailing understanding that LMs and traditional recommender models learn two distinct representation spaces due to a huge gap in language and behavior modeling objectives, this work rethinks such understanding and explores extracting a recommendation space directly from the language representation space.\nSurprisingly, our findings demonstrate that item representations, when linearly mapped from advanced LM representations, yield superior recommendation performance. \nThis outcome suggests a homomorphic relationship between the language representation space and an effective recommendation space, implying that collaborative signals may indeed be encoded within advanced LMs.\nMotivated by these findings, we propose a simple yet effective collaborative filtering (CF) model named AlphaRec, which utilizes language representations of item textual metadata (e.g., titles) instead of traditional ID-based embeddings. \nSpecifically, AlphaRec is comprised of three main components: a multilayer perceptron (MLP), graph convolution, and contrastive learning (CL) loss function, making it extremely easy to implement and train. \nOur empirical results show that AlphaRec outperforms leading ID-based CF models on multiple datasets, marking the first instance of such a recommender with text embeddings achieving this level of performance.\nMoreover, AlphaRec introduces a new text-based CF paradigm with several desirable advantages: being easy to implement, lightweight, rapid convergence, superior zero-shot recommendation abilities in new domains, and being aware of user intention.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Collaborative filtering",
+    "Language-representation-based recommendation",
+    "Language models",
+    "Language model representations"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=2Bef9YxSJc",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/651ef6575b78d0a20e5931ae41f168530b4148a7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Recent studies empirically indicate that language models (LMs) encode rich world knowledge beyond mere semantics, attracting significant attention across various fields. \nHowever, in the recommendation domain, it remains uncertain whether LMs implicitly encode user preference information. Contrary t"
+  },
+  "collected_at": "2026-03-07T19:40:29.450Z"
+}
