@@ -1,0 +1,38 @@
+{
+  "id": "y6JotynERr",
+  "or_id": "y6JotynERr",
+  "title": "Towards Diverse Device Heterogeneous Federated Learning via Task Arithmetic Knowledge Integration",
+  "title_zh": "",
+  "authors": [
+    "Mahdi Morafah",
+    "Vyacheslav Kungurtsev",
+    "Hojin Matthew Chang",
+    "Chen Chen",
+    "Bill Lin"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Federated Learning (FL) has emerged as a promising paradigm for collaborative machine learning, while preserving user data privacy. Despite its potential, standard FL algorithms lack support for diverse heterogeneous device prototypes, which vary significantly in model and dataset sizes---from small IoT devices to large workstations. This limitation is only partially addressed by existing knowledge distillation (KD) techniques, which often fail to transfer knowledge effectively across a broad spectrum of device prototypes with varied capabilities. This failure primarily stems from two issues: the dilution of informative logits from more capable devices by those from less capable ones, and the use of a single integrated logits as the distillation target across all devices, which neglects their individual learning capacities and and the unique contributions of each device. To address these challenges, we introduce TAKFL, a novel KD-based framework that treats the knowledge transfer from each device prototype's ensemble as a separate task, independently distilling each to preserve its unique contributions and avoid dilution. TAKFL also incorporates a KD-based self-regularization technique to mitigate the issues related to the noisy and unsupervised ensemble distillation process. To integrate the separately distilled knowledge, we introduce an adaptive task arithmetic knowledge integration process, allowing each student model to customize the knowledge integration for optimal performance. Additionally, we present theoretical results demonstrating the effectiveness of task arithmetic in transferring knowledge across heterogeneous device prototypes with varying capacities. Comprehensive evaluations of our method across both computer vision (CV) and natural language processing (NLP) tasks demonstrate that TAKFL achieves state-of-the-art results in a variety of datasets and settings, significantly outperforming existing KD-based methods. Our code is released at https://gith",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Federated Learning",
+    "Heterogeneous Device Prototypes",
+    "Knowledge Distillation",
+    "Task Arithmetic",
+    "Machine Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=y6JotynERr",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/775a6d52478bc6934cf412e2704981a99343583b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Federated Learning (FL) has emerged as a promising paradigm for collaborative machine learning, while preserving user data privacy. Despite its potential, standard FL algorithms lack support for diverse heterogeneous device prototypes, which vary significantly in model and dataset sizes---from small"
+  },
+  "collected_at": "2026-03-07T21:20:27.962Z"
+}
