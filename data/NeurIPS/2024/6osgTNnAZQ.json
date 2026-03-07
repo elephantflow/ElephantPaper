@@ -1,0 +1,40 @@
+{
+  "id": "6osgTNnAZQ",
+  "or_id": "6osgTNnAZQ",
+  "title": "Block Transformer: Global-to-Local Language Modeling for Fast Inference",
+  "title_zh": "",
+  "authors": [
+    "Namgyu Ho",
+    "Sangmin Bae",
+    "Taehyeon Kim",
+    "hyunjik.jo",
+    "Yireun Kim",
+    "Tal Schuster",
+    "Adam Fisch",
+    "James Thorne",
+    "Se-Young Yun"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We introduce the Block Transformer which adopts hierarchical global-to-local modeling to autoregressive transformers to mitigate the inference bottlenecks associated with self-attention. Self-attention requires the key-value (KV) cache of all previous sequences to be retrieved from memory at every decoding step to retrieve context information, leading to two primary bottlenecks during batch inference. First, there is a significant delay in obtaining the first token, as the information of the entire prompt must first be processed to prefill the KV cache. Second, computation of subsequent tokens is bottlenecked by the high memory I/O demand of fetching the entire KV cache, which grows linearly with sequence length, incurring quadratic memory reads overall. We design the Block Transformer to strategically mitigate these costs, by incorporating coarsity and locality into an integrated global-to-local architecture. At the lower layers, we aggregate tokens into fixed size blocks to apply attention across the entire sequence at coarse-grained detail, to capture the global context while minimizing KV cache overhead. At upper layers, we apply attention within each block to decode individual tokens, to model fine-grained details with a lightweight local KV cache. We pretrain vanilla and Block Transformers from scratch and demonstrate that Block Transformers reach 10--20x inference throughput compared to vanilla transformers with equivalent perplexity and zero-shot task performance.",
+  "abstract_zh": "",
+  "tldr": "We propose the Block Transformer architecture that adopts global-to-local modeling to autoregressive transformers to mitigate the bottlenecks of global self-attention and significantly improve inference throughput compared to vanilla transformers.",
+  "keywords": [
+    "language model",
+    "model architecture",
+    "efficient inference"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6osgTNnAZQ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/697e59bd2ef87fe2891465631b67fb40b5fb0878.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose the Block Transformer architecture that adopts global-to-local modeling to autoregressive transformers to mitigate the bottlenecks of global self-attention and significantly improve inference throughput compared to vanilla transformers."
+  },
+  "collected_at": "2026-03-07T15:20:36.421Z"
+}
