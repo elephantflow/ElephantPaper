@@ -1,0 +1,38 @@
+{
+  "id": "eKHQbgvL3G",
+  "or_id": "eKHQbgvL3G",
+  "title": "TrackIME: Enhanced Video Point Tracking via Instance Motion Estimation",
+  "title_zh": "",
+  "authors": [
+    "Seong Hyeon Park",
+    "Huiwon Jang",
+    "Byungwoo Jeon",
+    "Sukmin Yun",
+    "Paul Hongsuck Seo",
+    "Jinwoo Shin"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Tracking points in video frames is essential for understanding video content. However, the task is fundamentally hindered by the computation demands for brute-force correspondence matching across the frames. As the current models down-sample the frame resolutions to mitigate this challenge, they fall short in accurately representing point trajectories due to information truncation. Instead, we address the challenge by pruning the search space for point tracking and let the model process only the important regions of the frames without down-sampling. Our first key idea is to identify the object instance and its trajectory over the frames, then prune the regions of the frame that do not contain the instance. Concretely, to estimate the instance’s trajectory, we track a group of points on the instance and aggregate their motion trajectories. Furthermore, to deal with the occlusions in complex scenes, we propose to compensate for the occluded points while tracking. To this end, we introduce a unified framework that jointly performs point tracking and segmentation, providing synergistic effects between the two tasks. For example, the segmentation results enable a tracking model to avoid the occluded points referring to the instance mask, and conversely, the improved tracking results can help to produce more accurate segmentation masks. Our framework can be easily incorporated with various tracking models, and we demonstrate its efficacy for enhanced point tracking throughout extensive experiments. For example, on the recent TAP-Vid benchmark, our framework consistently improves all baselines, e.g., up to 13.5% improvement on the average Jaccard metric.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "motion estimation",
+    "point tracking",
+    "video segmentation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=eKHQbgvL3G",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a1d1099a9b6d3563c77c9a4445e17803dde50b7d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "Tracking points in video frames is essential for understanding video content. However, the task is fundamentally hindered by the computation demands for brute-force correspondence matching across the frames. As the current models down-sample the frame resolutions to mitigate this challenge, they fall short in accurately representing point trajectories due to information truncation. Instead, we add"
+  },
+  "collected_at": "2026-03-07T14:40:54.538Z"
+}

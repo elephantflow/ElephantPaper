@@ -1,0 +1,41 @@
+{
+  "id": "9VbGjXLzig",
+  "or_id": "9VbGjXLzig",
+  "title": "No \"Zero-Shot\" Without Exponential Data: Pretraining Concept Frequency Determines Multimodal Model Performance",
+  "title_zh": "",
+  "authors": [
+    "Vishaal Udandarao",
+    "Ameya Prabhu",
+    "Adhiraj Ghosh",
+    "Yash Sharma",
+    "Philip Torr",
+    "Adel Bibi",
+    "Samuel Albanie",
+    "Matthias Bethge"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Web-crawled pretraining datasets underlie the impressive \"zero-shot\" evaluation performance of multimodal models, such as CLIP for classification and Stable-Diffusion for image generation. However, it is unclear how meaningful the notion of \"zero-shot\" generalization is for such multimodal models, as it is not known to what extent their pretraining datasets encompass the downstream concepts targeted for during \"zero-shot\" evaluation. In this work, we ask: How is the performance of multimodal models on downstream concepts influenced by the frequency of these concepts in their pretraining datasets?\n\nWe comprehensively investigate this question across 34 models and 5 standard pretraining datasets (CC-3M, CC-12M, YFCC-15M, LAION-400M, LAION-Aesthetics), generating over 300GB of data artifacts. We consistently find that, far from exhibiting \"zero-shot\" generalization, multimodal models require exponentially more data to achieve linear improvements in downstream \"zero-shot\" performance, following a sample inefficient log-linear scaling trend. This trend persists even when controlling for sample-level similarity between pretraining and downstream datasets, and testing on purely synthetic data distributions. Furthermore, upon benchmarking models on long-tailed data sampled based on our analysis, we demonstrate that multimodal models across the board perform poorly. We contribute this long-tail test set as the Let it Wag! benchmark to further research in this direction. Taken together, our study reveals an exponential need for training data which implies that the key to \"zero-shot\" generalization capabilities under large-scale training data and compute paradigms remains to be found.",
+  "abstract_zh": "",
+  "tldr": "We show that multimodal models require exponentially more data on a concept to linearly improve their performance on tasks pertaining to that concept, highlighting extreme sample inefficiency.",
+  "keywords": [
+    "Multimodal Datasets",
+    "Long-tailed Concept Distribution",
+    "CLIP Models",
+    "Diffusion Models",
+    "Data-Centric ML"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=9VbGjXLzig",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b9c1c3dab0429c2476424236a4a272811999a36b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show that multimodal models require exponentially more data on a concept to linearly improve their performance on tasks pertaining to that concept, highlighting extreme sample inefficiency."
+  },
+  "collected_at": "2026-03-07T14:40:54.540Z"
+}

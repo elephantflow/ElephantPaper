@@ -1,0 +1,38 @@
+{
+  "id": "w3JCTBRduf",
+  "or_id": "w3JCTBRduf",
+  "title": "Optimization Can Learn Johnson Lindenstrauss Embeddings",
+  "title_zh": "",
+  "authors": [
+    "Nikos Tsikouras",
+    "Constantine Caramanis",
+    "Christos Tzamos"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Embeddings play a pivotal role across various disciplines, offering compact representations of complex data structures. Randomized methods like Johnson-Lindenstrauss (JL) provide state-of-the-art and essentially unimprovable theoretical guarantees for achieving such representations. These guarantees are worst-case and in particular, neither the analysis, ${\\textit{nor the algorithm}}$, takes into account any potential structural information of the data. The natural question is: must we randomize? Could we instead use an optimization-based approach, working directly with the data? A first answer is no: as we show, the distance-preserving objective of JL has a non-convex landscape over the space of projection matrices, with many bad stationary points. But this is not the final answer. \n\nWe present a novel method motivated by diffusion models, that circumvents this fundamental challenge: rather than performing optimization directly over the space of projection matrices, we use optimization over the larger space of $\\textit{random solution samplers}$, gradually reducing the variance of the sampler. We show that by moving through this larger space, our objective converges to a deterministic (zero variance) solution, avoiding bad stationary points. \n\nThis method can also be seen as an optimization-based derandomization approach, and is an idea and method that we believe can be applied to many other problems.",
+  "abstract_zh": "",
+  "tldr": "We give a novel derandomization of JL via optimization, that avoids all bad local minima in the non-convex landscape by a diffusion-like process where we move through the space of randomized solution samplers, sequentially reducing the variance.",
+  "keywords": [
+    "Optimization",
+    "Non-Convex Optimization",
+    "Embeddings",
+    "Projections",
+    "Derandomization",
+    "Gradient Descent",
+    "Dimensionality Reduction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=w3JCTBRduf",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e71a9aee432154e3433f241defc8602cd50276dd.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We give a novel derandomization of JL via optimization, that avoids all bad local minima in the non-convex landscape by a diffusion-like process where we move through the space of randomized solution samplers, sequentially reducing the variance."
+  },
+  "collected_at": "2026-03-07T14:40:54.538Z"
+}
