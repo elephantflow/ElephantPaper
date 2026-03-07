@@ -1,0 +1,34 @@
+{
+  "id": "cDS8WxnMVP",
+  "or_id": "cDS8WxnMVP",
+  "title": "Convolutions and More as Einsum: A Tensor Network Perspective with Advances for Second-Order Methods",
+  "title_zh": "",
+  "authors": [
+    "Felix Dangel"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Despite their simple intuition, convolutions are more tedious to analyze than dense layers, which complicates the transfer of theoretical and algorithmic ideas to convolutions. We simplify convolutions by viewing them as tensor networks (TNs) that allow reasoning about the underlying tensor multiplications by drawing diagrams, manipulating them to perform function transformations like differentiation, and efficiently evaluating them with `einsum`. To demonstrate their simplicity and expressiveness, we derive diagrams of various autodiff operations and popular curvature approximations with full hyper-parameter support, batching, channel groups, and generalization to any convolution dimension. Further, we provide convolution-specific transformations based on the connectivity pattern which allow to simplify diagrams before evaluation. Finally, we probe performance. Our TN implementation accelerates a recently-proposed KFAC variant up to 4.5 x while removing the standard implementation's memory overhead, and enables new hardware-efficient tensor dropout for approximate backpropagation.",
+  "abstract_zh": "",
+  "tldr": "We introduce einsum implementations of many operations related to convolution that speed up the computation of second-order methods like KFAC",
+  "keywords": [
+    "Tensor networks",
+    "convolutions",
+    "KFAC",
+    "einsum",
+    "Second-order optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=cDS8WxnMVP",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/cfe84762f4c06afc09cb0d9d06e9168f8d6c8012.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce einsum implementations of many operations related to convolution that speed up the computation of second-order methods like KFAC"
+  },
+  "collected_at": "2026-03-07T16:00:41.331Z"
+}

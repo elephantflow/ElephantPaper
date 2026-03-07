@@ -1,0 +1,42 @@
+{
+  "id": "eFrdRuyHR9",
+  "or_id": "eFrdRuyHR9",
+  "title": "Transition Constrained Bayesian Optimization via Markov Decision Processes",
+  "title_zh": "",
+  "authors": [
+    "Jose Pablo Folch",
+    "Calvin Tsay",
+    "Robert Matthew Lee",
+    "Behrang Shafei",
+    "Weronika Ormaniec",
+    "Andreas Krause",
+    "Mark van der Wilk",
+    "Ruth Misener",
+    "Mojmir Mutny"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Bayesian optimization is a methodology to optimize black-box functions. Traditionally, it focuses on the setting where you can arbitrarily query the search space. However, many real-life problems do not offer this flexibility; in particular, the search space of the next query may depend on previous ones. Example challenges arise in the physical sciences in the form of local movement constraints, required monotonicity in certain variables, and transitions influencing the accuracy of measurements. Altogether, such *transition constraints* necessitate a form of planning. This work extends classical Bayesian optimization via the framework of Markov Decision Processes. We iteratively solve a tractable linearization of our utility function using reinforcement learning to obtain a policy that plans ahead for the entire horizon. This is a parallel to the optimization of an *acquisition function in policy space*. The resulting policy is potentially history-dependent and non-Markovian. We showcase applications in chemical reactor optimization, informative path planning, machine calibration, and other synthetic examples.",
+  "abstract_zh": "",
+  "tldr": "We do Bayesian Optimization under transition constraints by creating and solving tractable long-term planning problems in Markov Decision Processes.",
+  "keywords": [
+    "Bayesian Optimization",
+    "Transition Constrained",
+    "Markov Decision Process",
+    "Linear Bandits",
+    "Convex Reinforcement Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=eFrdRuyHR9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e77f2d206e13d3123dc2e70844f5f0cef5d37cf2.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We do Bayesian Optimization under transition constraints by creating and solving tractable long-term planning problems in Markov Decision Processes."
+  },
+  "collected_at": "2026-03-07T16:00:41.333Z"
+}

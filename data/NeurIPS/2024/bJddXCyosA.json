@@ -1,0 +1,35 @@
+{
+  "id": "bJddXCyosA",
+  "or_id": "bJddXCyosA",
+  "title": "VisMin: Visual Minimal-Change Understanding",
+  "title_zh": "",
+  "authors": [
+    "Rabiul Awal",
+    "Saba Ahmadi",
+    "Le Zhang",
+    "Aishwarya Agrawal"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Fine-grained understanding of objects, attributes, and relationships between objects is crucial for visual-language models (VLMs). To evaluate VLMs' fine-grained understanding, existing benchmarks primarily focus on evaluating VLMs' capability to distinguish between two very similar captions given an image. In this paper, our focus is on evaluating VLMs' capability to distinguish between two very similar images given a caption. To this end, we introduce a new, challenging benchmark termed Visual Minimal-Change Understanding (VisMin), which requires models to predict the correct image-caption match given two images and two captions. Importantly, the image pair (as well as the caption pair) contains minimal changes, i.e., between the two images (as well as between the two captions), only one aspect changes at a time from among the following possible types of changes: object, attribute, count, and spatial relation. These four types of minimal changes are specifically designed to test the models' understanding of objects, attributes of objects (such as color, material, shape), counts of objects, and spatial relationships between objects. To curate our benchmark, we built an automatic pipeline using large language models and diffusion models, followed by a rigorous 4-step verification process by human annotators. Empirical experiments reveal that current VLMs exhibit notable deficiencies in understanding spatial relationships and counting abilities. Furthermore, leveraging the automated nature of our data creation process, we generate a large-scale training dataset, which we use to finetune CLIP (a foundational VLM) and Idefics2 (a multimodal large language model). Our findings show that both these models benefit significantly from fine-tuning on this data, as evident by marked improvements in fine-grained understanding across a wide range of benchmarks. Additionally, such fine-tuning improves CLIP's general image-text alignment capabilities too. All resources including ",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "vision-language",
+    "fine-grained understanding",
+    "multimodal representation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=bJddXCyosA",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6c1546370330b8f70a1e4e3f343a08f947d29f09.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Fine-grained understanding of objects, attributes, and relationships between objects is crucial for visual-language models (VLMs). To evaluate VLMs' fine-grained understanding, existing benchmarks primarily focus on evaluating VLMs' capability to distinguish between two very similar captions given a"
+  },
+  "collected_at": "2026-03-07T16:00:41.330Z"
+}
