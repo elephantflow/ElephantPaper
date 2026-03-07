@@ -1,0 +1,39 @@
+{
+  "id": "iiYadgKHwo",
+  "or_id": "iiYadgKHwo",
+  "title": "Variational Distillation of Diffusion Policies into Mixture of Experts",
+  "title_zh": "",
+  "authors": [
+    "Hongyi Zhou",
+    "Denis Blessing",
+    "Ge Li",
+    "Onur Celik",
+    "Xiaogang Jia",
+    "Gerhard Neumann",
+    "Rudolf Lioutikov"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This work introduces Variational Diffusion Distillation (VDD), a novel method that distills denoising diffusion policies into Mixtures of Experts (MoE) through variational inference. Diffusion Models are the current state-of-the-art in generative modeling due to their exceptional ability to accurately learn and represent complex, multi-modal distributions. This ability allows Diffusion Models to replicate the inherent diversity in human behavior, making them the preferred models in behavior learning such as Learning from Human Demonstrations (LfD).\nHowever, diffusion models come with some drawbacks, including the intractability of likelihoods and long inference times due to their iterative sampling process. The inference times, in particular, pose a significant challenge to real-time applications such as robot control.\nIn contrast, MoEs effectively address the aforementioned issues while retaining the ability to represent complex distributions but are notoriously difficult to train.\nVDD is the first method that distills pre-trained diffusion models into MoE models, and hence, combines the expressiveness of Diffusion Models with the benefits of Mixture Models.\nSpecifically, VDD leverages a decompositional upper bound of the variational objective that allows the training of each expert separately, resulting in a robust optimization scheme for MoEs.\nVDD demonstrates across nine complex behavior learning tasks, that it is able to: i) accurately distill complex distributions learned by the diffusion model, ii) outperform existing state-of-the-art distillation methods, and iii) surpass conventional methods for training MoE. The code and videos are available at https://intuitive-robots.github.io/vdd-website.",
+  "abstract_zh": "",
+  "tldr": "This work introduces Variational Diffusion Distillation (VDD), a novel method for distilling denoising diffusion policies into a Mixture of Experts (MoE).",
+  "keywords": [
+    "Diverse Behavior Learning",
+    "Model Distillation",
+    "Diffusion Models",
+    "Variational Inference"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=iiYadgKHwo",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/198eed271f6d6fdbd5ab59ac4223f2e082726e32.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This work introduces Variational Diffusion Distillation (VDD), a novel method for distilling denoising diffusion policies into a Mixture of Experts (MoE)."
+  },
+  "collected_at": "2026-03-07T19:20:36.100Z"
+}

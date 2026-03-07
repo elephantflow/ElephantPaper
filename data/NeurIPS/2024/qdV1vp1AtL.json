@@ -1,0 +1,37 @@
+{
+  "id": "qdV1vp1AtL",
+  "or_id": "qdV1vp1AtL",
+  "title": "Universal Sample Coding",
+  "title_zh": "",
+  "authors": [
+    "Szymon Kobus",
+    "Tze-Yang Tung",
+    "Deniz Gunduz"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In this work, we study the problem of communicating multiple samples from an unknown probability distribution using as few bits as possible. This is a generalization of the channel simulation problem, which has recently found applications and achieved state of the art results in realistic image compression, neural network compression, and communication-efficient federated learning. In this problem, the transmitter wants the receiver to generate multiple independent and identically distributed (i.i.d.) samples from a target distribution $P$, while the transmitter and the receiver have access to independent samples from a reference distribution $Q$. The core idea is to employ channel simulation in multiple rounds while updating the reference distribution $Q$ after each round in order to reduce the KL-divergence between $P$ and $Q$, thereby reducing the communication cost in subsequent rounds. We derive a lower bound on the expected communication cost and construct a practical algorithm that achieves the lower bound up to a multiplicative constant. We then employ this algorithm in communication-efficient federated learning, in which model updates correspond to samples from a distribution, and achieve a 37% reduction in the communication load. To further highlight the potential of sample communication for generative models, we show that the number of bits needed to communicate samples from a large language model can be reduced by up to 16 times, compared to entropy-based data compression.",
+  "abstract_zh": "",
+  "tldr": "Communication of multiple samples from an unknown probability distribution and its applications to federated learning and generative inference.",
+  "keywords": [
+    "source coding",
+    "compression",
+    "sampling",
+    "channel simulation",
+    "federated learning",
+    "generative AI"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=qdV1vp1AtL",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a4e0b407650f94bab40dee287555bc359ee6201d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Communication of multiple samples from an unknown probability distribution and its applications to federated learning and generative inference."
+  },
+  "collected_at": "2026-03-07T19:20:36.100Z"
+}

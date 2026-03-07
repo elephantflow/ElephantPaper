@@ -1,0 +1,36 @@
+{
+  "id": "uaNZvF1VFe",
+  "or_id": "uaNZvF1VFe",
+  "title": "Efficient Sign-Based Optimization: Accelerating Convergence via Variance Reduction",
+  "title_zh": "",
+  "authors": [
+    "Wei Jiang",
+    "Sifan Yang",
+    "Wenhao Yang",
+    "Lijun Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Sign stochastic gradient descent (signSGD) is a communication-efficient method that transmits only the sign of stochastic gradients for parameter updating. Existing literature has demonstrated that signSGD can achieve a convergence rate of $\\mathcal{O}(d^{1/2}T^{-1/4})$, where $d$ represents the dimension and $T$ is the iteration number. In this paper, we improve this convergence rate to $\\mathcal{O}(d^{1/2}T^{-1/3})$ by introducing the Sign-based Stochastic Variance Reduction (SSVR) method, which employs variance reduction estimators to track gradients and leverages their signs to update. For finite-sum problems, our method can be further enhanced to achieve a convergence rate of $\\mathcal{O}(m^{1/4}d^{1/2}T^{-1/2})$, where $m$ denotes the number of component functions. Furthermore, we investigate the heterogeneous majority vote in distributed settings and introduce two novel algorithms that attain improved convergence rates of $\\mathcal{O}(d^{1/2}T^{-1/2} + dn^{-1/2})$ and $\\mathcal{O}(d^{1/4}T^{-1/4})$ respectively, outperforming the previous results of $\\mathcal{O}(dT^{-1/4} + dn^{-1/2})$ and $\\mathcal{O}(d^{3/8}T^{-1/8})$, where $n$ represents the number of nodes. Numerical experiments across different tasks validate the effectiveness of our proposed methods.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "SignSGD",
+    "majority vote",
+    "sign-based method",
+    "variance reduction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=uaNZvF1VFe",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9b43a99cf25d1e35bb50a6d5c29beae9ed50c900.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Sign stochastic gradient descent (signSGD) is a communication-efficient method that transmits only the sign of stochastic gradients for parameter updating. Existing literature has demonstrated that signSGD can achieve a convergence rate of $\\mathcal{O}(d^{1/2}T^{-1/4})$, where $d$ represents the dim"
+  },
+  "collected_at": "2026-03-07T19:20:36.099Z"
+}
