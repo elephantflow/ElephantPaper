@@ -1,0 +1,35 @@
+{
+  "id": "HCTikT7LS4",
+  "or_id": "HCTikT7LS4",
+  "title": "Enhancing Robustness in Deep Reinforcement Learning: A Lyapunov Exponent Approach",
+  "title_zh": "",
+  "authors": [
+    "Rory Young",
+    "Nicolas Pugeault"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Deep reinforcement learning agents achieve state-of-the-art performance in a wide range of simulated control tasks. However, successful applications to real-world problems remain limited. One reason for this dichotomy is because the learnt policies are not robust to observation noise or adversarial attacks. In this paper, we investigate the robustness of deep RL policies to a single small state perturbation in deterministic continuous control tasks. We demonstrate that RL policies can be deterministically chaotic, as small perturbations to the system state have a large impact on subsequent state and reward trajectories. This unstable non-linear behaviour has two consequences: first, inaccuracies in sensor readings, or adversarial attacks, can cause significant performance degradation; second, even policies that show robust performance in terms of rewards may have unpredictable behaviour in practice. These two facets of chaos in RL policies drastically restrict the application of deep RL to real-world problems. To address this issue, we propose an improvement on the successful Dreamer V3 architecture, implementing Maximal Lyapunov Exponent regularisation. This new approach reduces the chaotic state dynamics, rendering the learnt policies more resilient to sensor noise or adversarial attacks and thereby improving the suitability of deep reinforcement learning for real-world applications.",
+  "abstract_zh": "",
+  "tldr": "We show reinforcement learning controllers produce chaotic states and reward trajectories in continuous control environments. To mitigate this we propose a regularisation method which minimises chaos and improves the robustness of Dreamer V3.",
+  "keywords": [
+    "Reinforcement Learning",
+    "Robust Reinforcement Learning",
+    "Stable Reinforcement Learning",
+    "Lyapunov Exponents",
+    "Chaos Theory"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=HCTikT7LS4",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/84e6c8356cf3b0bf90d5bd1738135a8164a519d0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show reinforcement learning controllers produce chaotic states and reward trajectories in continuous control environments. To mitigate this we propose a regularisation method which minimises chaos and improves the robustness of Dreamer V3."
+  },
+  "collected_at": "2026-03-07T12:00:31.310Z"
+}

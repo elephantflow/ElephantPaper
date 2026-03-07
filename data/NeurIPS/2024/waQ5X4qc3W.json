@@ -1,0 +1,37 @@
+{
+  "id": "waQ5X4qc3W",
+  "or_id": "waQ5X4qc3W",
+  "title": "Stabilize the Latent Space for Image Autoregressive Modeling: A Unified Perspective",
+  "title_zh": "稳定图像自回归模型的潜在空间：统一视角",
+  "authors": [
+    "Yongxin Zhu",
+    "Bocheng Li",
+    "Hang Zhang",
+    "Xin Li",
+    "Linli Xu",
+    "Lidong Bing"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Latent-based image generative models, such as Latent Diffusion Models (LDMs) and Mask Image Models (MIMs), have achieved notable success in image generation tasks. These models typically leverage reconstructive autoencoders like VQGAN or VAE to encode pixels into a more compact latent space and learn the data distribution in the latent space instead of directly from pixels. However, this practice raises a pertinent question: Is it truly the optimal choice? In response, we begin with an intriguing observation: despite sharing the same latent space, autoregressive models significantly lag behind LDMs and MIMs in image generation. This finding contrasts sharply with the field of NLP, where the autoregressive model GPT has established a commanding presence. To address this discrepancy, we introduce a unified perspective on the relationship between latent space and generative models, emphasizing the stability of latent space in image generative modeling. Furthermore, we propose a simple but effective discrete image tokenizer to stabilize the latent space for image generative modeling by applying K-Means on the latent features of self-supervised learning models. Experimental results show that image autoregressive modeling with our tokenizer (DiGIT) benefits both image understanding and image generation with the next token prediction principle, which is inherently straightforward for GPT models but challenging for other generative models. Remarkably, for the first time, a GPT-style autoregressive model for images outperforms LDMs, which also exhibits substantial improvement akin to GPT when scaling up model size. Our findings underscore the potential of an optimized latent space and the integration of discrete tokenization in advancing the capabilities of image generative models. The code is available at \\url{https://github.com/DAMO-NLP-SG/DiGIT}.",
+  "abstract_zh": "基于潜在空间的图像生成模型，如潜在扩散模型（LDMs）和掩码图像模型（MIMs），在图像生成任务中取得了显著成功。这些模型通常利用像VQGAN或VAE这样的重建自编码器，将像素编码到更紧凑的潜在空间中，并在潜在空间中学习数据分布，而不是直接从像素中学习。然而，这种做法引出了一个相关的问题：这真的是最优选择吗？作为回应，我们从一项有趣的观察开始：尽管共享相同的潜在空间，自回归模型在图像生成方面显著落后于LDMs和MIMs。这一发现与NLP领域形成鲜明对比，在该领域中自回归模型GPT已占据主导地位。为了解决这一差异，我们引入了关于潜在空间与生成模型关系的统一视角，强调潜在空间在图像生成建模中的稳定性。此外，我们提出了一种简单而有效的离散图像标记器，通过对自监督学习模型的潜在特征应用K-Means来稳定图像生成建模的潜在空间。实验结果表明，使用我们的标记器（DiGIT）进行图像自回归建模，通过下一个标记预测原则，对图像理解和图像生成都有好处，这对GPT模型来说是内在直接的，但对其他生成模型来说具有挑战性。值得注意的是，首次有一个GPT风格的图像自回归模型在性能上超过了LDMs，并且在扩大模型规模时表现出类似GPT的显著改进。我们的发现强调了优化潜在空间和集成离散标记化在提升图像生成模型能力方面的潜力。",
+  "tldr": "",
+  "keywords": [
+    "Latent space",
+    "Image sequential modeling",
+    "Image tokenizer"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=waQ5X4qc3W",
+    "arxiv": "https://arxiv.org/abs/2410.12490",
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fc5f5e9cc6e5aa9d1caa81081a8fd3e0b1c5f218.pdf"
+  },
+  "citationCount": 19,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Latent-based image generative models, such as Latent Diffusion Models (LDMs) and Mask Image Models (MIMs), have achieved notable success in image generation tasks. These models typically leverage reconstructive autoencoders like VQGAN or VAE to encode pixels into a more compact latent space and lear"
+  },
+  "collected_at": "2026-03-07T12:00:30.529Z"
+}
