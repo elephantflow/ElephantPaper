@@ -1,0 +1,32 @@
+{
+  "id": "HavKlV22xJ",
+  "or_id": "HavKlV22xJ",
+  "title": "Model-free Low-Rank Reinforcement Learning via Leveraged Entry-wise Matrix Estimation",
+  "title_zh": "",
+  "authors": [
+    "Stefan Stojanovic",
+    "Yassir Jedra",
+    "Alexandre Proutiere"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We consider the problem of learning an $\\varepsilon$-optimal policy in controlled dynamical systems with low-rank latent structure. \nFor this problem, we present LoRa-PI (Low-Rank Policy Iteration), a model-free learning algorithm alternating between policy improvement and policy evaluation steps. In the latter, the algorithm estimates the low-rank matrix corresponding to the (state, action) value function of the current policy using the following two-phase procedure. The entries of the matrix are first sampled uniformly at random to estimate, via a spectral method, the *leverage scores* of its rows and columns. These scores are then used to extract a few important rows and columns whose entries are further sampled. The algorithm exploits these new samples to  complete the matrix estimation using a CUR-like method. For this leveraged matrix estimation procedure, we establish entry-wise guarantees that remarkably, do not depend on the coherence of the matrix but only on its spikiness. These guarantees imply that LoRa-PI learns an $\\varepsilon$-optimal policy using $\\tilde{\\cal O}({(S+A)\\over \\mathrm{poly}(1-\\gamma)\\varepsilon^2})$ samples where $S$ (resp. $A$) denotes the number of states (resp. actions) and $\\gamma$ the discount factor. Our algorithm achieves this order-optimal (in $S$, $A$ and $\\varepsilon$) sample complexity under milder conditions than those assumed in previously proposed approaches.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Low-rank RL; Entry-wise matrix estimation; Matrix completion"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=HavKlV22xJ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7b925a75478270898ba65262febd11e78383161f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We consider the problem of learning an $\\varepsilon$-optimal policy in controlled dynamical systems with low-rank latent structure. \nFor this problem, we present LoRa-PI (Low-Rank Policy Iteration), a model-free learning algorithm alternating between policy improvement and policy evaluation steps. I"
+  },
+  "collected_at": "2026-03-07T17:40:48.516Z"
+}

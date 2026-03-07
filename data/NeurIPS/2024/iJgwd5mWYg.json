@@ -1,0 +1,34 @@
+{
+  "id": "iJgwd5mWYg",
+  "or_id": "iJgwd5mWYg",
+  "title": "Beyond Primal-Dual Methods in Bandits with Stochastic and Adversarial Constraints",
+  "title_zh": "",
+  "authors": [
+    "Martino Bernasconi",
+    "Matteo Castiglioni",
+    "Andrea Celli",
+    "Federico Fusco"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We address a generalization of the bandit with knapsacks problem, where a learner aims to maximize rewards while satisfying an arbitrary set of long-term constraints. Our goal is to design best-of-both-worlds algorithms that perform optimally under both stochastic and adversarial constraints. Previous works address this problem via primal-dual methods, and require some stringent assumptions, namely the Slater's condition, and in adversarial settings, they either assume knowledge of a lower bound on the Slater's parameter, or impose strong requirements on the primal and dual regret minimizers such as requiring weak adaptivity. We propose an alternative and more natural approach based on optimistic estimations of the constraints. Surprisingly, we show that estimating the constraints with an UCB-like approach guarantees optimal performances.\nOur algorithm consists of two main components: (i) a regret minimizer working on moving strategy sets and (ii) an estimate of the feasible set as an optimistic weighted empirical mean of previous samples. The key challenge in this approach is designing adaptive weights that meet the different requirements for stochastic and adversarial constraints. Our algorithm is significantly simpler than previous approaches, and has a cleaner analysis. Moreover, ours is the first best-of-both-worlds algorithm providing bounds logarithmic in the number of constraints. Additionally, in stochastic settings, it provides $\\widetilde O(\\sqrt{T})$ regret without Slater's condition.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "bandits with knapsacks",
+    "long-term constraints"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=iJgwd5mWYg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ea6f8e9d5a72b5551716d9e61e30c4c8e27ab462.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We address a generalization of the bandit with knapsacks problem, where a learner aims to maximize rewards while satisfying an arbitrary set of long-term constraints. Our goal is to design best-of-both-worlds algorithms that perform optimally under both stochastic and adversarial constraints. Previo"
+  },
+  "collected_at": "2026-03-07T17:40:48.517Z"
+}

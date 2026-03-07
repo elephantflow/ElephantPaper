@@ -1,0 +1,37 @@
+{
+  "id": "eQ6VjBhevn",
+  "or_id": "eQ6VjBhevn",
+  "title": "Frustratingly Easy Test-Time Adaptation of Vision-Language Models",
+  "title_zh": "",
+  "authors": [
+    "Matteo Farina",
+    "Gianni Franchi",
+    "Giovanni Iacca",
+    "Massimiliano Mancini",
+    "Elisa Ricci"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Vision-Language Models seamlessly discriminate among arbitrary semantic categories, yet they still suffer from poor generalization when presented with challenging examples. For this reason, Episodic Test-Time Adaptation (TTA) strategies have recently emerged as powerful techniques to adapt VLMs in the presence of a single unlabeled image. The recent literature on TTA is dominated by the paradigm of prompt tuning by Marginal Entropy Minimization, which, relying on online backpropagation, inevitably slows down inference while increasing memory. In this work, we theoretically investigate the properties of this approach and unveil that a surprisingly strong TTA method lies dormant and hidden within it. We term this approach ZERO (TTA with “zero” temperature), whose design is both incredibly effective and frustratingly simple: augment N times, predict, retain the most confident predictions, and marginalize after setting the Softmax temperature to zero. Remarkably, ZERO requires a single batched forward pass through the vision encoder only and no backward passes. We thoroughly evaluate our approach following the experimental protocol established in the literature and show that ZERO largely surpasses or compares favorably w.r.t. the state-of-the-art while being almost 10× faster and 13× more memory friendly than standard Test-Time Prompt Tuning. Thanks to its simplicity and comparatively negligible computation, ZERO can serve as a strong baseline for future work in this field. Code will be available.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Vision-Language Models",
+    "Test-Time Adaptation",
+    "Robustness",
+    "Model Calibration"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=eQ6VjBhevn",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a413cb20481bf592b5cfde568f20f62150d31655.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Vision-Language Models seamlessly discriminate among arbitrary semantic categories, yet they still suffer from poor generalization when presented with challenging examples. For this reason, Episodic Test-Time Adaptation (TTA) strategies have recently emerged as powerful techniques to adapt VLMs in t"
+  },
+  "collected_at": "2026-03-07T17:40:48.515Z"
+}

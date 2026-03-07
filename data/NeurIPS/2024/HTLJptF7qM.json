@@ -1,0 +1,38 @@
+{
+  "id": "HTLJptF7qM",
+  "or_id": "HTLJptF7qM",
+  "title": "Noisy Label Learning with Instance-Dependent Outliers: Identifiability via Crowd Wisdom",
+  "title_zh": "",
+  "authors": [
+    "Tri Nguyen",
+    "Shahana Ibrahim",
+    "Xiao Fu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "The generation of label noise is often modeled as a process involving a probability transition matrix (also interpreted as the _annotator confusion matrix_) imposed onto the label distribution. Under this model, learning the ``ground-truth classifier''---i.e., the classifier that can be learned if no noise was present---and the confusion matrix boils down to a model identification problem. Prior works along this line demonstrated appealing empirical performance, yet identifiability of the model was mostly established by assuming an instance-invariant confusion matrix. Having an (occasionally) instance-dependent confusion matrix across data samples is apparently more realistic, but inevitably introduces outliers to the model. Our interest lies in confusion matrix-based noisy label learning with such outliers taken into consideration. We begin with pointing out that under the model of interest, using labels produced by only one annotator is fundamentally insufficient to detect the outliers or identify the ground-truth classifier. Then, we prove that by employing a crowdsourcing strategy involving multiple annotators, a carefully designed loss function can establish the desired model identifiability under reasonable conditions. Our development builds upon a link between the noisy label model and a column-corrupted matrix factorization mode---based on which we show that crowdsourced annotations distinguish nominal data and instance-dependent outliers using a low-dimensional subspace. Experiments show that our learning scheme substantially improves outlier detection and the classifier's testing accuracy.",
+  "abstract_zh": "",
+  "tldr": "proposed an end-to-end noisy label learning system that provably identifies the target system (as if no label noise exists) in the presence of instance-dependent outliers.",
+  "keywords": [
+    "Noisy label",
+    "instance-dependent label noise",
+    "sample selection",
+    "end-to-end learning",
+    "identifiability",
+    "crowdsourcing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=HTLJptF7qM",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/46d266c36e09ce5345faedf1fd11f1d459037850.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "proposed an end-to-end noisy label learning system that provably identifies the target system (as if no label noise exists) in the presence of instance-dependent outliers."
+  },
+  "collected_at": "2026-03-07T17:40:48.516Z"
+}

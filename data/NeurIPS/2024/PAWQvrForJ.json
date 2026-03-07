@@ -1,0 +1,37 @@
+{
+  "id": "PAWQvrForJ",
+  "or_id": "PAWQvrForJ",
+  "title": "Membership Inference Attacks against Fine-tuned Large Language Models via Self-prompt Calibration",
+  "title_zh": "",
+  "authors": [
+    "Wenjie Fu",
+    "Huandong Wang",
+    "Chen Gao",
+    "Guanghua Liu",
+    "Yong Li",
+    "Tao Jiang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Membership Inference Attacks (MIA) aim to infer whether a target data record has been utilized for model training or not. Existing MIAs designed for large language models (LLMs) can be bifurcated into two types: reference-free and reference-based attacks. Although reference-based attacks appear promising performance by calibrating the probability measured on the target model with reference models, this illusion of privacy risk heavily depends on a reference dataset that closely resembles the training set. Both two types of attacks are predicated on the hypothesis that training records consistently maintain a higher probability of being sampled. However, this hypothesis heavily relies on the overfitting of target models, which will be mitigated by multiple regularization methods and the generalization of LLMs. Thus, these reasons lead to high false-positive rates of MIAs in practical scenarios.\nWe propose a Membership Inference Attack based on Self-calibrated Probabilistic Variation (SPV-MIA). \nSpecifically, we introduce a self-prompt approach, which constructs the dataset to fine-tune the reference model by prompting the target LLM itself. In this manner, the adversary can collect a dataset with a similar distribution from public APIs.\nFurthermore, we introduce probabilistic variation, a more reliable membership signal based on LLM memorization rather than overfitting, from which we rediscover the neighbour attack with theoretical grounding. \nComprehensive evaluation conducted on three datasets and four exemplary LLMs shows that SPV-MIA raises the AUC of MIAs from 0.7 to a significantly high level of 0.9. Our code and dataset are available at: https://github.com/tsinghua-fib-lab/NeurIPS2024_SPV-MIA",
+  "abstract_zh": "",
+  "tldr": "This work proposes a practical membership inference attack against fine-tuned large language models.",
+  "keywords": [
+    "Large Language Models",
+    "Membership Inference Attacks",
+    "Privacy and Security"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=PAWQvrForJ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e90e1d20321f69ec974ed7ba2d5e9bb2aad6e994.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This work proposes a practical membership inference attack against fine-tuned large language models."
+  },
+  "collected_at": "2026-03-07T17:40:48.518Z"
+}
