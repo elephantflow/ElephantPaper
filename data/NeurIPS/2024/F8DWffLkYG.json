@@ -1,0 +1,40 @@
+{
+  "id": "F8DWffLkYG",
+  "or_id": "F8DWffLkYG",
+  "title": "Designing Cell-Type-Specific Promoter Sequences Using Conservative Model-Based Optimization",
+  "title_zh": "",
+  "authors": [
+    "Aniketh Janardhan Reddy",
+    "Xinyang Geng",
+    "Michael H Herschl",
+    "Sathvik Kolli",
+    "Aviral Kumar",
+    "Patrick D Hsu",
+    "Sergey Levine",
+    "Nilah M Ioannidis"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Gene therapies have the potential to treat disease by delivering therapeutic genetic cargo to disease-associated cells. One limitation to their widespread use is the lack of short regulatory sequences, or promoters, that differentially induce the expression of delivered genetic cargo in target cells, minimizing side effects in other cell types. Such cell-type-specific promoters are difficult to discover using existing methods, requiring either manual curation or access to large datasets of promoter-driven expression from both targeted and untargeted cells. Model-based optimization (MBO) has emerged as an effective method to design biological sequences in an automated manner, and has recently been used in promoter design methods. However, these methods have only been tested using large training datasets that are expensive to collect, and focus on designing promoters for markedly different cell types, overlooking the complexities associated with designing promoters for closely related cell types that share similar regulatory features. Therefore, we introduce a comprehensive framework for utilizing MBO to design promoters in a data-efficient manner, with an emphasis on discovering promoters for similar cell types. We use conservative objective models (COMs) for MBO and highlight practical considerations such as best practices for improving sequence diversity, getting estimates of model uncertainty, and choosing the optimal set of sequences for experimental validation. Using three leukemia cell lines (Jurkat, K562, and THP1), we show that our approach discovers many novel cell-type-specific promoters after experimentally validating the designed sequences. For K562 cells, in particular, we discover a promoter that has 75.85\\% higher cell-type-specificity than the best promoter from the initial dataset used to train our models. Our code and data will be available at https://github.com/young-geng/promoter_design.",
+  "abstract_zh": "",
+  "tldr": "We propose a workflow to design cell-type-specific promoters while accounting for various practical considerations and demonstrate its efficacy in a difficult setting.",
+  "keywords": [
+    "ML applications",
+    "computational genomics",
+    "computational biology",
+    "model-based optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=F8DWffLkYG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7c82a9566c66dec844cc2df0e2b9ab4217206cad.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a workflow to design cell-type-specific promoters while accounting for various practical considerations and demonstrate its efficacy in a difficult setting."
+  },
+  "collected_at": "2026-03-07T23:21:59.658Z"
+}

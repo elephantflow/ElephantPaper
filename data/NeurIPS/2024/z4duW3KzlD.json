@@ -1,0 +1,31 @@
+{
+  "id": "z4duW3KzlD",
+  "or_id": "z4duW3KzlD",
+  "title": "Gated Inference Network: Inference and Learning State-Space Models",
+  "title_zh": "",
+  "authors": [
+    "Hamidreza Hashempoor",
+    "Wan Choi"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This paper advances temporal reasoning within dynamically changing high-dimensional noisy observations, focusing on a latent space that characterizes the nonlinear dynamics of objects in their environment. We introduce the *Gated Inference Network* (GIN), an efficient approximate Bayesian inference algorithm for state space models (SSMs) with nonlinear state transitions and emissions. GIN disentangles two latent representations: one representing the object derived from a nonlinear mapping model, and another representing the latent state describing its dynamics. This disentanglement enables direct state estimation and missing data imputation as the world evolves. To infer the latent state, we utilize a deep extended Kalman filter (EKF) approach that integrates a novel compact RNN structure to compute both the Kalman Gain (KG) and smoothing gain (SG), completing the data flow. This design results in a computational cost per step that is linearly faster than EKF but introduces issues such as the exploding gradient problem. To mitigate the exploding gradients caused by the compact RNN structure in our model, we propose a specialized learning method that ensures stable training and inference. The model is then trained end-to-end on videos depicting a diverse range of simulated and real-world physical systems, and outperforms its ounterparts —RNNs, autoregressive models, and variational approaches— in state estimation and missing data imputation tasks.",
+  "abstract_zh": "",
+  "tldr": "Our algorithm efficiently models dynamical systems by observing high-dimensional noise-affected data, outperforming state-of-the-art counterparts in state estimation and image imputation tasks.",
+  "keywords": [
+    "Time Series and Recurrent Networks"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=z4duW3KzlD",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b60e4a43045e2eeab67a3948852e749fe455f871.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Our algorithm efficiently models dynamical systems by observing high-dimensional noise-affected data, outperforming state-of-the-art counterparts in state estimation and image imputation tasks."
+  },
+  "collected_at": "2026-03-07T23:21:59.653Z"
+}

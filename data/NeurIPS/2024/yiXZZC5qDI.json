@@ -1,0 +1,39 @@
+{
+  "id": "yiXZZC5qDI",
+  "or_id": "yiXZZC5qDI",
+  "title": "From Trojan Horses to Castle Walls: Unveiling Bilateral Data Poisoning Effects in Diffusion Models",
+  "title_zh": "",
+  "authors": [
+    "Zhuoshi Pan",
+    "Yuguang Yao",
+    "Gaowen Liu",
+    "Bingquan Shen",
+    "H. Vicky Zhao",
+    "Ramana Rao Kompella",
+    "Sijia Liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "While state-of-the-art diffusion models (DMs) excel in image generation, concerns regarding their security persist. Earlier research highlighted DMs' vulnerability to data poisoning attacks, but these studies placed stricter requirements than conventional methods like 'BadNets' in image classification. This is because the art necessitates modifications to the diffusion training and sampling procedures. Unlike the prior work, we investigate whether BadNets-like data poisoning methods can directly degrade the generation by DMs. In other words, if only the training dataset is contaminated (without manipulating the diffusion process), how will this affect the performance of learned DMs? In this setting, we uncover bilateral data poisoning effects that not only serve an adversarial purpose (compromising the functionality of DMs) but also offer a defensive advantage (which can be leveraged for defense in classification tasks against poisoning attacks). We show that a BadNets-like data poisoning attack remains effective in DMs for producing incorrect images (misaligned with the intended text conditions). Meanwhile, poisoned DMs exhibit an increased ratio of triggers, a phenomenon we refer to as 'trigger amplification', among the generated images. This insight can be then used to enhance the detection of poisoned training data. In addition, even under a low poisoning ratio, studying the poisoning effects of DMs is also valuable for designing robust image classifiers against such attacks. Last but not least, we establish a meaningful linkage between data poisoning and the phenomenon of data replications by exploring DMs' inherent data memorization tendencies. Code is available at https://github.com/OPTML-Group/BiBadDiff.",
+  "abstract_zh": "",
+  "tldr": "We reveal the bilateral data poisoning effects in diffusion models when the training data is poisoned like BadNets.",
+  "keywords": [
+    "Diffusion model",
+    "data poisoning",
+    "data replication",
+    "diffusion classifier"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=yiXZZC5qDI",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/85b57c5d8bead49ab7cc6ae03009e613abc6dd86.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We reveal the bilateral data poisoning effects in diffusion models when the training data is poisoned like BadNets."
+  },
+  "collected_at": "2026-03-07T23:21:59.659Z"
+}

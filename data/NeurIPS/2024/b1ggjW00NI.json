@@ -1,0 +1,38 @@
+{
+  "id": "b1ggjW00NI",
+  "or_id": "b1ggjW00NI",
+  "title": "Don't Look Twice: Faster Video Transformers with Run-Length Tokenization",
+  "title_zh": "",
+  "authors": [
+    "Rohan Choudhury",
+    "Guanglei Zhu",
+    "Sihan Liu",
+    "Koichiro Niinuma",
+    "Kris M. Kitani",
+    "Laszlo Attila Jeni"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Video transformers are slow to train due to extremely large numbers of input tokens, even though many video tokens are repeated over time. Existing methods to remove uninformative tokens either have significant overhead, negating any speedup, or require tuning for different datasets and examples. We present Run-Length Tokenization (RLT), a simple approach to speed up video transformers inspired by run-length encoding for data compression. RLT efficiently finds and removes `runs' of patches that are repeated over time before model inference, then replaces them with a single patch and a positional encoding to represent the resulting token's new length. \nOur method is content-aware, requiring no tuning for different datasets, and fast, incurring negligible overhead. \nRLT yields a large speedup in training, reducing the wall-clock time to fine-tune a video transformer by 30% while matching baseline model performance. RLT also works without training, increasing model throughput by 35% with only 0.1% drop in accuracy.\nRLT speeds up training at 30 FPS by more than 100%, and on longer video datasets, can reduce the token count by up to 80\\%. Our project page is at  rccchoudhury.github.io/projects/rlt.",
+  "abstract_zh": "",
+  "tldr": "We make transformers 40% faster on video, with no performance drop, by identifying consecutive runs of tokens repeated in time, and treating them as a single token with variable length.",
+  "keywords": [
+    "video understanding",
+    "vision transformers",
+    "efficient transformers"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=b1ggjW00NI",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/dd99432c8f2dff551850e041e3841a2d75932e8c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We make transformers 40% faster on video, with no performance drop, by identifying consecutive runs of tokens repeated in time, and treating them as a single token with variable length."
+  },
+  "collected_at": "2026-03-07T23:21:59.659Z"
+}

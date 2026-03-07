@@ -1,0 +1,35 @@
+{
+  "id": "ciwOcmo8CC",
+  "or_id": "ciwOcmo8CC",
+  "title": "IF-Font: Ideographic Description Sequence-Following Font Generation",
+  "title_zh": "",
+  "authors": [
+    "Xinping Chen",
+    "Xiao Ke",
+    "Wenzhong Guo"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Few-shot font generation (FFG) aims to learn the target style from a limited number of reference glyphs and generate the remaining glyphs in the target font. Previous works focus on disentangling the content and style features of glyphs, combining the content features of the source glyph with the style features of the reference glyph to generate new glyphs. However, the disentanglement is challenging due to the complexity of glyphs, often resulting in glyphs that are influenced by the style of the source glyph and prone to artifacts. We propose IF-Font, a novel paradigm which incorporates Ideographic Description Sequence (IDS) instead of the source glyph to control the semantics of generated glyphs. To achieve this, we quantize the reference glyphs into tokens, and model the token distribution of target glyphs using corresponding IDS and reference tokens. The proposed method excels in synthesizing glyphs with neat and correct strokes, and enables the creation of new glyphs based on provided IDS. Extensive experiments demonstrate that our method greatly outperforms state-of-the-art methods in both one-shot and few-shot settings, particularly when the target styles differ significantly from the training font styles. The code is available at [https://github.com/Stareven233/IF-Font](https://github.com/Stareven233/IF-Font).",
+  "abstract_zh": "",
+  "tldr": "IF-Font uses Ideographic Description Sequence as the semantic condition instead of the content image, outperforming all state-of-the-art methods in the few-shot font generation task.",
+  "keywords": [
+    "Font Generation",
+    "Vector Quantization",
+    "Ideographic Description Sequence",
+    "Multimodal"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ciwOcmo8CC",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b0334ebe147238a883c0aea6c9ab0d305968699f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "IF-Font uses Ideographic Description Sequence as the semantic condition instead of the content image, outperforming all state-of-the-art methods in the few-shot font generation task."
+  },
+  "collected_at": "2026-03-07T23:21:59.658Z"
+}

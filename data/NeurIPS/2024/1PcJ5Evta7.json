@@ -1,0 +1,41 @@
+{
+  "id": "1PcJ5Evta7",
+  "or_id": "1PcJ5Evta7",
+  "title": "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment",
+  "title_zh": "",
+  "authors": [
+    "Jiongxiao Wang",
+    "Jiazhao Li",
+    "Yiquan Li",
+    "Xiangyu Qi",
+    "Junjie Hu",
+    "Yixuan Li",
+    "Patrick McDaniel",
+    "Muhao Chen",
+    "Bo Li",
+    "Chaowei Xiao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Despite the general capabilities of Large Language Models (LLMs) like GPT-4, these models still request fine-tuning or adaptation with customized data when meeting the specific business demands and intricacies of tailored use cases. However, this process inevitably introduces new safety threats, particularly against the Fine-tuning based Jailbreak Attack (FJAttack) under the setting of Language-Model-as-a-Service (LMaaS), where the model's safety has been significantly compromised by fine-tuning on users' uploaded examples that contain just a few harmful examples. Though potential defenses have been proposed that the service providers of LMaaS can integrate safety examples into the fine-tuning dataset to reduce safety issues, such approaches require incorporating a substantial amount of data, making it inefficient. To effectively defend against the FJAttack with limited safety examples under LMaaS, we propose the Backdoor Enhanced Safety Alignment method inspired by an analogy with the concept of backdoor attacks. In particular, service providers will construct prefixed safety examples with a secret prompt, acting as a \"backdoor trigger\". By integrating prefixed safety examples into the fine-tuning dataset, the subsequent fine-tuning process effectively acts as the \"backdoor attack\", establishing a strong correlation between the secret prompt and safety generations. Consequently, safe responses are ensured once service providers prepend this secret prompt ahead of any user input during inference. Our comprehensive experiments demonstrate that through the Backdoor Enhanced Safety Alignment with adding as few as 11 prefixed safety examples, the maliciously fine-tuned LLMs will achieve similar safety performance as the original aligned models without harming the benign performance. Furthermore, we also present the effectiveness of our method in a more practical setting where the fine-tuning data consists of both FJAttack examples and the fine-tuning task data.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Fine-tuning based Jailbreak Attack",
+    "Backdoor Attack",
+    "Safety Alignment for Large Language Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=1PcJ5Evta7",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b6772b000aff21f7ba1c6ad5acf2bf0da00a9d81.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Despite the general capabilities of Large Language Models (LLMs) like GPT-4, these models still request fine-tuning or adaptation with customized data when meeting the specific business demands and intricacies of tailored use cases. However, this process inevitably introduces new safety threats, par"
+  },
+  "collected_at": "2026-03-07T23:21:59.655Z"
+}

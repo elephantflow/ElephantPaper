@@ -1,0 +1,37 @@
+{
+  "id": "raABeiV71j",
+  "or_id": "raABeiV71j",
+  "title": "Loki: Low-rank Keys for Efficient Sparse Attention",
+  "title_zh": "",
+  "authors": [
+    "Prajwal Singhania",
+    "Siddharth Singh",
+    "Shwai He",
+    "Soheil Feizi",
+    "Abhinav Bhatele"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Inference on large language models (LLMs) can be expensive in terms of the\ncompute and memory costs involved, especially when long sequence lengths are\nused. In particular, the self-attention mechanism used in LLM inference contributes\nsignificantly to these costs, which has sparked an interest in approximating the self-attention \ncomputation to reduce such costs. In this work, we propose to approximate\nself-attention by focusing on the dimensionality of key vectors computed in the\nattention block. Our analysis reveals that key vectors lie in a significantly lower-dimensional \nspace, consistently across several datasets and models. Exploiting this\nobservation, we propose Loki, a novel sparse attention method that ranks and selects\ntokens in the KV-cache based on attention scores computed in low-dimensional\nspace. Our evaluations show that Loki is able to speed up the attention computation\ndue to reduced data movement (load/store) and compute costs while maintaining\nthe efficacy of the models better than other popular approximation methods.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Approximate Attention",
+    "Low-Dimensional Attention Keys",
+    "PCA",
+    "Top-K Attention"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=raABeiV71j",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/939725a4a0f7f31a1b9da256a3877e3c8fbde4bc.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Inference on large language models (LLMs) can be expensive in terms of the\ncompute and memory costs involved, especially when long sequence lengths are\nused. In particular, the self-attention mechanism used in LLM inference contributes\nsignificantly to these costs, which has sparked an interest in a"
+  },
+  "collected_at": "2026-03-07T23:21:59.654Z"
+}
