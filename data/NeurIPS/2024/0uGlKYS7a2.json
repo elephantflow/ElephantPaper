@@ -1,0 +1,32 @@
+{
+  "id": "0uGlKYS7a2",
+  "or_id": "0uGlKYS7a2",
+  "title": "Maximizing utility in multi-agent environments by anticipating the behavior of other learners",
+  "title_zh": "通过预测其他学习者的行为最大化多智能体环境的效用",
+  "authors": [
+    "Angelos Assos",
+    "Yuval Dagan",
+    "Constantinos Costis Daskalakis"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Learning algorithms are often used to make decisions in sequential decision-making environments. In multi-agent settings, the decisions of each agent can affect the utilities/losses of the other agents. Therefore, if an agent is good at anticipating the behavior of the other agents, in particular how they will make decisions in each round as a function of their experience that far, it could try to judiciously make its own decisions over the rounds of the interaction so as to influence the other agents to behave in a way that ultimately benefits its own utility. In this paper, we study repeated two-player games involving two types of agents: a learner, which employs an online learning algorithm to choose its strategy in each round; and an optimizer, which knows the learner's utility function and the learner's online learning algorithm. The optimizer wants to plan ahead to maximize its own utility, while taking into account the learner's behavior. We provide two results: a positive result for repeated zero-sum games and a negative result for repeated general-sum games. Our positive result is an algorithm for the optimizer, which exactly maximizes its utility against a learner that plays the Replicator Dynamics --- the continuous-time analogue of Multiplicative Weights Update (MWU). Additionally, we use this result to provide an algorithm for the optimizer against MWU, i.e.~for the discrete-time setting, which guarantees an average utility for the optimizer that is higher than the value of the one-shot game. Our negative result shows that, unless P=NP, there is no Fully Polynomial Time Approximation Scheme (FPTAS) for maximizing the utility of an optimizer against a learner that best-responds to the history in each round. Yet, this still leaves open the question of whether there exists a polynomial-time algorithm that optimizes the utility up to $o(T)$.",
+  "abstract_zh": "学习算法通常用于序贯决策环境中做出决策。",
+  "tldr": "",
+  "keywords": [
+    "Game Theory; no regret; learning theory;"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=0uGlKYS7a2",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9d44235bc1b65c1b1ffa69d5cb4b2dc6095fe32b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Learning algorithms are often used to make decisions in sequential decision-making environments. In multi-agent settings, the decisions of each agent can affect the utilities/losses of the other agents. Therefore, if an agent is good at anticipating the behavior of the other agents, in particular ho"
+  },
+  "collected_at": "2026-03-07T11:20:32.835Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "ceIO1w0PmT",
+  "or_id": "ceIO1w0PmT",
+  "title": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+  "title_zh": "OmniJARVIS：统一视觉-语言-动作分词实现开放世界指令跟随智能体",
+  "authors": [
+    "Zihao Wang",
+    "Shaofei Cai",
+    "Zhancun Mu",
+    "Haowei Lin",
+    "Ceyao Zhang",
+    "Xuejie Liu",
+    "Qing Li",
+    "Anji Liu",
+    "Xiaojian Ma",
+    "Yitao Liang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This paper presents OmniJARVIS, a novel Vision-Language-Action (VLA) model for open-world instruction-following agents in Minecraft. Compared to prior works that either emit textual goals to separate controllers or produce the control command directly, OmniJARVIS seeks a different path to ensure both strong reasoning and efficient decision-making capabilities via unified tokenization of multimodal interaction data. First, we introduce a self-supervised approach to learn a behavior encoder that produces discretized tokens for behavior trajectories $\\tau = \\{o_0, a_0, \\dots\\}$ and an imitation learning policy decoder conditioned on these tokens. These additional behavior tokens will be augmented to the vocabulary of pretrained Multimodal Language Models. With this encoder, we then pack long-term multimodal interactions involving task instructions, memories, thoughts, observations, textual responses, behavior trajectories, etc into unified token sequences and model them with autoregressive transformers. Thanks to the semantically meaningful behavior tokens, the resulting VLA model, OmniJARVIS, can reason (by producing chain-of-thoughts), plan, answer questions, and act (by producing behavior tokens for the imitation learning policy decoder). OmniJARVIS demonstrates excellent performances on a comprehensive collection of atomic, programmatic, and open-ended tasks in open-world Minecraft. Our analysis further unveils the crucial design principles in interaction data formation, unified tokenization, and its scaling potentials. The dataset, models, and code will be released at https://craftjarvis.org/OmniJARVIS.",
+  "abstract_zh": "本文提出了OmniJARVIS，一种用于Minecraft中开放世界指令跟随智能体的新颖视觉-语言-动作模型。",
+  "tldr": "We propose a novel VLA models, OmniJARIVS, by jointly modeling vision, language and action in multimodal interaction data.",
+  "keywords": [
+    "open-world",
+    "multimodal language model",
+    "decision making",
+    "generalist agents"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ceIO1w0PmT",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ddeadd0a0f414f149584c3302604f8bcd7f0f50a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel VLA models, OmniJARIVS, by jointly modeling vision, language and action in multimodal interaction data."
+  },
+  "collected_at": "2026-03-07T11:20:32.834Z"
+}

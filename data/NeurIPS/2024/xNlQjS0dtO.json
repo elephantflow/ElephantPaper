@@ -1,0 +1,36 @@
+{
+  "id": "xNlQjS0dtO",
+  "or_id": "xNlQjS0dtO",
+  "title": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+  "title_zh": "保持微调后LLMs的对齐状态：提示模板的关键作用",
+  "authors": [
+    "Kaifeng Lyu",
+    "Haoyu Zhao",
+    "Xinran Gu",
+    "Dingli Yu",
+    "Anirudh Goyal",
+    "Sanjeev Arora"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Public LLMs such as the Llama 2-Chat underwent alignment training and were considered safe. Recently Qi et al. (2024) reported that even benign fine-tuning on seemingly safe datasets can give rise to unsafe behaviors in the models. The current paper is about methods and best practices to mitigate such loss of alignment. We focus on the setting where a public model is fine-tuned before serving users for specific usage, where the model should improve on the downstream task while maintaining alignment. Through extensive experiments on several chat models (Meta's Llama 2-Chat, Mistral AI's Mistral 7B Instruct v0.2, and OpenAI's GPT-3.5 Turbo), this paper uncovers that the prompt templates used during fine-tuning and inference play a crucial role in preserving safety alignment, and proposes the “Pure Tuning, Safe Testing” (PTST) strategy --- fine-tune models without a safety prompt, but include it at test time. This seemingly counterintuitive strategy incorporates an intended distribution shift to encourage alignment preservation. Fine-tuning experiments on GSM8K, ChatDoctor, and OpenOrca show that PTST significantly reduces the rise of unsafe behaviors.",
+  "abstract_zh": "以Llama 2-Chat为代表的公开LLMs经过对齐训练并被认为是安全的。",
+  "tldr": "To address the issue that fine-tuning an aligned model degrades safety, we introduce the “Pure Tune, Safe Test” (PTST) Principle: fine-tune models without a safety prompt, but include it at test time.",
+  "keywords": [
+    "safety prompt",
+    "AI alignment"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=xNlQjS0dtO",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/beb490ad102910ffee423d69bbff98080fde654b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "To address the issue that fine-tuning an aligned model degrades safety, we introduce the “Pure Tune, Safe Test” (PTST) Principle: fine-tune models without a safety prompt, but include it at test time."
+  },
+  "collected_at": "2026-03-07T11:20:32.833Z"
+}
