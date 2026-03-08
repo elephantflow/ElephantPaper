@@ -1,0 +1,37 @@
+{
+  "id": "lZY9u0ijP7",
+  "or_id": "lZY9u0ijP7",
+  "title": "Cascade Speculative Drafting for Even Faster LLM Inference",
+  "title_zh": "",
+  "authors": [
+    "Ziyi Chen",
+    "Xiaocong Yang",
+    "Jiacheng Lin",
+    "Chenkai Sun",
+    "Kevin Chang",
+    "Jie Huang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Introduced to enhance the efficiency of large language model (LLM) inference, speculative decoding operates by having a smaller model generate a draft. A larger target model then reviews this draft to align with its output, and any acceptance by the target model results in a reduction of the number of the target model runs, ultimately improving efficiency. However, the drafting process in speculative decoding includes slow autoregressive generation and allocates equal time to generating tokens, irrespective of their importance. These inefficiencies collectively contribute to the suboptimal performance of speculative decoding. To further improve LLM inference, we introduce Cascade Speculative Drafting (CS Drafting), a speculative execution algorithm that incorporates two types of cascades. The *Vertical Cascade* eliminates autoregressive generation from neural models, while the *Horizontal Cascade* optimizes time allocation in drafting for improved efficiency. Combining both cascades, CS Drafting achieves greater speedup compared to the baselines in our experiments, while preserving the same output distribution as the target model. Our code is publicly available at https://github.com/lfsszd/CS-Drafting.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Speculative Decoding",
+    "Large Language Models",
+    "Efficient NLP"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=lZY9u0ijP7",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7d6cf3bf7fac4f5e70a8ef98098a47f541169c34.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Introduced to enhance the efficiency of large language model (LLM) inference, speculative decoding operates by having a smaller model generate a draft. A larger target model then reviews this draft to align with its output, and any acceptance by the target model results in a reduction of the number "
+  },
+  "collected_at": "2026-03-08T00:02:22.731Z"
+}

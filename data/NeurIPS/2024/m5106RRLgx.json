@@ -1,0 +1,36 @@
+{
+  "id": "m5106RRLgx",
+  "or_id": "m5106RRLgx",
+  "title": "Are More LLM Calls All You Need? Towards the Scaling Properties of Compound AI Systems",
+  "title_zh": "",
+  "authors": [
+    "Lingjiao Chen",
+    "Jared Quincy Davis",
+    "Boris Hanin",
+    "Peter Bailis",
+    "Ion Stoica",
+    "Matei Zaharia",
+    "James Zou"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Many recent state-of-the-art results in language tasks were achieved using compound systems that perform multiple Language Model (LM) calls and aggregate their responses. However, there is little understanding of how the number of LM calls -- e.g., when asking the LM to answer each question multiple times and taking a majority vote -- affects such a compound system's performance. In this paper, we initiate the study of scaling properties of compound inference systems. We analyze, theoretically and empirically, how the number of LM calls affects the performance of Vote and Filter-Vote, two of the simplest compound system designs, which aggregate LM responses via majority voting, optionally applying LM filters. We find, surprisingly, that across multiple language tasks, the performance of both Vote and Filter-Vote can first increase but then decrease as a function of the number of LM calls. Our theoretical results suggest that this non-monotonicity is due to the diversity of query difficulties within a task: more LM calls lead to higher performance on \"easy\" queries, but lower performance on \"hard\" queries, and non-monotone behavior can emerge when a task contains both types of queries. This insight then allows us to compute, from a small number of samples, the number of LM calls that maximizes system performance, and define an analytical scaling model for both systems. Experiments show that our scaling model can accurately predict the performance of Vote and Filter-Vote systems and thus find the optimal number of LM calls to make.",
+  "abstract_zh": "",
+  "tldr": "We study the scaling properties of compound inference systems both theoretically and empirically",
+  "keywords": [
+    "Scaling Laws; Compound AI systems; language models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=m5106RRLgx",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/933389eba2d451a433d83e7d55975efe12b0a17b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study the scaling properties of compound inference systems both theoretically and empirically"
+  },
+  "collected_at": "2026-03-08T00:02:22.732Z"
+}

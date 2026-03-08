@@ -1,0 +1,36 @@
+{
+  "id": "pNnvzQsS4P",
+  "or_id": "pNnvzQsS4P",
+  "title": "KV Cache is 1 Bit Per Channel: Efficient Large Language Model Inference with Coupled Quantization",
+  "title_zh": "",
+  "authors": [
+    "Tianyi Zhang",
+    "Jonah Wonkyu Yi",
+    "Zhaozhuo Xu",
+    "Anshumali Shrivastava"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Efficient deployment of Large Language Models (LLMs) requires batching multiple requests together to improve throughput. As batch size, context length, or model size increases, the size of key and value (KV) cache quickly becomes the main contributor to GPU memory usage and the bottleneck of inference latency and throughput. Quantization has emerged as an effective technique for KV cache compression, but existing methods still fail at very low bit widths. Currently, KV cache quantization is performed per-channel or per-token independently. Our analysis shows that distinct channels of a key/value activation embedding are highly interdependent, and the joint entropy of multiple channels grows at a slower rate than the sum of their marginal entropy, which implies that per-channel independent quantization is sub-optimal. To mitigate this sub-optimality, we propose Coupled Quantization (CQ), which couples multiple key/value channels together for quantization to exploit their interdependence and encode the activations in a more information-efficient manner. Extensive experiments reveal that CQ compares favorably with existing baselines in preserving model quality, and improves inference throughput by 1.4–3.5$\\times$ relative to the uncompressed baseline. Furthermore, we demonstrate that CQ can preserve model quality reasonably with KV cache quantized down to 1 bit.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "large language model",
+    "efficiency",
+    "kv cache",
+    "quantization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=pNnvzQsS4P",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/cc83819e3c2ee5e47a2a7f0f28eb98ada7deb1ce.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Efficient deployment of Large Language Models (LLMs) requires batching multiple requests together to improve throughput. As batch size, context length, or model size increases, the size of key and value (KV) cache quickly becomes the main contributor to GPU memory usage and the bottleneck of inferen"
+  },
+  "collected_at": "2026-03-08T00:02:22.731Z"
+}

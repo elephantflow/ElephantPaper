@@ -1,0 +1,39 @@
+{
+  "id": "eAqcVZx30k",
+  "or_id": "eAqcVZx30k",
+  "title": "Is the MMI Criterion Necessary for Interpretability? Degenerating Non-causal Features to Plain Noise for Self-Rationalization",
+  "title_zh": "",
+  "authors": [
+    "Wei Liu",
+    "Zhiying Deng",
+    "Zhongyu Niu",
+    "Jun Wang",
+    "Haozhao Wang",
+    "YuanKai Zhang",
+    "Ruixuan Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "An important line of research in the field of explainability is to extract a small subset of crucial rationales from the full input. The most widely used criterion for rationale extraction is the maximum mutual information (MMI) criterion. However, in certain datasets, there are spurious features non-causally correlated with the label and also get high mutual information, complicating the loss landscape of MMI. Although some penalty-based methods have been developed to penalize the spurious features (e.g., invariance penalty, intervention penalty, etc) to help MMI work better, these are merely remedial measures. \nIn the optimization objectives of these methods, spurious features are still distinguished from plain noise, which hinders the discovery of causal rationales. \nThis paper aims to develop a new criterion that treats spurious features as plain noise, allowing the model to work on datasets rich in spurious features as if it were working on clean datasets, thereby making rationale extraction easier.\nWe theoretically observe that removing either plain noise or spurious features from the input does not alter the conditional distribution of the remaining components relative to the task label. However, significant changes in the conditional distribution occur only when causal features are eliminated.\nBased on this discovery, the paper proposes a criterion for \\textbf{M}aximizing the \\textbf{R}emaining \\textbf{D}iscrepancy (MRD). Experiments on six widely used datasets show that our MRD criterion improves rationale quality (measured by the overlap with human-annotated rationales) by up to $10.4\\%$ as compared to several recent competitive MMI variants.  Code: \\url{https://github.com/jugechengzi/Rationalization-MRD}.",
+  "abstract_zh": "",
+  "tldr": "A simple yet effective method to identify causal rationales.",
+  "keywords": [
+    "interpretability",
+    "data cleaning",
+    "causality",
+    "mutual information"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=eAqcVZx30k",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2081235c67059bc2acdc065ef0fcce259f7eb1b5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A simple yet effective method to identify causal rationales."
+  },
+  "collected_at": "2026-03-08T00:02:22.732Z"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "4xDxVQHsbZ",
+  "or_id": "4xDxVQHsbZ",
+  "title": "NoMAD-Attention: Efficient LLM Inference on CPUs Through Multiply-add-free Attention",
+  "title_zh": "",
+  "authors": [
+    "Tianyi Zhang",
+    "Jonah Wonkyu Yi",
+    "Bowen Yao",
+    "Zhaozhuo Xu",
+    "Anshumali Shrivastava"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large Language Model (LLM) inference on Central Processing Units (CPU) is challenging due to the vast quantities of  Multiply-Add (MAD) matrix operations in the attention computations. This paper highlights a rare gem in modern CPUs, Single-Instruction-Multiple-Data (SIMD) registers, which allows for ultra-low-latency lookups in a batch. We leverage this unique capability to propose NoMAD-Attention, an efficient attention algorithm that replaces MAD operations with in-register lookups. Through hardware-aware algorithmic designs, NoMAD-Attention achieves the computation of attention scores using repeated fast accesses to SIMD registers. NoMAD-Attention works with pre-trained attention-based LLMs without model finetuning. Extensive empirical evaluations demonstrate that NoMAD-Attention maintains the quality of the original LLMs well and speeds up the 4-bit quantized LLaMA-7B-based model by up to $2 \\times$ at 16k context length.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "large language model",
+    "efficiency",
+    "CPU inference",
+    "attention"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=4xDxVQHsbZ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/68372dd1d74a348f9569575a9907e59741292fab.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Large Language Model (LLM) inference on Central Processing Units (CPU) is challenging due to the vast quantities of  Multiply-Add (MAD) matrix operations in the attention computations. This paper highlights a rare gem in modern CPUs, Single-Instruction-Multiple-Data (SIMD) registers, which allows fo"
+  },
+  "collected_at": "2026-03-08T00:02:22.729Z"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "hW5QWiCctl",
+  "or_id": "hW5QWiCctl",
+  "title": "GraphMorph: Tubular Structure Extraction by Morphing Predicted Graphs",
+  "title_zh": "",
+  "authors": [
+    "Zhao Zhang",
+    "Ziwei Zhao",
+    "Dong Wang",
+    "Liwei Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Accurately restoring topology is both challenging and crucial in tubular structure extraction tasks, such as blood vessel segmentation and road network extraction. Diverging from traditional approaches based on pixel-level classification, our proposed method, named GraphMorph, focuses on branch-level features of tubular structures to achieve more topologically accurate predictions. GraphMorph comprises two main components: a Graph Decoder and a Morph Module. Utilizing multi-scale features extracted from an image patch by the segmentation network, the Graph Decoder facilitates the learning of branch-level features and generates a graph that accurately represents the tubular structure in this patch. The Morph Module processes two primary inputs: the graph and the centerline probability map, provided by the Graph Decoder and the segmentation network, respectively. Employing a novel SkeletonDijkstra algorithm, the Morph Module produces a centerline mask that aligns with the predicted graph. Furthermore, we observe that employing centerline masks predicted by GraphMorph significantly reduces false positives in the segmentation task, which is achieved by a simple yet effective post-processing strategy. The efficacy of our method in the centerline extraction and segmentation tasks has been substantiated through experimental evaluations across various datasets. Source code will be released soon.",
+  "abstract_zh": "",
+  "tldr": "We propose GraphMorph, which enhances tubular structure extraction by focusing on branch-level features, using a Graph Decoder and Morph Module to achieve topologically accurate predictions, and demonstrating effectiveness across multiple datasets.",
+  "keywords": [
+    "Image Segmentation",
+    "Tubular Structure Extraction",
+    "Branch-level Features",
+    "Graph Representation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hW5QWiCctl",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1c697327e7b2306dcb3fa000f7f7712661179b29.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose GraphMorph, which enhances tubular structure extraction by focusing on branch-level features, using a Graph Decoder and Morph Module to achieve topologically accurate predictions, and demonstrating effectiveness across multiple datasets."
+  },
+  "collected_at": "2026-03-08T00:02:22.732Z"
+}

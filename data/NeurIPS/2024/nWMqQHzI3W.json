@@ -1,0 +1,36 @@
+{
+  "id": "nWMqQHzI3W",
+  "or_id": "nWMqQHzI3W",
+  "title": "SEEV: Synthesis with Efficient Exact Verification for ReLU Neural Barrier Functions",
+  "title_zh": "",
+  "authors": [
+    "Hongchao Zhang",
+    "Zhizhen Qin",
+    "Sicun Gao",
+    "Andrew Clark"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Neural Control Barrier Functions (NCBFs) have shown significant promise in enforcing safety constraints on nonlinear autonomous systems. State-of-the-art exact approaches to verifying safety of NCBF-based controllers exploit the piecewise-linear structure of ReLU neural networks, however, such approaches still rely on enumerating all of the activation regions of the network near the safety boundary, thus incurring high computation cost. In this paper, we propose a framework for Synthesis with Efficient Exact Verification (SEEV). Our framework consists of two components, namely (i) an NCBF synthesis algorithm that introduces a novel regularizer to reduce the number of activation regions at the safety boundary, and (ii) a verification algorithm that exploits tight over-approximations of the safety conditions to reduce the cost of verifying each piecewise-linear segment. Our simulations show that SEEV significantly improves verification efficiency while maintaining the CBF quality across various benchmark systems and neural network structures. Our code is available at https://github.com/HongchaoZhang-HZ/SEEV.",
+  "abstract_zh": "",
+  "tldr": "This paper proposes a ReLU NCBF synthesis framework with efficient exact verification for robotic safety. Key insights: ReLU NCBF can be verified in linear pieces, boundary pieces are safety-critical, and limiting them improves efficiency.",
+  "keywords": [
+    "Safe Control",
+    "Barrier Functions",
+    "Control Barrier Functions",
+    "Neural Networks"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=nWMqQHzI3W",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8c8be656daa65c9db0d7eaaf0f5e2cbcf3137202.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper proposes a ReLU NCBF synthesis framework with efficient exact verification for robotic safety. Key insights: ReLU NCBF can be verified in linear pieces, boundary pieces are safety-critical, and limiting them improves efficiency."
+  },
+  "collected_at": "2026-03-08T00:02:22.730Z"
+}
