@@ -1,0 +1,36 @@
+{
+  "id": "TNEmAgwoXR",
+  "or_id": "TNEmAgwoXR",
+  "title": "Confident Natural Policy Gradient for Local Planning in  $q_\\pi$-realizable Constrained MDPs",
+  "title_zh": "",
+  "authors": [
+    "Tian Tian",
+    "Lin Yang",
+    "Csaba Szepesvari"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The constrained Markov decision process (CMDP) framework emerges as an important reinforcement learning approach for imposing safety or other critical objectives while maximizing cumulative reward. However, the current understanding of how to learn efficiently in a CMDP environment with a potentially infinite number of states remains under investigation, particularly when function approximation is applied to the value functions. In this paper, we address the learning problem given linear function approximation with $q_{\\pi}$-realizability, where the value functions of all policies are linearly representable with a known feature map, a setting known to be more general and challenging than other linear settings. Utilizing a local-access model, we propose a novel primal-dual algorithm that, after $\\tilde{O}(\\text{poly}(d) \\epsilon^{-3})$ iterations, outputs with high probability a policy that strictly satisfies the constraints while nearly optimizing the value with respect to a reward function. Here, $d$ is the feature dimension and $\\epsilon > 0$ is a given  error. The algorithm relies on a carefully crafted off-policy evaluation procedure to evaluate the policy using historical data, which informs policy updates through policy gradients and conserves samples. To our knowledge, this is the first result achieving polynomial sample complexity for CMDP in the $q_{\\pi}$-realizable setting.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "reinforcement learning",
+    "constrained MDP",
+    "sample complexity",
+    "q-pi realizability",
+    "local planning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=TNEmAgwoXR",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/80537cc2d8158e44365a07fb628cd5cecbc61032.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The constrained Markov decision process (CMDP) framework emerges as an important reinforcement learning approach for imposing safety or other critical objectives while maximizing cumulative reward. However, the current understanding of how to learn efficiently in a CMDP environment with a potentiall"
+  },
+  "collected_at": "2026-03-08T01:42:12.106Z"
+}

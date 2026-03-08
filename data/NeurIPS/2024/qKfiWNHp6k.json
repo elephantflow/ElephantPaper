@@ -1,0 +1,35 @@
+{
+  "id": "qKfiWNHp6k",
+  "or_id": "qKfiWNHp6k",
+  "title": "Recognize Any Regions",
+  "title_zh": "",
+  "authors": [
+    "Haosen Yang",
+    "Chuofan Ma",
+    "Bin Wen",
+    "Yi Jiang",
+    "Zehuan Yuan",
+    "Xiatian Zhu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Understanding the semantics of individual regions or patches of unconstrained images, such as open-world object detection, remains a critical yet challenging task in computer vision. Building on the success of powerful image-level vision-language (ViL) foundation models like CLIP, recent efforts have sought to harness their capabilities by either training a contrastive model from scratch with an extensive collection of region-label pairs or aligning the outputs of a detection model with image-level representations of region proposals. Despite notable progress, these approaches are plagued by computationally intensive training requirements, susceptibility to data noise, \nand deficiency in contextual information. To address these limitations, we explore the synergistic potential of off-the-shelf foundation models, leveraging their respective strengths in localization and semantics. We introduce a novel, generic, and efficient architecture, named RegionSpot, designed to integrate position-aware localization knowledge from a localization foundation model (e.g., SAM) with semantic information from a ViL model (e.g., CLIP). To fully exploit pretrained knowledge while minimizing training overhead, we keep both foundation models frozen, focusing optimization efforts solely on a lightweight attention-based knowledge integration module.\nExtensive experiments in open-world object recognition show that our  RegionSpot achieves significant performance gain over prior alternatives, along with substantial computational savings (e.g., training our model with 3 million data in a single day using 8 V100 GPUs). \nRegionSpot outperforms GLIP-L by 2.9 in mAP on LVIS val set,  with an even larger margin of 13.1 AP for more challenging and rare categories, and a 2.5 AP increase on ODinW. Furthermore, it exceeds GroundingDINO-L by 11.0 AP for rare categories on the LVIS minival set.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Open Vocabulary Object Recognition;  Zero-shot; Representation Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=qKfiWNHp6k",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e158974032bb53bfca7244c8a0e2c67406654e37.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Understanding the semantics of individual regions or patches of unconstrained images, such as open-world object detection, remains a critical yet challenging task in computer vision. Building on the success of powerful image-level vision-language (ViL) foundation models like CLIP, recent efforts hav"
+  },
+  "collected_at": "2026-03-08T01:42:12.108Z"
+}

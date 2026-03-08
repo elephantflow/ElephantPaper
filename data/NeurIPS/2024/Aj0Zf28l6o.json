@@ -1,0 +1,33 @@
+{
+  "id": "Aj0Zf28l6o",
+  "or_id": "Aj0Zf28l6o",
+  "title": "Equivariant Blurring Diffusion for Hierarchical Molecular Conformer Generation",
+  "title_zh": "",
+  "authors": [
+    "Jiwoong Park",
+    "Yang Shen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "How can diffusion models process 3D geometries in a coarse-to-fine manner, akin to our multiscale view of the world?\nIn this paper, we address the question by focusing on a fundamental biochemical problem of generating 3D molecular conformers conditioned on molecular graphs in a multiscale manner. \nOur approach consists of two hierarchical stages: i) generation of coarse-grained fragment-level 3D structure from the molecular graph, and ii) generation of fine atomic details from the coarse-grained approximated structure while allowing the latter to be adjusted simultaneously.\nFor the challenging second stage, which demands preserving coarse-grained information while ensuring SE(3) equivariance, we introduce a novel generative model termed Equivariant Blurring Diffusion (EBD), which defines a forward process that moves towards the fragment-level coarse-grained structure by blurring the fine atomic details of conformers, and a reverse process that performs the opposite operation using equivariant networks.\nWe demonstrate the effectiveness of EBD by geometric and chemical comparison to state-of-the-art denoising diffusion models on a benchmark of drug-like molecules.\nAblation studies draw insights on the design of EBD by thoroughly analyzing its architecture, which includes the design of the loss function and the data corruption process.\nCodes are released at https://github.com/Shen-Lab/EBD.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "molecular conformer generation",
+    "diffusion models",
+    "hierarchical models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Aj0Zf28l6o",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/18ad6fd7ccc4d430e351d06384b59c3ba44fe1a4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "How can diffusion models process 3D geometries in a coarse-to-fine manner, akin to our multiscale view of the world?\nIn this paper, we address the question by focusing on a fundamental biochemical problem of generating 3D molecular conformers conditioned on molecular graphs in a multiscale manner. \n"
+  },
+  "collected_at": "2026-03-08T01:42:12.107Z"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "UXuBzWoZGK",
+  "or_id": "UXuBzWoZGK",
+  "title": "Catastrophic Goodhart: regularizing RLHF with KL divergence does not mitigate heavy-tailed reward misspecification",
+  "title_zh": "",
+  "authors": [
+    "Thomas Kwa",
+    "Drake Thomas",
+    "Adrià Garriga-Alonso"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "When applying reinforcement learning from human feedback (RLHF), the reward is learned from data and, therefore, always has some error. It is common to mitigate this by regularizing the policy with KL divergence from a base model, with the hope that balancing reward with regularization will achieve desirable outcomes despite this reward misspecification. We show that when the reward function has light-tailed error, optimal policies under less restrictive KL penalties achieve arbitrarily high utility. However, if error is heavy-tailed, some policies obtain arbitrarily high reward despite achieving no more utility than the base model--a phenomenon we call catastrophic Goodhart. We adapt a discrete optimization method to measure the tails of reward models, finding that they are consistent with light-tailed error. However, the pervasiveness of heavy-tailed distributions in many real-world applications indicates that future sources of RL reward could have heavy-tailed error, increasing the likelihood of reward hacking even with KL regularization.",
+  "abstract_zh": "",
+  "tldr": "KL regularization doesn't guarantee good outcomes in RLHF.",
+  "keywords": [
+    "RLHF",
+    "extreme value theory",
+    "reward misspecification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=UXuBzWoZGK",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/be3a14bb23f805713d5c57d8b5458c2712757e8c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "KL regularization doesn't guarantee good outcomes in RLHF."
+  },
+  "collected_at": "2026-03-08T01:42:12.107Z"
+}

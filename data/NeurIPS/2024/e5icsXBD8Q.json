@@ -1,0 +1,36 @@
+{
+  "id": "e5icsXBD8Q",
+  "or_id": "e5icsXBD8Q",
+  "title": "Large Language Model Unlearning via Embedding-Corrupted Prompts",
+  "title_zh": "",
+  "authors": [
+    "Chris Yuhao Liu",
+    "Yaxuan Wang",
+    "Jeffrey Flanigan",
+    "Yang Liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large language models (LLMs) have advanced to encompass extensive knowledge across diverse domains. Yet controlling what a large language model should not know is important for ensuring alignment and thus safe use. However, accurately and efficiently unlearning knowledge from an LLM remains challenging due to the potential collateral damage caused by the fuzzy boundary between retention and forgetting, and the large computational requirements for optimization across state-of-the-art models with hundreds of billions of parameters. In this work, we present \\textbf{Embedding-COrrupted (ECO) Prompts}, a lightweight unlearning framework for large language models to address both the challenges of knowledge entanglement and unlearning efficiency. Instead of relying on the LLM itself to unlearn, we enforce an unlearned state during inference by employing a prompt classifier to identify and safeguard prompts to forget. We learn corruptions added to prompt embeddings via zeroth order optimization toward the unlearning objective offline and corrupt prompts flagged by the classifier during inference. We find that these embedding-corrupted prompts not only lead to desirable outputs that satisfy the unlearning objective but also closely approximate the output from a model that has never been trained on the data intended for forgetting. Through extensive experiments on unlearning, we demonstrate the superiority of our method in achieving promising unlearning at \\textit{nearly zero side effects} in general domains and domains closely related to the unlearned ones. Additionally, we highlight the scalability of our method to 100 LLMs, ranging from 0.5B to 236B parameters, incurring no additional cost as the number of parameters increases. We have made our code publicly available at \\url{https://github.com/chrisliu298/llm-unlearn-eco}.",
+  "abstract_zh": "",
+  "tldr": "We present \\textbf{Embedding-COrrupted (ECO) Prompts}, a lightweight unlearning framework for large language models to address both the challenges of knowledge entanglement and unlearning efficiency.",
+  "keywords": [
+    "machine unlearning",
+    "safety",
+    "alignment",
+    "large language model unlearning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=e5icsXBD8Q",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6ce60d7844fe2a3c3a9937127c591337d3945e16.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present \\textbf{Embedding-COrrupted (ECO) Prompts}, a lightweight unlearning framework for large language models to address both the challenges of knowledge entanglement and unlearning efficiency."
+  },
+  "collected_at": "2026-03-08T01:42:12.105Z"
+}

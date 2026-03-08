@@ -1,0 +1,37 @@
+{
+  "id": "hBCxxVQDBw",
+  "or_id": "hBCxxVQDBw",
+  "title": "Towards Scalable and Stable Parallelization of Nonlinear RNNs",
+  "title_zh": "",
+  "authors": [
+    "Xavier Gonzalez",
+    "Andrew Warrington",
+    "Jimmy T.H. Smith",
+    "Scott Linderman"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Transformers and linear state space models can be evaluated in parallel on modern hardware, but evaluating nonlinear RNNs appears to be an inherently sequential problem. Recently, however, Lim et al. '24 developed an approach called DEER, which evaluates nonlinear RNNs in parallel by posing the states as the solution to a fixed-point problem. They derived a parallel form of Newton's method to solve the fixed-point problem and achieved significant speedups over sequential evaluation. However, the computational complexity of DEER is cubic in the state size, and the algorithm can suffer from numerical instability. We address these limitations with two novel contributions. To reduce the computational complexity, we apply quasi-Newton approximations and show they converge comparably to Newton, use less memory, and are faster. To stabilize DEER, we leverage a connection between the Levenberg-Marquardt algorithm and Kalman smoothing, which we call ELK. This connection allows us to stabilize Newton's method while using efficient parallelized Kalman smoothing algorithms to retain performance. Through several experiments, we show that these innovations allow for parallel evaluation of nonlinear RNNs at larger scales and with greater stability.",
+  "abstract_zh": "",
+  "tldr": "We introduce methods for parallelizing the evaluation of RNNs that are scalable and numerically stable with quasi-Newton methods and trust regions.",
+  "keywords": [
+    "RNNs",
+    "Newton's method",
+    "Parallel algorithms",
+    "Scalability",
+    "Numerical Stability"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hBCxxVQDBw",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8aa514a3e2af5e4be95855b71596d7baf31738e5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce methods for parallelizing the evaluation of RNNs that are scalable and numerically stable with quasi-Newton methods and trust regions."
+  },
+  "collected_at": "2026-03-08T01:42:12.106Z"
+}
