@@ -1,0 +1,35 @@
+{
+  "id": "QXkFC7D6p4",
+  "or_id": "QXkFC7D6p4",
+  "title": "FedGTST: Boosting Global Transferability of Federated Models via Statistics Tuning",
+  "title_zh": "",
+  "authors": [
+    "Evelyn Ma",
+    "Chao Pan",
+    "S. Rasoul Etesami",
+    "Han Zhao",
+    "Olgica Milenkovic"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The performance of Transfer Learning (TL) significantly depends on effective pretraining, which not only requires extensive amounts of data but also substantial computational resources. As a result, in practice, it is challenging to successfully perform TL at the level of individual model developers. Federated Learning (FL) addresses these challenges by enabling collaboration among individual clients through an indirect expansion of the available dataset, distribution of the computation burden across different entities, and privacy-preserving communication mechanisms. Despite several attempts to devise effective transferable FL approaches, several important issues remain unsolved. First, existing methods in this setting primarily focus on optimizing transferability within their local client domains, thereby ignoring transferability over the global learning domain. Second, most approaches focus on analyzing indirect transferability metrics, which does not allow for accurate assessment of the final target loss and extent of transferability. To address these issues, we introduce two important FL features into the model. The first boosts transferability via an exchange protocol between the clients and the server that includes information about cross-client Jacobian (gradient) norms. The second feature promotes an increase of the average of the Jacobians of the clients at the server side, which is subsequently used as a local regularizer that reduces the cross-client Jacobian variance. A rigorous analysis of our transferable federated algorithm, termed FedGTST (Federated Global Transferability via Statistics Tuning), reveals that increasing the averaged Jacobian norm across clients and reducing its variance ensures tight control of the target loss. This insight leads to the first known upper bound on the target loss of transferable federated learning in terms of the source loss and source-target domain discrepancy. Extensive experimental results on datasets including MNI",
+  "abstract_zh": "",
+  "tldr": "This paper presents FedGTST, a federated learning algorithm that improves global transferability using cross-client statistics, significantly outperforming existing methods.",
+  "keywords": [
+    "Federated Learning",
+    "Transfer Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=QXkFC7D6p4",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5654ab819d08c8951c309ec6e440949b8155196b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper presents FedGTST, a federated learning algorithm that improves global transferability using cross-client statistics, significantly outperforming existing methods."
+  },
+  "collected_at": "2026-03-08T00:22:04.415Z"
+}

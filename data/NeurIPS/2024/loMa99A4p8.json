@@ -1,0 +1,36 @@
+{
+  "id": "loMa99A4p8",
+  "or_id": "loMa99A4p8",
+  "title": "Diffusion Models With Learned Adaptive Noise",
+  "title_zh": "",
+  "authors": [
+    "Subham Sekhar Sahoo",
+    "Aaron Gokaslan",
+    "Christopher De Sa",
+    "Volodymyr Kuleshov"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Diffusion models have gained traction as powerful algorithms for synthesizing high-quality images. Central to these algorithms is the diffusion process, a set of equations which maps data to noise \nin a way that can significantly affect performance. \nIn this paper, we explore whether the diffusion\nprocess can be learned from data.\nOur work is grounded in Bayesian inference and seeks to improve log-likelihood estimation by casting the learned diffusion process as an approximate variational posterior that yields a tighter lower bound (ELBO) on the likelihood.\nA widely held assumption is that the ELBO is invariant to the noise process: our work dispels this assumption and proposes multivariate learned adaptive noise (MuLAN), a learned diffusion process that applies noise at different rates across an image. Our method consists of three components: a multivariate noise schedule, adaptive input-conditional diffusion, and auxiliary variables; these components ensure that the ELBO is no longer invariant to the choice of the noise schedule as in previous works.  Empirically, MuLAN sets a new **state-of-the-art** in density estimation on CIFAR-10 and ImageNet while matching the performance of previous state-of-the-art models with **50%** fewer steps.  We provide the code, along with a blog post and video tutorial on the project page: https://s-sahoo.com/MuLAN",
+  "abstract_zh": "",
+  "tldr": "A learned noise schedule can improve the log-likelihood of diffusion models.",
+  "keywords": [
+    "Generative Models",
+    "Diffusion Models",
+    "Image Diffusion"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=loMa99A4p8",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/dde73f70550a3352ef5e2ea68d6a2803649c09eb.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "A learned noise schedule can improve the log-likelihood of diffusion models."
+  },
+  "collected_at": "2026-03-08T00:22:04.415Z"
+}

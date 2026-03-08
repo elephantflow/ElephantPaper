@@ -1,0 +1,37 @@
+{
+  "id": "uuQQwrjMzb",
+  "or_id": "uuQQwrjMzb",
+  "title": "Adaptive Labeling for Efficient Out-of-distribution Model Evaluation",
+  "title_zh": "",
+  "authors": [
+    "Daksh Mittal",
+    "Yuanzhe Ma",
+    "Shalmali Joshi",
+    "Hongseok Namkoong"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Datasets often suffer severe selection bias; clinical labels are only available on patients for whom doctors ordered medical exams. To assess model performance outside the support of available data, we present a computational framework for adaptive labeling, providing cost-efficient model evaluations under severe distribution shifts. We formulate the problem as a Markov Decision Process over states defined by posterior beliefs on model performance. Each batch of new labels incurs a “state transition” to sharper beliefs, and we choose batches to minimize uncertainty on model performance at the end of the label collection process. Instead of relying on high-variance REINFORCE policy gradient estimators that do not scale, our adaptive labeling policy is optimized using path-wise policy gradients computed by auto-differentiating through simulated roll-outs. Our framework is agnostic to different uncertainty quantification approaches and highlights the virtue of planning in adaptive labeling. On synthetic and real datasets, we empirically demonstrate even a one-step lookahead policy substantially outperforms active learning-inspired heuristics.",
+  "abstract_zh": "",
+  "tldr": "Supervised data suffers severe selection bias when labels are expensive. We formulate a MDP over posterior beliefs on model performance and solve it with pathwise policy gradients computed through an auto-differentiable pipeline.",
+  "keywords": [
+    "Model Evaluation",
+    "Uncertainty Quantification",
+    "Markov Decision Process",
+    "Policy Gradient",
+    "Auto-differentiation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=uuQQwrjMzb",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9e66a48e6d866d69d2cb84d0ffc85fca6dc59ac5.pdf"
+  },
+  "citationCount": 1,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Supervised data suffers severe selection bias when labels are expensive. We formulate a MDP over posterior beliefs on model performance and solve it with pathwise policy gradients computed through an auto-differentiable pipeline."
+  },
+  "collected_at": "2026-03-08T00:22:02.622Z"
+}
