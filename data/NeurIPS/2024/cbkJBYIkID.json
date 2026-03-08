@@ -1,0 +1,35 @@
+{
+  "id": "cbkJBYIkID",
+  "or_id": "cbkJBYIkID",
+  "title": "Mitigating Backdoor Attack by Injecting Proactive Defensive Backdoor",
+  "title_zh": "",
+  "authors": [
+    "Shaokui Wei",
+    "Hongyuan Zha",
+    "Baoyuan Wu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Data-poisoning backdoor attacks are serious security threats to machine learning models, where an adversary can manipulate the training dataset to inject backdoors into models. In this paper, we focus on in-training backdoor defense, aiming to train a clean model even when the dataset may be potentially poisoned. Unlike most existing methods that primarily detect and remove/unlearn suspicious samples to mitigate malicious backdoor attacks, we propose a novel defense approach called PDB (Proactive Defensive Backdoor). Specifically, PDB leverages the “home field” advantage of defenders by proactively injecting a defensive backdoor into the model during training. Taking advantage of controlling the training process, the defensive backdoor is designed to suppress the malicious backdoor effectively while remaining secret to attackers. In addition, we introduce a reversible mapping to determine the defensive target label. During inference, PDB embeds a defensive trigger in the inputs and reverses the model’s prediction, suppressing malicious backdoor and ensuring the model's utility on the original task. Experimental results across various datasets and models demonstrate that our approach achieves state-of-the-art defense performance against a wide range of backdoor attacks. The code is available at https://github.com/shawkui/Proactive_Defensive_Backdoor.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Adversarial Machine Learning",
+    "Backdoor Attack",
+    "Backdoor Defense",
+    "AI Security"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=cbkJBYIkID",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ce6a360fb52cf8f5bff3ea8215f90e1cb46d3b1d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Data-poisoning backdoor attacks are serious security threats to machine learning models, where an adversary can manipulate the training dataset to inject backdoors into models. In this paper, we focus on in-training backdoor defense, aiming to train a clean model even when the dataset may be potenti"
+  },
+  "collected_at": "2026-03-08T22:43:30.903Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "Y6RV6z98Pk",
+  "or_id": "Y6RV6z98Pk",
+  "title": "SampDetox: Black-box Backdoor Defense via Perturbation-based Sample Detoxification",
+  "title_zh": "",
+  "authors": [
+    "Yanxin Yang",
+    "Chentao Jia",
+    "DengKe Yan",
+    "Ming Hu",
+    "Tianlin Li",
+    "Xiaofei Xie",
+    "Xian Wei",
+    "Mingsong Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The advancement of Machine Learning has enabled the widespread deployment of Machine Learning as a Service (MLaaS) applications. However, the untrustworthy nature of third-party ML services poses backdoor threats. Existing defenses in MLaaS are limited by their reliance on training samples or white-box model analysis, highlighting the need for a black-box backdoor purification method. In our paper, we attempt to use diffusion models for purification by introducing noise in a forward diffusion process to destroy backdoors and recover clean samples through a reverse generative process. However, since a higher noise also destroys the semantics of the original samples, it still results in a low restoration performance. To investigate the effectiveness of noise in eliminating different types of backdoors, we conducted a preliminary study, which demonstrates that backdoors with low visibility can be easily destroyed by lightweight noise and those with high visibility need to be destroyed by high noise but can be easily detected. Based on the study, we propose SampDetox, which strategically combines lightweight and high noise. SampDetox applies weak noise to eliminate low-visibility backdoors and compares the structural similarity between the recovered and original samples to localize high-visibility backdoors. Intensive noise is then applied to these localized areas, destroying the high-visibility backdoors while preserving global semantic information. As a result, detoxified samples can be used for inference, even by poisoned models. Comprehensive experiments demonstrate the effectiveness of SampDetox in defending against various state-of-the-art backdoor attacks.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Backdoor defense",
+    "black-box"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Y6RV6z98Pk",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/26e3335b97570784bbe89aa20771ead9a6809f91.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The advancement of Machine Learning has enabled the widespread deployment of Machine Learning as a Service (MLaaS) applications. However, the untrustworthy nature of third-party ML services poses backdoor threats. Existing defenses in MLaaS are limited by their reliance on training samples or white-"
+  },
+  "collected_at": "2026-03-08T22:43:30.901Z"
+}

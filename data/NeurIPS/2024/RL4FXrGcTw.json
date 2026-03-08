@@ -1,0 +1,41 @@
+{
+  "id": "RL4FXrGcTw",
+  "or_id": "RL4FXrGcTw",
+  "title": "Gradients of Functions of Large Matrices",
+  "title_zh": "",
+  "authors": [
+    "Nicholas Krämer",
+    "Pablo Moreno-Muñoz",
+    "Hrittik Roy",
+    "Søren Hauberg"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Tuning scientific and probabilistic machine learning models - for example, partial differential equations, Gaussian processes, or Bayesian neural networks - often relies on evaluating functions of matrices whose size grows with the data set or the number of parameters.\nWhile the state-of-the-art for _evaluating_ these quantities is almost always based on Lanczos and Arnoldi iterations, the present work is the first to explain how to _differentiate_ these workhorses of numerical linear algebra efficiently.\nTo get there, we derive previously unknown adjoint systems for Lanczos and Arnoldi iterations, implement them in JAX, and show that the resulting code can compete with Diffrax when it comes to differentiating PDEs, GPyTorch for selecting Gaussian process models and beats standard factorisation methods for calibrating Bayesian neural networks.\nAll this is achieved without any problem-specific code optimisation.\nFind the code at [link redacted] and install the library with *pip install [redacted]*.",
+  "abstract_zh": "",
+  "tldr": "We derive previously unknown gradients of Lanczos and Arnoldi iterations and use them for PDEs, Gaussian processes, and Bayesian neural networks.",
+  "keywords": [
+    "Automatic differentiation",
+    "numerical methods",
+    "linear algebra",
+    "implicit differentiation",
+    "adjoint methods",
+    "differential equations",
+    "Bayesian neural networks",
+    "Gaussian processes"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=RL4FXrGcTw",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/91b0ba7ffc2387f44535ee3162801495251ef908.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We derive previously unknown gradients of Lanczos and Arnoldi iterations and use them for PDEs, Gaussian processes, and Bayesian neural networks."
+  },
+  "collected_at": "2026-03-08T22:43:30.903Z"
+}

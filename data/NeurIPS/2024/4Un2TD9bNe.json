@@ -1,0 +1,44 @@
+{
+  "id": "4Un2TD9bNe",
+  "or_id": "4Un2TD9bNe",
+  "title": "Rethinking Memory and Communication Costs for Efficient Data Parallel Training of Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Hanxiao Zhang",
+    "Lin JU",
+    "Chan Wu",
+    "Jinjing Huang",
+    "Youshao Xiao",
+    "Zhenglei Zhou",
+    "Zhiming fan",
+    "Zhaoxin Huan",
+    "Siyuan Li",
+    "Fanzhuang Meng",
+    "Lei Liang",
+    "Xiaolu Zhang",
+    "JUN ZHOU"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recently, various strategies for distributed training of large language models (LLMs) have been proposed.\nBy categorizing them into basic strategies and composite strategies, we have discovered that existing basic strategies provide limited options in specific scenarios, leaving considerable room for optimization in training speed.\nIn this paper, we rethink the impact of memory and communication costs on the training speed of LLMs, taking into account the impact of intra- and inter-group communication performance disparities, and then propose a new set of basic strategies named the \\textbf{Pa}rtial \\textbf{R}edundancy \\textbf{O}ptimizer (PaRO).\nPaRO Data Parallelism (PaRO-DP) accelerates LLM training through refined model state partitioning and tailored training procedures. At the same time, PaRO Collective Communications (PaRO-CC) speeds up collective communication operations by rearranging the topology. We also propose a guideline for choosing different DP strategies based on simple quantitative calculations, which yields minimal ranking errors.\nOur experiments demonstrate that PaRO improves the training speed of LLMs by up to 266\\% that of ZeRO-3 as basic DP strategies.\nMoreover, employing PaRO-CC independently for model parallel strategies, such as Megatron, can also boost the training speed by 17\\%.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Large Language Model",
+    "Distributed Training",
+    "Communication Topology"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=4Un2TD9bNe",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/371775ac49d80815d3f7dad4c623d71e070dd7a2.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Recently, various strategies for distributed training of large language models (LLMs) have been proposed.\nBy categorizing them into basic strategies and composite strategies, we have discovered that existing basic strategies provide limited options in specific scenarios, leaving considerable room fo"
+  },
+  "collected_at": "2026-03-08T22:43:30.902Z"
+}

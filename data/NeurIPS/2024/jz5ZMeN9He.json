@@ -1,0 +1,35 @@
+{
+  "id": "jz5ZMeN9He",
+  "or_id": "jz5ZMeN9He",
+  "title": "DRIP: Unleashing Diffusion Priors for Joint Foreground and Alpha Prediction in Image Matting",
+  "title_zh": "",
+  "authors": [
+    "Xiaodi Li",
+    "Zongxin Yang",
+    "Ruijie Quan",
+    "Yi Yang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recovering the foreground color and opacity/alpha matte from a single image (i.e., image matting) is a challenging and ill-posed problem where data priors play a critical role in achieving precise results. Traditional methods generally predict the alpha matte and then extract the foreground through post-processing, often failing to produce high-fidelity foreground color. This failure stems from the models' difficulty in learning robust color predictions from limited matting datasets. To address this, we explore the potential of leveraging vision priors embedded in pre-trained latent diffusion models (LDM) for estimating foreground RGBA values in challenging scenarios and rare objects. We introduce Drip, a novel approach for image matting that harnesses the rich prior knowledge of LDM models. Our method incorporates a switcher and a cross-domain attention mechanism to extend the original LDM for joint prediction of the foreground color and opacity. This setup facilitates mutual information exchange and ensures high consistency across both modalities. To mitigate the inherent reconstruction errors of the LDM's VAE decoder, we propose a latent transparency decoder to align the RGBA prediction with the input image, thereby reducing discrepancies. Comprehensive experimental results demonstrate that our approach achieves state-of-the-art performance in foreground and alpha predictions and shows remarkable generalizability across various benchmarks.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Image Matting",
+    "Diffusion Model",
+    "Foreground Estimation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=jz5ZMeN9He",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c9e4d515bafd68a3f246568b632b4629fa4b754b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Recovering the foreground color and opacity/alpha matte from a single image (i.e., image matting) is a challenging and ill-posed problem where data priors play a critical role in achieving precise results. Traditional methods generally predict the alpha matte and then extract the foreground through "
+  },
+  "collected_at": "2026-03-08T22:43:30.901Z"
+}

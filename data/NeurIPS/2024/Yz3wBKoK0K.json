@@ -1,0 +1,38 @@
+{
+  "id": "Yz3wBKoK0K",
+  "or_id": "Yz3wBKoK0K",
+  "title": "Aggregate-and-Adapt Natural Language Prompts for Downstream Generalization of CLIP",
+  "title_zh": "",
+  "authors": [
+    "Chen Huang",
+    "Skyler Seto",
+    "Samira Abnar",
+    "David Grangier",
+    "Navdeep Jaitly",
+    "Joshua M. Susskind"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large pretrained vision-language models like CLIP have shown promising generalization capability, but may struggle in specialized domains (e.g., satellite imagery) or fine-grained classification (e.g., car models) where the visual concepts are unseen or under-represented during pretraining. Prompt learning offers a parameter-efficient finetuning framework that can adapt CLIP to downstream tasks even when limited annotation data are available. In this paper, we improve prompt learning by distilling the textual knowledge from natural language prompts (either human- or LLM-generated) to provide rich priors for those under-represented concepts. We first obtain a prompt ``summary'' aligned to each input image via a learned prompt aggregator. Then we jointly train a prompt generator, optimized to produce a prompt embedding that stays close to the aggregated summary while minimizing task loss at the same time. We dub such prompt embedding as Aggregate-and-Adapted Prompt Embedding (AAPE). AAPE is shown to be able to generalize to different downstream data distributions and tasks, including vision-language understanding tasks (e.g., few-shot classification, VQA) and generation tasks (image captioning) where AAPE achieves competitive performance. We also show AAPE is particularly helpful to handle non-canonical and OOD examples. Furthermore, AAPE learning eliminates LLM-based inference cost as required by baselines, and scales better with data and LLM model size.",
+  "abstract_zh": "",
+  "tldr": "Prompt learning that distills the textual knowledge from natural language prompts to improve the downstream generalization of CLIP.",
+  "keywords": [
+    "CLIP",
+    "Downstream Generalization",
+    "Prompt Learning",
+    "Natural Language Prompts"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Yz3wBKoK0K",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/54fddfff7094964ff34b82583cc9685c8804669a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Prompt learning that distills the textual knowledge from natural language prompts to improve the downstream generalization of CLIP."
+  },
+  "collected_at": "2026-03-08T22:43:30.903Z"
+}
