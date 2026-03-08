@@ -1,0 +1,33 @@
+{
+  "id": "P8rTCT6g45",
+  "or_id": "P8rTCT6g45",
+  "title": "Memory-Efficient LLM Training with Online Subspace Descent",
+  "title_zh": "",
+  "authors": [
+    "Kaizhao Liang",
+    "Bo Liu",
+    "Lizhang Chen",
+    "qiang liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recently, a wide range of memory-efficient LLM training algorithms have gained substantial popularity. These methods leverage the low-rank structure of gradients to project optimizer states into a subspace using projection matrix found by singular value decomposition (SVD). However, convergence of these algorithms is highly dependent on the update rules of their projection matrix. In this work, we provide the \\emph{first} convergence guarantee for arbitrary update rules of projection matrix. This guarantee is generally applicable to optimizers that can be analyzed with Hamiltonian Descent, including most common ones, such as LION, Adam. Inspired by our theoretical understanding, we propose Online Subspace Descent, a new family of subspace descent optimizer without SVD. Instead of updating projection matrix with eigenvectors, Online Subspace Descent updates projection matrix wtih online PCA. Online Subspace Descent is flexible and introduces only minimum overhead to training. We demonstrate that, for the task of pretraining LLaMA models ranging from 60M to 1B parameters on the C4 dataset, Online Subspace Descent achieves lower perplexity than state-of-the-art low-rank training methods across different settings and narrows the gap with full-rank baselines.",
+  "abstract_zh": "",
+  "tldr": "a new family of optimization algorithms adaptively descending on projected subspaces found by online PCA",
+  "keywords": [
+    "Large Language Model Pretraining; Optimizer; Memory-Efficient LLM Training"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=P8rTCT6g45",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5f0555ca4bd1590bcb2944dea4f12fc550f52b4d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "a new family of optimization algorithms adaptively descending on projected subspaces found by online PCA"
+  },
+  "collected_at": "2026-03-08T19:20:25.612Z"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "pVPyCgXv57",
+  "or_id": "pVPyCgXv57",
+  "title": "Learning to Merge Tokens via Decoupled Embedding for Efficient Vision Transformers",
+  "title_zh": "",
+  "authors": [
+    "Dong Hoon Lee",
+    "Seunghoon Hong"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recent token reduction methods for Vision Transformers (ViTs) incorporate token merging, which measures the similarities between token embeddings and combines the most similar pairs.\nHowever, their merging policies are directly dependent on intermediate features in ViTs, which prevents exploiting features tailored for merging and requires end-to-end training to improve token merging.\nIn this paper, we propose Decoupled Token Embedding for Merging (DTEM) that enhances token merging through a decoupled embedding learned via a continuously relaxed token merging process.\nOur method introduces a lightweight embedding module decoupled from the ViT forward pass to extract dedicated features for token merging, thereby addressing the restriction from using intermediate features.\nThe continuously relaxed token merging, applied during training, enables us to learn the decoupled embeddings in a differentiable manner.\nThanks to the decoupled structure, our method can be seamlessly integrated into existing ViT backbones and trained either modularly by learning only the decoupled embeddings or end-to-end by fine-tuning. \nWe demonstrate the applicability of DTEM on various tasks, including classification, captioning, and segmentation, with consistent improvement in token merging.\nEspecially in the ImageNet-1k classification, DTEM achieves a 37.2\\% reduction in FLOPs while maintaining a top-1 accuracy of 79.85\\% with DeiT-small.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "token merging",
+    "token reduction method",
+    "efficient inference",
+    "vision transformer"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=pVPyCgXv57",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c098dfd7c7d7b63200ff456647b3ba86799aa874.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Recent token reduction methods for Vision Transformers (ViTs) incorporate token merging, which measures the similarities between token embeddings and combines the most similar pairs.\nHowever, their merging policies are directly dependent on intermediate features in ViTs, which prevents exploiting fe"
+  },
+  "collected_at": "2026-03-08T19:20:25.611Z"
+}
