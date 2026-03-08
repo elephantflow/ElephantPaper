@@ -1,0 +1,37 @@
+{
+  "id": "4s5UsBUsUS",
+  "or_id": "4s5UsBUsUS",
+  "title": "VFIMamba: Video Frame Interpolation with State Space Models",
+  "title_zh": "",
+  "authors": [
+    "Guozhen Zhang",
+    "Chunxu Liu",
+    "Yutao Cui",
+    "Xiaotong Zhao",
+    "Kai Ma",
+    "Limin Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Inter-frame modeling is pivotal in generating intermediate frames for video frame interpolation (VFI). Current approaches predominantly rely on convolution or attention-based models, which often either lack sufficient receptive fields or entail significant computational overheads. Recently, Selective State Space Models (S6) have emerged, tailored specifically for long sequence modeling, offering both linear complexity and data-dependent modeling capabilities. In this paper, we propose VFIMamba, a novel frame interpolation method for efficient and dynamic inter-frame modeling by harnessing the S6 model. Our approach introduces the Mixed-SSM Block (MSB), which initially rearranges tokens from adjacent frames in an interleaved fashion and subsequently applies multi-directional S6 modeling. This design facilitates the efficient transmission of information across frames while upholding linear complexity. Furthermore, we introduce a novel curriculum learning strategy that progressively cultivates proficiency in modeling inter-frame dynamics across varying motion magnitudes, fully unleashing the potential of the S6 model. Experimental findings showcase that our method attains state-of-the-art performance across diverse benchmarks, particularly excelling in high-resolution scenarios. In particular, on the X-TEST dataset, VFIMamba demonstrates a noteworthy improvement of 0.80 dB for 4K frames and 0.96 dB for 2K frames.",
+  "abstract_zh": "",
+  "tldr": "A novel video frame interpolation method that leverages the S6 model for efficient and dynamic inter-frame modeling",
+  "keywords": [
+    "Video Frame Interpolation",
+    "State Space Models",
+    "Low Level Vision"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=4s5UsBUsUS",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/de833adbf41a6cd01e783ddcc38df5b08822bc0f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A novel video frame interpolation method that leverages the S6 model for efficient and dynamic inter-frame modeling"
+  },
+  "collected_at": "2026-03-08T19:40:24.578Z"
+}

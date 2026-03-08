@@ -1,0 +1,38 @@
+{
+  "id": "NrwASKGm7A",
+  "or_id": "NrwASKGm7A",
+  "title": "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Yuzhe Gu",
+    "Ziwei Ji",
+    "Wenwei Zhang",
+    "Chengqi Lyu",
+    "Dahua Lin",
+    "Kai Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large language models (LLMs) exhibit hallucinations in long-form question-answering tasks across various domains and wide applications. Current hallucination detection and mitigation datasets are limited in domain and size, which struggle to scale due to prohibitive labor costs and insufficient reliability of existing hallucination annotators. To facilitate the scalable oversight of LLM hallucinations, this paper introduces an iterative self-training framework that simultaneously and progressively scales up the annotation dataset and improves the accuracy of the annotator. Based on the Expectation Maximization algorithm, in each iteration, the framework first applies an automatic hallucination annotation pipeline for a scaled dataset and then trains a more accurate annotator on the dataset.  This new annotator is adopted in the annotation pipeline for the next iteration. Extensive experimental results demonstrate that the finally obtained hallucination annotator with only 7B parameters surpasses GPT-4 and obtains new state-of-the-art hallucination detection results on HaluEval and HalluQA by zero-shot inference. Such an annotator can not only evaluate the hallucination levels of various LLMs on the large-scale dataset but also help to mitigate the hallucination of LLMs generations, with the Natural Language Inference metric increasing from 25% to 37% on HaluEval.",
+  "abstract_zh": "",
+  "tldr": "This paper introduces a multi-iteration scalable framework that enhances the size of the hallucination annotation dataset while improving the precision of the annotator.",
+  "keywords": [
+    "Hallucination",
+    "Large Language Model",
+    "Fine-grained Annotation",
+    "Dataset"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=NrwASKGm7A",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/27a31c0c65a8215ad754bb49afa17fce093a6472.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper introduces a multi-iteration scalable framework that enhances the size of the hallucination annotation dataset while improving the precision of the annotator."
+  },
+  "collected_at": "2026-03-08T19:40:24.579Z"
+}
