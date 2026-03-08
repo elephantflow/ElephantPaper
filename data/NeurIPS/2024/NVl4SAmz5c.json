@@ -1,0 +1,32 @@
+{
+  "id": "NVl4SAmz5c",
+  "or_id": "NVl4SAmz5c",
+  "title": "Why Warmup the Learning Rate? Underlying Mechanisms and Improvements",
+  "title_zh": "",
+  "authors": [
+    "Dayal Singh Kalra",
+    "Maissam Barkeshli"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In modern deep learning, it is common to warm up the learning rate $\\eta$, often by a linear schedule between $\\eta_{\\text{init}} = 0$ and a predetermined target $\\eta_{\\text{trgt}}$. In this paper, we show through systematic experiments with SGD and Adam that the overwhelming benefit of warmup arises from allowing the network to tolerate larger $\\eta_{\\text{trgt}}$ by forcing the network to more well-conditioned areas of the loss landscape. The ability to handle larger target learning rates in turn makes hyperparameter tuning more robust while improving the final performance of the network. We uncover different regimes of operation during the warmup period, depending on whether the network training starts off in a progressive sharpening or sharpness reduction phase, which in turn depends on the initialization and parameterization. Using these insights, we show how $\\eta_{\\text{init}}$ can be properly chosen by utilizing the loss catapult mechanism, which saves on the number of warmup steps, in some cases completely eliminating the need for warmup. We also suggest an initialization for the variance in Adam, which provides benefits similar to warmup.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Learning rate Warmup",
+    "Optimization Dynamics"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=NVl4SAmz5c",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5517a080e116a110eb98fbcfaa5361dd6034bb25.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In modern deep learning, it is common to warm up the learning rate $\\eta$, often by a linear schedule between $\\eta_{\\text{init}} = 0$ and a predetermined target $\\eta_{\\text{trgt}}$. In this paper, we show through systematic experiments with SGD and Adam that the overwhelming benefit of warmup aris"
+  },
+  "collected_at": "2026-03-08T21:00:22.079Z"
+}

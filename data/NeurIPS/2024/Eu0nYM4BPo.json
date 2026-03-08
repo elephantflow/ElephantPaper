@@ -1,0 +1,38 @@
+{
+  "id": "Eu0nYM4BPo",
+  "or_id": "Eu0nYM4BPo",
+  "title": "Leveraging an ECG Beat Diffusion Model for Morphological Reconstruction from Indirect Signals",
+  "title_zh": "",
+  "authors": [
+    "Lisa Bedin",
+    "Gabriel Cardoso",
+    "Josselin Duchateau",
+    "Remi Dubois",
+    "Eric Moulines"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Electrocardiogram (ECG) signals provide essential information about the heart's condition and are widely used for diagnosing cardiovascular diseases. The morphology of a single heartbeat over the available leads is a primary biosignal for monitoring cardiac conditions. However, analyzing heartbeat morphology can be challenging due to noise and artifacts, missing leads, and a lack of annotated data.\nGenerative models, such as denoising diffusion generative models (DDMs), have proven successful in generating complex data. We introduce $\\texttt{BeatDiff}$, a light-weight DDM tailored for the morphology of multiple leads heartbeats.\nWe then show that many important ECG downstream tasks can be formulated as conditional generation methods in a Bayesian inverse problem framework using $\\texttt{BeatDiff}$ as priors. We propose $\\texttt{EM-BeatDiff}$, an Expectation-Maximization algorithm, to solve this conditional generation tasks without fine-tuning. We illustrate our results with several tasks, such as removal of ECG noise and artifacts (baseline wander, electrode motion), reconstruction of a 12-lead ECG from a single lead (useful for ECG reconstruction of smartwatch experiments), and unsupervised explainable anomaly detection. Numerical experiments show that the combination of $\\texttt{BeatDiff}$ and $\\texttt{EM-BeatDiff}$ outperforms SOTA methods for the problems considered in this work.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Electrocardiogram",
+    "Denoising Diffusion Generative Models",
+    "Conditional Sampling",
+    "Healthcare",
+    "Bayesian Inverse Problem"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Eu0nYM4BPo",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3f7207fe3b1315a40ca57ff01e47acfdbfb18e9e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Electrocardiogram (ECG) signals provide essential information about the heart's condition and are widely used for diagnosing cardiovascular diseases. The morphology of a single heartbeat over the available leads is a primary biosignal for monitoring cardiac conditions. However, analyzing heartbeat m"
+  },
+  "collected_at": "2026-03-08T21:00:22.079Z"
+}

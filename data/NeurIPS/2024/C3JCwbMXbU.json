@@ -1,0 +1,39 @@
+{
+  "id": "C3JCwbMXbU",
+  "or_id": "C3JCwbMXbU",
+  "title": "Advancing Open-Set Domain Generalization Using Evidential Bi-Level Hardest Domain Scheduler",
+  "title_zh": "",
+  "authors": [
+    "Kunyu Peng",
+    "Di Wen",
+    "Kailun Yang",
+    "Ao Luo",
+    "Yufan Chen",
+    "Jia Fu",
+    "M. Saquib Sarfraz",
+    "Alina Roitberg",
+    "Rainer Stiefelhagen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In Open-Set Domain Generalization (OSDG), the model is exposed to both new variations of data appearance (domains) and open-set conditions, where both known and novel categories are present at test time. The challenges of this task arise from the dual need to generalize across diverse domains and accurately quantify category novelty, which is critical for applications in dynamic environments. Recently, meta-learning techniques have demonstrated superior results in OSDG, effectively orchestrating the meta-train and -test tasks by employing varied random categories and predefined domain partition strategies. These approaches prioritize a well-designed training schedule over traditional methods that focus primarily on data augmentation and the enhancement of discriminative feature learning. \nThe prevailing meta-learning models in OSDG typically utilize a predefined sequential domain scheduler to structure data partitions. However, a crucial aspect that remains inadequately explored is the influence brought by strategies of domain schedulers during training. \nIn this paper, we observe that an adaptive domain scheduler benefits more in OSDG compared with prefixed sequential and random domain schedulers. We propose the Evidential Bi-Level Hardest Domain Scheduler (EBiL-HaDS) to achieve an adaptive domain scheduler. This method strategically sequences domains by assessing their reliabilities in utilizing a follower network, trained with confidence scores learned in an evidential manner, regularized by max rebiasing discrepancy, and optimized in a bilevel manner. We verify our approach on three OSDG benchmarks, i.e., PACS, DigitsDG, and OfficeHome. The results show that our method substantially improves OSDG performance and achieves more discriminative embeddings for both the seen and unseen categories, underscoring the advantage of a judicious domain scheduler for the generalizability to unseen domains and unseen categories. The source code is publicly available at https:/",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "open set domain generalization",
+    "image classification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=C3JCwbMXbU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/375b1b4b1dc1c7ead98e69341a731730f0fff488.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In Open-Set Domain Generalization (OSDG), the model is exposed to both new variations of data appearance (domains) and open-set conditions, where both known and novel categories are present at test time. The challenges of this task arise from the dual need to generalize across diverse domains and ac"
+  },
+  "collected_at": "2026-03-08T21:00:22.079Z"
+}
