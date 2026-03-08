@@ -1,0 +1,38 @@
+{
+  "id": "SEflLHIhhJ",
+  "or_id": "SEflLHIhhJ",
+  "title": "Stepping on the Edge: Curvature Aware Learning Rate Tuners",
+  "title_zh": "",
+  "authors": [
+    "Vincent Roulet",
+    "Atish Agarwala",
+    "Jean-Bastien Grill",
+    "Grzegorz Michal Swirszcz",
+    "Mathieu Blondel",
+    "Fabian Pedregosa"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Curvature information -- particularly, the largest eigenvalue of the loss\nHessian, known as the sharpness -- often forms the basis for learning rate\ntuners. However, recent work has shown that the curvature information undergoes\ncomplex dynamics during training, going from a phase of increasing sharpness to\neventual stabilization. We analyze the closed-loop feedback effect between\nlearning rate tuning and curvature. We find that classical learning rate tuners\nmay yield greater one-step loss reduction, yet they ultimately underperform in\nthe long term when compared to constant learning rates in the full batch regime.\nThese models break the stabilization of the sharpness, which we explain using a\nsimplified model of the joint dynamics of the learning rate and the curvature.\nTo further investigate these effects, we introduce a new learning rate tuning\nmethod, Curvature Dynamics Aware Tuning (CDAT), which prioritizes long term\ncurvature stabilization over instantaneous progress on the objective. In the\nfull batch regime, CDAT shows behavior akin to prefixed warm-up schedules on deep\nlearning objectives, outperforming tuned constant learning rates. In the mini\nbatch regime, we observe that stochasticity introduces confounding effects that\nexplain the previous success of some learning rate tuners at appropriate batch\nsizes. Our findings highlight the critical role of understanding the joint\ndynamics of the learning rate and curvature, beyond greedy minimization, to\ndiagnose failures and design effective adaptive learning rate tuners.",
+  "abstract_zh": "",
+  "tldr": "We investigate the interplay between curvature dynamics and learning rate tuners through a new learning rate tuning method.",
+  "keywords": [
+    "deep learning optimization",
+    "learning rate tuner",
+    "progressive sharpening",
+    "edge of stability"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=SEflLHIhhJ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/33fc0272b7d7a67249291d330ce075067a1e789c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We investigate the interplay between curvature dynamics and learning rate tuners through a new learning rate tuning method."
+  },
+  "collected_at": "2026-03-08T03:02:14.811Z"
+}

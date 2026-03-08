@@ -1,0 +1,38 @@
+{
+  "id": "T9GbbWbNQG",
+  "or_id": "T9GbbWbNQG",
+  "title": "Layer-Adaptive State Pruning for Deep State Space Models",
+  "title_zh": "",
+  "authors": [
+    "Minseon Gwak",
+    "Seongrok Moon",
+    "Joohwan Ko",
+    "PooGyeon Park"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Due to the lack of state dimension optimization methods, deep state space models (SSMs) have sacrificed model capacity, training search space, or stability to alleviate computational costs caused by high state dimensions. In this work, we provide a structured pruning method for SSMs, Layer-Adaptive STate pruning (LAST), which reduces the state dimension of each layer in minimizing model-level output energy loss by extending modal truncation for a single system. LAST scores are evaluated using the $\\mathcal{H}_{\\infty}$ norms of subsystems and layer-wise energy normalization. The scores serve as global pruning criteria, enabling cross-layer comparison of states and layer-adaptive pruning. Across various sequence benchmarks, LAST optimizes previous SSMs, revealing the redundancy and compressibility of their state spaces. Notably, we demonstrate that, on average, pruning 33\\% of states still maintains performance with 0.52\\% accuracy loss in multi-input multi-output SSMs without retraining. Code is available at https://github.com/msgwak/LAST.",
+  "abstract_zh": "",
+  "tldr": "We propose a structured layer-adaptive pruning method for deep state space models.",
+  "keywords": [
+    "Sequence model",
+    "model order reduction",
+    "model compression",
+    "network pruning",
+    "system norm",
+    "long range arena"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=T9GbbWbNQG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fddf9904387538a607dbc7be2eea8749569df10b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a structured layer-adaptive pruning method for deep state space models."
+  },
+  "collected_at": "2026-03-08T03:02:14.808Z"
+}

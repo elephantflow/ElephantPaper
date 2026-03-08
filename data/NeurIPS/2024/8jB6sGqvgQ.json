@@ -1,0 +1,37 @@
+{
+  "id": "8jB6sGqvgQ",
+  "or_id": "8jB6sGqvgQ",
+  "title": "Efficient Adversarial Training in LLMs with Continuous Attacks",
+  "title_zh": "",
+  "authors": [
+    "Sophie Xhonneux",
+    "Alessandro Sordoni",
+    "Stephan Günnemann",
+    "Gauthier Gidel",
+    "Leo Schwinn"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Large language models (LLMs) are vulnerable to adversarial attacks that can bypass their safety guardrails. In many domains, adversarial training has proven to be one of the most promising methods to reliably improve robustness against such attacks. Yet, in the context of LLMs, current methods for adversarial training are hindered by the high computational costs required to perform discrete adversarial attacks at each training iteration. We address this problem by instead calculating adversarial attacks in the continuous embedding space of the LLM, which is orders of magnitudes more efficient. We propose a fast adversarial training algorithm (C-AdvUL) composed of two losses: the first makes the model robust on continuous embedding attacks computed on an adversarial behaviour dataset; the second ensures the usefulness of the final model by fine-tuning on utility data. Moreover, we introduce C-AdvIPO, an adversarial variant of IPO that does not require utility data for adversarially robust alignment. Our empirical evaluation on five models from different families (Gemma, Phi3, Mistral, Zephyr, Llama2) and at different scales (2B, 3.8B, 7B) shows that both algorithms substantially enhance LLM robustness against discrete attacks (GCG, AutoDAN, PAIR), while maintaining utility. Our results demonstrate that robustness to continuous perturbations can extrapolate to discrete threat models. Thereby, we present a path toward scalable adversarial training algorithms for robustly aligning LLMs.",
+  "abstract_zh": "",
+  "tldr": "Adversarial training for LLMs with continuous attacks on the token embedding space",
+  "keywords": [
+    "Large Language Models",
+    "Adversarial Training",
+    "Robustness"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=8jB6sGqvgQ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d6a785ac1ba01ae027569c81a9ec10565ccf5942.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "Adversarial training for LLMs with continuous attacks on the token embedding space"
+  },
+  "collected_at": "2026-03-08T03:02:14.810Z"
+}
