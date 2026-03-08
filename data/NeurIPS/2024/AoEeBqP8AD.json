@@ -1,0 +1,33 @@
+{
+  "id": "AoEeBqP8AD",
+  "or_id": "AoEeBqP8AD",
+  "title": "Unsupervised Anomaly Detection in The Presence of Missing Values",
+  "title_zh": "",
+  "authors": [
+    "Feng Xiao",
+    "Jicong Fan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Anomaly detection methods typically require fully observed data for model training and inference and cannot handle incomplete data, while the missing data problem is pervasive in science and engineering, leading to challenges in many important applications such as abnormal user detection in recommendation systems and novel or anomalous cell detection in bioinformatics, where the missing rates can be higher than 30\\% or even 80\\%. In this work, first, we construct and evaluate a straightforward strategy, ''impute-then-detect'', via combining state-of-the-art imputation methods with unsupervised anomaly detection methods, where the training data are composed of normal samples only. We observe that such two-stage methods frequently yield imputation bias from normal data, namely, the imputation methods are inclined to make incomplete samples ''normal\", where the fundamental reason is that the imputation models learned only on normal data and cannot generalize well to abnormal data in the inference stage. To address this challenge, we propose an end-to-end method that integrates data imputation with anomaly detection into a unified optimization problem. The proposed model learns to generate well-designed pseudo-abnormal samples to mitigate the imputation bias and ensure the discrimination ability of both the imputation and detection processes. Furthermore, we provide theoretical guarantees for the effectiveness of the proposed method, proving that the proposed method can correctly detect anomalies with high probability. Experimental results on datasets with manually constructed missing values and inherent missing values demonstrate that our proposed method effectively mitigates the imputation bias and surpasses the baseline methods significantly. The source code of our method is available at https://github.com/jicongfan/ImAD-Anomaly-Detection-With-Missing-Data.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "missing data",
+    "anomaly detection",
+    "deep learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=AoEeBqP8AD",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/62beb575e1acad7208b5cc8b3049d91db40300c6.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Anomaly detection methods typically require fully observed data for model training and inference and cannot handle incomplete data, while the missing data problem is pervasive in science and engineering, leading to challenges in many important applications such as abnormal user detection in recommen"
+  },
+  "collected_at": "2026-03-08T18:40:26.962Z"
+}

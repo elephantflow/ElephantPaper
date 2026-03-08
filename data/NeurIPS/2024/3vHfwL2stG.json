@@ -1,0 +1,34 @@
+{
+  "id": "3vHfwL2stG",
+  "or_id": "3vHfwL2stG",
+  "title": "The Ladder in Chaos: Improving Policy Learning by Harnessing the Parameter Evolving Path in A Low-dimensional Space",
+  "title_zh": "",
+  "authors": [
+    "Hongyao Tang",
+    "Min Zhang",
+    "Chen Chen",
+    "Jianye HAO"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Knowing the learning dynamics of policy is significant to unveiling the mysteries of Reinforcement Learning (RL). It is especially crucial yet challenging to Deep RL, from which the remedies to notorious issues like sample inefficiency and learning instability could be obtained. In this paper, we study how the policy networks of typical DRL agents evolve during the learning process by empirically investigating several kinds of temporal change for each policy parameter. In popular MuJoCo and DeepMind Control Suite (DMC) environments, we find common phenomena for TD3 and RAD agents: (1) the activity of policy network parameters is highly asymmetric and policy networks advance monotonically along a very limited number of major parameter directions; (2) severe detours occur in parameter update and harmonic-like changes are observed for all minor parameter directions. By performing a novel temporal SVD along the policy learning path, the major and minor parameter directions are identified as the columns of the right unitary matrix associated with dominant and insignificant singular values respectively. Driven by the discoveries above, we propose a simple and effective method, called Policy Path Trimming and Boosting (PPTB), as a general plug-in improvement to DRL algorithms. The key idea of PPTB is to trim the policy learning path by canceling the policy updates in minor parameter directions, and boost the learning path by encouraging the advance in major directions. In experiments, we demonstrate that our method improves the learning performance of TD3, RAD, and DoubleDQN regarding scores and efficiency in MuJoCo, DMC, and MinAtar tasks respectively.",
+  "abstract_zh": "",
+  "tldr": "This paper reveals the parameter evolving path of policy network in a low-dimensional space and propose a general method to leverage the path for better learning performance.",
+  "keywords": [
+    "Reinforcement Learning",
+    "Policy Optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=3vHfwL2stG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3f6d39247b15c96e34130f3be627490881c10bd3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper reveals the parameter evolving path of policy network in a low-dimensional space and propose a general method to leverage the path for better learning performance."
+  },
+  "collected_at": "2026-03-08T18:40:26.957Z"
+}

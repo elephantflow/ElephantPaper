@@ -1,0 +1,38 @@
+{
+  "id": "859DtlwnAD",
+  "or_id": "859DtlwnAD",
+  "title": "Pin-Tuning: Parameter-Efficient In-Context Tuning for Few-Shot Molecular Property Prediction",
+  "title_zh": "",
+  "authors": [
+    "Liang Wang",
+    "Qiang Liu",
+    "Shaozhen Liu",
+    "Xin Sun",
+    "Shu Wu",
+    "Liang Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Molecular property prediction (MPP) is integral to drug discovery and material science, but often faces the challenge of data scarcity in real-world scenarios. Addressing this, few-shot molecular property prediction (FSMPP) has been developed. Unlike other few-shot tasks, FSMPP typically employs a pre-trained molecular encoder and a context-aware classifier, benefiting from molecular pre-training and molecular context information. Despite these advancements, existing methods struggle with the ineffective fine-tuning of pre-trained encoders. We attribute this issue to the imbalance between the abundance of tunable parameters and the scarcity of labeled molecules, and the lack of contextual perceptiveness in the encoders. To overcome this hurdle, we propose a parameter-efficient in-context tuning method, named Pin-Tuning. Specifically, we propose a lightweight adapter for pre-trained message passing layers (MP-Adapter) and Bayesian weight consolidation for pre-trained atom/bond embedding layers (Emb-BWC), to achieve parameter-efficient tuning while preventing over-fitting and catastrophic forgetting. Additionally, we enhance the MP-Adapters with contextual perceptiveness. This innovation allows for in-context tuning of the pre-trained encoder, thereby improving its adaptability for specific FSMPP tasks. When evaluated on public datasets, our method demonstrates superior tuning with fewer trainable parameters, improving few-shot predictive performance.",
+  "abstract_zh": "",
+  "tldr": "We propose a parameter-efficient in-context tuning method, named Pin-tuning, to effectively adapt pre-trained molecular encoders to few-shot molecular property prediction tasks.",
+  "keywords": [
+    "few-shot molecular property prediction",
+    "molecular property prediction",
+    "parameter-efficient tuning",
+    "molecular representation learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=859DtlwnAD",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9003564fe9f87c9c737e63c73a37aefdd285d30c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a parameter-efficient in-context tuning method, named Pin-tuning, to effectively adapt pre-trained molecular encoders to few-shot molecular property prediction tasks."
+  },
+  "collected_at": "2026-03-08T18:40:26.961Z"
+}
