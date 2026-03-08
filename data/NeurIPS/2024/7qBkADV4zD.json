@@ -1,0 +1,36 @@
+{
+  "id": "7qBkADV4zD",
+  "or_id": "7qBkADV4zD",
+  "title": "DeltaDEQ: Exploiting Heterogeneous Convergence for Accelerating Deep Equilibrium Iterations",
+  "title_zh": "",
+  "authors": [
+    "Zuowen Wang",
+    "Longbiao Cheng",
+    "Pehuen Moure",
+    "Niklas Hahn",
+    "Shih-Chii Liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Implicit neural networks including deep equilibrium models have achieved superior task performance with better parameter efficiency in various applications. However, it is often at the expense of higher computation costs during inference. In this work, we identify a phenomenon named $\\textbf{heterogeneous convergence}$ that exists in deep equilibrium models and other iterative methods. We observe much faster convergence of state activations in certain dimensions therefore indicating the dimensionality of the underlying dynamics of the forward pass is much lower than the defined dimension of the states. We thereby propose to exploit heterogeneous convergence by storing past linear operation results (e.g., fully connected and convolutional layers) and only propagating the state activation when its change exceeds a threshold. Thus, for the already converged dimensions, the computations can be skipped. We verified our findings and reached 84\\% FLOPs reduction on the implicit neural representation task, 73\\% on the Sintel and 76\\% on the KITTI datasets for the optical flow estimation task while keeping comparable task accuracy with the models that perform the full update.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "implicit layers",
+    "deep learning acceleration",
+    "deep equilibrium model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=7qBkADV4zD",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3557279fbfb0846e372d74d08c4eae97d63126db.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Implicit neural networks including deep equilibrium models have achieved superior task performance with better parameter efficiency in various applications. However, it is often at the expense of higher computation costs during inference. In this work, we identify a phenomenon named $\\textbf{heterog"
+  },
+  "collected_at": "2026-03-08T03:23:45.880Z"
+}

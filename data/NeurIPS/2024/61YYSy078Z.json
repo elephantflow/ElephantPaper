@@ -1,0 +1,34 @@
+{
+  "id": "61YYSy078Z",
+  "or_id": "61YYSy078Z",
+  "title": "ECLipsE: Efficient Compositional Lipschitz Constant Estimation for Deep Neural Networks",
+  "title_zh": "",
+  "authors": [
+    "Yuezhu Xu",
+    "S Sivaranjani"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "The Lipschitz constant plays a crucial role in certifying the robustness of neural networks to input perturbations. Since calculating the exact Lipschitz constant is NP-hard, efforts have been made to obtain tight upper bounds on the Lipschitz constant. Typically, this involves solving a large matrix verification problem, the computational cost of which grows significantly for both deeper and wider networks. In this paper, we provide a compositional approach to estimate Lipschitz constants for deep feed-forward neural networks. We first obtain an exact decomposition of the large matrix verification problem into smaller sub-problems. Then, leveraging the underlying cascade structure of the network, we develop two algorithms. The first algorithm explores the geometric features of the problem and enables us to provide Lipschitz estimates that are comparable to existing methods by solving small semidefinite programs (SDPs) that are only as large as the size of each layer. The second algorithm relaxes these sub-problems and provides a closed-form solution to each sub-problem for extremely fast estimation, altogether eliminating the need to solve SDPs. The two algorithms represent different levels of trade-offs between efficiency and accuracy. Finally, we demonstrate that our approach provides a steep reduction in computation time (as much as several thousand times faster, depending on the algorithm for deeper networks) while yielding Lipschitz bounds that are very close to or even better than those achieved by state-of-the-art approaches in a broad range of experiments. In summary, our approach considerably advances the scalability and efficiency of certifying neural network robustness, making it particularly attractive for online learning tasks.",
+  "abstract_zh": "",
+  "tldr": "We provide an extremely fast and scalable method to obtain tight bounds for the Lipschitz constant of deep neural networks.",
+  "keywords": [
+    "Neural Networks",
+    "Lipschitz Constant",
+    "Robustness"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=61YYSy078Z",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6bb319b95e4b2b2876e2c7370dfc870a2486e168.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We provide an extremely fast and scalable method to obtain tight bounds for the Lipschitz constant of deep neural networks."
+  },
+  "collected_at": "2026-03-08T03:23:45.880Z"
+}

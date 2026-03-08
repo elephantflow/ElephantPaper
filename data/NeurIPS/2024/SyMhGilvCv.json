@@ -1,0 +1,34 @@
+{
+  "id": "SyMhGilvCv",
+  "or_id": "SyMhGilvCv",
+  "title": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+  "title_zh": "",
+  "authors": [
+    "Abhinav Jain",
+    "Swarat Chaudhuri",
+    "Thomas Reps",
+    "Chris Jermaine"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Parameter-Efficient Fine-Tuning (PEFT) has become the standard for customising Foundation Models (FMs) to user-specific downstream tasks. However, typical PEFT methods require storing multiple task-specific adapters, creating scalability issues as these adapters must be housed and run at the FM server. Traditional prompt tuning offers a potential solution by customising them through task-specific input prefixes, but it under-performs compared to other PEFT methods like LoRA. To address this gap, we propose Low-Rank Prompt Adaptation (LoPA), a prompt-tuning-based approach that performs on par with state-of-the-art PEFT methods and full fine-tuning while being more parameter-efficient and not requiring a server-based adapter. LoPA generates soft prompts by balancing between sharing task-specific information across instances and customization for each instance. It uses a low-rank decomposition of the soft-prompt component encoded for each instance to achieve parameter efficiency. We provide a comprehensive evaluation on multiple natural language understanding and code generation and understanding tasks across a wide range of foundation models with varying sizes.",
+  "abstract_zh": "",
+  "tldr": "Low-Rank Prompt Adaptation, soft-prompting approach for effective and efficient customization of large foundation models.",
+  "keywords": [
+    "Parameter-Efficient Fine-Tuning",
+    "Prompt tuning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=SyMhGilvCv",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f79a9adc44e79b654a39f910767c76091b4ab8ad.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Low-Rank Prompt Adaptation, soft-prompting approach for effective and efficient customization of large foundation models."
+  },
+  "collected_at": "2026-03-08T03:22:36.942Z"
+}

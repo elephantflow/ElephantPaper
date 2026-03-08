@@ -1,0 +1,38 @@
+{
+  "id": "tVConYid20",
+  "or_id": "tVConYid20",
+  "title": "FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision",
+  "title_zh": "",
+  "authors": [
+    "Jay Shah",
+    "Ganesh Bikshandi",
+    "Ying Zhang",
+    "Vijay Thakkar",
+    "Pradeep Ramani",
+    "Tri Dao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Attention, as a core layer of the ubiquitous Transformer architecture, is the bottleneck for large language models and long-context applications. elaborated an approach to speed up attention on GPUs through minimizing memory reads/writes. However, it has yet to take advantage of new capabilities present in recent hardware, with FlashAttention-2 achieving only 35% utilization on the H100 GPU.\nWe develop three main techniques to speed up attention on Hopper GPUs: exploiting asynchrony of the Tensor Cores and TMA to (1) overlap overall computation and data movement via warp-specialization and (2) interleave block-wise matmul and softmax operations, and (3) block quantization and incoherent processing that leverages hardware support for FP8 low-precision. We demonstrate that our method, FlashAttention-3, achieves speedup on H100 GPUs by 1.5-2.0$\\times$ with BF16 reaching up to 840 TFLOPs/s (85\\% utilization), and with FP8 reaching 1.3 PFLOPs/s. We validate that FP8 FlashAttention-3 achieves 2.6$\\times$ lower numerical error than a baseline FP8 attention.",
+  "abstract_zh": "",
+  "tldr": "We speed up FlashAttention on modern GPUs (Hopper) with asynchrony and low-precision",
+  "keywords": [
+    "attention",
+    "hardware-aware algorithms",
+    "H100"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=tVConYid20",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b6740309eaf98aa3b013a5269784842f1debc392.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We speed up FlashAttention on modern GPUs (Hopper) with asynchrony and low-precision"
+  },
+  "collected_at": "2026-03-08T03:22:36.941Z"
+}

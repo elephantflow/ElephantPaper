@@ -1,0 +1,40 @@
+{
+  "id": "qvdc0oCX2n",
+  "or_id": "qvdc0oCX2n",
+  "title": "CLIPLoss and Norm-Based Data Selection Methods for Multimodal Contrastive Learning",
+  "title_zh": "",
+  "authors": [
+    "Yiping Wang",
+    "Yifang Chen",
+    "Wendan Yan",
+    "Alex Fang",
+    "Wenjing Zhou",
+    "Kevin Jamieson",
+    "Simon Shaolei Du"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Data selection has emerged as a core issue for large-scale visual-language model pretaining (e.g., CLIP), particularly with noisy web-curated datasets. Three main data selection approaches are: (1) leveraging external non-CLIP models to aid data selection, (2) training new CLIP-style embedding models that are more effective at selecting high-quality data than the original OpenAI CLIP model, and (3) designing better metrics or strategies universally applicable to any CLIP embedding without requiring specific model properties (e.g., CLIPScore is one popular metric).  While the first two approaches have been extensively studied, the third remains under-explored. In this paper, we advance the third approach by proposing two new methods. Firstly, instead of classical CLIP scores that only consider the alignment between two modalities from a single sample, we introduce $\\textbf{negCLIPLoss}$,  a method inspired by CLIP training loss that adds the alignment between one sample and its contrastive pairs as an extra normalization term to CLIPScore for better quality measurement. Secondly, when downstream tasks are known, we propose a new norm-based metric, $\\textbf{NormSim}$, to measure the similarity between pretraining data and target data. We test our methods on the data selection benchmark, DataComp [Gadre et al., 2023]. Compared to the best baseline using only OpenAI's CLIP-L/14, our methods achieve a 5.3\\% improvement on ImageNet-1k and a 2.8\\% improvement on 38 downstream evaluation tasks. Moreover, both $\\textbf{negCLIPLoss}$ and $\\textbf{NormSim}$ are compatible with existing techniques. By combining our methods with the current best methods DFN [Fang et al., 2023] and HYPE [Kim et al., 2024], we can boost average performance on downstream tasks by 0.9\\%, achieving a new state-of-the-art on the DataComp-medium benchmark.",
+  "abstract_zh": "",
+  "tldr": "we design universal data selection methods for CLIP pretraining and achieve near SOTA results with less than 10% of preprocessing resources. Combining our methods with the current best one, we can achieve a new state-of-the-art.",
+  "keywords": [
+    "contrastive learning",
+    "visual-language pretraining",
+    "data selection",
+    "CLIP"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=qvdc0oCX2n",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5235d1d349bb8a0f3f2aa81d39b90ef150f6e36e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "we design universal data selection methods for CLIP pretraining and achieve near SOTA results with less than 10% of preprocessing resources. Combining our methods with the current best one, we can achieve a new state-of-the-art."
+  },
+  "collected_at": "2026-03-08T03:22:36.940Z"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "C3t6GMPnC5",
+  "or_id": "C3t6GMPnC5",
+  "title": "Mamba State-Space Models Can Be Strong Downstream Learners",
+  "title_zh": "",
+  "authors": [
+    "John Timothy Halloran",
+    "Manbir S Gulati",
+    "Paul F Roysdon"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Mamba state-space models (SSMs) have recently outperformed state-of-the-art (SOTA) Transformer large language models (LLMs) in various tasks and been widely adapted. However, Mamba’s downstream learning capabilities remain either unexplored–e.g., mixed-precision (MPFT) and parameter-efficient fine-tuning (PEFT)–or under-evaluated–e.g., in-context learning (ICL). For the latter, recent works reported Mamba’s ICL rivals SOTA Transformer LLMs using non-standard benchmarks. In contrast, we show that on standard benchmarks, pretrained Mamba models achieve only 38% of the ICL performance improvements (over zero-shot) of comparable Transformers.\n\nEnabling MPFT and PEFT in Mamba architectures is challenging due to recurrent dynamics and highly customized CUDA kernels, respectively. However, we prove that Mamba’s recurrent dynamics are robust to small input changes using dynamical systems theory. Empirically, we show that performance changes in Mamba’s inference and fine-tuning due to mixed-precision align with Transformer LLMs. Furthermore, we prove that targeting key memory buffers in Mamba’s customized CUDA kernels for low-rank adaptation regularizes SSM parameters, thus achieving parameter efficiency while retaining speedups. We show that combining MPFT and PEFT enables up to 2.15 times more tokens-per-second and 65.5% reduced memory-per-token compared to full Mamba fine-tuning, while achieving up to 81.5% of the ICL performance improvements (over zero-shot) of comparably fine-tuned Transformers.",
+  "abstract_zh": "",
+  "tldr": "Mamba has stable recurrent dynamics for efficient fine-tuning, which allows better in-context learning.",
+  "keywords": [
+    "Mamba",
+    "state-space models",
+    "in-context learning",
+    "large language models",
+    "LLMs",
+    "SSMs"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=C3t6GMPnC5",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f7d8e4232cef7c095a61b273456dcfa13215eb1e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Mamba has stable recurrent dynamics for efficient fine-tuning, which allows better in-context learning."
+  },
+  "collected_at": "2026-03-08T03:22:13.431Z"
+}

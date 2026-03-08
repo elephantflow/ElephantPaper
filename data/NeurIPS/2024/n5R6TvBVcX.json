@@ -1,0 +1,47 @@
+{
+  "id": "n5R6TvBVcX",
+  "or_id": "n5R6TvBVcX",
+  "title": "WildTeaming at Scale: From In-the-Wild Jailbreaks to (Adversarially) Safer Language Models",
+  "title_zh": "",
+  "authors": [
+    "Liwei Jiang",
+    "Kavel Rao",
+    "Seungju Han",
+    "Allyson Ettinger",
+    "Faeze Brahman",
+    "Sachin Kumar",
+    "Niloofar Mireshghallah",
+    "Ximing Lu",
+    "Maarten Sap",
+    "Yejin Choi",
+    "Nouha Dziri"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We introduce WildTeaming, an automatic red-teaming framework that mines in-the-wild user-chatbot interactions to discover 5.7K unique clusters of novel jailbreak tactics, and then composes selections of multiple mined tactics for systematic exploration of novel and even more challenging jailbreaks.\nCompared to prior work that performed red-teaming via recruited human workers, gradient-based optimization, or iterative revision with large language models (LLMs), our work investigates jailbreaks from chatbot users in-the-wild who were not specifically instructed to break the system.  WildTeaming reveals previously unidentified vulnerabilities of frontier LLMs, resulting in more diverse and successful adversarial attacks compared to state-of-the-art jailbreaking methods. \n\nWhile there exist many datasets for jailbreak evaluation, very few open-source datasets exist for jailbreak training, as safety training data has been closed among all frontier models even when their weights are open. Therefore, with WildTeaming we create WildJailbreak, a large-scale open-source synthetic safety dataset with 262K vanilla (direct request) and adversarial (complex jailbreak) prompt-response pairs. In order to mitigate exaggerated safety behaviors, WildJailbreak provides two contrastive types of queries: 1) harmful queries (both vanilla and adversarial) and 2) benign queries that resemble harmful queries in form but contain no harmful intent. As WildJailbreak considerably upgrades the quality and scale of existing safety resources, it uniquely enables us to examine the scaling effects of data and the interplay of data properties and model capabilities during safety training. Through extensive model training and evaluations, we identify the training properties that enable an ideal balance of safety behaviors: appropriate safeguarding without over-refusal, effective handling of both vanilla and adversarial queries, and minimal, if any, decrease in general capabilities. All the components o",
+  "abstract_zh": "",
+  "tldr": "We introduce an efficient jailbreaking method along with a large-scale safety dataset (WildJailbreak). Our experiments show that training on WildJailbreak leads to substantial safety improvements while minimally affecting general capabilities.",
+  "keywords": [
+    "Red-teaming",
+    "AI Safety",
+    "Safety Training",
+    "LLM Defense",
+    "Safety Training Data",
+    "Adversarial Training",
+    "Adversarial Attacks",
+    "Jailbreak"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=n5R6TvBVcX",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5c0e189c5b92a109f691a752108334b171f24840.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce an efficient jailbreaking method along with a large-scale safety dataset (WildJailbreak). Our experiments show that training on WildJailbreak leads to substantial safety improvements while minimally affecting general capabilities."
+  },
+  "collected_at": "2026-03-08T03:23:45.878Z"
+}

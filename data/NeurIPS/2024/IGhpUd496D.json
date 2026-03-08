@@ -1,0 +1,37 @@
+{
+  "id": "IGhpUd496D",
+  "or_id": "IGhpUd496D",
+  "title": "Provable Editing of Deep Neural Networks using Parametric Linear Relaxation",
+  "title_zh": "",
+  "authors": [
+    "Zhe Tao",
+    "Aditya Thakur"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Ensuring that a DNN satisfies a desired property is critical when deploying DNNs in safety-critical applications. There are efficient methods that can verify whether a DNN satisfies a property, as seen in the annual DNN verification competition (VNN-COMP). However, the problem of provably editing a DNN to satisfy a property remains challenging. We present PREPARED, the first efficient technique for provable editing of DNNs. Given a DNN $\\mathcal{N}$ with parameters $\\theta$, input polytope $P$, and output polytope $Q$, PREPARED finds new parameters $\\theta'$ such that $\\forall \\mathrm{x} \\in P . \\mathcal{N}(\\mathrm{x}; \\theta') \\in Q$ while minimizing the changes $\\lVert{\\theta' - \\theta}\\rVert$. Given a DNN and a property it violates from the VNN-COMP benchmarks, PREPARED is able to provably edit the DNN to satisfy this property within 45 seconds. PREPARED is efficient because it relaxes the NP-hard provable editing problem to solving a linear program. The key contribution is the novel notion of Parametric Linear Relaxation, which enables PREPARED to construct tight output bounds of the DNN that are parameterized by the new parameters $\\theta'$. We demonstrate that PREPARED is more efficient and effective compared to prior DNN editing approaches i) using the VNN-COMP benchmarks, ii) by editing CIFAR10 and TinyImageNet image-recognition DNNs, and BERT sentiment-classification DNNs for local robustness, and iii) by training a DNN to model a geodynamics process and satisfy physics constraints.",
+  "abstract_zh": "",
+  "tldr": "Efficient technique for provably editing the DNN parameters such that the DNN satisfies a given property for all inputs in a given polytope.",
+  "keywords": [
+    "Provable editing",
+    "provable repair",
+    "provable training",
+    "trustworthiness",
+    "linear programming",
+    "local robustness",
+    "verification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=IGhpUd496D",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/945784991c16d056f7424e504c586e0fe66b29cd.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Efficient technique for provably editing the DNN parameters such that the DNN satisfies a given property for all inputs in a given polytope."
+  },
+  "collected_at": "2026-03-08T03:22:13.431Z"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "v8RRFNbJ43",
+  "or_id": "v8RRFNbJ43",
+  "title": "Measuring Dejavu Memorization Efficiently",
+  "title_zh": "",
+  "authors": [
+    "Narine Kokhlikyan",
+    "Bargav Jayaraman",
+    "Florian Bordes",
+    "Chuan Guo",
+    "Kamalika Chaudhuri"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recent research has shown that representation learning models may accidentally memorize their training data. For example, the déjà vu method shows that for certain representation learning models and training images, it is sometimes possible to correctly predict the foreground label given only the representation of he background – better than through dataset-level correlations. However, their measurement method requires training two models – one to estimate dataset-level correlations and the other to estimate memorization. This multiple model setup becomes infeasible for large open-source models. In this work, we propose alter native simple methods to estimate dataset-level correlations, and show that these can be used to approximate an off-the-shelf model’s memorization ability without any retraining. This enables, for the first time, the measurement of memorization in pre-trained open-source image representation and vision-language models. Our results show that different ways of measuring memorization yield very similar aggregate results. We also find that open-source models typically have lower aggregate memorization than similar models trained on a subset of the data. The code is available both for vision (https://github.com/facebookresearch/DejaVuOSS) and vision language (https://github.com/facebookresearch/VLMDejaVu) models.",
+  "abstract_zh": "",
+  "tldr": "The deja vu memorization test measures training data memorization, but is inefficient because it involves training another similar model.  This work provides a simpler, more efficient way to carry out the test.",
+  "keywords": [
+    "memorization",
+    "privacy"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=v8RRFNbJ43",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6f697238a026167fa803f7aeaffa5b79df2b1057.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The deja vu memorization test measures training data memorization, but is inefficient because it involves training another similar model.  This work provides a simpler, more efficient way to carry out the test."
+  },
+  "collected_at": "2026-03-08T03:23:45.879Z"
+}

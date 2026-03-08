@@ -1,0 +1,33 @@
+{
+  "id": "K9IGlMQpif",
+  "or_id": "K9IGlMQpif",
+  "title": "SmallToLarge (S2L): Scalable Data Selection for Fine-tuning Large Language Models by Summarizing Training Trajectories of Small Models",
+  "title_zh": "",
+  "authors": [
+    "Yu Yang",
+    "Siddhartha Mishra",
+    "Jeffrey N Chiang",
+    "Baharan Mirzasoleiman"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Despite the effectiveness of data selection for pretraining and instruction fine-tuning\nlarge language models (LLMs), improving data efficiency in supervised fine-tuning\n(SFT) for specialized domains poses significant challenges due to the complexity\nof fine-tuning data. To bridge this gap, we introduce an effective and scalable\ndata selection method for SFT, SmallToLarge (S2L), which trains a small\nmodel, clusters loss trajectories of the examples, and samples from these clusters to\nguide data selection for larger models. We prove that during fine-tuning, samples\nwithin the same loss trajectory cluster exhibit similar gradients. Then, we show\nthat S2L subsets have a bounded gradient error w.r.t. the full data, hence guarantee\nconvergence to the neighborhood of the optimal solution. We demonstrate through\nextensive experiments that S2L significantly improves data efficiency in SFT for\nmathematical problem-solving, reducing the training data requirement to just $11$%\nof the original MathInstruct dataset to match full dataset performance while\noutperforming state-of-the-art data selection algorithms by an average of $4.7$%\nacross $6$ in- and out-domain evaluation datasets. Remarkably, selecting only 50K\ndata for SFT, S2L achieves a $32.7$% accuracy on the challenging MATH\nbenchmark, improving Phi-2 by $16.6$%. In clinical text summarization on the\nMIMIC-III dataset, S2L again outperforms training on the full dataset using\nonly $50$% of the data. Notably, S2L can perform scalable data selection using a\nreference model $100\\times$ smaller than the target model, proportionally reducing the\ncomputational cost.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "data selection"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=K9IGlMQpif",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0a2da6d64cd7f9e62b8aa4f9c56311ab881fcbfa.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Despite the effectiveness of data selection for pretraining and instruction fine-tuning\nlarge language models (LLMs), improving data efficiency in supervised fine-tuning\n(SFT) for specialized domains poses significant challenges due to the complexity\nof fine-tuning data. To bridge this gap, we intro"
+  },
+  "collected_at": "2026-03-08T03:23:45.880Z"
+}

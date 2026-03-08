@@ -1,0 +1,38 @@
+{
+  "id": "JkqrZqBO7d",
+  "or_id": "JkqrZqBO7d",
+  "title": "PETRA: Parallel End-to-end Training with Reversible Architectures",
+  "title_zh": "",
+  "authors": [
+    "Stephane Rivaud",
+    "Louis Fournier",
+    "Thomas Pumir",
+    "Eugene Belilovsky",
+    "Michael Eickenberg",
+    "Edouard Oyallon"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "We propose a new training approach for reversible architectures that enhances computational efficiency by enabling parallel gradient computation across layers, named PETRA (Parallel End-to-end Training of Reversible Architecture). This method diverges from conventional back-propagation by employing an approximate inversion of activations that effectively preserves gradient quality. By reducing the reliance on synchronous operations, our approach achieves high parallelization with only a slight increase in communication overhead. We have tested this method on benchmark datasets including CIFAR-10, ImageNet-32, and ImageNet, and multiple revertible architectures, where PETRA achieved competitive performance with minimal accuracy loss compared to traditional non-revertible training methods. Our method offers a reduced memory footprint compared to delayed gradient or checkpointing techniques. Unlike pipelining strategies, it eliminates the occurrence of bubble effects, enhancing operational efficiency, while being more parallelizable.",
+  "abstract_zh": "",
+  "tldr": "A new method combining delayed gradients and reversible architectures for scalable model parallelism.",
+  "keywords": [
+    "Model parallelism",
+    "delayed gradient",
+    "reversible architecture",
+    "memory reduction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=JkqrZqBO7d",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/bee70eccf9963aa092998fc83c62460f888f7c7a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A new method combining delayed gradients and reversible architectures for scalable model parallelism."
+  },
+  "collected_at": "2026-03-08T03:22:36.940Z"
+}
