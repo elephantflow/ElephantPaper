@@ -1,0 +1,36 @@
+{
+  "id": "dJUb9XRoZI",
+  "or_id": "dJUb9XRoZI",
+  "title": "Constrained Diffusion with Trust Sampling",
+  "title_zh": "",
+  "authors": [
+    "William Huang",
+    "Yifeng Jiang",
+    "Tom Van Wouwe",
+    "Karen Liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Diffusion models have demonstrated significant promise in various generative tasks; however, they often struggle to satisfy challenging constraints. Our approach addresses this limitation by rethinking training-free loss-guided diffusion from an optimization perspective. We formulate a series of constrained optimizations throughout the inference process of a diffusion model. In each optimization, we allow the sample to take multiple steps along the gradient of the proxy constraint function until we can no longer trust the proxy, according to the variance at each diffusion level. Additionally, we estimate the state manifold of diffusion model to allow for early termination when the sample starts to wander away from the state manifold at each diffusion step. Trust sampling effectively balances between following the unconditional diffusion model and adhering to the loss guidance, enabling more flexible and accurate constrained generation.  We demonstrate the efficacy of our method through extensive experiments on complex tasks, and in drastically different domains of images and 3D motion generation, showing significant improvements over existing methods in terms of generation quality.  Our implementation is available at https://github.com/will-s-h/trust-sampling.",
+  "abstract_zh": "",
+  "tldr": "A new optimization-based training-free guided diffusion method, applicable to drastically different domains such as image and human motion generation",
+  "keywords": [
+    "diffusion models",
+    "guidance",
+    "image generation",
+    "human motion"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=dJUb9XRoZI",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e1d858094c12ee2286a240c579e9c76aa92c8a7b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A new optimization-based training-free guided diffusion method, applicable to drastically different domains such as image and human motion generation"
+  },
+  "collected_at": "2026-03-08T05:22:10.681Z"
+}

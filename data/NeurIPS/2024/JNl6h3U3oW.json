@@ -1,0 +1,38 @@
+{
+  "id": "JNl6h3U3oW",
+  "or_id": "JNl6h3U3oW",
+  "title": "ShiftAddLLM: Accelerating Pretrained LLMs via Post-Training Multiplication-Less Reparameterization",
+  "title_zh": "",
+  "authors": [
+    "Haoran You",
+    "Yipin Guo",
+    "Yichao Fu",
+    "Wei Zhou",
+    "Huihong Shi",
+    "Xiaofan Zhang",
+    "Souvik Kundu",
+    "Amir Yazdanbakhsh",
+    "Yingyan Celine Lin"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large language models (LLMs) have shown impressive performance on language tasks but face challenges when deployed on resource-constrained devices due to their extensive parameters and reliance on dense multiplications, resulting in high memory demands and latency bottlenecks. Shift-and-add reparameterization offers a promising solution by replacing costly multiplications with hardware-friendly primitives in both the attention and multi-layer perceptron (MLP) layers of an LLM. However, current reparameterization techniques require training from scratch or full parameter fine-tuning to restore accuracy, which is resource-intensive for LLMs. To address this, we propose accelerating pretrained LLMs through post-training shift-and-add reparameterization, creating efficient multiplication-free models, dubbed ShiftAddLLM. Specifically, we quantize each weight matrix into binary matrices paired with group-wise scaling factors. The associated multiplications are reparameterized into (1) shifts between activations and scaling factors and (2) queries and adds according to the binary matrices. To reduce accuracy loss, we present a multi-objective optimization method to minimize both weight and output activation reparameterization errors. Additionally, based on varying sensitivity across layers to reparameterization, we develop an automated bit allocation strategy to further reduce memory usage and latency. Experiments on five LLM families and eight tasks consistently validate the effectiveness of ShiftAddLLM, achieving average perplexity reductions of 5.6 and 22.7 points at comparable or lower latency compared to the most competitive quantized LLMs at 3- and 2-bit precision, respectively, and more than 80% memory and energy reductions over the original LLMs. Codes and models are available at https://github.com/GATECH-EIC/ShiftAddLLM.",
+  "abstract_zh": "",
+  "tldr": "We propose accelerating pretrained LLMs through a \"post-training\" shift and add reparameterization, towards efficient multiplication-less LLMs, dubbed ShiftAddLLM.",
+  "keywords": [
+    "Large Language Models (LLMs); Efficient LLMs; Multiplication-less networks; Hardware acceleration"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=JNl6h3U3oW",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/dbaa21ce19cb724f3f9cb7dcaa53e0ea77e53334.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose accelerating pretrained LLMs through a \"post-training\" shift and add reparameterization, towards efficient multiplication-less LLMs, dubbed ShiftAddLLM."
+  },
+  "collected_at": "2026-03-08T05:22:10.682Z"
+}

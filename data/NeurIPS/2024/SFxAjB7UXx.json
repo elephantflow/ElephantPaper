@@ -1,0 +1,47 @@
+{
+  "id": "SFxAjB7UXx",
+  "or_id": "SFxAjB7UXx",
+  "title": "Scalable Optimization in the Modular Norm",
+  "title_zh": "",
+  "authors": [
+    "Tim Large",
+    "Yang Liu",
+    "Minyoung Huh",
+    "Hyojin Bahng",
+    "Phillip Isola",
+    "Jeremy Bernstein"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "To improve performance in contemporary deep learning, one is interested in scaling up the neural network in terms of both the number and the size of the layers. When ramping up the width of a single layer, graceful scaling of training has been linked to the need to normalize the weights and their updates in the \"natural norm\" particular to that layer. In this paper, we significantly generalize this idea by defining the modular norm, which is the natural norm on the full weight space of any neural network architecture. The modular norm is defined recursively in tandem with the network architecture itself. We show that the modular norm has several promising applications. On the practical side, the modular norm can be used to normalize the updates of any base optimizer so that the learning rate becomes transferable across width and depth. This means that the user does not need to compute optimizer-specific scale factors in order to scale training. On the theoretical side, we show that for any neural network built from \"well-behaved\" atomic modules, the gradient of the network is Lipschitz-continuous in the modular norm, with the Lipschitz constant admitting a simple recursive formula. This characterization opens the door to porting standard ideas in optimization theory over to deep learning. We have created a Python package called Modula that automatically normalizes weight updates in the modular norm of the architecture. Both the Modula package and code for our experiments are provided in the supplementary material.",
+  "abstract_zh": "",
+  "tldr": "Normalizing weight updates in a special norm leads to hyperparameter transfer; this norm can be inferred automatically from the computation graph.",
+  "keywords": [
+    "scalable",
+    "optimization",
+    "modular",
+    "norm",
+    "normalization",
+    "modula",
+    "hyperparameter",
+    "transfer",
+    "architecture",
+    "aware",
+    "operator",
+    "module",
+    "tree"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=SFxAjB7UXx",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f3aa0267adde40f2438c5f134aac596b9e198960.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Normalizing weight updates in a special norm leads to hyperparameter transfer; this norm can be inferred automatically from the computation graph."
+  },
+  "collected_at": "2026-03-08T05:22:10.682Z"
+}
