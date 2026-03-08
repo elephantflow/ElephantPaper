@@ -1,0 +1,40 @@
+{
+  "id": "Swh8LxuycA",
+  "or_id": "Swh8LxuycA",
+  "title": "Learning Goal-Conditioned Representations for Language Reward Models",
+  "title_zh": "",
+  "authors": [
+    "Vaskar Nath",
+    "Dylan Z Slack",
+    "Jeff Da",
+    "Yuntao Ma",
+    "Hugh Zhang",
+    "Spencer Whitehead",
+    "Sean M. Hendryx"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Techniques that learn improved representations via offline data or self-supervised objectives have shown impressive results in traditional reinforcement learning.\nNevertheless, it is unclear how improved representation learning can benefit reinforcement learning from human feedback on language models.\nIn this work, we propose training reward models (RMs) in a contrastive, $\\textit{goal-conditioned}$ fashion by increasing the representation similarity of future states along sampled preferred trajectories and decreasing the similarity along randomly sampled dispreferred trajectories.\nThis objective significantly improves reward model performance by up to 0.09 AUROC across challenging benchmarks, such as MATH and GSM8k. These findings extend to general alignment as well -- on the Helpful-Harmless dataset, we observe 2.3\\% increase in accuracy.\nBeyond improving reward model performance, we show this way of training RM representations enables improved steerability because it allows us to evaluate the likelihood of an action achieving a particular goal-state (e.g. whether a solution is correct or helpful).\nLeveraging this insight, we find that we can filter up to 55\\% of generated tokens during majority voting by discarding trajectories likely to end up in an \"incorrect\" state, which leads to significant cost savings.\nWe additionally find that these representations can perform fine-grained control by conditioning on desired future goal-states.\nFor example, we show that steering a Llama 3 model towards helpful generations with our approach improves helpfulness by $9.6$\\% over a supervised-fine-tuning trained baseline.\nSimilarly, steering the model towards complex generations improves complexity by $21.6$\\% over the baseline.\nOverall, we find that training RMs in this contrastive, goal-conditioned fashion significantly improves performance and enables model steerability.",
+  "abstract_zh": "",
+  "tldr": "We propose to enhance the learned representations of LLM reward models via a goal-conditioned contrastive learning objective, which we show improves reward model performance and downstream LLM alignment.",
+  "keywords": [
+    "Goal-Conditioned Q-functions",
+    "Contrastive Learning",
+    "Reinforcement Learning from Human Feedback",
+    "Representation Learning",
+    "Reward Model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Swh8LxuycA",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/83089f8621985bae77c25ae6a4e253c93dc4c5b0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose to enhance the learned representations of LLM reward models via a goal-conditioned contrastive learning objective, which we show improves reward model performance and downstream LLM alignment."
+  },
+  "collected_at": "2026-03-08T04:42:13.860Z"
+}

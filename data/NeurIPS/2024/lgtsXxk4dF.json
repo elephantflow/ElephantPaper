@@ -1,0 +1,34 @@
+{
+  "id": "lgtsXxk4dF",
+  "or_id": "lgtsXxk4dF",
+  "title": "Clustering with Non-adaptive Subset Queries",
+  "title_zh": "",
+  "authors": [
+    "Hadley Black",
+    "Euiwoong Lee",
+    "Arya Mazumdar",
+    "Barna Saha"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recovering the underlying clustering of a set $U$ of $n$ points by asking pair-wise same-cluster queries has garnered significant interest in the last decade. Given a query $S \\subset U$, $|S|=2$, the oracle returns \"yes\" if the points are in the same cluster and \"no\" otherwise. We study a natural generalization of this problem to subset queries for $|S|>2$, where the oracle returns the number of clusters intersecting $S$. Our aim is to determine the minimum number of queries needed for exactly recovering an arbitrary $k$-clustering. We focus on non-adaptive schemes, where all the queries are asked in one round, thus allowing for the querying process to be parallelized, which is a highly desirable property. \n\nFor adaptive algorithms with pair-wise queries, the complexity is known to be $\\Theta(nk)$, where $k$ is the number of clusters. \nIn contrast, non-adaptive pair-wise query algorithms are extremely limited: even for $k=3$, such algorithms require $\\Omega(n^2)$ queries, which matches the trivial $O(n^2)$ upper bound attained by querying every pair of points. Allowing for subset queries of unbounded size, $O(n)$ queries is possible with an adaptive scheme.  However, the realm of non-adaptive algorithms remains completely unknown. Is it possible to attain algorithms that are non-adaptive while still making a near-linear number of queries?\n\nIn this paper, we give the first non-adaptive algorithms for clustering with subset queries. We provide, (i) a non-adaptive algorithm making $O(n \\log^2 n \\log k)$ queries which improves to $O(n \\log k)$ when the cluster sizes are within any constant factor of each other, (ii) for constant $k$, a non-adaptive algorithm making $O(n \\log{\\log{n}})$ queries. In addition to non-adaptivity, we take into account other practical considerations, such as enforcing a bound on query size.  For constant $k$, we give an algorithm making $\\smash{\\widetilde{O}(n^2/s^2)}$ queries on subsets of size at most $s \\leq \\sqrt{n}$, which is optimal amo",
+  "abstract_zh": "",
+  "tldr": "We provide efficient non-adaptive algorithms that query a near-linear (and near-optimal) number of subset-queries to infer clustering of a set of elements exactly.",
+  "keywords": [
+    "Clustering",
+    "query algorithms"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=lgtsXxk4dF",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/61ca56abf9e2fcb4a96d5c3908c1d3617a81cb55.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We provide efficient non-adaptive algorithms that query a near-linear (and near-optimal) number of subset-queries to infer clustering of a set of elements exactly."
+  },
+  "collected_at": "2026-03-08T04:42:13.858Z"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "FmNoFIImZG",
+  "or_id": "FmNoFIImZG",
+  "title": "TabEBM: A Tabular Data Augmentation Method with Distinct Class-Specific Energy-Based Models",
+  "title_zh": "",
+  "authors": [
+    "Andrei Margeloiu",
+    "Xiangjian Jiang",
+    "Nikola Simidjievski",
+    "Mateja Jamnik"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Data collection is often difficult in critical fields such as medicine, physics, and chemistry, yielding typically only small tabular datasets. However, classification methods tend to struggle with these small datasets, leading to poor predictive performance. Increasing the training set with additional synthetic data, similar to data augmentation in images, is commonly believed to improve downstream tabular classification performance. However, current tabular generative methods that learn either the joint distribution $ p(\\mathbf{x}, y) $ or the class-conditional distribution $ p(\\mathbf{x} \\mid y) $ often overfit on small datasets, resulting in poor-quality synthetic data, usually worsening classification performance compared to using real data alone. To solve these challenges, we introduce TabEBM, a novel class-conditional generative method using Energy-Based Models (EBMs). Unlike existing tabular methods that use a shared model to approximate all class-conditional densities, our key innovation is to create distinct EBM generative models for each class, each modelling its class-specific data distribution individually. This approach creates robust energy landscapes, even in ambiguous class distributions. Our experiments show that TabEBM generates synthetic data with higher quality and better statistical fidelity than existing methods. When used for data augmentation, our synthetic data consistently leads to improved classification performance across diverse datasets of various sizes, especially small ones. Code is available at https://github.com/andreimargeloiu/TabEBM.",
+  "abstract_zh": "",
+  "tldr": "We introduce a new data augmentation method for tabular data, which trains class-specific generators.",
+  "keywords": [
+    "tabular data",
+    "data augmentation",
+    "synthetic data generation",
+    "energy based model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=FmNoFIImZG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/25a6e595799705e000238621240dbbb44f3cf7d7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce a new data augmentation method for tabular data, which trains class-specific generators."
+  },
+  "collected_at": "2026-03-08T04:42:13.860Z"
+}

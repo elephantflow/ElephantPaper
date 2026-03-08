@@ -1,0 +1,32 @@
+{
+  "id": "haSKMlrbX5",
+  "or_id": "haSKMlrbX5",
+  "title": "BoNBoN Alignment for Large Language Models and the Sweetness of Best-of-n Sampling",
+  "title_zh": "",
+  "authors": [
+    "Lin Gui",
+    "Cristina Garbacea",
+    "Victor Veitch"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This paper concerns the problem of aligning samples from large language models to human preferences using *best-of-$n$* sampling, where we draw $n$ samples, rank them, and return the best one. We consider two fundamental problems. First: what is the relationship between best-of-$n$ and other (RLHF-type) approaches to aligning LLMs? In particular, when should one be preferred to the other? We show that the best-of-$n$ sampling distribution is essentially equivalent to the policy learned by RLHF if we apply a particular monotone transformation to the reward function. Moreover, we show that this transformation yields the best possible trade-off between win-rate against the base model vs KL distance from the base model. Then, best-of-$n$ is a Pareto-optimal win-rate vs KL solution.\nThe second problem we consider is how to fine-tune a model to mimic the best-of-$n$ sampling distribution, to avoid drawing $n$ samples for each inference. We derive *BonBon Alignment* as a method for achieving this. Experiments show that BonBon alignment yields a model that achieves high win rates while minimally affecting off-target aspects of the generations.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "LLM alignment; LLM fine tuning; Best of n; RLHF; Optimal Policy"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=haSKMlrbX5",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/77322ec05b42e4b97cc959fb943934f0a32388b0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper concerns the problem of aligning samples from large language models to human preferences using *best-of-$n$* sampling, where we draw $n$ samples, rank them, and return the best one. We consider two fundamental problems. First: what is the relationship between best-of-$n$ and other (RLHF-t"
+  },
+  "collected_at": "2026-03-08T04:42:13.859Z"
+}
