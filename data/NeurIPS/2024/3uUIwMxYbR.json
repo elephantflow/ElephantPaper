@@ -1,0 +1,36 @@
+{
+  "id": "3uUIwMxYbR",
+  "or_id": "3uUIwMxYbR",
+  "title": "Revisiting Differentially Private ReLU Regression",
+  "title_zh": "",
+  "authors": [
+    "Meng Ding",
+    "Mingxi Lei",
+    "Liyang Zhu",
+    "Shaowei Wang",
+    "Di Wang",
+    "Jinhui Xu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "As one of the most fundamental non-convex learning problems, ReLU regression under differential privacy (DP) constraints, especially in high-dimensional settings, remains a challenging area in privacy-preserving machine learning. Existing results are limited to the assumptions of bounded norm $ \\|\\mathbf{x}\\|_2 \\leq 1$, which becomes meaningless with increasing data dimensionality. In this work, we revisit the problem of DP ReLU regression in high-dimensional regimes. We propose two innovative algorithms DP-GLMtron and DP-TAGLMtron that outperform the conventional DPSGD. \nDP-GLMtron is based on a generalized linear model perceptron approach, integrating adaptive clipping and Gaussian mechanism for enhanced privacy. To overcome the constraints of small privacy budgets in DP-GLMtron, represented by $\\widetilde{O}(\\sqrt{1/N})$ where $N$ is the sample size, we introduce DP-TAGLMtron, which utilizes a tree aggregation protocol to balance privacy and utility effectively, showing that DP-TAGLMtron achieves comparable performance with only an additional factor of $O(\\log N)$ in the utility upper bound.\nMoreover, our theoretical analysis extends beyond Gaussian-like data distributions to settings with eigenvalue decay, showing how data distribution impacts learning in high dimensions. Notably, our findings suggest that the utility upper bound could be independent of the dimension $d$, even when $d \\gg N$. \nExperiments on synthetic and real-world datasets also validate our results.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Differential Privacy",
+    "Generalized Linear Model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=3uUIwMxYbR",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1b8bed0fd41cb46007e7290717266daa2cadf94d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "As one of the most fundamental non-convex learning problems, ReLU regression under differential privacy (DP) constraints, especially in high-dimensional settings, remains a challenging area in privacy-preserving machine learning. Existing results are limited to the assumptions of bounded norm $ \\|\\m"
+  },
+  "collected_at": "2026-03-08T23:43:36.266Z"
+}
