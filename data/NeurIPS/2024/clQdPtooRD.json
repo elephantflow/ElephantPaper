@@ -1,0 +1,35 @@
+{
+  "id": "clQdPtooRD",
+  "or_id": "clQdPtooRD",
+  "title": "Oja's Algorithm for Streaming Sparse PCA",
+  "title_zh": "",
+  "authors": [
+    "Syamantak Kumar",
+    "Purnamrita Sarkar"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Oja's algorithm for Streaming Principal Component Analysis (PCA) for $n$ data-points in a $d$ dimensional space achieves the same sin-squared error $O(r_{\\mathsf{eff}}/n)$ as the offline algorithm in $O(d)$ space and $O(nd)$ time and a single pass through the datapoints. Here $r_{\\mathsf{eff}}$ is the effective rank (ratio of the trace and the principal eigenvalue of the population covariance matrix $\\Sigma$). Under this computational budget, we consider the problem of sparse PCA, where the principal eigenvector of $\\Sigma$ is $s$-sparse, and $r_{\\mathsf{eff}}$ can be large. In this setting, to our knowledge, *there are no known single-pass algorithms* that achieve the minimax error bound in $O(d)$ space and $O(nd)$ time without either requiring strong initialization conditions or assuming further structure (e.g., spiked) of the covariance matrix.\nWe show that a simple single-pass procedure that thresholds the output of Oja's algorithm (the Oja vector) can achieve the minimax error bound under some regularity conditions in $O(d)$ space and $O(nd)$ time.  \nWe present a nontrivial and novel analysis of the entries of the unnormalized Oja vector, which involves the projection of a product of independent random matrices on a random initial vector. This is completely different from previous analyses of Oja's algorithm and matrix products, which have been done when the $r_{\\mathsf{eff}}$ is bounded.",
+  "abstract_zh": "",
+  "tldr": "We give a O(d) space, O(nd) time algorithm for Streaming Sparse PCA via a novel analysis of Oja's Algorithm followed by thresholding",
+  "keywords": [
+    "Streaming PCA",
+    "Oja's Algorithm",
+    "Sparse PCA",
+    "Support Recovery",
+    "Entrywise Bounds"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=clQdPtooRD",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/18dc5c8619f6030ed556376f12d426c8359c5f2b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We give a O(d) space, O(nd) time algorithm for Streaming Sparse PCA via a novel analysis of Oja's Algorithm followed by thresholding"
+  },
+  "collected_at": "2026-03-08T06:22:07.101Z"
+}

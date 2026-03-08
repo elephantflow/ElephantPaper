@@ -1,0 +1,36 @@
+{
+  "id": "x2zY4hZcmg",
+  "or_id": "x2zY4hZcmg",
+  "title": "Dynamic Model Predictive Shielding for Provably Safe Reinforcement Learning",
+  "title_zh": "",
+  "authors": [
+    "Arko Banerjee",
+    "Kia Rahmani",
+    "Joydeep Biswas",
+    "Isil Dillig"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Among approaches for provably safe reinforcement learning, Model Predictive Shielding (MPS) has proven effective at complex tasks in continuous, high-dimensional state spaces, by leveraging a *backup policy* to ensure safety when the learned policy attempts to take risky actions. However, while MPS can ensure safety both during and after training, it often hinders task progress due to the conservative and task-oblivious nature of backup policies.\nThis paper introduces *Dynamic Model Predictive Shielding* (DMPS), which optimizes reinforcement learning objectives while maintaining provable safety. DMPS employs a local planner to dynamically select safe recovery actions that maximize both short-term progress as well as long-term rewards. Crucially,  the planner and the neural policy  play a synergistic role in DMPS. When planning recovery actions for ensuring safety,  the planner utilizes the neural policy to estimate long-term rewards, allowing it to *observe* beyond its short-term planning horizon. \nConversely, the neural policy under training learns from the recovery plans proposed by the planner, converging to policies that are both *high-performing* and *safe* in practice.\nThis approach guarantees safety during and after training, with bounded recovery regret that decreases exponentially with planning horizon depth. Experimental results demonstrate that DMPS converges to policies that rarely require shield interventions after training and achieve higher rewards compared to several state-of-the-art baselines.",
+  "abstract_zh": "",
+  "tldr": "The paper proposes a novel method for integrating a dynamic planner within a safe reinforcement learning framework, enabling progress towards the goal while recovering from unsafe situations.",
+  "keywords": [
+    "Safe Reinforcement Learning",
+    "Model Predictive Shielding",
+    "Planning",
+    "MCTS"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=x2zY4hZcmg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c706ae06d8c7d1a093c6b0c855ff445166fb6629.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The paper proposes a novel method for integrating a dynamic planner within a safe reinforcement learning framework, enabling progress towards the goal while recovering from unsafe situations."
+  },
+  "collected_at": "2026-03-08T06:22:07.100Z"
+}

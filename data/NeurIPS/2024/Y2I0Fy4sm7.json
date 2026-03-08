@@ -1,0 +1,35 @@
+{
+  "id": "Y2I0Fy4sm7",
+  "or_id": "Y2I0Fy4sm7",
+  "title": "SpeedLoader: An I/O efficient scheme for heterogeneous and distributed LLM operation",
+  "title_zh": "",
+  "authors": [
+    "Yiqi Zhang",
+    "Yang You"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "With the surging growth of model parameters, foundation models pose unprecedented challenges to traditional computational infrastructures. These large models inherently require substantial accelerator memory to accommodate massive tensors during pre-training, fine-tuning, and even inference stages, making it even more challenging to deploy a model with restricted computational resources. Given this challenge, distribution and offloading the model states are two major solutions. Partitioning the required states to participating workers, and storing them in lower speed media, such as host DRAM and block devices, largely alleviate the accelerator memory pressure. However, the prohibitive costs of tensor communication render it a theoretically plausible yet practically inefficient solution. Previous efforts to improve efficiency include maximizing rematerialization and employing chunk-based tensor management to reduce host-device communication. Despite these efforts, the reported training throughput only achieves 36.54% of model FLOPs utilization (MFUs), still not comparable to full on-device training. In this work, we redesign the data flow of heterogeneous hardware and sharded model training to minimize the excessive communication overhead. Our proposed scheme significantly enhances training and inference throughput of large language models under restrictive computational resources. We confirmed a large leap in effective compute time by looking into the kernel-level runtime behavior of our trials, where the MFUs can achieve up to 51%. Compared to the state-of-the-art approach, our framework robustly achieves remarkable speedups from 3x to 30x in multiple distributed heterogeneous training setups and inference speedups of 1.5x to 2.35x without compromising arithmetic precision.",
+  "abstract_zh": "",
+  "tldr": "SpeedLoader can compute multiple batches within one Forward-Backward pass.",
+  "keywords": [
+    "Heterogenous Computing",
+    "Large Language Model",
+    "ZeRO",
+    "FSDP",
+    "Offload"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Y2I0Fy4sm7",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/11aee5af430a09c1dbade2a1721b90a537ce0b50.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "SpeedLoader can compute multiple batches within one Forward-Backward pass."
+  },
+  "collected_at": "2026-03-08T06:22:07.098Z"
+}

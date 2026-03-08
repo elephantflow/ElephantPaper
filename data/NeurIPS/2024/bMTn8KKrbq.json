@@ -1,0 +1,40 @@
+{
+  "id": "bMTn8KKrbq",
+  "or_id": "bMTn8KKrbq",
+  "title": "Towards training digitally-tied analog blocks via hybrid gradient computation",
+  "title_zh": "",
+  "authors": [
+    "Timothy Nest",
+    "Maxence Ernoult"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Power efficiency is plateauing in the standard digital electronics realm such that new hardware, models, and algorithms are needed to reduce the costs of AI training. The combination of energy-based analog circuits and the Equilibrium Propagation (EP) algorithm constitutes a compelling alternative compute paradigm for gradient-based optimization of neural nets. Existing analog hardware accelerators, however, typically incorporate digital circuitry to sustain auxiliary non-weight-stationary operations, mitigate analog device imperfections, and leverage existing digital platforms. Such heterogeneous hardware lacks a supporting theoretical framework. In this work, we introduce \\emph{Feedforward-tied Energy-based Models} (ff-EBMs), a hybrid model comprised of feedforward and energy-based blocks housed on digital and analog circuits. We derive a novel algorithm to compute gradients end-to-end in ff-EBMs by backpropagating and ``eq-propagating'' through feedforward and energy-based parts respectively, enabling EP to be applied flexibly on realistic architectures. We experimentally demonstrate the effectiveness of this approach on ff-EBMs using Deep Hopfield Networks (DHNs)  as energy-based blocks, and show that a standard DHN can be arbitrarily split into any uniform size while maintaining or improving performance with increases in simulation speed of up to four times. We then train ff-EBMs on ImageNet32 where we establish a new state-of-the-art performance for the EP literature (46 top-1 \\%). Our approach offers a principled, scalable, and incremental roadmap for the gradual integration of self-trainable analog computational primitives into existing digital accelerators.",
+  "abstract_zh": "",
+  "tldr": "We extend Equilibrium Propagation (EP) to a novel hardware-realistic model which comprises feedforward and energy-based blocks, resulting in chaining backprop and EP gradients backward through these blocks and a new SOTA performance on ImageNet32",
+  "keywords": [
+    "implicit differentiation",
+    "equilibrium propagation",
+    "bilevel optimization",
+    "hopfield networks",
+    "analog computing",
+    "hardware-aware training",
+    "backprop",
+    "energy-based models",
+    "physical learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=bMTn8KKrbq",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0ddbc1061ddc500af441f25cf3e183654f4ff4f5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We extend Equilibrium Propagation (EP) to a novel hardware-realistic model which comprises feedforward and energy-based blocks, resulting in chaining backprop and EP gradients backward through these blocks and a new SOTA performance on ImageNet32"
+  },
+  "collected_at": "2026-03-08T06:22:07.100Z"
+}
