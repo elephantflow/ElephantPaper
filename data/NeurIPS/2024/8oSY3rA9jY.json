@@ -1,0 +1,37 @@
+{
+  "id": "8oSY3rA9jY",
+  "or_id": "8oSY3rA9jY",
+  "title": "Finding Transformer Circuits With Edge Pruning",
+  "title_zh": "",
+  "authors": [
+    "Adithya Bhaskar",
+    "Alexander Wettig",
+    "Dan Friedman",
+    "Danqi Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "The path to interpreting a language model often proceeds via analysis of circuits---sparse computational subgraphs of the model that capture specific aspects of its behavior. Recent work has automated the task of discovering circuits. Yet, these methods have practical limitations, as they either rely on inefficient search algorithms or inaccurate approximations. In this paper, we frame circuit discovery as an optimization problem and propose _Edge Pruning_ as an effective and scalable solution. Edge Pruning leverages gradient-based pruning techniques, but instead of removing neurons or components, prunes the _edges_ between components. Our method finds circuits in GPT-2 that use less than half the number of edges than circuits found by previous methods while being equally faithful to the full model predictions on standard circuit-finding tasks. Edge Pruning is efficient on tasks involving up to 100,000 examples, outperforming previous methods in speed and producing substantially better circuits. It also perfectly recovers the ground-truth circuits in two models compiled with Tracr. Thanks to its efficiency, we scale Edge Pruning to CodeLlama-13B, a model over 100x the size of GPT-2.\nWe use this setting for a case study, where we compare the mechanisms behind instruction prompting and in-context learning.\nWe find two circuits with more than 99.96% sparsity that match the performance of the full model. Further analysis reveals that the mechanisms in the two settings overlap substantially. This shows that Edge Pruning is a practical and scalable tool for interpretability, \nwhich can shed light on behaviors that only emerge in large models.",
+  "abstract_zh": "",
+  "tldr": "We propose a circuit finding method that prunes connections between model components, and show it performs and scales well.",
+  "keywords": [
+    "interpretability",
+    "circuits",
+    "pruning",
+    "optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=8oSY3rA9jY",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f03f6075f6988d9f26ac5c0de399b81a5f9a207f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We propose a circuit finding method that prunes connections between model components, and show it performs and scales well."
+  },
+  "collected_at": "2026-03-08T05:02:05.432Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "pf4OuJyn4Q",
+  "or_id": "pf4OuJyn4Q",
+  "title": "Scaling Laws for Reward Model Overoptimization in Direct Alignment Algorithms",
+  "title_zh": "",
+  "authors": [
+    "Rafael Rafailov",
+    "Yaswanth Chittepu",
+    "Ryan Park",
+    "Harshit Sikchi",
+    "Joey Hejna",
+    "W. Bradley Knox",
+    "Chelsea Finn",
+    "Scott Niekum"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Reinforcement Learning from Human Feedback (RLHF)has been crucial to the recent success of Large Language Models (LLMs), however it is often a complex and brittle process. In the classical RLHF framework, a reward model is first trained to represent human preferences, which is in turn used by an online reinforcement learning (RL) algorithm to optimized the LLM. A prominent issue with such methods is reward over-optimization or reward hacking, where the performance as measured by the learned proxy reward model increases, but the true model quality plateaus or even deteriorates. Direct Alignment Algorithms (DDAs), such as Direct Preference Optimization (DPO) have emerged as alternatives to the classical RLHF pipeline. However, despite not training a separate proxy reward model or using RL, they still commonly deteriorate from over-optimization. While the so-called reward hacking phenomenon is not well-defined for DAAs, we still uncover similar trends: at higher KL-budgets, DAA algorithms exhibit similar degradation patters to their classic RLHF counterparts. In particular, we find that DAA methods deteriorate not only across a wide range of KL-budgets, but also often before even a single epoch of the dataset is completed. Through extensive empirical experimentation this work formulates the reward over-optimization or hacking problem for DAAs and explores its consequences across objectives, training regimes, and model scales.",
+  "abstract_zh": "",
+  "tldr": "We define and explore the reward over-optimization phenomenon in direct alignment algorithms, such as DPO",
+  "keywords": [
+    "Reinforcement Learning From Human Feedback",
+    "Direct Preference Optimization",
+    "Reward Hacking"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=pf4OuJyn4Q",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e28365fb2dd2a9b94f8225bee790989091ef456f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We define and explore the reward over-optimization phenomenon in direct alignment algorithms, such as DPO"
+  },
+  "collected_at": "2026-03-08T05:02:05.430Z"
+}

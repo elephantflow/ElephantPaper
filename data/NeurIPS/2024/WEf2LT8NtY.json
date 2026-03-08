@@ -1,0 +1,36 @@
+{
+  "id": "WEf2LT8NtY",
+  "or_id": "WEf2LT8NtY",
+  "title": "Adversarially Robust Decision Transformer",
+  "title_zh": "",
+  "authors": [
+    "Xiaohang Tang",
+    "Afonso Marques",
+    "Parameswaran Kamalaruban",
+    "Ilija Bogunovic"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Decision Transformer (DT), as one of the representative Reinforcement Learning via Supervised Learning (RvS) methods, has achieved strong performance in offline learning tasks by leveraging the powerful Transformer architecture for sequential decision-making. However, in adversarial environments, these methods can be non-robust, since the return is dependent on the strategies of both the decision-maker and adversary. Training a probabilistic model conditioned on observed return to predict action can fail to generalize, as the trajectories that achieve a return in the dataset might have done so due to a suboptimal behavior adversary. To address this, we propose a worst-case-aware RvS algorithm, the Adversarially Robust Decision Transformer (ARDT), which learns and conditions the policy on in-sample minimax returns-to-go. \nARDT aligns the target return with the worst-case return learned through minimax expectile regression, thereby enhancing robustness against powerful test-time adversaries. In experiments conducted on sequential games with full data coverage, ARDT can generate a maximin (Nash Equilibrium) strategy, the solution with the largest adversarial robustness. In large-scale sequential games and continuous adversarial RL environments with partial data coverage, ARDT demonstrates significantly superior robustness to powerful test-time adversaries and attains higher worst-case returns compared to contemporary DT methods.",
+  "abstract_zh": "",
+  "tldr": "This paper investigate the adversarial robustness of Decision Transformer (DT), and develop a new algorithm to transform the original returns-to-go to in-sample minimax returns-to-go to better address the robustness of DT in adversarial settings.",
+  "keywords": [
+    "Offline Reinforcement Learning",
+    "Reinforcement Learning via Supervised Learning",
+    "Decision Transformer",
+    "Robust Adversarial Reinforcement Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=WEf2LT8NtY",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1b9376570681f65dffb0184cd4e6ab76cdc18367.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper investigate the adversarial robustness of Decision Transformer (DT), and develop a new algorithm to transform the original returns-to-go to in-sample minimax returns-to-go to better address the robustness of DT in adversarial settings."
+  },
+  "collected_at": "2026-03-08T05:02:05.431Z"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "Pnv8C0bU9t",
+  "or_id": "Pnv8C0bU9t",
+  "title": "LoQT: Low-Rank Adapters for Quantized Pretraining",
+  "title_zh": "",
+  "authors": [
+    "Sebastian Bugge Loeschcke",
+    "Mads Toftrup",
+    "Michael Kastoryano",
+    "Serge Belongie",
+    "Vésteinn Snæbjarnarson"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Despite advances using low-rank adapters and quantization, pretraining of large models on consumer hardware has not been possible without model sharding, offloading during training, or per-layer gradient updates. To address these limitations, we propose Low-Rank Adapters for Quantized Training (LoQT), a method for efficiently training quantized models. LoQT uses gradient-based tensor factorization to initialize low-rank trainable weight matrices that are periodically merged into quantized full-rank weight matrices. Our approach is suitable for both pretraining and fine-tuning models. We demonstrate this for language modeling and downstream task adaptation, finding that LoQT enables efficient training of models up to 7B parameters on a 24GB GPU. We also demonstrate the feasibility of training a 13B model using per-layer gradient updates on the same hardware.",
+  "abstract_zh": "",
+  "tldr": "LoQT enables efficient quantized pretraining of LLMs with results close to full-rank non-quantized models. It enables pretraining of a 13B LLM on a 24GB GPU without model parallel, checkpointing, or offloading strategies during training.",
+  "keywords": [
+    "Quantization",
+    "Low-Rank Adaptation",
+    "Memory Efficient Training",
+    "Large Language Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Pnv8C0bU9t",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d532678cf4637d7d315ebd723285c6b6b58529b1.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "LoQT enables efficient quantized pretraining of LLMs with results close to full-rank non-quantized models. It enables pretraining of a 13B LLM on a 24GB GPU without model parallel, checkpointing, or offloading strategies during training."
+  },
+  "collected_at": "2026-03-08T05:02:05.431Z"
+}

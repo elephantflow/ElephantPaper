@@ -1,0 +1,36 @@
+{
+  "id": "kuCY0mW4Q3",
+  "or_id": "kuCY0mW4Q3",
+  "title": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+  "title_zh": "",
+  "authors": [
+    "Yang Li",
+    "Shaobo Han",
+    "Shihao Ji"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "As the adoption of large language models increases and the need for per-user or per-task model customization grows, the parameter-efficient fine-tuning (PEFT) methods, such as low-rank adaptation (LoRA) and its variants, incur substantial storage and transmission costs. To further reduce stored parameters, we introduce a \"divide-and-share\" paradigm that breaks the barriers of low-rank decomposition across matrix dimensions, modules, and layers by sharing  parameters globally via a vector bank. As an instantiation of the paradigm to LoRA, our proposed VB-LoRA composites all the low-rank matrices of LoRA from a shared vector bank with a differentiable top-$k$ admixture module. VB-LoRA achieves extreme parameter efficiency while maintaining comparable or better performance compared to state-of-the-art PEFT methods. Extensive experiments demonstrate the effectiveness of VB-LoRA on natural language understanding, natural language generation, instruction tuning, and mathematical reasoning tasks. When fine-tuning the Llama2-13B model, VB-LoRA only uses 0.4% of LoRA's stored parameters, yet achieves superior results. Our source code is available at https://github.com/leo-yangli/VB-LoRA. This method has been merged into the Hugging Face PEFT package.",
+  "abstract_zh": "",
+  "tldr": "An extreme parameter-efficient fine-tuning method based on vector banks",
+  "keywords": [
+    "Parameter-efficient fine-tuning",
+    "Low-rank adaptation",
+    "Transfer learning",
+    "Transformer",
+    "Top-k admixture module"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=kuCY0mW4Q3",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d0ded460792ec7f1fc26f1bf560cf85baa3118db.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "An extreme parameter-efficient fine-tuning method based on vector banks"
+  },
+  "collected_at": "2026-03-08T05:02:05.431Z"
+}

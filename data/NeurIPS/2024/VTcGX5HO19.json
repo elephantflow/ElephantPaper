@@ -1,0 +1,34 @@
+{
+  "id": "VTcGX5HO19",
+  "or_id": "VTcGX5HO19",
+  "title": "Bayesian Kernelized Tensor Factorization as Surrogate for Bayesian Optimization",
+  "title_zh": "",
+  "authors": [
+    "Mengying Lei",
+    "Lijun Sun"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Bayesian optimization (BO) mainly uses Gaussian processes (GP) with a stationary and separable kernel function (e.g., the squared-exponential kernel with automatic relevance determination [SE-ARD]) as the surrogate model. However, such localized kernel specifications are deficient in learning complex functions that are non-stationary, non-separable and multi-modal. In this paper, we propose using Bayesian Kernelized Tensor Factorization (BKTF) as a new surrogate model for Bayesian optimization (BO) in a $D$-dimensional grid with both continuous and categorical variables. Our key idea is to approximate the underlying $D$-dimensional solid with a fully Bayesian low-rank tensor CP decomposition, in which we place GP priors on the latent basis functions for each dimension to encode local consistency and smoothness. With this formulation, the information from each sample can be shared not only with neighbors but also across dimensions, thus fostering a more global search strategy. Although BKTF no longer has an analytical posterior, we efficiently approximate the posterior distribution through Markov chain Monte Carlo (MCMC). We conduct numerical experiments on several test functions with continuous variables and two machine learning hyperparameter tuning problems with mixed variables. The results show that BKTF offers a flexible and highly effective approach to characterizing and optimizing complex functions, especially in cases where the initial sample size and budget are severely limited.",
+  "abstract_zh": "",
+  "tldr": "We propose to use fully Bayesian Kernelized Tensor Factorization as a potential surrogate model for Bayesian optimization and outperform commonly used surrogate models on different optimization tasks with severely limited initial data and budget.",
+  "keywords": [
+    "Bayesian Optimization",
+    "Kernelized Tensor Factorization",
+    "Markov chain Monte Carlo",
+    "Surrogate Model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=VTcGX5HO19",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/37981a957374f88f5f01fafdef9e9b30c81dcf5f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose to use fully Bayesian Kernelized Tensor Factorization as a potential surrogate model for Bayesian optimization and outperform commonly used surrogate models on different optimization tasks with severely limited initial data and budget."
+  },
+  "collected_at": "2026-03-08T05:02:05.432Z"
+}
