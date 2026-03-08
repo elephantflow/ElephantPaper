@@ -1,0 +1,39 @@
+{
+  "id": "1F32iCJFfa",
+  "or_id": "1F32iCJFfa",
+  "title": "Schrodinger Bridge Flow for Unpaired Data Translation",
+  "title_zh": "",
+  "authors": [
+    "Valentin De Bortoli",
+    "Iryna Korshunova",
+    "Andriy Mnih",
+    "Arnaud Doucet"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Mass transport problems arise in many areas of machine learning whereby one wants to compute a map transporting one distribution to another. Generative modeling techniques like Generative Adversarial Networks (GANs) and Denoising Diffusion Models (DMMs) have been successfully adapted to solve such transport problems, resulting in CycleGAN and Bridge Matching respectively. However, these methods do not approximate Optimal Transport (OT) maps, which are known to have desirable properties. Existing techniques approximating OT maps for high-dimensional data-rich problems, including DDMs-based Rectified Flow and Schrodinger bridge procedures, require fully training a DDM-type model at each iteration, or use mini-batch techniques which can introduce significant errors. We propose a novel algorithm to compute the Schrodinger bridge, a dynamic entropy-regularized version of OT, that eliminates the need to train multiple DDMs-like models. This algorithm corresponds to a discretization of a flow of path measures, referred to as the Schrodinger Bridge Flow, whose only stationary point is the Schrodinger bridge. We demonstrate the performance of our algorithm on a variety of unpaired data translation tasks.",
+  "abstract_zh": "",
+  "tldr": "We identify a flow of measures whose discretisations define online versions of the DSBM algorithm which are easier to train.",
+  "keywords": [
+    "unpaired data translation",
+    "diffusion models",
+    "Schrodinger bridge",
+    "bridge matching",
+    "stochastic interpolant",
+    "flow matching"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=1F32iCJFfa",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/77d93fa2b59a9804b338c11221d5e859e8c0b395.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We identify a flow of measures whose discretisations define online versions of the DSBM algorithm which are easier to train."
+  },
+  "collected_at": "2026-03-08T17:00:23.869Z"
+}

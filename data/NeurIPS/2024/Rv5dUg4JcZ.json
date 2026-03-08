@@ -1,0 +1,35 @@
+{
+  "id": "Rv5dUg4JcZ",
+  "or_id": "Rv5dUg4JcZ",
+  "title": "Learning a Single Neuron Robustly to Distributional Shifts and Adversarial Label Noise",
+  "title_zh": "",
+  "authors": [
+    "Shuyao Li",
+    "Sushrut Karmalkar",
+    "Ilias Diakonikolas",
+    "Jelena Diakonikolas"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We study the problem of learning a single neuron with respect to the $L_2^2$-loss in the presence of adversarial distribution shifts, where the labels can be arbitrary, and the goal is to find a \"best-fit\" function.\nMore precisely, given training samples from a reference distribution $p_0$, \nthe goal is to approximate the vector $\\mathbf{w}^*$\nwhich minimizes the squared loss with respect to the worst-case distribution \nthat is close in $\\chi^2$-divergence to $p_{0}$.\nWe design a computationally efficient algorithm that recovers a vector $ \\hat{\\mathbf{w}}$\nsatisfying \n$\\mathbb{E}\\_{p^*} (\\sigma(\\hat{\\mathbf{w}} \\cdot \\mathbf{x}) - y)^2 \\leq C \\hspace{0.2em}  \\mathbb{E}\\_{p^*} (\\sigma(\\mathbf{w}^* \\cdot \\mathbf{x}) - y)^2 + \\epsilon$, where $C>1$ is a dimension-independent constant and $(\\mathbf{w}^*, p^*)$ is the witness attaining the min-max risk\n$\\min_{\\mathbf{w}:\\|\\mathbf{w}\\| \\leq W} \\max\\_{p} \\mathbb{E}\\_{(\\mathbf{x}, y) \\sim p} (\\sigma(\\mathbf{w} \\cdot \\mathbf{x}) - y)^2 - \\nu \\chi^2(p, p_0)$.\nOur algorithm follows the primal-dual framework and is \ndesigned by directly bounding the risk with respect to the original, nonconvex $L_2^2$ loss.\nFrom an optimization standpoint, our work opens new avenues for the design of primal-dual algorithms under structured nonconvexity.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Distributionally-Robust Optimization",
+    "Nonconvex Optimization",
+    "Primal-Dual Algorithm"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Rv5dUg4JcZ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e888ffaef012804a6b2bb9eec02341805066cb10.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study the problem of learning a single neuron with respect to the $L_2^2$-loss in the presence of adversarial distribution shifts, where the labels can be arbitrary, and the goal is to find a \"best-fit\" function.\nMore precisely, given training samples from a reference distribution $p_0$, \nthe goa"
+  },
+  "collected_at": "2026-03-08T17:00:23.867Z"
+}

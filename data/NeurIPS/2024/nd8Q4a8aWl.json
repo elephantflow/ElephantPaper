@@ -1,0 +1,38 @@
+{
+  "id": "nd8Q4a8aWl",
+  "or_id": "nd8Q4a8aWl",
+  "title": "A Geometric View of Data Complexity: Efficient Local Intrinsic Dimension Estimation with Diffusion Models",
+  "title_zh": "",
+  "authors": [
+    "Hamidreza Kamkari",
+    "Brendan Leigh Ross",
+    "Rasa Hosseinzadeh",
+    "Jesse C. Cresswell",
+    "Gabriel Loaiza-Ganem"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "High-dimensional data commonly lies on low-dimensional submanifolds, and estimating the local intrinsic dimension (LID) of a datum -- i.e. the dimension of the submanifold it belongs to -- is a longstanding problem. LID can be understood as the number of local factors of variation: the more factors of variation a datum has, the more complex it tends to be. Estimating this quantity has proven useful in contexts ranging from generalization in neural networks to detection of out-of-distribution data, adversarial examples, and AI-generated text. The recent successes of deep generative models present an opportunity to leverage them for LID estimation, but current methods based on generative models produce inaccurate estimates, require more than a single pre-trained model, are computationally intensive, or do not exploit the best available deep generative models: diffusion models (DMs). In this work, we show that the Fokker-Planck equation associated with a DM can provide an LID estimator which addresses the aforementioned deficiencies. Our estimator, called FLIPD, is easy to implement and compatible with all popular DMs. Applying FLIPD to synthetic LID estimation benchmarks, we find that DMs implemented as fully-connected networks are highly effective LID estimators that outperform existing baselines. We also apply FLIPD to natural images where the true LID is unknown. Despite being sensitive to the choice of network architecture, FLIPD estimates remain a useful measure of relative complexity; compared to competing estimators, FLIPD exhibits a consistently higher correlation with image PNG compression rate and better aligns with qualitative assessments of complexity. Notably, FLIPD is orders of magnitude faster than other LID estimators, and the first to be tractable at the scale of Stable Diffusion.",
+  "abstract_zh": "",
+  "tldr": "We provide an efficient local intrinsic dimension estimator using diffusion models, outperforming traditional estimators. It aligns closely with qualitative complexity in images and scales to stable diffusion.",
+  "keywords": [
+    "diffusion models",
+    "deep generative modelling",
+    "manifold hypothesis",
+    "intrinsic dimension"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=nd8Q4a8aWl",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2923abb88a8b518f873227827f652a291f04f8ac.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We provide an efficient local intrinsic dimension estimator using diffusion models, outperforming traditional estimators. It aligns closely with qualitative complexity in images and scales to stable diffusion."
+  },
+  "collected_at": "2026-03-08T17:00:23.869Z"
+}
