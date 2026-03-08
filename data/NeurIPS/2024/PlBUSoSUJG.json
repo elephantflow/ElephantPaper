@@ -1,0 +1,37 @@
+{
+  "id": "PlBUSoSUJG",
+  "or_id": "PlBUSoSUJG",
+  "title": "Policy Gradient with Tree Expansion",
+  "title_zh": "",
+  "authors": [
+    "Gal Dalal",
+    "Assaf Hallak",
+    "Gugan Thoppe",
+    "Shie Mannor",
+    "Gal Chechik"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Policy gradient methods are notorious for having a large variance and high sample complexity. To mitigate this, we introduce SoftTreeMax---a generalization of softmax that employs planning. In SoftTreeMax, we extend the traditional logits with the multi-step discounted cumulative reward, topped with the logits of future states. We analyze SoftTreeMax and explain how tree expansion helps to reduce its gradient variance. We prove that the variance decays exponentially with the planning horizon as a function of the chosen tree-expansion policy. Specifically, we show that the closer the induced transitions are to being state-independent, the stronger the decay. With approximate forward models, we prove that the resulting gradient bias diminishes with the approximation error while retaining the same variance reduction. Ours is the first result to bound the gradient bias for an approximate model. In a practical implementation of SoftTreeMax, we utilize a parallel GPU-based simulator for fast and efficient tree expansion. Using this implementation in Atari, we show that SoftTreeMax reduces the gradient variance by three orders of magnitude. This leads to better sample complexity and improved performance compared to distributed PPO.",
+  "abstract_zh": "",
+  "tldr": "We introduce SoftTreeMax, a novel parametric policy combining tree expansion into policy gradient. We analyze its variance and bias, and implement a deep RL version of it.",
+  "keywords": [
+    "Policy Gradient",
+    "Softmax policy",
+    "Tree expansion",
+    "Model-Based RL"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=PlBUSoSUJG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4257a54340368c889455e718779604d54014503b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce SoftTreeMax, a novel parametric policy combining tree expansion into policy gradient. We analyze its variance and bias, and implement a deep RL version of it."
+  },
+  "collected_at": "2026-03-08T06:02:04.019Z"
+}

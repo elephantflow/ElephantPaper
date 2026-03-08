@@ -1,0 +1,34 @@
+{
+  "id": "bFoQXD7Uls",
+  "or_id": "bFoQXD7Uls",
+  "title": "VeLoRA: Memory Efficient Training using Rank-1 Sub-Token Projections",
+  "title_zh": "",
+  "authors": [
+    "Roy Miles",
+    "Pradyumna Reddy",
+    "Ismail Elezi",
+    "Jiankang Deng"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large language models (LLMs) have recently emerged as powerful tools for tackling many language-processing tasks. Despite their success, training and fine-tuning these models is still far too computationally and memory intensive. In this paper, we identify and characterise the important components needed for effective model convergence using gradient descent. In doing so we find that the intermediate activations used to implement backpropagation can be excessively compressed without incurring any degradation in performance. This result leads us to a cheap and memory-efficient algorithm for both fine-tuning and pre-training LLMs. The proposed algorithm simply divides the tokens up into smaller sub-tokens before projecting them onto a fixed 1-dimensional subspace during the forward pass. These features are then coarsely reconstructed during the backward pass to implement the update rules. We confirm the effectiveness of our algorithm as being complimentary to many state-of-the-art PEFT methods on the VTAB-1k fine-tuning benchmark. Furthermore, we outperform QLoRA for fine-tuning LLaMA and show competitive performance against other memory-efficient pre-training methods on the large-scale C4 dataset.",
+  "abstract_zh": "",
+  "tldr": "Memory efficient fine-tuning by compressing the saved intermediate activations. Complimentary to peft and generalises to pre-training.",
+  "keywords": [
+    "parameter efficient fine-tuning",
+    "memory efficient training"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=bFoQXD7Uls",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/bf66c7a2b80fcfa6cc72e4a85be544eea2936311.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Memory efficient fine-tuning by compressing the saved intermediate activations. Complimentary to peft and generalises to pre-training."
+  },
+  "collected_at": "2026-03-08T06:02:04.021Z"
+}

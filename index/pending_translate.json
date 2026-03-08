@@ -1,245 +1,5 @@
 [
   {
-    "id": "YxaY6tHgg0",
-    "filePath": "data/NeurIPS/2024/YxaY6tHgg0.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
-    "abstract": "Large Language Models (LLMs) have achieved remarkable success in various natural language processing tasks, including language modeling, understanding, and generation. However, the increased memory and computational costs associated with these models pose significant challenges for deployment on resource-limited devices. Structural pruning has emerged as a promising solution to reduce the costs of LLMs without requiring post-processing steps. Prior structural pruning methods either follow the dependence of structures at the cost of limiting flexibility, or introduce non-trivial additional parameters by incorporating different projection matrices. In this work, we propose a novel approach that relaxes the constraint imposed by regular structural pruning methods and eliminates the structural"
-  },
-  {
-    "id": "ABYdKpDb8p",
-    "filePath": "data/NeurIPS/2024/ABYdKpDb8p.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Learning Transferable Features for Implicit Neural Representations",
-    "abstract": "Implicit neural representations (INRs) have demonstrated success in a variety of applications, including inverse problems and neural rendering. An INR is typically trained to capture one signal of interest, resulting in learned neural features that are highly attuned to that signal. Assumed to be less generalizable, we explore the aspect of transferability of such learned neural features for fitting similar signals. We introduce a new INR training framework, STRAINER that learns transferable features for fitting INRs to new signals from a given distribution, faster and with better reconstruction quality. Owing to the sequential layer-wise affine operations in an INR, we propose to learn transferable representations by sharing initial encoder layers across multiple INRs with independent dec"
-  },
-  {
-    "id": "YvOeN0kUzT",
-    "filePath": "data/NeurIPS/2024/YvOeN0kUzT.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Randomized Strategic Facility Location with Predictions",
-    "abstract": "In the strategic facility location problem, a set of agents report their locations in a metric space and the goal is to use these reports to open a new facility, minimizing an aggregate distance measure from the agents to the facility. However, agents are strategic and may misreport their locations to influence the facility’s placement in their favor. The aim is to design truthful mechanisms, ensuring agents cannot gain by misreporting. This problem was recently revisited through the learning-augmented framework, aiming to move beyond worst-case analysis and design truthful mechanisms that are augmented with (machine-learned) predictions. The focus of this prior work was on mechanisms that are deterministic and augmented with a prediction regarding the optimal facility location. In this pa"
-  },
-  {
-    "id": "XYw051ZmUn",
-    "filePath": "data/NeurIPS/2024/XYw051ZmUn.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "How does Gradient Descent Learn Features --- A Local Analysis for Regularized Two-Layer Neural Networks",
-    "abstract": "The ability of learning useful features is one of the major advantages of neural networks. Although recent works show that neural network can operate in a neural tangent kernel (NTK) regime that does not allow feature learning, many works also demonstrate the potential for neural networks to go beyond NTK regime and perform feature learning. Recently, a line of work highlighted the feature learning capabilities of the early stages of gradient-based training. In this paper we consider another mechanism for feature learning via gradient descent through a local convergence analysis. We show that once the loss is below a certain threshold, gradient descent with a carefully regularized objective will capture ground-truth directions. We further strengthen this local convergence analysis by incor"
-  },
-  {
-    "id": "v8RRFNbJ43",
-    "filePath": "data/NeurIPS/2024/v8RRFNbJ43.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Measuring Dejavu Memorization Efficiently",
-    "abstract": "Recent research has shown that representation learning models may accidentally memorize their training data. For example, the déjà vu method shows that for certain representation learning models and training images, it is sometimes possible to correctly predict the foreground label given only the representation of he background – better than through dataset-level correlations. However, their measurement method requires training two models – one to estimate dataset-level correlations and the other to estimate memorization. This multiple model setup becomes infeasible for large open-source models. In this work, we propose alter native simple methods to estimate dataset-level correlations, and show that these can be used to approximate an off-the-shelf model’s memorization ability without any"
-  },
-  {
-    "id": "VpINEEVLX0",
-    "filePath": "data/NeurIPS/2024/VpINEEVLX0.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "A Topology-aware Graph Coarsening Framework for Continual Graph Learning",
-    "abstract": "Graph Neural Networks (GNNs) experience \"catastrophic forgetting\" in continual learning setups, where they tend to lose previously acquired knowledge and perform poorly on old tasks. Rehearsal-based methods, which consolidate old knowledge with a replay memory buffer, are a de facto solution due to their straightforward workflow. However, these methods often fail to adequately capture topological information, leading to incorrect input-label mappings in replay samples. To address this, we propose TACO, a topology-aware graph coarsening and continual learning framework that stores information from previous tasks as a reduced graph. Throughout each learning period, this reduced graph expands by integrating with a new graph and aligning shared nodes, followed by a \"zoom-out\" reduction process"
-  },
-  {
-    "id": "9lGJrkqJUw",
-    "filePath": "data/NeurIPS/2024/9lGJrkqJUw.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Score-based 3D molecule generation with neural fields",
-    "abstract": "We introduce a new representation for 3D molecules based on their continuous atomic density fields. Using this representation, we propose a new model based on walk-jump sampling for unconditional 3D molecule generation in the continuous space using neural fields. Our model, FuncMol, encodes molecular fields into latent codes using a conditional neural field, samples noisy codes from a Gaussian-smoothed distribution with Langevin MCMC (walk), denoises these samples in a single step (jump), and finally decodes them into molecular fields. FuncMol performs all-atom generation of 3D molecules without assumptions on the molecular structure and scales well with the size of molecules, unlike most approaches. Our method achieves competitive results on drug-like molecules and easily scales to macro-"
-  },
-  {
-    "id": "G4vFNmraxj",
-    "filePath": "data/NeurIPS/2024/G4vFNmraxj.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Hybrid Generative AI for De Novo Design of Co-Crystals with Enhanced Tabletability",
-    "abstract": "Co-crystallization is an accessible way to control physicochemical characteristics of organic crystals, which finds many biomedical applications. In this work, we present Generative Method for Co-crystal Design (GEMCODE), a novel pipeline for automated co-crystal screening based on the hybridization of deep generative models and evolutionary optimization for broader exploration of the target chemical space. GEMCODE enables fast *de novo* co-crystal design with target tabletability profiles, which is crucial for the development of pharmaceuticals. With a series of experimental studies highlighting validation and discovery cases, we show that GEMCODE is effective even under realistic computational constraints. Furthermore, we explore the potential of language models in generating co-crystals"
-  },
-  {
-    "id": "fNakQltI1N",
-    "filePath": "data/NeurIPS/2024/fNakQltI1N.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Trajectory Flow Matching with Applications to Clinical Time Series Modelling",
-    "abstract": "Modeling stochastic and irregularly sampled time series is a challenging problem found in a wide range of applications, especially in medicine. Neural stochastic differential equations (Neural SDEs) are an attractive modeling technique for this problem, which parameterize the drift and diffusion terms of an SDE with neural networks. However, current algorithms for training Neural SDEs require backpropagation through the SDE dynamics, greatly limiting their scalability and stability. \nTo address this, we propose **Trajectory Flow Matching** (TFM), which trains a Neural SDE in a *simulation-free* manner, bypassing backpropagation through the dynamics. TFM leverages the flow matching technique from generative modeling to model time series. In this work we first establish necessary conditions "
-  },
-  {
-    "id": "lKnl4CLhhS",
-    "filePath": "data/NeurIPS/2024/lKnl4CLhhS.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Efficient and Private Marginal Reconstruction with Local Non-Negativity",
-    "abstract": "Differential privacy is the dominant standard for formal and quantifiable privacy and has been used in major deployments that impact millions of people. Many differentially private algorithms for query release and synthetic data contain steps that reconstruct answers to queries from answers to other queries that have been measured privately.  Reconstruction is an important subproblem for such mechanisms to economize the privacy budget, minimize error on reconstructed answers, and allow for scalability to high-dimensional datasets. In this paper, we introduce a principled and efficient postprocessing method ReM (Residuals-to-Marginals) for reconstructing answers to marginal queries. Our method builds on recent work on efficient mechanisms for marginal query release, based on making measurem"
-  },
-  {
-    "id": "02r24A8doi",
-    "filePath": "data/NeurIPS/2024/02r24A8doi.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Achieving Constant Regret in Linear Markov Decision Processes",
-    "abstract": "We study the constant regret guarantees in reinforcement learning (RL). Our objective is to design an algorithm that incurs only finite regret over infinite episodes with high probability. We introduce an algorithm, Cert-LSVI-UCB, for misspecified linear Markov decision processes (MDPs) where both the transition kernel and the reward function can be approximated by some linear function up to misspecification level $\\zeta$. At the core of Cert-LSVI-UCB is an innovative certified estimator, which facilitates a fine-grained concentration analysis for multi-phase value-targeted regression, enabling us to establish an instance-dependent regret bound that is constant w.r.t. the number of episodes. Specifically, we demonstrate that for a linear MDP characterized by a minimal suboptimality gap $\\D"
-  },
-  {
-    "id": "50nEnmVLRb",
-    "filePath": "data/NeurIPS/2024/50nEnmVLRb.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Gaussian Process Bandits for Top-k Recommendations",
-    "abstract": "Algorithms that utilize bandit feedback to optimize top-k recommendations are vital for online marketplaces, search engines, and content platforms.  However, the combinatorial nature of this problem poses a significant challenge,  as the possible number of ordered top-k recommendations from $n$ items grows exponentially with $k$. As a result, previous work often relies on restrictive assumptions about the reward or bandit feedback models, such as assuming that the feedback discloses rewards for each recommended item rather than a single scalar feedback for the entire set of top-k recommendations. We introduce a novel contextual bandit algorithm for top-k recommendations, leveraging a Gaussian process with a Kendall kernel to model the reward function.\nOur algorithm requires only scalar fee"
-  },
-  {
-    "id": "61YYSy078Z",
-    "filePath": "data/NeurIPS/2024/61YYSy078Z.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "ECLipsE: Efficient Compositional Lipschitz Constant Estimation for Deep Neural Networks",
-    "abstract": "The Lipschitz constant plays a crucial role in certifying the robustness of neural networks to input perturbations. Since calculating the exact Lipschitz constant is NP-hard, efforts have been made to obtain tight upper bounds on the Lipschitz constant. Typically, this involves solving a large matrix verification problem, the computational cost of which grows significantly for both deeper and wider networks. In this paper, we provide a compositional approach to estimate Lipschitz constants for deep feed-forward neural networks. We first obtain an exact decomposition of the large matrix verification problem into smaller sub-problems. Then, leveraging the underlying cascade structure of the network, we develop two algorithms. The first algorithm explores the geometric features of the problem"
-  },
-  {
-    "id": "X3oeoyJlMw",
-    "filePath": "data/NeurIPS/2024/X3oeoyJlMw.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Mixture of Link Predictors on Graphs",
-    "abstract": "Link prediction, which aims to forecast unseen connections in graphs, is a fundamental task in graph machine learning. Heuristic methods, leveraging a range of different pairwise measures such as common neighbors and shortest paths, often rival the performance of vanilla Graph Neural Networks (GNNs). Therefore, recent advancements in GNNs for link prediction (GNN4LP) have primarily focused on integrating one or a few types of pairwise information. \nIn this work,  we reveal that different node pairs within the same dataset necessitate varied pairwise information for accurate prediction and models that only apply the same pairwise information uniformly could achieve suboptimal performance.\nAs a result, we propose a simple mixture of experts model Link-MoE for link prediction.  Link-MoE utili"
-  },
-  {
-    "id": "K9IGlMQpif",
-    "filePath": "data/NeurIPS/2024/K9IGlMQpif.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "SmallToLarge (S2L): Scalable Data Selection for Fine-tuning Large Language Models by Summarizing Training Trajectories of Small Models",
-    "abstract": "Despite the effectiveness of data selection for pretraining and instruction fine-tuning\nlarge language models (LLMs), improving data efficiency in supervised fine-tuning\n(SFT) for specialized domains poses significant challenges due to the complexity\nof fine-tuning data. To bridge this gap, we introduce an effective and scalable\ndata selection method for SFT, SmallToLarge (S2L), which trains a small\nmodel, clusters loss trajectories of the examples, and samples from these clusters to\nguide data selection for larger models. We prove that during fine-tuning, samples\nwithin the same loss trajectory cluster exhibit similar gradients. Then, we show\nthat S2L subsets have a bounded gradient error w.r.t. the full data, hence guarantee\nconvergence to the neighborhood of the optimal solution. We dem"
-  },
-  {
-    "id": "7qBkADV4zD",
-    "filePath": "data/NeurIPS/2024/7qBkADV4zD.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "DeltaDEQ: Exploiting Heterogeneous Convergence for Accelerating Deep Equilibrium Iterations",
-    "abstract": "Implicit neural networks including deep equilibrium models have achieved superior task performance with better parameter efficiency in various applications. However, it is often at the expense of higher computation costs during inference. In this work, we identify a phenomenon named $\\textbf{heterogeneous convergence}$ that exists in deep equilibrium models and other iterative methods. We observe much faster convergence of state activations in certain dimensions therefore indicating the dimensionality of the underlying dynamics of the forward pass is much lower than the defined dimension of the states. We thereby propose to exploit heterogeneous convergence by storing past linear operation results (e.g., fully connected and convolutional layers) and only propagating the state activation wh"
-  },
-  {
-    "id": "337dHOexCM",
-    "filePath": "data/NeurIPS/2024/337dHOexCM.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Retrieval & Fine-Tuning for In-Context Tabular Models",
-    "abstract": "Tabular data is a pervasive modality spanning a wide range of domains, and this inherent diversity poses a considerable challenge for deep learning. Recent advancements using transformer-based in-context learning have shown promise on smaller and less complex tabular datasets, but have struggled to scale to larger and more complex ones. To address this limitation, we propose a combination of retrieval and fine-tuning: we can adapt the transformer to a local subset of the data by collecting nearest neighbours, and then perform task-specific fine-tuning with this retrieved set of neighbours in context. Using TabPFN as the base model -- currently the best tabular in-context learner -- and applying our retrieval and fine-tuning scheme on top results in what we call a locally-calibrated PFN, or"
-  },
-  {
-    "id": "Ouc1F0Sfb7",
-    "filePath": "data/NeurIPS/2024/Ouc1F0Sfb7.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Cost-aware Bayesian Optimization via the Pandora's Box Gittins Index",
-    "abstract": "Bayesian optimization is a technique for efficiently optimizing unknown functions in a black-box manner. To handle practical settings where gathering data requires use of finite resources, it is desirable to explicitly incorporate function evaluation costs into Bayesian optimization policies. To understand how to do so, we develop a previously-unexplored connection between cost-aware Bayesian optimization and the Pandora's Box problem, a decision problem from economics. The Pandora's Box problem admits a Bayesian-optimal solution based on an expression called the Gittins index, which can be reinterpreted as an acquisition function. We study the use of this acquisition function for cost-aware Bayesian optimization, and demonstrate empirically that it performs well, particularly in medium-hi"
-  },
-  {
-    "id": "Vtxy8wFpTj",
-    "filePath": "data/NeurIPS/2024/Vtxy8wFpTj.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Online Budgeted Matching with General Bids",
-    "abstract": "Online Budgeted Matching (OBM) is a classic problem with important applications in online advertising, online service matching, revenue management, and beyond. Traditional online algorithms typically assume a small bid setting, where the maximum bid-to-budget ratio ($\\kappa$) is infinitesimally small. While recent algorithms have tried to address scenarios with non-small or general bids, they often rely on the Fractional Last Matching (FLM) assumption, which allows for accepting partial bids when the remaining budget is insufficient. This assumption, however, does not hold for many applications with indivisible bids. In this paper, we remove the FLM assumption and tackle the open problem of OBM with general bids. We first establish an upper bound of $1-\\kappa$ on the competitive ratio for "
-  },
-  {
-    "id": "1BZKqZphsW",
-    "filePath": "data/NeurIPS/2024/1BZKqZphsW.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Risk-Averse Fine-tuning of Large Language Models",
-    "abstract": "We consider the challenge of mitigating the generation of negative or toxic content by the Large Language Models (LLMs) in response to certain prompts.  We propose integrating risk-averse principles into LLM fine-tuning to minimize the occurrence of harmful outputs, particularly rare but significant events.  By optimizing the risk measure of Conditional Value at Risk (CVaR), our methodology trains LLMs to exhibit superior performance in avoiding toxic outputs while maintaining effectiveness in generative tasks. Empirical evaluations on sentiment modification and toxicity mitigation tasks demonstrate the efficacy of risk-averse reinforcement learning with human feedback (RLHF) in promoting a safer and more constructive online discourse environment."
-  },
-  {
-    "id": "FMMF1a9ifL",
-    "filePath": "data/ICLR/2024/FMMF1a9ifL.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Gradual Optimization Learning for Conformational Energy Minimization",
-    "abstract": "Molecular conformation optimization is crucial to computer-aided drug discovery and materials design.\nTraditional energy minimization techniques rely on iterative optimization methods that use molecular forces calculated by a physical simulator (oracle) as anti-gradients.\nHowever, this is a computationally expensive approach that requires many interactions with a physical simulator.\nOne way to accelerate this procedure is to replace the physical simulator with a neural network.\nDespite recent progress in neural networks for molecular conformation energy prediction, such models are prone to errors due to distribution shift, leading to inaccurate energy minimization.\nWe find that the quality of energy minimization with neural networks can be improved by providing optimization trajectories as"
-  },
-  {
-    "id": "buC4E91xZE",
-    "filePath": "data/ICLR/2024/buC4E91xZE.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "AnomalyCLIP: Object-agnostic Prompt Learning for Zero-shot Anomaly Detection",
-    "abstract": "Zero-shot anomaly detection (ZSAD) requires detection models trained using auxiliary\ndata to detect anomalies without any training sample in a target dataset. It\nis a crucial task when training data is not accessible due to various concerns, e.g.,\ndata privacy, yet it is challenging since the models need to generalize to anomalies\nacross different domains where the appearance of foreground objects, abnormal\nregions, and background features, such as defects/tumors on different products/\norgans, can vary significantly. Recently large pre-trained vision-language\nmodels (VLMs), such as CLIP, have demonstrated strong zero-shot recognition\nability in various vision tasks, including anomaly detection. However, their ZSAD\nperformance is weak since the VLMs focus more on modeling the class semantic"
-  },
-  {
-    "id": "6SNyuiph3F",
-    "filePath": "data/ICLR/2024/6SNyuiph3F.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Chat Vector: A Simple Approach to Equip LLMs With New Language Chat Capabilities",
-    "abstract": "With the advancements in conversational AI, such as ChatGPT, this paper focuses on exploring developing Large Language Models (LLMs) for non-English languages, especially emphasizing alignment with human preferences. We introduce a computationally efficient method, leveraging “chat vector,” to synergize pre-existing knowledge and behaviors in LLMs, restructuring the conventional training paradigm from continual pretrain $\\rightarrow$ SFT $\\rightarrow$ RLHF to continual pretrain + chat. Our empirical studies, primarily focused on Traditional Chinese, employ LLaMA2 as the base model and acquire the chat vector by subtracting the pre-trained weights, LLaMA2, from the weights of LLaMA2-chat. Evaluating from three distinct facets, which are toxicity, ability of instruction following and multi-t"
-  },
-  {
-    "id": "nOf6sb63dT",
-    "filePath": "data/ICLR/2024/nOf6sb63dT.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Generative Models are Self-Watermarked: Intellectual Property Declaration through Re-Generation",
-    "abstract": "Protecting intellectual property for generated data has emerged as a critical concern for AI corporations, as machine-generated content proliferates. Reusing generated data without permission poses a formidable barrier to safeguarding the intellectual property tied to these models. The verification of data ownership is further complicated by the use of Machine Learning as a Service (MLaaS), which\noften operates as a black-box system.\nOur work is dedicated to detecting data reuse from even an individual sample. In contrast to watermarking techniques that embed additional information as watermark triggers into models or generated content, our approach does not introduce artificial watermarks which may compromise the quality of model outputs. Our investigation reveals the existence of latent "
-  },
-  {
-    "id": "uxFme785fq",
-    "filePath": "data/ICLR/2024/uxFme785fq.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Nonlinear Inference Learning for Differentially Private Massive Data",
-    "abstract": "The Bag of Little Bootstraps (BLB) method is widely utilized as a robust and computationally efficient approach in statistical inference studies involving large-scale data. However, this sampling technique overlooks the privacy protection of the original data. To address this limitation, we enhance the existing differential privacy algorithm and integrate it with the BLB method. This integration gives rise to a novel differential privacy mechanism, enabling a comprehensive statistical analysis of aggregated parameters while safeguarding the confidentiality of individual private data. Additionally, to address both the variability in noise variance under the differential privacy mechanism and the uncertainty surrounding estimate distributions, we employ the central limit theorem within the c"
-  },
-  {
-    "id": "uGtfk2OphU",
-    "filePath": "data/ICLR/2024/uGtfk2OphU.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Towards Faithful Explanations: Boosting Rationalization with Shortcuts Discovery",
-    "abstract": "The remarkable success in neural networks provokes the selective rationalization. It explains the prediction results by identifying a small subset of the inputs sufficient to support them. Since existing methods still suffer from adopting the shortcuts in data to compose rationales and limited large-scale annotated rationales by human, in this paper, we propose a Shortcuts-fused Selective Rationalization (SSR) method, which boosts the rationalization by discovering and exploiting potential shortcuts. Specifically, SSR first designs a shortcuts discovery approach to detect several potential shortcuts. Then, by introducing the identified shortcuts, we propose two strategies to mitigate the problem of utilizing shortcuts to compose rationales. Finally, we develop two data augmentations method"
-  },
-  {
-    "id": "tgjGR7eY5H",
-    "filePath": "data/ICLR/2024/tgjGR7eY5H.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "RL4CO: a Unified Reinforcement Learning for Combinatorial Optimization Library",
-    "abstract": "Deep reinforcement learning offers notable benefits in addressing combinatorial problems over traditional solvers, reducing the reliance on domain-specific knowledge and expert solutions, and improving computational efficiency. Despite the recent surge in interest in neural combinatorial optimization, practitioners often do not have access to a standardized code base. Moreover, different algorithms are frequently based on fragmentized implementations that hinder reproducibility and fair comparison. To address these challenges, we introduce RL4CO, a unified Reinforcement Learning (RL) for Combinatorial Optimization (CO) library. We employ state-of-the-art software and best practices in implementation, such as modularity and configuration management, to be flexible, easily modifiable, and ex"
-  },
-  {
-    "id": "SRn2o3ij25",
-    "filePath": "data/ICLR/2024/SRn2o3ij25.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "IKL: Boosting Long-Tail Recognition with Implicit Knowledge Learning",
-    "abstract": "In the field of visual long-tailed recognition, the long-tailed distribution of image representations often raises two key challenges: (1) the training process shows great uncertainty (e.g., uncertainty in the prediction of augmented views by the same expert for the same sample) and (2) a marked bias in the model's prediction towards the head class.\nTo tackle the above issue, we propose a novel method termed Implicit Knowledge Learning (IKL) to extract the knowledge hidden in long-tail learning processes, aiming to significantly improve performance in long-tail recognition. Our IKL contains two core components: Implicit Uncertainty Regularization (IUR) and Implicit Correlation Labeling (ICL). The former method, IUR, exploits the uncertainty of the predictions over adjacent epochs. Then, it"
-  },
-  {
-    "id": "LojXXo2xaf",
-    "filePath": "data/ICLR/2024/LojXXo2xaf.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "GPT Can Solve Mathematical Problems Without a Calculator",
-    "abstract": "Previous studies have typically assumed that large language models are unable to accurately perform arithmetic operations, particularly multiplication of >8 digits, and operations involving decimals and fractions, without the use of calculator tools. This paper aims to challenge this misconception. With sufficient training data, a 2 billion-parameter language model can accurately perform multi-digit arithmetic operations with almost 100% accuracy without data leakage, significantly surpassing GPT-4 (whose multi-digit multiplication accuracy is only 4.3%). We also demonstrate that our MathGLM, fine-tuned from GLM-10B on a dataset with\nadditional multi-step arithmetic operations and math problems described in text, achieves similar performance to GPT-4 on a 5,000-samples Chinese math problem"
-  },
-  {
-    "id": "0Z6lN4GYrO",
-    "filePath": "data/ICLR/2024/0Z6lN4GYrO.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "S4G: Breaking the Bottleneck on Graphs with Structured State Spaces",
-    "abstract": "The majority of GNNs are based on message-passing mechanisms, however, message-passing neural networks (MPNN) have inherent limitations in capturing long-range interactions. The exponentially growing node information is compressed into fixed-size representations through multiple rounds of message passing, bringing the over-squashing problem, which severely hinders the flow of information on the graph and creates a bottleneck in graph learning. The natural idea of introducing global attention to point-to-point communication, as adopted in graph Transformers (GT), lacks inductive biases on graph structures and relies on complex positional encodings to enhance their performance in practical tasks. In this paper, we observe that the sensitivity between nodes in MPNN decreases exponentially wit"
-  },
-  {
     "id": "KTtEICH4TO",
     "filePath": "data/ICLR/2024/KTtEICH4TO.json",
     "conference": "ICLR",
@@ -1598,5 +1358,245 @@
     "year": 2024,
     "title": "Language Grounded Multi-agent Reinforcement Learning with Human-interpretable Communication",
     "abstract": "Multi-Agent Reinforcement Learning (MARL) methods have shown promise in enabling agents to learn a shared communication protocol from scratch and accomplish challenging team tasks. However, the learned language is usually not interpretable to humans or other agents not co-trained together, limiting its applicability in ad-hoc teamwork scenarios. In this work, we propose a novel computational pipeline that aligns the communication space between MARL agents with an embedding space of human natural language by grounding agent communications on synthetic data generated by embodied Large Language Models (LLMs) in interactive teamwork scenarios. Our results demonstrate that introducing language grounding not only maintains task performance but also accelerates the emergence of communication. Fur"
+  },
+  {
+    "id": "HXdAfK488A",
+    "filePath": "data/NeurIPS/2024/HXdAfK488A.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Doing Experiments and Revising Rules with Natural Language and Probabilistic Reasoning",
+    "abstract": "We give a model of how to infer natural language rules by doing experiments. The\nmodel integrates Large Language Models (LLMs) with Monte Carlo algorithms for\nprobabilistic inference, interleaving online belief updates with experiment design\nunder information-theoretic criteria. We conduct a human-model comparison on a\nZendo-style task, finding that a critical ingredient for modeling the human data is to\nassume that humans also consider fuzzy, probabilistic rules, in addition to assuming\nthat humans perform approximately-Bayesian belief updates. We also compare\nwith recent algorithms for using LLMs to generate and revise hypotheses, finding\nthat our online inference method yields higher accuracy at recovering the true\nunderlying rule, and provides better support for designing optimal exper"
+  },
+  {
+    "id": "PlBUSoSUJG",
+    "filePath": "data/NeurIPS/2024/PlBUSoSUJG.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Policy Gradient with Tree Expansion",
+    "abstract": "Policy gradient methods are notorious for having a large variance and high sample complexity. To mitigate this, we introduce SoftTreeMax---a generalization of softmax that employs planning. In SoftTreeMax, we extend the traditional logits with the multi-step discounted cumulative reward, topped with the logits of future states. We analyze SoftTreeMax and explain how tree expansion helps to reduce its gradient variance. We prove that the variance decays exponentially with the planning horizon as a function of the chosen tree-expansion policy. Specifically, we show that the closer the induced transitions are to being state-independent, the stronger the decay. With approximate forward models, we prove that the resulting gradient bias diminishes with the approximation error while retaining the"
+  },
+  {
+    "id": "MsUf8kpKTF",
+    "filePath": "data/NeurIPS/2024/MsUf8kpKTF.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "A Study of Plasticity Loss in On-Policy Deep Reinforcement Learning",
+    "abstract": "Continual learning with deep neural networks presents challenges distinct from both the fixed-dataset and convex continual learning regimes. One such challenge is plasticity loss, wherein a neural network trained in an online fashion displays a degraded ability to fit new tasks. This problem has been extensively studied in both supervised learning and off-policy reinforcement learning (RL), where a number of remedies have been proposed. Still, plasticity loss has received less attention in the on-policy deep RL setting. Here we perform an extensive set of experiments examining plasticity loss and a variety of mitigation methods in on-policy deep RL. We demonstrate that plasticity loss is pervasive under domain shift in this regime, and that a number of methods developed to resolve it in ot"
+  },
+  {
+    "id": "SoM3vngOH5",
+    "filePath": "data/NeurIPS/2024/SoM3vngOH5.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Tree of Attacks: Jailbreaking Black-Box LLMs Automatically",
+    "abstract": "While Large Language Models (LLMs) display versatile functionality, they continue to generate harmful, biased, and toxic content, as demonstrated by the prevalence of human-designed *jailbreaks*. In this work, we present *Tree of Attacks with Pruning*  (TAP), an automated method for generating jailbreaks that only requires black-box access to the target LLM. TAP utilizes an attacker LLM to iteratively refine candidate (attack) prompts until one of the refined prompts jailbreaks the target. In addition, before sending prompts to the target, TAP assesses them and prunes the ones unlikely to result in jailbreaks, reducing the number of queries sent to the target LLM. In empirical evaluations, we observe that TAP generates prompts that jailbreak state-of-the-art LLMs (including GPT4-Turbo and "
+  },
+  {
+    "id": "uRnTYPkF3V",
+    "filePath": "data/NeurIPS/2024/uRnTYPkF3V.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Sequential Probability Assignment with Contexts: Minimax Regret, Contextual Shtarkov Sums, and Contextual Normalized Maximum Likelihood",
+    "abstract": "We study the fundamental problem of sequential probability assignment, also known as online learning with logarithmic loss, with respect to an arbitrary, possibly nonparametric hypothesis class. Our goal is to obtain a complexity measure for the hypothesis class that characterizes the minimax regret and to determine a general, minimax optimal algorithm. Notably, the sequential $\\ell_{\\infty}$ entropy, extensively studied in the literature (Rakhlin and Sridharan, 2015, Bilodeau et al., 2020, Wu et al., 2023), was shown to not characterize minimax regret in general. Inspired by the seminal work of Shtarkov (1987)\n    and Rakhlin, Sridharan, and Tewari (2010), we introduce a novel complexity measure, the \\emph{contextual Shtarkov sum}, corresponding to the Shtarkov sum after projection onto a"
+  },
+  {
+    "id": "WTLvXdzhmP",
+    "filePath": "data/NeurIPS/2024/WTLvXdzhmP.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Statistical Estimation in the Spiked Tensor Model via the Quantum Approximate Optimization Algorithm",
+    "abstract": "The quantum approximate optimization algorithm (QAOA) is a general-purpose algorithm for combinatorial optimization that has been a promising avenue for near-term quantum advantage. \nIn this paper, we analyze the performance of the QAOA on the spiked tensor model, a statistical estimation problem that exhibits a large computational-statistical gap classically. \nWe prove that the weak recovery threshold of $1$-step QAOA matches that of $1$-step tensor power iteration. Additional heuristic calculations suggest that the weak recovery threshold of $p$-step QAOA matches that of $p$-step tensor power iteration when $p$ is a fixed constant. This further implies that multi-step QAOA with tensor unfolding could achieve, but not surpass, the asymptotic classical computation threshold $\\Theta(n^{(q-2"
+  },
+  {
+    "id": "2jjfRm2R6D",
+    "filePath": "data/NeurIPS/2024/2jjfRm2R6D.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Multi-language Diversity Benefits Autoformalization",
+    "abstract": "Autoformalization is the task of translating natural language materials into machine-verifiable formalisations. Progress in autoformalization research is hindered by the lack of a sizeable dataset consisting of informal-formal pairs expressing the same essence. Existing methods tend to circumvent this challenge by manually curating small corpora or using few-shot learning with large language models. But these methods suffer from data scarcity and formal language acquisition difficulty. In this work, we create mma, a large, flexible, multi-language, and multi-domain dataset of informal-formal pairs, by using a language model to translate in the reverse direction, that is, from formal mathematical statements into corresponding informal ones. Experiments show that language models fine-tuned o"
+  },
+  {
+    "id": "PhjnK9KWOx",
+    "filePath": "data/NeurIPS/2024/PhjnK9KWOx.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "PSL: Rethinking and Improving Softmax Loss from Pairwise Perspective for Recommendation",
+    "abstract": "Softmax Loss (SL) is widely applied in recommender systems (RS) and has demonstrated effectiveness. This work analyzes SL from a pairwise perspective, revealing two significant limitations: 1) the relationship between SL and conventional ranking metrics like DCG is not sufficiently tight; 2) SL is highly sensitive to false negative instances. Our analysis indicates that these limitations are primarily due to the use of the exponential function. To address these issues, this work extends SL to a new family of loss functions, termed Pairwise Softmax Loss (PSL), which replaces the exponential function in SL with other appropriate activation functions. While the revision is minimal, we highlight three merits of PSL: 1) it serves as a tighter surrogate for DCG with suitable activation functions"
+  },
+  {
+    "id": "FEmag0szWo",
+    "filePath": "data/NeurIPS/2024/FEmag0szWo.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Rethinking the Capacity of Graph Neural Networks for Branching Strategy",
+    "abstract": "Graph neural networks (GNNs) have been widely used to predict properties and heuristics of mixed-integer linear programs (MILPs) and hence accelerate MILP solvers. This paper investigates the capacity of GNNs to represent strong branching (SB), the most effective yet computationally expensive heuristic employed in the branch-and-bound algorithm. In the literature, message-passing GNN (MP-GNN), as the simplest GNN structure, is frequently used as a fast approximation of SB and we find that not all MILPs's SB can be represented with MP-GNN. We precisely define a class of \"MP-tractable\" MILPs for which MP-GNNs can accurately approximate SB scores. Particularly, we establish a universal approximation theorem: for any data distribution over the MP-tractable class, there always exists an MP-GNN "
+  },
+  {
+    "id": "dY4YGqvfgW",
+    "filePath": "data/NeurIPS/2024/dY4YGqvfgW.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "On Weak Regret Analysis for Dueling Bandits",
+    "abstract": "We consider the problem of $K$-armed dueling bandits in the stochastic setting, under the sole assumption of the existence of a Condorcet winner. We study the objective of weak regret minimization, where the learner doesn't incur any loss if one of the selected arms is a Condorcet winner—unlike strong regret minimization, where the learner has to select the Condorcet winner twice to incur no loss. This study is particularly motivated by practical scenarios such as content recommendation and online advertising, where frequently only one optimal choice out of the two presented options is necessary to achieve user satisfaction or engagement. This necessitates the development of strategies with more exploration. While existing literature introduces strategies for weak regret with constant boun"
+  },
+  {
+    "id": "SLuZpdMDFg",
+    "filePath": "data/NeurIPS/2024/SLuZpdMDFg.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "ID-to-3D: Expressive ID-guided 3D Heads via Score Distillation Sampling",
+    "abstract": "We propose ID-to-3D, a method to generate identity- and text-guided 3D human heads with disentangled expressions, starting from even a single casually captured ‘in-the-wild’ image of a subject. The foundation of our approach is anchored in compositionality, alongside the use of task-specific 2D diffusion models as priors for optimization. First, we extend a foundational model with a lightweight expression-aware and ID-aware architecture, and create 2D priors for geometric and texture generation, via fine-tuning only 0.2% of its available training parameters. Then, we jointly leverage a neural parametric representation for the expression of each subject and a multi-stage generation of highly detailed geometry and albedo texture. This combination of strong face identity embeddings and our ne"
+  },
+  {
+    "id": "cRLFvSOrzt",
+    "filePath": "data/NeurIPS/2024/cRLFvSOrzt.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Credit Attribution and Stable Compression",
+    "abstract": "Credit attribution is crucial across various fields. In academic research, proper citation acknowledges prior work and establishes original contributions. Similarly, in generative models, such as those trained on existing artworks or music, it is important to ensure that any generated content influenced by these works appropriately credits the original creators.\n\nWe study credit attribution by machine learning algorithms. We propose new definitions--relaxations of Differential Privacy--that weaken the stability guarantees for a designated subset of $k$ datapoints. These $k$ datapoints can be used non-stably with permission from their owners, potentially in exchange for compensation. Meanwhile, the remaining datapoints are guaranteed to have no significant influence on the algorithm's outpu"
+  },
+  {
+    "id": "NQB9myZksw",
+    "filePath": "data/NeurIPS/2024/NQB9myZksw.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Robustly overfitting latents for flexible neural image compression",
+    "abstract": "Neural image compression has made a great deal of progress. State-of-the-art models are based on variational autoencoders and are outperforming classical models. Neural compression models learn to encode an image into a quantized latent representation that can be efficiently sent to the decoder, which decodes the quantized latent into a reconstructed image. While these models have proven successful in practice, they lead to sub-optimal results due to imperfect optimization and limitations in the encoder and decoder capacity. Recent work shows how to use stochastic Gumbel annealing (SGA) to refine the latents of pre-trained neural image compression models. \nWe extend this idea by introducing SGA+, which contains three different methods that build upon SGA.\nWe show how our method improves th"
+  },
+  {
+    "id": "xqc8yyhScL",
+    "filePath": "data/NeurIPS/2024/xqc8yyhScL.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Is Programming by Example Solved by LLMs?",
+    "abstract": "Programming-by-Examples (PBE) aims to generate an algorithm from input-output examples.\nSuch systems are practically and theoretically important:\nfrom an end-user perspective, they are deployed to millions of people, and from an AI perspective, PBE corresponds to a very general form of few-shot inductive inference.\nGiven the success of Large Language Models (LLMs) in code-generation tasks, we investigate here the extent to which LLMs can be said to have \"solved\" PBE.\nWe experiment on classic domains such as lists and strings, and an uncommon graphics programming domain not well represented in typical pretraining data.\nWe find that pretrained models are not effective at PBE, but that they can be fine-tuned for much higher performance, provided the test problems are in-distribution.\nWe analy"
+  },
+  {
+    "id": "Gqou8PRgWq",
+    "filePath": "data/NeurIPS/2024/Gqou8PRgWq.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "SHED: Shapley-Based Automated Dataset Refinement for Instruction Fine-Tuning",
+    "abstract": "The pre-trained Large Language Models (LLMs) can be adapted for many downstream tasks and tailored to align with human preferences through fine-tuning. Recent studies have discovered that LLMs can achieve desirable performance with only a small amount of high-quality data, suggesting that a large portion of the data in these extensive datasets is redundant or even harmful. Identifying high-quality data from vast datasets to curate small yet effective datasets has emerged as a critical challenge. In this paper, we introduce SHED, an automated dataset refinement framework based on Shapley value for instruction fine-tuning. SHED eliminates the need for human intervention or the use of commercial LLMs. Moreover, the datasets curated through SHED exhibit transferability, indicating they can be "
+  },
+  {
+    "id": "QGJSXMhVaL",
+    "filePath": "data/NeurIPS/2024/QGJSXMhVaL.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "WorldCoder, a Model-Based LLM Agent: Building World Models by Writing Code and Interacting with the Environment",
+    "abstract": "We give a model-based agent that builds a Python program representing its knowledge of the world based on its interactions with the environment. The world model tries to explain its interactions, while also being optimistic about what reward it can achieve. We define this optimism as a logical constraint between a program and a planner. We study our agent on gridworlds, and on task planning, finding our approach is more sample-efficient compared to deep RL, more compute-efficient compared to ReAct-style agents, and that it can transfer its knowledge across environments by editing its code."
+  },
+  {
+    "id": "RxXdokK2qz",
+    "filePath": "data/NeurIPS/2024/RxXdokK2qz.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Computing the Bias of Constant-step Stochastic Approximation with Markovian Noise",
+    "abstract": "We study stochastic approximation algorithms with Markovian noise and constant step-size $\\alpha$. We develop a method based on infinitesimal generator comparisons to study the bias of the algorithm, which is the expected difference between $\\theta_n$ ---the value at iteration $n$--- and $\\theta^*$ ---the unique equilibrium of the corresponding ODE. We show that, under some smoothness conditions, this bias is of order $O(\\alpha)$. Furthermore, we show that the time-averaged bias is equal to $\\alpha V + O(\\alpha^2)$, where $V$ is a constant characterized by a Lyapunov equation, showing that $E[\\bar{\\theta}_n] \\approx \\theta^*+V\\alpha + O(\\alpha^2)$, where $\\bar{\\theta}_n$ is the Polyak-Ruppert average.  We also show that $\\bar{\\theta}_n$ converges with high probability around $\\theta^*+\\alp"
+  },
+  {
+    "id": "VXJVNdmXO4",
+    "filePath": "data/NeurIPS/2024/VXJVNdmXO4.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Data Acquisition via Experimental Design for Data Markets",
+    "abstract": "The acquisition of training data is crucial for machine learning applications. Data markets can increase the supply of data, particularly in data-scarce domains such as healthcare, by incentivizing potential data providers to join the market. A major challenge for a data buyer in such a market is choosing the most valuable data points from a data seller.  Unlike prior work in data valuation, which assumes centralized data access, we propose a federated approach to the data acquisition problem that is inspired by linear experimental design. Our proposed data acquisition method achieves lower prediction error without requiring labeled validation data and can be optimized in a fast and federated procedure. The key insight of our work is that a method that directly estimates the benefit of acq"
+  },
+  {
+    "id": "unA5hxIn6v",
+    "filePath": "data/NeurIPS/2024/unA5hxIn6v.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Mean-Field Analysis for Learning Subspace-Sparse Polynomials with Gaussian Input",
+    "abstract": "In this work, we study the mean-field flow for learning subspace-sparse polynomials using stochastic gradient descent and two-layer neural networks, where the input distribution is standard Gaussian and the output only depends on the projection of the input onto a low-dimensional subspace. We establish a necessary condition for SGD-learnability, involving both the characteristics of the target function and the expressiveness of the activation function. In addition, we prove that the condition is almost sufficient, in the sense that a condition slightly stronger than the necessary condition can guarantee the exponential decay of the loss functional to zero."
+  },
+  {
+    "id": "bFoQXD7Uls",
+    "filePath": "data/NeurIPS/2024/bFoQXD7Uls.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "VeLoRA: Memory Efficient Training using Rank-1 Sub-Token Projections",
+    "abstract": "Large language models (LLMs) have recently emerged as powerful tools for tackling many language-processing tasks. Despite their success, training and fine-tuning these models is still far too computationally and memory intensive. In this paper, we identify and characterise the important components needed for effective model convergence using gradient descent. In doing so we find that the intermediate activations used to implement backpropagation can be excessively compressed without incurring any degradation in performance. This result leads us to a cheap and memory-efficient algorithm for both fine-tuning and pre-training LLMs. The proposed algorithm simply divides the tokens up into smaller sub-tokens before projecting them onto a fixed 1-dimensional subspace during the forward pass. The"
+  },
+  {
+    "id": "CZwphz5vgz",
+    "filePath": "data/NeurIPS/2024/CZwphz5vgz.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "OccFusion: Rendering Occluded Humans with Generative Diffusion Priors",
+    "abstract": "Existing human rendering methods require every part of the human to be fully visible throughout the input video. However, this assumption does not hold in real-life settings where obstructions are common, resulting in only partial visibility of the human. Considering this, we present OccFusion, an approach that utilizes efficient 3D Gaussian splatting supervised by pretrained 2D diffusion models for efficient and high-fidelity human rendering. We propose a pipeline consisting of three stages. In the Initialization stage, complete human masks are generated from partial visibility masks. In the Optimization stage, 3D human Gaussians are optimized with additional supervisions by Score-Distillation Sampling (SDS) to create a complete geometry of the human. Finally, in the Refinement stage, in-"
+  },
+  {
+    "id": "V8HVsyTSu6",
+    "filePath": "data/NeurIPS/2024/V8HVsyTSu6.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Outlier-Robust Distributionally Robust Optimization via Unbalanced Optimal Transport",
+    "abstract": "Distributionally Robust Optimization (DRO) accounts for uncertainty in data distributions by optimizing the model performance against the worst possible distribution within an ambiguity set. In this paper, we propose a DRO framework that relies on a new distance inspired by Unbalanced Optimal Transport (UOT). The proposed UOT distance employs a soft penalization term instead of hard constraints, enabling the construction of an ambiguity set that is more resilient to outliers.  Under smoothness conditions, we establish strong duality of the proposed DRO problem. Moreover, we introduce a computationally efficient Lagrangian penalty formulation for which we show that strong duality also holds. Finally, we provide empirical results that demonstrate that our method offers improved robustness to"
+  },
+  {
+    "id": "2NfBBpbN9x",
+    "filePath": "data/NeurIPS/2024/2NfBBpbN9x.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Utilizing Image Transforms and Diffusion Models for  Generative Modeling of Short and Long Time Series",
+    "abstract": "Lately, there has been a surge in interest surrounding generative modeling of time series data. Most existing approaches are designed either to process short sequences or to handle long-range sequences. This dichotomy can be attributed to gradient issues with recurrent networks, computational costs associated with transformers, and limited expressiveness of state space models. Towards a unified generative model for varying-length time series, we propose in this work to transform sequences into images. By employing invertible transforms such as the delay embedding and the short-time Fourier transform, we unlock three main advantages: i) We can exploit advanced diffusion vision models; ii) We can remarkably process short- and long-range inputs within the same framework; and iii) We can harne"
+  },
+  {
+    "id": "s63dtq0mwA",
+    "filePath": "data/NeurIPS/2024/s63dtq0mwA.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Understanding Information Storage and Transfer in Multi-Modal Large Language Models",
+    "abstract": "Understanding the mechanisms of information storage and transfer in Transformer-based models is important for driving model understanding progress. Recent work has studied these mechanisms for Large Language Models (LLMs), revealing insights on how information is stored in a model's parameters and how information flows to and from these parameters in response to specific prompts. However, these studies have not yet been extended to Multi-modal Large Language Models (MLLMs). Given their expanding capabilities and real-world use, we start by studying one aspect of these models -- how MLLMs process information in a factual visual question answering task. We use a constraint-based formulation which views a visual question as having a set of visual or textual constraints that the model's genera"
+  },
+  {
+    "id": "GEbnPxD9EF",
+    "filePath": "data/NeurIPS/2024/GEbnPxD9EF.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Consistency of Neural Causal Partial Identification",
+    "abstract": "Recent progress in Neural Causal Models (NCMs) showcased how identification and partial identification of causal effects can be automatically carried out via training of neural generative models that respect the constraints encoded in a given causal graph [Xia et al. 2022, Balazadeh et al. 2022]. However, formal consistency of these methods has only been proven for the case of discrete variables or only for linear causal models. In this work, we prove the consistency of partial identification via NCMs in a general setting with both continuous and categorical variables. Further, our results highlight the impact of the design of the underlying neural network architecture in terms of depth and connectivity as well as the importance of applying Lipschitz regularization in the training phase. I"
+  },
+  {
+    "id": "h34jVnPo1c",
+    "filePath": "data/NeurIPS/2024/h34jVnPo1c.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Doubly Hierarchical Geometric Representations for Strand-based Human Hairstyle Generation",
+    "abstract": "We introduce a doubly hierarchical generative representation for strand-based 3D hairstyle geometry that progresses from coarse, low-pass filtered guide hair to densely populated hair strands rich in high-frequency details. We employ the Discrete Cosine Transform (DCT) to separate low-frequency structural curves from high-frequency curliness and noise, avoiding the Gibbs' oscillation issues associated with the standard Fourier transform in open curves. Unlike the guide hair sampled from the scalp UV map grids which may lose capturing details of the hairstyle in existing methods, our method samples optimal sparse guide strands by utilising $k$-medoids clustering centres from low-pass filtered dense strands, which more accurately retain the hairstyle's inherent characteristics. The proposed "
+  },
+  {
+    "id": "o863gX6DxA",
+    "filePath": "data/NeurIPS/2024/o863gX6DxA.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Code Repair with LLMs gives an Exploration-Exploitation Tradeoff",
+    "abstract": "Iteratively improving and repairing source code with large language models (LLMs), known as refinement, has emerged as a popular way of generating programs that would be too complex to construct in one shot. Given a bank of test cases, together with a candidate program, an LLM can improve that program by being prompted with failed test cases. But it remains an open question how to best iteratively refine code, with prior work employing simple greedy or breadth-first strategies. We show here that refinement exposes an explore-exploit tradeoff: exploit by refining the program that passes the most test cases, or explore by refining a lesser considered program. We frame this as an arm-acquiring bandit problem, which we solve with Thompson Sampling. The resulting LLM-based program synthesis alg"
+  },
+  {
+    "id": "SYjxhKcXoN",
+    "filePath": "data/NeurIPS/2024/SYjxhKcXoN.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "LFME: A Simple Framework for Learning from Multiple Experts in Domain Generalization",
+    "abstract": "Domain generalization (DG) methods aim to maintain good performance in an unseen target domain by using training data from multiple source domains. While success on certain occasions are observed, enhancing the baseline across most scenarios remains challenging. This work introduces a simple yet effective framework, dubbed learning from multiple experts (LFME), that aims to make the target model an expert in all source domains to improve DG. Specifically, besides learning the target model used in inference, LFME will also train multiple experts specialized in different domains, whose output probabilities provide professional guidance by simply regularizing the logit of the target model. Delving deep into the framework, we reveal that the introduced logit regularization term implicitly prov"
+  },
+  {
+    "id": "mfTvNzhsht",
+    "filePath": "data/NeurIPS/2024/mfTvNzhsht.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Dueling over Dessert, Mastering the Art of Repeated Cake Cutting",
+    "abstract": "We consider the setting of repeated fair division between two players, denoted Alice and Bob, with private valuations over a cake. In each round, a new cake arrives, which is identical to the ones in previous rounds. Alice  cuts the cake at a point of her choice, while  Bob  chooses the left piece or the right piece, leaving the remainder for Alice. \nWe consider two versions: sequential, where Bob observes Alice's cut point  before choosing left/right, and simultaneous, where he only observes her cut point after making his choice. The simultaneous version was first considered by Aumann and Maschler.\n \nWe observe that if Bob is almost myopic and chooses his favorite piece too often, then he can be systematically exploited by Alice through a strategy akin to a binary search. This strategy al"
+  },
+  {
+    "id": "EdG59dnOzN",
+    "filePath": "data/NeurIPS/2024/EdG59dnOzN.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Remove that Square Root: A New Efficient Scale-Invariant Version of AdaGrad",
+    "abstract": "Adaptive methods are extremely popular in machine learning as they make learning rate tuning less expensive. This paper introduces a novel optimization algorithm named KATE, which presents a scale-invariant adaptation of the well-known AdaGrad algorithm. We prove the scale-invariance of KATE for the case of Generalized Linear Models. Moreover, for general smooth non-convex problems, we establish a convergence rate of  $O((\\log T)/\\sqrt{T})$ for KATE, matching the best-known ones for AdaGrad and Adam. We also compare KATE to other state-of-the-art adaptive algorithms Adam and AdaGrad in numerical experiments with different problems, including complex machine learning tasks like image classification and text classification on real data. The results indicate that KATE consistently outperforms"
   }
 ]

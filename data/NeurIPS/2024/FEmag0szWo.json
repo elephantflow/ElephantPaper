@@ -1,0 +1,37 @@
+{
+  "id": "FEmag0szWo",
+  "or_id": "FEmag0szWo",
+  "title": "Rethinking the Capacity of Graph Neural Networks for Branching Strategy",
+  "title_zh": "",
+  "authors": [
+    "Ziang Chen",
+    "Jialin Liu",
+    "Xiaohan Chen",
+    "Xinshang Wang",
+    "Wotao Yin"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Graph neural networks (GNNs) have been widely used to predict properties and heuristics of mixed-integer linear programs (MILPs) and hence accelerate MILP solvers. This paper investigates the capacity of GNNs to represent strong branching (SB), the most effective yet computationally expensive heuristic employed in the branch-and-bound algorithm. In the literature, message-passing GNN (MP-GNN), as the simplest GNN structure, is frequently used as a fast approximation of SB and we find that not all MILPs's SB can be represented with MP-GNN. We precisely define a class of \"MP-tractable\" MILPs for which MP-GNNs can accurately approximate SB scores. Particularly, we establish a universal approximation theorem: for any data distribution over the MP-tractable class, there always exists an MP-GNN that can approximate the SB score with arbitrarily high accuracy and arbitrarily high probability, which lays a theoretical foundation of the existing works on imitating SB with MP-GNN. For MILPs without the MP-tractability, unfortunately, a similar result is impossible, which can be illustrated by two MILP instances with different SB scores that cannot be distinguished by any MP-GNN, regardless of the number of parameters. Recognizing this, we explore another GNN structure called the second-order folklore GNN (2-FGNN) that overcomes this limitation, and the aforementioned universal approximation theorem can be extended to the entire MILP space using 2-FGNN, regardless of the MP-tractability. A small-scale numerical experiment is conducted to directly validate our theoretical findings.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Mixed-integer linear programs",
+    "strong branching",
+    "message-passing graph neural networks",
+    "second-order folklore graph neural networks"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=FEmag0szWo",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3a8a8041fdf9eb4b3e3f01bcfce1c27b0ec6dfca.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Graph neural networks (GNNs) have been widely used to predict properties and heuristics of mixed-integer linear programs (MILPs) and hence accelerate MILP solvers. This paper investigates the capacity of GNNs to represent strong branching (SB), the most effective yet computationally expensive heuris"
+  },
+  "collected_at": "2026-03-08T06:02:04.020Z"
+}
