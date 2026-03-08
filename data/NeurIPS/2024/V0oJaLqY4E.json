@@ -1,0 +1,39 @@
+{
+  "id": "V0oJaLqY4E",
+  "or_id": "V0oJaLqY4E",
+  "title": "Maximum Entropy Inverse Reinforcement Learning of Diffusion Models with Energy-Based Models",
+  "title_zh": "",
+  "authors": [
+    "Sangwoong Yoon",
+    "Himchan Hwang",
+    "Dohyun Kwon",
+    "Yung-Kyun Noh",
+    "Frank C. Park"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 oral",
+  "abstract": "We present a maximum entropy inverse reinforcement learning (IRL) approach for improving the sample quality of diffusion generative models, especially when the number of generation time steps is small. Similar to how IRL trains a policy based on the reward function learned from expert demonstrations, we train (or fine-tune) a diffusion model using the log probability density estimated from training data. \nSince we employ an energy-based model (EBM) to represent the log density, our approach boils down to the joint training of a diffusion model and an EBM. Our IRL formulation, named Diffusion by Maximum Entropy IRL (DxMI), is a minimax problem that reaches equilibrium when both models converge to the data distribution. The entropy maximization plays a key role in DxMI, facilitating the exploration of the diffusion model and ensuring the convergence of the EBM. We also propose Diffusion by Dynamic Programming (DxDP), a novel reinforcement learning algorithm for diffusion models, as a subroutine in DxMI. DxDP makes the diffusion model update in DxMI efficient by transforming the original problem into an optimal control formulation where value functions replace back-propagation in time. Our empirical studies show that diffusion models fine-tuned using DxMI can generate high-quality samples in as few as 4 and 10 steps.  Additionally, DxMI enables the training of an EBM without MCMC, stabilizing EBM training dynamics and enhancing anomaly detection performance.",
+  "abstract_zh": "",
+  "tldr": "We present an inverse reinforcement learning framework for training diffusion models and provide a novel RL algorithm for diffusion models which leverages value functions.",
+  "keywords": [
+    "diffusion models",
+    "inverse reinforcement learning",
+    "dynamic programming",
+    "reinforcement learning",
+    "generative modeling"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=V0oJaLqY4E",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fbd48eb1b53fd48de22ddd59edf0d18875315635.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We present an inverse reinforcement learning framework for training diffusion models and provide a novel RL algorithm for diffusion models which leverages value functions."
+  },
+  "collected_at": "2026-03-08T01:21:59.444Z"
+}

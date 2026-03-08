@@ -1,0 +1,36 @@
+{
+  "id": "GUccmOMBv6",
+  "or_id": "GUccmOMBv6",
+  "title": "CoLoR-Filter: Conditional Loss Reduction Filtering for Targeted Language Model Pre-training",
+  "title_zh": "",
+  "authors": [
+    "David Brandfonbrener",
+    "Hanlin Zhang",
+    "Andreas Kirsch",
+    "Jonathan Richard Schwarz",
+    "Sham M. Kakade"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Selecting high-quality data for pre-training is crucial in shaping the downstream task performance of language models. A major challenge lies in identifying this optimal subset, a problem generally considered intractable, thus necessitating scalable and effective heuristics. In this work, we propose a data selection method, CoLoR-Filter (Conditional Loss Reduction Filtering), which leverages an empirical Bayes-inspired approach to derive a simple and computationally efficient selection criterion based on the relative loss values of two auxiliary models.\n\nIn addition to the modeling rationale, we evaluate CoLoR-Filter empirically on two language modeling tasks: (1) selecting data from C4 for domain adaptation to evaluation on Books and (2) selecting data from C4 for a suite of downstream multiple-choice question answering tasks. We demonstrate favorable scaling both as we subselect more aggressively and using small auxiliary models to select data for large target models. As one headline result, CoLoR-Filter data selected using a pair of 150m parameter auxiliary models can train a 1.2b parameter target model to match a 1.2b parameter model trained on 25b randomly selected tokens with 25x less data for Books and 11x less data for the downstream tasks. \n\nCode: https://github.com/davidbrandfonbrener/color-filter-olmo\n\nFiltered data: https://huggingface.co/datasets/davidbrandfonbrener/color-filtered-c4",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "data selection",
+    "language models",
+    "LLMs"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=GUccmOMBv6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e639e5cb9a9b6a85d1607f14ab0742d340d48165.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Selecting high-quality data for pre-training is crucial in shaping the downstream task performance of language models. A major challenge lies in identifying this optimal subset, a problem generally considered intractable, thus necessitating scalable and effective heuristics. In this work, we propose"
+  },
+  "collected_at": "2026-03-08T01:21:59.444Z"
+}
