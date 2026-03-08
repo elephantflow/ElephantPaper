@@ -1,0 +1,38 @@
+{
+  "id": "0og7nmvDbe",
+  "or_id": "0og7nmvDbe",
+  "title": "Confidence Regulation Neurons in Language Models",
+  "title_zh": "",
+  "authors": [
+    "Alessandro Stolfo",
+    "Ben Peng Wu",
+    "Wes Gurnee",
+    "Yonatan Belinkov",
+    "Xingyi Song",
+    "Mrinmaya Sachan",
+    "Neel Nanda"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Despite their widespread use, the mechanisms by which large language models (LLMs) represent and regulate uncertainty in next-token predictions remain largely unexplored. This study investigates two critical components believed to influence this uncertainty: the recently discovered entropy neurons and a new set of components that we term token frequency neurons. Entropy neurons are characterized by an unusually high weight norm and influence the final layer normalization (LayerNorm) scale to effectively scale down the logits. Our work shows that entropy neurons operate by writing onto an \\textit{unembedding null space}, allowing them to impact the residual stream norm with minimal direct effect on the logits themselves. We observe the presence of entropy neurons across a range of models, up to 7 billion parameters. On the other hand, token frequency neurons, which we discover and describe here for the first time, boost or suppress each token’s logit proportionally to its log frequency, thereby shifting the output distribution towards or away from the unigram distribution. Finally, we present a detailed case study where entropy neurons actively manage confidence: the setting of induction, i.e. detecting and continuing repeated subsequences.",
+  "abstract_zh": "",
+  "tldr": "We study how LLMs regulate uncertainty using entropy neurons, which modulate entropy via an unembedding null space, and token frequency neurons, which adjust logits based on token frequency.",
+  "keywords": [
+    "LLMs",
+    "Interpretability",
+    "Mechanistic Interpretability"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=0og7nmvDbe",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b77a045af8d675ba687a62955d97da27a1bb15da.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study how LLMs regulate uncertainty using entropy neurons, which modulate entropy via an unembedding null space, and token frequency neurons, which adjust logits based on token frequency."
+  },
+  "collected_at": "2026-03-08T21:40:32.164Z"
+}

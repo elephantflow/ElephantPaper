@@ -1,0 +1,37 @@
+{
+  "id": "OycU0bAus6",
+  "or_id": "OycU0bAus6",
+  "title": "DenoiseRep: Denoising Model for Representation Learning",
+  "title_zh": "",
+  "authors": [
+    "zhengrui Xu",
+    "Guan'an Wang",
+    "Xiaowen Huang",
+    "Jitao Sang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 oral",
+  "abstract": "The denoising model has been proven a powerful generative model but has little exploration of discriminative tasks. Representation learning is important in discriminative tasks, which is defined as *\"learning representations (or features) of the data that make it easier to extract useful information when building classifiers or other predictors\"*. In this paper, we propose a novel Denoising Model for Representation Learning (*DenoiseRep*) to improve feature discrimination with joint feature extraction and denoising. *DenoiseRep* views each embedding layer in a backbone as a denoising layer, processing the cascaded embedding layers as if we are recursively denoise features step-by-step. This unifies the frameworks of feature extraction and denoising, where the former progressively embeds features from low-level to high-level, and the latter recursively denoises features step-by-step. After that, *DenoiseRep* fuses the parameters of feature extraction and denoising layers, and *theoretically demonstrates* its equivalence before and after the fusion, thus making feature denoising computation-free. *DenoiseRep* is a label-free algorithm that incrementally improves features but also complementary to the label if available. Experimental results on various discriminative vision tasks, including re-identification (Market-1501, DukeMTMC-reID, MSMT17, CUHK-03, vehicleID), image classification (ImageNet, UB200, Oxford-Pet, Flowers), object detection (COCO), image segmentation (ADE20K) show stability and impressive improvements. We also validate its effectiveness on the CNN (ResNet) and Transformer (ViT, Swin, Vmamda) architectures.",
+  "abstract_zh": "",
+  "tldr": "DenoiseRep is a computation-free, label-optional and model-irrelevant algorithm to incrementally improve representation learning.",
+  "keywords": [
+    "Diffusion Model",
+    "Representation Learning",
+    "Generative Model",
+    "Discriminative Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=OycU0bAus6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b468df410cc1d69f8bb648ff72f1f15c480e01b4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "DenoiseRep is a computation-free, label-optional and model-irrelevant algorithm to incrementally improve representation learning."
+  },
+  "collected_at": "2026-03-08T21:40:32.163Z"
+}

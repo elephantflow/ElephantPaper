@@ -1,0 +1,41 @@
+{
+  "id": "nBrnfYeKf9",
+  "or_id": "nBrnfYeKf9",
+  "title": "Rad-NeRF: Ray-decoupled Training of Neural Radiance Field",
+  "title_zh": "",
+  "authors": [
+    "Lidong Guo",
+    "Xuefei Ning",
+    "Yonggan Fu",
+    "Tianchen Zhao",
+    "Zhuoliang Kang",
+    "Jincheng Yu",
+    "Yingyan Celine Lin",
+    "Yu Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Although the neural radiance field (NeRF) exhibits high-fidelity visualization on the rendering task, it still suffers from rendering defects, especially in complex scenes. In this paper, we delve into the reason for the unsatisfactory performance and conjecture that it comes from interference in the training process. Due to occlusions in complex scenes, a 3D point may be invisible to some rays. On such a point, training with those rays that do not contain valid information about the point might interfere with the NeRF training. Based on the above intuition, we decouple the training process of NeRF in the ray dimension softly and propose a Ray-decoupled Training Framework for neural rendering (Rad-NeRF). Specifically, we construct an ensemble of sub-NeRFs and train a soft gate module to assign the gating scores to these sub-NeRFs based on specific rays. The gate module is jointly optimized with the sub-NeRF ensemble to learn the preference of sub-NeRFs for different rays automatically. Furthermore, we introduce depth-based mutual learning to enhance the rendering consistency among multiple sub-NeRFs and mitigate the depth ambiguity. Experiments on five datasets demonstrate that Rad-NeRF can enhance the rendering performance across a wide range of scene types compared with existing single-NeRF and multi-NeRF methods. With only 0.2% extra parameters, Rad-NeRF improves rendering performance by up to 1.5dB. Code is available at https://github.com/thu-nics/Rad-NeRF.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Neural rendering field",
+    "Mutual learning",
+    "Novel view synthesis",
+    "Soft gate module",
+    "Complex scenes with occlusions"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=nBrnfYeKf9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/156d15e45afe9ab5b87a685535ea6e3d6c612495.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Although the neural radiance field (NeRF) exhibits high-fidelity visualization on the rendering task, it still suffers from rendering defects, especially in complex scenes. In this paper, we delve into the reason for the unsatisfactory performance and conjecture that it comes from interference in th"
+  },
+  "collected_at": "2026-03-08T21:40:32.164Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "09RKw0vXjR",
+  "or_id": "09RKw0vXjR",
+  "title": "Fast Iterative Hard Thresholding Methods with Pruning Gradient Computations",
+  "title_zh": "",
+  "authors": [
+    "Yasutoshi Ida",
+    "Sekitoshi Kanai",
+    "Atsutoshi Kumagai",
+    "Tomoharu Iwata",
+    "Yasuhiro Fujiwara"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We accelerate the iterative hard thresholding (IHT) method, which finds \\(k\\) important elements from a parameter vector in a linear regression model. Although the plain IHT repeatedly updates the parameter vector during the optimization, computing gradients is the main bottleneck. Our method safely prunes unnecessary gradient computations to reduce the processing time.The main idea is to efficiently construct a candidate set, which contains \\(k\\) important elements in the parameter vector, for each iteration. Specifically, before computing the gradients, we prune unnecessary elements in the parameter vector for the candidate set by utilizing upper bounds on absolute values of the parameters. Our method guarantees the same optimization results as the plain IHT because our pruning is safe. Experiments show that our method is up to 73 times faster than the plain IHT without degrading accuracy.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "feature selection",
+    "sparse coding",
+    "dictionary learning",
+    "compressed sensing",
+    "iterative hard thresholding",
+    "pruning method"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=09RKw0vXjR",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a97ce714f40bb23dc2626c2363a019d73add26da.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We accelerate the iterative hard thresholding (IHT) method, which finds \\(k\\) important elements from a parameter vector in a linear regression model. Although the plain IHT repeatedly updates the parameter vector during the optimization, computing gradients is the main bottleneck. Our method safely"
+  },
+  "collected_at": "2026-03-08T21:40:32.164Z"
+}

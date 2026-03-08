@@ -1,0 +1,33 @@
+{
+  "id": "vS5NC7jtCI",
+  "or_id": "vS5NC7jtCI",
+  "title": "AdaNeg: Adaptive Negative Proxy Guided OOD Detection with Vision-Language Models",
+  "title_zh": "",
+  "authors": [
+    "Yabin Zhang",
+    "Lei Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recent research has shown that pre-trained vision-language models are effective at identifying out-of-distribution (OOD) samples by using negative labels as guidance. However, employing consistent negative labels across different OOD datasets often results in semantic misalignments, as these text labels may not accurately reflect the actual space of OOD images. To overcome this issue, we introduce \\textit{adaptive negative proxies}, which are dynamically generated during testing by exploring actual OOD images, to align more closely with the underlying OOD label space and enhance the efficacy of negative proxy guidance. Specifically, our approach utilizes a feature memory bank to selectively cache discriminative features from test images, representing the targeted OOD distribution. This facilitates the creation of proxies that can better align with specific OOD datasets. While task-adaptive proxies average features to reflect the unique characteristics of each dataset, the sample-adaptive proxies weight features based on their similarity to individual test samples, exploring detailed sample-level nuances. The final score for identifying OOD samples integrates static negative labels with our proposed adaptive proxies, effectively combining textual and visual knowledge for enhanced performance. Our method is training-free and annotation-free, and it maintains fast testing speed. Extensive experiments across various benchmarks demonstrate the effectiveness of our approach, abbreviated as AdaNeg. Notably, on the large-scale ImageNet benchmark, our AdaNeg significantly outperforms existing methods, with a 2.45\\% increase in AUROC and a 6.48\\% reduction in FPR95. Codes are available at \\url{https://github.com/YBZh/OpenOOD-VLM}.",
+  "abstract_zh": "",
+  "tldr": "We propose adaptive negative proxies by exploring potential OOD images during testing for OOD detection",
+  "keywords": [
+    "Adaptive negative proxy",
+    "OOD detection",
+    "vision-language models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=vS5NC7jtCI",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7d0df0f32fd41d7ace28bcfe957e1aeb0ad53117.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose adaptive negative proxies by exploring potential OOD images during testing for OOD detection"
+  },
+  "collected_at": "2026-03-08T21:40:32.162Z"
+}

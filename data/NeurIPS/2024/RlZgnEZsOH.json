@@ -1,0 +1,39 @@
+{
+  "id": "RlZgnEZsOH",
+  "or_id": "RlZgnEZsOH",
+  "title": "HuRef: HUman-REadable Fingerprint for Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Boyi Zeng",
+    "Lizheng Wang",
+    "Yuncong Hu",
+    "Yi Xu",
+    "Chenghu Zhou",
+    "Xinbing Wang",
+    "Yu Yu",
+    "Zhouhan Lin"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Protecting the copyright of large language models (LLMs) has become crucial due to their resource-intensive training and accompanying carefully designed licenses. However, identifying the original base model of an LLM is challenging due to potential parameter alterations. In this\nstudy, we introduce HuRef, a human-readable fingerprint for LLMs that uniquely identifies the base model without interfering with training or exposing model parameters to the public.\nWe first observe that the vector direction of LLM parameters remains stable after the model has converged during pretraining, \nwith negligible perturbations through subsequent training steps, including continued pretraining, supervised fine-tuning, and RLHF, \nwhich makes it a sufficient condition\nto identify the base model.\nThe necessity is validated by continuing to train an LLM with an extra term to drive away the model parameters' direction and the model becomes damaged. However, this direction is vulnerable to simple attacks like dimension permutation or matrix rotation, which significantly change it without affecting performance. To address this, leveraging the Transformer structure, we systematically analyze potential attacks and define three invariant terms that identify an LLM's base model. \nDue to the potential risk of information leakage, we cannot publish invariant terms directly. Instead, we map them to a Gaussian vector using an encoder, then convert it into a natural image using StyleGAN2, and finally publish the image. In our black-box setting, all fingerprinting steps are internally conducted by the LLMs owners. To ensure the published fingerprints are honestly generated, we introduced Zero-Knowledge Proof (ZKP).\nExperimental results across various LLMs demonstrate the effectiveness of our method. The code is available at https://github.com/LUMIA-Group/HuRef.",
+  "abstract_zh": "",
+  "tldr": "We generate a dog image as an identity fingerprint for an LLM, where the dog's appearance strongly indicates the LLM's base model.",
+  "keywords": [
+    "Model Identification",
+    "Fingerprinting",
+    "Large Language Models (LLMs)"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=RlZgnEZsOH",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7b76a88d89400bbea570ef8ade4f4533ec3d06e6.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We generate a dog image as an identity fingerprint for an LLM, where the dog's appearance strongly indicates the LLM's base model."
+  },
+  "collected_at": "2026-03-08T21:40:32.162Z"
+}
