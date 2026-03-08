@@ -1,0 +1,38 @@
+{
+  "id": "FI0vOp2asx",
+  "or_id": "FI0vOp2asx",
+  "title": "Cooperative Hardware-Prompt Learning for Snapshot Compressive Imaging",
+  "title_zh": "",
+  "authors": [
+    "Jiamian Wang",
+    "Zongliang Wu",
+    "Yulun Zhang",
+    "Xin Yuan",
+    "Tao Lin",
+    "ZHIQIANG TAO"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Spectral snapshot compressive imaging (Spectral SCI) applies an optical encoder to compressively capture 2D measurements, followed by which the 3D hyperspectral data can be restored via training a deep reconstruction network. Existing reconstruction models are generally trained with a single well-calibrated hardware instance, making their performance vulnerable to hardware shifts and limited in adapting to multiple hardware configurations. To facilitate cross-hardware learning, previous efforts attempt to directly collect multi-hardware data and perform centralized training, which, however, is impractical due to severe user data privacy concerns and hardware heterogeneity across different platforms/institutions. In this study, we explicitly consider data privacy and heterogeneity in cooperatively optimizing spectral SCI systems by proposing a novel Federated Hardware-Prompt learning (FedHP) framework. Rather than mitigating the client drift by rectifying the gradients, which only takes effect on the learning manifold but fails to solve the heterogeneity rooted in the input data space, FedHP learns a hardware-conditioned prompter to align inconsistent data distribution across clients, serving as an indicator of the data inconsistency among different coded apertures. Extensive experiments demonstrate that the proposed FedHP coordinates the pre-trained model to multiple hardware configurations, outperforming prevalent FL frameworks for 0.35dB under challenging heterogeneous setting. Moreover, a new Snapshot Spectral Heterogeneous Dataset (SSHD) has been built upon multiple practical spectral SCI systems. We will release the data and code to enrich further exploration of this practical computational imaging problem.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "snapshot compressive imaging",
+    "hyperpectral imaging",
+    "prompt learning",
+    "federated learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=FI0vOp2asx",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0585d7379643672cc469d20e8fe943839a70442e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Spectral snapshot compressive imaging (Spectral SCI) applies an optical encoder to compressively capture 2D measurements, followed by which the 3D hyperspectral data can be restored via training a deep reconstruction network. Existing reconstruction models are generally trained with a single well-ca"
+  },
+  "collected_at": "2026-03-08T02:42:21.750Z"
+}

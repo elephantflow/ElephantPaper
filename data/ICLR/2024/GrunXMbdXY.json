@@ -1,0 +1,35 @@
+{
+  "id": "GrunXMbdXY",
+  "or_id": "GrunXMbdXY",
+  "title": "FLAT-Chat: A Word Recovery Attack on Federated Language Model Training",
+  "title_zh": "",
+  "authors": [
+    "Qiongkai Xu",
+    "Jun Wang",
+    "Olga Ohrimenko",
+    "Trevor Cohn"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Gradient exchange is widely applied in collaborative training of machine learning models, including Federated Learning. Curious-but-honest participants could potentially infer the output labels in recently used training data by analyzing the latest gradient updates. Previous works mostly demonstrate the attack performance under constraint training settings, such as dozens of short sentences in a batch and a small output space for labels. In this work, we propose a novel gradient flattening attack on the last linear layer of a language model, which significantly improves the attacker's efficiency in inferring the words used in training. We validate the capability of the attack on two language generation tasks: machine translation and language modeling. The attack environment is scaled up to industrial settings of a large output vocabulary and realistic training batch sizes. To mitigate the negative impact of the new attack, we explore two defense methods and demonstrate that adding differential privacy with small noise could effectively defend against our new attack without degrading model utility.",
+  "abstract_zh": "",
+  "tldr": "We develop a label inference attack based on gradients from federated large language model training, which can identify tokens used in training even when applied to large batches as used in modern large language models with large vocabulary sizes.",
+  "keywords": [
+    "Label inference attack",
+    "Large-scale language model",
+    "Matrix flattening"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=GrunXMbdXY",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/58e812c160634fde34e021c03c1680b8ab7ef725.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We develop a label inference attack based on gradients from federated large language model training, which can identify tokens used in training even when applied to large batches as used in modern large language models with large vocabulary sizes."
+  },
+  "collected_at": "2026-03-08T02:42:21.750Z"
+}

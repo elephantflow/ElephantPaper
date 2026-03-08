@@ -1,0 +1,36 @@
+{
+  "id": "UTGv8CayNt",
+  "or_id": "UTGv8CayNt",
+  "title": "Chain-of-Thought Predictive Control",
+  "title_zh": "",
+  "authors": [
+    "Zhiwei Jia",
+    "Vineet Thumuluri",
+    "Fangchen Liu",
+    "Linghao Chen",
+    "Zhiao Huang",
+    "Hao Su"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "We study generalizable policy learning from demonstrations for complex low-level control tasks (e.g., contact-rich object manipulations). We propose a novel hierarchical imitation learning method that utilizes scalable, albeit sub-optimal, demonstrations. Firstly, we propose an observation space-agnostic approach that efficiently discovers the multi-step subgoal decomposition (sequences of key observations) of the demos in an unsupervised manner. By grouping temporarily close and functionally similar actions into subskill-level segments, the discovered breakpoints (the segment boundaries) constitute a chain of planning steps (i.e., the chain-of-thought) to complete the task. Next, we propose a Transformer-based design that effectively learns to predict the chain-of-thought (CoT) as the high-level guidance for low-level action. We couple action and CoT predictions via prompt tokens and a hybrid masking strategy, which enable dynamically updated CoT guidance at test time and improve feature representation of the trajectory for generalizable policy learning. Our method, named Chain-of-Thought Predictive Control (CoTPC), consistently surpasses existing strong baselines on a wide range of challenging low-level manipulation tasks with scalable yet sub-optimal demos.",
+  "abstract_zh": "",
+  "tldr": "An imitation learning algorithm that solves hard low-level control tasks by adopting subgoal predictions learned from the unsupervised discovery of subgoals in the demonstrations.",
+  "keywords": [
+    "Hierarchical Imitation Learning",
+    "Robotic Manipulation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=UTGv8CayNt",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b602348d9ba4c633ce4d6e825e24e19474d5a651.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "An imitation learning algorithm that solves hard low-level control tasks by adopting subgoal predictions learned from the unsupervised discovery of subgoals in the demonstrations."
+  },
+  "collected_at": "2026-03-08T02:42:21.750Z"
+}

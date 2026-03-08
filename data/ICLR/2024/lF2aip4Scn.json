@@ -1,0 +1,40 @@
+{
+  "id": "lF2aip4Scn",
+  "or_id": "lF2aip4Scn",
+  "title": "Demonstration-Regularized RL",
+  "title_zh": "",
+  "authors": [
+    "Daniil Tiapkin",
+    "Denis Belomestny",
+    "Daniele Calandriello",
+    "Eric Moulines",
+    "Alexey Naumov",
+    "Pierre Perrault",
+    "Michal Valko",
+    "Pierre Menard"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Incorporating expert demonstrations has empirically helped to improve the sample efficiency of reinforcement learning (RL). This paper quantifies theoretically to what extent this extra information reduces RL's sample complexity. In particular, we study the demonstration-regularized reinforcement learning framework that leverages the expert demonstrations by $\\mathrm{KL}$-regularization for a policy learned by behavior cloning. Our findings reveal that using $N^{\\mathrm{E}}$ expert demonstrations enables the identification of an optimal policy at a sample complexity of order $\\widetilde{\\mathcal{O}}(\\mathrm{Poly}(S,A,H)/(\\varepsilon^2 N^{\\mathrm{E}}))$ in finite and $\\widetilde{\\mathcal{O}}(\\mathrm{Poly}(d,H)/(\\varepsilon^2 N^{\\mathrm{E}}))$ in linear Markov decision processes, where $\\varepsilon$is the target precision, $H$ the horizon, $A$ the number of action, $S$ the number of states in the finite case and $d$ the dimension of the feature space in the linear case. As a by-product, we provide tight convergence guarantees for the behavior cloning procedure under general assumptions on the policy classes. Additionally, we establish that demonstration-regularized methods are provably efficient for reinforcement learning from human feedback (RLHF). In this respect, we provide theoretical evidence showing the benefits of KL-regularization for RLHF  in tabular and linear MDPs. \nInterestingly, we avoid pessimism injection by employing computationally feasible regularization to handle reward estimation uncertainty, thus setting our approach apart from the prior works.",
+  "abstract_zh": "",
+  "tldr": "We showed a theoretically efficient way to inject expert demonstrations into RL agent and, moreover, into RLHF.",
+  "keywords": [
+    "reinforcement learning",
+    "regularization in reinforcement leaning",
+    "learning with demonstrations",
+    "reinforcemenet learning with human feedback"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=lF2aip4Scn",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7f93971543d7b1a26e607380315994e7f7ad3051.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We showed a theoretically efficient way to inject expert demonstrations into RL agent and, moreover, into RLHF."
+  },
+  "collected_at": "2026-03-08T02:42:21.748Z"
+}

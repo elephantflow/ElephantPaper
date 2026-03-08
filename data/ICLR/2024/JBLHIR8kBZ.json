@@ -1,0 +1,36 @@
+{
+  "id": "JBLHIR8kBZ",
+  "or_id": "JBLHIR8kBZ",
+  "title": "Neuron to Graph: Interpreting Language Model Neurons at Scale",
+  "title_zh": "",
+  "authors": [
+    "Alex Foote",
+    "Neel Nanda",
+    "Esben Kran",
+    "Ioannis Konstas",
+    "Shay B Cohen",
+    "Fazl Barez"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Advances in Large Language Models (LLMs) have led to remarkable capabilities, yet their inner mechanisms remain largely unknown. To understand these models, we need to unravel the functions of individual neurons and their contribution to the network. \n\nThis paper introduces a novel automated approach designed to scale interpretability techniques across a vast array of neurons within LLMs, to make them more interpretable and ultimately safe. Conventional methods require examination of examples with strong neuron activation and manual identification of patterns to decipher the concepts a neuron responds to. We propose Neuron to Graph (N$2$G), an innovative tool that automatically extracts a neuron's behaviour from the dataset it was trained on and translates it into an interpretable graph. \n\nN$2$G uses truncation and saliency methods to emphasise only the most pertinent tokens to a neuron while enriching dataset examples with diverse samples to better encompass the full spectrum of neuron behaviour. These graphs can be visualised to aid researchers' manual interpretation, and can generate token activations on text for automatic validation by comparison with the neuron's ground truth activations, which we use to show that the model is better at predicting neuron activation than two baseline methods. We also demonstrate how the generated graph representations can be flexibly used to facilitate further automation of interpretability research, by searching for neurons with particular properties, or programmatically comparing neurons to each other to identify similar neurons. Our method easily scales to build graph representations for all neurons in a 6-layer Transformer model using a single Tesla T4 GPU, allowing for wide usability.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Mechanistic Interpretability",
+    "Visualisation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=JBLHIR8kBZ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/42d0ff45f1050b303b6ef00d1eb32a6bcc61eb50.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Advances in Large Language Models (LLMs) have led to remarkable capabilities, yet their inner mechanisms remain largely unknown. To understand these models, we need to unravel the functions of individual neurons and their contribution to the network. \n\nThis paper introduces a novel automated approac"
+  },
+  "collected_at": "2026-03-08T02:42:21.749Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "xVBXz7wD2m",
+  "or_id": "xVBXz7wD2m",
+  "title": "GatedMTL: Learning to Share, Specialize, and Prune Representations for Multi-task Learning",
+  "title_zh": "",
+  "authors": [
+    "Babak Ehteshami Bejnordi",
+    "Gaurav Kumar",
+    "Amelie Royer",
+    "Christos Louizos",
+    "Tijmen Blankevoort",
+    "Mohsen Ghafoorian"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Jointly learning multiple tasks with a unified network can improve accuracy and data efficiency while simultaneously reducing computational and memory costs. However, in practice, Multi-task Learning (MTL) is challenging, as optimizing one task objective may inadvertently compromise the performance of another: This is known as task interference. A promising direction to mitigate such conflicts between tasks is to allocate task-specific parameters, free from interference, on top of shared features, allowing for positive information transfer across tasks, albeit at the cost of higher computational demands. In this work, we propose a novel MTL framework, GatedMTL, to address the fundamental challenges of task interference and computational constraints in MTL. GatedMTL learns the optimal balance between shared and specialized representations for a given computational budget. We leverage a learnable gating mechanism allowing each individual task to select and combine channels from its own task-specific features and a shared memory bank of features. Moreover, we regularize the gates to learn the optimal balance between allocating additional task-specific parameters and the model’s computational costs. Through extensive empirical evaluations, we demonstrate SoTA results on three MTL benchmarks using convolutional as well as transformer-based backbones on CelebA, NYUD-v2, and PASCAL-Context.",
+  "abstract_zh": "",
+  "tldr": "GatedMTL learns the optimal balance between learning shared and specialized representations for a given computational budget",
+  "keywords": [
+    "Multi-task learning",
+    "Gated networks",
+    "Sharing",
+    "Pruning",
+    "Sparsity",
+    "MTL"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=xVBXz7wD2m",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/34f035e4b150d86eaa66ce01498c07b358a88c87.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "GatedMTL learns the optimal balance between learning shared and specialized representations for a given computational budget"
+  },
+  "collected_at": "2026-03-08T02:42:21.748Z"
+}

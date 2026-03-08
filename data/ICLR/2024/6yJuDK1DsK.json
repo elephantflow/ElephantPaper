@@ -1,0 +1,35 @@
+{
+  "id": "6yJuDK1DsK",
+  "or_id": "6yJuDK1DsK",
+  "title": "FEATHER: Lifelong Test-Time Adaptation with Lightweight Adapters",
+  "title_zh": "",
+  "authors": [
+    "Dhanajit Brahma",
+    "Abhinav Joshi",
+    "Ashutosh Modi",
+    "Piyush Rai"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Lifelong/continual test-time adaptation (TTA) refers to the problem where a pre-trained source domain model needs to be continually adapted at inference time to handle non-stationary test distributions. Continuously updating the source model over long horizons can result in significant drift in the source model, forgetting the source domain knowledge. Moreover, most of the existing approaches for lifelong TTA require adapting all the parameters, which can incur significant computational cost and memory consumption, limiting their applicability on edge devices for faster inference. We present FEATHER (liFelong tEst-time Adaptation wiTH lightwEight adapteRs), a novel lightweight approach that introduces only a small number of additional parameters to a pre-trained source model which can be unsupervisedly and efficiently adapted during test-time for the new test distribution(s), keeping the rest of the source model frozen. FEATHER disentangles the source domain knowledge from the target domain knowledge, making it robust against error accumulation over time. Another distinguishing aspect of FEATHER is that, unlike some recent approaches for lifelong TTA that require access to the source data for warm-starting the adaptation at test time, FEATHER does not have such a requirement. FEATHER is also orthogonal to the existing lifelong TTA approaches and can be augmented with these approaches, resulting in a significant reduction in the number of additional parameters needed to handle the lifelong TTA setting. Through extensive experiments on CIFAR-10C, CIFAR-100C, ImageNetC, and ImageNet3DCC Robustbench benchmark datasets, we demonstrate that, with substantially (85% to 94%) fewer trainable parameters, FEATHER achieves better/similar performance compared to existing SOTA lifelong TTA methods, resulting in faster adaptation and inference at test-time. The source code for FEATHER will be released upon publication.",
+  "abstract_zh": "",
+  "tldr": "This paper introduces a new method for making lifelong test time adaptation (TTA) methods parameter efficient using the idea of adapters, without requiring access to source data for warm-starting the adapter updates.",
+  "keywords": [
+    "test-time adaptation",
+    "source free test-time domain adaptation",
+    "parameter efficient test-time adaptation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6yJuDK1DsK",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6b1a15d7a453a5f22c5e76fc90c37a84088efbfb.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper introduces a new method for making lifelong test time adaptation (TTA) methods parameter efficient using the idea of adapters, without requiring access to source data for warm-starting the adapter updates."
+  },
+  "collected_at": "2026-03-08T02:42:21.750Z"
+}

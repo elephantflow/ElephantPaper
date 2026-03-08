@@ -1,0 +1,36 @@
+{
+  "id": "yGdoTL9g18",
+  "or_id": "yGdoTL9g18",
+  "title": "Residual Factorized Fourier Neural Operator for simulation of three-dimensional turbulence",
+  "title_zh": "",
+  "authors": [
+    "Maximilian Dauner",
+    "Ankith Bheemanakone",
+    "Benedikt Zönnchen",
+    "Gudrun Socher"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Neural Operators, particularly Fourier Neural Operators (FNO), have proven highly effective in simulating partial differential equations (PDEs), such as the Navier-Stokes equations. We propose the Residual Factorized Fourier Neural Operator (Res-F-FNO) for simulating three-dimensional (3D) flows, specifically focusing on flow dynamics around a cube. We extend the Factorized Fourier Neural Operator (F-FNO) architecture by incorporating additional residual connections. This change effectively reintroduces small-scale dynamic flows that may be lost due to truncated Fourier modes, resulting in improved accuracy when modeling wind fields. Our proposed Res-F-FNO model surpasses the performance of the standard F-FNO, achieving an error reduction of over 30\\% in simulating 3D flows. Furthermore, we propose the concept of a skip-corrector, to address the problem of accumulated errors over multiple time steps. The skip-corrector was specifically trained to predict the behaviour of turbulences at a considerably extended time interval. Incorporating the skip-corrector into the prediction process reduces the average error in simulating 100 time steps by more than 50\\%. Additionally, we adopt a modified training approach in which random time steps are chosen as the initial condition for each sample in every epoch, as opposed to generating a dataset by propagating each sample across all time steps. This leads to a significant reduction in the the number of training iterations required for the models to achieve convergence.",
+  "abstract_zh": "",
+  "tldr": "A Factorized Fourier Neural Operator based approach for the three-dimensional turbulence prediction around a cube.",
+  "keywords": [
+    "factorized fourier neural operator",
+    "fourier neural operator",
+    "navier stokes",
+    "three-dimensional turbulence prediction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=yGdoTL9g18",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4faba7579e7011297c4fae24c18327482795709e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A Factorized Fourier Neural Operator based approach for the three-dimensional turbulence prediction around a cube."
+  },
+  "collected_at": "2026-03-08T02:42:21.749Z"
+}

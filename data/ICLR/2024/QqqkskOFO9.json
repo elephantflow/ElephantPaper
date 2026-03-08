@@ -1,0 +1,38 @@
+{
+  "id": "QqqkskOFO9",
+  "or_id": "QqqkskOFO9",
+  "title": "Rethinking Actor-Critic: Successive Actors for Critic Maximization",
+  "title_zh": "",
+  "authors": [
+    "Ayush Jain",
+    "Norio Kosaka",
+    "Xinhu Li",
+    "Kyung-Min Kim",
+    "Joseph J Lim"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Value-based actor-critic approaches have been widely employed for continuous and large discrete action space reinforcement learning tasks. Traditionally, an actor-network is trained to find the action that maximizes the critic (action-value function) with gradient ascent.\nWe identify that often an actor fails to maximize the critic because (i) certain tasks have challenging action-value landscapes with several local optima, and (ii) the critic landscape varies non-stationarily over training. This inability to find the optimal action often leads to sample-inefficient training and suboptimal convergence. To address the challenge of better maximization of the critic's landscape, we present a novel reformulation of the actor by employing a sequence of sub-actors with increasingly tractable action-value landscapes.\nIn large discrete and continuous action space tasks, we demonstrate that our approach finds actions that better maximize the action-value function than conventional actor-network approaches, enabling better performance. [https://sites.google.com/view/complexaction](https://sites.google.com/view/complexaction)",
+  "abstract_zh": "",
+  "tldr": "We identify and address a key drawback in actor-critic methods when the actor fails to find actions that maximize the critic.",
+  "keywords": [
+    "Off-policy reinforcement learning",
+    "actor-critic methods",
+    "TD3",
+    "discrete action spaces",
+    "continuous action spaces"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=QqqkskOFO9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4958c4c630c85219cce8d5dfc2a34b36199cadab.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We identify and address a key drawback in actor-critic methods when the actor fails to find actions that maximize the critic."
+  },
+  "collected_at": "2026-03-08T02:42:21.750Z"
+}
