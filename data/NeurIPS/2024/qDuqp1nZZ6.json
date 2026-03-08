@@ -1,0 +1,33 @@
+{
+  "id": "qDuqp1nZZ6",
+  "or_id": "qDuqp1nZZ6",
+  "title": "Differentially Private Equivalence Testing for Continuous Distributions and Applications",
+  "title_zh": "",
+  "authors": [
+    "Or Sheffet",
+    "Daniel Omer"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We present the first algorithm for testing equivalence  between two continuous distributions using differential privacy (DP). Our algorithm is a private version of the algorithm of Diakonikolas et al. \nThe algorithm of Diakonikolas et al uses the data itself to repeatedly discretize the real line so that --- when the two distributions are far apart in ${\\cal A}_k$-norm --- one of the discretized distributions exhibits large $L_2$-norm difference; and upon repeated sampling such large gap would be detected. Designing its private analogue poses two difficulties. First, our DP algorithm can not resample new datapoints as a change to a single datapoint may lead to a very large change in the descretization of the real line. In contrast, the (sorted) index of the discretization point changes only by $1$ between neighboring instances, and so we use a novel algorithm that set the discretization points using random Bernoulli noise, resulting in only a few buckets being affected under the right coupling. Second, our algorithm, which doesn't resample data, requires we also revisit the utility analysis of the original algorithm and prove its correctness w.r.t. the original sorted data; a problem we tackle using sampling a subset of Poisson-drawn size from each discretized bin. Lastly, since any distribution can be reduced to a continuous distribution, our algorithm is successfully carried to multiple other families of distributions and thus has numerous applications.",
+  "abstract_zh": "",
+  "tldr": "The first paper to give a DP equivalence tester for continuous distrbiutions",
+  "keywords": [
+    "Differential Privacy",
+    "Equivalence Tester",
+    "Continuous Distributions"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=qDuqp1nZZ6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f16088ff7a96775260e2b6bf5b1061b7e41ec0ad.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The first paper to give a DP equivalence tester for continuous distrbiutions"
+  },
+  "collected_at": "2026-03-08T18:00:22.736Z"
+}
