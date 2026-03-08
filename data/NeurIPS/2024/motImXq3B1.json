@@ -1,0 +1,44 @@
+{
+  "id": "motImXq3B1",
+  "or_id": "motImXq3B1",
+  "title": "P$^2$C$^2$Net: PDE-Preserved Coarse Correction Network for efficient prediction of spatiotemporal dynamics",
+  "title_zh": "",
+  "authors": [
+    "Qi Wang",
+    "Pu Ren",
+    "Hao Zhou",
+    "Xin-Yang Liu",
+    "Zhiwen Deng",
+    "Yi Zhang",
+    "Ruizhi Chengze",
+    "Hongsheng Liu",
+    "Zidong Wang",
+    "Jian-Xun Wang",
+    "Ji-Rong Wen",
+    "Hao Sun",
+    "Yang Liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "When solving partial differential equations (PDEs), classical numerical methods often require fine mesh grids and small time stepping to meet stability, consistency, and convergence conditions, leading to high computational cost. Recently, machine learning has been increasingly utilized to solve PDE problems, but they often encounter challenges related to interpretability, generalizability, and strong dependency on rich labeled data. Hence, we introduce a new PDE-Preserved Coarse Correction Network (P$^2$C$^2$Net) to efficiently solve spatiotemporal PDE problems on coarse mesh grids in small data regimes. The model consists of two synergistic modules: (1) a trainable PDE block that learns to update the coarse solution (i.e., the system state), based on a high-order numerical scheme with boundary condition encoding, and (2) a neural network block that consistently corrects the solution on the fly. In particular, we propose a learnable symmetric Conv filter, with weights shared over the entire model, to accurately estimate the spatial derivatives of PDE based on the neural-corrected system state. The resulting physics-encoded model is capable of handling limited training data (e.g., 3--5 trajectories) and accelerates the prediction of PDE solutions on coarse spatiotemporal grids while maintaining a high accuracy. P$^2$C$^2$Net achieves consistent state-of-the-art performance with over 50\\% gain (e.g., in terms of relative prediction error) across four datasets covering complex reaction-diffusion processes and turbulent flows.",
+  "abstract_zh": "",
+  "tldr": "Introduced a PDE-Preserved Coarse Correction Network for efficient prediction of spatiotemporal dynamics.",
+  "keywords": [
+    "physics-informed learning",
+    "coarse model",
+    "spatiotemporal dynamics prediction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=motImXq3B1",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/773e47a41e0bca5c6bc853b01def265140046231.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Introduced a PDE-Preserved Coarse Correction Network for efficient prediction of spatiotemporal dynamics."
+  },
+  "collected_at": "2026-03-08T19:00:23.556Z"
+}

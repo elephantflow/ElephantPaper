@@ -1,0 +1,35 @@
+{
+  "id": "CcmHlE6N6u",
+  "or_id": "CcmHlE6N6u",
+  "title": "LuSh-NeRF: Lighting up and Sharpening NeRFs for Low-light Scenes",
+  "title_zh": "",
+  "authors": [
+    "Zefan Qu",
+    "Ke Xu",
+    "Gerhard Petrus Hancke",
+    "Rynson W. H. Lau"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Neural Radiance Fields (NeRFs) have shown remarkable performances in producing novel-view images from high-quality scene images. However, hand-held low-light photography challenges NeRFs as the captured images may simultaneously suffer from low visibility, noise, and camera shakes.\nWhile existing NeRF methods may handle either low light or motion, directly combining them or incorporating additional image-based enhancement methods does not work as these degradation factors are highly coupled.\nWe observe that noise in low-light images is always sharp regardless of camera shakes, which implies an implicit order of these degradation factors within the image formation process.\nThis inspires us to explore such an order to decouple and remove these degradation factors while training the NeRF.\nTo this end, we propose in this paper a novel model, named LuSh-NeRF, which can reconstruct a clean and sharp NeRF from a group of hand-held low-light images.\nThe key idea of LuSh-NeRF is to sequentially model noise and blur in the images via multi-view feature consistency and frequency information of NeRF, respectively.\nSpecifically, LuSh-NeRF includes a novel Scene-Noise Decomposition (SND) module for decoupling the noise from the scene representation and a novel Camera Trajectory Prediction (CTP) module for the estimation of camera motions based on low-frequency scene information.\nTo facilitate training and evaluations, we construct a new dataset containing both synthetic and real images.\nExperiments show that LuSh-NeRF outperforms existing approaches. Our code and dataset can be found here: https://github.com/quzefan/LuSh-NeRF.",
+  "abstract_zh": "",
+  "tldr": "A novel method that can reconstruct a clear and sharp NeRF from a group of hand-held captured low-light images and a new proposed dataset.",
+  "keywords": [
+    "Deep learning",
+    "Neural Radiance Field",
+    "Low light"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=CcmHlE6N6u",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/06fe10fb3958bb2d5f2550de529a77924b664df2.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A novel method that can reconstruct a clear and sharp NeRF from a group of hand-held captured low-light images and a new proposed dataset."
+  },
+  "collected_at": "2026-03-08T19:00:23.559Z"
+}

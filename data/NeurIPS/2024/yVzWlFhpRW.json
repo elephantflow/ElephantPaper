@@ -1,0 +1,39 @@
+{
+  "id": "yVzWlFhpRW",
+  "or_id": "yVzWlFhpRW",
+  "title": "Excluding the Irrelevant: Focusing Reinforcement Learning through Continuous Action Masking",
+  "title_zh": "",
+  "authors": [
+    "Roland Stolz",
+    "Hanna Krasowski",
+    "Jakob Thumm",
+    "Michael Eichelbeck",
+    "Philipp Gassert",
+    "Matthias Althoff"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Continuous action spaces in reinforcement learning (RL) are commonly defined as multidimensional intervals. While intervals usually reflect the action boundaries for tasks well, they can be challenging for learning because the typically large global action space leads to frequent exploration of irrelevant actions. Yet, little task knowledge can be sufficient to identify significantly smaller state-specific sets of relevant actions. Focusing learning on these relevant actions can significantly improve training efficiency and effectiveness. In this paper, we propose to focus learning on the set of relevant actions and introduce three continuous action masking methods for exactly mapping the action space to the state-dependent set of relevant actions. Thus, our methods ensure that only relevant actions are executed, enhancing the predictability of the RL agent and enabling its use in safety-critical applications. We further derive the implications of the proposed methods on the policy gradient. Using proximal policy optimization ( PPO), we evaluate our methods on four control tasks, where the relevant action set is computed based on the system dynamics and a relevant state set. Our experiments show that the three action masking methods achieve higher final rewards and converge faster than the baseline without action masking.",
+  "abstract_zh": "",
+  "tldr": "This work introduces three action masking methods for continuous action spaces to focus the exploration of reinforcement learning on state-specific relevant actions, which enhances learning efficiency and effectiveness.",
+  "keywords": [
+    "Reinforcement Learning",
+    "Policy Gradient",
+    "Action Masking",
+    "Robotics",
+    "Continuous Actions"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=yVzWlFhpRW",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8a1eecafd6f9a1b8919878b8b034860552119122.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This work introduces three action masking methods for continuous action spaces to focus the exploration of reinforcement learning on state-specific relevant actions, which enhances learning efficiency and effectiveness."
+  },
+  "collected_at": "2026-03-08T19:00:23.557Z"
+}
