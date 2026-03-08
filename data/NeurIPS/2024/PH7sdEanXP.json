@@ -1,0 +1,38 @@
+{
+  "id": "PH7sdEanXP",
+  "or_id": "PH7sdEanXP",
+  "title": "Scaling Laws in Linear Regression: Compute, Parameters, and Data",
+  "title_zh": "",
+  "authors": [
+    "Licong Lin",
+    "Jingfeng Wu",
+    "Sham M. Kakade",
+    "Peter Bartlett",
+    "Jason D. Lee"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Empirically, large-scale deep learning models often satisfy a neural scaling law: the test error of the trained model improves polynomially as the model size and data size grow. However, conventional wisdom suggests the test error consists of approximation, bias, and variance errors, where the variance error increases with model size. This disagrees with the general form of neural scaling laws, which predict that increasing model size monotonically improves performance.\n\nWe study the theory of scaling laws in an infinite dimensional linear regression setup. Specifically, we consider a model with $M$ parameters as a linear function of sketched covariates. The model is trained by one-pass stochastic gradient descent (SGD) using $N$ data. Assuming the optimal parameter satisfies a Gaussian prior and the data covariance matrix has a power-law spectrum of degree $a>1$, we show that the reducible part of the test error is $\\Theta(M^{-(a-1)} + N^{-(a-1)/a})$. The variance error, which increases with $M$, is dominated by the other errors due to the implicit regularization of SGD, thus disappearing from the bound. Our theory is consistent with the empirical neural scaling laws and verified by numerical simulation.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "learning theory",
+    "scaling law",
+    "deep learning",
+    "SGD",
+    "optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=PH7sdEanXP",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0f2b588586b8f9357aca924f3353b0c13b102112.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Empirically, large-scale deep learning models often satisfy a neural scaling law: the test error of the trained model improves polynomially as the model size and data size grow. However, conventional wisdom suggests the test error consists of approximation, bias, and variance errors, where the varia"
+  },
+  "collected_at": "2026-03-08T01:02:10.798Z"
+}

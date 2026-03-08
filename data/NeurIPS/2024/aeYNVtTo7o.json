@@ -1,0 +1,38 @@
+{
+  "id": "aeYNVtTo7o",
+  "or_id": "aeYNVtTo7o",
+  "title": "Cell ontology guided transcriptome foundation model",
+  "title_zh": "",
+  "authors": [
+    "Xinyu Yuan",
+    "Zhihao Zhan",
+    "Zuobai Zhang",
+    "Manqi Zhou",
+    "Jianan Zhao",
+    "Boyu Han",
+    "Yue Li",
+    "Jian Tang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Transcriptome foundation models (TFMs) hold great promises of deciphering the transcriptomic language that dictate diverse cell functions by self-supervised learning on large-scale single-cell gene expression data, and ultimately unraveling the complex mechanisms of human diseases. However, current TFMs treat cells as independent samples and ignore the taxonomic relationships between cell types, which are available in cell ontology graphs. We argue that effectively leveraging this ontology information during the TFM pre-training can improve learning biologically meaningful gene co-expression patterns while preserving TFM as a general purpose foundation model for downstream zero-shot and fine-tuning tasks. To this end, we present **s**ingle **c**ell, **Cell**-**o**ntology guided TFM (scCello). We introduce cell-type coherence loss and ontology alignment loss, which are minimized along with the masked gene expression prediction loss during the pre-training. The novel loss component guide scCello to learn the cell-type-specific representation and the structural relation between cell types from the cell ontology graph, respectively. We pre-trained scCello on 22 million cells from CellxGene database leveraging their cell-type labels mapped to the cell ontology graph from Open Biological and Biomedical Ontology Foundry. Our TFM demonstrates competitive generalization and transferability performance over the existing TFMs on biologically important tasks including identifying novel cell types of unseen cells, prediction of cell-type-specific marker genes, and cancer drug responses. Source code and model\nweights are available at https://github.com/DeepGraphLearning/scCello.",
+  "abstract_zh": "",
+  "tldr": "A cell ontology guided transcriptome foundation model for enhanced cell representation learning, which is pre-trained on 20 million cells from CellxGene database leveraging their cell-type labels aligned with cell ontology graph",
+  "keywords": [
+    "Cell ontology graph+transcriptome foundation model+large-scale pre-training+cell representation learning+single cell RNA sequencing data"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=aeYNVtTo7o",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/919042e739897111ff32bf1d14ee96491face15e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "A cell ontology guided transcriptome foundation model for enhanced cell representation learning, which is pre-trained on 20 million cells from CellxGene database leveraging their cell-type labels aligned with cell ontology graph"
+  },
+  "collected_at": "2026-03-08T01:02:10.799Z"
+}
