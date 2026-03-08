@@ -1,0 +1,41 @@
+{
+  "id": "cRs4jvF4mO",
+  "or_id": "cRs4jvF4mO",
+  "title": "Deep Discriminative to Kernel Density Graph for In- and Out-of-distribution Calibrated Inference",
+  "title_zh": "",
+  "authors": [
+    "Jayanta Dey",
+    "Haoyin Xu",
+    "Will LeVine",
+    "Ashwin De Silva",
+    "Tyler M. Tomita",
+    "Ali Geisa",
+    "Tiffany Chu",
+    "Jacob Maxwell Desman",
+    "Joshua T Vogelstein"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Deep discriminative approaches like random forests and deep neural networks have recently found applications in many important real-world scenarios. However, deploying these learning algorithms in safety-critical applications raises concerns, particularly when it comes to ensuring confidence calibration for both in-distribution and out-of-distribution data points. Many popular methods for in-distribution (ID) calibration, such as isotonic and Platt’s sigmoidal regression, exhibit excellent ID calibration performance. However, these methods are not calibrated for the entire feature space, leading to overconfidence in the case of out-of-distribution (OOD) samples. On the other end of the spectrum, existing out-of-distribution (OOD) calibration methods generally exhibit poor in-distribution (ID) calibration. In this paper, we address ID and OOD calibration problems jointly. We leveraged the fact that deep models, including both random forests and deep-nets, learn internal representations which are unions of polytopes with affine activation functions to conceptualize them both as partitioning rules of the feature space. We replace the affine function in each polytope populated by the training data with a Gaussian kernel. Our experiments on both tabular and vision benchmarks show that the proposed approaches obtain well-calibrated posteriors while mostly preserving or improving the classification accuracy of the original algorithm for ID region, and extrapolate beyond the training data to handle OOD inputs appropriately.",
+  "abstract_zh": "",
+  "tldr": "This paper offers insights on how to calibrate confidence of deep learning models for in-distribution and out-of-distribution regions.",
+  "keywords": [
+    "random forest",
+    "deep networks",
+    "in-distribution calibration",
+    "out-of-distribution detection"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=cRs4jvF4mO",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8301c43c18f6acc0aeea932dde7be8101e99ac62.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper offers insights on how to calibrate confidence of deep learning models for in-distribution and out-of-distribution regions."
+  },
+  "collected_at": "2026-03-08T17:40:23.449Z"
+}
