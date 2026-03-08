@@ -1,0 +1,36 @@
+{
+  "id": "6ejpSVIiIl",
+  "or_id": "6ejpSVIiIl",
+  "title": "Classifier Clustering and Feature Alignment for Federated Learning under Distributed Concept Drift",
+  "title_zh": "",
+  "authors": [
+    "Junbao Chen",
+    "Jingfeng Xue",
+    "Yong Wang",
+    "Zhenyan Liu",
+    "Lu Huang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Data heterogeneity is one of the key challenges in federated learning, and many efforts have been devoted to tackling this problem. However, distributed concept drift with data heterogeneity, where clients may additionally experience different concept drifts, is a largely unexplored area. In this work, we focus on real drift, where the conditional distribution $P(\\mathcal{Y}|\\mathcal{X})$ changes. We first study how distributed concept drift affects the model training and find that local classifier plays a critical role in drift adaptation. Moreover, to address data heterogeneity, we study the feature alignment under distributed concept drift, and find two factors that are crucial for feature alignment: the conditional distribution $P(\\mathcal{Y}|\\mathcal{X})$ and the degree of data heterogeneity. Motivated by the above findings, we propose FedCCFA, a federated learning framework with classifier clustering and feature alignment. To enhance collaboration under distributed concept drift, FedCCFA clusters local classifiers at class-level and generates clustered feature anchors according to the clustering results. Assisted by these anchors, FedCCFA adaptively aligns clients' feature spaces based on the entropy of label distribution $P(\\mathcal{Y})$, alleviating the inconsistency in feature space. Our results demonstrate that FedCCFA significantly outperforms existing methods under various concept drift settings. Code is available at https://github.com/Chen-Junbao/FedCCFA.",
+  "abstract_zh": "",
+  "tldr": "We propose FedCCFA, a federated learning framework with classifier clustering and feature alignment.",
+  "keywords": [
+    "federated learning",
+    "concept drift",
+    "data heterogeneity"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6ejpSVIiIl",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/aa49cebc5b83887b9dc43b9be7377b1d6164abf7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose FedCCFA, a federated learning framework with classifier clustering and feature alignment."
+  },
+  "collected_at": "2026-03-08T18:20:23.291Z"
+}

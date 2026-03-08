@@ -1,0 +1,33 @@
+{
+  "id": "14hLJr6kZ3",
+  "or_id": "14hLJr6kZ3",
+  "title": "Enhancing Domain Adaptation through Prompt Gradient Alignment",
+  "title_zh": "",
+  "authors": [
+    "Hoang Phan",
+    "Tung Lam Tran",
+    "Quyen Tran",
+    "Trung Le"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Prior Unsupervised Domain Adaptation (UDA) methods often aim to train a domain-invariant feature extractor, which may hinder the model from learning sufficiently discriminative features. To tackle this, a line of works based on prompt learning leverages the power of large-scale pre-trained vision-language models to learn both domain-invariant and specific features through a set of domain-agnostic and domain-specific learnable prompts. Those studies typically enforce invariant constraints on representation, output, or prompt space to learn such prompts. Differently, we cast UDA as a multiple-objective optimization problem in which each objective is represented by a domain loss. Under this new framework, we propose aligning per-objective gradients to foster consensus between them. Additionally, to prevent potential overfitting when fine-tuning this deep learning architecture, we penalize the norm of these gradients. To achieve these goals, we devise a practical gradient update procedure that can work under both single-source and multi-source UDA. Empirically, our method consistently surpasses other vision language model adaptation methods by a large margin on a wide range of benchmarks. The implementation is available at https://github.com/VietHoang1512/PGA.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel training method for prompt-based unsupervised domain adaptation by effectively leveraging and manipulating domain-specific gradients.",
+  "keywords": [
+    "transfer learning; domain adaptation; prompt-tuning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=14hLJr6kZ3",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d6295c5cdf8565dcd726a48c3c7088bf4c64cf0c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel training method for prompt-based unsupervised domain adaptation by effectively leveraging and manipulating domain-specific gradients."
+  },
+  "collected_at": "2026-03-08T18:20:23.290Z"
+}

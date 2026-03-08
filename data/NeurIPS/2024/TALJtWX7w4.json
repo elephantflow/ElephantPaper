@@ -1,0 +1,36 @@
+{
+  "id": "TALJtWX7w4",
+  "or_id": "TALJtWX7w4",
+  "title": "LaSCal: Label-Shift Calibration without target labels",
+  "title_zh": "",
+  "authors": [
+    "Teodora Popordanoska",
+    "Gorjan Radevski",
+    "Tinne Tuytelaars",
+    "Matthew B. Blaschko"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "When machine learning systems face dataset shift, model calibration plays a pivotal role in ensuring their reliability.\nCalibration error (CE) provides insights into the alignment between the predicted confidence scores and the classifier accuracy.\nWhile prior works have delved into the implications of dataset shift on calibration, existing CE estimators either (i) assume access to labeled data from the target domain, often unavailable in practice, or (ii) are derived under a covariate shift assumption.\nIn this work we propose a novel, label-free, consistent CE estimator under label shift. Label shift is characterized by changes in the marginal label distribution p(Y), with a constant conditional p(X|Y) distribution between the source and target. We introduce a novel calibration method, called LaSCal, which uses the estimator in conjunction with a post-hoc calibration strategy, to perform unsupervised calibration on the target distribution. Our thorough empirical analysis demonstrates the effectiveness and reliability of the proposed approach across different modalities, model architectures and label shift intensities.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel strategy for unsupervised calibration under label shift, utilizing importance re-weighting of the labeled source distribution.",
+  "keywords": [
+    "uncertainty calibration",
+    "calibration error estimation",
+    "label-shift",
+    "domain adaptation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=TALJtWX7w4",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ae3d8df478e4f01f9a6bf23168a93efc83a3f41f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel strategy for unsupervised calibration under label shift, utilizing importance re-weighting of the labeled source distribution."
+  },
+  "collected_at": "2026-03-08T18:20:23.289Z"
+}
