@@ -1,0 +1,34 @@
+{
+  "id": "CL9k2PaUQb",
+  "or_id": "CL9k2PaUQb",
+  "title": "The Surprising Effectiveness of SP Voting with Partial Preferences",
+  "title_zh": "",
+  "authors": [
+    "Hadi Hosseini",
+    "Debmalya Mandal",
+    "Amrit Puhan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We consider the problem of recovering the ground truth ordering (ranking, top-$k$, or others) over a large number of alternatives. \nThe wisdom of crowd is a heuristic approach based on Condorcet's Jury theorem to address this problem through collective opinions.\nThis approach fails to recover the ground truth when the majority of the crowd is misinformed. The \\emph{surprisingly popular} (SP) algorithm~\\citep{prelec2017solution} is an alternative approach that is able to recover the ground truth even when experts are in minority. The SP algorithm requires the voters to predict other voters' report in the form of a full probability distribution over all rankings of alternatives. However, when the number of alternatives, $m$, is large, eliciting the prediction report or even the vote over $m$ alternatives might be too costly. \nIn this paper, we design a scalable alternative of the SP algorithm which only requires eliciting partial preferences from the voters, and propose new variants of the SP algorithm. In particular, we propose two versions---\\emph{Aggregated-SP} and \\emph{Partial-SP}---that ask voters to report vote and prediction on a subset of size $k$ ($\\ll m$) in terms of top alternative, partial rank, or an approval set. Through a large-scale crowdsourcing experiment on MTurk, we show that both of our approaches outperform conventional preference aggregation algorithms for the recovery of ground truth rankings, when measured in terms of Kendall-Tau distance and Spearman's $\\rho$. We further analyze the collected data and demonstrate that voters' behavior in the experiment, including the minority of the experts, and the SP phenomenon, can be correctly simulated by a  concentric mixtures of Mallows model. Finally, we provide theoretical bounds on the sample complexity of SP algorithms with partial rankings to demonstrate the theoretical guarantees of the proposed methods.",
+  "abstract_zh": "",
+  "tldr": "We extend surprisingly popular algorithm to partial preferences, and evaluate our approach through crowdsourcing.",
+  "keywords": [
+    "Surprisingly Popular Algorithm",
+    "Preference Aggregation",
+    "Partial Rankings"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=CL9k2PaUQb",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/90b4b8c73f1e8a80aadffc87dabbcfc099811129.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We extend surprisingly popular algorithm to partial preferences, and evaluate our approach through crowdsourcing."
+  },
+  "collected_at": "2026-03-08T17:20:23.902Z"
+}

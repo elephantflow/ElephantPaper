@@ -1,0 +1,44 @@
+{
+  "id": "PVgAeMm3MW",
+  "or_id": "PVgAeMm3MW",
+  "title": "SF-V: Single Forward Video Generation Model",
+  "title_zh": "",
+  "authors": [
+    "Zhixing Zhang",
+    "Yanyu Li",
+    "Yushu Wu",
+    "yanwu xu",
+    "Anil Kag",
+    "Ivan Skorokhodov",
+    "Willi Menapace",
+    "Aliaksandr Siarohin",
+    "Junli Cao",
+    "Dimitris N. Metaxas",
+    "Sergey Tulyakov",
+    "Jian Ren"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Diffusion-based video generation models have demonstrated remarkable success in obtaining high-fidelity videos through the iterative denoising process. However, these models require multiple denoising steps during sampling, resulting in high computational costs. In this work, we propose a novel approach to obtain single-step video generation models by leveraging adversarial training to fine-tune pre-trained video diffusion models. We show that, through the adversarial training, the multi-steps video diffusion model, i.e., Stable Video Diffusion (SVD), can be trained to perform single forward pass to synthesize high-quality videos, capturing both temporal and spatial dependencies in the video data. Extensive experiments demonstrate that our method achieves competitive generation quality of synthesized videos with significantly reduced computational overhead for the denoising process (i.e., around $23\\times$ speedup compared with SVD and $6\\times$ speedup compared with existing works, with even better generation quality), paving the way for real-time video synthesis and editing.",
+  "abstract_zh": "",
+  "tldr": "Our model can generate high-quality and motion consistent videos by only performing the sampling once during inference.",
+  "keywords": [
+    "Video generation",
+    "diffusion model",
+    "distillation",
+    "adversarial training"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=PVgAeMm3MW",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f2827983b13f042c1bdad973abf24e97a3e84c7f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Our model can generate high-quality and motion consistent videos by only performing the sampling once during inference."
+  },
+  "collected_at": "2026-03-08T17:20:23.903Z"
+}
