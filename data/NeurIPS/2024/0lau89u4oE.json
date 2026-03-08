@@ -1,0 +1,38 @@
+{
+  "id": "0lau89u4oE",
+  "or_id": "0lau89u4oE",
+  "title": "Accelerating Non-Maximum Suppression: A Graph Theory Perspective",
+  "title_zh": "",
+  "authors": [
+    "King-Siong Si",
+    "Lu Sun",
+    "Weizhan Zhang",
+    "Tieliang Gong",
+    "Jiahao Wang",
+    "Jiang Liu",
+    "Hao Sun"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Non-maximum suppression (NMS) is an indispensable post-processing step in object detection. With the continuous optimization of network models, NMS has become the ``last mile'' to enhance the efficiency of object detection. This paper systematically analyzes NMS from a graph theory perspective for the first time, revealing its intrinsic structure. Consequently, we propose two optimization methods, namely QSI-NMS and BOE-NMS. The former is a fast recursive divide-and-conquer algorithm with negligible mAP loss, and its extended version (eQSI-NMS) achieves optimal complexity of $\\mathcal{O}(n\\log n)$. The latter, concentrating on the locality of NMS, achieves an optimization at a constant level without an mAP loss penalty. Moreover, to facilitate rapid evaluation of NMS methods for researchers, we introduce NMS-Bench, the first benchmark designed to comprehensively assess various NMS methods. Taking the YOLOv8-N model on MS COCO 2017 as the benchmark setup, our method QSI-NMS provides $6.2\\times$ speed of original NMS on the benchmark, with a $0.1\\%$ decrease in mAP. The optimal eQSI-NMS, with only a $0.3\\%$ mAP decrease, achieves $10.7\\times$ speed. Meanwhile, BOE-NMS exhibits $5.1\\times$ speed with no compromise in mAP.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "non-maximum suppression",
+    "object detection",
+    "graph theory"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=0lau89u4oE",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f50a62db9e34e537dd89a85a12e62c67265edbf2.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Non-maximum suppression (NMS) is an indispensable post-processing step in object detection. With the continuous optimization of network models, NMS has become the ``last mile'' to enhance the efficiency of object detection. This paper systematically analyzes NMS from a graph theory perspective for t"
+  },
+  "collected_at": "2026-03-08T21:20:25.003Z"
+}

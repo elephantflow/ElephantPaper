@@ -1,0 +1,39 @@
+{
+  "id": "ldvfaYzG35",
+  "or_id": "ldvfaYzG35",
+  "title": "Pedestrian-Centric 3D Pre-collision Pose and Shape Estimation from Dashcam Perspective",
+  "title_zh": "",
+  "authors": [
+    "MeiJun Wang",
+    "Yu Meng",
+    "Zhongwei Qiu",
+    "Chao Zheng",
+    "Yan Xu",
+    "Pengxiaorui",
+    "Jian Gao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Pedestrian pre-collision pose is one of the key factors to determine the degree of pedestrian-vehicle injury in collision. Human pose estimation algorithm is an effective method to estimate pedestrian emergency pose from accident video. However, the pose estimation model trained by the existing daily human pose datasets has poor robustness under specific poses such as pedestrian pre-collision pose, and it is difficult to obtain human pose datasets in the wild scenes, especially lacking scarce data such as pedestrian pre-collision pose in traffic scenes. In this paper, we collect pedestrian-vehicle collision pose from the dashcam perspective of dashcam and construct the first Pedestrian-Vehicle Collision Pose dataset (PVCP) in a semi-automatic way, including 40k+ accident frames and 20K+ pedestrian pre-collision pose annotation (2D, 3D, Mesh). Further, we construct a Pedestrian Pre-collision Pose Estimation Network (PPSENet) to estimate the collision pose and shape sequence of pedestrians from pedestrian-vehicle accident videos. The PPSENet first estimates the 2D pose from the image (Image to Pose, ITP) and then lifts the 2D pose to 3D mesh (Pose to Mesh, PTM). Due to the small size of the dataset, we introduce a pre-training model that learns the human pose prior on a large number of pose datasets, and use iterative regression to estimate the pre-collision pose and shape of pedestrians. Further, we classify the pre-collision pose sequence and introduce pose class loss, which achieves the best accuracy compared with the existing relevant \\textit{state-of-the-art} methods. Code and data are available for research at https://github.com/wmj142326/PVCP.",
+  "abstract_zh": "",
+  "tldr": "We construct the first Pedestrian-Vehicle Collision Pose (PVCP) dataset from the perspective of dashcam, and propose a pedestrian Pre-collision Pose and Shape Estimation network (PPSENet).",
+  "keywords": [
+    "Pedestrian Pre-collision pose",
+    "Human pose and shape estimation",
+    "Dashcam Perspective",
+    "Pedestrian-Vehicle Collision Pose dataset"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ldvfaYzG35",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b9fd46cc0bc56a82bb56b9555fd659ec25d1019f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We construct the first Pedestrian-Vehicle Collision Pose (PVCP) dataset from the perspective of dashcam, and propose a pedestrian Pre-collision Pose and Shape Estimation network (PPSENet)."
+  },
+  "collected_at": "2026-03-08T21:20:25.004Z"
+}

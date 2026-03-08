@@ -1,0 +1,32 @@
+{
+  "id": "sn3UrYRItk",
+  "or_id": "sn3UrYRItk",
+  "title": "The Impact of Initialization on LoRA Finetuning Dynamics",
+  "title_zh": "",
+  "authors": [
+    "Soufiane Hayou",
+    "Nikhil Ghosh",
+    "Bin Yu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In this paper, we study the role of initialization in Low Rank Adaptation (LoRA) as originally introduced in Hu et al. (2021). Essentially, to start from the pretrained model, one can either initialize $B$ to zero and $A$ to random, or vice-versa. In both cases, the product $BA$ is equal to zero at initialization, which makes finetuning starts from the pretrained model. These two initialization schemes are seemingly similar. They should in-principle yield the same performance and share the same optimal learning rate. We demonstrate that this is an *incorrect intuition* and that the first scheme (of initializing $B$ to zero and $A$ to random) on average in our experiments yields better performance compared to the other scheme. Our theoretical analysis shows that the reason behind this might be that the first initialization allows the use of larger learning rates (without causing output instability) compared to the second initialization, resulting in more efficient learning of the first scheme. We validate our results with extensive experiments on LLMs.",
+  "abstract_zh": "",
+  "tldr": "Initialization of the adapter weights has crucial impact on LoRA learning dynamics",
+  "keywords": [
+    "Finetuning; LoRA; Large Language Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=sn3UrYRItk",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/73b61afa707a9caef336040d03963125b0ff17ef.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Initialization of the adapter weights has crucial impact on LoRA learning dynamics"
+  },
+  "collected_at": "2026-03-08T21:20:25.003Z"
+}

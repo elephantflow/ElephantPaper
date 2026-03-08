@@ -1,0 +1,36 @@
+{
+  "id": "pASJxzMJb7",
+  "or_id": "pASJxzMJb7",
+  "title": "Zipfian Whitening",
+  "title_zh": "",
+  "authors": [
+    "Sho Yokoi",
+    "Han Bao",
+    "Hiroto Kurita",
+    "Hidetoshi Shimodaira"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The word embedding space in neural models is skewed, and correcting this can improve task performance.\nWe point out that most approaches for modeling, correcting, and measuring the symmetry of an embedding space implicitly assume that the word frequencies are *uniform*; in reality, word frequencies follow a highly non-uniform distribution, known as *Zipf's law*.\nSurprisingly, simply performing PCA whitening weighted by the empirical word frequency that follows Zipf's law significantly improves task performance, surpassing established baselines.\nFrom a theoretical perspective, both our approach and existing methods can be clearly categorized: word representations are distributed according to an exponential family with either uniform or Zipfian base measures.\nBy adopting the latter approach, we can naturally emphasize informative low-frequency words in terms of their vector norm, which becomes evident from the information-geometric perspective (Oyama et al., EMNLP 2023), and in terms of the loss functions for imbalanced classification (Menon et al. ICLR 2021).\nAdditionally, our theory corroborates that popular natural language processing methods, such as skip-gram negative sampling (Mikolov et al., NIPS 2013), WhiteningBERT (Huang et al., Findings of EMNLP 2021), and headless language models (Godey et al., ICLR 2024), work well just because their word embeddings encode the empirical word frequency into the underlying probabilistic model.",
+  "abstract_zh": "",
+  "tldr": "We propose a method to correct anisotropy in the word embedding space by accounting for word frequency; then justify our approach from the perspectives of generative models, word embedding norms, and errors in long-tail distributions.",
+  "keywords": [
+    "representation learning",
+    "word embeddings",
+    "isotropy",
+    "natural language processing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=pASJxzMJb7",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2e52007f91166840e85e1e5b1d50979bc791b3fe.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a method to correct anisotropy in the word embedding space by accounting for word frequency; then justify our approach from the perspectives of generative models, word embedding norms, and errors in long-tail distributions."
+  },
+  "collected_at": "2026-03-08T21:20:25.005Z"
+}
