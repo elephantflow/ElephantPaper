@@ -1,0 +1,36 @@
+{
+  "id": "EC9Hfi9V3k",
+  "or_id": "EC9Hfi9V3k",
+  "title": "Efficient Streaming Algorithms for Graphlet Sampling",
+  "title_zh": "",
+  "authors": [
+    "Yann Bourreau",
+    "Marco Bressan",
+    "T-H. Hubert Chan",
+    "Qipeng Kuang",
+    "Mauro Sozio"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Given a graph $G$ and a positive integer $k$, the Graphlet Sampling problem asks to sample a connected induced $k$-vertex subgraph of $G$ uniformly at random.\nGraphlet sampling enhances machine learning applications by transforming graph structures into feature vectors for tasks such as graph classification and subgraph identification, boosting neural network performance, and supporting clustered federated learning by capturing local structures and relationships.\nA recent work has shown that the problem admits an algorithm that preprocesses $G$ in time $O(nk^2 \\log k + m)$, and draws one sample in expected time $k^{O(k)} \\log n$, where $n=|V(G)|$ and $m=|E(G)|$. Such an algorithm relies on the assumption that the input graph fits into main memory and it does not seem to be straightforward to adapt it to very large graphs. We consider Graphlet Sampling in the semi-streaming setting, where we have a memory of $M = \\Omega(n \\log n)$ words, and $G$ can be only read through sequential passes over the edge list. We develop a semi-streaming algorithm that preprocesses $G$ in $p={O}(\\log n)$ passes and samples $\\Theta(M k^{-O(k)})$ independent uniform $k$-graphlets in $O(k)$ passes. For constant $k$, both phases run in time $O((n+m)\\log n)$. We also show that the tradeoff between memory and number of passes of our algorithms is near-optimal. Our extensive evaluation on very large graphs shows the effectiveness of our algorithms.",
+  "abstract_zh": "",
+  "tldr": "We have developed an efficient algorithm that enables random and uniform sampling of graphlets from large input graphs in the semi-streaming setting with limited memory.",
+  "keywords": [
+    "graphlet sampling",
+    "streaming",
+    "approximation algorithms"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=EC9Hfi9V3k",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4046414f7daabaa3355d344da18d43d7c3eac33b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We have developed an efficient algorithm that enables random and uniform sampling of graphlets from large input graphs in the semi-streaming setting with limited memory."
+  },
+  "collected_at": "2026-03-08T23:23:31.329Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "3csuL7TVpV",
+  "or_id": "3csuL7TVpV",
+  "title": "Decoding-Time Language Model Alignment with Multiple Objectives",
+  "title_zh": "",
+  "authors": [
+    "Ruizhe Shi",
+    "Yifang Chen",
+    "Yushi Hu",
+    "Alisa Liu",
+    "Hannaneh Hajishirzi",
+    "Noah A. Smith",
+    "Simon Shaolei Du"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Aligning language models (LMs) to human preferences has emerged as a critical pursuit, enabling these models to better serve diverse user needs. Existing methods primarily focus on optimizing LMs for a single reward function, limiting their adaptability to varied objectives. \nHere, we propose $\\textbf{multi-objective decoding~(MOD)}$, a decoding-time algorithm that outputs the next token from a linear combination of predictions of all base models, for any given weighting over different objectives.\nWe exploit a common form among a family of $f$-divergence regularized alignment approaches (such as PPO, DPO, and their variants) to identify a closed-form solution by Legendre transform, and derive an efficient decoding strategy.\nTheoretically, we show why existing approaches can be sub-optimal even in natural settings and obtain optimality guarantees for our method.\nEmpirical results demonstrate the effectiveness of the algorithm. For example, compared to a parameter-merging baseline, MOD achieves 12.8\\% overall reward improvement when equally optimizing towards $3$ objectives. Moreover, we experiment with MOD on combining three fully-finetuned \nLMs of different model sizes, each aimed at different objectives such as safety, coding, and general user preference. Unlike traditional methods that require careful curation of a mixture of datasets to achieve comprehensive improvement, we can quickly experiment with preference weightings using MOD to find the best combination of models. Our best combination reduces toxicity on Toxigen to nearly 0\\% and achieves 7.9--33.3\\% improvement across three other metrics ($\\textit{i.e.}$, Codex@1, GSM-COT, BBH-COT).",
+  "abstract_zh": "",
+  "tldr": "We propose a training-free, simple yet effective decoding-time algorithm for multi-objective alignment of language models, with optimality guarantees.",
+  "keywords": [
+    "multi-objective alignment",
+    "decoding-time algorithms",
+    "RLHF"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=3csuL7TVpV",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c94089ab631fffcc9b062e56c50c9ed7a15fd40f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a training-free, simple yet effective decoding-time algorithm for multi-objective alignment of language models, with optimality guarantees."
+  },
+  "collected_at": "2026-03-08T23:23:31.329Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "YGTVEmBXtV",
+  "or_id": "YGTVEmBXtV",
+  "title": "Make Your LLM Fully Utilize the Context",
+  "title_zh": "",
+  "authors": [
+    "Shengnan An",
+    "Zexiong Ma",
+    "Zeqi Lin",
+    "Nanning Zheng",
+    "Jian-Guang Lou",
+    "Weizhu Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "While many contemporary large language models (LLMs) can process lengthy input, they still struggle to fully utilize information within the long context, known as the *lost-in-the-middle* challenge.\nWe hypothesize that it stems from insufficient explicit supervision during the long-context training, which fails to emphasize that any position in a long context can hold crucial information.\nBased on this intuition, our study presents **information-intensive (IN2) training**, a purely data-driven solution to overcome lost-in-the-middle.\nSpecifically, IN2 training leverages a synthesized long-context question-answer dataset, where the answer requires (1) **fine-grained information awareness** on a short segment (~128 tokens) within a synthesized long context (4K-32K tokens), and (2) the **integration and reasoning** of information from two or more short segments.\nThrough applying this information-intensive training on Mistral-7B, we present **FILM-7B** (FIll-in-the-Middle).\nTo thoroughly assess the ability of FILM-7B for utilizing long contexts, we design three probing tasks that encompass various context styles (document, code, and structured-data context) and information retrieval patterns (forward, backward, and bi-directional retrieval).\nThe probing results demonstrate that FILM-7B can robustly retrieve information from different positions in its 32K context window.\nBeyond these probing tasks, FILM-7B significantly improves the performance on real-world long-context tasks (e.g., 23.5->26.9 F1 score on NarrativeQA), while maintaining a comparable performance on short-context tasks (e.g., 59.3->59.2 accuracy on MMLU).",
+  "abstract_zh": "",
+  "tldr": "This work introduces information-intensive training to overcome the lost-in-the-middle problem of long-context LLMs.",
+  "keywords": [
+    "Large Language Model",
+    "Long-Context Large Language Model",
+    "Long-Context Training Data Construction",
+    "Long-Context Probing",
+    "Lost-in-the-Middle"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=YGTVEmBXtV",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/edb8a8ede36265e03de685e7ecbc1d59bcee74b2.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This work introduces information-intensive training to overcome the lost-in-the-middle problem of long-context LLMs."
+  },
+  "collected_at": "2026-03-08T23:23:31.328Z"
+}

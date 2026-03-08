@@ -1,0 +1,33 @@
+{
+  "id": "ejIzdt50ek",
+  "or_id": "ejIzdt50ek",
+  "title": "Stochastic Optimization Schemes for Performative Prediction with Nonconvex Loss",
+  "title_zh": "",
+  "authors": [
+    "Qiang LI",
+    "Hoi To Wai"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This paper studies a risk minimization problem with decision dependent data distribution. The problem pertains to the performative prediction setting in which a trained model can affect the outcome estimated by the model. Such dependency creates a feedback loop that influences the stability of optimization algorithms such as stochastic gradient descent (SGD). We present the first study on performative prediction with smooth but possibly non-convex loss. We analyze a greedy deployment scheme with SGD (SGD-GD). Note that in the literature, SGD-GD is often studied with strongly convex loss. We first propose the definition of stationary performative stable (SPS) solutions through relaxing the popular performative stable condition. We then prove that SGD-GD converges to a biased SPS solution in expectation. We consider two conditions of sensitivity on the distribution shifts: (i) the sensitivity is characterized by Wasserstein-1 distance and the loss is Lipschitz w.r.t.~data samples, or (ii) the sensitivity is characterized by total variation (TV) divergence and the loss is bounded. In both conditions, the bias levels are proportional to the stochastic gradient's variance and sensitivity level. \nOur analysis is extended to a lazy deployment scheme where models are deployed once per several SGD updates, and we show that it converges to an SPS solution with reduced bias. Numerical experiments corroborate our theories.",
+  "abstract_zh": "",
+  "tldr": "This paper studies the performative prediction with smooth but possibly non-convex loss and analyzes a greedy deployment scheme with stochastic gradient descent algorithm.",
+  "keywords": [
+    "Non-convex optimization",
+    "Performative prediction",
+    "Stochastic optimization algorithm"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ejIzdt50ek",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1568b3d1c1cdbb9aa953ed2b0f6a25125d6e0ca8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper studies the performative prediction with smooth but possibly non-convex loss and analyzes a greedy deployment scheme with stochastic gradient descent algorithm."
+  },
+  "collected_at": "2026-03-08T23:23:31.330Z"
+}

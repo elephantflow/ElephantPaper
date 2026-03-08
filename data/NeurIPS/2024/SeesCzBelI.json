@@ -1,0 +1,36 @@
+{
+  "id": "SeesCzBelI",
+  "or_id": "SeesCzBelI",
+  "title": "Removing Length Bias in RLHF is not Enough",
+  "title_zh": "",
+  "authors": [
+    "Chaojie Wang",
+    "Haonan shi",
+    "Long Tian",
+    "Bo An",
+    "Shuicheng YAN"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Reinforcement Learning from Human Feedback (RLHF) has become an essential technique for enhancing pretrained large language models (LLMs) to generate responses that align with human preferences and societal values. \nWhile RLHF has shown promise, the training of reward models (RMs) still faces the challenge of \\emph{reward hacking}, motivating recent works to prevent RMs from finding shortcuts that bypass the intended optimization objectives by identifying simplistic patterns, especially response length.\nBesides the issue of \\emph{length bias},  our work firstly reveal that \\emph{prompt-template bias} learned by RMs can also cause \\emph{reward hacking} when dealing with marginal samples, resulting in LLMs preferring to generate responses in a specific format after RLHF fine-tuning, regardless of the format requested in the prompt.\nTo this end, we propose a low-cost but effective method, namely Prompt Bias Calibration (PBC), to estimate the \\emph{prompt-template bias} term during reward modeling, which can be utilized to calibrate reward scores in the following RL fine-tuning process. \nThen, we show that our PBC method can be flexibly combined with existing algorithms of removing \\emph{length bias}, leading to a further improvement in the aspect of enhancing the quality of generated responses.\nExperiments results show that the performance of our PBC method and its extensions have significantly surpassed the original implementation of RLHF.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "LLM",
+    "RLHF",
+    "Prompt Bias"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=SeesCzBelI",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/797caca6a3d1c199c52aa881d8fbdd20d584af58.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Reinforcement Learning from Human Feedback (RLHF) has become an essential technique for enhancing pretrained large language models (LLMs) to generate responses that align with human preferences and societal values. \nWhile RLHF has shown promise, the training of reward models (RMs) still faces the ch"
+  },
+  "collected_at": "2026-03-08T23:23:31.330Z"
+}

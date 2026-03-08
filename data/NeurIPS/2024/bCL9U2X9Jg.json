@@ -1,0 +1,34 @@
+{
+  "id": "bCL9U2X9Jg",
+  "or_id": "bCL9U2X9Jg",
+  "title": "Easy Regional Contrastive Learning of Expressive Fashion Representations",
+  "title_zh": "",
+  "authors": [
+    "Daiqing Qi",
+    "Handong Zhao",
+    "Sheng Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "When learning vision-language models (VLM) for the fashion domain, most existing works design new architectures from vanilla BERT with additional objectives, or perform dense multi-task learning with fashion-specific tasks. Though progress has been made, their architecture or objectives are often intricate and the extendibility is limited.\nBy contrast, with simple architecture (comprising only two unimodal encoders) and just the contrastive objective, popular pre-trained VL models (e.g., CLIP) achieve superior performance in general domains, which are further easily extended to downstream tasks.\nHowever, inheriting such benefits of CLIP in the fashion domain is non-trivial in the presence of the notable domain gap. Empirically, we find that directly finetuning on fashion data leads CLIP to frequently ignore minor yet important details such as logos and composition, which are critical in fashion tasks such as retrieval and captioning.\nIn this work, to maintain CLIP's simple architecture and objective while explicitly attending to fashion details, we propose $E^2$: Easy Regional Contrastive Learning of Expressive Fashion Representations.\n$E^2$ introduces only a few selection tokens and fusion blocks (just 1.9\\% additional parameters in total) with only contrastive losses. Despite lightweight, in our primary focus, cross-modal retrieval, $E^2$ notably outperforms existing fashion VLMs with various fashion-specific objectives.\nMoreover, thanks to CLIP's widespread use in downstream tasks in general domains (e.g., zero-shot composed image retrieval and image captioning), our model can easily extend these models  from general domain to the fashion domain with notable improvement.\nTo conduct a comprehensive evaluation, we further collect data from Amazon Reviews to build a new dataset for cross-modal retrieval in the fashion domain.",
+  "abstract_zh": "",
+  "tldr": "We proposed a simple yet effective contrastive learning framework for fashion domain",
+  "keywords": [
+    "vision-language models",
+    "contrastive learning",
+    "visual fashion representations"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=bCL9U2X9Jg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a7c2b9c4c37a2728d765c8c59968a9fd51817a19.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We proposed a simple yet effective contrastive learning framework for fashion domain"
+  },
+  "collected_at": "2026-03-08T23:23:31.327Z"
+}

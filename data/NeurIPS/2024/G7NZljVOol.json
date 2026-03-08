@@ -1,0 +1,34 @@
+{
+  "id": "G7NZljVOol",
+  "or_id": "G7NZljVOol",
+  "title": "L-TTA: Lightweight Test-Time Adaptation Using a Versatile Stem Layer",
+  "title_zh": "",
+  "authors": [
+    "Jin Shin",
+    "Hyun Kim"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Test-time adaptation (TTA) is the most realistic methodology for adapting deep learning models to the real world using only unlabeled data from the target domain. Numerous TTA studies in deep learning have aimed at minimizing entropy. However, this necessitates forward/backward processes across the entire model and is limited by the incapability to fully leverage data based solely on entropy. This study presents a groundbreaking TTA solution that involves a departure from the conventional focus on minimizing entropy. Our innovative approach uniquely remodels the stem layer (i.e., the first layer) to emphasize minimizing a new learning criterion, namely, uncertainty. This method requires minimal involvement of the model's backbone, with only the stem layer participating in the TTA process. This approach significantly reduces the memory required for training and enables rapid adaptation to the target domain with minimal parameter updates. Moreover, to maximize data leveraging, the stem layer applies a discrete wavelet transform to the input features. It extracts multi-frequency domains and focuses on minimizing their individual uncertainties. The proposed method integrated into ResNet-26 and ResNet-50 models demonstrates its robustness by achieving outstanding TTA performance while using the least amount of memory compared to existing studies on CIFAR-10-C, ImageNet-C, and Cityscapes-C benchmark datasets. The code is available at https://github.com/janus103/L_TTA.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Test-Time Adaptation",
+    "Domain Shift",
+    "Discrete Wavelet Transform",
+    "Gaussian Modeling"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=G7NZljVOol",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/325970496c21552ee797b2cb7b033f0d4b1048ea.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Test-time adaptation (TTA) is the most realistic methodology for adapting deep learning models to the real world using only unlabeled data from the target domain. Numerous TTA studies in deep learning have aimed at minimizing entropy. However, this necessitates forward/backward processes across the "
+  },
+  "collected_at": "2026-03-08T23:23:31.327Z"
+}
