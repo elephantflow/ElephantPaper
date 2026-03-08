@@ -1,0 +1,33 @@
+{
+  "id": "cCDMXXiamP",
+  "or_id": "cCDMXXiamP",
+  "title": "Nearly Tight Black-Box Auditing of Differentially Private Machine Learning",
+  "title_zh": "",
+  "authors": [
+    "Meenatchi Sundaram Muthu Selva Annamalai",
+    "Emiliano De Cristofaro"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This paper presents an auditing procedure for the Differentially Private Stochastic Gradient Descent (DP-SGD) algorithm in the black-box threat model that is substantially tighter than prior work.\nThe main intuition is to craft worst-case initial model parameters, as DP-SGD's privacy analysis is agnostic to the choice of the initial model parameters.\nFor models trained on MNIST and CIFAR-10 at theoretical $\\varepsilon=10.0$, our auditing procedure yields empirical estimates of $\\varepsilon_{emp} = 7.21$ and $6.95$, respectively, on a 1,000-record sample and $\\varepsilon_{emp} = 6.48$ and $4.96$ on the full datasets.\nBy contrast, previous audits were only (relatively) tight in stronger white-box models, where the adversary can access the model's inner parameters and insert arbitrary gradients.\nOverall, our auditing procedure can offer valuable insight into how the privacy analysis of DP-SGD could be improved and detect bugs and DP violations in real-world implementations.\nThe source code needed to reproduce our experiments is available from https://github.com/spalabucr/bb-audit-dpsgd.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Privacy Auditing",
+    "Differential Privacy",
+    "DP-SGD"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=cCDMXXiamP",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4b8080bdff94b173112c6cc0c6042066baef4b32.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper presents an auditing procedure for the Differentially Private Stochastic Gradient Descent (DP-SGD) algorithm in the black-box threat model that is substantially tighter than prior work.\nThe main intuition is to craft worst-case initial model parameters, as DP-SGD's privacy analysis is agn"
+  },
+  "collected_at": "2026-03-08T00:41:58.051Z"
+}

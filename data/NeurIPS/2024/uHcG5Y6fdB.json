@@ -1,0 +1,36 @@
+{
+  "id": "uHcG5Y6fdB",
+  "or_id": "uHcG5Y6fdB",
+  "title": "Pretrained Transformer Efficiently Learns Low-Dimensional Target Functions In-Context",
+  "title_zh": "",
+  "authors": [
+    "Kazusato Oko",
+    "Yujin Song",
+    "Taiji Suzuki",
+    "Denny Wu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Transformers can efficiently learn in-context from example demonstrations. Most existing theoretical analyses studied the in-context learning (ICL) ability of transformers for linear function classes, where it is typically shown that the minimizer of the pretraining loss implements one gradient descent step on the least squares objective. However, this simplified linear setting arguably does not demonstrate the statistical efficiency of ICL, since the pretrained transformer does not outperform directly solving linear regression on the test prompt. \nIn this paper, we study ICL of a nonlinear function class via transformer with nonlinear MLP layer: given a class of \\textit{single-index} target functions $f_*(\\boldsymbol{x}) = \\sigma_*(\\langle\\boldsymbol{x},\\boldsymbol{\\beta}\\rangle)$, where the index features $\\boldsymbol{\\beta}\\in\\mathbb{R}^d$ are drawn from a $r$-dimensional subspace, we show that a nonlinear transformer optimized by gradient descent (with a pretraining sample complexity that depends on the \\textit{information exponent} of the link functions $\\sigma_*$) learns $f_*$ in-context with a prompt length that only depends on the dimension of the distribution of target functions $r$; in contrast, any algorithm that directly learns $f_*$ on test prompt yields a statistical complexity that scales with the ambient dimension $d$.  Our result highlights the adaptivity of the pretrained transformer to low-dimensional structures of the function class, which enables sample-efficient ICL that outperforms estimators that only have access to the in-context data.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Transformer",
+    "in-context learning",
+    "feature learning",
+    "single-index models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=uHcG5Y6fdB",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ebe3fdc5e357d327b920801545a353f902eefb86.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Transformers can efficiently learn in-context from example demonstrations. Most existing theoretical analyses studied the in-context learning (ICL) ability of transformers for linear function classes, where it is typically shown that the minimizer of the pretraining loss implements one gradient desc"
+  },
+  "collected_at": "2026-03-08T00:41:58.052Z"
+}

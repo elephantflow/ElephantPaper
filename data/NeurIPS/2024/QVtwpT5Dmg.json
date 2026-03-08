@@ -1,0 +1,46 @@
+{
+  "id": "QVtwpT5Dmg",
+  "or_id": "QVtwpT5Dmg",
+  "title": "Rule Based Rewards for Language Model Safety",
+  "title_zh": "",
+  "authors": [
+    "Tong Mu",
+    "Alec Helyar",
+    "Johannes Heidecke",
+    "Joshua Achiam",
+    "Andrea Vallone",
+    "Ian D Kivlichan",
+    "Molly Lin",
+    "Alex Beutel",
+    "John Schulman",
+    "Lilian Weng"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Reinforcement learning based fine-tuning of large language models (LLMs) on human preferences has been shown to enhance both their capabilities and safety behavior.\n  However, in cases related to safety, without precise instructions to human annotators, the data collected may cause the model to become overly cautious, or to respond in an undesirable style, such as being judgmental.\n  Additionally, as model capabilities and usage patterns evolve, there may be a costly need to add or relabel data to modify safety behavior. \n  We propose a novel preference modeling approach that utilizes AI feedback and only requires a small amount of human data. \n  Our method, Rule Based Rewards (RBR), uses a collection of rules for desired or undesired behaviors (e.g. refusals should not be judgmental) along with a LLM grader.\n  In contrast to prior methods using AI feedback, our method uses fine-grained, composable, LLM-graded few-shot prompts as reward directly in RL training, resulting in greater control, accuracy and ease of updating.\n  We show that RBRs are an effective training method, achieving an F1 score of 97.1, compared to a human-feedback baseline of 91.7, resulting in much higher safety-behavior accuracy through better balancing usefulness and safety.",
+  "abstract_zh": "",
+  "tldr": "We propose Safety Rule Based Rewards, a method of using AI feedback in the safety training of LLMs that is scalable, allows for fine-grained control of behavior, and allows for fast updates.",
+  "keywords": [
+    "Large Language Model",
+    "LLM",
+    "RLHF",
+    "RLAIF",
+    "Safety",
+    "RBR",
+    "refusal",
+    "alignment"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=QVtwpT5Dmg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e963b11386699f5b75503a72861c8a01fb09a180.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose Safety Rule Based Rewards, a method of using AI feedback in the safety training of LLMs that is scalable, allows for fine-grained control of behavior, and allows for fast updates."
+  },
+  "collected_at": "2026-03-08T00:41:58.053Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "7yqjVgWWxx",
+  "or_id": "7yqjVgWWxx",
+  "title": "Your Absorbing Discrete Diffusion Secretly Models the Conditional Distributions of Clean Data",
+  "title_zh": "",
+  "authors": [
+    "Jingyang Ou",
+    "Shen Nie",
+    "Kaiwen Xue",
+    "Fengqi Zhu",
+    "Jiacheng Sun",
+    "Zhenguo Li",
+    "Chongxuan Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Discrete diffusion models with absorbing processes have shown promise in language modeling. The key quantities to be estimated are the ratios between the marginal probabilities of two transitive states at all timesteps, called the concrete score. In this paper, we reveal that the concrete score in absorbing diffusion can be expressed as conditional probabilities of clean data, multiplied by a time-dependent scalar in an analytic form. Motivated by the finding, we propose reparameterized absorbing discrete diffusion (RADD), a dedicated diffusion model that characterizes the time-independent conditional probabilities. Besides its simplicity, RADD can reduce the number of function evaluations (NFEs) by caching the output of the time-independent network when the noisy sample remains unchanged in a sampling interval. Empirically, RADD is up to 3.5 times faster while consistently achieving a better performance than the strongest baseline.\nBuilt upon the new factorization of the concrete score, we further prove a surprising result that the exact likelihood of absorbing diffusion can be rewritten to a simple form (named denoise cross-entropy) and then estimated efficiently by the Monte Carlo method. The resulting approach also applies to the original parameterization of the concrete score. It significantly advances the state-of-the-art discrete diffusion on 5 zero-shot language modeling benchmarks (measured by perplexity) at the GPT-2 scale.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Discrete Diffusion Models",
+    "Diffusion Models",
+    "Language Modeling",
+    "Concrete Score",
+    "Score Entropy"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=7yqjVgWWxx",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2bada6c360eb00ef2ca9037cabea385b2131c73c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Discrete diffusion models with absorbing processes have shown promise in language modeling. The key quantities to be estimated are the ratios between the marginal probabilities of two transitive states at all timesteps, called the concrete score. In this paper, we reveal that the concrete score in a"
+  },
+  "collected_at": "2026-03-08T00:41:58.052Z"
+}
