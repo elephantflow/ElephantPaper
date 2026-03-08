@@ -1,0 +1,38 @@
+{
+  "id": "EyDPfGy4Wh",
+  "or_id": "EyDPfGy4Wh",
+  "title": "Few Heads are Enough",
+  "title_zh": "",
+  "authors": [
+    "Róbert Csordás",
+    "Piotr Piękos",
+    "Kazuki Irie",
+    "Jürgen Schmidhuber"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "The costly self-attention layers in modern Transformers require memory and compute quadratic in sequence length. Existing approximation methods usually underperform and fail to obtain significant speedups in practice. The recently proposed Flash-Attention reduces both compute and memory through a *hardware*-aware implementation. Can we achieve this also through *algorithmic* improvements? Here we present Expert Projection Attention (EPA) - a novel method that reduces both compute and memory requirements, while matching the language modeling performance of baseline Transformers using the same parameter budget. EPA uses Mixture-of-Experts (MoE) layers for the value and output projections and requires 4 to 8 times fewer attention matrices than standard Transformers. Our novel attention can also be combined with MoE MLP layers, resulting in an efficient \"Fast Transformer\".",
+  "abstract_zh": "",
+  "tldr": "We show that with MoE value and output projections it is possible to use less heads, reducing resource usage of transformers.",
+  "keywords": [
+    "transformers",
+    "attention",
+    "moe",
+    "mixture of experts",
+    "efficient transformers",
+    "language modelling"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=EyDPfGy4Wh",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9981dec6c47d4301047529a1009221c5e6fc4337.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show that with MoE value and output projections it is possible to use less heads, reducing resource usage of transformers."
+  },
+  "collected_at": "2026-03-08T04:22:39.516Z"
+}

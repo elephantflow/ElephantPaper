@@ -1,0 +1,38 @@
+{
+  "id": "WBCPdhQPuz",
+  "or_id": "WBCPdhQPuz",
+  "title": "DAS$^2$C: A Distributed Adaptive Minimax Method with Near-Optimal Convergence",
+  "title_zh": "",
+  "authors": [
+    "Yan Huang",
+    "Xiang Li",
+    "Yipeng Shen",
+    "Niao He",
+    "Jinming Xu"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Applying adaptive methods directly to distributed minimax problems can result in non-convergence due to inconsistency in locally computed adaptive stepsizes. To address this challenge, we propose DAS$^2$C, a $\\underline{\\text{D}}$istributed $\\underline{\\text{A}}$daptive method with time-scale \\$\\underline{\\text{S}}$eparated $\\underline{\\text{S}}$tepsize $\\underline{\\text{C}}$ontrol for minimax optimization. The key strategy is to employ an adaptive stepsize control protocol involving the transmission of two extra (scalar) variables. This protocol ensures the consistency among stepsizes of nodes, eliminating the steady-state errors due to the lack of coordination of stepsizes among nodes that commonly exists in vanilla distributed adaptive methods, and thus guarantees exact convergence. For non-convex-strongly-concave distributed minimax problems, we characterize the specific transient times that ensure time-scale separation and quasi-independence of networks, leading to a near-optimal convergence rate of $\\tilde{\\mathcal{O}} \\left( \\epsilon ^{-\\left( 4+\\delta \\right)} \\right)$ for any small $\\delta > 0$, matching that of the centralized counterpart. To the best of our knowledge, DAS$^2$C is the $\\textit{first}$ distributed adaptive method guaranteeing exact convergence without requiring to know any problem-dependent parameters for nonconvex minimax problems.",
+  "abstract_zh": "",
+  "tldr": "This paper proposes a distributed adaptive method for solving nonconvex minimax problems and establishes a near-optimal convergence rate by employing adaptive stepsize control to eliminate the inconsistency in locally computed adaptive stepsizes.",
+  "keywords": [
+    "Minimax Optimization",
+    "Distributed Learning",
+    "Nonconvex Optimization",
+    "Convergence Analysis",
+    "Stepsize Inconsistency"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=WBCPdhQPuz",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ebdf6c8e362c19d1a2da84b7c139f97a6a48b9c2.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper proposes a distributed adaptive method for solving nonconvex minimax problems and establishes a near-optimal convergence rate by employing adaptive stepsize control to eliminate the inconsistency in locally computed adaptive stepsizes."
+  },
+  "collected_at": "2026-03-08T04:22:40.777Z"
+}
