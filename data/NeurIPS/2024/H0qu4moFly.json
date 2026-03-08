@@ -1,0 +1,39 @@
+{
+  "id": "H0qu4moFly",
+  "or_id": "H0qu4moFly",
+  "title": "Embedding Dimension of Contrastive Learning and $k$-Nearest Neighbors",
+  "title_zh": "",
+  "authors": [
+    "Dmitrii Avdiukhin",
+    "Vaggos Chatziafratis",
+    "Orr Fischer",
+    "Grigory Yaroslavtsev"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We study the embedding dimension of distance comparison data in two settings: contrastive learning and $k$-nearest neighbors ($k$-NN). In both cases, the goal is to find the smallest dimension $d$ of an $\\ell_p$-space in which a given dataset can be represented. We show that the arboricity of the associated graphs plays a key role in designing embeddings. Using this approach, for the most frequently used $\\ell_2$-distance, we get matching upper and lower bounds in both settings.\n    \nIn contrastive learning, we are given $m$ labeled samples of the form $(x_i, y_i^+, z_i^-)$ representing the fact that the positive example $y_i$ is closer to the anchor $x_i$ than the negative example $z_i$. We show that for representing such dataset in:\n\n- $\\ell_2$: $d = \\Theta(\\sqrt{m})$ is necessary and sufficient.\n- $\\ell_p$ for $p \\ge 1$: $d = O(m)$ is sufficient and $d = \\tilde \\Omega(\\sqrt{m})$ is necessary.\n- $\\ell_\\infty$: $d = O(m^{2/3})$ is sufficient and $d = \\tilde \\Omega(\\sqrt{m})$ is necessary.\n\nWe also give results for the more general scenario when $t$ negatives are allowed.\n\nIn $k$-NN, for each of the $n$ data points we are given an ordered set of the closest $k$ points. We show that for preserving the ordering of the $k$-NN for every point in:\n- $\\ell_2$: $d = \\Theta(k)$ is necessary and sufficient.\n- $\\ell_p$ for $p \\ge 1$: $d = \\tilde O(k^2)$ is sufficient and $d=\\tilde \\Omega(k)$ is necessary.\n- $\\ell_\\infty$ : $d = \\tilde \\Omega(k)$ is necessary.\n\nFurthermore, if the goal is to not just preserve the ordering of the $k$-NN but also keep them as the nearest neighbors then $d = \\tilde O (\\mathrm{poly}(k))$ suffices in $\\ell_p$ for $p \\ge 1$.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Representation Learning",
+    "Ordinal Embedding",
+    "Metric Space",
+    "Nearest Neighbors",
+    "k-NN",
+    "Contrastive Learning",
+    "Embedding Dimension"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=H0qu4moFly",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/93374ea603599bcc8c1d0352a9e742a2870e07fe.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study the embedding dimension of distance comparison data in two settings: contrastive learning and $k$-nearest neighbors ($k$-NN). In both cases, the goal is to find the smallest dimension $d$ of an $\\ell_p$-space in which a given dataset can be represented. We show that the arboricity of the as"
+  },
+  "collected_at": "2026-03-08T16:40:23.558Z"
+}
