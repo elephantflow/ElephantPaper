@@ -1,0 +1,36 @@
+{
+  "id": "I3IuclVLFZ",
+  "or_id": "I3IuclVLFZ",
+  "title": "FedLPA: One-shot Federated Learning with Layer-Wise Posterior Aggregation",
+  "title_zh": "",
+  "authors": [
+    "Xiang Liu",
+    "Liangxi Liu",
+    "Feiyang Ye",
+    "Yunheng Shen",
+    "Xia Li",
+    "Linshan Jiang",
+    "Jialin Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Efficiently aggregating trained neural networks from local clients into a global model on a server is a widely researched topic in federated learning. Recently, motivated by diminishing privacy concerns, mitigating potential attacks, and reducing communication overhead, one-shot federated learning (i.e., limiting client-server communication into a single round) has gained popularity among researchers. However, the one-shot aggregation performances are sensitively affected by the non-identical training data distribution, which exhibits high statistical heterogeneity in some real-world scenarios. To address this issue, we propose a novel one-shot aggregation method with layer-wise posterior aggregation, named FedLPA. FedLPA aggregates local models to obtain a more accurate global model without requiring extra auxiliary datasets or exposing any private label information, e.g., label distributions. To effectively capture the statistics maintained in the biased local datasets in the practical non-IID scenario, we efficiently infer the posteriors of each layer in each local model using layer-wise Laplace approximation and aggregate them to train the global parameters. Extensive experimental results demonstrate that FedLPA significantly improves learning performance over state-of-the-art methods across several metrics.",
+  "abstract_zh": "",
+  "tldr": "We propose FedLPA to significantly improve the performance via Layer-Wise Posterior Aggregation in one-shot federated learning.",
+  "keywords": [
+    "One-shot Federated Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=I3IuclVLFZ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6ff26d7ec1923946c7a6f49653391b5c799448f3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose FedLPA to significantly improve the performance via Layer-Wise Posterior Aggregation in one-shot federated learning."
+  },
+  "collected_at": "2026-03-08T22:23:29.617Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "wZ5kEOCTce",
+  "or_id": "wZ5kEOCTce",
+  "title": "Rethinking Patch Dependence for Masked Autoencoders",
+  "title_zh": "",
+  "authors": [
+    "Letian Fu",
+    "Long Lian",
+    "Renhao Wang",
+    "Baifeng Shi",
+    "Xudong Wang",
+    "Adam Yala",
+    "Trevor Darrell",
+    "Alexei A Efros",
+    "Ken Goldberg"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "In this work, we examine the impact of inter-patch dependencies in the decoder of masked autoencoders (MAE) on representation learning. We decompose the decoding mechanism for masked reconstruction into self-attention between mask tokens and cross-attention between masked and visible tokens. Our findings reveal that MAE reconstructs coherent images from visible patches not through interactions between patches in the decoder but by learning a global representation within the encoder. This discovery leads us to propose a simple visual pretraining framework: cross-attention masked autoencoders (CrossMAE). This framework employs only cross-attention in the decoder to independently read out reconstructions for a small subset of masked patches from encoder outputs, yet it achieves comparable or superior performance to traditional MAE across models ranging from ViT-S to ViT-H. By its design, CrossMAE challenges the necessity of interaction between mask tokens for effective masked pretraining. Code is available [here](https://anonymous.4open.science/r/mae-cross-anon-11EB/README.md).",
+  "abstract_zh": "",
+  "tldr": "Learning visual representation doesn't require the model to generate self-consistent images.",
+  "keywords": [
+    "self-supervised learning",
+    "visual pre-training",
+    "representation learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=wZ5kEOCTce",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/92dc82d399d0b3f0bf350c86b137bc062eb04012.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Learning visual representation doesn't require the model to generate self-consistent images."
+  },
+  "collected_at": "2026-03-08T22:23:29.619Z"
+}

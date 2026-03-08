@@ -1,0 +1,40 @@
+{
+  "id": "RMfiqfWAWg",
+  "or_id": "RMfiqfWAWg",
+  "title": "On Giant's Shoulders: Effortless Weak to Strong by Dynamic Logits Fusion",
+  "title_zh": "",
+  "authors": [
+    "Chenghao Fan",
+    "Zhenyi Lu",
+    "Wei Wei",
+    "Jie Tian",
+    "Xiaoye Qu",
+    "Dangyang Chen",
+    "Yu Cheng"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Efficient fine-tuning of large language models for task-specific applications is imperative, yet the vast number of parameters in these models makes their training increasingly challenging.\nDespite numerous proposals for effective methods, a substantial memory overhead remains for gradient computations during updates. \\thm{Can we fine-tune a series of task-specific small models and transfer their knowledge directly to a much larger model without additional training?} \nIn this paper, we explore weak-to-strong specialization using logit arithmetic, facilitating a direct answer to this question.\nExisting weak-to-strong methods often employ a static knowledge transfer ratio and a single small model for transferring complex knowledge, which leads to suboptimal performance. \nTo surmount these limitations,\nwe propose a dynamic logit fusion approach that works with a series of task-specific small models, each specialized in a different task. \nThis method adaptively allocates weights among these models at each decoding step,\nlearning the weights through Kullback-Leibler divergence constrained optimization problems. \nWe conduct extensive experiments across various benchmarks in both single-task and multi-task settings, achieving leading results.\nBy transferring expertise from the 7B model to the 13B model, our method closes the performance gap by 96.4\\% in single-task scenarios and by 86.3\\% in multi-task scenarios compared to full fine-tuning of the 13B model. Notably, we achieve surpassing performance on unseen tasks. Moreover, we further demonstrate that our method can effortlessly integrate in-context learning for single tasks and task arithmetic for multi-task scenarios.",
+  "abstract_zh": "",
+  "tldr": "a dynamic logit fusion approach for transferring knowledge from a series of task-specific small models to a larger model",
+  "keywords": [
+    "weak to strong",
+    "natural language generation",
+    "Generative AI",
+    "large language model",
+    "gradient-free approach"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=RMfiqfWAWg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c6f99b3fb069cc916c3736236545654d7502395d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "a dynamic logit fusion approach for transferring knowledge from a series of task-specific small models to a larger model"
+  },
+  "collected_at": "2026-03-08T22:23:29.621Z"
+}
