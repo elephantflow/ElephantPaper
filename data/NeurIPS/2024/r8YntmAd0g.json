@@ -1,0 +1,36 @@
+{
+  "id": "r8YntmAd0g",
+  "or_id": "r8YntmAd0g",
+  "title": "DOPPLER: Differentially Private Optimizers with Low-pass Filter for Privacy Noise Reduction",
+  "title_zh": "",
+  "authors": [
+    "Xinwei Zhang",
+    "Zhiqi Bu",
+    "Mingyi Hong",
+    "Meisam Razaviyayn"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Privacy is a growing concern in modern deep-learning systems and applications. Differentially private (DP) training prevents the leakage of sensitive information in the collected training data from the trained machine learning models. DP optimizers, including DP stochastic gradient descent (DPSGD) and its variants, privatize the training procedure by gradient clipping and *DP noise* injection. However, in practice, DP models trained using DPSGD and its variants often suffer from significant model performance degradation. Such degradation prevents the application of DP optimization in many key tasks, such as foundation model pretraining. In this paper, we provide a novel *signal processing perspective* to the design and analysis of DP optimizers. We show that a ''frequency domain'' operation called *low-pass filtering* can be used to effectively reduce the impact of DP noise.  More specifically, by defining the ''frequency domain'' for both the gradient and differential privacy (DP) noise, we have developed a new component, called DOPPLER. This component is designed for DP algorithms and works by effectively amplifying the gradient while suppressing DP noise within this frequency domain. As a result, it maintains privacy guarantees and enhances the quality of the DP-protected model. Our experiments show that the proposed DP optimizers with a low-pass filter outperform their counterparts without the filter on various models and datasets. Both theoretical and practical evidence suggest that the  DOPPLER is effective in closing the gap between DP and non-DP training.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "differential privacy",
+    "optimization",
+    "low-pass filter",
+    "signal processing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=r8YntmAd0g",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f55eefb1a27c15148c2b579611582a133f6f2a1f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Privacy is a growing concern in modern deep-learning systems and applications. Differentially private (DP) training prevents the leakage of sensitive information in the collected training data from the trained machine learning models. DP optimizers, including DP stochastic gradient descent (DPSGD) a"
+  },
+  "collected_at": "2026-03-08T23:03:26.473Z"
+}

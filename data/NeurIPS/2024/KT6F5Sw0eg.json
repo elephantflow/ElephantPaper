@@ -1,0 +1,37 @@
+{
+  "id": "KT6F5Sw0eg",
+  "or_id": "KT6F5Sw0eg",
+  "title": "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+  "title_zh": "",
+  "authors": [
+    "Taehyeon Kim",
+    "Ananda Theertha Suresh",
+    "Kishore A Papineni",
+    "Michael Riley",
+    "Sanjiv Kumar",
+    "Adrian Benton"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Autoregressive language models have achieved remarkable advancements, yet their potential is often limited by the slow inference speeds associated with sequential token generation. Blockwise parallel decoding (BPD) was proposed by Stern et al. [42] as a method to improve inference speed of language models by simultaneously predicting multiple future tokens, termed block drafts, which are subsequently verified by the autoregressive model. This paper advances the understanding and improvement of block drafts in two ways. First, we analyze token distributions generated across multiple prediction heads. Second, leveraging these insights, we propose algorithms to improve BPD inference speed by refining the block drafts using task-independent \\ngram and neural language models as lightweight rescorers. Experiments demonstrate that by refining block drafts of open-sourced Vicuna and Medusa LLMs, the mean accepted token length are increased by 5-25% relative. This results in over a 3x speedup in wall clock time compared to standard autoregressive decoding in open-source 7B and 13B LLMs.",
+  "abstract_zh": "",
+  "tldr": "We improve blockwise parallel decoding in language models by analyzing token distributions and developing refinement algorithms for block drafts, significantly achieving higher block efficiency across various tasks.",
+  "keywords": [
+    "Blockwise parallel decoding",
+    "Language model",
+    "speculative decoding"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=KT6F5Sw0eg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/06e2f9ca2c0d653efe7762f371916649f0417b17.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We improve blockwise parallel decoding in language models by analyzing token distributions and developing refinement algorithms for block drafts, significantly achieving higher block efficiency across various tasks."
+  },
+  "collected_at": "2026-03-08T23:03:26.472Z"
+}
