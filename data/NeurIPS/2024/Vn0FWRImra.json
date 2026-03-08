@@ -1,0 +1,34 @@
+{
+  "id": "Vn0FWRImra",
+  "or_id": "Vn0FWRImra",
+  "title": "Nearly Minimax Optimal Submodular Maximization with Bandit Feedback",
+  "title_zh": "",
+  "authors": [
+    "Artin Tajdini",
+    "Lalit K Jain",
+    "Kevin Jamieson"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We consider maximizing an unknown monotonic, submodular set function $f: 2^{[n]} \\rightarrow [0,1]$ with cardinality constraint under stochastic bandit feedback. \n    At each time $t=1,\\dots,T$ the learner chooses a set $S_t \\subset [n]$ with $|S_t| \\leq k$ and receives reward $f(S_t) + \\eta_t$ where $\\eta_t$ is mean-zero sub-Gaussian noise. \n    The objective is to minimize the learner's regret with respect to an approximation of the maximum $f(S_*)$ with $|S_*| = k$, obtained through robust greedy maximization of $f$. \n    To date, the best regret bound in the literature scales as $k n^{1/3} T^{2/3}$. \n    And by trivially treating every set as a unique arm one deduces that $\\sqrt{ {n \\choose k} T }$ is also achievable using standard multi-armed bandit algorithms. \n    In this work, we establish the first minimax lower bound for this setting that scales like $\\tilde{\\Omega}(\\min_{L \\le k}(L^{1/3}n^{1/3}T^{2/3} + \\sqrt{{n \\choose k - L}T}))$.  For a slightly restricted algorithm class, we prove a stronger regret lower bound of $\\tilde{\\Omega}(\\min_{L \\le k}(Ln^{1/3}T^{2/3} + \\sqrt{{n \\choose k - L}T}))$.\n    Moreover, we propose an algorithm Sub-UCB that achieves regret $\\tilde{\\mathcal{O}}(\\min_{L \\le k}(Ln^{1/3}T^{2/3} + \\sqrt{{n \\choose k - L}T}))$ capable of matching the lower bound on regret for the restricted class up to logarithmic factors.",
+  "abstract_zh": "",
+  "tldr": "We provide the first minimax regret lower bound for the online submodular maximization with stochastic bandit feedback, and an upperbound matching it in terms of time T and number of arms n.",
+  "keywords": [
+    "Bandits",
+    "Submodular optimization",
+    "Minimax optimal"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Vn0FWRImra",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e074cce8caa93f256b9c2fbbb4c0f4b210013932.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We provide the first minimax regret lower bound for the online submodular maximization with stochastic bandit feedback, and an upperbound matching it in terms of time T and number of arms n."
+  },
+  "collected_at": "2026-03-08T02:22:04.624Z"
+}
