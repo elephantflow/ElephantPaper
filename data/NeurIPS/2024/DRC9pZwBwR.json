@@ -1,0 +1,35 @@
+{
+  "id": "DRC9pZwBwR",
+  "or_id": "DRC9pZwBwR",
+  "title": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+  "title_zh": "",
+  "authors": [
+    "Yuxiao Qu",
+    "Tianjun Zhang",
+    "Naman Garg",
+    "Aviral Kumar"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "A central piece in enabling intelligent agentic behavior in foundation models is to make them capable of introspecting upon their behavior, reasoning, and correcting their mistakes as more computation or interaction is available. Even the strongest proprietary large language models (LLMs) do not quite exhibit the ability of continually improving their responses sequentially. In this paper, we develop $\\textbf{RISE:}$ $\\textbf{R}$ecursive $\\textbf{I}$ntro$\\textbf{S}$p$\\textbf{E}$ction, an approach for fine-tuning LLMs to introduce this capability, despite prior work hypothesizing that this capability may not be possible to attain. Our approach prescribes an iterative fine-tuning procedure, which attempts to teach the model how to alter its response after having executed previously unsuccessful attempts to solve a hard test-time problem, with optionally additional environment feedback. RISE poses fine-tuning for a single-turn prompt as solving a multi-turn Markov decision process (MDP), where the initial state is the prompt. Inspired by principles in online imitation and offline reinforcement learning, we propose strategies for multi-turn data collection and training so as to imbue an LLM with the capability to recursively detect and correct its previous mistakes in subsequent iterations. Our experiments show that RISE enables Llama2, Llama3, and Mistral models to improve themselves with more turns on reasoning tasks, outperforming several single-turn strategies given an equal amount of inference-time computation. We also find that RISE scales well, often attaining larger benefits with more capable models, without disrupting one-turn abilities as a result of expressing more complex distributions.",
+  "abstract_zh": "",
+  "tldr": "This paper presents RISE, a fine-tuning approach that enables language models to iteratively improve their own responses over multiple turns.",
+  "keywords": [
+    "Large Language Model",
+    "Reinforcement Learning",
+    "Self-Improvement"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=DRC9pZwBwR",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f50ad94a939b176eb3bdf712e863034fc3076193.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper presents RISE, a fine-tuning approach that enables language models to iteratively improve their own responses over multiple turns."
+  },
+  "collected_at": "2026-03-08T02:02:14.177Z"
+}

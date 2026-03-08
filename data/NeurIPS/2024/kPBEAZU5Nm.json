@@ -1,0 +1,35 @@
+{
+  "id": "kPBEAZU5Nm",
+  "or_id": "kPBEAZU5Nm",
+  "title": "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+  "title_zh": "",
+  "authors": [
+    "Kaya Stechly",
+    "Karthik Valmeekam",
+    "Subbarao Kambhampati"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large language model (LLM) performance on reasoning problems typically does not generalize out of distribution. Previous work has claimed that this can be mitigated with chain of thought prompting--a method of demonstrating solution procedures--with the intuition that it is possible to in-context teach an LLM an algorithm for solving the problem.\nThis paper presents a case study of chain of thought on problems from Blocksworld, a classical planning domain, and examines the performance of two state-of-the-art LLMs across two axes: generality of examples given in prompt, and complexity of problems queried with each prompt. While our problems are very simple, we only find meaningful performance improvements from chain of thought prompts when those prompts are exceedingly specific to their problem class, and that those improvements quickly deteriorate as the size n of the query-specified stack grows past the size of stacks shown in the examples.\nWe also create scalable variants of three domains commonly studied in previous CoT papers and demonstrate the existence of similar failure modes.\nOur results hint that, contrary to previous claims in the literature, CoT's performance improvements do not stem from the model learning general algorithmic procedures via demonstrations but depend on carefully engineering highly problem specific prompts. This spotlights drawbacks of chain of thought, especially the sharp tradeoff between possible performance gains and the amount of human labor necessary to generate examples with correct reasoning traces.",
+  "abstract_zh": "",
+  "tldr": "We carefully examined the performance of Chain of Thought techniques on classical planning problems and found that, contrary to previous claims, they do not lead to generalizable improvement..",
+  "keywords": [
+    "LLMs",
+    "Planning",
+    "Reasoning",
+    "Chain of Thought"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=kPBEAZU5Nm",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a82cd0364297987adf2884886b3878f92a9e4f0f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We carefully examined the performance of Chain of Thought techniques on classical planning problems and found that, contrary to previous claims, they do not lead to generalizable improvement.."
+  },
+  "collected_at": "2026-03-08T02:02:14.177Z"
+}

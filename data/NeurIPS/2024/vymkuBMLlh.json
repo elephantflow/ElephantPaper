@@ -1,0 +1,34 @@
+{
+  "id": "vymkuBMLlh",
+  "or_id": "vymkuBMLlh",
+  "title": "Conditional Generative Models are Sufficient to Sample from Any Causal  Effect Estimand",
+  "title_zh": "",
+  "authors": [
+    "Md Musfiqur Rahman",
+    "Matt Jordan",
+    "Murat Kocaoglu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Causal inference from observational data plays critical role in many applications in trustworthy machine learning.\nWhile sound and complete algorithms exist to compute causal effects, many of them assume access to conditional likelihoods,\n which is difficult to estimate for high-dimensional (particularly image) data. Researchers have alleviated this issue by simulating causal relations with neural models. However, when we have high-dimensional variables in the causal graph along with some unobserved confounders, no existing work can effectively sample from the un/conditional interventional distributions. In this work, we show how to sample from any identifiable interventional distribution given an arbitrary causal graph through a sequence of push-forward computations of conditional generative models, such as diffusion models. Our proposed algorithm follows the recursive steps of the existing likelihood-based identification algorithms to train a set of feed-forward models, and connect them in a specific way to sample from the desired distribution. We conduct experiments on a Colored MNIST dataset having both the treatment ($X$) and the target variables ($Y$) as images and sample from $P(y|do(x))$. Our algorithm also enables us to conduct a causal analysis to evaluate spurious correlations among input features of generative models pre-trained on the CelebA dataset. Finally, we generate high-dimensional interventional samples from the MIMIC-CXR dataset involving text and image variables.",
+  "abstract_zh": "",
+  "tldr": "We propose a conditional generative model based approach to sample from any identifiable interventional or conditional interventional distribution given an arbitrary causal graph containing latent confounders.",
+  "keywords": [
+    "causal inference",
+    "causal graphs",
+    "deep generative models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=vymkuBMLlh",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d7a91169682e7030f7d0115904a50cf697b82461.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a conditional generative model based approach to sample from any identifiable interventional or conditional interventional distribution given an arbitrary causal graph containing latent confounders."
+  },
+  "collected_at": "2026-03-08T02:02:14.176Z"
+}

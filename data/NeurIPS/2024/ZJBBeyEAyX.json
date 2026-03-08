@@ -1,0 +1,35 @@
+{
+  "id": "ZJBBeyEAyX",
+  "or_id": "ZJBBeyEAyX",
+  "title": "OSLO: One-Shot Label-Only Membership Inference Attacks",
+  "title_zh": "",
+  "authors": [
+    "Yuefeng Peng",
+    "Jaechul Roh",
+    "Subhransu Maji",
+    "Amir Houmansadr"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We introduce One-Shot Label-Only (OSLO) membership inference attacks (MIAs), which accurately infer a given sample's membership in a target model's training set with high precision using just a single query, where the target model only returns the predicted hard label. \n  This is in contrast to state-of-the-art label-only attacks which require $\\sim6000$ queries, yet get attack precisions lower than OSLO's.\n  OSLO leverages transfer-based black-box adversarial attacks. The core idea is that a member sample exhibits more resistance to adversarial perturbations than  a non-member. We compare OSLO against state-of-the-art label-only attacks and demonstrate that, despite requiring only one query, our method significantly outperforms previous attacks in terms of precision and true positive rate (TPR) under the same false positive rates (FPR). For example, compared to previous label-only MIAs, OSLO achieves a TPR that is at least 7$\\times$ higher under a 1\\% FPR and at least 22$\\times$ higher under a 0.1\\% FPR on CIFAR100 for a ResNet18 model. We evaluated multiple defense mechanisms against OSLO.",
+  "abstract_zh": "",
+  "tldr": "We propose a label-only Membership Inference Attack (MIA) that works by sending only a single shot to the target model.",
+  "keywords": [
+    "membership inference attack",
+    "privacy",
+    "leakage"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ZJBBeyEAyX",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9fd3b4434a639fc69ae4bba2b397013f29cbf2df.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a label-only Membership Inference Attack (MIA) that works by sending only a single shot to the target model."
+  },
+  "collected_at": "2026-03-08T02:02:14.176Z"
+}

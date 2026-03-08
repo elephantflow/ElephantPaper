@@ -1,0 +1,34 @@
+{
+  "id": "XHWkHFWi3k",
+  "or_id": "XHWkHFWi3k",
+  "title": "Self-Refining Diffusion Samplers: Enabling Parallelization via Parareal Iterations",
+  "title_zh": "",
+  "authors": [
+    "Nikil Roashan Selvam",
+    "Amil Merchant",
+    "Stefano Ermon"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In diffusion models, samples are generated through an iterative refinement process, requiring hundreds of sequential model evaluations. Several recent methods have introduced approximations (fewer discretization steps or distillation) to trade off speed at the cost of sample quality. In contrast, we introduce Self-Refining Diffusion Samplers (SRDS) that retain sample quality and can improve latency at the cost of additional parallel compute. We take inspiration from the Parareal algorithm, a popular numerical method for parallel-in-time integration of differential equations. In SRDS, a quick but rough estimate of a sample is first created and then iteratively refined in parallel through Parareal iterations. SRDS is not only guaranteed to accurately solve the ODE and converge to the serial solution but also benefits from parallelization across the diffusion trajectory, enabling batched inference and pipelining. As we demonstrate for pre-trained diffusion models, the early convergence of this refinement procedure drastically reduces the number of steps required to produce a sample, speeding up generation for instance by up to 1.7x on a 25-step StableDiffusion-v2 benchmark and up to 4.3x on longer trajectories.",
+  "abstract_zh": "",
+  "tldr": "We introduce a novel technique to improve sampling speed of diffusion models by exploiting parallel-in-time integration.",
+  "keywords": [
+    "diffusion",
+    "sampling",
+    "parallel"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=XHWkHFWi3k",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f3027e409105679c2ff8905ad7351a1f5ec1463a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce a novel technique to improve sampling speed of diffusion models by exploiting parallel-in-time integration."
+  },
+  "collected_at": "2026-03-08T02:02:14.177Z"
+}
