@@ -1,0 +1,40 @@
+{
+  "id": "YkJ5BuEXdD",
+  "or_id": "YkJ5BuEXdD",
+  "title": "Preference Learning Algorithms Do Not Learn Preference Rankings",
+  "title_zh": "",
+  "authors": [
+    "Angelica Chen",
+    "Sadhika Malladi",
+    "Lily H Zhang",
+    "Xinyi Chen",
+    "Qiuyi Zhang",
+    "Rajesh Ranganath",
+    "Kyunghyun Cho"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Preference learning algorithms (e.g., RLHF and DPO) are frequently used to steer LLMs to produce generations that are more preferred by humans, but our understanding of their inner workings is still limited. In this work, we study the conventional wisdom that preference learning trains models to assign higher likelihoods to more preferred outputs than less preferred outputs, measured via *ranking accuracy*.\nSurprisingly, we find that most state-of-the-art preference-tuned models achieve a ranking accuracy of less than 60% on common preference datasets. We furthermore derive the *idealized ranking accuracy* that a preference-tuned LLM would achieve if it optimized the DPO or RLHF objective perfectly. We demonstrate that existing models exhibit a significant *alignment gap* -- *i.e.*, a gap between the observed and idealized ranking accuracies. \nWe attribute this discrepancy to the DPO objective, which is empirically and theoretically ill-suited to correct even mild ranking errors in the reference model, and derive a simple and efficient formula for quantifying the difficulty of learning a given preference datapoint.\nFinally, we demonstrate that ranking accuracy strongly correlates with the empirically popular win rate metric when the model is close to the reference model used in the objective, shedding further light on the differences between on-policy (e.g., RLHF) and off-policy (e.g., DPO) preference learning algorithms.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "preference learning",
+    "large language models",
+    "DPO",
+    "RLHF",
+    "ranking accuracy"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=YkJ5BuEXdD",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/95c0afb58459cccd1a6085c7fc9b42a20a055bec.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Preference learning algorithms (e.g., RLHF and DPO) are frequently used to steer LLMs to produce generations that are more preferred by humans, but our understanding of their inner workings is still limited. In this work, we study the conventional wisdom that preference learning trains models to ass"
+  },
+  "collected_at": "2026-03-08T05:42:01.810Z"
+}

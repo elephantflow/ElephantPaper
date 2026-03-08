@@ -1,0 +1,38 @@
+{
+  "id": "JAhNsZ9dvG",
+  "or_id": "JAhNsZ9dvG",
+  "title": "SpecExec: Massively Parallel Speculative Decoding For Interactive LLM Inference on Consumer Devices",
+  "title_zh": "",
+  "authors": [
+    "Ruslan Svirschevski",
+    "Avner May",
+    "Zhuoming Chen",
+    "Beidi Chen",
+    "Zhihao Jia",
+    "Max Ryabinin"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "As large language models gain widespread adoption, running them efficiently becomes a crucial task. Recent works on LLM inference use speculative decoding to achieve extreme speedups. However, most of these works implicitly design their algorithms for high-end datacenter hardware. In this work, we ask the opposite question: how fast can we run LLMs on consumer machines? Consumer GPUs can no longer fit the largest available models and must offload them to RAM or SSD. With parameter offloading, hundreds or thousands of tokens can be processed in batches within the same time as just one token, making it a natural fit for speculative decoding. We propose SpecExec (Speculative Execution), a simple parallel decoding method that can generate up to 20 tokens per target model iteration for popular LLM families.  SpecExec takes the most probable continuations from the draft model to build a \"cache\" tree for the target model, which then gets validated in a single pass. Using SpecExec, we demonstrate inference of 50B+ parameter LLMs on consumer GPUs with RAM offloading at 4--6 tokens per second with 4-bit quantization or 2--3 tokens per second with 16-bit weights. Our code is available at https://github.com/yandex-research/specexec .",
+  "abstract_zh": "",
+  "tldr": "We propose a speculative decoding algorithm that scales with large token budgets and allows running 50B+ models on a single GPU up to 15x faster than standard offloading",
+  "keywords": [
+    "speculative decoding",
+    "offloading",
+    "large language models",
+    "inference"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=JAhNsZ9dvG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/92424fd5845a7ee52f4c92a728675750ad954baf.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a speculative decoding algorithm that scales with large token budgets and allows running 50B+ models on a single GPU up to 15x faster than standard offloading"
+  },
+  "collected_at": "2026-03-08T05:42:01.809Z"
+}

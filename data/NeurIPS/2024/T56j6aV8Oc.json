@@ -1,0 +1,43 @@
+{
+  "id": "T56j6aV8Oc",
+  "or_id": "T56j6aV8Oc",
+  "title": "Heavy-Tailed Class Imbalance and Why Adam Outperforms Gradient Descent on Language Models",
+  "title_zh": "",
+  "authors": [
+    "Frederik Kunstner",
+    "Alan Milligan",
+    "Robin Yadav",
+    "Mark Schmidt",
+    "Alberto Bietti"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Adam has been shown to outperform gradient descent on large language models by a larger margin than on other tasks, but it is unclear why. We show that a key factor in this performance gap is the heavy-tailed class imbalance found in language tasks. When trained with gradient descent, the loss of infrequent words decreases more slowly than the loss of frequent ones. This leads to a slow decrease on the average loss as most samples come from infrequent words. On the other hand, Adam and sign-based methods are less sensitive to this problem. To establish that this behavior is caused by class imbalance, we show empirically that it can be reproduced across architectures and data types, on language transformers, vision CNNs, and linear models. On a linear model with cross-entropy loss, we show that class imbalance leads to imbalanced, correlated gradients and Hessians that have been hypothesized to benefit Adam. We also prove that, in continuous time, gradient descent converges slowly on low-frequency classes while sign descent does not.",
+  "abstract_zh": "",
+  "tldr": "We provide evidence that gradient descent struggles to fit low-frequency classes and that this leads to poor performance in the presence of heavy-tailed class imbalance as found in language modelling tasks while Adam does not suffer from this problem",
+  "keywords": [
+    "language model",
+    "optimization",
+    "transformers",
+    "heavy-tailed",
+    "class imbalance",
+    "gradient descent",
+    "Adam",
+    "adaptive methods",
+    "sign descent"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=T56j6aV8Oc",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/cb0a8b11c4c41f5a138419a244e5cfe75f0059cf.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We provide evidence that gradient descent struggles to fit low-frequency classes and that this leads to poor performance in the presence of heavy-tailed class imbalance as found in language modelling tasks while Adam does not suffer from this problem"
+  },
+  "collected_at": "2026-03-08T05:42:01.810Z"
+}

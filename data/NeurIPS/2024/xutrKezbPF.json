@@ -1,0 +1,40 @@
+{
+  "id": "xutrKezbPF",
+  "or_id": "xutrKezbPF",
+  "title": "CIFD: Controlled Information Flow to Enhance Knowledge Distillation",
+  "title_zh": "",
+  "authors": [
+    "Yashas Malur Saidutta",
+    "Rakshith Sharma Srinivasa",
+    "Jaejin Cho",
+    "Ching-Hua Lee",
+    "Chouchang Yang",
+    "Yilin Shen",
+    "Hongxia Jin"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Knowledge Distillation is the mechanism by which the insights gained from a larger teacher model are transferred to a smaller student model. However, the transfer suffers when the teacher model is significantly larger than the student. To overcome this, prior works have proposed training intermediately sized models, Teacher Assistants (TAs) to help the transfer process. However, training TAs is expensive, as training these models is a knowledge transfer task in itself. Further, these TAs are larger than the student model and training them especially in large data settings can be computationally intensive. In this paper, we propose a novel framework called Controlled Information Flow for Knowledge Distillation (CIFD) consisting of two components. First, we propose a significantly smaller alternatives to TAs, the Rate-Distortion Module (RDM) which uses the teacher's penultimate layer embedding and a information rate-constrained bottleneck layer to replace the Teacher Assistant model. RDMs are smaller and easier to train than TAs, especially in large data regimes, since they operate on the teacher embeddings and do not need to relearn low level input feature extractors. Also, by varying the information rate across the bottleneck, RDMs can replace TAs of different sizes. Secondly, we propose the use of Information Bottleneck Module in the student model, which is crucial for regularization in the presence of a large number of RDMs. We show comprehensive state-of-the-art results of the proposed method over large datasets like Imagenet. Further, we show the significant improvement in distilling CLIP like models over a huge 12M image-text dataset. It outperforms CLIP specialized distillation methods across five zero-shot classification datasets and two zero-shot image-text retrieval datasets.",
+  "abstract_zh": "",
+  "tldr": "This paper proposes a Rate-Distortion theory based module that mimics teaching assistants for knowledge distillation, while being computationally far cheaper to train than conventional TAs.",
+  "keywords": [
+    "Knowledge Distillation",
+    "Information Bottleneck",
+    "Rate-Distortion",
+    "Teaching Assistant",
+    "CLIP"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=xutrKezbPF",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/dd4b28772c38804f39a2eef11f4f97a9f8bf0f5a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper proposes a Rate-Distortion theory based module that mimics teaching assistants for knowledge distillation, while being computationally far cheaper to train than conventional TAs."
+  },
+  "collected_at": "2026-03-08T05:42:01.810Z"
+}
