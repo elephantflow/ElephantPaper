@@ -1,0 +1,34 @@
+{
+  "id": "qcPlGtzwW9",
+  "or_id": "qcPlGtzwW9",
+  "title": "Tighter Convergence Bounds for Shuffled SGD via Primal-Dual Perspective",
+  "title_zh": "",
+  "authors": [
+    "Xufeng Cai",
+    "Cheuk Yin Lin",
+    "Jelena Diakonikolas"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Stochastic gradient descent (SGD) is perhaps the most prevalent optimization method in modern machine learning. Contrary to the empirical practice of sampling from the datasets \\emph{without replacement} and with (possible) reshuffling at each epoch, the theoretical counterpart of SGD usually relies on the assumption of \\emph{sampling with replacement}. It is only very recently that SGD using sampling without replacement -- shuffled SGD -- has been analyzed with matching upper and lower bounds. However, we observe that those bounds are too pessimistic to explain often superior empirical performance of data permutations (sampling without replacement) over vanilla counterparts (sampling with replacement) on machine learning problems. Through fine-grained analysis in the lens of primal-dual cyclic coordinate methods and the introduction of novel smoothness parameters, we present several results for shuffled SGD on smooth and non-smooth convex losses, where our novel analysis framework provides tighter convergence bounds over all popular shuffling schemes (IG, SO, and RR). Notably, our new bounds predict faster convergence than existing bounds in the literature -- by up to a factor of $O(\\sqrt{n})$, mirroring benefits from tighter convergence bounds using component smoothness parameters in randomized coordinate methods. Lastly, we numerically demonstrate on common machine learning datasets that our bounds are indeed much tighter, thus offering a bridge between theory and practice.",
+  "abstract_zh": "",
+  "tldr": "We provide fine-grained primal-dual analysis and tighter bounds for shuffled SGD by interpreting it as a primal-dual method with cyclic updates on the dual side. Obtained improvements are up to order-$O(\\sqrt{n})$ both theoretically and empirically.",
+  "keywords": [
+    "primal-dual analysis",
+    "cyclic methods",
+    "shuffled sgd"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=qcPlGtzwW9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/01bfa90837d76a8a6b8a6d5ec563940e2c01557b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We provide fine-grained primal-dual analysis and tighter bounds for shuffled SGD by interpreting it as a primal-dual method with cyclic updates on the dual side. Obtained improvements are up to order-$O(\\sqrt{n})$ both theoretically and empirically."
+  },
+  "collected_at": "2026-03-08T16:20:28.319Z"
+}

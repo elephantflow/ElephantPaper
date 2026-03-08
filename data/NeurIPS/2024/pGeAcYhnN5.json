@@ -1,0 +1,34 @@
+{
+  "id": "pGeAcYhnN5",
+  "or_id": "pGeAcYhnN5",
+  "title": "Speculative Decoding with CTC-based Draft Model for LLM Inference Acceleration",
+  "title_zh": "",
+  "authors": [
+    "Zhuofan Wen",
+    "Shangtong Gui",
+    "Yang Feng"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Inference acceleration of large language models (LLMs) has been put forward in many application scenarios and speculative decoding has shown its advantage in addressing inference acceleration. Speculative decoding usually introduces a draft model to assist the base LLM where the draft model produces drafts and the base LLM verifies the draft for acceptance or rejection. In this framework, the final inference speed is decided by the decoding speed of the draft model and the acceptance rate of the draft provided by the draft model. Currently the widely used draft models usually generate draft tokens for the next several positions in a non-autoregressive way without considering the correlations between draft tokens. Therefore, it has a high decoding speed but an unsatisfactory acceptance rate. In this paper, we focus on how to improve the performance of the draft model and aim to accelerate inference via a high acceptance rate. To this end, we propose a CTC-based draft model which strengthens the correlations between draft tokens during the draft phase, thereby generating higher-quality draft candidate sequences. Experiment results show that compared to strong baselines, the proposed method can achieve a higher acceptance rate and hence a faster inference speed.",
+  "abstract_zh": "",
+  "tldr": "We propose a flexible speculation decoding framework with CTC-based draft model for context information retrieving when drafting and adaptive candidate sequence generation.",
+  "keywords": [
+    "Pretrained language model",
+    "Speculative decoding",
+    "CTC decoding algorithm"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=pGeAcYhnN5",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/24afb093510474acb2e9714e67a7d28648b9dd2e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a flexible speculation decoding framework with CTC-based draft model for context information retrieving when drafting and adaptive candidate sequence generation."
+  },
+  "collected_at": "2026-03-08T16:20:28.317Z"
+}

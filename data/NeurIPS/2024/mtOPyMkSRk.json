@@ -1,0 +1,35 @@
+{
+  "id": "mtOPyMkSRk",
+  "or_id": "mtOPyMkSRk",
+  "title": "A Novel Unified Architecture for Low-Shot Counting by Detection and Segmentation",
+  "title_zh": "",
+  "authors": [
+    "Jer Pelhan",
+    "Alan Lukezic",
+    "Vitjan Zavrtanik",
+    "Matej Kristan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Low-shot object counters estimate the number of objects in an image using few or no annotated exemplars. Objects are localized by matching them to prototypes, which are constructed by unsupervised image-wide object appearance aggregation.\nDue to potentially diverse object appearances, the existing approaches often lead to overgeneralization and false positive detections.\nFurthermore, the best-performing methods train object localization by a surrogate loss, that predicts a unit Gaussian at each object center. This loss is sensitive to annotation error, hyperparameters and does not directly optimize the detection task, leading to suboptimal counts.\nWe introduce GeCo, a novel low-shot counter that achieves accurate object detection, segmentation, and count estimation in a unified architecture.\nGeCo robustly generalizes the prototypes across objects appearances through a novel dense object query formulation. \nIn addition, a novel counting loss is proposed, that directly optimizes the detection task and avoids the issues of the standard surrogate loss. \nGeCo surpasses the leading few-shot detection-based counters by $\\sim$25\\% in the total count MAE, achieves superior detection accuracy and sets a new solid state-of-the-art result across all low-shot counting setups. \nThe code will be available on GitHub.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "low-shot counting",
+    "few-shot counting",
+    "object counting;small object detection; small object coutning;small objects;detection;counting;loss function"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=mtOPyMkSRk",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d0b2cb2b23e87543d69c0f54f25700b7c5a26296.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Low-shot object counters estimate the number of objects in an image using few or no annotated exemplars. Objects are localized by matching them to prototypes, which are constructed by unsupervised image-wide object appearance aggregation.\nDue to potentially diverse object appearances, the existing a"
+  },
+  "collected_at": "2026-03-08T16:20:28.316Z"
+}

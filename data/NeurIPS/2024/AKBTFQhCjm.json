@@ -1,0 +1,43 @@
+{
+  "id": "AKBTFQhCjm",
+  "or_id": "AKBTFQhCjm",
+  "title": "DEFT: Efficient Fine-tuning of Diffusion Models by Learning the Generalised $h$-transform",
+  "title_zh": "",
+  "authors": [
+    "Alexander Denker",
+    "Francisco Vargas",
+    "Shreyas Padhy",
+    "Kieran Didi",
+    "Simon V Mathis",
+    "Riccardo Barbano",
+    "Vincent Dutordoir",
+    "Emile Mathieu",
+    "Urszula Julia Komorowska",
+    "Pietro Lio"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Generative modelling paradigms based on denoising diffusion processes have emerged as a leading candidate for conditional sampling in inverse problems. \nIn many real-world applications, we often have access to large, expensively trained unconditional diffusion models, which we aim to exploit for improving conditional sampling.\nMost recent approaches are motivated heuristically and lack a unifying framework, obscuring connections between them. Further, they often suffer from issues such as being very sensitive to hyperparameters, being expensive to train or needing access to weights hidden behind a closed API. In this work, we unify conditional training and sampling using the mathematically well-understood Doob's h-transform. This new perspective allows us to unify many existing methods under a common umbrella. Under this framework, we propose DEFT (Doob's h-transform Efficient FineTuning), a new approach for conditional generation that simply fine-tunes a very small network to quickly learn the conditional $h$-transform, while keeping the larger unconditional network unchanged. DEFT is much faster than existing baselines while achieving state-of-the-art performance across a variety of linear and non-linear benchmarks. On image reconstruction tasks, we achieve speedups of up to 1.6$\\times$, while having the best perceptual quality on natural images and reconstruction performance on medical images. Further, we also provide initial experiments on protein motif scaffolding and outperform reconstruction guidance methods.",
+  "abstract_zh": "",
+  "tldr": "Novel and highly efficient fine-tuning algorithm for diffusion models motivated by theoretical formulations of conditional sampling in SDEs",
+  "keywords": [
+    "Inverse problems",
+    "Generative Modelling",
+    "Diffusion Models",
+    "Conditional Generative Modelling",
+    "Diffusion model guidance"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=AKBTFQhCjm",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b375070971fa38a70dacf479ac2f4bdc90c5ac1c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Novel and highly efficient fine-tuning algorithm for diffusion models motivated by theoretical formulations of conditional sampling in SDEs"
+  },
+  "collected_at": "2026-03-08T16:20:28.313Z"
+}

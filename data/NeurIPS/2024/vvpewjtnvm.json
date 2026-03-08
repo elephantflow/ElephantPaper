@@ -1,0 +1,35 @@
+{
+  "id": "vvpewjtnvm",
+  "or_id": "vvpewjtnvm",
+  "title": "Low Precision Local Training is Enough for Federated Learning",
+  "title_zh": "",
+  "authors": [
+    "Zhiwei Li",
+    "Yiqiu LI",
+    "Binbin Lin",
+    "Zhongming Jin",
+    "WEIZHONG ZHANG"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Federated Learning (FL) is a prevalent machine learning paradigm designed to address challenges posed by heterogeneous client data while preserving data privacy.\n     Unlike distributed training, it typically orchestrates resource-constrained edge devices to communicate via a low-bandwidth communication network with a central server.  This urges the development of more computation and communication efficient training algorithms. In this paper, we propose an efficient FL paradigm,  where the local  models in the clients  are trained with  low-precision operations and communicated  with the server in low precision format, while only the model aggregation in the server is performed with  high-precision computation. We surprisingly find that   high precision models can be recovered from the  low precision local models with proper aggregation in the server. \n     In this way, both the workload in the client-side and the communication cost can be significantly reduced.   We theoretically show that our proposed  paradigm can converge to the optimal solution as the training goes on, which demonstrates that low precision local training is enough for FL.  Our paradigm can be integrated with existing FL algorithms flexibly. Experiments across extensive benchmarks are conducted to showcase the effectiveness of our proposed method. Notably, the models trained by our method with the precision as low as 8 bits are  comparable  to those from the  full precision training. As a by-product, we show that low precision local training can relieve the over-fitting issue in local training, which under heterogeneous client data  can cause the client models drift further away from each other and lead to the failure in  model aggregation. Code is released at https://github.com/digbangbang/LPT-FL.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Federated Learning",
+    "Low Precision Training"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=vvpewjtnvm",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/aeb8909737e7debabd78bc8d5e4a4a9228bf658a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Federated Learning (FL) is a prevalent machine learning paradigm designed to address challenges posed by heterogeneous client data while preserving data privacy.\n     Unlike distributed training, it typically orchestrates resource-constrained edge devices to communicate via a low-bandwidth communica"
+  },
+  "collected_at": "2026-03-08T16:20:28.318Z"
+}
