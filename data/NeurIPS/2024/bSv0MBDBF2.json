@@ -1,0 +1,36 @@
+{
+  "id": "bSv0MBDBF2",
+  "or_id": "bSv0MBDBF2",
+  "title": "Denoising Diffusion Path: Attribution Noise Reduction with An Auxiliary Diffusion Model",
+  "title_zh": "",
+  "authors": [
+    "Yiming Lei",
+    "Zilong Li",
+    "Junping Zhang",
+    "Hongming Shan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The explainability of deep neural networks (DNNs) is critical for trust and reliability in AI systems. Path-based attribution methods, such as integrated gradients (IG), aim to explain predictions by accumulating gradients along a path from a baseline to the target image. However, noise accumulated during this process can significantly distort the explanation. While existing methods primarily concentrate on finding alternative paths to circumvent noise, they overlook a critical issue: intermediate-step images frequently diverge from the distribution of training data, further intensifying the impact of noise. This work presents a novel Denoising Diffusion Path (DDPath) to tackle this challenge by harnessing the power of diffusionmodels for denoising. By exploiting the inherent ability of diffusion models to progressively remove noise from an image, DDPath constructs a piece-wise linear path. Each segment of this path ensures that samples drawn from a Gaussian distribution are centered around the target image. This approach facilitates a gradual reduction of noise along the path. We further demonstrate that DDPath adheres to essential axiomatic properties for attribution methods and can be seamlessly integrated with existing methods such as IG. Extensive experimental results demonstrate that DDPath can significantly reduce noise in the attributions—resulting in clearer explanations—and achieves better quantitative results than traditional path-based methods.",
+  "abstract_zh": "",
+  "tldr": "Constructing a denoising path integration for attribution of deep neural networks by applying diffusion models, showcasing significant noise reduction in attribution maps and higher AUC values.",
+  "keywords": [
+    "Diffusion Models",
+    "Interpretability",
+    "Integrated Gradients",
+    "Path Integration"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=bSv0MBDBF2",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/03d8ae20aa80078dbb40288ba9c7ffc811f16b47.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Constructing a denoising path integration for attribution of deep neural networks by applying diffusion models, showcasing significant noise reduction in attribution maps and higher AUC values."
+  },
+  "collected_at": "2026-03-08T20:00:29.101Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "p43ObIwJFW",
+  "or_id": "p43ObIwJFW",
+  "title": "Learning to Solve Quadratic Unconstrained Binary Optimization in a Classification Way",
+  "title_zh": "",
+  "authors": [
+    "Ming Chen",
+    "Jie Chun",
+    "Shang Xiang",
+    "Luona Wei",
+    "Yonghao Du",
+    "Qian Wan",
+    "Yuning Chen",
+    "Yingwu Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "The quadratic unconstrained binary optimization (QUBO) is a well-known NP-hard problem that takes an $n\\times n$ matrix $Q$ as input and decides an $n$-dimensional 0-1 vector $x$, to optimize a quadratic function. Existing learning-based models that always formulate the solution process as sequential decisions suffer from high computational overload. To overcome this issue, we propose a neural solver called the Value Classification Model (VCM) that formulates the solution process from a classification perspective. It applies a Depth Value Network (DVN) based on graph convolution that exploits the symmetry property in $Q$ to auto-grasp value features. These features are then fed into a Value Classification Network (VCN) which directly generates classification solutions. Trained by a highly efficient model-tailored Greedy-guided Self Trainer (GST) which does not require any priori optimal labels, VCM significantly outperforms competitors in both computational efficiency and solution quality with a remarkable generalization ability. It can achieve near-optimal solutions in milliseconds with an average optimality gap of just 0.362\\% on benchmarks with up to 2500 variables. Notably, a VCM trained at a specific DVN depth can steadily find better solutions by simply extending the testing depth, which narrows the gap to 0.034\\% on benchmarks. To our knowledge, this is the first learning-based model to reach such a performance.",
+  "abstract_zh": "",
+  "tldr": "We propose a neural solver to solve quadratic unconstrained binary optimization in a classification way, which can achieve near-optimal solutions in milliseconds,  even for instances comprising thousands of variables.",
+  "keywords": [
+    "quadratic unconstrained binary optimization",
+    "combinational optimization",
+    "machine learning",
+    "classification",
+    "neural solver"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=p43ObIwJFW",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5ac36f107f507f095117ea3f08a401ea0fc342a9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We propose a neural solver to solve quadratic unconstrained binary optimization in a classification way, which can achieve near-optimal solutions in milliseconds,  even for instances comprising thousands of variables."
+  },
+  "collected_at": "2026-03-08T20:00:25.510Z"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "X3Aljulsw5",
+  "or_id": "X3Aljulsw5",
+  "title": "Zeroth-Order Sampling Methods for Non-Log-Concave Distributions: Alleviating Metastability by Denoising Diffusion",
+  "title_zh": "",
+  "authors": [
+    "Ye He",
+    "Kevin Rojas",
+    "Molei Tao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This paper considers the problem of sampling from non-logconcave distribution, based on queries of its unnormalized density. It first describes a framework, Denoising Diffusion Monte Carlo (DDMC), based on the simulation of a denoising diffusion process with its score function approximated by a generic Monte Carlo estimator. DDMC is an oracle-based meta-algorithm, where its oracle is the assumed access to samples that generate a Monte Carlo score estimator. Then we provide an implementation of this oracle, based on rejection sampling, and this turns DDMC into a true algorithm, termed Zeroth-Order Diffusion Monte Carlo (ZOD-MC). We provide convergence analyses by first constructing a general framework, i.e. a performance guarantee for DDMC, without assuming the target distribution to be log-concave or satisfying any isoperimetric inequality. Then we prove that ZOD-MC admits an inverse polynomial dependence on the desired sampling accuracy, albeit still suffering from the curse of dimensionality. Consequently, for low dimensional distributions, ZOD-MC is a very efficient sampler, with performance exceeding latest samplers, including also-denoising-diffusion-based RDMC and RSDMC. Last, we experimentally demonstrate the insensitivity of ZOD-MC to increasingly higher barriers between modes or discontinuity in non-convex potential.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Non-logconcave sampling",
+    "Monte Carlo sampling",
+    "Denoising Diffusion Model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=X3Aljulsw5",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ffb1dbd5c419841e52a25c55c49853aaa3853ae2.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper considers the problem of sampling from non-logconcave distribution, based on queries of its unnormalized density. It first describes a framework, Denoising Diffusion Monte Carlo (DDMC), based on the simulation of a denoising diffusion process with its score function approximated by a gene"
+  },
+  "collected_at": "2026-03-08T20:00:29.102Z"
+}

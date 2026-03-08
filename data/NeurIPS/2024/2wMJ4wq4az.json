@@ -1,0 +1,37 @@
+{
+  "id": "2wMJ4wq4az",
+  "or_id": "2wMJ4wq4az",
+  "title": "Exploring Fixed Point in Image Editing: Theoretical Support and Convergence Optimization",
+  "title_zh": "",
+  "authors": [
+    "chen hang",
+    "Zhe Ma",
+    "Haoming Chen",
+    "Xuwei Fang",
+    "Weisheng Xie",
+    "Faming Fang",
+    "Guixu Zhang",
+    "Hongbin Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In image editing, Denoising Diffusion Implicit Models (DDIM) inversion has become a widely adopted method and is extensively used in various image editing approaches. The core concept of DDIM inversion stems from the deterministic sampling technique of DDIM, which allows the DDIM process to be viewed as an Ordinary Differential Equation (ODE) process that is reversible. This enables the prediction of corresponding noise from a reference image, ensuring that the restored image from this noise remains consistent with the reference image. Image editing exploits this property by modifying the cross-attention between text and images to edit specific objects while preserving the remaining regions. However, in the DDIM inversion, using the $t-1$ time step to approximate the noise prediction at time step $t$ introduces errors between the restored image and the reference image. Recent approaches have modeled each step of the DDIM inversion process as finding a fixed-point problem of an implicit function. This approach significantly mitigates the error in the restored image but lacks theoretical support regarding the existence of such fixed points. Therefore, this paper focuses on the study of fixed points in DDIM inversion and provides theoretical support. Based on the obtained theoretical insights, we further optimize the loss function for the convergence of fixed points in the original DDIM inversion, improving the visual quality of the edited image. Finally, we extend the fixed-point based image editing to the application of unsupervised image dehazing, introducing a novel text-based approach for unsupervised dehazing.",
+  "abstract_zh": "",
+  "tldr": "We provide theoretical support for image editing methods that involve solving fixed points of implicit functions, and improve the fixed point loss in image editing.",
+  "keywords": [
+    "fixed point; image editing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=2wMJ4wq4az",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/023cb1ca8a2612ffee2942eb9ac78e685c3c4d7a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We provide theoretical support for image editing methods that involve solving fixed points of implicit functions, and improve the fixed point loss in image editing."
+  },
+  "collected_at": "2026-03-08T20:00:29.102Z"
+}
