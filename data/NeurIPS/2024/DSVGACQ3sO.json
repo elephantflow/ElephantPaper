@@ -1,0 +1,36 @@
+{
+  "id": "DSVGACQ3sO",
+  "or_id": "DSVGACQ3sO",
+  "title": "Demystifying amortized causal discovery with transformers",
+  "title_zh": "",
+  "authors": [
+    "Francesco Montagna",
+    "Max Cairney-Leeming",
+    "Dhanya Sridhar",
+    "Francesco Locatello"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Supervised learning approaches for causal discovery from observational data often achieve competitive performance despite seemingly avoiding explicit assumptions that traditional methods make for identifiability. In this work, we investigate CSIvA \\citep{ke2023learning}, a transformer-based model promising to train on synthetic data and transfer to real data. First, we bridge the gap with existing identifiability theory and show that constraints on the training data distribution implicitly define a prior on the test observations. Consistent with classical approaches, good performance is achieved when we have a good prior on the test data, and the underlying model is identifiable. At the same time, we find new trade-offs. Training on datasets generated from different classes of causal models, unambiguously identifiable in isolation, improves the test generalization. Performance is still guaranteed, as the ambiguous cases resulting from the mixture of identifiable causal models are unlikely to occur (which we formally prove). \nOverall, our study finds that amortized causal discovery still needs to obey identifiability theory, but it also differs from classical methods in how the assumptions are formulated, trading more reliance on assumptions on the noise type for fewer hypotheses on the mechanisms.",
+  "abstract_zh": "",
+  "tldr": "Causal discovery with supervised learning seem to bypass the need for identifiability assumptions. We find that constraints on the training data act as a prior on the test data, defining the class of causal model identifiable by the learned algorithm",
+  "keywords": [
+    "causal discovery",
+    "amortized inference",
+    "transformers",
+    "identifiability"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=DSVGACQ3sO",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b6de5ffdd3f948b4ebaca9ef7a0972cdb2fd9453.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Causal discovery with supervised learning seem to bypass the need for identifiability assumptions. We find that constraints on the training data act as a prior on the test data, defining the class of causal model identifiable by the learned algorithm"
+  },
+  "collected_at": "2026-03-08T20:20:22.466Z"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "rF1YRtZfoJ",
+  "or_id": "rF1YRtZfoJ",
+  "title": "CLAP4CLIP: Continual Learning with Probabilistic Finetuning for Vision-Language Models",
+  "title_zh": "",
+  "authors": [
+    "Saurav Jha",
+    "Dong Gong",
+    "Lina Yao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Continual learning (CL) aims to help deep neural networks to learn new knowledge while retaining what has been learned. Owing to their powerful generalizability,  pre-trained vision-language models such as Contrastive Language-Image Pre-training (CLIP)  have lately gained traction as practical CL candidates. However, the domain mismatch between the pre-training and the downstream CL tasks calls for finetuning of the CLIP on the latter. The deterministic nature of the existing finetuning methods makes them overlook the many possible interactions across the modalities and deems them unsafe for high-risk tasks requiring reliable uncertainty estimation. To address these, our work proposes **C**ontinual **L**e**A**rning with **P**robabilistic finetuning (CLAP) - a probabilistic modeling framework over visual-guided text features per task, thus providing more calibrated CL finetuning. Unlike recent data-hungry anti-forgetting CL techniques, CLAP alleviates forgetting by exploiting the rich pre-trained knowledge of CLIP for weight initialization and distribution regularization of task-specific parameters. Cooperating with the diverse range of existing prompting methods, CLAP can surpass the predominant deterministic finetuning approaches for CL with CLIP. We conclude with out-of-the-box applications of superior uncertainty estimation abilities of CLAP including novel data detection and exemplar selection within the existing CL setups. Our code is available at https://github.com/srvCodes/clap4clip.",
+  "abstract_zh": "",
+  "tldr": "We propose a probabilistic finetuning method for continual learning with pre-trained CLIP model to enable better in-domain knowledge acquisition, generalization, and model calibration.",
+  "keywords": [
+    "Continual Learning",
+    "Vision-language models",
+    "Finetuning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=rF1YRtZfoJ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/649fc2bc1d6ab7ff1bb07d921e2180c36c2ccf3b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a probabilistic finetuning method for continual learning with pre-trained CLIP model to enable better in-domain knowledge acquisition, generalization, and model calibration."
+  },
+  "collected_at": "2026-03-08T20:20:22.463Z"
+}

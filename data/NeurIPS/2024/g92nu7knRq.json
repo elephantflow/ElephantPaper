@@ -1,0 +1,40 @@
+{
+  "id": "g92nu7knRq",
+  "or_id": "g92nu7knRq",
+  "title": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+  "title_zh": "",
+  "authors": [
+    "Yilong Chen",
+    "Linhao Zhang",
+    "Junyuan Shang",
+    "Zhenyu Zhang",
+    "Tingwen Liu",
+    "Shuohuan Wang",
+    "Yu Sun"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large language models (LLMs) with billions of parameters demonstrate impressive performance. However, the widely used Multi-Head Attention (MHA) in LLMs incurs substantial computational and memory costs during inference. While some efforts have optimized attention mechanisms by pruning heads or sharing parameters among heads, these methods often lead to performance degradation or necessitate substantial continued pre-training costs to restore performance. Based on the analysis of attention redundancy, we design a Decoupled-Head Attention (DHA) mechanism. DHA adaptively configures group sharing for key heads and value heads across various layers, achieving a better balance between performance and efficiency. Inspired by the observation of clustering similar heads, we propose to progressively transform the MHA checkpoint into the DHA model through linear fusion of similar head parameters step by step, retaining the parametric knowledge of the MHA checkpoint. We construct DHA models by transforming various scales of MHA checkpoints given target head budgets. Our experiments show that DHA remarkably requires a mere 0.25\\% of the original model's pre-training budgets to achieve 96.1\\% of performance while saving 75\\% of KV cache. Compared to Group-Query Attention (GQA), DHA achieves a 5$\\times$ training acceleration, a maximum of 13.93\\% performance improvement under 0.01\\% pre-training budget, and 5\\% relative improvement under 0.05\\% pre-training budget.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Large Language Models",
+    "Multi-Head Attention",
+    "Pre-training Acceleration",
+    "Efficient Inference",
+    "Model Fusion"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=g92nu7knRq",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/865bdc97950102979150c59101dba5a8711f22aa.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Large language models (LLMs) with billions of parameters demonstrate impressive performance. However, the widely used Multi-Head Attention (MHA) in LLMs incurs substantial computational and memory costs during inference. While some efforts have optimized attention mechanisms by pruning heads or shar"
+  },
+  "collected_at": "2026-03-08T20:20:22.467Z"
+}
