@@ -1,0 +1,41 @@
+{
+  "id": "6ZE9Zktbh6",
+  "or_id": "6ZE9Zktbh6",
+  "title": "Screening Unlearnable Examples via Iterative Self Regression",
+  "title_zh": "",
+  "authors": [
+    "Yi Yu",
+    "Qichen Zheng",
+    "SIYUAN YANG",
+    "Wenhan Yang",
+    "Jun Liu",
+    "Shijian Lu",
+    "Yap-peng Tan",
+    "Kwok-Yan Lam",
+    "Alex Kot"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Deep neural networks are proven to be vulnerable to data poisoning attacks. Recently, a specific type of data poisoning attack known as availability attacks, has led to the failure of data utilization for model learning by adding imperceptible perturbations to images. Consequently, it is quite beneficial and challenging to detect poisoned samples, also known as Unlearnable Examples (UEs), from a mixed dataset. To tackle this problem, in this paper, we introduce a novel Iterative Self-Regression approach for identifying UEs within a mixed dataset. This method leverages the distinction between the inherent semantic mapping rules and shortcuts, without the need for any additional information. Our investigation reveals a critical observation: when training a classifier on a mixed dataset containing both UEs and clean data, the model tends to quickly adapt to the UEs compared to the clean data. Due to the accuracy gaps between training with clean/poisoned samples, we employ a model to misclassify clean samples while correctly identifying the poisoned ones for identifying tainted samples. Furthermore, we find that it is more effective to differentiate between clean and poisoned samples and build the Iterative Self Regression algorithm. \nWith incorporated additional classes and iterative refinement, the model becomes more capable of differentiating between clean and poisoned samples. \nExtensive experiments demonstrate that our method outperforms state-of-the-art detection approaches across various types of attacks, datasets, and poisoning ratios, and it significantly reduces the Half Total Error Rate (HTER) in comparison to existing methods.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "data poisoning attack",
+    "iterative self regression",
+    "availability attacks detection",
+    "unlearnable examples"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6ZE9Zktbh6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/bd88c1df30fc4ff273d0fef59184452a1ebdb774.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Deep neural networks are proven to be vulnerable to data poisoning attacks. Recently, a specific type of data poisoning attack known as availability attacks, has led to the failure of data utilization for model learning by adding imperceptible perturbations to images. Consequently, it is quite benef"
+  },
+  "collected_at": "2026-03-08T04:02:38.658Z"
+}

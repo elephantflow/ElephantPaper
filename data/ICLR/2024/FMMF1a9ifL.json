@@ -1,0 +1,41 @@
+{
+  "id": "FMMF1a9ifL",
+  "or_id": "FMMF1a9ifL",
+  "title": "Gradual Optimization Learning for Conformational Energy Minimization",
+  "title_zh": "",
+  "authors": [
+    "Artem Tsypin",
+    "Leonid Anatolievich Ugadiarov",
+    "Kuzma Khrabrov",
+    "Alexander Telepov",
+    "Egor Rumiantsev",
+    "Alexey Skrynnik",
+    "Aleksandr Panov",
+    "Dmitry P. Vetrov",
+    "Elena Tutubalina",
+    "Artur Kadurin"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Molecular conformation optimization is crucial to computer-aided drug discovery and materials design.\nTraditional energy minimization techniques rely on iterative optimization methods that use molecular forces calculated by a physical simulator (oracle) as anti-gradients.\nHowever, this is a computationally expensive approach that requires many interactions with a physical simulator.\nOne way to accelerate this procedure is to replace the physical simulator with a neural network.\nDespite recent progress in neural networks for molecular conformation energy prediction, such models are prone to errors due to distribution shift, leading to inaccurate energy minimization.\nWe find that the quality of energy minimization with neural networks can be improved by providing optimization trajectories as additional training data.\nStill, obtaining complete optimization trajectories demands a lot of additional computations.\nTo reduce the required additional data, we present the Gradual Optimization Learning Framework (GOLF) for energy minimization with neural networks.\nThe framework consists of an efficient data-collecting scheme and an external optimizer.\nThe external optimizer utilizes gradients from the energy prediction model to generate optimization trajectories, and the data-collecting scheme selects additional training data to be processed by the physical simulator. \nOur results demonstrate that the neural network trained with GOLF performs \\textit{on par} with the oracle on a benchmark of diverse drug-like molecules using significantly less additional data.",
+  "abstract_zh": "",
+  "tldr": "We propose a data-efficient framework for conformational energy minimization with neural networks",
+  "keywords": [
+    "energy minimization",
+    "conformational optimization",
+    "geometry optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=FMMF1a9ifL",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/37b8c4267928b3f02b1f1f1c9df21956eb2c653c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a data-efficient framework for conformational energy minimization with neural networks"
+  },
+  "collected_at": "2026-03-08T04:02:38.655Z"
+}

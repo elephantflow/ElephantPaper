@@ -1,0 +1,37 @@
+{
+  "id": "buC4E91xZE",
+  "or_id": "buC4E91xZE",
+  "title": "AnomalyCLIP: Object-agnostic Prompt Learning for Zero-shot Anomaly Detection",
+  "title_zh": "",
+  "authors": [
+    "Qihang Zhou",
+    "Guansong Pang",
+    "Yu Tian",
+    "Shibo He",
+    "Jiming Chen"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Zero-shot anomaly detection (ZSAD) requires detection models trained using auxiliary\ndata to detect anomalies without any training sample in a target dataset. It\nis a crucial task when training data is not accessible due to various concerns, e.g.,\ndata privacy, yet it is challenging since the models need to generalize to anomalies\nacross different domains where the appearance of foreground objects, abnormal\nregions, and background features, such as defects/tumors on different products/\norgans, can vary significantly. Recently large pre-trained vision-language\nmodels (VLMs), such as CLIP, have demonstrated strong zero-shot recognition\nability in various vision tasks, including anomaly detection. However, their ZSAD\nperformance is weak since the VLMs focus more on modeling the class semantics\nof the foreground objects rather than the abnormality/normality in the images. In\nthis paper we introduce a novel approach, namely AnomalyCLIP, to adapt CLIP\nfor accurate ZSAD across different domains. The key insight of AnomalyCLIP\nis to learn object-agnostic text prompts that capture generic normality and abnormality\nin an image regardless of its foreground objects. This allows our model to\nfocus on the abnormal image regions rather than the object semantics, enabling\ngeneralized normality and abnormality recognition on diverse types of objects.\nLarge-scale experiments on 17 real-world anomaly detection datasets show that\nAnomalyCLIP achieves superior zero-shot performance of detecting and segmenting\nanomalies in datasets of highly diverse class semantics from various defect\ninspection and medical imaging domains. Code will be made available at https://github.com/zqhang/AnomalyCLIP.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel approach, namely AnomalyCLIP, to adapt CLIP for accurate zero-shot anomaly detection.",
+  "keywords": [
+    "Anomaly detection",
+    "Zero-shot anomaly detection",
+    "CLIP",
+    "Industrial defect inspection"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=buC4E91xZE",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c8c456c139a7b7f9cbf659ae062d7e3f9cba1aff.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel approach, namely AnomalyCLIP, to adapt CLIP for accurate zero-shot anomaly detection."
+  },
+  "collected_at": "2026-03-08T04:02:38.656Z"
+}

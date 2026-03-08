@@ -1,0 +1,38 @@
+{
+  "id": "idpV2AqusC",
+  "or_id": "idpV2AqusC",
+  "title": "Improving SAM Requires Rethinking its Optimization Formulation",
+  "title_zh": "",
+  "authors": [
+    "Wanyun Xie",
+    "Fabian Latorre",
+    "Kimon Antonakopoulos",
+    "Thomas Pethick",
+    "Volkan Cevher"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "This paper rethinks Sharpness-Aware Minimization (SAM), which is originally formulated as a zero-sum game where the weights of a network and a bounded perturbation try to minimize/maximize, respectively, the same differentiable loss. We argue that SAM should instead be reformulated using the 0-1 loss, as this provides a tighter bound on its generalization gap. As a continuous relaxation, we follow the simple conventional approach where the minimizing (maximizing) player uses an upper bound (lower bound) surrogate to the 0-1 loss. This leads to a novel formulation of SAM as a bilevel optimization problem, dubbed as BiSAM. Through numerical evidence, we show that BiSAM consistently results in improved performance when compared to the original SAM and variants, while enjoying similar computational complexity.",
+  "abstract_zh": "",
+  "tldr": "We show that it is more natural to cast SAM as a bilevel optimization problem, and demonstrate it leads to better performance.",
+  "keywords": [
+    "Sharpness aware minimization",
+    "generalization",
+    "supervised learning",
+    "optimization",
+    "bilevel optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=idpV2AqusC",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6ec1960fbc936fc045cef6ebdf05c2d58b7ede62.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show that it is more natural to cast SAM as a bilevel optimization problem, and demonstrate it leads to better performance."
+  },
+  "collected_at": "2026-03-08T04:02:38.658Z"
+}

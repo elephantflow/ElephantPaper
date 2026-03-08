@@ -1,0 +1,36 @@
+{
+  "id": "tGEBnSQ0uE",
+  "or_id": "tGEBnSQ0uE",
+  "title": "Sensitivity-Aware Differentially Private Decentralized Learning with Adaptive Noise",
+  "title_zh": "",
+  "authors": [
+    "Zehan Zhu",
+    "Yan Huang",
+    "Xin Wang",
+    "Jinming Xu"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Most existing decentralized learning methods with differential privacy (DP) employ fixed-level Gaussian noise during training, regardless of gradient convergence, which compromises model accuracy without providing additional privacy benefits. In this paper, we propose a novel $\\underline{\\text{D}}$ifferentially $\\underline{\\text{P}}$rivate $\\underline{\\text{D}}$ecentralized learning approach, termed AdaD$^2$P, which employs $\\underline{\\text{Ada}}$ptive noise leveraging the real-time estimation of sensitivity for local updates based on gradient norms and works for time-varying communication topologies. Compared with existing solutions, the integration of adaptive noise enables us to enhance model accuracy while preserving the $(\\epsilon,\\delta)$-privacy budget. We prove that AdaD$^2$P achieves a utility bound of $\\mathcal{O}\\left( \\sqrt{d\\log \\left( \\frac{1}{\\delta} \\right)}/(\\sqrt{n}J\\epsilon) \\right)$, where $J$ and $n$ are the number of local samples and nodes, respectively, and $d$ the dimension of decision variable; this bound matches that of the distributed counterparts with server-client structures, without relying on the stringent bounded gradient assumption commonly used in previous works. Theoretical analysis reveals the inherent advantages of AdaD$^2$P employing adaptive noise as opposed to constant noise.  Extensive experiments on two benchmark datasets demonstrate the superiority of AdaD$^2$P over its counterparts, especially under a strong level of privacy guarantee.",
+  "abstract_zh": "",
+  "tldr": "This paper proposes a novel differentially private decentralized learning method with adaptive DP Gaussian noise and achieves a utility bound matching the sever-client distributed counterpart without relying on the bounded gradient assumption.",
+  "keywords": [
+    "decentralized learning",
+    "differential privacy",
+    "adaptive noise",
+    "time-varying topology"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=tGEBnSQ0uE",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7a395f23aa92e307a9559ba7b807d6583f57caa9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper proposes a novel differentially private decentralized learning method with adaptive DP Gaussian noise and achieves a utility bound matching the sever-client distributed counterpart without relying on the bounded gradient assumption."
+  },
+  "collected_at": "2026-03-08T04:02:38.659Z"
+}
