@@ -1,0 +1,39 @@
+{
+  "id": "pfvcsgFrJ6",
+  "or_id": "pfvcsgFrJ6",
+  "title": "On Causal Discovery in the Presence of Deterministic Relations",
+  "title_zh": "",
+  "authors": [
+    "Loka Li",
+    "Haoyue Dai",
+    "Hanin Al Ghothani",
+    "Biwei Huang",
+    "Jiji Zhang",
+    "Shahar Harel",
+    "Isaac Bentwich",
+    "Guangyi Chen",
+    "Kun Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Many causal discovery methods typically rely on the assumption of independent noise, yet real-life situations often involve deterministic relationships. In these cases, observed variables are represented as deterministic functions of their parental variables without noise.\nWhen determinism is present, constraint-based methods encounter challenges due to the violation of the faithfulness assumption. In this paper, we find, supported by both theoretical analysis and empirical evidence, that score-based methods with exact search can naturally address the issues of deterministic relations under rather mild assumptions. Nonetheless, exact score-based methods can be computationally expensive. To enhance the efficiency and scalability, we develop a novel framework for causal discovery that can detect and handle deterministic relations, called Determinism-aware Greedy Equivalent Search (DGES). DGES comprises three phases: (1) identify minimal deterministic clusters (i.e., a minimal set of variables with deterministic relationships), (2) run modified Greedy Equivalent Search (GES) to obtain an initial graph, and (3) perform exact search exclusively on the deterministic cluster and its neighbors. The proposed DGES accommodates both linear and nonlinear causal relationships, as well as both continuous and discrete data types. Furthermore, we investigate the identifiability conditions of DGES. We conducted extensive experiments on both simulated and real-world datasets to show the efficacy of our proposed method.",
+  "abstract_zh": "",
+  "tldr": "This paper proposes a novel method called DGES to conduct causal discovery with deterministic relations.",
+  "keywords": [
+    "causal discovery",
+    "deterministic relations"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=pfvcsgFrJ6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ce7a7f7e4d625dc499209811e78bd27b12c56ca4.pdf"
+  },
+  "citationCount": 7,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper proposes a novel method called DGES to conduct causal discovery with deterministic relations."
+  },
+  "collected_at": "2026-03-08T22:03:31.311Z"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "7eFS8aZHAM",
+  "or_id": "7eFS8aZHAM",
+  "title": "Dissecting the Failure of Invariant Learning on Graphs",
+  "title_zh": "",
+  "authors": [
+    "Qixun Wang",
+    "Yifei Wang",
+    "Yisen Wang",
+    "Xianghua Ying"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Enhancing node-level Out-Of-Distribution (OOD) generalization on graphs remains a crucial area. In this paper, we develop a Structural Causal Model (SCM) to theoretically dissect the performance of two prominent invariant learning methods--Invariant Risk Minimization (IRM) and Variance-Risk Extrapolation (VREx)--in node-level OOD settings. Our analysis reveals a critical limitation: these methods may struggle to identify invariant features due to the complexities introduced by the message-passing mechanism, which can obscure causal features within a range of neighboring samples. To address this, we propose Cross-environment Intra-class Alignment (CIA), which explicitly eliminates spurious features by aligning representations within the same class, bypassing the need for explicit knowledge of underlying causal patterns. To adapt CIA to node-level OOD scenarios where environment labels are hard to obtain, we further propose CIA-LRA (Localized Reweighting Alignment) that leverages the distribution of neighboring labels to selectively align node representations, effectively distinguishing and preserving invariant features while removing spurious ones, all without relying on environment labels. We theoretically prove CIA-LRA's effectiveness by deriving an OOD generalization error bound based on PAC-Bayesian analysis. Experiments on graph OOD benchmarks validate the superiority of CIA and CIA-LRA, marking a significant advancement in node-level OOD generalization.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Machine Learning",
+    "Out-of-distribution Generalization",
+    "Invariant Learning",
+    "Graph Machine Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=7eFS8aZHAM",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/70976efca44add9f3d5fe0175b030e8119065507.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Enhancing node-level Out-Of-Distribution (OOD) generalization on graphs remains a crucial area. In this paper, we develop a Structural Causal Model (SCM) to theoretically dissect the performance of two prominent invariant learning methods--Invariant Risk Minimization (IRM) and Variance-Risk Extrapol"
+  },
+  "collected_at": "2026-03-08T22:03:32.652Z"
+}
