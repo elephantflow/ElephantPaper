@@ -1,0 +1,34 @@
+{
+  "id": "wnPlJNiqfA",
+  "or_id": "wnPlJNiqfA",
+  "title": "KFNN: K-Free Nearest Neighbor For Crowdsourcing",
+  "title_zh": "",
+  "authors": [
+    "Wenjun Zhang",
+    "Liangxiao Jiang",
+    "Chaoqun Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "To reduce annotation costs, it is common in crowdsourcing to collect only a few noisy labels from different crowd workers for each instance. However, the limited noisy labels restrict the performance of label integration algorithms in inferring the unknown true label for the instance. Recent works have shown that leveraging neighbor instances can help alleviate this problem. Yet, these works all assume that each instance has the same neighborhood size, which defies common sense. To address this gap, we propose a novel label integration algorithm called K-free nearest neighbor (KFNN). In KFNN, the neighborhood size of each instance is automatically determined based on its attributes and noisy labels. Specifically, KFNN initially estimates a Mahalanobis distance distribution from the attribute space to model the relationship between each instance and all classes. This distance distribution is then utilized to enhance the multiple noisy label distribution of each instance. Subsequently, a Kalman filter is designed to mitigate the impact of noise incurred by neighbor instances. Finally, KFNN determines the optimal neighborhood size by the max-margin learning. Extensive experimental results demonstrate that KFNN significantly outperforms all the other state-of-the-art algorithms and exhibits greater robustness in various crowdsourcing scenarios.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel label integration algorithm called K-free nearest neighbor (KFNN).",
+  "keywords": [
+    "Crowdsourcing learning",
+    "Label integration",
+    "K-free nearest neighbor"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=wnPlJNiqfA",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0b3a999c175feae55c108033441b1455e2a2d2d8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel label integration algorithm called K-free nearest neighbor (KFNN)."
+  },
+  "collected_at": "2026-03-09T00:25:17.163Z"
+}

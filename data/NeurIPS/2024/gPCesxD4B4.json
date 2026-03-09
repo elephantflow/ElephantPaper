@@ -1,0 +1,38 @@
+{
+  "id": "gPCesxD4B4",
+  "or_id": "gPCesxD4B4",
+  "title": "GOMAA-Geo: GOal Modality Agnostic Active Geo-localization",
+  "title_zh": "",
+  "authors": [
+    "Anindya Sarkar",
+    "Srikumar Sastry",
+    "Aleksis Pirinen",
+    "Chongjie Zhang",
+    "Nathan Jacobs",
+    "Yevgeniy Vorobeychik"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We consider the task of active geo-localization (AGL) in which an agent uses a sequence of visual cues observed during aerial navigation to find a target specified through multiple possible modalities. This could emulate a UAV involved in a search-and-rescue operation navigating through an area, observing a stream of aerial images as it goes. The AGL task is associated with two important challenges.  Firstly, an agent must deal with a goal specification in one of multiple modalities (e.g., through a natural language description) while the search cues are provided in other modalities (aerial imagery). The second challenge is limited localization time (e.g., limited battery life, urgency) so that the goal must be localized as efficiently as possible, i.e. the agent must effectively leverage its sequentially observed aerial views when searching for the goal. To address these challenges, we propose GOMAA-Geo -- a goal modality agnostic active geo-localization agent -- for zero-shot generalization between different goal modalities. Our approach combines cross-modality contrastive learning to align representations across modalities with supervised foundation model pretraining and reinforcement learning to obtain highly effective navigation and localization policies. Through extensive evaluations, we show that GOMAA-Geo outperforms alternative learnable approaches and that it generalizes across datasets -- e.g., to disaster-hit areas without seeing a single disaster scenario during training -- and goal modalities -- e.g., to ground-level imagery or textual descriptions, despite only being trained with goals specified as aerial views. Our code is available at: https://github.com/mvrl/GOMAA-Geo.",
+  "abstract_zh": "",
+  "tldr": "We tackle the task of active geo-localization, where an agent uses a series of visual cues observed during aerial navigation to locate a target specified via various modalities, while the agent is trained solely on data from a single goal modality.",
+  "keywords": [
+    "Active Geo-localization",
+    "Representation Learning",
+    "Remote Sensing",
+    "Deep Reinforcement Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=gPCesxD4B4",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/cb1199d6a0586a9b1ed9294c942c542d0460974b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We tackle the task of active geo-localization, where an agent uses a series of visual cues observed during aerial navigation to locate a target specified via various modalities, while the agent is trained solely on data from a single goal modality."
+  },
+  "collected_at": "2026-03-09T00:25:17.165Z"
+}

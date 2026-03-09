@@ -1,0 +1,42 @@
+{
+  "id": "thUf6ZBlPp",
+  "or_id": "thUf6ZBlPp",
+  "title": "EigenVI: score-based variational inference with orthogonal function expansions",
+  "title_zh": "",
+  "authors": [
+    "Diana Cai",
+    "Chirag Modi",
+    "Charles Margossian",
+    "Robert M. Gower",
+    "David Blei",
+    "Lawrence K. Saul"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "We develop EigenVI, an eigenvalue-based approach for black-box variational inference (BBVI). EigenVI constructs its variational approximations from orthogonal function expansions. For distributions over $\\mathbb{R}^D$, the lowest order term in these expansions provides a Gaussian variational approximation, while higher-order terms provide a systematic way to model non-Gaussianity. These approximations are flexible enough to model complex distributions (multimodal, asymmetric), but they are simple enough that one can calculate their low-order moments and draw samples from them. EigenVI can also model other types of random variables (e.g., nonnegative, bounded) by constructing variational approximations from different families of orthogonal functions. Within these families, EigenVI computes the variational approximation that best matches the score function of the target distribution by minimizing a stochastic estimate of the Fisher divergence. Notably, this optimization reduces to solving a minimum eigenvalue problem, so that EigenVI effectively sidesteps the iterative gradient-based optimizations that are required for many other BBVI algorithms. (Gradient-based methods can be sensitive to learning rates, termination criteria, and other tunable hyperparameters.) We use EigenVI to approximate a variety of target distributions, including a benchmark suite of Bayesian models from posteriordb. On these distributions, we find that EigenVI is more accurate than existing methods for Gaussian BBVI.",
+  "abstract_zh": "",
+  "tldr": "EigenVI uses score matching with flexible yet tractable variational families built using orthogonal function expansions and reduces to an eigenvalue problem.",
+  "keywords": [
+    "variational inference",
+    "black-box variational inference",
+    "Bayesian inference",
+    "probabilistic modeling",
+    "score-based divergence",
+    "score matching",
+    "non-Gaussian variational families"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=thUf6ZBlPp",
+    "arxiv": "https://arxiv.org/abs/2410.24054",
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3a5a8652ca4682261561100d0bf891d9086e2f30.pdf"
+  },
+  "citationCount": 12,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "EigenVI uses score matching with flexible yet tractable variational families built using orthogonal function expansions and reduces to an eigenvalue problem."
+  },
+  "collected_at": "2026-03-09T00:25:16.120Z"
+}
