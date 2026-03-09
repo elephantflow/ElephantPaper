@@ -1,0 +1,36 @@
+{
+  "id": "HmMSBhMAw4",
+  "or_id": "HmMSBhMAw4",
+  "title": "Periodic agent-state based Q-learning for POMDPs",
+  "title_zh": "",
+  "authors": [
+    "Amit Sinha",
+    "Matthieu Geist",
+    "Aditya Mahajan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The standard approach for Partially Observable Markov Decision Processes (POMDPs) is to convert them to a fully observed belief-state MDP. However, the belief state depends on the system model and is therefore not viable in reinforcement learning (RL) settings. A widely used alternative is to use an agent state, which is a model-free, recursively updateable function of the observation history. Examples include frame stacking and recurrent neural networks. Since the agent state is model-free, it is used to adapt standard RL algorithms to POMDPs. However, standard RL algorithms like Q-learning learn a stationary policy. Our main thesis that we illustrate via examples is that because the agent state does not satisfy the Markov property, non-stationary agent-state based policies can outperform stationary ones. To leverage this feature, we propose PASQL (periodic agent-state based Q-learning), which is a variant of agent-state-based Q-learning that learns periodic policies. By combining ideas from periodic Markov chains and stochastic approximation, we rigorously establish that PASQL converges to a cyclic limit and characterize the approximation error of the converged periodic policy. Finally, we present a numerical experiment to highlight the salient features of PASQL and demonstrate the benefit of learning periodic policies over stationary policies.",
+  "abstract_zh": "",
+  "tldr": "Periodicity helps in agent-state based RL in POMDPs because agent-states are not Markov.",
+  "keywords": [
+    "POMDPs",
+    "RL",
+    "Q-learning",
+    "non-stationary policies",
+    "non-Markovian environments"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=HmMSBhMAw4",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/cf78eb41e789b603bf45637ea244ab536b64cfbe.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Periodicity helps in agent-state based RL in POMDPs because agent-states are not Markov."
+  },
+  "collected_at": "2026-03-09T02:45:19.933Z"
+}

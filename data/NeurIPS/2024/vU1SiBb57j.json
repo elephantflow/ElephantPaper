@@ -1,0 +1,38 @@
+{
+  "id": "vU1SiBb57j",
+  "or_id": "vU1SiBb57j",
+  "title": "Learning Multimodal Behaviors from Scratch with Diffusion Policy Gradient",
+  "title_zh": "",
+  "authors": [
+    "Zechu Li",
+    "Rickmer Krohn",
+    "Tao Chen",
+    "Anurag Ajay",
+    "Pulkit Agrawal",
+    "Georgia Chalvatzaki"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Deep reinforcement learning (RL) algorithms typically parameterize the policy as a deep network that outputs either a deterministic action or a stochastic one modeled as a Gaussian distribution, hence restricting learning to a single behavioral mode. Meanwhile, diffusion models emerged as a powerful framework for multimodal learning. However, the use of diffusion policies in online RL is hindered by the intractability of policy likelihood approximation, as well as the greedy objective of RL methods that can easily skew the policy to a single mode. This paper presents Deep Diffusion Policy Gradient (DDiffPG), a novel actor-critic algorithm that learns from scratch multimodal policies parameterized as diffusion models while discovering and maintaining versatile behaviors. DDiffPG explores and discovers multiple modes through off-the-shelf unsupervised clustering combined with novelty-based intrinsic motivation. DDiffPG forms a multimodal training batch and utilizes mode-specific Q-learning to mitigate the inherent greediness of the RL objective, ensuring the improvement of the diffusion policy across all modes. Our approach further allows the policy to be conditioned on mode-specific embeddings to explicitly control the learned modes. Empirical studies validate DDiffPG's capability to master multimodal behaviors in complex, high-dimensional continuous control tasks with sparse rewards, also showcasing proof-of-concept dynamic online replanning when navigating mazes with unseen obstacles. Our project page is available at https://supersglzc.github.io/projects/ddiffpg/.",
+  "abstract_zh": "",
+  "tldr": "Deep Diffusion Policy Gradient is a novel RL algorithm that successfully trains diffusion policies online, discovering and maintaining multimodal behaviors in complex environments.",
+  "keywords": [
+    "Reinforcement Learning",
+    "Diffusion Model",
+    "Multimodal Learning",
+    "Unsupervised Skill Discovery"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=vU1SiBb57j",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c1d49e0a18ba30e91f8393bb7381467ee4dc0bc6.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Deep Diffusion Policy Gradient is a novel RL algorithm that successfully trains diffusion policies online, discovering and maintaining multimodal behaviors in complex environments."
+  },
+  "collected_at": "2026-03-09T02:45:19.934Z"
+}

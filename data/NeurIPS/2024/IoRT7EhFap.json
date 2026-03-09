@@ -1,0 +1,33 @@
+{
+  "id": "IoRT7EhFap",
+  "or_id": "IoRT7EhFap",
+  "title": "Addressing Spectral Bias of Deep Neural Networks by Multi-Grade Deep Learning",
+  "title_zh": "",
+  "authors": [
+    "Ronglong Fang",
+    "Yuesheng Xu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Deep neural networks (DNNs) have showcased their remarkable precision in approximating smooth functions. However, they suffer from the {\\it spectral bias}, wherein DNNs typically exhibit a tendency to prioritize the learning of lower-frequency components of a function, struggling to effectively capture its high-frequency features. This paper is to address this issue. Notice that a function having only low frequency components may be well-represented by a shallow neural network (SNN), a network having only a few layers. By observing that composition of low frequency functions can effectively approximate a high-frequency function, we propose to learn a function containing high-frequency components by composing several SNNs, each of which learns certain low-frequency information from the given data. We implement the proposed idea by exploiting the multi-grade deep learning (MGDL) model, a recently introduced model that trains a DNN incrementally, grade by grade, a current grade learning from the residue of the previous grade only an SNN (with trainable parameters) composed with the SNNs (with fixed parameters) trained in the preceding grades as features. We apply MGDL to synthetic, manifold, colored images, and MNIST datasets, all characterized by presence of high-frequency features. Our study reveals that MGDL excels at representing functions containing high-frequency information. Specifically, the neural networks learned in each grade adeptly capture some low-frequency information, allowing their compositions with SNNs learned in the previous grades effectively representing the high-frequency features. Our experimental results underscore the efficacy of MGDL in addressing the spectral bias inherent in DNNs. By leveraging MGDL, we offer insights into overcoming spectral bias limitation of DNNs, thereby enhancing the performance and applicability of deep learning models in tasks requiring the representation of high-frequency information. This study confirms that the pr",
+  "abstract_zh": "",
+  "tldr": "This paper addresses the spectral bias issue of deep neural networks by multi-grade deep learning.",
+  "keywords": [
+    "deep neural network",
+    "spectral bias",
+    "multi-grade deep learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=IoRT7EhFap",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7c1832b55ff98718216586022306db75081c62a3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper addresses the spectral bias issue of deep neural networks by multi-grade deep learning."
+  },
+  "collected_at": "2026-03-09T02:45:19.934Z"
+}

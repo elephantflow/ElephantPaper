@@ -1,0 +1,35 @@
+{
+  "id": "XkvNQPDFqV",
+  "or_id": "XkvNQPDFqV",
+  "title": "Random Cycle Coding: Lossless Compression of Cluster Assignments via Bits-Back Coding",
+  "title_zh": "",
+  "authors": [
+    "Daniel Severo",
+    "Ashish J Khisti",
+    "Alireza Makhzani"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We present an optimal method for encoding cluster assignments of arbitrary data sets. Our method, Random Cycle Coding (RCC), encodes data sequentially and sends assignment information as cycles of the permutation defined by the order of encoded elements. RCC does not require any training and its worst-case complexity scales quasi-linearly with the size of the largest cluster. We characterize the achievable bit rates as a function of cluster sizes and number of elements, showing RCC consistently outperforms previous methods while requiring less compute and memory resources. Experiments show RCC can save up to $2$ bytes per element when applied to vector databases, and removes the need for assigning integer ids to identify vectors, translating to savings of up to $70\\%$ in vector database systems for similarity search applications.",
+  "abstract_zh": "",
+  "tldr": "We encode cluster assignments, indicating which cluster a data point belongs to, without creating labels. The information is implicit in the ordering of the dataset. This results in significant memory savings for vector database and applications.",
+  "keywords": [
+    "compression",
+    "vector databases",
+    "clustering",
+    "permutations"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=XkvNQPDFqV",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/17ec4273a2f1dccfb09e5e33384223bd18983e2b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We encode cluster assignments, indicating which cluster a data point belongs to, without creating labels. The information is implicit in the ordering of the dataset. This results in significant memory savings for vector database and applications."
+  },
+  "collected_at": "2026-03-09T02:45:19.932Z"
+}
