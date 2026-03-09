@@ -1,0 +1,33 @@
+{
+  "id": "yzviAnpvU6",
+  "or_id": "yzviAnpvU6",
+  "title": "ReLIZO: Sample Reusable Linear Interpolation-based Zeroth-order Optimization",
+  "title_zh": "",
+  "authors": [
+    "Xiaoxing Wang",
+    "Xiaohan Qin",
+    "Xiaokang Yang",
+    "Junchi Yan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Gradient estimation is critical in zeroth-order optimization methods, which aims to obtain the descent direction by sampling update directions and querying function evaluations. Extensive research has been conducted including smoothing and linear interpolation. The former methods smooth the objective function, causing a biased gradient estimation, while the latter often enjoys more accurate estimates, at the cost of large amounts of samples and queries at each iteration to update variables. This paper resorts to the linear interpolation strategy and proposes to reduce the complexity of gradient estimation by reusing queries in the prior iterations while maintaining the sample size unchanged. Specifically, we model the gradient estimation as a quadratically constrained linear program problem and manage to derive the analytical solution. It innovatively decouples the required sample size from the variable dimension without extra conditions required, making it able to leverage the queries in the prior iterations. Moreover, part of the intermediate variables that contribute to the gradient estimation can be directly indexed, significantly reducing the computation complexity. Experiments on both simulation functions and real scenarios (black-box adversarial attacks neural architecture search, and parameter-efficient fine-tuning for large language models), show its efficacy and efficiency. Our code is available at https://github.com/Thinklab-SJTU/ReLIZO.git.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Zero-order Optimization; Linear Interpolation; Reusing Strategy;"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=yzviAnpvU6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fc7ea3437f516b19fb6feff0c372deeda8df7019.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Gradient estimation is critical in zeroth-order optimization methods, which aims to obtain the descent direction by sampling update directions and querying function evaluations. Extensive research has been conducted including smoothing and linear interpolation. The former methods smooth the objectiv"
+  },
+  "collected_at": "2026-03-09T06:25:16.489Z"
+}

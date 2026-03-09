@@ -1,0 +1,38 @@
+{
+  "id": "VIqQSFNjyP",
+  "or_id": "VIqQSFNjyP",
+  "title": "Connectivity-Driven Pseudo-Labeling Makes Stronger Cross-Domain Segmenters",
+  "title_zh": "",
+  "authors": [
+    "Dong Zhao",
+    "Qi Zang",
+    "Shuang Wang",
+    "Nicu Sebe",
+    "Zhun Zhong"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Presently, pseudo-labeling stands as a prevailing approach in cross-domain semantic segmentation, enhancing model efficacy by training with pixels assigned with reliable pseudo-labels.  However, we identify two key limitations within this paradigm: (1) under relatively severe domain shifts, most selected reliable pixels appear speckled and remain noisy. (2) when dealing with wild data, some pixels belonging to the open-set class may exhibit high confidence and also appear speckled. These two points make it difficult for the pixel-level selection mechanism to identify and correct these speckled close- and open-set noises. As a result, error accumulation is continuously introduced into subsequent self-training, leading to inefficiencies in pseudo-labeling. To address these limitations, we propose a novel method called Semantic Connectivity-driven Pseudo-labeling (SeCo).  SeCo formulates pseudo-labels at the connectivity level, which makes it easier to locate and correct closed and open set noise. Specifically, SeCo comprises two key components: Pixel Semantic Aggregation (PSA) and Semantic Connectivity Correction (SCC). Initially, PSA categorizes semantics into ``stuff'' and ``things'' categories and aggregates speckled pseudo-labels into semantic connectivity through efficient interaction with the Segment Anything Model (SAM).  This enables us not only to obtain accurate boundaries but also simplifies noise localization. Subsequently, SCC introduces a simple connectivity classification task, which enables us to locate and correct connectivity noise with the guidance of loss distribution. Extensive experiments demonstrate that SeCo can be flexibly applied to various cross-domain semantic segmentation tasks, \\textit{i.e.} domain generalization and domain adaptation,  even including source-free, and black-box domain adaptation, significantly improving the performance of existing state-of-the-art methods. The code is provided in the appendix and will be open-source.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Domain adaptation",
+    "Domain generalization",
+    "Semantic segmentation",
+    "Denoising",
+    "Segment anything model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=VIqQSFNjyP",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e0b827ff76f6a06b6237392d9b5c01b9d1ec8283.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Presently, pseudo-labeling stands as a prevailing approach in cross-domain semantic segmentation, enhancing model efficacy by training with pixels assigned with reliable pseudo-labels.  However, we identify two key limitations within this paradigm: (1) under relatively severe domain shifts, most sel"
+  },
+  "collected_at": "2026-03-09T06:25:16.491Z"
+}

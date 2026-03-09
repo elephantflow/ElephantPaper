@@ -1,0 +1,38 @@
+{
+  "id": "mdWz5koY5p",
+  "or_id": "mdWz5koY5p",
+  "title": "RGMDT: Return-Gap-Minimizing Decision Tree Extraction in Non-Euclidean Metric Space",
+  "title_zh": "",
+  "authors": [
+    "Jingdi Chen",
+    "Hanhan Zhou",
+    "Yongsheng Mei",
+    "Carlee Joe-Wong",
+    "Gina Adam",
+    "Nathaniel D. Bastian",
+    "Tian Lan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Deep Reinforcement Learning (DRL) algorithms have achieved great success in solving many challenging tasks while their black-box nature hinders interpretability and real-world applicability, making it difficult for human experts to interpret and understand DRL policies. \nExisting works on interpretable reinforcement learning have shown promise in extracting decision tree (DT) based policies from DRL policies with most focus on the single-agent settings while prior attempts to introduce DT policies in multi-agent scenarios mainly focus on heuristic designs which do not provide any quantitative guarantees on the expected return.\nIn this paper, we establish an upper bound on the return gap between the oracle expert policy and an optimal decision tree policy. This enables us to recast the DT extraction problem into a novel non-euclidean clustering problem over the local observation and action values space of each agent, with action values as cluster labels and the upper bound on the return gap as clustering loss.\nBoth the algorithm and the upper bound are extended to multi-agent decentralized DT extractions by an iteratively-grow-DT procedure guided by an action-value function conditioned on the current DTs of other agents. Further, we propose the Return-Gap-Minimization Decision Tree (RGMDT) algorithm, which is a surprisingly simple design and is integrated with reinforcement learning through the utilization of a novel Regularized Information Maximization loss. Evaluations on tasks like D4RL show that RGMDT significantly outperforms heuristic DT-based baselines and can achieve nearly optimal returns under given DT complexity constraints (e.g., maximum number of DT nodes).",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Multi-agent Reinforcement Learning",
+    "Decision Tree",
+    "Explainable AI"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=mdWz5koY5p",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/41ac0f4467bcfc63a3fb68d7ce0f9cbeeaf0bbd9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Deep Reinforcement Learning (DRL) algorithms have achieved great success in solving many challenging tasks while their black-box nature hinders interpretability and real-world applicability, making it difficult for human experts to interpret and understand DRL policies. \nExisting works on interpreta"
+  },
+  "collected_at": "2026-03-09T06:25:16.488Z"
+}

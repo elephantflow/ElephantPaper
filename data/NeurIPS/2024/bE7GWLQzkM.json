@@ -1,0 +1,33 @@
+{
+  "id": "bE7GWLQzkM",
+  "or_id": "bE7GWLQzkM",
+  "title": "Disentangling and mitigating the impact of task similarity for continual learning",
+  "title_zh": "",
+  "authors": [
+    "Naoki Hiratani"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Continual learning of partially similar tasks poses a challenge for artificial neural networks, as task similarity presents both an opportunity for knowledge transfer and a risk of interference and catastrophic forgetting.\nHowever, it remains unclear how task similarity in input features and readout patterns influences knowledge transfer and forgetting, as well as how they interact with common algorithms for continual learning.\nHere, we develop a linear teacher-student model with latent structure and show analytically that high input feature similarity coupled with low readout similarity is catastrophic for both knowledge transfer and retention. \nConversely, the opposite scenario is relatively benign. \nOur analysis further reveals that task-dependent activity gating improves knowledge retention at the expense of transfer, while task-dependent plasticity gating does not affect either retention or transfer performance at the over-parameterized limit. \nIn contrast, weight regularization based on the Fisher information metric significantly improves retention, regardless of task similarity, without compromising transfer performance. Nevertheless, its diagonal approximation and regularization in the Euclidean space are much less robust against task similarity. \nWe demonstrate consistent results in a permuted MNIST task with latent variables. Overall, this work provides insights into when continual learning is difficult and how to mitigate it.",
+  "abstract_zh": "",
+  "tldr": "Continual learning is difficult when the two tasks share more input features than readout patterns, but there are ways to mitigate it.",
+  "keywords": [
+    "Continual learning",
+    "Teacher-student model",
+    "Lifelong learning",
+    "Brain-inspired"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=bE7GWLQzkM",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a615623ba5e9b57a77694d9816984ebb20ebf11f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Continual learning is difficult when the two tasks share more input features than readout patterns, but there are ways to mitigate it."
+  },
+  "collected_at": "2026-03-09T06:25:16.488Z"
+}

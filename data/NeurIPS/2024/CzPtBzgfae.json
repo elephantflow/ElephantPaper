@@ -1,0 +1,39 @@
+{
+  "id": "CzPtBzgfae",
+  "or_id": "CzPtBzgfae",
+  "title": "Don't Compress Gradients in Random Reshuffling: Compress Gradient Differences",
+  "title_zh": "",
+  "authors": [
+    "Abdurakhmon Sadiev",
+    "Grigory Malinovsky",
+    "Eduard Gorbunov",
+    "Igor Sokolov",
+    "Ahmed Khaled",
+    "Konstantin Pavlovich Burlachenko",
+    "Peter Richtárik"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Gradient compression is a popular technique for improving communication complexity of stochastic first-order methods in distributed training of machine learning models. However, the existing works consider only with-replacement sampling of stochastic gradients. In contrast, it is well-known in practice and recently confirmed in theory that stochastic methods based on without-replacement sampling, e.g., Random Reshuffling (RR) method, perform better than ones that sample the gradients with-replacement. In this work, we close this gap in the literature and provide the first analysis of methods with gradient compression and without-replacement sampling. We first develop a distributed variant of random reshuffling with gradient compression (Q-RR), and show how to reduce the variance coming from gradient quantization through the use of control iterates. Next, to have a better fit to Federated Learning applications, we incorporate local computation and propose a variant of Q-RR called Q-NASTYA. Q-NASTYA uses local gradient steps and different local and global stepsizes. Next, we show how to reduce compression variance in this setting as well. Finally, we prove the convergence results for the proposed methods and outline several settings in which they improve upon existing algorithms.",
+  "abstract_zh": "",
+  "tldr": "In this paper we introduce an improved method that utilizes communication compression with variance reduction and sampling without replacement.",
+  "keywords": [
+    "Random reshuffling",
+    "communication compression",
+    "distributed optimization",
+    "Federated Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=CzPtBzgfae",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5b46b7f13f760a5ccbe55baeb34675ba84df08dd.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In this paper we introduce an improved method that utilizes communication compression with variance reduction and sampling without replacement."
+  },
+  "collected_at": "2026-03-09T06:25:16.490Z"
+}

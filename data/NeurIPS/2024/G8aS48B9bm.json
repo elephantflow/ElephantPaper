@@ -1,0 +1,36 @@
+{
+  "id": "G8aS48B9bm",
+  "or_id": "G8aS48B9bm",
+  "title": "Byzantine Robustness and Partial Participation Can Be Achieved at Once: Just Clip Gradient Differences",
+  "title_zh": "",
+  "authors": [
+    "Grigory Malinovsky",
+    "Peter Richtárik",
+    "Samuel Horváth",
+    "Eduard Gorbunov"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Distributed learning has emerged as a leading paradigm for training large machine learning models. However, in real-world scenarios, participants may be unreliable or malicious, posing a significant challenge to the integrity and accuracy of the trained models. Byzantine fault tolerance mechanisms have been proposed to address these issues, but they often assume full participation from all clients, which is not always practical due to the unavailability of some clients or communication constraints. In our work, we propose the first distributed method with client sampling and provable tolerance to Byzantine workers. The key idea behind the developed method is the use of gradient clipping to control stochastic gradient differences in recursive variance reduction. This allows us to bound the potential harm caused by Byzantine workers, even during iterations when all sampled clients are Byzantine. Furthermore, we incorporate communication compression into the method to enhance communication efficiency. Under general assumptions, we prove convergence rates for the proposed method that match the existing state-of-the-art (SOTA) theoretical results. We also propose a heuristic on how to adjust any Byzantine-robust method to a partial participation scenario via clipping.",
+  "abstract_zh": "",
+  "tldr": "In this work we introduce a novel approach how to handle byzantine workers in partial participation regime, when they can form majority.",
+  "keywords": [
+    "Byzantine robustness",
+    "distributed optimization",
+    "communication compression",
+    "non-convex optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=G8aS48B9bm",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/80db342360af43ad116fa66a85baa7ae2276fe30.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In this work we introduce a novel approach how to handle byzantine workers in partial participation regime, when they can form majority."
+  },
+  "collected_at": "2026-03-09T06:25:16.490Z"
+}
