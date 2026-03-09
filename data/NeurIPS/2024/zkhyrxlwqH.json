@@ -1,0 +1,39 @@
+{
+  "id": "zkhyrxlwqH",
+  "or_id": "zkhyrxlwqH",
+  "title": "Unsupervised Homography Estimation on Multimodal Image Pair via Alternating Optimization",
+  "title_zh": "",
+  "authors": [
+    "Sanghyeob Song",
+    "Jaihyun Lew",
+    "Hyemi Jang",
+    "Sungroh Yoon"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Estimating the homography between two images is crucial for mid- or high-level vision tasks, such as image stitching and fusion. However, using supervised learning methods is often challenging or costly due to the difficulty of collecting ground-truth data. In response, unsupervised learning approaches have emerged. Most early methods, though, assume that the given image pairs are from the same camera or have minor lighting differences. Consequently, while these methods perform effectively under such conditions, they generally fail when input image pairs come from different domains, referred to as multimodal image pairs.\nTo address these limitations, we propose AltO, an unsupervised learning framework for estimating homography in multimodal image pairs. Our method employs a two-phase alternating optimization framework, similar to Expectation-Maximization (EM), where one phase reduces the geometry gap and the other addresses the modality gap. To handle these gaps, we use Barlow Twins loss for the modality gap and propose an extended version, Geometry Barlow Twins, for the geometry gap. As a result, we demonstrate that our method, AltO, can be trained on multimodal datasets without any ground-truth data. It not only outperforms other unsupervised methods but is also compatible with various architectures of homography estimators.\nThe source code can be found at: https://github.com/songsang7/AltO",
+  "abstract_zh": "",
+  "tldr": "We introduce an unsupervised framework for estimating homography in multimodal images, improving performance by using a two-phase optimization and Barlow Twins loss.",
+  "keywords": [
+    "Homography Estimation",
+    "Unsupervised Learning",
+    "Cross Domain",
+    "Image Registration",
+    "Image Alignment",
+    "Multimodal",
+    "Alternating Optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=zkhyrxlwqH",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/dbd7c26b2dae2f1c86abaa70a60fb6e9e683d675.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce an unsupervised framework for estimating homography in multimodal images, improving performance by using a two-phase optimization and Barlow Twins loss."
+  },
+  "collected_at": "2026-03-09T04:45:16.196Z"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "7j6xgGj5lF",
+  "or_id": "7j6xgGj5lF",
+  "title": "Initializing Variable-sized Vision Transformers from Learngene with Learnable Transformation",
+  "title_zh": "",
+  "authors": [
+    "Shiyu Xia",
+    "Yuankun Zu",
+    "Xu Yang",
+    "Xin Geng"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In practical scenarios, it is necessary to build variable-sized models to accommodate diverse resource constraints, where weight initialization serves as a crucial step preceding training. The recently introduced Learngene framework firstly learns one compact module, termed learngene, from a large well-trained model, and then transforms learngene to initialize variable-sized models. However, the existing Learngene methods provide limited guidance on transforming learngene, where transformation mechanisms are manually designed and generally lack a learnable component. Moreover, these methods only consider transforming learngene along depth dimension, thus constraining the flexibility of learngene. Motivated by these concerns, we propose a novel and effective Learngene approach termed LeTs (Learnable Transformation), where we transform the learngene module along both width and depth dimension with a set of learnable matrices for flexible variablesized model initialization. Specifically, we construct an auxiliary model comprising the compact learngene module and learnable transformation matrices, enabling both components to be trained. To meet the varying size requirements of target models, we select specific parameters from well-trained transformation matrices to adaptively transform the learngene, guided by strategies such as continuous selection and magnitude-wise selection. Extensive experiments on ImageNet-1K demonstrate that Des-Nets initialized via LeTs outperform those with 100-epoch from scratch training after only 1 epoch tuning. When transferring to downstream image classification tasks, LeTs achieves better results while outperforming from scratch training after about 10 epochs within a 300-epoch training schedule.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Parameter initialization",
+    "Learngene"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=7j6xgGj5lF",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f1ca0af821faf3e735d643be7ac69a386dc3c717.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In practical scenarios, it is necessary to build variable-sized models to accommodate diverse resource constraints, where weight initialization serves as a crucial step preceding training. The recently introduced Learngene framework firstly learns one compact module, termed learngene, from a large w"
+  },
+  "collected_at": "2026-03-09T04:45:16.196Z"
+}

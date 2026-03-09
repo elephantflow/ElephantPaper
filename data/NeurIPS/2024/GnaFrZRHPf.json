@@ -1,0 +1,38 @@
+{
+  "id": "GnaFrZRHPf",
+  "or_id": "GnaFrZRHPf",
+  "title": "Adaptive Preference Scaling for Reinforcement Learning with Human Feedback",
+  "title_zh": "",
+  "authors": [
+    "Ilgee Hong",
+    "Zichong Li",
+    "Alexander Bukharin",
+    "Yixiao Li",
+    "Haoming Jiang",
+    "Tianbao Yang",
+    "Tuo Zhao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Reinforcement learning from human feedback (RLHF) is a prevalent approach to align AI systems with human values by learning rewards from human preference data. Due to various reasons, however, such data typically takes the form of rankings over pairs of trajectory segments, which fails to capture the varying strengths of preferences across different pairs. In this paper, we propose a novel adaptive preference loss, underpinned by distributionally robust optimization (DRO), designed to address this uncertainty in preference strength. By incorporating an adaptive scaling parameter into the loss for each pair, our method increases the flexibility of the reward function. Specifically, it assigns small scaling parameters to pairs with ambiguous preferences, leading to more comparable rewards, and large scaling parameters to those with clear preferences for more distinct rewards. Computationally, our proposed loss function is strictly convex and univariate with respect to each scaling parameter, enabling its efficient optimization through a simple second-order algorithm. Our method is versatile and can be readily adapted to various preference optimization frameworks, including direct preference optimization (DPO). Our experiments with robotic control and natural language generation with large language models (LLMs) show that our method not only improves policy performance but also aligns reward function selection more closely with policy optimization, simplifying the hyperparameter tuning process.",
+  "abstract_zh": "",
+  "tldr": "We propose a new adaptive preference loss for RLHF.",
+  "keywords": [
+    "Reinforcement Learning from Human Feedback",
+    "Large Language Models",
+    "Alignment"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=GnaFrZRHPf",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/eaa267a47dd2c488be1aad5e49a25710d060880a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a new adaptive preference loss for RLHF."
+  },
+  "collected_at": "2026-03-09T04:45:16.197Z"
+}

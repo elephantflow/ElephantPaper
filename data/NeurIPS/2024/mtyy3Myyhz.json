@@ -1,0 +1,36 @@
+{
+  "id": "mtyy3Myyhz",
+  "or_id": "mtyy3Myyhz",
+  "title": "S2HPruner: Soft-to-Hard Distillation Bridges the Discretization Gap in Pruning",
+  "title_zh": "",
+  "authors": [
+    "Weihao Lin",
+    "Shengji Tang",
+    "Chong Yu",
+    "Peng Ye",
+    "Tao Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recently, differentiable mask pruning methods optimize the continuous relaxation architecture (soft network) as the proxy of the pruned discrete network (hard network) for superior sub-architecture search. However, due to the agnostic impact of the discretization process, the hard network struggles with the equivalent representational capacity as the soft network, namely discretization gap, which severely spoils the pruning performance. In this paper, we first investigate the discretization gap and propose a novel structural differentiable mask pruning framework named S2HPruner to bridge the discretization gap in a one-stage manner. In the training procedure, SH2Pruner forwards both the soft network and its corresponding hard network, then distills the hard network under the supervision of the soft network. To optimize the mask and prevent performance degradation, we propose a decoupled bidirectional knowledge distillation. It blocks the weight updating from the hard to the soft network while maintaining the gradient corresponding to the mask. Compared with existing pruning arts, S2HPruner achieves surpassing pruning performance without fine-tuning on comprehensive benchmarks, including CIFAR-100, Tiny ImageNet, and ImageNet with a variety of network architectures. Besides, investigation and analysis experiments explain the effectiveness of S2HPruner. Codes will be released soon.",
+  "abstract_zh": "",
+  "tldr": "A novel differentiable mask pruning method  to alleviate discretization gap",
+  "keywords": [
+    "model pruning",
+    "knowledge distillation",
+    "model compression"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=mtyy3Myyhz",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/109cc2aaecb1682c381e6f746e4bcf164254f641.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A novel differentiable mask pruning method  to alleviate discretization gap"
+  },
+  "collected_at": "2026-03-09T04:45:16.196Z"
+}
