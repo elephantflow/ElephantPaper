@@ -1,0 +1,38 @@
+{
+  "id": "08A6X7FSTs",
+  "or_id": "08A6X7FSTs",
+  "title": "Director3D: Real-world Camera Trajectory and 3D Scene Generation from Text",
+  "title_zh": "",
+  "authors": [
+    "Xinyang Li",
+    "Zhangyu Lai",
+    "Linning Xu",
+    "Yansong Qu",
+    "Liujuan Cao",
+    "Shengchuan Zhang",
+    "Bo Dai",
+    "Rongrong Ji"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recent advancements in 3D generation have leveraged synthetic datasets with ground truth 3D assets and predefined camera trajectories. However, the potential of adopting real-world datasets, which can produce significantly more realistic 3D scenes, remains largely unexplored. In this work, we delve into the key challenge of the complex and scene-specific camera trajectories found in real-world captures. We introduce Director3D, a robust open-world text-to-3D generation framework, designed to generate both real-world 3D scenes and adaptive camera trajectories. To achieve this, (1) we first utilize a Trajectory Diffusion Transformer, acting as the \\emph{Cinematographer}, to model the distribution of camera trajectories based on textual descriptions. Next, a Gaussian-driven Multi-view Latent Diffusion Model serves as the \\emph{Decorator}, modeling the image sequence distribution given the camera trajectories and texts. This model, fine-tuned from a 2D diffusion model, directly generates pixel-aligned 3D Gaussians as an immediate 3D scene representation for consistent denoising. Lastly, the 3D Gaussians are further refined by a novel SDS++ loss as the \\emph{Detailer}, which incorporates the prior of the 2D diffusion model. Extensive experiments demonstrate that Director3D outperforms existing methods, offering superior performance in real-world 3D generation.",
+  "abstract_zh": "",
+  "tldr": "automatically generate realistic 3D scenes and camera trajectories from texts",
+  "keywords": [
+    "Text-to-3D Scene Generation",
+    "Latent Diffusion Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=08A6X7FSTs",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7d0e61c2f52b953842ed9561fdffaa8dd330d197.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "automatically generate realistic 3D scenes and camera trajectories from texts"
+  },
+  "collected_at": "2026-03-09T03:45:13.529Z"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "Nv0Vvz588D",
+  "or_id": "Nv0Vvz588D",
+  "title": "Streaming Bayes GFlowNets",
+  "title_zh": "",
+  "authors": [
+    "Tiago Silva",
+    "Daniel Augusto de Souza",
+    "Diego Mesquita"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Bayes' rule naturally allows for inference refinement in a streaming fashion, without the need to recompute posteriors from scratch whenever new data arrives. In principle, Bayesian streaming is straightforward: we update our prior with the available data and use the resulting posterior as a prior when processing the next data chunk. In practice, however, this recipe entails i) approximating an intractable posterior at each time step; and ii) encapsulating results appropriately to allow for posterior propagation. For continuous state spaces, variational inference (VI) is particularly convenient due to its scalability and the tractability of variational posteriors, For discrete state spaces, however, state-of-the-art VI results in analytically intractable approximations that are ill-suited for streaming settings. To enable streaming Bayesian inference over discrete parameter spaces, we propose streaming Bayes GFlowNets (abbreviated as SB-GFlowNets) by leveraging the recently proposed GFlowNets --- a powerful class of amortized samplers for discrete compositional objects. Notably, SB-GFlowNet approximates the initial posterior using a standard GFlowNet and subsequently updates it using a tailored procedure that requires only the newly observed data. Our case studies in linear preference learning and phylogenetic inference showcase the effectiveness of SB-GFlowNets in sampling from an unnormalized posterior in a streaming setting. As expected, we also observe that SB-GFlowNets is significantly faster than repeatedly training a GFlowNet from scratch to sample from the full posterior.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "GFlowNets",
+    "Streaming VI"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Nv0Vvz588D",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2d512f521a413b3ed49ebfe14d93d839a48bc0cc.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Bayes' rule naturally allows for inference refinement in a streaming fashion, without the need to recompute posteriors from scratch whenever new data arrives. In principle, Bayesian streaming is straightforward: we update our prior with the available data and use the resulting posterior as a prior w"
+  },
+  "collected_at": "2026-03-09T03:45:13.529Z"
+}

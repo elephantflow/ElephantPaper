@@ -1,0 +1,35 @@
+{
+  "id": "GCmmy4At6i",
+  "or_id": "GCmmy4At6i",
+  "title": "Lightweight Frequency Masker for Cross-Domain  Few-Shot Semantic Segmentation",
+  "title_zh": "",
+  "authors": [
+    "Jintao Tong",
+    "Yixiong Zou",
+    "Yuhua Li",
+    "Ruixuan Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Cross-domain few-shot segmentation (CD-FSS) is proposed to first pre-train the model on a large-scale source-domain dataset, and then transfer the model to data-scarce target-domain datasets for pixel-level segmentation. The significant domain gap between the source and target datasets leads to a sharp decline in the performance of existing few-shot segmentation (FSS) methods in cross-domain scenarios. In this work, we discover an intriguing phenomenon: simply filtering different frequency components for target domains can lead to a significant performance improvement, sometimes even as high as 14% mIoU. Then, we delve into this phenomenon for an interpretation, and find such improvements stem from the reduced inter-channel correlation in feature maps, which benefits CD-FSS with enhanced robustness against domain gaps and larger activated regions for segmentation. Based on this, we propose a lightweight frequency masker, which further reduces channel correlations by an Amplitude-Phase Masker (APM) module and an Adaptive Channel Phase Attention (ACPA) module. Notably, APM introduces only 0.01% additional parameters but improves the average performance by over 10%, and ACPA imports only 2.5% parameters but further improves the performance by over 1.5%, which significantly surpasses the state-of-the-art CD-FSS methods.",
+  "abstract_zh": "",
+  "tldr": "We find simply filtering frequency components significantly improves CD-FSS performance. We delve into this for an interpretation, and further propose a lightweight frequency masker, importing only 2.5% parameters but averagely improving over 11%.",
+  "keywords": [
+    "cross-domain few-shot segmentation",
+    "frequency component",
+    "feature disentanglement，channel attention"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=GCmmy4At6i",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/37326306831a1d8cb56271abf7eaa6d8463e6f41.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We find simply filtering frequency components significantly improves CD-FSS performance. We delve into this for an interpretation, and further propose a lightweight frequency masker, importing only 2.5% parameters but averagely improving over 11%."
+  },
+  "collected_at": "2026-03-09T03:45:13.529Z"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "hkBhX5ABjk",
+  "or_id": "hkBhX5ABjk",
+  "title": "Multi-Agent Domain Calibration with a Handful of Offline Data",
+  "title_zh": "",
+  "authors": [
+    "Tao Jiang",
+    "Lei Yuan",
+    "Lihe Li",
+    "Cong Guan",
+    "Zongzhang Zhang",
+    "Yang Yu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The shift in dynamics results in significant performance degradation of policies trained in the source domain when deployed in a different target domain, posing a challenge for the practical application of reinforcement learning (RL) in real-world scenarios. Domain transfer methods aim to bridge this dynamics gap through techniques such as domain adaptation or domain calibration. While domain adaptation involves refining the policy through extensive interactions in the target domain, it may not be feasible for sensitive fields like healthcare and autonomous driving. On the other hand, offline domain calibration utilizes only static data from the target domain to adjust the physics parameters of the source domain (e.g., a simulator) to align with the target dynamics, enabling the direct deployment of the trained policy without sacrificing performance, which emerges as the most promising for policy deployment. However, existing techniques primarily rely on evolution algorithms for calibration, resulting in low sample efficiency.\nTo tackle this issue, we propose a novel framework Madoc (\\textbf{M}ulti-\\textbf{a}gent \\textbf{do}main \\textbf{c}alibration). Firstly, we formulate a bandit RL objective to match the target trajectory distribution by learning a couple of classifiers. We then address the challenge of a large domain parameter space by modeling domain calibration as a cooperative multi-agent reinforcement learning (MARL) problem. Specifically, we utilize a Variational Autoencoder (VAE) to automatically cluster physics parameters with similar effects on the dynamics, grouping them into distinct agents. These grouped agents train calibration policies coordinately to adjust multiple parameters using MARL.\nOur empirical evaluation on 21 offline locomotion tasks in D4RL and NeoRL benchmarks showcases the superior performance of our method compared to strong existing offline model-based RL, offline domain calibration, and hybrid offline-and-online RL baselines.",
+  "abstract_zh": "",
+  "tldr": "This paper formulates domain calibration as a cooperative MARL problem to improve efficiency and fidelity.",
+  "keywords": [
+    "Multi-agent reinforcement learning",
+    "domain transfer"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hkBhX5ABjk",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5656a2f21c1001a3a55e7683e5a3d1a20e36023e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper formulates domain calibration as a cooperative MARL problem to improve efficiency and fidelity."
+  },
+  "collected_at": "2026-03-09T03:45:13.530Z"
+}
