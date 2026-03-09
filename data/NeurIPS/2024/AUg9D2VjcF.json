@@ -1,0 +1,34 @@
+{
+  "id": "AUg9D2VjcF",
+  "or_id": "AUg9D2VjcF",
+  "title": "One Sample Fits All: Approximating All Probabilistic Values Simultaneously and Efficiently",
+  "title_zh": "",
+  "authors": [
+    "Weida Li",
+    "Yaoliang Yu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The concept of probabilistic values, such as Beta Shapley values and weighted Banzhaf values, has gained recent attention in applications like feature attribution and data valuation. However, exact computation of these values is often exponentially expensive, necessitating approximation techniques. Prior research has shown that the choice of probabilistic values significantly impacts downstream performance, with no universally superior option. Consequently, one may have to approximate multiple candidates and select the best-performing one. Although there have been many efforts to develop efficient estimators, none  are intended to approximate all probabilistic values both simultaneously and efficiently. In this work, we embark on the first exploration of achieving this goal. Adhering to the principle of maximum sample reuse and avoiding amplifying factors, we propose a one-sample-fits-all framework parameterized by a sampling vector to approximate  intermediate terms that can be converted to any probabilistic value. Leveraging the concept of $ (\\epsilon, \\delta) $-approximation, we theoretically identify a key formula that effectively determines the convergence rate of our framework. By optimizing the sampling vector using this formula, we obtain i) a one-for-all estimator that achieves the currently best time complexity for all probabilistic values on average, and ii) a faster generic estimator with the sampling vector optimally tuned for each probabilistic value. Particularly, our one-for-all estimator achieves the fastest convergence rate on Beta Shapley values, including the well-known Shapley value, both theoretically and empirically. Finally, we establish a connection between probabilistic values and the least square regression used in (regularized) datamodels, showing that our one-for-all estimator can solve a family of datamodels simultaneously. Our code is available at https://github.com/watml/one-for-all.",
+  "abstract_zh": "",
+  "tldr": "We explore the possibilities of approximating all probabilistic values simultaneously and efficiently, examples of probabilistic values include Beta Shapley values and weighted Banzhaf values.",
+  "keywords": [
+    "Beta Shapley values",
+    "weighted Banzhaf values",
+    "approximation",
+    "datamodels"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=AUg9D2VjcF",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/224ddb3bdb27e35577edc0ae6a5941eba7f7a45f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We explore the possibilities of approximating all probabilistic values simultaneously and efficiently, examples of probabilistic values include Beta Shapley values and weighted Banzhaf values."
+  },
+  "collected_at": "2026-03-09T03:05:17.886Z"
+}

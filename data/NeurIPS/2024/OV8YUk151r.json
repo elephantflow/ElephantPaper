@@ -1,0 +1,36 @@
+{
+  "id": "OV8YUk151r",
+  "or_id": "OV8YUk151r",
+  "title": "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction",
+  "title_zh": "",
+  "authors": [
+    "Qianyue Hao",
+    "Jingyang Fan",
+    "Fengli Xu",
+    "Jian Yuan",
+    "Yong Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Citation networks are critical infrastructures of modern science, serving as intricate webs of past literature and enabling researchers to navigate the knowledge production system. To mine information hiding in the link space of such networks, predicting which previous papers (candidates) will a new paper (query) cite is a critical problem that has long been studied. However, an important gap remains unaddressed: the roles of a paper's citations vary significantly, ranging from foundational knowledge basis to superficial contexts. Distinguishing these roles requires a deeper understanding of the logical relationships among papers, beyond simple edges in citation networks. The emergence of large language models (LLMs) with textual reasoning capabilities offers new possibilities for discerning these relationships, but there are two major challenges. First, in practice, a new paper may select its citations from gigantic existing papers, where the combined texts far exceed the context length of LLMs. Second, logical relationships between papers are often implicit, and directly prompting an LLM to predict citations may lead to results based primarily on surface-level textual similarities, rather than the deeper logical reasoning required. In this paper, we introduce the novel concept of core citation, which identifies the critical references that go beyond superficial mentions. Thereby, we elevate the citation prediction task from a simple binary classification to a more nuanced problem: distinguishing core citations from both superficial citations and non-citations. To address this, we propose $\\textbf{HLM-Cite}$, a $\\textbf{H}$ybrid $\\textbf{L}$anguage $\\textbf{M}$odel workflow for citation prediction, which combines embedding and generative LMs. We design a curriculum finetune procedure to adapt a pretrained text embedding model to coarsely retrieve high-likelihood core citations from vast candidate sets and then design an LLM agentic workflow to rank the retrieved pa",
+  "abstract_zh": "",
+  "tldr": "This paper designs a hybrid language model workflow integrating representative and generative LMs to precisely predict which previous papers (candidates) will an ongoing new paper (query) cite from vast candidate set.",
+  "keywords": [
+    "Citation prediction",
+    "large language model",
+    "text embedding model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=OV8YUk151r",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/95932b01cf99bed796f749d323a8d4d9033b11a8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper designs a hybrid language model workflow integrating representative and generative LMs to precisely predict which previous papers (candidates) will an ongoing new paper (query) cite from vast candidate set."
+  },
+  "collected_at": "2026-03-09T03:05:17.887Z"
+}

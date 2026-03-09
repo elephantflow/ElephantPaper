@@ -1,0 +1,37 @@
+{
+  "id": "TEwQSWWn7S",
+  "or_id": "TEwQSWWn7S",
+  "title": "Fast, accurate training and sampling of Restricted Boltzmann Machines",
+  "title_zh": "",
+  "authors": [
+    "Nicolas BEREUX",
+    "Aurélien Decelle",
+    "Cyril Furtlehner",
+    "Lorenzo Rosset",
+    "Beatriz Seoane"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Thanks to their simple architecture, Restricted Boltzmann Machines (RBMs) are powerful tools for modeling complex systems and extracting interpretable insights from data. However, training RBMs, as other energy-based models, on highly structured data poses a major challenge, as effective training relies on mixing the Markov chain Monte Carlo simulations used to estimate the gradient. This process is often hindered by multiple second-order phase transitions and the associated critical slowdown. In this paper, we present an innovative method in which the principal directions of the dataset are integrated into a low-rank RBM through a convex optimization procedure. This approach enables efficient sampling of the equilibrium measure via a static Monte Carlo process. By starting the standard training process with a model that already accurately represents the main modes of the data, we bypass the initial phase transitions.  Our results show that this strategy successfully trains RBMs to capture the full diversity of data in datasets where previous methods fail. Furthermore, we use the training trajectories to propose a new sampling method, {\\em parallel trajectory tempering}, which allows us to sample the equilibrium measure of the trained model much faster than previous optimized MCMC approaches and a better estimation of the log-likelihood. We illustrate the success of the training method on several highly structured datasets.",
+  "abstract_zh": "",
+  "tldr": "We design a new training pipeline for the Restricted Boltzmann Machine, capable of training quickly and accurately on hard multimodal dataset.",
+  "keywords": [
+    "Restricted Boltzmann Machine",
+    "Fast Sampling",
+    "Multimodal learning",
+    "training algorithm"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=TEwQSWWn7S",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/bd1c87e2cd903fd492c5b76962f38acb0b4d878a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We design a new training pipeline for the Restricted Boltzmann Machine, capable of training quickly and accurately on hard multimodal dataset."
+  },
+  "collected_at": "2026-03-09T03:05:17.885Z"
+}
