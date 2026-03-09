@@ -1,0 +1,35 @@
+{
+  "id": "eowkjKVPoH",
+  "or_id": "eowkjKVPoH",
+  "title": "Mission Impossible: A Statistical Perspective on Jailbreaking LLMs",
+  "title_zh": "",
+  "authors": [
+    "Jingtong Su",
+    "Julia Kempe",
+    "Karen Ullrich"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large language models (LLMs) are trained on a deluge of text data with limited quality control. As a result, LLMs can exhibit unintended or even harmful behaviours, such as leaking information, fake news or hate speech. Countermeasures, commonly referred to as preference alignment, include fine-tuning the pretrained LLMs with carefully crafted text examples of desired behaviour. Even then, empirical evidence shows preference aligned LLMs can be enticed to harmful behaviour. This so called jailbreaking of LLMs is typically achieved by adversarially modifying the input prompt to the LLM. Our paper provides theoretical insights into the phenomenon of preference alignment and jailbreaking from a statistical perspective. Under our framework, we first show that pretrained LLMs will mimic harmful behaviour if present in the training corpus. \\textbf{Under that same framework, we then introduce a statistical notion of alignment, and lower-bound the jailbreaking probability, showing that it is unpreventable under reasonable assumptions.} Based on our insights, we propose an alteration to the currently prevalent alignment strategy RLHF. Specifically, we introduce a  simple modification to the RLHF objective, we call \\emph{E-RLHF}, that aims to increase the likelihood of safe responses. \\emph{E-RLHF} brings no additional training cost, and is compatible with other methods. Empirically, we demonstrate that \\emph{E-RLHF} outperforms RLHF on all alignment problems put forward by the AdvBench \\citep{zou2023universal} and HarmBench project \\citep{mazeika2024harmbench} without sacrificing model performance as measured by the MT-Bench project \\citep{zheng2024judging}.",
+  "abstract_zh": "",
+  "tldr": "We provide a statistical framework for jailbreaking LLMs, show jailbreaking is unavoidable and provide an improved DPO-based alignment protocol. The proposed method leads to improved safety across a suite of jailbreak adversaries.",
+  "keywords": [
+    "large language models",
+    "jailbreak",
+    "safety alignment",
+    "theory"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=eowkjKVPoH",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f825413c63ff02b981a7fce0386fdfc9b4cc20cb.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We provide a statistical framework for jailbreaking LLMs, show jailbreaking is unavoidable and provide an improved DPO-based alignment protocol. The proposed method leads to improved safety across a suite of jailbreak adversaries."
+  },
+  "collected_at": "2026-03-09T01:25:13.194Z"
+}

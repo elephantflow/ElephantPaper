@@ -1,0 +1,40 @@
+{
+  "id": "PtD4aZPzcR",
+  "or_id": "PtD4aZPzcR",
+  "title": "Statistical-Computational Trade-offs for Density Estimation",
+  "title_zh": "",
+  "authors": [
+    "Anders Aamand",
+    "Alexandr Andoni",
+    "Justin Y. Chen",
+    "Piotr Indyk",
+    "Shyam Narayanan",
+    "Sandeep Silwal",
+    "Haike Xu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We study the density estimation problem defined as follows: given $k$ distributions $p_1, \\ldots, p_k$ over a discrete domain $[n]$,  as well as a collection of samples chosen from a \"query\" distribution $q$ over $[n]$, output $p_i$ that is \"close\" to $q$. Recently Aamand et al. gave the first and only known result that achieves sublinear bounds in both the sampling complexity and the query time while preserving polynomial data structure space. However, their improvement over linear samples and time is only by subpolynomial factors.\n\nOur main result is a lower bound showing that, for a broad class of data structures, their bounds cannot be significantly improved. In particular, if an algorithm uses $O(n/\\log^c k)$ samples for some constant $c>0$ and polynomial space, then the query time of the data structure must be at least $k^{1-O(1)/\\log  \\log  k}$, i.e., close to linear in the number of distributions $k$. This is a novel statistical-computational trade-off for density estimation, demonstrating that any data structure must use close to a linear number of samples or take close to linear query time. The lower bound holds even in the realizable case where $q=p_i$ for some $i$, and when the distributions are flat (specifically, all distributions are uniform over half of the domain $[n]$). We also give a simple data structure for our lower bound instance with asymptotically matching upper bounds. Experiments show that the data structure is quite efficient in practice.",
+  "abstract_zh": "",
+  "tldr": "We show the first lower bound for the data structures version of the fundamental density estimation problem, establishing that there is no data structure with strongly sublinear sample complexity and query time.",
+  "keywords": [
+    "statistical-computational tradeoffs",
+    "lower bounds",
+    "data structures",
+    "density estimation",
+    "hypothesis selection"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=PtD4aZPzcR",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/74c7a2b19d56114ddc73f3ba8b3cbaf002ef25e9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show the first lower bound for the data structures version of the fundamental density estimation problem, establishing that there is no data structure with strongly sublinear sample complexity and query time."
+  },
+  "collected_at": "2026-03-09T01:25:13.191Z"
+}

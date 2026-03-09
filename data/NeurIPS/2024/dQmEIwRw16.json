@@ -1,0 +1,32 @@
+{
+  "id": "dQmEIwRw16",
+  "or_id": "dQmEIwRw16",
+  "title": "Collision Cross-entropy for Soft Class Labels and Entropy-based Clustering",
+  "title_zh": "",
+  "authors": [
+    "Zhongwen Zhang",
+    "Yuri Boykov"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "We propose ''collision cross-entropy'' as a robust alternative to Shannon's cross-entropy (CE) loss when class labels are represented by soft categorical distributions y. In general, soft labels can naturally represent ambiguous targets in classification. They are particularly relevant for self-labeled clustering methods, where latent pseudo-labels $y$ are jointly estimated with the model parameters and uncertainty is prevalent. \nIn case of soft labels $y$, Shannon's CE teaches the model predictions $\\sigma$ \nto reproduce the uncertainty in each training example, which inhibits the model's ability to learn and generalize from these examples. As an alternative loss, we propose the negative log of ``collision probability'' that\nmaximizes the chance of equality between two random variables, predicted class and unknown true class, \nwhose distributions are $\\sigma$ and $y$. We show that it has the properties of a generalized CE. \nThe proposed collision CE agrees with Shannon's CE for one-hot labels $y$, \nbut the training from soft labels differs. For example, unlike Shannon's CE, data points where $y$ is a uniform distribution have zero contribution to the training. Collision CE significantly improves classification \nsupervised by soft uncertain targets. \nUnlike Shannon's, collision CE is symmetric for $y$ and $\\sigma$, which is particularly relevant when \nboth distributions are estimated in the context of self-labeled clustering.\nFocusing on discriminative deep clustering where self-labeling and entropy-based losses are dominant, \nwe show that the use of collision CE improves the state-of-the-art. \nWe also derive an efficient EM algorithm that significantly \nspeeds up the pseudo-label estimation with collision CE.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "collision cross entropy",
+    "entropy-based clustering"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=dQmEIwRw16",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5bed18d7e4145c4b9ab6074414e7f4961cbc1599.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose ''collision cross-entropy'' as a robust alternative to Shannon's cross-entropy (CE) loss when class labels are represented by soft categorical distributions y. In general, soft labels can naturally represent ambiguous targets in classification. They are particularly relevant for self-labe"
+  },
+  "collected_at": "2026-03-09T01:25:13.192Z"
+}
