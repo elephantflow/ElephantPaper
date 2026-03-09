@@ -1,0 +1,34 @@
+{
+  "id": "gvg8pExqdd",
+  "or_id": "gvg8pExqdd",
+  "title": "Diversify, Contextualize, and Adapt: Efficient Entropy Modeling for Neural Image Codec",
+  "title_zh": "",
+  "authors": [
+    "Jun-Hyuk Kim",
+    "Seungeon Kim",
+    "Won-Hee Lee",
+    "Dokwan Oh"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Designing a fast and effective entropy model is challenging but essential for practical application of neural codecs. Beyond spatial autoregressive entropy models, more efficient backward adaptation-based entropy models have been recently developed. They not only reduce decoding time by using smaller number of modeling steps but also maintain or even improve rate--distortion performance by leveraging more diverse contexts for backward adaptation. Despite their significant progress, we argue that their performance has been limited by the simple adoption of the design convention for forward adaptation: using only a single type of hyper latent representation, which does not provide sufficient contextual information, especially in the first modeling step. In this paper, we propose a simple yet effective entropy modeling framework that leverages sufficient contexts for forward adaptation without compromising on bit-rate. Specifically, we introduce a strategy of diversifying hyper latent representations for forward adaptation, i.e., using two additional types of contexts along with the existing single type of context. In addition, we present a method to effectively use the diverse contexts for contextualizing the current elements to be encoded/decoded. By addressing the limitation of the previous approach, our proposed framework leads to significant performance improvements. Experimental results on popular datasets show that our proposed framework consistently improves rate-distortion performance across various bit-rate regions, e.g., 3.73\\% BD-rate gain over the state-of-the-art baseline on the Kodak dataset.",
+  "abstract_zh": "",
+  "tldr": "We propose a fast and effective entropy model for neural image codec by efficiently leveraging sufficient contextual information.",
+  "keywords": [
+    "Neural codec",
+    "entropy model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=gvg8pExqdd",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0c4ae934d344ac6e45a6fbaaa1c79a197aca1ea9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a fast and effective entropy model for neural image codec by efficiently leveraging sufficient contextual information."
+  },
+  "collected_at": "2026-03-09T00:05:12.809Z"
+}

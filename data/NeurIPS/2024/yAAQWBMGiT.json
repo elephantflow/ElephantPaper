@@ -1,0 +1,36 @@
+{
+  "id": "yAAQWBMGiT",
+  "or_id": "yAAQWBMGiT",
+  "title": "Sketchy Moment Matching: Toward Fast and Provable Data Selection for Finetuning",
+  "title_zh": "",
+  "authors": [
+    "Yijun Dong",
+    "Hoang Phan",
+    "Xiang Pan",
+    "Qi Lei"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We revisit data selection in a modern context of finetuning from a fundamental perspective. Extending the classical wisdom of variance minimization in low dimensions to high-dimensional finetuning, our generalization analysis unveils the importance of additionally reducing bias induced by low-rank approximation. Inspired by the variance-bias tradeoff in high dimensions from the theory, we introduce Sketchy Moment Matching (SkMM), a scalable data selection scheme with two stages. (i) First, the bias is controlled using gradient sketching that explores the finetuning parameter space for an informative low-dimensional subspace $\\mathcal{S}$; (ii) then the variance is reduced over $\\mathcal{S}$ via moment matching between the original and selected datasets. Theoretically, we show that gradient sketching is fast and provably accurate: selecting $n$ samples by reducing variance over $\\mathcal{S}$ preserves the fast-rate generalization $O(\\dim(\\mathcal{S})/n)$, independent of the parameter dimension. Empirically, we concretize the variance-bias balance via synthetic experiments and demonstrate the effectiveness of SkMM for finetuning in real vision tasks.",
+  "abstract_zh": "",
+  "tldr": "We present a theory on data selection for high-dimensional ridge regression that inspires a fast and effective data selection algorithm for finetuning.",
+  "keywords": [
+    "Data selection",
+    "Finetuning",
+    "Sketching",
+    "Johnson-Lindenstrauss transform"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=yAAQWBMGiT",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/342630203974cf3966cb02c9c856602a6fdba381.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present a theory on data selection for high-dimensional ridge regression that inspires a fast and effective data selection algorithm for finetuning."
+  },
+  "collected_at": "2026-03-09T00:05:12.811Z"
+}
