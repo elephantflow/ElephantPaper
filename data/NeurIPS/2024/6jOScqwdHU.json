@@ -1,0 +1,38 @@
+{
+  "id": "6jOScqwdHU",
+  "or_id": "6jOScqwdHU",
+  "title": "Fisher Flow Matching for Generative Modeling over Discrete Data",
+  "title_zh": "",
+  "authors": [
+    "Oscar Davis",
+    "Samuel Kessler",
+    "Mircea Petrache",
+    "Ismail Ilkan Ceylan",
+    "Michael M. Bronstein",
+    "Joey Bose"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Generative modeling over discrete data has recently seen numerous success stories, with applications spanning language modeling, biological sequence design, and graph-structured molecular data. The predominant generative modeling paradigm for discrete data is still autoregressive, with more recent alternatives based on diffusion or flow-matching falling short of their impressive performance in continuous data settings, such as image or video generation. In this work, we introduce Fisher-Flow, a novel flow-matching model for discrete data. Fisher-Flow takes a manifestly geometric perspective\nby considering categorical distributions over discrete data as points residing on a statistical manifold equipped with its natural Riemannian metric: the \\emph{Fisher-Rao metric}. As a result, we demonstrate discrete data itself can be continuously reparameterised to points on the positive orthant of the $d$-hypersphere $\\mathbb{S}^d_+$, \nwhich allows us to define flows that map any source distribution to target in a principled manner by transporting mass along (closed-form) geodesics of $\\mathbb{S}^d_+$. Furthermore, the learned flows in Fisher-Flow can be further bootstrapped by leveraging Riemannian optimal transport leading to improved training dynamics. We prove that the gradient flow induced by Fisher-FLow is optimal in reducing the forward KL divergence. We evaluate Fisher-Flow on an array of synthetic and diverse real-world benchmarks, including designing DNA Promoter, and DNA Enhancer sequences. Empirically, we find that Fisher-Flow improves over prior diffusion and flow-matching models on these benchmarks.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel flow matching approach for discrete data by continuously reparameterising categorical distributions on the hypersphere.",
+  "keywords": [
+    "Flow matching",
+    "Generative models",
+    "Riemannian manifolds",
+    "Discrete data"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6jOScqwdHU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c16ab010bac44658a3c695f87e0c8d925deca3d4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel flow matching approach for discrete data by continuously reparameterising categorical distributions on the hypersphere."
+  },
+  "collected_at": "2026-03-09T01:05:15.226Z"
+}

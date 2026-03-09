@@ -1,0 +1,35 @@
+{
+  "id": "WftaVkL6G2",
+  "or_id": "WftaVkL6G2",
+  "title": "Federated Learning under Periodic Client Participation and Heterogeneous Data: A New Communication-Efficient Algorithm and Analysis",
+  "title_zh": "",
+  "authors": [
+    "Michael Crawshaw",
+    "Mingrui Liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In federated learning, it is common to assume that clients are always available to participate in training, which may not be feasible with user devices in practice. Recent works analyze federated learning under more realistic participation patterns, such as cyclic client availability or arbitrary participation. However, all such works either require strong assumptions (e.g., all clients participate almost surely within a bounded window), do not achieve linear speedup and reduced communication rounds, or are not applicable in the general non-convex setting. In this work, we focus on nonconvex optimization and consider participation patterns in which the chance of participation over a fixed window of rounds is equal among all clients, which includes cyclic client availability as a special case. Under this setting, we propose a new algorithm, named Amplified SCAFFOLD, and prove that it achieves linear speedup, reduced communication, and resilience to data heterogeneity simultaneously. In particular, for cyclic participation, our algorithm is proved to enjoy $\\mathcal{O}(\\epsilon^{-2})$ communication rounds to find an $\\epsilon$-stationary point in the non-convex stochastic setting. In contrast, the prior work under the same setting requires $\\mathcal{O}(\\kappa^2 \\epsilon^{-4})$ communication rounds, where $\\kappa$ denotes the data heterogeneity. Therefore, our algorithm significantly reduces communication rounds due to better dependency in terms of $\\epsilon$ and $\\kappa$. Our analysis relies on a fine-grained treatment of the nested dependence between client participation and errors in the control variates, which results in tighter guarantees than previous work. We also provide experimental results with (1) synthetic data and (2) real-world data with a large number of clients $(N = 250)$, demonstrating the effectiveness of our algorithm under periodic client participation.",
+  "abstract_zh": "",
+  "tldr": "We propose a new optimization algorithm for federated learning with periodic client participation, and prove that the convergence rate is independent of client heterogeneity and enjoys linear speedup and reduced communication.",
+  "keywords": [
+    "federated learning",
+    "nonconvex optimization",
+    "cross device",
+    "heterogeneous data",
+    "periodic participation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=WftaVkL6G2",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ba5343dd71ecad34eb5bc289124b1f6a9058e3e4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a new optimization algorithm for federated learning with periodic client participation, and prove that the convergence rate is independent of client heterogeneity and enjoys linear speedup and reduced communication."
+  },
+  "collected_at": "2026-03-09T01:05:15.227Z"
+}

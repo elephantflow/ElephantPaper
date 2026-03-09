@@ -1,0 +1,34 @@
+{
+  "id": "KoyTqNs6SZ",
+  "or_id": "KoyTqNs6SZ",
+  "title": "Learning to Price Homogeneous Data",
+  "title_zh": "",
+  "authors": [
+    "Keran Chen",
+    "Joon Suk Huh",
+    "Kirthevasan Kandasamy"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We study a data pricing problem, where a seller has access to $N$ homogeneous data points (e.g. drawn i.i.d. from some distribution).\nThere are $m$ types of buyers in the market, where buyers of the same type $i$ have the same valuation curve $v_i:[N]\\rightarrow [0,1]$, where $v_i(n)$ is the value for having $n$ data points.\n*A priori*, the seller is unaware of the\ndistribution of buyers, but can repeat the market for $T$ rounds so as to learn the revenue-optimal pricing curve $p:[N] \\rightarrow [0, 1]$.\nTo solve this online learning problem,\nwe first develop novel discretization schemes to approximate any pricing curve.\nWhen compared to prior work,\nthe size of our discretization schemes scales gracefully with the approximation parameter, which translates to better regret in online learning.\nUnder assumptions like smoothness and diminishing returns which are satisfied by data, the discretization size can be reduced further.\nWe then turn to the online learning problem, \nboth in the stochastic and adversarial settings.\nOn each round, the seller chooses an *anonymous* pricing curve $p_t$.\nA new buyer appears and may choose to purchase some amount of data.\nShe then reveals her type *only if* she makes a purchase.\nOur online algorithms build on classical algorithms such as UCB and FTPL, but require novel ideas to account for the asymmetric nature of this feedback and to deal with the vastness of the space of pricing curves.\nUsing the improved discretization schemes previously developed, we are able to achieve \n$\\widetilde{O}(m\\sqrt{T})$ regret in the stochastic setting and $\\widetilde{\\mathcal{O}}(m^{3/2}\\sqrt{T})$ regret in the adversarial setting.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Learning to price",
+    "Revenue maximization",
+    "Data marketplaces"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=KoyTqNs6SZ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1e7642af4622e1cbe75b01e13b1e873f13e750c3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study a data pricing problem, where a seller has access to $N$ homogeneous data points (e.g. drawn i.i.d. from some distribution).\nThere are $m$ types of buyers in the market, where buyers of the same type $i$ have the same valuation curve $v_i:[N]\\rightarrow [0,1]$, where $v_i(n)$ is the value f"
+  },
+  "collected_at": "2026-03-09T01:05:15.224Z"
+}

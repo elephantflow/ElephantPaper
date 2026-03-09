@@ -1,0 +1,36 @@
+{
+  "id": "53daI9kbvf",
+  "or_id": "53daI9kbvf",
+  "title": "T2V-Turbo: Breaking the Quality Bottleneck of Video Consistency Model with Mixed Reward Feedback",
+  "title_zh": "",
+  "authors": [
+    "Jiachen Li",
+    "Weixi Feng",
+    "Tsu-Jui Fu",
+    "Xinyi Wang",
+    "S Basu",
+    "Wenhu Chen",
+    "William Yang Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Diffusion-based text-to-video (T2V) models have achieved significant success but continue to be hampered by the slow sampling speed of their iterative sampling processes. To address the challenge, consistency models have been proposed to facilitate fast inference, albeit at the cost of sample quality. In this work, we aim to break the quality bottleneck of a video consistency model (VCM) to achieve **both fast and high-quality video generation**. We introduce T2V-Turbo, which integrates feedback from a mixture of differentiable reward models into the consistency distillation (CD) process of a pre-trained T2V model. Notably, we directly optimize rewards associated with single-step generations that arise naturally from computing the CD loss, effectively bypassing the memory constraints imposed by backpropagating gradients through an iterative sampling process. Remarkably, the 4-step generations from our T2V-Turbo achieve the highest total score on VBench, even surpassing Gen-2 and Pika. We further conduct human evaluations to corroborate the results, validating that the 4-step generations from our T2V-Turbo are preferred over the 50-step DDIM samples from their teacher models, representing more than a tenfold acceleration while improving video generation quality.",
+  "abstract_zh": "",
+  "tldr": "We introduce T2V-Turbo, achieving fast and high-quality video generation by breaking the quality bottleneck of the video consistency model.",
+  "keywords": [
+    "Text-to-Video generation; consistency model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=53daI9kbvf",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b7fb15d4a4c0c43818ed8209089ab7af89f5341b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce T2V-Turbo, achieving fast and high-quality video generation by breaking the quality bottleneck of the video consistency model."
+  },
+  "collected_at": "2026-03-09T01:05:15.227Z"
+}

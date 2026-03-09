@@ -1,0 +1,36 @@
+{
+  "id": "yySpldUsU2",
+  "or_id": "yySpldUsU2",
+  "title": "Changing the Training Data Distribution to Reduce Simplicity Bias Improves In-distribution Generalization",
+  "title_zh": "",
+  "authors": [
+    "Dang Nguyen",
+    "Paymon Haddad",
+    "Eric Gan",
+    "Baharan Mirzasoleiman"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Can we modify the training data distribution to encourage the underlying optimization method toward finding solutions with superior generalization performance on in-distribution data? In this work, we approach this question for the first time by comparing the inductive bias of gradient descent (GD) with that of sharpness-aware minimization (SAM). By studying a two-layer CNN, we rigorously prove that SAM learns different features more uniformly, particularly in early epochs. That is, SAM is less susceptible to simplicity bias compared to GD. We also show that examples constraining features that are learned early are separable from the rest based on the model’s output. Based on this observation, we propose a method that (i) clusters examples based on the network output early in training, (ii) identifies a cluster of examples with similar network output, and (iii) upsamples the rest of examples only once to alleviate the simplicity bias. We show empirically that USEFUL effectively improves the generalization performance on the original data distribution when training with various gradient methods, including (S)GD and SAM. Notably, we demonstrate that our method can be combined with SAM variants and existing data augmentation strategies to achieve, to the best of our knowledge, state-of-the-art performance for training ResNet18 on CIFAR10, STL10, CINIC10, Tiny-ImageNet; ResNet34 on CIFAR100; and VGG19 and DenseNet121 on CIFAR10.",
+  "abstract_zh": "",
+  "tldr": "We propose a sharpness-aware motivated data modification to improve in-distribution generalization performance.",
+  "keywords": [
+    "In-distribution generalization",
+    "Simplicity bias",
+    "Data modification",
+    "Sharpness-aware minimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=yySpldUsU2",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b07ede96cc83e38f5a579bbba4e95073247adb82.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a sharpness-aware motivated data modification to improve in-distribution generalization performance."
+  },
+  "collected_at": "2026-03-09T01:05:15.225Z"
+}

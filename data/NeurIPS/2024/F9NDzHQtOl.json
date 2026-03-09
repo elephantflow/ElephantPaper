@@ -1,0 +1,37 @@
+{
+  "id": "F9NDzHQtOl",
+  "or_id": "F9NDzHQtOl",
+  "title": "Accelerating Diffusion Models with Parallel Sampling: Inference at Sub-Linear Time Complexity",
+  "title_zh": "",
+  "authors": [
+    "Haoxuan Chen",
+    "Yinuo Ren",
+    "Lexing Ying",
+    "Grant M. Rotskoff"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Diffusion models have become a leading method for generative modeling of both image and scientific data.\nAs these models are costly to train and \\emph{evaluate}, reducing the inference cost for diffusion models remains a major goal.\nInspired by the recent empirical success in accelerating diffusion models via the parallel sampling technique~\\cite{shih2024parallel}, we propose to divide the sampling process into $\\mathcal{O}(1)$ blocks with parallelizable Picard iterations within each block. Rigorous theoretical analysis reveals that our algorithm achieves $\\widetilde{\\mathcal{O}}(\\mathrm{poly} \\log d)$ overall time complexity, marking \\emph{the first implementation with provable sub-linear complexity w.r.t. the data dimension $d$}. Our analysis is based on a generalized version of Girsanov's theorem and is compatible with both the SDE and probability flow ODE implementations. Our results shed light on the potential of fast and efficient sampling of high-dimensional data on fast-evolving modern large-memory GPU clusters.",
+  "abstract_zh": "",
+  "tldr": "We propose new parallel inference algorithms for diffusion models using parallel sampling and rigorously prove that our algorithms enjoy sub-linear inference cost w.r.t. data dimension for both SDE and probability flow ODE implementations.",
+  "keywords": [
+    "diffusion model",
+    "parallel sampling",
+    "stochastic differential equations",
+    "probability flow ode"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=F9NDzHQtOl",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9f1d3d6e770d079a98411143457f004c59280ae6.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We propose new parallel inference algorithms for diffusion models using parallel sampling and rigorously prove that our algorithms enjoy sub-linear inference cost w.r.t. data dimension for both SDE and probability flow ODE implementations."
+  },
+  "collected_at": "2026-03-09T01:05:15.226Z"
+}
