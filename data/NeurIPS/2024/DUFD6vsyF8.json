@@ -1,0 +1,39 @@
+{
+  "id": "DUFD6vsyF8",
+  "or_id": "DUFD6vsyF8",
+  "title": "Federated Natural Policy Gradient and Actor Critic Methods for Multi-task Reinforcement Learning",
+  "title_zh": "",
+  "authors": [
+    "Tong Yang",
+    "Shicong Cen",
+    "Yuting Wei",
+    "Yuxin Chen",
+    "Yuejie Chi"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Federated reinforcement learning (RL) enables collaborative decision making of multiple distributed agents without sharing local data trajectories. In this work, we consider a multi-task setting, in which each agent has its own private reward function corresponding to different tasks, while sharing the same transition kernel of the environment. Focusing on infinite-horizon Markov decision processes, the goal is to learn a globally optimal policy that maximizes the sum of the discounted total rewards of all the agents in a decentralized manner, where each agent only communicates with its neighbors over some prescribed graph topology.\n\nWe develop federated vanilla and entropy-regularized natural policy gradient (NPG) methods in the tabular setting under softmax parameterization, where gradient tracking is applied to estimate the global Q-function to mitigate the impact of imperfect information sharing. We establish non-asymptotic global convergence guarantees under exact policy evaluation, where the rates are nearly independent of the size of the state-action space and illuminate the impacts of network size and connectivity. To the best of our knowledge, this is the first time that global convergence is established for federated multi-task RL using policy optimization. We further go beyond the tabular setting by proposing a federated natural actor critic (NAC) method for multi-task RL with function approximation, and establish its finite-time sample complexity taking the errors of function approximation into account.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "federated RL",
+    "multi-task RL",
+    "natural policy gradient methods",
+    "entropy regularization",
+    "global convergence",
+    "sample complexity"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=DUFD6vsyF8",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/488e822a2a6e4eb818a4856f557992e7f2ca3b78.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Federated reinforcement learning (RL) enables collaborative decision making of multiple distributed agents without sharing local data trajectories. In this work, we consider a multi-task setting, in which each agent has its own private reward function corresponding to different tasks, while sharing "
+  },
+  "collected_at": "2026-03-09T00:45:13.549Z"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "iRHxp1ibFj",
+  "or_id": "iRHxp1ibFj",
+  "title": "Approximate Size Targets Are Sufficient for Accurate Semantic Segmentation",
+  "title_zh": "",
+  "authors": [
+    "Xingye Fan",
+    "Zhongwen Zhang",
+    "Yuri Boykov"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "We propose a new general form of image-level supervision for semantic segmentation based on approximate targets for the relative size of segments. At each training image, such targets are represented by a categorical distribution for the \"expected\" average prediction over the image pixels. We motivate the zero-avoiding variant of KL divergence as a general training loss for any segmentation architecture leading to quality on par with the full pixel-level supervision. However, our image-level supervision is significantly less expensive, it needs to know only an approximate fraction of an image occupied by each class. Such estimates are easy for a human annotator compared to pixel-accurate labeling. Our loss shows significant robustness to size target errors, which may even improve the generalization quality. The proposed size targets can be seen as an extension of the standard class tags, which correspond to non-zero size targets in each image. Using only a minimal amount of extra information, our supervision improves and simplifies the training. It works on standard segmentation architectures as is, unlike tag-based methods requiring complex specialized modifications and multi-stage training.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Cardinality of segments",
+    "KL divergence"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=iRHxp1ibFj",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3c6d2b2cdc9560e515fbe17ed52c306767a7050e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a new general form of image-level supervision for semantic segmentation based on approximate targets for the relative size of segments. At each training image, such targets are represented by a categorical distribution for the \"expected\" average prediction over the image pixels. We motiva"
+  },
+  "collected_at": "2026-03-09T00:45:13.548Z"
+}

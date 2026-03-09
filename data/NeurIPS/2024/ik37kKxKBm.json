@@ -1,0 +1,37 @@
+{
+  "id": "ik37kKxKBm",
+  "or_id": "ik37kKxKBm",
+  "title": "In-Context Learning with Representations: Contextual Generalization of Trained Transformers",
+  "title_zh": "",
+  "authors": [
+    "Tong Yang",
+    "Yu Huang",
+    "Yingbin Liang",
+    "Yuejie Chi"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In-context learning (ICL) refers to a remarkable capability of pretrained large language models, which can learn a new task given a few examples during inference. However, theoretical understanding of ICL is largely under-explored, particularly whether transformers can be trained to generalize to unseen examples in a prompt, which will require the model to acquire contextual knowledge of the prompt for generalization. This paper investigates the training dynamics of  transformers by gradient descent through the lens of non-linear regression tasks. The contextual generalization here can be attained via  learning  the template function for each task in-context, where all template functions lie in a linear space with $m$ basis functions. We analyze the training dynamics of one-layer multi-head transformers to {in-contextly} predict unlabeled inputs given partially labeled prompts, where the labels contain Gaussian noise and the number of examples in each prompt  are not sufficient to determine the template. Under mild assumptions, we show that the training loss for a one-layer multi-head transformer converges linearly to a global minimum. Moreover, the transformer effectively learns to perform ridge regression over the basis functions. To our knowledge, this study is the first provable demonstration that transformers can learn contextual (i.e., template) information to generalize to both unseen examples and tasks when prompts contain only a small number of query-answer pairs.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "training dynamics",
+    "optimization",
+    "transformer",
+    "multi-head softmax attention",
+    "in-context learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ik37kKxKBm",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2621c7276cfe4a8d736631f3c3b519f9272a4682.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In-context learning (ICL) refers to a remarkable capability of pretrained large language models, which can learn a new task given a few examples during inference. However, theoretical understanding of ICL is largely under-explored, particularly whether transformers can be trained to generalize to un"
+  },
+  "collected_at": "2026-03-09T00:45:13.549Z"
+}

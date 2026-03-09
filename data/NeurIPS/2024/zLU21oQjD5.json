@@ -1,0 +1,36 @@
+{
+  "id": "zLU21oQjD5",
+  "or_id": "zLU21oQjD5",
+  "title": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+  "title_zh": "",
+  "authors": [
+    "Yuxuan Tong",
+    "Xiwen Zhang",
+    "Rui Wang",
+    "Ruidong Wu",
+    "Junxian He"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Solving mathematical problems requires advanced reasoning abilities and presents notable challenges for large language models. Previous works usually synthesize data from proprietary models to augment existing datasets, followed by instruction tuning to achieve top-tier results. However, our analysis of these datasets reveals severe biases towards easy queries, with frequent failures to generate any correct response for the most challenging queries.\nHypothesizing that difficult queries are crucial to learning complex reasoning, we propose *Difficulty-Aware Rejection Tuning* (`DART`), a method that allocates difficult queries more trials during the synthesis phase, enabling more extensive training on difficult samples.\nUtilizing `DART`, we have created new datasets for mathematical problem-solving that focus more on difficult queries and are substantially smaller than previous ones. Remarkably, our synthesis process solely relies on a 7B-sized open-weight model, without reliance on the commonly used proprietary GPT-4.\nWe fine-tune various base models on our datasets ranging from 7B to 70B in size, resulting in a series of strong models called `DART-Math`.\nIn comprehensive in-domain and out-of-domain evaluation on 6 mathematical benchmarks, `DART-Math` outperforms vanilla rejection tuning significantly, being superior or comparable to previous arts, despite using much smaller datasets and no proprietary models. Furthermore, our results position our synthetic datasets as the most effective and cost-efficient publicly available resources for advancing mathematical problem-solving. Our datasets, models and code are publicly available at https://github.com/hkust-nlp/dart-math.",
+  "abstract_zh": "",
+  "tldr": "To achieve the best performance (for mathematical reasoning), more correct responses for difficult queries are crucial.",
+  "keywords": [
+    "Large Language Models",
+    "Mathematical Reasoning",
+    "Synthetic Data"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=zLU21oQjD5",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/26d6bf8a231686aaa5faf9277e38c2b2d934ff28.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "To achieve the best performance (for mathematical reasoning), more correct responses for difficult queries are crucial."
+  },
+  "collected_at": "2026-03-09T00:45:13.551Z"
+}

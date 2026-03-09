@@ -1,0 +1,41 @@
+{
+  "id": "FZW7Ctyjm3",
+  "or_id": "FZW7Ctyjm3",
+  "title": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+  "title_zh": "",
+  "authors": [
+    "Yihe Deng",
+    "Pan Lu",
+    "Fan Yin",
+    "Ziniu Hu",
+    "Sheng Shen",
+    "Quanquan Gu",
+    "James Zou",
+    "Kai-Wei Chang",
+    "Wei Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large vision language models (LVLMs) integrate large language models (LLMs) with pre-trained vision encoders, thereby activating the perception capability of the model to understand image inputs for different queries and conduct subsequent reasoning. Improving this capability requires high-quality vision-language data, which is costly and labor-intensive to acquire. Self-training approaches have been effective in single-modal settings to alleviate the need for labeled data by leveraging model's own generation. However, effective self-training remains a challenge regarding the unique visual perception and reasoning capability of LVLMs. To address this, we introduce **S**elf-**T**raining on **I**mage **C**omprehension (**STIC**), which emphasizes a self-training approach specifically for image comprehension. First, the model self-constructs a preference dataset for image descriptions using unlabeled images. Preferred responses are generated through a step-by-step prompt, while dis-preferred responses are generated from either corrupted images or misleading prompts. To further self-improve reasoning on the extracted visual information, we let the model reuse a small portion of existing instruction-tuning data and append its self-generated image descriptions to the prompts. We validate the effectiveness of STIC across seven different benchmarks, demonstrating substantial performance gains of 4.0% on average while using 70% less supervised fine-tuning data than the current method. Further studies dive into various components of STIC and highlight its potential to leverage vast quantities of unlabeled images for self-training.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Large Vision-Language Models",
+    "multimodal preference alignment",
+    "self-training",
+    "synthetic data"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=FZW7Ctyjm3",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/695c912cb41743419d359d3224d1ec5f605d986c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Large vision language models (LVLMs) integrate large language models (LLMs) with pre-trained vision encoders, thereby activating the perception capability of the model to understand image inputs for different queries and conduct subsequent reasoning. Improving this capability requires high-quality v"
+  },
+  "collected_at": "2026-03-09T00:45:13.551Z"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "dg0hO4M11K",
+  "or_id": "dg0hO4M11K",
+  "title": "Exploring Consistency in Graph Representations: from Graph Kernels to Graph Neural Networks",
+  "title_zh": "",
+  "authors": [
+    "Xuyuan Liu",
+    "Yinghao Cai",
+    "Qihui Yang",
+    "Yujun Yan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Graph Neural Networks (GNNs) have emerged as a dominant approach in graph representation learning, yet they often struggle to capture consistent similarity relationships among graphs.  To capture similarity relationships, while graph kernel methods like the Weisfeiler-Lehman subtree (WL-subtree) and Weisfeiler-Lehman optimal assignment (WLOA) perform effectively, they are heavily reliant on predefined kernels and lack sufficient non-linearities. Our work aims to bridge the gap between neural network methods and kernel approaches by enabling GNNs to consistently capture relational structures in their learned representations. Given the analogy between the message-passing process of GNNs and WL algorithms, we thoroughly compare and analyze the properties of WL-subtree and WLOA kernels. We find that the similarities captured by WLOA at different iterations are asymptotically consistent, ensuring that similar graphs remain similar in subsequent iterations, thereby leading to superior performance over the WL-subtree kernel. Inspired by these findings, we conjecture that the consistency in the similarities of graph representations across GNN layers is crucial in capturing relational structures and enhancing graph classification performance. Thus, we propose a loss to enforce the similarity of graph representations to be consistent across different layers. Our empirical analysis verifies our conjecture and shows that our proposed consistency loss can significantly enhance graph classification performance across several GNN backbones on various datasets.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Graph Neural Networks",
+    "Representation Consistency",
+    "Graph Classification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=dg0hO4M11K",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0a1072b7d2f43f6a98c52aefe66bbf8fc7dd79fa.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Graph Neural Networks (GNNs) have emerged as a dominant approach in graph representation learning, yet they often struggle to capture consistent similarity relationships among graphs.  To capture similarity relationships, while graph kernel methods like the Weisfeiler-Lehman subtree (WL-subtree) and"
+  },
+  "collected_at": "2026-03-09T00:45:13.551Z"
+}
