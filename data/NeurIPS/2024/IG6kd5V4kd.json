@@ -1,0 +1,35 @@
+{
+  "id": "IG6kd5V4kd",
+  "or_id": "IG6kd5V4kd",
+  "title": "Sigmoid Gating is More Sample Efficient than Softmax Gating in Mixture of Experts",
+  "title_zh": "",
+  "authors": [
+    "Huy Nguyen",
+    "Nhat Ho",
+    "Alessandro Rinaldo"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The softmax gating function is arguably the most popular choice in mixture of experts modeling. Despite its widespread use in practice, the softmax gating may lead to unnecessary competition among experts, potentially causing the undesirable phenomenon of representation collapse due to its inherent structure. In response, the sigmoid gating function has been recently proposed as an alternative and has been demonstrated empirically to achieve superior performance. However, a rigorous examination of the sigmoid gating function is lacking in current literature. In this paper, we verify theoretically that the sigmoid gating, in fact, enjoys a higher sample efficiency than the softmax gating for the statistical task of expert estimation. Towards that goal, we consider a regression framework in which the unknown regression function is modeled as a mixture of experts, and study the rates of convergence of the least squares estimator under the over-specified case in which the number of fitted experts is larger than the true value. We show that two gating regimes naturally arise and, in each of them, we formulate an identifiability condition for the expert functions and derive the corresponding convergence rates. In both cases, we find that experts formulated as feed-forward networks with commonly used activation such as $\\mathrm{ReLU}$ and $\\mathrm{GELU}$ enjoy faster convergence rates under the sigmoid gating than those under softmax gating. Furthermore, given the same choice of experts, we demonstrate that the sigmoid gating function requires a smaller sample size than its softmax counterpart to attain the same error of expert estimation and, therefore, is more sample efficient.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "mixture of experts",
+    "sigmoid gating function",
+    "softmax gating function",
+    "sample efficiency"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=IG6kd5V4kd",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9a1051cfe0256725e6419093f115c5379a5a325d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The softmax gating function is arguably the most popular choice in mixture of experts modeling. Despite its widespread use in practice, the softmax gating may lead to unnecessary competition among experts, potentially causing the undesirable phenomenon of representation collapse due to its inherent "
+  },
+  "collected_at": "2026-03-09T04:05:25.259Z"
+}

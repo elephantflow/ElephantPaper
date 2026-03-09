@@ -1,0 +1,33 @@
+{
+  "id": "nJKfNiEBvq",
+  "or_id": "nJKfNiEBvq",
+  "title": "Learning the Latent Causal Structure for Modeling Label Noise",
+  "title_zh": "",
+  "authors": [
+    "Yexiong Lin",
+    "Yu Yao",
+    "Tongliang Liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In label-noise learning, the noise transition matrix reveals how an instance transitions from its clean label to its noisy label. Accurately estimating an instance's noise transition matrix is crucial for estimating its clean label. However, when only a noisy dataset is available, noise transition matrices can be estimated only for some \"special\" instances. To leverage these estimated transition matrices to help estimate the transition matrices of other instances, it is essential to explore relations between the matrices of these \"special\" instances and those of others. Existing studies typically build the relation by explicitly defining the similarity between the estimated noise transition matrices of \"special\" instances and those of other instances. However, these similarity-based assumptions are hard to validate and may not align with real-world data. If these assumptions fail, both noise transition matrices and clean labels cannot be accurately estimated. In this paper, we found that by learning the latent causal structure governing the generating process of noisy data, we can estimate noise transition matrices without the need for similarity-based assumptions. Unlike previous generative label-noise learning methods, we consider causal relations between latent causal variables and model them with a learnable graphical model. Utilizing only noisy data, our method can effectively learn the latent causal structure. Experimental results on various noisy datasets demonstrate that our method achieves state-of-the-art performance in estimating noise transition matrices, which leads to improved classification accuracy. The code is available at: https://github.com/tmllab/2024_NeurIPS_CSGN.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Label noise",
+    "transition matrices"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=nJKfNiEBvq",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/004832b2f309fcf60e7b1f59c6b4b9019dd86d51.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In label-noise learning, the noise transition matrix reveals how an instance transitions from its clean label to its noisy label. Accurately estimating an instance's noise transition matrix is crucial for estimating its clean label. However, when only a noisy dataset is available, noise transition m"
+  },
+  "collected_at": "2026-03-09T04:05:25.257Z"
+}
