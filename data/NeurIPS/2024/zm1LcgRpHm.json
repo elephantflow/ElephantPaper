@@ -1,0 +1,35 @@
+{
+  "id": "zm1LcgRpHm",
+  "or_id": "zm1LcgRpHm",
+  "title": "Segment, Shuffle, and Stitch: A Simple Layer for Improving Time-Series Representations",
+  "title_zh": "",
+  "authors": [
+    "Shivam Grover",
+    "Amin Jalali",
+    "Ali Etemad"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Existing approaches for learning representations of time-series keep the temporal arrangement of the time-steps intact with the presumption that the original order is the most optimal for learning. However, non-adjacent sections of real-world time-series may have strong dependencies. Accordingly, we raise the question: Is there an alternative arrangement for time-series which could enable more effective representation learning? To address this, we propose a simple plug-and-play neural network layer called Segment, Shuffle, and Stitch (S3) designed to improve representation learning in time-series models. S3 works by creating non-overlapping segments from the original sequence and shuffling them in a learned manner that is optimal for the task at hand. It then re-attaches the shuffled segments back together and performs a learned weighted sum with the original input to capture both the newly shuffled sequence along with the original sequence. S3 is modular and can be stacked to achieve different levels of granularity, and can be added to many forms of neural architectures including CNNs or Transformers with negligible computation overhead. Through extensive experiments on several datasets and state-of-the-art baselines, we show that incorporating S3 results in significant improvements for the tasks of time-series classification, forecasting, and anomaly detection, improving performance on certain datasets by up to 68\\%. We also show that S3 makes the learning more stable with a smoother training loss curve and loss landscape compared to the original baseline. The code is available at https://github.com/shivam-grover/S3-TimeSeries.",
+  "abstract_zh": "",
+  "tldr": "This paper presents S3, a modular neural network layer that is designed to enhance time-series representation learning by rearranging its segments, yielding improved results across various tasks with minimal computational overhead.",
+  "keywords": [
+    "Time Series",
+    "Deep Learning",
+    "Representation Learning",
+    "Temporal Mechanism"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=zm1LcgRpHm",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d5ba68bdf83d04632580f0b9e7ac80199a8c19c5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper presents S3, a modular neural network layer that is designed to enhance time-series representation learning by rearranging its segments, yielding improved results across various tasks with minimal computational overhead."
+  },
+  "collected_at": "2026-03-09T02:25:15.315Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "p37NlKi9vl",
+  "or_id": "p37NlKi9vl",
+  "title": "Exact, Tractable Gauss-Newton Optimization in Deep Reversible Architectures Reveal Poor Generalization",
+  "title_zh": "",
+  "authors": [
+    "Davide Buffelli",
+    "Jamie McGowan",
+    "Wangkun Xu",
+    "Alexandru Cioba",
+    "Da-shan Shiu",
+    "Guillaume Hennequin",
+    "Alberto Bernacchia"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Second-order optimization has been shown to accelerate the training of deep neural networks in many applications, often yielding faster progress per iteration on the training loss compared to first-order optimizers. However, the generalization properties of second-order methods are still being debated. Theoretical investigations have proved difficult to carry out outside the tractable settings of heavily simplified model classes - thus, the relevance of existing theories to practical deep learning applications remains unclear. Similarly, empirical studies in large-scale models and real datasets are significantly confounded by the necessity to approximate second-order updates in practice. It is often unclear whether the observed generalization behaviour arises specifically from the second-order nature of the parameter updates, or instead reflects the specific structured (e.g. Kronecker) approximations used or any damping-based interpolation towards first-order updates. Here, we show for the first time that exact Gauss-Newton (GN) updates take on a tractable form in a class of deep reversible architectures that are sufficiently expressive to be meaningfully applied to common benchmark datasets. We exploit this novel setting to study the training and generalization properties of the GN optimizer. We find that exact GN generalizes poorly. In the mini-batch training setting, this manifests as rapidly saturating progress even on the training loss, with parameter updates found to overfit each mini-batch without producing the features that would support generalization to other mini-batches. In contrast to previous work, we show that our experiments run in the feature learning regime, in which the neural tangent kernel (NTK) changes during the course of training. However, changes in the NTK are not associated with any significant change in neural representations, explaining the lack of generalization.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Gauss-Newton",
+    "Optimization",
+    "Deep Learning",
+    "Reversible Neural Networks"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=p37NlKi9vl",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/86472b35b8afcaf820a9cce70de715247435a5a4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Second-order optimization has been shown to accelerate the training of deep neural networks in many applications, often yielding faster progress per iteration on the training loss compared to first-order optimizers. However, the generalization properties of second-order methods are still being debat"
+  },
+  "collected_at": "2026-03-09T02:25:15.316Z"
+}

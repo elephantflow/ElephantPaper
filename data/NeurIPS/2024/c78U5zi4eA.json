@@ -1,0 +1,38 @@
+{
+  "id": "c78U5zi4eA",
+  "or_id": "c78U5zi4eA",
+  "title": "How Does Message Passing Improve Collaborative Filtering?",
+  "title_zh": "",
+  "authors": [
+    "Mingxuan Ju",
+    "William Shiao",
+    "Zhichun Guo",
+    "Yanfang Ye",
+    "Yozen Liu",
+    "Neil Shah",
+    "Tong Zhao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Collaborative filtering (CF) has exhibited prominent results for recommender systems and been broadly utilized for real-world applications.\nA branch of research enhances CF methods by message passing (MP) used in graph neural networks, due to its strong capabilities of extracting knowledge from graph-structured data, like user-item bipartite graphs that naturally exist in CF. They assume that MP helps CF methods in a manner akin to its benefits for graph-based learning tasks in general (e.g., node classification). However, even though MP empirically improves CF, whether or not this assumption is correct still needs verification. To address this gap, we formally investigate why MP helps CF from multiple perspectives and show that many assumptions made by previous works are not entirely accurate. With our curated ablation studies and theoretical analyses, we discover that (i) MP improves the CF performance primarily by additional representations passed from neighbors during the forward pass instead of additional gradient updates to neighbor representations during the model back-propagation and (ii) MP usually helps low-degree nodes more than high-degree nodes.}Utilizing these novel findings, we present Test-time Aggregation for Collaborative Filtering, namely TAG-CF, a test-time augmentation framework that only conducts MP once at inference time. The key novelty of TAG-CF is that it effectively utilizes graph knowledge while circumventing most of notorious computational overheads of MP. Besides, TAG-CF is extremely versatile can be used as a plug-and-play module to enhance representations trained by different CF supervision signals. Evaluated on six datasets (i.e., five academic benchmarks and one real-world industrial dataset), TAG-CF consistently improves the recommendation performance of CF methods without graph by up to 39.2% on cold users and 31.7% on all users, with little to no extra computational overheads. Furthermore, compared with trending graph-enhanced CF",
+  "abstract_zh": "",
+  "tldr": "This work studies how does message passing improve collaborative filtering and proposes an efficient framework called TAG-CF to leverage the findings.",
+  "keywords": [
+    "Recommender Systems",
+    "Test-time Augmentation",
+    "Collaborative Filtering"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=c78U5zi4eA",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/23f92092e0bdf4b282ded977c322580448f50217.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This work studies how does message passing improve collaborative filtering and proposes an efficient framework called TAG-CF to leverage the findings."
+  },
+  "collected_at": "2026-03-09T02:25:15.312Z"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "0SRJBtTNhX",
+  "or_id": "0SRJBtTNhX",
+  "title": "IntraMix: Intra-Class Mixup Generation for Accurate Labels and Neighbors",
+  "title_zh": "",
+  "authors": [
+    "Shenghe Zheng",
+    "Hongzhi Wang",
+    "Xianglong Liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Graph Neural Networks (GNNs) have shown great performance in various tasks, with the core idea of learning from data labels and aggregating messages within the neighborhood of nodes. However, the common challenges in graphs are twofold: insufficient accurate (high-quality) labels and limited neighbors for nodes, resulting in weak GNNs. \nExisting graph augmentation methods typically address only one of these challenges, often adding training costs or relying on oversimplified or knowledge-intensive strategies, limiting their generalization.\nTo simultaneously address both challenges faced by graphs in a generalized way, we propose an elegant method called IntraMix. Considering the incompatibility of vanilla Mixup with the complex topology of graphs, IntraMix innovatively employs Mixup among inaccurate labeled data of the same class, generating high-quality labeled data at minimal cost. \nAdditionally, it finds data with high confidence of being clustered into the same group as the generated data to serve as their neighbors, thereby enriching the neighborhoods of graphs. IntraMix efficiently tackles both issues faced by graphs and challenges the prior notion of the limited effectiveness of Mixup in node classification. IntraMix is a theoretically grounded plug-in-play method that can be readily applied to all GNNs. Extensive experiments demonstrate the effectiveness of IntraMix across various GNNs and datasets. Our code is available at:  [https://github.com/Zhengsh123/IntraMix](https://github.com/Zhengsh123/IntraMix).",
+  "abstract_zh": "",
+  "tldr": "This paper introduces IntraMix, a graph augmentation method that employs Intra-Class Mixup and high-confidence neighbor selection. IntraMix addresses both the issues of scarce high-quality labels and missing neighborhoods in most graphs.",
+  "keywords": [
+    "Graph Machine Learning",
+    "Graph Data Augmentation",
+    "Graph Neural Networks"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=0SRJBtTNhX",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2df08c17e88734ce3e56147658624ff49f7b1898.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper introduces IntraMix, a graph augmentation method that employs Intra-Class Mixup and high-confidence neighbor selection. IntraMix addresses both the issues of scarce high-quality labels and missing neighborhoods in most graphs."
+  },
+  "collected_at": "2026-03-09T02:25:15.315Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "dfqsW38v1X",
+  "or_id": "dfqsW38v1X",
+  "title": "QuaRot: Outlier-Free 4-Bit Inference in Rotated LLMs",
+  "title_zh": "",
+  "authors": [
+    "Saleh Ashkboos",
+    "Amirkeivan Mohtashami",
+    "Maximilian L. Croci",
+    "Bo Li",
+    "Pashmina Cameron",
+    "Martin Jaggi",
+    "Dan Alistarh",
+    "Torsten Hoefler",
+    "James Hensman"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We introduce QuaRot, a new Quantization scheme based on Rotations, which is able to quantize LLMs end-to-end, including all weights, activations, and KV cache in 4 bits. QuaRot rotates LLMs in a way that removes outliers from the hidden state without changing the output, making quantization easier. This computational invariance is applied to the hidden state (residual) of the LLM, as well as to the activations of the feed-forward components, aspects of the attention mechanism, and to the KV cache. The result is a quantized model where all matrix multiplications are performed in 4 bits, without any channels identified for retention in higher precision. Our 4-bit quantized LLAMA2-70B model has losses of at most 0.47 WikiText-2 perplexity and retains 99% of the zero-shot performance. We also show that QuaRot can provide lossless 6 and 8 bit LLAMA-2 models without any calibration data using round-to-nearest quantization. Code is available at github.com/spcl/QuaRot.",
+  "abstract_zh": "",
+  "tldr": "We present a quantization scheme that enables 4-bit quantization of all weights, activations and KV-caches of LLMs during inference",
+  "keywords": [
+    "quantization",
+    "efficient inference",
+    "large language models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=dfqsW38v1X",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/139029c96e2d340c8703447400fd4c85b745604c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present a quantization scheme that enables 4-bit quantization of all weights, activations and KV-caches of LLMs during inference"
+  },
+  "collected_at": "2026-03-09T02:25:15.315Z"
+}
