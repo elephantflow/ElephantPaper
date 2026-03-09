@@ -1,0 +1,37 @@
+{
+  "id": "IwNTiNPxFt",
+  "or_id": "IwNTiNPxFt",
+  "title": "Stable-Pose: Leveraging Transformers for Pose-Guided Text-to-Image Generation",
+  "title_zh": "",
+  "authors": [
+    "Jiajun Wang",
+    "MORTEZA GHAHREMANI",
+    "Yitong Li",
+    "Björn Ommer",
+    "Christian Wachinger"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Controllable text-to-image (T2I) diffusion models have shown impressive performance in generating high-quality visual content through the incorporation of various conditions. Current methods, however, exhibit limited performance when guided by skeleton human poses, especially in complex pose conditions such as side or rear perspectives of human figures. To address this issue, we present Stable-Pose, a novel adapter model that introduces a coarse-to-fine attention masking strategy into a vision Transformer (ViT) to gain accurate pose guidance for T2I models. Stable-Pose is designed to adeptly handle pose conditions within pre-trained Stable Diffusion, providing a refined and efficient way of aligning pose representation during image synthesis. We leverage the query-key self-attention mechanism of ViTs to explore the interconnections among different anatomical parts in human pose skeletons. Masked pose images are used to smoothly refine the attention maps based on target pose-related features in a hierarchical manner, transitioning from coarse to fine levels. \nAdditionally, our loss function is formulated to allocate increased emphasis to the pose region, thereby augmenting the model's precision in capturing intricate pose details.    We assessed the performance of Stable-Pose across five public datasets under a wide range of indoor and outdoor human pose scenarios. Stable-Pose achieved an AP score of 57.1 in the LAION-Human dataset, marking around 13\\% improvement over the established technique ControlNet.  The project link and code is available at https://github.com/ai-med/StablePose.",
+  "abstract_zh": "",
+  "tldr": "We present Stable-Pose, a novel adapter model that incorporates a coarse-to-fine attention masking strategy into a vision Transformer (ViT) for gaining accurate pose guidance in T2I diffusion models.",
+  "keywords": [
+    "Pose-guided text-to-image (T2I)",
+    "Diffusion models",
+    "Stable Diffusion",
+    "vision Transformers"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=IwNTiNPxFt",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9c9906811012d789c12c3bfcb70da5604a8349cc.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present Stable-Pose, a novel adapter model that incorporates a coarse-to-fine attention masking strategy into a vision Transformer (ViT) for gaining accurate pose guidance in T2I diffusion models."
+  },
+  "collected_at": "2026-03-09T02:05:21.468Z"
+}

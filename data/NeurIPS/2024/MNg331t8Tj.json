@@ -1,0 +1,35 @@
+{
+  "id": "MNg331t8Tj",
+  "or_id": "MNg331t8Tj",
+  "title": "Advancing Fine-Grained Classification by Structure and Subject Preserving Augmentation",
+  "title_zh": "",
+  "authors": [
+    "Eyal Michaeli",
+    "Ohad Fried"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Fine-grained visual classification (FGVC) involves classifying closely related subcategories. This task is inherently difficult due to the subtle differences between classes and the high intra-class variance. Moreover, FGVC datasets are typically small and challenging to gather, thus highlighting a significant need for effective data augmentation.\nRecent advancements in text-to-image diffusion models have introduced new possibilities for data augmentation in image classification. While these models have been used to generate training data for classification tasks, their effectiveness in full-dataset training of FGVC models remains under-explored. Recent techniques that rely on text-to-image generation or Img2Img methods, such as SDEdit, often struggle to generate images that accurately represent the class while modifying them to a degree that significantly increases the dataset's diversity. To address these challenges, we present SaSPA: Structure and Subject Preserving Augmentation. Contrary to recent methods, our method does not use real images as guidance, thereby increasing generation flexibility and promoting greater diversity. To ensure accurate class representation, we employ conditioning mechanisms, specifically by conditioning on image edges and subject representation.\nWe conduct extensive experiments and benchmark SaSPA against both traditional and generative data augmentation techniques. SaSPA consistently outperforms all established baselines across multiple settings, including full dataset training and contextual bias. Additionally, our results reveal interesting patterns in using synthetic data for FGVC models; for instance, we find a relationship between the amount of real data used and the optimal proportion of synthetic data.",
+  "abstract_zh": "",
+  "tldr": "Our paper introduces SaSPA, a novel data augmentation (DA) method for fine-grained visual classification that surpasses existing DA methods by generating synthetic data that is both more diverse and accurately represents fine-grained classes.",
+  "keywords": [
+    "Fine-grained Visual Classification",
+    "Data Augmentation",
+    "Synthetic Data",
+    "Diffusion Models",
+    "Image Classification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=MNg331t8Tj",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a68333e357015c0da34498829380c0df7fac727c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Our paper introduces SaSPA, a novel data augmentation (DA) method for fine-grained visual classification that surpasses existing DA methods by generating synthetic data that is both more diverse and accurately represents fine-grained classes."
+  },
+  "collected_at": "2026-03-09T02:05:21.471Z"
+}

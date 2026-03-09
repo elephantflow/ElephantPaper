@@ -1,0 +1,35 @@
+{
+  "id": "ugqx9tgyum",
+  "or_id": "ugqx9tgyum",
+  "title": "Incorporating Test-Time Optimization into Training with Dual Networks for Human Mesh Recovery",
+  "title_zh": "",
+  "authors": [
+    "Yongwei Nie",
+    "Mingxian Fan",
+    "Chengjiang Long",
+    "Qing Zhang",
+    "Jian Zhu",
+    "Xuemiao Xu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Human Mesh Recovery (HMR) is the task of estimating a parameterized 3D human mesh from an image. There is a kind of methods first training a regression model for this problem, then further optimizing the pretrained regression model for any specific sample individually at test time. However, the pretrained model may not provide an ideal optimization starting point for the test-time optimization. Inspired by meta-learning, we incorporate the test-time optimization into training, performing a step of test-time optimization for each sample in the training batch before really conducting the training optimization over all the training samples. In this way, we obtain a meta-model, the meta-parameter of which is friendly to the test-time optimization. At test time, after several test-time optimization steps starting from the meta-parameter, we obtain much higher HMR accuracy than the test-time optimization starting from the simply pretrained regression model. Furthermore, we find test-time HMR objectives are different from training-time objectives, which reduces the effectiveness of the learning of the meta-model. To solve this problem, we propose a dual-network architecture that unifies the training-time and test-time objectives. Our method, armed with meta-learning and the dual networks, outperforms state-of-the-art regression-based and optimization-based HMR approaches, as validated by the extensive experiments. The codes are available at https://github.com/fmx789/Meta-HMR.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Human Mesh Recovery; Meta-Learning; Test-Time Optimization; Training Optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ugqx9tgyum",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/49c32264f3c66302dba10c8926a06f670753fe19.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Human Mesh Recovery (HMR) is the task of estimating a parameterized 3D human mesh from an image. There is a kind of methods first training a regression model for this problem, then further optimizing the pretrained regression model for any specific sample individually at test time. However, the pret"
+  },
+  "collected_at": "2026-03-09T02:05:21.471Z"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "jRtxzzk0a6",
+  "or_id": "jRtxzzk0a6",
+  "title": "Kraken: Inherently Parallel Transformers For Efficient Multi-Device Inference",
+  "title_zh": "",
+  "authors": [
+    "Rohan Baskar Prabhakar",
+    "Hengrui Zhang",
+    "David Wentzlaff"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large Transformer networks are increasingly used in settings where low inference latency is necessary to enable new applications and improve the end-user experience.\nHowever, autoregressive inference is resource intensive and requires parallelism for efficiency.\nParallelism introduces collective communication that is both expensive and represents a phase when hardware resources are underutilized.\nTowards mitigating this, Kraken is an evolution of the standard Transformer architecture that is designed to complement existing tensor parallelism schemes for efficient inference on multi-device systems.\nBy introducing a fixed degree of intra-layer model parallelism, the architecture allows collective operations to be overlapped with compute, decreasing latency and increasing hardware utilization.\nWhen trained on OpenWebText, Kraken models reach a similar perplexity as standard Transformers while also preserving their language modeling capabilities as evaluated on the SuperGLUE benchmark.\nImportantly, when tested on multi-GPU systems using TensorRT-LLM engines, Kraken speeds up Time To First Token by a mean of 35.6% across a range of model sizes, context lengths, and degrees of tensor parallelism.",
+  "abstract_zh": "",
+  "tldr": "New Transformer architecture that allows overlapping communication collectives with compute to speed up inference.",
+  "keywords": [
+    "Neural Networks"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=jRtxzzk0a6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fb0201479f2fd17acfe8d15ef583ed458ab564a0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "New Transformer architecture that allows overlapping communication collectives with compute to speed up inference."
+  },
+  "collected_at": "2026-03-09T02:05:21.469Z"
+}

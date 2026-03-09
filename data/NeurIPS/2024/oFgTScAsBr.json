@@ -1,0 +1,38 @@
+{
+  "id": "oFgTScAsBr",
+  "or_id": "oFgTScAsBr",
+  "title": "Masked Pre-training Enables Universal Zero-shot Denoiser",
+  "title_zh": "",
+  "authors": [
+    "Xiaoxiao Ma",
+    "Zhixiang Wei",
+    "Yi Jin",
+    "Pengyang Ling",
+    "Tianle Liu",
+    "Ben Wang",
+    "Junkang Dai",
+    "Huaian Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In this work, we observe that model trained on vast general images via masking strategy, has been naturally embedded with their distribution knowledge, thus spontaneously attains the underlying potential for strong image denoising.\nBased on this observation, we propose a novel zero-shot denoising paradigm, i.e., $\\textbf{M}$asked $\\textbf{P}$re-train then $\\textbf{I}$terative fill ($\\textbf{MPI}$).\nMPI first trains model via masking and then employs pre-trained weight for high-quality zero-shot image denoising on a single noisy image.\nConcretely, MPI comprises two key procedures:\n$\\textbf{1) Masked Pre-training}$ involves training model to reconstruct massive natural images with random masking for generalizable representations, gathering the potential for valid zero-shot denoising on images with varying noise degradation and even in distinct image types.\n$\\textbf{2) Iterative filling}$ exploits pre-trained knowledge for effective zero-shot denoising. It iteratively optimizes the image by leveraging pre-trained weights, focusing on alternate reconstruction of different image parts, and gradually assembles fully denoised image within limited number of iterations.\nComprehensive experiments across various noisy scenarios underscore the notable advances of MPI over previous approaches with a marked reduction in inference time.",
+  "abstract_zh": "",
+  "tldr": "An efficient yet novel approach for zero-shot denoising",
+  "keywords": [
+    "image restoration",
+    "image denoising，self-supervised learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=oFgTScAsBr",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/264ce97f1508a2a3605cf04af7e7ebd47bcf6786.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "An efficient yet novel approach for zero-shot denoising"
+  },
+  "collected_at": "2026-03-09T02:05:21.471Z"
+}

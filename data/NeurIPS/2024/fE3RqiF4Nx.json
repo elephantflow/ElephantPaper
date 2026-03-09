@@ -1,0 +1,37 @@
+{
+  "id": "fE3RqiF4Nx",
+  "or_id": "fE3RqiF4Nx",
+  "title": "Metric Flow Matching for Smooth Interpolations on the Data Manifold",
+  "title_zh": "",
+  "authors": [
+    "Kacper Kapusniak",
+    "Peter Potaptchik",
+    "Teodora Reu",
+    "Leo Zhang",
+    "Alexander Tong",
+    "Michael M. Bronstein",
+    "Joey Bose",
+    "Francesco Di Giovanni"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Matching objectives underpin the success of modern generative models and rely on constructing conditional paths that transform a source distribution into a target distribution. Despite being a fundamental building block, conditional paths have been designed principally under the assumption of $\\textit{Euclidean geometry}$, resulting in straight interpolations. However, this can be particularly restrictive for tasks such as trajectory inference, where straight paths might lie outside the data manifold, thus failing to capture the underlying dynamics giving rise to the observed marginals. In this paper, we propose Metric Flow Matching (MFM), a novel simulation-free framework for conditional flow matching where interpolants are approximate geodesics learned by minimizing the kinetic energy of a data-induced Riemannian metric. This way, the generative model matches vector fields on the data manifold, which corresponds to lower uncertainty and more meaningful interpolations. We prescribe general metrics to instantiate MFM, independent of the task, and test it on a suite of challenging problems including LiDAR navigation, unpaired image translation, and modeling cellular dynamics. We observe that MFM outperforms the Euclidean baselines, particularly achieving SOTA on single-cell trajectory prediction.",
+  "abstract_zh": "",
+  "tldr": "We generalize Conditional Flow Matching by learning interpolants that stay on the data manifold leading to more meaningful matching",
+  "keywords": [
+    "Flow Matching; Riemannian Geometry; single-cell RNA sequencing;"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=fE3RqiF4Nx",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5fd21860d4ce3d4b1c290c2ac4b4e68d2b82e3a7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We generalize Conditional Flow Matching by learning interpolants that stay on the data manifold leading to more meaningful matching"
+  },
+  "collected_at": "2026-03-09T02:05:21.471Z"
+}
