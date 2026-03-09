@@ -1,0 +1,35 @@
+{
+  "id": "HBj86RMdZ8",
+  "or_id": "HBj86RMdZ8",
+  "title": "The Importance of Online Data: Understanding Preference Fine-tuning via Coverage",
+  "title_zh": "",
+  "authors": [
+    "Yuda Song",
+    "Gokul Swamy",
+    "Aarti Singh",
+    "Drew Bagnell",
+    "Wen Sun"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Learning from human preference data has emerged as the dominant paradigm for fine-tuning large language models (LLMs). The two most common families of techniques -- online reinforcement learning (RL) such as Proximal Policy Optimization (PPO) and offline contrastive methods such as Direct Preference Optimization (DPO) -- were positioned as equivalent in prior work due to the fact that both have to start from the same offline preference dataset. To further expand our theoretical understanding of the similarities and differences between online and offline techniques for preference fine-tuning, we conduct a rigorous analysis through the lens of *dataset coverage*, a concept that captures how the training data covers the test distribution and is widely used in RL. We prove that a global coverage condition is both necessary and sufficient for offline contrastive methods to converge to the optimal policy, but a weaker partial coverage condition suffices for online RL methods. This separation provides one explanation of why online RL methods can perform better than offline methods, especially when the offline preference data is not diverse enough. Finally, motivated by our preceding theoretical observations, we derive a hybrid preference optimization (HyPO) algorithm that uses offline data for contrastive-based preference optimization and online unlabeled data for KL regularization. Theoretically and empirically, we demonstrate that HyPO is more performant than its pure offline counterpart DPO, while still preserving its computation and memory efficiency.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Reinforcement Learning from Human Feedback",
+    "LLM finetuning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=HBj86RMdZ8",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6ce5edca1c5e6e6c9285c836cbcc6e6324c0d1dd.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Learning from human preference data has emerged as the dominant paradigm for fine-tuning large language models (LLMs). The two most common families of techniques -- online reinforcement learning (RL) such as Proximal Policy Optimization (PPO) and offline contrastive methods such as Direct Preference"
+  },
+  "collected_at": "2026-03-09T06:05:15.749Z"
+}

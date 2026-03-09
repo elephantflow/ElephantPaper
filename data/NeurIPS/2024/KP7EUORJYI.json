@@ -1,0 +1,35 @@
+{
+  "id": "KP7EUORJYI",
+  "or_id": "KP7EUORJYI",
+  "title": "Goal-Conditioned On-Policy Reinforcement Learning",
+  "title_zh": "",
+  "authors": [
+    "Gong Xudong",
+    "Feng Dawei",
+    "Kele Xu",
+    "Bo Ding",
+    "Huaimin Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Existing Goal-Conditioned Reinforcement Learning (GCRL) algorithms are built upon Hindsight Experience Replay (HER), which densifies rewards through hindsight replay and leverages historical goal-achieving information to construct a learning curriculum. However, when the task is characterized by a non-Markovian reward (NMR), whose computation depends on multiple steps of states and actions, HER can no longer densify rewards by treating a single encountered state as the hindsight goal. The lack of informative rewards hinders policy learning, resulting in rolling out failed trajectories. Consequently, the replay buffer is overwhelmed with failed trajectories, impeding the establishment of an applicable curriculum. To circumvent these limitations, we deviate from existing HER-based methods and propose an on-policy GCRL framework, GCPO, which is applicable to both multi-goal Markovian reward (MR) and NMR problems.\nGCPO consists of (1) Pre-training from Demonstrations, which pre-trains the policy to possess an initial goal-achieving capability, thereby diminishing the difficulty of subsequent online learning. (2) Online Self-Curriculum Learning, which first estimates the policy's goal-achieving capability based on historical evaluation information and then selects progressively challenging goals for learning based on its current capability. We evaluate GCPO on a challenging multi-goal long-horizon task: fixed-wing UAV velocity vector control. Experimental results demonstrate that GCPO is capable of effectively addressing both multi-goal MR and NMR problems.",
+  "abstract_zh": "",
+  "tldr": "We propose an on-policy goal-conditioned reinforcement learning framework, GCPO, which is applicable to both Markovian and non-Markovian reward problems.",
+  "keywords": [
+    "Goal-conditioned reinforcement learning",
+    "on-policy reinforcement learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=KP7EUORJYI",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b1fdf1b3bd25c9015a3a7ea76becbb6aa3514885.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose an on-policy goal-conditioned reinforcement learning framework, GCPO, which is applicable to both Markovian and non-Markovian reward problems."
+  },
+  "collected_at": "2026-03-09T06:05:15.749Z"
+}

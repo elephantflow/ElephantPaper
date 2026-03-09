@@ -1,0 +1,39 @@
+{
+  "id": "xjyU6zmZD7",
+  "or_id": "xjyU6zmZD7",
+  "title": "Take A Shortcut Back: Mitigating the Gradient Vanishing for Training Spiking Neural Networks",
+  "title_zh": "",
+  "authors": [
+    "Yufei Guo",
+    "Yuanpei Chen",
+    "Zecheng Hao",
+    "Weihang Peng",
+    "Zhou Jie",
+    "Yuhan Zhang",
+    "Xiaode Liu",
+    "Zhe Ma"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The Spiking Neural Network (SNN) is a biologically inspired neural network infrastructure that has recently garnered significant attention. It utilizes binary spike activations to transmit information, thereby replacing multiplications with additions and resulting in high energy efficiency. However, training an SNN directly poses a challenge due to the undefined gradient of the firing spike process. Although prior works have employed various surrogate gradient training methods that use an alternative function to replace the firing process during back-propagation, these approaches ignore an intrinsic problem: gradient vanishing. To address this issue, we propose a shortcut back-propagation method in the paper, which advocates for transmitting the gradient directly from the loss to the shallow layers. This enables us to present the gradient to the shallow layers directly, thereby significantly mitigating the gradient vanishing problem. Additionally, this method does not introduce any burden during the inference phase.\nTo strike a balance between final accuracy and ease of training, we also propose an evolutionary training framework and implement it by inducing a balance coefficient that dynamically changes with the training epoch, which further improves the network's performance. Extensive experiments conducted over static and dynamic datasets using several popular network structures reveal that our method consistently outperforms state-of-the-art methods.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Spiking Neural Network",
+    "Training SNNs",
+    "Surrogate gradient"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=xjyU6zmZD7",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6dfff0aec6f93d33ffa638873f008d9ca6857190.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The Spiking Neural Network (SNN) is a biologically inspired neural network infrastructure that has recently garnered significant attention. It utilizes binary spike activations to transmit information, thereby replacing multiplications with additions and resulting in high energy efficiency. However,"
+  },
+  "collected_at": "2026-03-09T06:05:15.750Z"
+}

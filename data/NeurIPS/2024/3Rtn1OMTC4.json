@@ -1,0 +1,38 @@
+{
+  "id": "3Rtn1OMTC4",
+  "or_id": "3Rtn1OMTC4",
+  "title": "Spatiotemporal Predictive Pre-training for Robotic Motor Control",
+  "title_zh": "",
+  "authors": [
+    "Jiange Yang",
+    "Bei Liu",
+    "Jianlong Fu",
+    "Bocheng Pan",
+    "Gangshan Wu",
+    "Limin Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Robotic motor control necessitates the ability to predict the dynamics of environments and interaction objects. However, advanced self-supervised pre-trained visual representations (PVRs) in robotic motor control, leveraging large-scale egocentric videos, often focus solely on learning the static content features of sampled image frames. This neglects the crucial temporal motion clues in human video data, which implicitly contain key knowledge about sequential interacting and manipulating with the environments and objects. In this paper, we present a simple yet effective robotic motor control visual pre-training framework that jointly performs spatiotemporal prediction with dual decoders, utilizing large-scale video data, termed as \\textbf{STP}. STP adheres to two key designs in a multi-task learning manner. First, we perform spatial prediction on the masked current frame for learning content features. Second, we utilize the future frame with an extremely high masking ratio as a condition, based on the masked current frame, to conduct temporal prediction of future frame for capturing motion features. This asymmetric masking and decoder architecture design is very efficient, ensuring that our representation focusing on motion information while capturing spatial details. We carry out the largest-scale BC evaluation of PVRs for robotic motor control to date, which encompasses 21 tasks within a real-world Franka robot arm and 5 simulated environments. Extensive experiments demonstrate the effectiveness of STP as well as unleash its generality and data efficiency by further post-pre-training and hybrid pre-training. Our code and weights will be released for further applications.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Robotics Vision Pre-training",
+    "Robotic motor control",
+    "Behavior Cloning",
+    "Robot Manipulation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=3Rtn1OMTC4",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2dfa3075e4c4474e8284c993627046dcc970d93e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Robotic motor control necessitates the ability to predict the dynamics of environments and interaction objects. However, advanced self-supervised pre-trained visual representations (PVRs) in robotic motor control, leveraging large-scale egocentric videos, often focus solely on learning the static co"
+  },
+  "collected_at": "2026-03-09T06:05:15.751Z"
+}

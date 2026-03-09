@@ -1,0 +1,36 @@
+{
+  "id": "Ejg4d4FVrs",
+  "or_id": "Ejg4d4FVrs",
+  "title": "Elliptical Attention",
+  "title_zh": "",
+  "authors": [
+    "Stefan Nielsen",
+    "Laziz Abdullaev",
+    "Rachel Teo",
+    "Tan Minh Nguyen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Pairwise dot-product self-attention is key to the success of transformers that achieve state-of-the-art performance across a variety of applications in language and vision. This dot-product self-attention computes attention weights among the input tokens using Euclidean distance, which makes the model prone to representation collapse and vulnerable to contaminated samples. In this paper, we propose using a Mahalanobis distance metric for computing the attention weights to stretch the underlying feature space in directions of high contextual relevance. In particular, we define a hyper-ellipsoidal neighborhood around each query to increase the attention weights of the tokens lying in the contextually important directions. We term this novel class of attention Elliptical Attention. Our Elliptical Attention provides two benefits: 1) reducing representation collapse and 2) enhancing the model's robustness as the Elliptical Attention pays more attention to contextually relevant information, rather than focusing on some small subset of informative features. We empirically demonstrate the advantages of Elliptical Attention over the baseline dot-product attention and state-of-the-art attention methods on various practical tasks, including object classification, image\nsegmentation, and language modeling across different data modalities.",
+  "abstract_zh": "",
+  "tldr": "We show that using a Mahalanobis metric within the attention mechanism reduces representation collapse, and improves robustness to contamination.",
+  "keywords": [
+    "attention",
+    "non-parametric kernel regression",
+    "robustness",
+    "representation collapse"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Ejg4d4FVrs",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4977af05027c99d7c60e8667b31c602d29bd159a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show that using a Mahalanobis metric within the attention mechanism reduces representation collapse, and improves robustness to contamination."
+  },
+  "collected_at": "2026-03-09T06:05:15.750Z"
+}

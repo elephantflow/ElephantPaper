@@ -1,0 +1,37 @@
+{
+  "id": "Cjnirz5pan",
+  "or_id": "Cjnirz5pan",
+  "title": "SAFE: Slow and Fast Parameter-Efficient Tuning for Continual Learning with Pre-Trained Models",
+  "title_zh": "",
+  "authors": [
+    "Linglan Zhao",
+    "Xuerui Zhang",
+    "Ke Yan",
+    "Shouhong Ding",
+    "Weiran Huang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Continual learning aims to incrementally acquire new concepts in data streams while resisting forgetting previous knowledge.\nWith the rise of powerful pre-trained models (PTMs), there is a growing interest in training incremental learning systems using these foundation models, rather than learning from scratch. \nExisting works often view PTMs as a strong initial point and directly apply parameter-efficient tuning (PET) in the first session for adapting to downstream tasks.\nIn the following sessions, most methods freeze model parameters for tackling forgetting issues. \nHowever, applying PET directly to downstream data cannot fully explore the inherent knowledge in PTMs.\nAdditionally, freezing the parameters in incremental sessions hinders models' plasticity to novel concepts not covered in the first session. \nTo solve the above issues, we propose a Slow And Fast parameter-Efficient tuning (SAFE) framework.\nIn particular, to inherit general knowledge from foundation models, we include a transfer loss function by measuring the correlation between the PTM and the PET-applied model.\nAfter calibrating in the first session, the slow efficient tuning parameters can capture more informative features, improving generalization to incoming classes.\nMoreover, to further incorporate novel concepts, we strike a balance between stability and plasticity by fixing slow efficient tuning parameters and continuously updating the fast ones.\nSpecifically, a cross-classification loss with feature alignment is proposed to circumvent catastrophic forgetting.\nDuring inference, we introduce an entropy-based aggregation strategy to dynamically utilize the complementarity in the slow and fast learners.\nExtensive experiments on seven benchmark datasets verify the effectiveness of our method by significantly surpassing the state-of-the-art.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "continual learning",
+    "class incremental learning",
+    "pre-trained models",
+    "parameter-efficient tuning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Cjnirz5pan",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b3908c3be393c18fc129427ddaa94855af325df3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Continual learning aims to incrementally acquire new concepts in data streams while resisting forgetting previous knowledge.\nWith the rise of powerful pre-trained models (PTMs), there is a growing interest in training incremental learning systems using these foundation models, rather than learning f"
+  },
+  "collected_at": "2026-03-09T06:05:15.749Z"
+}
