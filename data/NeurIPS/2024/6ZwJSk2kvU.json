@@ -1,0 +1,35 @@
+{
+  "id": "6ZwJSk2kvU",
+  "or_id": "6ZwJSk2kvU",
+  "title": "DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation",
+  "title_zh": "",
+  "authors": [
+    "Zhiqi Li",
+    "Yiming Chen",
+    "Peidong Liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recent advancements in 2D/3D generative techniques have facilitated the generation of dynamic 3D objects from monocular videos. Previous methods mainly rely on the implicit neural radiance fields (NeRF) or explicit Gaussian Splatting as the underlying representation, and struggle to achieve satisfactory spatial-temporal consistency and surface appearance. Drawing inspiration from modern 3D animation pipelines, we introduce DreamMesh4D, a novel framework combining mesh representation with geometric skinning technique to generate high-quality 4D object from a monocular video. Instead of utilizing classical texture map for appearance, we bind Gaussian splats to triangle face of mesh for differentiable optimization of both the texture and mesh vertices. In particular, DreamMesh4D begins with a coarse mesh obtained through an image-to-3D generation procedure. Sparse points are then uniformly sampled across the mesh surface, and are used to build a deformation graph to drive the motion of the 3D object for the sake of computational efficiency and providing additional constraint. For each step, transformations of sparse control points are predicted using a deformation network, and the mesh vertices as well as the surface Gaussians are deformed via a novel geometric skinning algorithm. The skinning algorithm is a hybrid approach combining LBS (linear blending skinning) and DQS (dual-quaternion skinning), mitigating drawbacks associated with both approaches. The static surface Gaussians and mesh vertices as well as the dynamic deformation network are learned via reference view photometric loss, score distillation loss as well as other regularization losses in a two-stage manner. Extensive experiments demonstrate superior performance of our method in terms of both rendering quality and spatial-temporal consistency. Furthermore, our method is compatible with modern graphic pipelines, showcasing its potential in the 3D gaming and film industry.",
+  "abstract_zh": "",
+  "tldr": "A novel 4D generation framework, with Gaussian-mesh hybrid representation and sparse-controlled geometric deformation.",
+  "keywords": [
+    "4D generation",
+    "3D Gaussian Splatting",
+    "dynamic mesh",
+    "diffusion model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6ZwJSk2kvU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ae02cc8bee0dd3a0dce2cb7ae1df1316b235e1b9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A novel 4D generation framework, with Gaussian-mesh hybrid representation and sparse-controlled geometric deformation."
+  },
+  "collected_at": "2026-03-09T05:05:18.561Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "leeosk2RAM",
+  "or_id": "leeosk2RAM",
+  "title": "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge",
+  "title_zh": "",
+  "authors": [
+    "Chuanhao Li",
+    "Zhen Li",
+    "Chenchen Jing",
+    "Shuo Liu",
+    "Wenqi Shao",
+    "Yuwei Wu",
+    "Ping Luo",
+    "Yu Qiao",
+    "Kaipeng Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large vision-language models (LVLMs) are ignorant of the up-to-date knowledge, such as LLaVA series, because they cannot be updated frequently due to the large amount of resources required, and therefore fail in many cases. For example, if a LVLM was released on January 2024, and it wouldn't know the singer of the theme song for the new Detective Conan movie, which wasn't released until April 2024. To solve the problem, a promising solution motivated by retrieval-augmented generation (RAG) is to provide LVLMs with up-to-date knowledge via internet search during inference, i.e., internet-augmented generation (IAG), which is already integrated in some closed-source commercial LVLMs such as GPT-4V. However, the specific mechanics underpinning them remain a mystery. In this paper, we propose a plug-and-play framework, for augmenting existing LVLMs in handling visual question answering (VQA) about up-to-date knowledge, dubbed SearchLVLMs. A hierarchical filtering model is trained to effectively and efficiently find the most helpful content from the websites returned by a search engine to prompt LVLMs with up-to-date knowledge. To train the model and evaluate our framework's performance, we propose a pipeline to automatically generate news-related VQA samples to construct a dataset, dubbed UDK-VQA. A multi-model voting mechanism is introduced to label the usefulness of website/content for VQA samples to construct the training set. Experimental results demonstrate the effectiveness of our framework, outperforming GPT-4o by $\\sim$30\\% in accuracy.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Internet-Augmented Generation",
+    "Large Vision-Language Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=leeosk2RAM",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0f27f7569896eff9d72e5134b77687131406bf9c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Large vision-language models (LVLMs) are ignorant of the up-to-date knowledge, such as LLaVA series, because they cannot be updated frequently due to the large amount of resources required, and therefore fail in many cases. For example, if a LVLM was released on January 2024, and it wouldn't know th"
+  },
+  "collected_at": "2026-03-09T05:05:18.562Z"
+}

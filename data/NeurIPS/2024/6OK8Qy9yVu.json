@@ -1,0 +1,37 @@
+{
+  "id": "6OK8Qy9yVu",
+  "or_id": "6OK8Qy9yVu",
+  "title": "Why Go Full? Elevating Federated Learning Through Partial Network Updates",
+  "title_zh": "",
+  "authors": [
+    "Haolin Wang",
+    "Xuefeng Liu",
+    "Jianwei Niu",
+    "Wenkai Guo",
+    "Shaojie Tang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Federated learning is a distributed machine learning paradigm designed to protect user data privacy, which has been successfully implemented across various scenarios. In traditional federated learning, the entire parameter set of local models is updated and averaged in each training round. Although this full network update method maximizes knowledge acquisition and sharing for each model layer, it prevents the layers of the global model from cooperating effectively to complete the tasks of each client, a challenge we refer to as layer mismatch. This mismatch problem recurs after every parameter averaging, consequently slowing down model convergence and degrading overall performance. To address the layer mismatch issue, we introduce the FedPart method, which restricts model updates to either a single layer or a few layers during each communication round. Furthermore, to maintain the efficiency of knowledge acquisition and sharing, we develop several strategies to select trainable layers in each round, including sequential updating and multi-round cycle training. Through both theoretical analysis and experiments, our findings demonstrate that the FedPart method significantly surpasses conventional full network update strategies in terms of convergence speed and accuracy, while also reducing communication and computational overheads.",
+  "abstract_zh": "",
+  "tldr": "We observe the layer mismatch problem in federated learning and propose a partial network update method to address it, improving convergence speed, accuracy, and reducing computational and communication overhead.",
+  "keywords": [
+    "Federated Learning",
+    "Partial Network Updates",
+    "Convergence Efficiency",
+    "Computational and Communicational Overhead Reduction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6OK8Qy9yVu",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5a138158a86f8829397065c8da271edc6fa8cfe9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We observe the layer mismatch problem in federated learning and propose a partial network update method to address it, improving convergence speed, accuracy, and reducing computational and communication overhead."
+  },
+  "collected_at": "2026-03-09T05:05:18.564Z"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "97OvPgmjRN",
+  "or_id": "97OvPgmjRN",
+  "title": "Enhancing Chess Reinforcement Learning with Graph Representation",
+  "title_zh": "",
+  "authors": [
+    "Tomas Rigaux",
+    "Hisashi Kashima"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Mastering games is a hard task, as games can be extremely complex, and still fundamentally different in structure from one another. While the AlphaZero algorithm has demonstrated an impressive ability to learn the rules and strategy of a large variety of games, ranging from Go and Chess, to Atari games, its reliance on extensive computational resources and rigid Convolutional Neural Network (CNN) architecture limits its adaptability and scalability. A model trained to play on a $19\\times 19$ Go board cannot be used to play on a smaller $13\\times 13$ board, despite the similarity between the two Go variants.\nIn this paper, we focus on Chess, and explore using a more generic Graph-based Representation of a game state, rather than a grid-based one, to introduce a more general architecture based on Graph Neural Networks (GNN). We also expand the classical Graph Attention Network (GAT) layer to incorporate edge-features, to naturally provide a generic policy output format.\nOur experiments, performed on smaller networks than the initial AlphaZero paper, show that this new architecture outperforms previous architectures with a similar number of parameters, being able to increase playing strength an order of magnitude faster. We also show that the model, when trained on a smaller $5\\times 5$ variant of chess, is able to be quickly fine-tuned to play on regular $8\\times 8$ chess, suggesting that this approach yields promising generalization abilities.\nOur code is available at https://github.com/akulen/AlphaGateau.",
+  "abstract_zh": "",
+  "tldr": "We introduce an edge-featured Neural Network AlphaGateau to improve Reinforcement Learning for Chess as a Graph-structured game.",
+  "keywords": [
+    "deep learning",
+    "GNN",
+    "Chess",
+    "RL"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=97OvPgmjRN",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/235602dd5dfad6d58533cfe455ba086cd733267a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce an edge-featured Neural Network AlphaGateau to improve Reinforcement Learning for Chess as a Graph-structured game."
+  },
+  "collected_at": "2026-03-09T05:05:18.565Z"
+}

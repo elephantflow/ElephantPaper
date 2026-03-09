@@ -1,0 +1,36 @@
+{
+  "id": "LzLeAscHnj",
+  "or_id": "LzLeAscHnj",
+  "title": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+  "title_zh": "",
+  "authors": [
+    "Shen Yuan",
+    "Haotian Liu",
+    "Hongteng Xu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "While following different technical routes, both low-rank and orthogonal adaptation techniques can efficiently adapt large-scale pre-training models in specific tasks or domains based on a small piece of trainable parameters. In this study, we bridge the gap between these two techniques, proposing a simple but effective adaptation method based on Householder reflections. Given a pre-trained model, our method fine-tunes its layers by multiplying each frozen weight matrix with an orthogonal matrix constructed by a chain of learnable Householder reflections (HRs). This HR-based orthogonal fine-tuning is equivalent to an adaptive low-rank adaptation. Moreover, we show that the orthogonality of the reflection planes corresponding to the HRs impacts the model capacity and regularity. The analysis motivates us to regularize the orthogonality of the HRs, leading to different implementations of the proposed Householder reflection adaptation (HRA) method. Compared with state-of-the-art methods, HRA achieves superior performance with fewer learnable parameters when adapting large language models and conditional image generators. The code of the experiments is available at https://github.com/DaShenZi721/HRA, and the method has been merged into the [PEFT](https://github.com/huggingface/peft) package.",
+  "abstract_zh": "",
+  "tldr": "We proposed a new model adaptation method based on Householder reflections, bridging low-rank and orthogonal adaptation and achieving promising performance in NLP, CV, and Math reasoning tasks.",
+  "keywords": [
+    "Orthogonal fine-tuning",
+    "Householder reflection",
+    "Conditional text-to-image generation",
+    "Large language models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=LzLeAscHnj",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7f5e41de0065d41d0d2eaffaa85c8e7a955b837a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We proposed a new model adaptation method based on Householder reflections, bridging low-rank and orthogonal adaptation and achieving promising performance in NLP, CV, and Math reasoning tasks."
+  },
+  "collected_at": "2026-03-09T05:05:18.564Z"
+}

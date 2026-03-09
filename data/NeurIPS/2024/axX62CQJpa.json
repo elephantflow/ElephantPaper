@@ -1,0 +1,39 @@
+{
+  "id": "axX62CQJpa",
+  "or_id": "axX62CQJpa",
+  "title": "Streaming Long Video Understanding with Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Rui Qian",
+    "Xiaoyi Dong",
+    "Pan Zhang",
+    "Yuhang Zang",
+    "Shuangrui Ding",
+    "Dahua Lin",
+    "Jiaqi Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This paper presents VideoStreaming, an advanced vision-language large model (VLLM) for video understanding, that capably understands arbitrary-length video with a constant number of video tokens streamingly encoded and adaptively selected.\nThe challenge of video understanding in the vision language area mainly lies in the significant computational burden caused by the great number of tokens extracted from long videos. Previous works rely on sparse sampling or frame compression to reduce tokens. However, such approaches either disregard temporal information in a long time span or sacrifice spatial details, resulting in flawed compression. \nTo address these limitations, our VideoStreaming has two core designs: Memory-Propagated Streaming Encoding and Adaptive Memory Selection. The Memory-Propagated Streaming Encoding architecture segments long videos into short clips and sequentially encodes each clip with a propagated memory. In each iteration, we utilize the encoded results of the preceding clip as historical memory, which is integrated with the current clip to distill a condensed representation that encapsulates the video content up to the current timestamp. This method not only incorporates long-term temporal dynamics into the streaming encoding process but also yields a fixed-length memory as a global representation for arbitrarily long videos. After the encoding process, the Adaptive Memory Selection strategy selects a constant number of question-related memories from all the historical memories, and feeds them into the LLM to generate informative responses. The question-related selection reduces redundancy within the memories, enabling efficient and precise video understanding. Meanwhile, the disentangled video extraction and reasoning design allows the LLM to answer different questions about a video by directly selecting corresponding memories, without the need to encode the whole video for each question. Through extensive experiments, our model achieves super",
+  "abstract_zh": "",
+  "tldr": "We propose a memory-propagated streaming encoding architecture with adaptive memory selection for long video understanding with LLM.",
+  "keywords": [
+    "LLM",
+    "Long Video Understanding",
+    "Memory-Propagated Streaming Encoding",
+    "Adaptive Memory Selection"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=axX62CQJpa",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2dca177f9bf6fd0140e1c2fa5294e1237f153677.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a memory-propagated streaming encoding architecture with adaptive memory selection for long video understanding with LLM."
+  },
+  "collected_at": "2026-03-09T05:05:18.562Z"
+}

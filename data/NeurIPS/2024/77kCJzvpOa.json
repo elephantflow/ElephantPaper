@@ -1,0 +1,32 @@
+{
+  "id": "77kCJzvpOa",
+  "or_id": "77kCJzvpOa",
+  "title": "Language Models as Zero-shot Lossless Gradient Compressors: Towards General Neural Parameter Prior Models",
+  "title_zh": "",
+  "authors": [
+    "Hui-Po Wang",
+    "Mario Fritz"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Despite the widespread use of statistical prior models in various fields, such models for neural network gradients have long been overlooked. The inherent challenge stems from their high-dimensional structures and complex interdependencies, which complicate effective modeling. In this work, we demonstrate the potential of large language models (LLMs) to act as gradient priors in a zero-shot setting. We examine the property by considering lossless gradient compression -- a critical application in distributed learning -- that depends heavily on precise probability modeling. To achieve this, we introduce LM-GC, a novel method that integrates LLMs with arithmetic coding. Our technique converts plain gradients into text-like formats, enhancing token efficiency by up to 38 times compared to their plain representations. We ensure that this data conversion maintains a close alignment with the structure of plain gradients and the symbols commonly recognized by LLMs. Our experiments indicate that LM-GC surpasses existing state-of-the-art lossless compression methods, improving compression rates by 10% up to 17.2% across various datasets and architectures. Additionally, our approach shows promising compatibility with lossy compression techniques such as quantization and sparsification. These findings highlight the significant potential of LLMs as a model for effectively handling gradients. Code is available at https://github.com/hui-po-wang/LM-GC.",
+  "abstract_zh": "",
+  "tldr": "We show that LLMs can compress gradients in a zero-shot setting, demonstrating a promising direction toward general parameter priors.",
+  "keywords": [
+    "large-scale language models",
+    "lossless gradient compression"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=77kCJzvpOa",
+    "arxiv": "https://arxiv.org/abs/2409.17836",
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4bb954931e7866d3e91bbaf3df1170604e8502dc.pdf"
+  },
+  "citationCount": 5,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show that LLMs can compress gradients in a zero-shot setting, demonstrating a promising direction toward general parameter priors."
+  },
+  "collected_at": "2026-03-09T05:05:17.773Z"
+}
