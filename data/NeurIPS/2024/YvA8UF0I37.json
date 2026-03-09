@@ -1,0 +1,39 @@
+{
+  "id": "YvA8UF0I37",
+  "or_id": "YvA8UF0I37",
+  "title": "PV-Tuning: Beyond Straight-Through Estimation for Extreme LLM Compression",
+  "title_zh": "",
+  "authors": [
+    "Vladimir Malinovskii",
+    "Denis Mazur",
+    "Ivan Ilin",
+    "Denis Kuznedelev",
+    "Konstantin Pavlovich Burlachenko",
+    "Kai Yi",
+    "Dan Alistarh",
+    "Peter Richtárik"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 oral",
+  "abstract": "There has been significant interest in \"extreme\" compression of large language models (LLMs), i.e. to 1-2 bits per parameter, which allows such models to be executed efficiently on resource-constrained devices.  \nExisting work focused on improved one-shot quantization techniques and weight representations; yet, purely post-training  approaches are reaching diminishing returns in terms of the accuracy-vs-bit-width trade-off. State-of-the-art quantization methods such as QuIP# and AQLM include fine-tuning (part of) the compressed parameters over a limited amount of calibration data; however, such fine-tuning techniques over compressed weights often make exclusive use of straight-through estimators (STE), whose performance is not well-understood in this setting. \nIn this work, we question the use of STE for extreme LLM compression, showing that it can be sub-optimal, and perform a systematic study of quantization-aware fine-tuning strategies for LLMs.\nWe propose PV-Tuning - a representation-agnostic framework that generalizes and improves upon existing fine-tuning strategies, and provides convergence guarantees in restricted cases.\nOn the practical side, when used for 1-2 bit vector quantization, PV-Tuning outperforms prior techniques for highly-performant models such as Llama and Mistral. \nUsing PV-Tuning, we achieve the first Pareto-optimal quantization for Llama-2 family models at  2 bits per parameter.",
+  "abstract_zh": "",
+  "tldr": "Improving Extreme LLM Quantization through Better Fine-tuning",
+  "keywords": [
+    "Quantization",
+    "Large Language Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=YvA8UF0I37",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a41bd553618c035e26d1f1f6a8ebd19108274f50.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "Improving Extreme LLM Quantization through Better Fine-tuning"
+  },
+  "collected_at": "2026-03-09T04:25:17.044Z"
+}

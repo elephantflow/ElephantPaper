@@ -1,0 +1,41 @@
+{
+  "id": "NPu7Cdk2f9",
+  "or_id": "NPu7Cdk2f9",
+  "title": "Adaptive Depth Networks with Skippable Sub-Paths",
+  "title_zh": "",
+  "authors": [
+    "Woochul Kang",
+    "Hyungseop Lee"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Predictable adaptation of network depths can be an effective way to control inference latency and meet the resource condition of various devices. However, previous adaptive depth networks do not provide general principles and a formal explanation on why and which layers can be skipped, and, hence, their approaches are hard to be generalized and require long and complex training steps. In this paper, we present a practical approach to adaptive depth networks that is applicable to various networks with minimal training effort. In our approach, every hierarchical residual stage is divided into two sub-paths, and they are trained to acquire different properties through a simple self-distillation strategy. While the first sub-path is essential for hierarchical feature learning, the second one is trained to refine the learned features and minimize performance degradation if it is skipped. Unlike prior adaptive networks, our approach does not train every target sub-network in an iterative manner. At test time, however, we can connect these sub-paths in a combinatorial manner to select sub-networks of various accuracy-efficiency trade-offs from a single network. We provide a formal rationale for why the proposed training method can reduce overall prediction errors while minimizing the impact of skipping sub-paths. We demonstrate the generality and effectiveness of our approach with convolutional neural networks and transformers.",
+  "abstract_zh": "",
+  "tldr": "We introduce a novel training method for adaptive depth networks that can provide flexible accuracy-efficiency trade- offs in a single network.",
+  "keywords": [
+    "adaptive networks",
+    "training efficiency",
+    "inference efficiency",
+    "efficiency",
+    "acceleration",
+    "inference acceleration",
+    "convolutional neural networks",
+    "CNN",
+    "Vision transformer",
+    "vit",
+    "transformer"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=NPu7Cdk2f9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/76e0dc5926191a811cde33c314182f2375b42b5f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce a novel training method for adaptive depth networks that can provide flexible accuracy-efficiency trade- offs in a single network."
+  },
+  "collected_at": "2026-03-09T04:25:17.046Z"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "nY7fGtsspU",
+  "or_id": "nY7fGtsspU",
+  "title": "Graph Neural Networks Do Not Always Oversmooth",
+  "title_zh": "",
+  "authors": [
+    "Bastian Epping",
+    "Alexandre René",
+    "Moritz Helias",
+    "Michael T Schaub"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Graph neural networks (GNNs) have emerged as powerful tools for processing relational data in applications. However, GNNs suffer from the problem of oversmoothing, the property that features of all nodes exponentially converge to the same vector over layers, prohibiting the design of deep GNNs. In this work we study oversmoothing in graph convolutional networks (GCNs) by using their Gaussian process (GP) equivalence in the limit of infinitely many hidden features. By generalizing methods from conventional deep neural networks (DNNs), we can describe the distribution of features at the output layer of deep GCNs in terms of a GP: as expected, we find that typical parameter choices from the literature lead to oversmoothing. The theory, however, allows us to identify a new, non-oversmoothing phase: if the initial weights of the network have sufficiently large variance, GCNs do not oversmooth, and node features remain informative even at large depth. We demonstrate the validity of this prediction in finite-size GCNs by training a linear classifier on their output. Moreover, using the linearization of the GCN GP, we generalize the concept of propagation depth of information from DNNs to GCNs. This propagation depth diverges at the transition between the oversmoothing and non-oversmoothing phase. We test the predictions of our approach and find good agreement with finite-size GCNs. Initializing GCNs near the transition to the non-oversmoothing phase, we obtain networks which are both deep and expressive.",
+  "abstract_zh": "",
+  "tldr": "We adapt the chaos analysis from deep feedforward neural networks to graph neural networks and reveal a parameter regime in which graph neural networks do not oversmooth.",
+  "keywords": [
+    "graph neural networks",
+    "oversmoothing",
+    "Gaussian processes",
+    "chaos"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=nY7fGtsspU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/da4dc1c0c104b2df3eea20a889b63bf4b54d2e59.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We adapt the chaos analysis from deep feedforward neural networks to graph neural networks and reveal a parameter regime in which graph neural networks do not oversmooth."
+  },
+  "collected_at": "2026-03-09T04:25:17.043Z"
+}
