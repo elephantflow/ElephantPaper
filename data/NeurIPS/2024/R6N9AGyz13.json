@@ -1,0 +1,35 @@
+{
+  "id": "R6N9AGyz13",
+  "or_id": "R6N9AGyz13",
+  "title": "Parallelizing Model-based Reinforcement Learning Over the Sequence Length",
+  "title_zh": "",
+  "authors": [
+    "ZiRui Wang",
+    "Yue DENG",
+    "Junfeng Long",
+    "Yin Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recently, Model-based Reinforcement Learning (MBRL) methods have demonstrated stunning sample efficiency in various RL domains.\nHowever, achieving this extraordinary sample efficiency comes with additional training costs in terms of computations, memory, and training time.\nTo address these challenges, we propose the **Pa**rallelized **Mo**del-based **R**einforcement **L**earning (**PaMoRL**) framework.\nPaMoRL introduces two novel techniques: the **P**arallel **W**orld **M**odel (**PWM**) and the **P**arallelized **E**ligibility **T**race **E**stimation (**PETE**) to parallelize both model learning and policy learning stages of current MBRL methods over the sequence length.\nOur PaMoRL framework is hardware-efficient and stable, and it can be applied to various tasks with discrete or continuous action spaces using a single set of hyperparameters.\nThe empirical results demonstrate that the PWM and PETE within PaMoRL significantly increase training speed without sacrificing inference efficiency.\nIn terms of sample efficiency, PaMoRL maintains an MBRL-level sample efficiency that outperforms other no-look-ahead MBRL methods and model-free RL methods, and it even exceeds the performance of planning-based MBRL methods and methods with larger networks in certain tasks.",
+  "abstract_zh": "",
+  "tldr": "This paper introduces the PaMoRL framework, which parallelizes MBRL over the sequence length, improving training speed and sample efficiency.",
+  "keywords": [
+    "Model-based reinforcement learning",
+    "world model",
+    "parallelization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=R6N9AGyz13",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/efd1bd3b496d9002319a1b079472ba0368edf169.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper introduces the PaMoRL framework, which parallelizes MBRL over the sequence length, improving training speed and sample efficiency."
+  },
+  "collected_at": "2026-03-09T05:45:18.473Z"
+}

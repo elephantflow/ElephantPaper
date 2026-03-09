@@ -1,0 +1,34 @@
+{
+  "id": "rM24UUgZg8",
+  "or_id": "rM24UUgZg8",
+  "title": "Activating Self-Attention for Multi-Scene Absolute Pose Regression",
+  "title_zh": "",
+  "authors": [
+    "Miso Lee",
+    "Jihwan Kim",
+    "Jae-Pil Heo"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Multi-scene absolute pose regression addresses the demand for fast and memory-efficient camera pose estimation across various real-world environments. Nowadays, transformer-based model has been devised to regress the camera pose directly in multi-scenes. Despite its potential, transformer encoders are underutilized due to the collapsed self-attention map, having low representation capacity. This work highlights the problem and investigates it from a new perspective: distortion of query-key embedding space. Based on the statistical analysis, we reveal that queries and keys are mapped in completely different spaces while only a few keys are blended into the query region. This leads to the collapse of the self-attention map as all queries are considered similar to those few keys. Therefore, we propose simple but effective solutions to activate self-attention. Concretely, we present an auxiliary loss that aligns queries and keys, preventing the distortion of query-key space and encouraging the model to find global relations by self-attention. In addition, the fixed sinusoidal positional encoding is adopted instead of undertrained learnable one to reflect appropriate positional clues into the inputs of self-attention. As a result, our approach resolves the aforementioned problem effectively, thus outperforming existing methods in both outdoor and indoor scenes.",
+  "abstract_zh": "",
+  "tldr": "Unleashing the potential of self-attention by rectifying the distortion of query-key embedding space",
+  "keywords": [
+    "Multi-Scene Absolute Pose Regression",
+    "Transformer",
+    "Attention Collapse"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=rM24UUgZg8",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/19b70328de6443308da1720b1d795eaac9afdd78.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Unleashing the potential of self-attention by rectifying the distortion of query-key embedding space"
+  },
+  "collected_at": "2026-03-09T05:45:18.472Z"
+}
