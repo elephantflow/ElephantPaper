@@ -1,0 +1,34 @@
+{
+  "id": "MfGRUVFtn9",
+  "or_id": "MfGRUVFtn9",
+  "title": "Unveiling and Mitigating Backdoor Vulnerabilities based on Unlearning Weight Changes and Backdoor Activeness",
+  "title_zh": "",
+  "authors": [
+    "Weilin Lin",
+    "Li Liu",
+    "Shaokui Wei",
+    "Jianze Li",
+    "Hui Xiong"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The security threat of backdoor attacks is a central concern for deep neural networks (DNNs). Recently, without poisoned data, unlearning models with clean data and then learning a pruning mask have contributed to backdoor defense. Additionally, vanilla fine-tuning with those clean data can help recover the lost clean accuracy. However, the behavior of clean unlearning is still under-explored, and vanilla fine-tuning unintentionally induces back the backdoor effect. In this work, we first investigate model unlearning from the perspective of weight changes and gradient norms, and find two interesting observations in the backdoored model: 1) the weight changes between poison and clean unlearning are positively correlated, making it possible for us to identify the backdoored-related neurons without using poisoned data; 2) the neurons of the backdoored model are more active (*i.e.*, larger gradient norm) than those in the clean model, suggesting the need to suppress the gradient norm during fine-tuning. Then, we propose an effective two-stage defense method. In the first stage, an efficient *Neuron Weight Change (NWC)-based Backdoor Reinitialization* is proposed based on observation 1). In the second stage, based on observation 2), we design an *Activeness-Aware Fine-Tuning* to replace the vanilla fine-tuning. Extensive experiments, involving eight backdoor attacks on three benchmark datasets, demonstrate the superior performance of our proposed method compared to recent state-of-the-art backdoor defense approaches. The code is available at https://github.com/linweiii/TSBD.git.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Deep Neural Network; AI security; Backdoor Defense"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=MfGRUVFtn9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3b0213a7f5920c4fa37a6bb82103f172f7311105.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The security threat of backdoor attacks is a central concern for deep neural networks (DNNs). Recently, without poisoned data, unlearning models with clean data and then learning a pruning mask have contributed to backdoor defense. Additionally, vanilla fine-tuning with those clean data can help rec"
+  },
+  "collected_at": "2026-03-09T05:25:14.698Z"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "3O5YCEWETq",
+  "or_id": "3O5YCEWETq",
+  "title": "Tiny Time Mixers (TTMs): Fast Pre-trained Models for Enhanced Zero/Few-Shot Forecasting of Multivariate Time Series",
+  "title_zh": "",
+  "authors": [
+    "Vijay Ekambaram",
+    "Arindam Jati",
+    "Pankaj Dayama",
+    "Sumanta Mukherjee",
+    "Nam H Nguyen",
+    "Wesley M. Gifford",
+    "Chandra Reddy",
+    "Jayant Kalagnanam"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large pre-trained models excel in zero/few-shot learning for language and vision tasks but face challenges in multivariate time series (TS) forecasting due to diverse data characteristics. Consequently, recent research efforts have focused on developing pre-trained TS forecasting models. These models, whether built from scratch or adapted from large language models (LLMs), excel in zero/few-shot forecasting tasks. However, they are limited by slow performance, high computational demands, and neglect of cross-channel and exogenous correlations. To address this, we introduce Tiny Time Mixers (TTM), a compact model (starting from 1M parameters) with effective transfer learning capabilities, trained exclusively on public TS datasets. TTM, based on the light-weight TSMixer architecture, incorporates innovations like adaptive patching, diverse resolution sampling, and resolution prefix tuning to handle pre-training on varied dataset resolutions with minimal model capacity. Additionally, it employs multi-level modeling to capture channel correlations and infuse exogenous signals during fine-tuning. TTM outperforms existing popular benchmarks in zero/few-shot forecasting  by (4-40\\%), while reducing computational requirements significantly. Moreover, TTMs are lightweight and can be executed even on CPU-only machines, enhancing usability and fostering wider adoption in resource-constrained environments. The model weights for reproducibility and research use are available at https://huggingface.co/ibm/ttm-research-r2/, while enterprise-use weights under the Apache license can be accessed as follows: the initial TTM-Q variant at https://huggingface.co/ibm-granite/granite-timeseries-ttm-r1, and the latest variants (TTM-B, TTM-E, TTM-A) weights are available at https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2. The source code for the TTM model along with the usage scripts are available at https://github.com/ibm-granite/granite-tsfm/tree/main/tsfm_public/models/tinyti",
+  "abstract_zh": "",
+  "tldr": "Fast and Light-weight Pre-trained Models for Enhanced Zero/Few-Shot Forecasting of Multivariate Time Series",
+  "keywords": [
+    "time series",
+    "foundation models",
+    "pretrained models",
+    "forecasting",
+    "time-series",
+    "time",
+    "tsfm",
+    "light-weight",
+    "forecasters"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=3O5YCEWETq",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c1a7cea36450273599d6fedfb15d84e946924570.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Fast and Light-weight Pre-trained Models for Enhanced Zero/Few-Shot Forecasting of Multivariate Time Series"
+  },
+  "collected_at": "2026-03-09T05:25:14.696Z"
+}

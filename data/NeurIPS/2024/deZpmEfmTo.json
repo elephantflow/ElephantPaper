@@ -1,0 +1,39 @@
+{
+  "id": "deZpmEfmTo",
+  "or_id": "deZpmEfmTo",
+  "title": "Domain Adaptation for Large-Vocabulary Object Detectors",
+  "title_zh": "",
+  "authors": [
+    "Kai Jiang",
+    "Jiaxing Huang",
+    "Weiying Xie",
+    "Jie Lei",
+    "Yunsong Li",
+    "Ling Shao",
+    "Shijian Lu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large-vocabulary object detectors (LVDs) aim to detect objects of many categories, which learn super objectness features and can locate objects accurately while applied to various downstream data. However, LVDs often struggle in recognizing the located objects due to domain discrepancy in data distribution and object vocabulary. At the other end, recent vision-language foundation models such as CLIP demonstrate superior open-vocabulary recognition capability. \nThis paper presents KGD, a Knowledge Graph Distillation technique that exploits the implicit knowledge graphs (KG) in CLIP for effectively adapting LVDs to various downstream domains.\nKGD consists of two consecutive stages: 1) KG extraction that employs CLIP to encode downstream domain data as nodes and their feature distances as edges, constructing KG that inherits the rich semantic relations in CLIP explicitly; \nand 2) KG encapsulation that transfers the extracted KG into LVDs to enable accurate cross-domain object classification. \nIn addition, KGD can extract both visual and textual KG independently, providing complementary vision and language knowledge for object localization and object classification in detection tasks over various downstream domains. \nExperiments over multiple widely adopted detection benchmarks show that KGD outperforms the state-of-the-art consistently by large margins. \nCodes will be released.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Domain adaptation",
+    "Large-vocabulary object detectors",
+    "Vision-language models",
+    "Knowledge graph distillation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=deZpmEfmTo",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6ece1e624407d8bde3abec49423b7e66660ff5e5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Large-vocabulary object detectors (LVDs) aim to detect objects of many categories, which learn super objectness features and can locate objects accurately while applied to various downstream data. However, LVDs often struggle in recognizing the located objects due to domain discrepancy in data distr"
+  },
+  "collected_at": "2026-03-09T05:25:14.698Z"
+}

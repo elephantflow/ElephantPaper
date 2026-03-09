@@ -1,0 +1,37 @@
+{
+  "id": "83vxe8alV4",
+  "or_id": "83vxe8alV4",
+  "title": "FSP-Laplace: Function-Space Priors for the Laplace Approximation in Bayesian Deep Learning",
+  "title_zh": "",
+  "authors": [
+    "Tristan Cinquin",
+    "Marvin Pförtner",
+    "Vincent Fortuin",
+    "Philipp Hennig",
+    "Robert Bamler"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Laplace approximations are popular techniques for endowing deep networks with epistemic uncertainty estimates as they can be applied without altering the predictions of the trained network, and they scale to large models and datasets. While the choice of prior strongly affects the resulting posterior distribution, computational tractability and lack of interpretability of the weight space typically limit the Laplace approximation to isotropic Gaussian priors, which are known to cause pathological behavior as depth increases. As a remedy, we directly place a prior on function space. More precisely, since Lebesgue densities do not exist on infinite-dimensional function spaces, we recast training as finding the so-called weak mode of the posterior measure under a Gaussian process (GP) prior restricted to the space of functions representable by the neural network. Through the GP prior, one can express structured and interpretable inductive biases, such as regularity or periodicity, directly in function space, while still exploiting the implicit inductive biases that allow deep networks to generalize. After model linearization, the training objective induces a negative log-posterior density to which we apply a Laplace approximation, leveraging highly scalable methods from matrix-free linear algebra. Our method provides improved results where prior knowledge is abundant (as is the case in many scientific inference tasks). At the same time, it stays competitive for black-box supervised learning problems, where neural networks typically excel.",
+  "abstract_zh": "",
+  "tldr": "We propose a method to endow the Laplace approximation in Bayesian neural networks with informative Gaussian process priors.",
+  "keywords": [
+    "Bayesian neural networks",
+    "Laplace approximation",
+    "uncertainty quantification",
+    "Gaussian processes"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=83vxe8alV4",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ab6633056604866f61a50a074df0819ba2251148.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a method to endow the Laplace approximation in Bayesian neural networks with informative Gaussian process priors."
+  },
+  "collected_at": "2026-03-09T05:25:14.697Z"
+}

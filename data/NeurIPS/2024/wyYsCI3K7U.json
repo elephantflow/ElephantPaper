@@ -1,0 +1,36 @@
+{
+  "id": "wyYsCI3K7U",
+  "or_id": "wyYsCI3K7U",
+  "title": "LoRANN: Low-Rank Matrix Factorization for Approximate Nearest Neighbor Search",
+  "title_zh": "",
+  "authors": [
+    "Elias Jääsaari",
+    "Ville Hyvönen",
+    "Teemu Roos"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Approximate nearest neighbor (ANN) search is a key component in many modern machine learning pipelines; recent use cases include retrieval-augmented generation (RAG) and vector databases. Clustering-based ANN algorithms, that use score computation methods based on product quantization (PQ), are often used in industrial-scale applications due to their scalability and suitability for distributed and disk-based implementations. However, they have slower query times than the leading graph-based ANN algorithms. In this work, we propose a new supervised score computation method based on the observation that inner product approximation is a multivariate (multi-output) regression problem that can be solved efficiently by reduced-rank regression. Our experiments show that on modern high-dimensional data sets, the proposed reduced-rank regression (RRR) method is superior to PQ in both query latency and memory usage. We also introduce LoRANN, a clustering-based ANN library that leverages the proposed score computation method. LoRANN is competitive with the leading graph-based algorithms and outperforms the state-of-the-art GPU ANN methods on high-dimensional data sets.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Approximate nearest neighbor search",
+    "vector search",
+    "k-nn search",
+    "multivariate regression",
+    "vector databases"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=wyYsCI3K7U",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/818415f345eae75fa997bddb07da900aca844fb4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Approximate nearest neighbor (ANN) search is a key component in many modern machine learning pipelines; recent use cases include retrieval-augmented generation (RAG) and vector databases. Clustering-based ANN algorithms, that use score computation methods based on product quantization (PQ), are ofte"
+  },
+  "collected_at": "2026-03-09T05:25:14.698Z"
+}
