@@ -1,0 +1,39 @@
+{
+  "id": "Q8Z04XhDdL",
+  "or_id": "Q8Z04XhDdL",
+  "title": "MoE Jetpack: From Dense Checkpoints to Adaptive Mixture of Experts for Vision Tasks",
+  "title_zh": "",
+  "authors": [
+    "Xingkui Zhu",
+    "Yiran Guan",
+    "Dingkang Liang",
+    "Yuchao Chen",
+    "Yuliang Liu",
+    "Xiang Bai"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The sparsely activated mixture of experts (MoE) model presents an effective alternative to densely activated (dense) models, combining improved accuracy with computational efficiency. However, training MoE models from scratch requires extensive data and computational resources, a challenge that limits their widespread adoption. To address this, we introduce MoE Jetpack, a framework designed to fine-tune the abundant and easily accessible dense checkpoints into MoE models. MoE Jetpack incorporates two key techniques: (1) **checkpoint recycling**, which initializes MoE models with dense checkpoints to accelerate convergence and enhance accuracy, minimizing the need for extensive pre-training; (2) the **hyperspherical adaptive MoE (SpheroMoE) layer**, which optimizes the MoE architecture to enhance fine-tuning performance and efficiency.\nExperimental results indicate that MoE Jetpack doubles the convergence speed and enhances accuracy by 2.8% on ImageNet-1K. On smaller datasets, it achieves up to 8-fold faster convergence and over 30% accuracy gains, highlighting its efficiency.\nThe code is available at https://github.com/Adlith/MoE-Jetpack.",
+  "abstract_zh": "",
+  "tldr": "We introduce MoE Jetpack, a framework that effectively converts existing pre-trained dense checkpoints into sparsely activated MoE models, substantially improve convergence speed and accuracy for vision tasks.",
+  "keywords": [
+    "deep learning",
+    "computer vision",
+    "mixture of experts",
+    "weight initialization",
+    "fine-tuning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Q8Z04XhDdL",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/628a5bb329340ffe5b793330e9f0ff3ca98d4958.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce MoE Jetpack, a framework that effectively converts existing pre-trained dense checkpoints into sparsely activated MoE models, substantially improve convergence speed and accuracy for vision tasks."
+  },
+  "collected_at": "2026-03-09T03:25:14.911Z"
+}

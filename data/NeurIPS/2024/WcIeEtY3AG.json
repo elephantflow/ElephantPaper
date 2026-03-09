@@ -1,0 +1,40 @@
+{
+  "id": "WcIeEtY3AG",
+  "or_id": "WcIeEtY3AG",
+  "title": "Spiking Transformer with Experts Mixture",
+  "title_zh": "",
+  "authors": [
+    "Zhaokun Zhou",
+    "Yijie Lu",
+    "Yanhao Jia",
+    "Kaiwei Che",
+    "Jun Niu",
+    "Liwei Huang",
+    "Xinyu Shi",
+    "Yuesheng Zhu",
+    "Guoqi Li",
+    "Zhaofei Yu",
+    "Li Yuan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Spiking Neural Networks (SNNs) provide a sparse spike-driven mechanism which is believed to be critical for energy-efficient deep learning. \nMixture-of-Experts (MoE), on the other side, aligns with the brain mechanism of distributed and sparse processing, resulting in an efficient way of enhancing model capacity and conditional computation. \nIn this work, we consider how to incorporate SNNs’ spike-driven and MoE’s conditional computation into a unified framework. \nHowever, MoE uses softmax to get the dense conditional weights for each expert and TopK to hard-sparsify the network, which does not fit the properties of SNNs. \nTo address this issue, we reformulate MoE in SNNs and introduce the Spiking Experts Mixture Mechanism (SEMM) from the perspective of sparse spiking activation. \nBoth the experts and the router output spiking sequences, and their element-wise operation makes SEMM computation spike-driven and dynamic sparse-conditional. \nBy developing SEMM into Spiking Transformer, the Experts Mixture Spiking Attention (EMSA) and the Experts Mixture Spiking Perceptron (EMSP) are proposed, which performs routing allocation for head-wise and channel-wise spiking experts, respectively. Experiments show that SEMM realizes sparse conditional computation and obtains a stable improvement on neuromorphic and static datasets with approximate computational overhead based on the Spiking Transformer baselines.",
+  "abstract_zh": "",
+  "tldr": "A Spike-driven Mixture of Experts Mechanism for the Spiking Transformer.",
+  "keywords": [
+    "Spiking Neural Networks; Transformer; Mixture of Experts; Neuromorphic Computing; Spike-driven;"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=WcIeEtY3AG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/35a5bc54de368426f66605d8e3f447638863888a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A Spike-driven Mixture of Experts Mechanism for the Spiking Transformer."
+  },
+  "collected_at": "2026-03-09T03:25:14.914Z"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "gITGmIEinf",
+  "or_id": "gITGmIEinf",
+  "title": "Approximating the Top Eigenvector in Random Order Streams",
+  "title_zh": "",
+  "authors": [
+    "Praneeth Kacham",
+    "David Woodruff"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "When rows of an $n \\times d$ matrix $A$ are given in a stream, we study algorithms for approximating the top eigenvector of $A^T A$ (equivalently, the top right singular vector of $A$). We consider worst case inputs $A$ but assume that the rows are presented to the streaming algorithm in a uniformly random order. We show that when the gap parameter $R = \\sigma_1(A)^2/\\sigma_2(A)^2 = \\Omega(1)$, then there is a randomized algorithm that uses $O(h \\cdot d \\cdot \\text{polylog}(d))$ bits of space and outputs a unit vector $v$ that has a correlation $1 - O(1/\\sqrt{R})$ with the top eigenvector $v_1$. Here $h$ denotes the number of ``heavy rows'' in the matrix, defined as the rows with Euclidean norm at least $\\|{A}\\|_F/\\sqrt{d \\cdot \\text{polylog}(d)}$. We also provide a lower bound showing that any algorithm using $O(hd/R)$ bits of space can obtain at most $1 - \\Omega(1/R^2)$ correlation with the top eigenvector. Thus, parameterizing the space complexity in terms of the number of heavy rows is necessary for high accuracy solutions.\n\nOur results improve upon the $R = \\Omega(\\log n \\cdot \\log d)$ requirement  in a recent work of Price. We note that Price's algorithm works for arbitrary order streams whereas our algorithm requires a stronger assumption that the rows are presented in a uniformly random order. We additionally show that the gap requirements in Price's analysis can be brought down to $R = \\Omega(\\log^2 d)$ for arbitrary order streams and $R = \\Omega(\\log d)$ for random order streams. The requirement of $R = \\Omega(\\log d)$ for random order streams is nearly tight for Price's analysis as we obtain a simple instance with $R = \\Omega(\\log d/\\log\\log d)$ for which Price's algorithm, with any fixed learning rate, cannot output a vector approximating the top eigenvector $v_1$.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Streaming Algorithms",
+    "Top Singular Vector",
+    "PCA",
+    "Random Order Streams"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=gITGmIEinf",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7c7ec19817846e15ae1777f56dbfdeecb133f68e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "When rows of an $n \\times d$ matrix $A$ are given in a stream, we study algorithms for approximating the top eigenvector of $A^T A$ (equivalently, the top right singular vector of $A$). We consider worst case inputs $A$ but assume that the rows are presented to the streaming algorithm in a uniformly random order. We show that when the gap parameter $R = \\sigma_1(A)^2/\\sigma_2(A)^2 = \\Omega(1)$, th"
+  },
+  "collected_at": "2026-03-09T03:25:14.912Z"
+}

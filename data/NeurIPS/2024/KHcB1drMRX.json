@@ -1,0 +1,41 @@
+{
+  "id": "KHcB1drMRX",
+  "or_id": "KHcB1drMRX",
+  "title": "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+  "title_zh": "",
+  "authors": [
+    "Ziyuan Huang",
+    "Kaixiang Ji",
+    "Biao Gong",
+    "Zhiwu Qing",
+    "Qing-Long Zhang",
+    "Kecheng Zheng",
+    "Jian Wang",
+    "Jingdong Chen",
+    "Ming Yang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This paper introduces Chain-of-Sight, a vision-language bridge module that accelerates the pre-training of Multimodal Large Language Models (MLLMs). \nOur approach employs a sequence of visual resamplers that capture visual details at various spacial scales.\nThis architecture not only leverages global and local visual contexts effectively, but also facilitates the flexible extension of visual tokens through a compound token scaling strategy, allowing up to a 16x increase in the token count post pre-training.\nConsequently, Chain-of-Sight requires significantly fewer visual tokens in the pre-training phase compared to the fine-tuning phase. \nThis intentional reduction of visual tokens during pre-training notably accelerates the pre-training process, cutting down the wall-clock training time by $\\sim$73\\%.\nEmpirical results on a series of vision-language benchmarks reveal that the pre-train acceleration through Chain-of-Sight is achieved without sacrificing performance, matching or surpassing the standard pipeline of utilizing all visual tokens throughout the entire training process. \nFurther scaling up the number of visual tokens for pre-training leads to stronger performances, competitive to existing approaches in a series of benchmarks.",
+  "abstract_zh": "",
+  "tldr": "Through multi-scale visual prompt and post-pretrain token scaling, Chain-of-Sight achieves 3.7x pre-training speedup without performance sacrifice.",
+  "keywords": [
+    "Chain-of-Sight",
+    "MLLMs",
+    "pre-training efficiency",
+    "3.7x speedup"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=KHcB1drMRX",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4de54bb9f50438f3639463fcd1a37943926a1d03.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Through multi-scale visual prompt and post-pretrain token scaling, Chain-of-Sight achieves 3.7x pre-training speedup without performance sacrifice."
+  },
+  "collected_at": "2026-03-09T03:25:14.914Z"
+}

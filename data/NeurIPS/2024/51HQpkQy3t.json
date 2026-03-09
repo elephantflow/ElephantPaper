@@ -1,0 +1,40 @@
+{
+  "id": "51HQpkQy3t",
+  "or_id": "51HQpkQy3t",
+  "title": "DiTFastAttn: Attention Compression for Diffusion Transformer Models",
+  "title_zh": "",
+  "authors": [
+    "Zhihang Yuan",
+    "Hanling Zhang",
+    "Lu Pu",
+    "Xuefei Ning",
+    "Linfeng Zhang",
+    "Tianchen Zhao",
+    "Shengen Yan",
+    "Guohao Dai",
+    "Yu Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Diffusion Transformers (DiT) excel at image and video generation but face computational challenges due to the quadratic complexity of self-attention operators. We propose DiTFastAttn, a post-training compression method to alleviate the computational bottleneck of DiT.\nWe identify three key redundancies in the attention computation during DiT inference: (1) spatial redundancy, where many attention heads focus on local information; (2) temporal redundancy, with high similarity between the attention outputs of neighboring steps; (3) conditional redundancy, where conditional and unconditional inferences exhibit significant similarity. We propose three techniques to reduce these redundancies: (1) $\\textit{Window Attention with Residual Sharing}$ to reduce spatial redundancy; (2) $\\textit{Attention Sharing across Timesteps}$ to exploit the similarity between steps; (3) $\\textit{Attention Sharing across CFG}$ to skip redundant computations during conditional generation.",
+  "abstract_zh": "",
+  "tldr": "Attention Compression for Diffusion Transformer Models",
+  "keywords": [
+    "Diffusion Transformer",
+    "Attention",
+    "Acceleration"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=51HQpkQy3t",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f04f7cb65b98f0bf20c13bbd3cb6d0ecc0432d01.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Attention Compression for Diffusion Transformer Models"
+  },
+  "collected_at": "2026-03-09T03:25:14.914Z"
+}
