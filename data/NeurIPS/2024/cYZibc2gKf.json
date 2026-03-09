@@ -1,0 +1,35 @@
+{
+  "id": "cYZibc2gKf",
+  "or_id": "cYZibc2gKf",
+  "title": "Abstract Reward Processes: Leveraging State Abstraction for Consistent Off-Policy Evaluation",
+  "title_zh": "",
+  "authors": [
+    "Shreyas Chaudhari",
+    "Ameet Deshpande",
+    "Bruno Castro da Silva",
+    "Philip S. Thomas"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Evaluating policies using off-policy data is crucial for applying reinforcement learning to real-world problems such as healthcare and autonomous driving. Previous methods for *off-policy evaluation* (OPE) generally suffer from high variance or irreducible bias, leading to unacceptably high prediction errors. In this work, we introduce STAR, a framework for OPE that encompasses a broad range of estimators -- which include existing OPE methods as special cases -- that achieve lower mean squared prediction errors. STAR leverages state abstraction to distill complex, potentially continuous problems into compact, discrete models which we call *abstract reward processes* (ARPs). Predictions from ARPs estimated from off-policy data are provably consistent (asymptotically correct). Rather than proposing a specific estimator, we present a new framework for OPE and empirically demonstrate that estimators within STAR outperform existing methods. The best STAR estimator outperforms baselines in all twelve cases studied, and even the median STAR estimator surpasses the baselines in seven out of the twelve cases.",
+  "abstract_zh": "",
+  "tldr": "Perform model-based OPE, but instead of trying to estimate a perfect model of the MDP, estimate an abstract model, customized to a policy, that preserves the performance of that policy and can be learnt from off-policy data.",
+  "keywords": [
+    "Off-Policy Evaluation",
+    "State Abstraction",
+    "Importance Sampling"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=cYZibc2gKf",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7c8af02f297158a80816597f36d79d1144f6a30f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Perform model-based OPE, but instead of trying to estimate a perfect model of the MDP, estimate an abstract model, customized to a policy, that preserves the performance of that policy and can be learnt from off-policy data."
+  },
+  "collected_at": "2026-03-09T01:45:13.390Z"
+}

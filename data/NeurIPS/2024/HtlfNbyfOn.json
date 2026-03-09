@@ -1,0 +1,34 @@
+{
+  "id": "HtlfNbyfOn",
+  "or_id": "HtlfNbyfOn",
+  "title": "bit2bit: 1-bit quanta video reconstruction via self-supervised photon prediction",
+  "title_zh": "",
+  "authors": [
+    "Yehe Liu",
+    "Alexander Krull",
+    "Hector Basevi",
+    "Ales Leonardis",
+    "Michael W. Jenkins"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Quanta image sensors, such as SPAD arrays, are an emerging sensor technology, producing 1-bit arrays representing photon detection events over exposures as short as a few nanoseconds. In practice, raw data are post-processed using heavy spatiotemporal binning to create more useful and interpretable images at the cost of degrading spatiotemporal resolution. In this work, we propose bit2bit, a new method for reconstructing high-quality image stacks at the original spatiotemporal resolution from sparse binary quanta image data. Inspired by recent work on Poisson denoising, we developed an algorithm that creates a dense image sequence from sparse binary photon data by predicting the photon arrival location probability distribution. However, due to the binary nature of the data, we show that the assumption of a Poisson distribution is inadequate. Instead, we model the process with a Bernoulli lattice process from the truncated Poisson. This leads to the proposal of a novel self-supervised solution based on a masked loss function. We evaluate our method using both simulated and real data. On simulated data from a conventional video, we achieve 34.35 mean PSNR with extremely photon-sparse binary input (<0.06 photons per pixel per frame). We also present a novel dataset containing a wide range of real SPAD high-speed videos under various challenging imaging conditions. The scenes cover strong/weak ambient light, strong motion, ultra-fast events, etc., which will be made available to the community, on which we demonstrate the promise of our approach. Both reconstruction quality and throughput substantially surpass the state-of-the-art methods (e.g., Quanta Burst Photography (QBP)). Our approach significantly enhances the visualization and usability of the data, enabling the application of existing analysis techniques.",
+  "abstract_zh": "",
+  "tldr": "We show that high quality video can be created from extremely sparse 1-bit image sequence, the typical raw data of an emerging image sensor, using self-supervised learning.",
+  "keywords": [
+    "Denoising; Self-supervised learning; Quanta imaging; Photon counting"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=HtlfNbyfOn",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3730482facf62b3b0182f81733d86503f8aa8695.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show that high quality video can be created from extremely sparse 1-bit image sequence, the typical raw data of an emerging image sensor, using self-supervised learning."
+  },
+  "collected_at": "2026-03-09T01:45:13.388Z"
+}

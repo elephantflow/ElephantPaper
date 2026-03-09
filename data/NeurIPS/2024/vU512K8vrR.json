@@ -1,0 +1,38 @@
+{
+  "id": "vU512K8vrR",
+  "or_id": "vU512K8vrR",
+  "title": "Unveiling LoRA Intrinsic Ranks via Salience Analysis",
+  "title_zh": "",
+  "authors": [
+    "Wenjun Ke",
+    "Jiahao Wang",
+    "Peng Wang",
+    "Jiajun Liu",
+    "Dong Nie",
+    "Guozheng Li",
+    "Yining Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The immense parameter scale of large language models underscores the necessity for parameter-efficient fine-tuning methods. Methods based on Low-Rank Adaptation (LoRA) assume the low-rank characteristics of the incremental matrix and optimize the matrix obtained from low-rank decomposition. Although effective, these methods are constrained by a fixed and unalterable intrinsic rank, neglecting the variable importance of matrices. Consequently, methods for adaptive rank allocation are proposed, among which AdaLoRA demonstrates excellent fine-tuning performance. AdaLoRA conducts adaptation based on singular value decomposition (SVD), dynamically allocating intrinsic ranks according to importance. However, it still struggles to achieve a balance between fine-tuning effectiveness and efficiency, leading to limited rank allocation space. Additionally, the importance measurement focuses only on parameters with minimal impact on the loss, neglecting the dominant role of singular values in SVD-based matrices and the fluctuations during training. To address these issues, we propose SalientLoRA, which adaptively optimizes intrinsic ranks of LoRA via salience measurement. Firstly, during rank allocation, the salience measurement analyses the variation of singular value magnitudes across multiple time steps and establishes their inter-dependency relationships to assess the matrix importance. This measurement mitigates instability and randomness that may arise during importance assessment. Secondly, to achieve a balance between fine-tuning performance and efficiency, we propose an adaptive adjustment of time-series window, which adaptively controls the size of time-series for significance measurement and rank reduction during training, allowing for rapid rank allocation while maintaining training stability. This mechanism enables matrics to set a higher initial rank, thus expanding the allocation space for ranks. To evaluate the generality of our method across various tasks, we c",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Parameter-Efficient Fine-Tuning",
+    "Low-Rank Adaptation",
+    "LoRA"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=vU512K8vrR",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/212291a21697f8ab6df33a882c29090800c75abd.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The immense parameter scale of large language models underscores the necessity for parameter-efficient fine-tuning methods. Methods based on Low-Rank Adaptation (LoRA) assume the low-rank characteristics of the incremental matrix and optimize the matrix obtained from low-rank decomposition. Although"
+  },
+  "collected_at": "2026-03-09T01:45:13.390Z"
+}

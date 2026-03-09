@@ -1,0 +1,37 @@
+{
+  "id": "GOgKhunkfw",
+  "or_id": "GOgKhunkfw",
+  "title": "Simulation-Free Training of Neural ODEs on Paired Data",
+  "title_zh": "",
+  "authors": [
+    "Semin Kim",
+    "Jaehoon Yoo",
+    "Jinwoo Kim",
+    "Yeonwoo Cha",
+    "Saehoon Kim",
+    "Seunghoon Hong"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In this work, we investigate a method for simulation-free training of Neural Ordinary Differential Equations (NODEs) for learning deterministic mappings between paired data. Despite the analogy of NODEs as continuous-depth residual networks, their application in typical supervised learning tasks has not been popular, mainly due to the large number of function evaluations required by ODE solvers and numerical instability in gradient estimation. To alleviate this problem, we employ the flow matching framework for simulation-free training of NODEs, which directly regresses the parameterized dynamics function to a predefined target velocity field. Contrary to generative tasks, however, we show that applying flow matching directly between paired data can often lead to an ill-defined flow that breaks the coupling of the data pairs (e.g., due to crossing trajectories). We propose a simple extension that applies flow matching in the embedding space of data pairs, where the embeddings are learned jointly with the dynamic function to ensure the validity of the flow which is also easier to learn. We demonstrate the effectiveness of our method on both regression and classification tasks, where our method outperforms existing NODEs with a significantly lower number of function evaluations. The code is available at https://github.com/seminkim/simulation-free-node.",
+  "abstract_zh": "",
+  "tldr": "We propose simulation-free training method for Neural ODEs by adopting flow matching objective with learnable embeddings.",
+  "keywords": [
+    "Neural ODE",
+    "simulation-free training",
+    "flow matching"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=GOgKhunkfw",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/dacf21e27edce51113acef4be66067666fbc87a4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose simulation-free training method for Neural ODEs by adopting flow matching objective with learnable embeddings."
+  },
+  "collected_at": "2026-03-09T01:45:13.392Z"
+}

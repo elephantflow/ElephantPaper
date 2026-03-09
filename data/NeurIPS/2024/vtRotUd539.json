@@ -1,0 +1,37 @@
+{
+  "id": "vtRotUd539",
+  "or_id": "vtRotUd539",
+  "title": "Average gradient outer product as a mechanism for deep neural collapse",
+  "title_zh": "",
+  "authors": [
+    "Daniel Beaglehole",
+    "Peter Súkeník",
+    "Marco Mondelli",
+    "Mikhail Belkin"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Deep Neural Collapse (DNC) refers to the surprisingly rigid structure of the data representations in the final layers of Deep Neural Networks (DNNs). Though the phenomenon has been measured in a variety of settings, its emergence is typically explained via data-agnostic approaches, such as the unconstrained features model. In this work, we introduce a data-dependent setting where DNC forms due to feature learning through the average gradient outer product (AGOP). The AGOP is defined with respect to a learned predictor and is equal to the uncentered covariance matrix of its input-output gradients averaged over the training dataset. Deep Recursive Feature Machines are a method that constructs a neural network by iteratively mapping the data with the AGOP and applying an untrained random feature map. We demonstrate theoretically and empirically that DNC occurs in Deep Recursive Feature Machines as a consequence of the projection with the AGOP matrix computed at each layer. We then provide evidence that this mechanism holds for neural networks more generally. We show that the right singular vectors and values of the weights can be responsible for the majority of within-class variability collapse for DNNs trained in the feature learning regime. As observed in recent work, this singular structure is highly correlated with that of the AGOP.",
+  "abstract_zh": "",
+  "tldr": "We demonstrate that feature learning through the average gradient outer product is a setting for deep neural collapse.",
+  "keywords": [
+    "Theory of deep learning",
+    "neural collapse",
+    "average gradient outer product",
+    "kernel methods",
+    "feature learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=vtRotUd539",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e6aa9a4011a802d00ba4c1202d7c30befc5c3233.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We demonstrate that feature learning through the average gradient outer product is a setting for deep neural collapse."
+  },
+  "collected_at": "2026-03-09T01:45:13.390Z"
+}
