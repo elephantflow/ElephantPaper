@@ -1,0 +1,38 @@
+{
+  "id": "2xTkeyJFJb",
+  "or_id": "2xTkeyJFJb",
+  "title": "Generative Retrieval Meets Multi-Graded Relevance",
+  "title_zh": "",
+  "authors": [
+    "Yubao Tang",
+    "Ruqing Zhang",
+    "Jiafeng Guo",
+    "Maarten de Rijke",
+    "Wei Chen",
+    "Xueqi Cheng"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Generative retrieval represents a novel approach to information retrieval, utilizing an encoder-decoder architecture to directly produce relevant document identifiers (docids) for queries. While this method offers benefits, current implementations are limited to scenarios with binary relevance data, overlooking the potential for documents to have multi-graded relevance. Extending generative retrieval to accommodate multi-graded relevance poses challenges, including the need to reconcile likelihood probabilities for docid pairs and the possibility of multiple relevant documents sharing the same identifier. To address these challenges, we introduce a new framework called GRaded Generative Retrieval (GR$^2$). Our approach focuses on two key components: ensuring relevant and distinct identifiers, and implementing multi-graded constrained contrastive training. Firstly, we aim to create identifiers that are both semantically relevant and sufficiently distinct to represent individual documents effectively. This is achieved by jointly optimizing the relevance and distinctness of docids through a combination of docid generation and autoencoder models. Secondly, we incorporate information about the relationship between relevance grades to guide the training process. Specifically, we leverage a constrained contrastive training strategy to bring the representations of queries and the identifiers of their relevant documents closer together, based on their respective relevance grades.Extensive experiments on datasets with both multi-graded and binary relevance demonstrate the effectiveness of our method.",
+  "abstract_zh": "",
+  "tldr": "This paper designs a new framework for generative retrieval with multi-graded relevance.",
+  "keywords": [
+    "Document retrieval",
+    "Multi-graded relevance",
+    "Generative models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=2xTkeyJFJb",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/79db9c31fa2ec6dbb9dcaba9b60415f8b52386f9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "This paper designs a new framework for generative retrieval with multi-graded relevance."
+  },
+  "collected_at": "2026-03-10T12:21:36.521Z"
+}

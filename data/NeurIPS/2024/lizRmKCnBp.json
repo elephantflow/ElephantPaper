@@ -1,0 +1,32 @@
+{
+  "id": "lizRmKCnBp",
+  "or_id": "lizRmKCnBp",
+  "title": "NeCGS: Neural Compression for 3D Geometry Sets",
+  "title_zh": "",
+  "authors": [
+    "Siyu Ren",
+    "Junhui Hou",
+    "Wenping Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "This paper explores the problem of effectively compressing 3D geometry sets containing diverse categories. We make the first attempt to tackle this fundamental and challenging problem and propose NeCGS, a neural compression paradigm, which can compress hundreds of detailed and diverse 3D mesh models ($\\sim$684 MB) by about 900 times (0.76 MB) with high accuracy and preservation of detailed geometric details.  Specifically, we first represent each \\textit{irregular} mesh model/shape in a regular representation that implicitly describes the geometry structure of the model using a 4D regular volume, called TSDF-Def volume. Such a regular representation can not only capture local surfaces more effectively but also facilitate the subsequent process. Then we construct a quantization-aware  auto-decoder network architecture to regress these 4D volumes, which can summarize the similarity of local geometric structures within a model and across different models for redundancy elimination, resulting in more compact representations, including an embedded feature of a smaller size associated with each model and a network parameter set shared by all models. We finally quantize and encode the resulting features and network parameters into bitstreams through entropy coding. After decompressing the features and network parameters, we can reconstruct the TSDF-Def volumes, where the 3D surfaces can be extracted through the deformable marching cubes. Extensive experiments and ablation studies demonstrate the significant advantages of our NeCGS over state-of-the-art methods both quantitatively and qualitatively. We have included the source code in the Supplemental Material.",
+  "abstract_zh": "",
+  "tldr": "A highly effective neural compression scheme for 3D geometry sets.",
+  "keywords": [
+    "geometry compression"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=lizRmKCnBp",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/da0623c5e1654645102000d4b53c21052d8e8490.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A highly effective neural compression scheme for 3D geometry sets."
+  },
+  "collected_at": "2026-03-10T12:21:36.518Z"
+}

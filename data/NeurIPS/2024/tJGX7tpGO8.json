@@ -1,0 +1,35 @@
+{
+  "id": "tJGX7tpGO8",
+  "or_id": "tJGX7tpGO8",
+  "title": "What Matters in Graph Class Incremental Learning? An Information Preservation Perspective",
+  "title_zh": "",
+  "authors": [
+    "Jialu Li",
+    "Yu Wang",
+    "Pengfei Zhu",
+    "Wanyu Lin",
+    "Qinghua Hu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Graph class incremental learning (GCIL) requires the model to classify emerging nodes of new classes while remembering old classes. Existing methods are designed to preserve effective information of old models or graph data to alleviate forgetting, but there is no clear theoretical understanding of what matters in information preservation. In this paper, we consider that present practice suffers from high semantic and structural shifts assessed by two devised shift metrics. We provide insights into information preservation in GCIL and find that maintaining graph information can preserve information of old models in theory to calibrate node semantic and graph structure shifts. We correspond graph information into low-frequency local-global information and high-frequency information in spatial domain. Based on the analysis, we propose a framework, Graph Spatial Information Preservation (GSIP). Specifically, for low-frequency information preservation, the old node representations obtained by inputting replayed nodes into the old model are aligned with the outputs of the node and its neighbors in the new model, and then old and new outputs are globally matched after pooling. For high-frequency information preservation, the new node representations are encouraged to imitate the near-neighbor pair similarity of old node representations. GSIP achieves a 10\\% increase in terms of the forgetting metric compared to prior methods on large-scale datasets. Our framework can also seamlessly integrate existing replay designs. The code is available through https://github.com/Jillian555/GSIP.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Graph neural network",
+    "Class incremental learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=tJGX7tpGO8",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f16531b97e4d2d6593f7273b8e6bb7292070ff71.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Graph class incremental learning (GCIL) requires the model to classify emerging nodes of new classes while remembering old classes. Existing methods are designed to preserve effective information of old models or graph data to alleviate forgetting, but there is no clear theoretical understanding of "
+  },
+  "collected_at": "2026-03-10T12:21:36.520Z"
+}
