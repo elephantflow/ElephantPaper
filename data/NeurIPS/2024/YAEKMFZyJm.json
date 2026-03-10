@@ -1,0 +1,35 @@
+{
+  "id": "YAEKMFZyJm",
+  "or_id": "YAEKMFZyJm",
+  "title": "Finding NeMo: Localizing Neurons Responsible For Memorization in Diffusion Models",
+  "title_zh": "",
+  "authors": [
+    "Dominik Hintersdorf",
+    "Lukas Struppek",
+    "Kristian Kersting",
+    "Adam Dziedzic",
+    "Franziska Boenisch"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Diffusion models (DMs) produce very detailed and high-quality images. Their power results from extensive training on large amounts of data - usually scraped from the internet without proper attribution or consent from content creators.  Unfortunately, this practice raises privacy and intellectual property concerns, as DMs can memorize and later reproduce their potentially sensitive or copyrighted training images at inference time. Prior efforts prevent this issue by either changing the input to the diffusion process, thereby preventing the DM from generating memorized samples during inference, or removing the memorized data from training altogether. While those are viable solutions when the DM is developed and deployed in a secure and constantly monitored environment, they hold the risk of adversaries circumventing the safeguards and are not effective when the DM itself is publicly released. To solve the problem, we introduce NeMo, the first method to localize memorization of individual data samples down to the level of neurons in DMs' cross-attention layers. Through our experiments, we make the intriguing finding that in many cases, single neurons are responsible for memorizing particular training samples. By deactivating these memorization neurons, we can avoid the replication of training data at inference time, increase the diversity in the generated outputs, and mitigate the leakage of private and copyrighted data. In this way, our NeMo contributes to a more responsible deployment of DMs.",
+  "abstract_zh": "",
+  "tldr": "We propose the first method to identify neurons in text-to-image diffusion models responsible for memorization.",
+  "keywords": [
+    "memorization",
+    "diffusion models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=YAEKMFZyJm",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0e60e9a8a51279fd45d501fd3735f724a5344a55.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose the first method to identify neurons in text-to-image diffusion models responsible for memorization."
+  },
+  "collected_at": "2026-03-10T15:01:34.748Z"
+}

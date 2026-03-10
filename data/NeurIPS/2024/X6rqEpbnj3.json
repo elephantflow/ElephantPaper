@@ -1,0 +1,37 @@
+{
+  "id": "X6rqEpbnj3",
+  "or_id": "X6rqEpbnj3",
+  "title": "Why Transformers Need Adam: A Hessian Perspective",
+  "title_zh": "",
+  "authors": [
+    "Yushun Zhang",
+    "Congliang Chen",
+    "Tian Ding",
+    "Ziniu Li",
+    "Ruoyu Sun",
+    "Zhi-Quan Luo"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "SGD performs worse than Adam by a significant margin on Transformers, but the reason remains unclear. In this work, we provide an explanation through the lens of Hessian: (i) Transformers are \"heterogeneous'': the Hessian spectrum across parameter blocks vary dramatically, a phenomenon we call \"block heterogeneity\"; (ii) Heterogeneity hampers SGD: SGD performs worse than Adam on problems with block heterogeneity.  To validate (i) and (ii), we check various Transformers, CNNs, MLPs, and quadratic problems, and find that SGD can perform on par with Adam on problems without block heterogeneity, but performs worse than Adam when the heterogeneity exists. Our initial theoretical analysis indicates that SGD performs worse because it applies one single learning rate to all blocks, which cannot handle the heterogeneity among blocks. This limitation could be ameliorated if we use coordinate-wise learning rates, as designed in Adam.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Transformers",
+    "Adam",
+    "Optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=X6rqEpbnj3",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2ae9d0520f9b0d1bb19a74bd53f26c08cbe1a0fa.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "SGD performs worse than Adam by a significant margin on Transformers, but the reason remains unclear. In this work, we provide an explanation through the lens of Hessian: (i) Transformers are \"heterogeneous'': the Hessian spectrum across parameter blocks vary dramatically, a phenomenon we call \"bloc"
+  },
+  "collected_at": "2026-03-10T15:01:34.747Z"
+}
