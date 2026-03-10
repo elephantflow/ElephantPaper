@@ -1,0 +1,33 @@
+{
+  "id": "0uXtFk5KNJ",
+  "or_id": "0uXtFk5KNJ",
+  "title": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Qijun Luo",
+    "Hengxu Yu",
+    "Xiao Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This work presents BAdam, an optimization method that leverages the block coordinate descent (BCD) framework with Adam's update rule. BAdam offers a memory efficient approach to the full parameter finetuning of large language models. We conduct \n  a theoretical convergence analysis for BAdam in the deterministic case. Experimentally, we apply BAdam to finetune the Llama 3-8B and Llama 3-70B models using a single RTX3090-24GB GPU and 4 A100-80GB GPUs, respectively. The results confirm BAdam's efficiency in terms of memory usage, running time, and optimization capability. Furthermore, the downstream performance evaluation based on MT-bench and math benchmarks shows that BAdam outperforms existing memory efficient baselines such as LoRA. It also demonstrates that BAdam can achieve comparable or even superior performance compared to Adam. Finally, the ablation study using SGD's update rule illustrates the suitability of BCD for finetuning LLMs. Our code can be easily integrated into any PyTorch-based codebase and is available at https://github.com/Ledzy/BAdam.",
+  "abstract_zh": "",
+  "tldr": "This work designs a memory efficient block coordinate descent optimization method for finetuning LLMs, which effectively finetunes Llama 3-8B and Llama 3-70B using a single RTX3090-24GB GPU and 4 A100-80GB GPUs, respectively.",
+  "keywords": [
+    "block coordinate descent",
+    "large language models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=0uXtFk5KNJ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/160fd292c93de350b0b316312da9dafb0255e647.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This work designs a memory efficient block coordinate descent optimization method for finetuning LLMs, which effectively finetunes Llama 3-8B and Llama 3-70B using a single RTX3090-24GB GPU and 4 A100-80GB GPUs, respectively."
+  },
+  "collected_at": "2026-03-10T10:41:30.606Z"
+}

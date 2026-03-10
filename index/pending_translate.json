@@ -1,245 +1,5 @@
 [
   {
-    "id": "Nb5xlelV0C",
-    "filePath": "data/NeurIPS/2024/Nb5xlelV0C.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "AID: Attention Interpolation of Text-to-Image Diffusion",
-    "abstract": "Conditional diffusion models can create unseen images in various settings, aiding image interpolation. Interpolation in latent spaces is well-studied, but interpolation with specific conditions like text or image is less understood. Common approaches interpolate linearly in the conditioning space but tend to result in inconsistent images with poor fidelity. This work introduces a novel training-free technique named \\textbf{Attention Interpolation via Diffusion (AID)}. AID has two key contributions: \\textbf{1)} a fused inner/outer interpolated attention layer to boost image consistency and fidelity; and \\textbf{2)} selection of interpolation coefficients via a beta distribution to increase smoothness. Additionally, we present an AID variant called \\textbf{Prompt-guided Attention Interpolati"
-  },
-  {
-    "id": "83vxe8alV4",
-    "filePath": "data/NeurIPS/2024/83vxe8alV4.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "FSP-Laplace: Function-Space Priors for the Laplace Approximation in Bayesian Deep Learning",
-    "abstract": "Laplace approximations are popular techniques for endowing deep networks with epistemic uncertainty estimates as they can be applied without altering the predictions of the trained network, and they scale to large models and datasets. While the choice of prior strongly affects the resulting posterior distribution, computational tractability and lack of interpretability of the weight space typically limit the Laplace approximation to isotropic Gaussian priors, which are known to cause pathological behavior as depth increases. As a remedy, we directly place a prior on function space. More precisely, since Lebesgue densities do not exist on infinite-dimensional function spaces, we recast training as finding the so-called weak mode of the posterior measure under a Gaussian process (GP) prior r"
-  },
-  {
-    "id": "wWyumwEYV8",
-    "filePath": "data/NeurIPS/2024/wWyumwEYV8.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "A Sober Look at the Robustness of CLIPs to Spurious Features",
-    "abstract": "Large vision language models, such as CLIP, demonstrate impressive robustness to spurious features than single-modal models trained on ImageNet. However, existing test datasets are typically curated based on ImageNet-trained models, which aim to capture the spurious features inherited in ImageNet. Benchmarking CLIP models based on the ImageNet-oriented spurious features may not be sufficient to reflect the extent to which CLIP models are robust to spurious correlations within CLIP training data, e.g., LAION. To this end, we craft a new challenging dataset named CounterAnimal designed to reveal the reliance of CLIP models on realistic spurious features. Specifically, we split animal photos into groups according to the backgrounds, and then identify a pair of groups for each class where a CL"
-  },
-  {
-    "id": "drpJ7KOr3F",
-    "filePath": "data/NeurIPS/2024/drpJ7KOr3F.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
-    "abstract": "Multimodal Large Language Models (MLLMs) have gained significant attention due to their impressive capabilities in multimodal understanding. However, existing methods rely heavily on extensive modal-specific pretraining and joint-modal tuning, leading to significant computational burdens when expanding to new modalities. In this paper, we propose \\textbf{PathWeave}, a flexible and scalable framework with modal-\\textbf{path} s\\textbf{w}itching and \\textbf{e}xp\\textbf{a}nsion abilities that enables MLLMs to continually \\textbf{ev}olve on modalities for $\\mathbb{X}$-modal reasoning. We leverage the concept of Continual Learning and develop an incremental training strategy atop pre-trained MLLMs, enabling their expansion to new modalities using uni-modal data, without executing joint-modal pre"
-  },
-  {
-    "id": "pXFiHHySEw",
-    "filePath": "data/NeurIPS/2024/pXFiHHySEw.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Multi-Stage Predict+Optimize for (Mixed Integer) Linear Programs",
-    "abstract": "The recently-proposed framework of Predict+Optimize tackles optimization problems with parameters that are unknown at solving time, in a supervised learning setting. Prior frameworks consider only the scenario where all unknown parameters are (eventually) revealed simultaneously. In this work, we propose Multi-Stage Predict+Optimize, a novel extension catering to applications where unknown parameters are revealed in sequential stages, with optimization decisions made in between. We further develop three training algorithms for neural networks (NNs) for our framework as proof of concept, both of which handle all mixed integer linear programs. The first baseline algorithm is a natural extension of prior work, training a single NN which makes a single prediction of unknown parameters. The sec"
-  },
-  {
-    "id": "sRSjr9SDKR",
-    "filePath": "data/NeurIPS/2024/sRSjr9SDKR.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Preferential Normalizing Flows",
-    "abstract": "Eliciting a high-dimensional probability distribution from an expert via noisy judgments is notoriously challenging, yet useful for many applications, such as prior elicitation and reward modeling. We introduce a method for eliciting the expert's belief density as a normalizing flow based solely on preferential questions such as comparing or ranking alternatives. This allows eliciting in principle arbitrarily flexible densities, but flow estimation is susceptible to the challenge of collapsing or diverging probability mass that makes it difficult in practice. We tackle this problem by introducing a novel functional prior for the flow, motivated by a decision-theoretic argument, and show empirically that the belief density can be inferred as the function-space maximum a posteriori estimate."
-  },
-  {
-    "id": "eM3Wzs6Unt",
-    "filePath": "data/NeurIPS/2024/eM3Wzs6Unt.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Learning Variational Temporal Abstraction Embeddings in Option-Induced MDPs",
-    "abstract": "The option framework in hierarchical reinforcement learning has notably advanced the automatic discovery of temporally-extended actions from long-horizon tasks. However, existing methods often struggle with ineffective exploration and unstable updates when learning action and option policies simultaneously. Addressing these challenges, we introduce the Variational Markovian Option Critic (VMOC), an off-policy algorithm with provable convergence that employs variational inference to stabilize updates. VMOC naturally integrates maximum entropy intrinsic rewards to promote the exploration of diverse and effective options. Furthermore, we adopt low-cost option embeddings instead of traditional, computationally expensive option tuples, enhancing scalability and expressiveness. Extensive experim"
-  },
-  {
-    "id": "XdCJAYYiTP",
-    "filePath": "data/NeurIPS/2024/XdCJAYYiTP.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Era3D: High-Resolution Multiview Diffusion using Efficient Row-wise Attention",
-    "abstract": "In this paper, we introduce **Era3D**, a novel multiview diffusion method that generates high-resolution multiview images from a single-view image. Despite significant advancements in multiview generation, existing methods still suffer from camera prior mismatch, inefficacy, and low resolution, resulting in poor-quality multiview images. Specifically, these methods assume that the input images should comply with a predefined camera type, e.g. a perspective camera with a fixed focal length, leading to distorted shapes when the assumption fails. Moreover, the full-image or dense multiview attention they employ leads to a dramatic explosion of computational complexity as image resolution increases, resulting in prohibitively expensive training costs. To bridge the gap between assumption and r"
-  },
-  {
-    "id": "eNCYpTCGhr",
-    "filePath": "data/NeurIPS/2024/eNCYpTCGhr.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "First-Order Methods for Linearly Constrained Bilevel Optimization",
-    "abstract": "Algorithms for bilevel optimization often encounter Hessian computations, which are prohibitive in high dimensions. While recent works offer first-order methods for unconstrained bilevel problems, the constrained setting remains relatively underexplored. We present  first-order linearly constrained optimization methods with finite-time hypergradient stationarity guarantees. For linear equality constraints, we attain $\\epsilon$-stationarity in $\\widetilde{O}(\\epsilon^{-2})$ gradient oracle calls, which is nearly-optimal. \nFor linear inequality constraints, we attain $(\\delta,\\epsilon)$-Goldstein stationarity in $\\widetilde{O}(d{\\delta^{-1} \\epsilon^{-3}})$ gradient oracle calls, where $d$ is the upper-level dimension. \nFinally, we obtain for the linear inequality setting dimension-free rate"
-  },
-  {
-    "id": "XWzw2dsjWd",
-    "filePath": "data/NeurIPS/2024/XWzw2dsjWd.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "MoLE: Enhancing Human-centric Text-to-image Diffusion via Mixture of  Low-rank Experts",
-    "abstract": "Text-to-image diffusion has attracted vast attention due to its impressive image-generation capabilities. However, when it comes to human-centric text-to-image generation, particularly in the context of faces and hands, the results often fall short of naturalness due to insufficient training priors. We alleviate the issue in this work from two perspectives. 1) From the data aspect, we carefully collect a human-centric dataset comprising over one million high-quality human-in-the-scene images and two specific sets of close-up images of faces and hands. These datasets collectively provide a rich prior knowledge base to enhance the human-centric image generation capabilities of the diffusion model. 2) On the methodological front, we propose a simple yet effective method called Mixture of Low-"
-  },
-  {
-    "id": "xUoNgR1Byy",
-    "filePath": "data/NeurIPS/2024/xUoNgR1Byy.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Interpreting Learned Feedback Patterns in Large Language Models",
-    "abstract": "Reinforcement learning from human feedback (RLHF) is widely used to train large language models (LLMs). However, it is unclear whether LLMs accurately learn the underlying preferences in human feedback data. We coin the term **Learned Feedback Pattern** (LFP) for patterns in an LLM's activations learned during RLHF that improve its performance on the fine-tuning task. We hypothesize that LLMs with LFPs accurately aligned to the fine-tuning feedback exhibit consistent activation patterns for outputs that would have received similar feedback during RLHF. To test this, we train probes to estimate the feedback signal implicit in the activations of a fine-tuned LLM. We then compare these estimates to the true feedback, measuring how accurate the LFPs are to the fine-tuning feedback. Our probes "
-  },
-  {
-    "id": "wyYsCI3K7U",
-    "filePath": "data/NeurIPS/2024/wyYsCI3K7U.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "LoRANN: Low-Rank Matrix Factorization for Approximate Nearest Neighbor Search",
-    "abstract": "Approximate nearest neighbor (ANN) search is a key component in many modern machine learning pipelines; recent use cases include retrieval-augmented generation (RAG) and vector databases. Clustering-based ANN algorithms, that use score computation methods based on product quantization (PQ), are often used in industrial-scale applications due to their scalability and suitability for distributed and disk-based implementations. However, they have slower query times than the leading graph-based ANN algorithms. In this work, we propose a new supervised score computation method based on the observation that inner product approximation is a multivariate (multi-output) regression problem that can be solved efficiently by reduced-rank regression. Our experiments show that on modern high-dimensional"
-  },
-  {
-    "id": "ZK1CZXKgG5",
-    "filePath": "data/NeurIPS/2024/ZK1CZXKgG5.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "MemVLT: Vision-Language Tracking with Adaptive Memory-based Prompts",
-    "abstract": "Vision-language tracking (VLT) enhances traditional visual object tracking by integrating language descriptions, requiring the tracker to flexibly understand complex and diverse text in addition to visual information. However, most existing vision-language trackers still overly rely on initial fixed multimodal prompts, which struggle to provide effective guidance for dynamically changing targets. Fortunately, the Complementary Learning Systems (CLS) theory suggests that the human memory system can dynamically store and utilize multimodal perceptual information, thereby adapting to new scenarios. Inspired by this, (i) we propose a Memory-based Vision-Language Tracker (MemVLT). By incorporating memory modeling to adjust static prompts, our approach can provide adaptive prompts for tracking g"
-  },
-  {
-    "id": "GB5a0RRYuv",
-    "filePath": "data/NeurIPS/2024/GB5a0RRYuv.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Construction and Application of Materials Knowledge Graph in Multidisciplinary Materials Science via Large Language Model",
-    "abstract": "Knowledge in materials science is widely dispersed across extensive scientific literature, posing significant challenges for efficient discovery and integration of new materials. Traditional methods, often reliant on costly and time-consuming experimental approaches, further complicate rapid innovation. Addressing these challenges, the integration of artificial intelligence with materials science has opened avenues for accelerating the discovery process, though it also demands precise annotation, data extraction, and traceability of information. To tackle these issues, this article introduces the Materials Knowledge Graph (MKG), which utilizes advanced natural language processing techniques, integrated with large language models to extract and systematically organize a decade's worth of hi"
-  },
-  {
-    "id": "deZpmEfmTo",
-    "filePath": "data/NeurIPS/2024/deZpmEfmTo.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Domain Adaptation for Large-Vocabulary Object Detectors",
-    "abstract": "Large-vocabulary object detectors (LVDs) aim to detect objects of many categories, which learn super objectness features and can locate objects accurately while applied to various downstream data. However, LVDs often struggle in recognizing the located objects due to domain discrepancy in data distribution and object vocabulary. At the other end, recent vision-language foundation models such as CLIP demonstrate superior open-vocabulary recognition capability. \nThis paper presents KGD, a Knowledge Graph Distillation technique that exploits the implicit knowledge graphs (KG) in CLIP for effectively adapting LVDs to various downstream domains.\nKGD consists of two consecutive stages: 1) KG extraction that employs CLIP to encode downstream domain data as nodes and their feature distances as edg"
-  },
-  {
-    "id": "VcPtU8e6yK",
-    "filePath": "data/NeurIPS/2024/VcPtU8e6yK.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
-    "abstract": "This paper introduces $\\textit{Bifröst}$, a novel 3D-aware framework that is built upon diffusion models to perform instruction-based image composition. Previous methods concentrate on image compositing at the 2D level, which fall short in handling complex spatial relationships ($\\textit{e.g.}$, occlusion). $\\textit{Bifröst}$ addresses these issues by training MLLM as a 2.5D location predictor and integrating depth maps as an extra condition during the generation process to bridge the gap between 2D and 3D, which enhances spatial comprehension and supports sophisticated spatial interactions. Our method begins by fine-tuning MLLM with a custom counterfactual dataset to predict 2.5D object locations in complex backgrounds from language instructions. Then, the image-compositing model is uniqu"
-  },
-  {
-    "id": "AXcYtHQnxt",
-    "filePath": "data/NeurIPS/2024/AXcYtHQnxt.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "EAGLE: Efficient Adaptive Geometry-based Learning in Cross-view Understanding",
-    "abstract": "Unsupervised Domain Adaptation has been an efficient approach to transferring the semantic segmentation model across data distributions. Meanwhile, the recent Open-vocabulary Semantic Scene understanding based on large-scale vision language models is effective in open-set settings because it can learn diverse concepts and categories. However, these prior methods fail to generalize across different camera views due to the lack of cross-view geometric modeling. At present, there are limited studies analyzing cross-view learning. To address this problem, we introduce a novel Unsupervised Cross-view Adaptation Learning approach to modeling the geometric structural change across views in Semantic Scene Understanding. First, we introduce a novel Cross-view Geometric Constraint on Unpaired Data t"
-  },
-  {
-    "id": "XXOMCwZ6by",
-    "filePath": "data/NeurIPS/2024/XXOMCwZ6by.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
-    "abstract": "Building a general-purpose agent is a long-standing vision in the field of artificial intelligence. Existing agents have made remarkable progress in many domains, yet they still struggle to complete long-horizon tasks in an open world. We attribute this to the lack of necessary world knowledge and multimodal experience that can guide agents through a variety of long-horizon tasks. In this paper, we propose a Hybrid Multimodal Memory module to address the above challenges. It 1) transforms knowledge into Hierarchical Directed Knowledge Graph that allows agents to explicitly represent and learn world knowledge, and 2) summarises historical information into Abstracted Multimodal Experience Pool that provide agents with rich references for in-context learning. On top of the Hybrid Multimodal M"
-  },
-  {
-    "id": "B3jt0Ran2t",
-    "filePath": "data/NeurIPS/2024/B3jt0Ran2t.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Probabilistic Analysis of Stable Matching in Large Markets with Siblings",
-    "abstract": "We study a practical matching problem that involves assigning children to daycare centers. The collective preferences of siblings from the same family introduce complementarities, which can lead to the non-existence of stable matchings, as observed in the well-studied hospital-doctor matching problems involving couples. Intriguingly,  stable matchings have been observed in real-world daycare markets, even with a substantial number of sibling applicants.\n\nOur research systematically explores the presence of stable matchings in these markets. We conduct a probabilistic analysis of large random matching markets that incorporate sibling preferences. Specifically, we examine scenarios where daycares have similar priorities over children, a common characteristic in practical markets. Our analysi"
-  },
-  {
-    "id": "MfGRUVFtn9",
-    "filePath": "data/NeurIPS/2024/MfGRUVFtn9.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Unveiling and Mitigating Backdoor Vulnerabilities based on Unlearning Weight Changes and Backdoor Activeness",
-    "abstract": "The security threat of backdoor attacks is a central concern for deep neural networks (DNNs). Recently, without poisoned data, unlearning models with clean data and then learning a pruning mask have contributed to backdoor defense. Additionally, vanilla fine-tuning with those clean data can help recover the lost clean accuracy. However, the behavior of clean unlearning is still under-explored, and vanilla fine-tuning unintentionally induces back the backdoor effect. In this work, we first investigate model unlearning from the perspective of weight changes and gradient norms, and find two interesting observations in the backdoored model: 1) the weight changes between poison and clean unlearning are positively correlated, making it possible for us to identify the backdoored-related neurons w"
-  },
-  {
-    "id": "5t4ZAkPiJs",
-    "filePath": "data/NeurIPS/2024/5t4ZAkPiJs.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "ZipCache: Accurate and Efficient KV Cache Quantization with Salient Token Identification",
-    "abstract": "KV cache stores key and value states from previous tokens to avoid re-computation, yet it demands substantial storage space, especially for long sequences. \n  Adaptive KV cache compression seeks to discern the saliency of tokens, preserving vital information while aggressively compressing those of less importance.\n  However, previous methods of this approach exhibit significant performance degradation at high compression ratios due to inaccuracies in identifying salient tokens. \n  Additionally, the compression process introduces excessive overhead, substantially increasing memory burdens and the generation latency.\n  In this paper, we present ZipCache, an accurate and efficient KV cache quantization method for large language models (LLMs). \n  First, we construct a strong baseline for quant"
-  },
-  {
-    "id": "4php6bGL2W",
-    "filePath": "data/NeurIPS/2024/4php6bGL2W.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Seek Commonality but Preserve Differences: Dissected Dynamics Modeling for Multi-modal Visual RL",
-    "abstract": "Accurate environment dynamics modeling is crucial for obtaining effective state representations in visual reinforcement learning (RL) applications. However, when facing multiple input modalities, existing dynamics modeling methods (e.g., DeepMDP) usually stumble in addressing the complex and volatile relationship between different modalities. In this paper, we study the problem of efficient dynamics modeling for multi-modal visual RL. We find that under the existence of modality heterogeneity, modality-correlated and distinct features are equally important but play different roles in reflecting the evolution of environmental dynamics. Motivated by this fact, we propose Dissected Dynamics Modeling (DDM), a novel multi-modal dynamics modeling method for visual RL. Unlike existing methods, DD"
-  },
-  {
-    "id": "gtU2eLSAmO",
-    "filePath": "data/NeurIPS/2024/gtU2eLSAmO.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Brain-JEPA: Brain Dynamics Foundation Model with Gradient Positioning and Spatiotemporal Masking",
-    "abstract": "We introduce *Brain-JEPA*, a brain dynamics foundation model with the Joint-Embedding Predictive Architecture (JEPA). This pioneering model achieves state-of-the-art performance in demographic prediction, disease diagnosis/prognosis, and trait prediction through fine-tuning. Furthermore, it excels in off-the-shelf evaluations (e.g., linear probing) and demonstrates superior generalizability across different ethnic groups, surpassing the previous large model for brain activity significantly. Brain-JEPA incorporates two innovative techniques: **Brain Gradient Positioning** and **Spatiotemporal Masking**. Brain Gradient Positioning introduces a functional coordinate system for brain functional parcellation, enhancing the positional encoding of different Regions of Interest (ROIs). Spatiotempo"
-  },
-  {
-    "id": "S4ZqnMywcM",
-    "filePath": "data/NeurIPS/2024/S4ZqnMywcM.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Spatio-Temporal Interactive Learning for Efficient Image Reconstruction of Spiking Cameras",
-    "abstract": "The spiking camera is an emerging neuromorphic vision sensor that records high-speed motion scenes by asynchronously firing continuous binary spike streams. Prevailing image reconstruction methods, generating intermediate frames from these spike streams, often rely on complex step-by-step network architectures that overlook the intrinsic collaboration of spatio-temporal complementary information. In this paper, we propose an efficient spatio-temporal interactive reconstruction network to jointly perform inter-frame feature alignment and intra-frame feature filtering in a coarse-to-fine manner. Specifically, it starts by extracting hierarchical features from a concise hybrid spike representation, then refines the motion fields and target frames scale-by-scale, ultimately obtaining a full-re"
-  },
-  {
-    "id": "wT5AgMVkaJ",
-    "filePath": "data/NeurIPS/2024/wT5AgMVkaJ.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms",
-    "abstract": "Modern vision models are trained on very large noisy datasets. While these models acquire strong capabilities, they may not follow the user's intent to output the desired results in certain aspects, e.g., visual aesthetic, preferred style, and responsibility. In this paper, we target the realm of visual aesthetics and aim to align vision models with human aesthetic standards in a retrieval system. Advanced retrieval systems usually adopt a cascade of aesthetic models as re-rankers or filters, which are limited to low-level features like saturation and perform poorly when stylistic, cultural or knowledge contexts are involved. We find that utilizing the reasoning ability of large language models (LLMs) to rephrase the search query and extend the aesthetic expectations can make up for this s"
-  },
-  {
-    "id": "MbZuh8L0Xg",
-    "filePath": "data/NeurIPS/2024/MbZuh8L0Xg.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "DiffPhyCon: A Generative Approach to Control Complex Physical Systems",
-    "abstract": "Controlling the evolution of complex physical systems is a fundamental task across science and engineering. \nClassical techniques suffer from limited applicability or huge computational costs. On the other hand, recent deep learning and reinforcement learning-based approaches often struggle to optimize long-term control sequences under the constraints of system dynamics. In this work, we introduce Diffusion Physical systems Control (DiffPhyCon), a new class of method to address the physical systems control problem. DiffPhyCon excels by simultaneously minimizing both the learned generative energy function and the predefined control objectives across the entire trajectory and control sequence. Thus, it can explore globally and plan near-optimal control sequences. Moreover, we enhance DiffPhy"
-  },
-  {
-    "id": "4GP7S7U0lJ",
-    "filePath": "data/NeurIPS/2024/4GP7S7U0lJ.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Learnability Matters: Active Learning for Video Captioning",
-    "abstract": "This work focuses on the active learning in video captioning. In particular, we propose to address the learnability problem in active learning, which has been brought up by collective outliers in video captioning and neglected in the literature. To start with, we conduct a comprehensive study of collective outliers, exploring their hard-to-learn property and concluding that ground truth inconsistency is one of the main causes. Motivated by this, we design a novel active learning algorithm that takes three complementary aspects, namely learnability, diversity, and uncertainty, into account. Ideally, learnability is reflected by ground truth consistency. Under the active learning scenario where ground truths are not available until human involvement, we measure the consistency on estimated g"
-  },
-  {
-    "id": "aXApeuAYkg",
-    "filePath": "data/NeurIPS/2024/aXApeuAYkg.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "CA-SSLR: Condition-Aware Self-Supervised Learning Representation for Generalized Speech Processing",
-    "abstract": "We introduce Condition-Aware Self-Supervised Learning Representation (CA-SSLR), a generalist conditioning model broadly applicable to various speech-processing tasks. Compared to standard fine-tuning methods that optimize for downstream models, CA-SSLR integrates language and speaker embeddings from earlier layers, making the SSL model aware of the current language and speaker context.\nThis approach reduces the reliance on the input audio features while preserving the integrity of the base SSLR. CA-SSLR improves the model’s capabilities and demonstrates its generality on unseen tasks with minimal task-specific tuning. Our method employs linear modulation to dynamically adjust internal representations, enabling fine-grained adaptability without significantly altering the original model beha"
-  },
-  {
-    "id": "JxOQeg1NkH",
-    "filePath": "data/NeurIPS/2024/JxOQeg1NkH.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
-    "abstract": "A fundamental objective in robot manipulation is to enable models to comprehend visual scenes and execute actions. Although existing Vision-Language-Action (VLA) models for robots can handle a range of basic tasks, they still face challenges in two areas: (1) insufficient reasoning ability to tackle complex tasks, and (2) high computational costs for VLA model fine-tuning and inference. The recently proposed state space model (SSM) known as Mamba demonstrates promising capabilities in non-trivial sequence modeling with linear inference complexity. Inspired by this, we introduce RoboMamba, an end-to-end robotic VLA model that leverages Mamba to deliver both robotic reasoning and action capabilities, while maintaining efficient fine-tuning and inference. Specifically, we first integrate the "
-  },
-  {
-    "id": "rM24UUgZg8",
-    "filePath": "data/NeurIPS/2024/rM24UUgZg8.json",
-    "conference": "NeurIPS",
-    "year": 2024,
-    "title": "Activating Self-Attention for Multi-Scene Absolute Pose Regression",
-    "abstract": "Multi-scene absolute pose regression addresses the demand for fast and memory-efficient camera pose estimation across various real-world environments. Nowadays, transformer-based model has been devised to regress the camera pose directly in multi-scenes. Despite its potential, transformer encoders are underutilized due to the collapsed self-attention map, having low representation capacity. This work highlights the problem and investigates it from a new perspective: distortion of query-key embedding space. Based on the statistical analysis, we reveal that queries and keys are mapped in completely different spaces while only a few keys are blended into the query region. This leads to the collapse of the self-attention map as all queries are considered similar to those few keys. Therefore, w"
-  },
-  {
     "id": "7vXufiEzSy",
     "filePath": "data/NeurIPS/2024/7vXufiEzSy.json",
     "conference": "NeurIPS",
@@ -1598,5 +1358,245 @@
     "year": 2024,
     "title": "Information Re-Organization Improves Reasoning in Large Language Models",
     "abstract": "Improving the reasoning capabilities of large language models (LLMs) has attracted considerable interest. Recent approaches primarily focus on improving the reasoning process to yield a more precise final answer. However, in scenarios involving contextually aware reasoning, these methods neglect the importance of first identifying logical relationships from the context before proceeding with the reasoning. This oversight could lead to a superficial understanding and interaction with the context, potentially undermining the quality and reliability of the reasoning outcomes. In this paper, we propose an information re-organization (\\textbf{InfoRE}) method before proceeding with the reasoning to enhance the reasoning ability of LLMs. Our re-organization method involves initially extracting lo"
+  },
+  {
+    "id": "sxZlp9ZoHD",
+    "filePath": "data/NeurIPS/2024/sxZlp9ZoHD.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Retentive Network",
+    "abstract": "In this work, we propose Retentive Network (RetNet) as a foundation architecture for large language models, simultaneously achieving training parallelism, low-cost inference, and good performance. We theoretically derive the connection between recurrence and attention. Then we propose the retention mechanism for sequence modeling, which supports three computation paradigms, i.e., parallel, recurrent, and chunkwise recurrent. Specifically, the parallel representation allows for training parallelism. The recurrent representation enables low-cost \n inference, which improves decoding throughput, latency, and GPU memory without sacrificing performance. The chunkwise recurrent representation facilitates efficient long-sequence modeling with linear complexity, where each chunk is encoded parallel"
+  },
+  {
+    "id": "6ZBHIEtdP4",
+    "filePath": "data/NeurIPS/2024/6ZBHIEtdP4.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+    "abstract": "To parameter-efficiently fine-tune (PEFT) large language models (LLMs), the low-rank adaptation (LoRA) method approximates the model changes $\\Delta W \\in \\mathbb{R}^{m \\times n}$ through the product of two matrices $A \\in \\mathbb{R}^{m \\times r}$ and $B \\in \\mathbb{R}^{r \\times n}$, where $r \\ll \\min(m, n)$, $A$ is initialized with Gaussian noise, and $B$ with zeros. LoRA **freezes the original model $W$** and **updates the \"Noise \\& Zero\" adapter**, which may lead to slow convergence. To overcome this limitation, we introduce **P**r**i**ncipal **S**ingular values and **S**ingular vectors **A**daptation (PiSSA). PiSSA shares the same architecture as LoRA, but initializes the adaptor matrices $A$ and $B$ with the principal components of the original matrix $W$, and put the remaining compon"
+  },
+  {
+    "id": "wlLjYl0Gi6",
+    "filePath": "data/NeurIPS/2024/wlLjYl0Gi6.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Efficient LLM Scheduling by Learning to Rank",
+    "abstract": "In Large Language Model (LLM) inference, the output length of an LLM request is typically regarded as not known a priori. Consequently, most LLM serving systems employ a simple First-come-first-serve (FCFS) scheduling strategy, leading to Head-Of-Line (HOL) blocking and reduced throughput and service quality. \nIn this paper, we reexamine this assumption -- we show that, although predicting the exact generation length of each request is infeasible, it is possible to predict the relative ranks of output lengths in a batch of requests, using learning to rank. The ranking information offers valuable guidance for scheduling requests. Building on this insight, we develop a novel scheduler for LLM inference and serving that can approximate the shortest-job-first (SJF) schedule better than existin"
+  },
+  {
+    "id": "NGuGVT7ar2",
+    "filePath": "data/NeurIPS/2024/NGuGVT7ar2.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+    "abstract": "Verbal and visual-spatial information processing are two critical subsystems that activate different brain regions and often collaborate together for cognitive reasoning. Despite the rapid advancement of LLM-based reasoning, the mainstream frameworks, such as Chain-of-Thought (CoT) and its variants, primarily focus on the verbal dimension, resulting in limitations in tackling reasoning problems with visual and spatial clues. To bridge the gap, we propose a novel dual-modality reasoning framework called Vision-Augmented Prompting (VAP). Upon receiving a textual problem description, VAP automatically synthesizes an image from the visual and spatial clues by utilizing external drawing tools. Subsequently, VAP formulates a chain of thought in both modalities and iteratively refines the synthes"
+  },
+  {
+    "id": "c3OZBJpN7M",
+    "filePath": "data/NeurIPS/2024/c3OZBJpN7M.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "FedGMKD: An Efficient Prototype Federated Learning Framework through Knowledge Distillation and Discrepancy-Aware Aggregation",
+    "abstract": "Federated Learning (FL) faces significant challenges due to data heterogeneity across distributed clients. To address this, we propose FedGMKD, a novel framework that combines knowledge distillation and differential aggregation for efficient prototype-based personalized FL without the need for public datasets or server-side generative models. FedGMKD introduces Cluster Knowledge Fusion, utilizing Gaussian Mixture Models to generate prototype features and soft predictions on the client side, enabling effective knowledge distillation while preserving data privacy. Additionally, we implement a Discrepancy-Aware Aggregation Technique that weights client contributions based on data quality and quantity, enhancing the global model's generalization across diverse client distributions. Theoretical"
+  },
+  {
+    "id": "jgkKroLxeC",
+    "filePath": "data/NeurIPS/2024/jgkKroLxeC.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Unified Graph Augmentations for Generalized Contrastive Learning on Graphs",
+    "abstract": "In real-world scenarios, networks (graphs) and their tasks possess unique characteristics, requiring the development of a versatile graph augmentation (GA) to meet the varied demands of network analysis. Unfortunately, most Graph Contrastive Learning (GCL) frameworks are hampered by the specificity, complexity, and incompleteness of their GA techniques. Firstly, GAs designed for specific scenarios may compromise the universality of models if mishandled. Secondly, the process of identifying and generating optimal augmentations generally involves substantial computational overhead. Thirdly, the effectiveness of the GCL, even the learnable ones, is constrained by the finite selection of GAs available. To overcome the above limitations, this paper introduces a novel unified GA module dubbed UG"
+  },
+  {
+    "id": "1l9cEyFmxg",
+    "filePath": "data/NeurIPS/2024/1l9cEyFmxg.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Unlocking the Capabilities of Masked Generative Models for Image Synthesis via Self-Guidance",
+    "abstract": "Masked generative models (MGMs) have shown impressive generative ability while providing an order of magnitude efficient sampling steps compared to continuous diffusion models. However, MGMs still underperform in image synthesis compared to recent well-developed continuous diffusion models with similar size in terms of quality and diversity of generated samples. A key factor in the performance of continuous diffusion models stems from the guidance methods, which enhance the sample quality at the expense of diversity. In this paper, we extend these guidance methods to generalized guidance formulation for MGMs and propose a self-guidance sampling method, which leads to better generation quality. The proposed approach leverages an auxiliary task for semantic smoothing in vector-quantized toke"
+  },
+  {
+    "id": "JWLiK3kKWQ",
+    "filePath": "data/NeurIPS/2024/JWLiK3kKWQ.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Mind the Gap Between Prototypes and Images in Cross-domain Finetuning",
+    "abstract": "In _cross-domain few-shot classification_ (CFC), recent works mainly focus on adapting a simple transformation head on top of a frozen pre-trained backbone with few labeled data to project embeddings into a task-specific metric space where classification can be performed by measuring similarities between image instance and prototype representations. Technically, an _assumption_ implicitly adopted in such a framework is that the prototype and image instance embeddings share the same representation transformation. However, in this paper, we find that there naturally exists a gap, which resembles the modality gap, between the prototype and image instance embeddings extracted from the frozen pre-trained backbone, and simply applying the same transformation during the adaptation phase constrain"
+  },
+  {
+    "id": "R8mfn3rHd5",
+    "filePath": "data/NeurIPS/2024/R8mfn3rHd5.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "RealCompo: Balancing Realism and Compositionality Improves Text-to-Image Diffusion Models",
+    "abstract": "Diffusion models have achieved remarkable advancements in text-to-image generation. However, existing models still have many difficulties when faced with multiple-object compositional generation. In this paper, we propose ***RealCompo***, a new *training-free* and *transferred-friendly* text-to-image generation framework, which aims to leverage the respective advantages of text-to-image models and spatial-aware image diffusion models (e.g., layout, keypoints and segmentation maps) to enhance both realism and compositionality of the generated images. An intuitive and novel *balancer* is proposed to dynamically balance the strengths of the two models in denoising process, allowing plug-and-play use of any model without extra training. Extensive experiments show that our RealCompo consistentl"
+  },
+  {
+    "id": "UVAq3uJ0gc",
+    "filePath": "data/NeurIPS/2024/UVAq3uJ0gc.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Gradient-Free Methods for Nonconvex Nonsmooth Stochastic Compositional Optimization",
+    "abstract": "The stochastic compositional optimization (SCO) is popular in many real-world applications, including risk management, reinforcement learning, and meta-learning. However, most of the previous methods for SCO require the smoothness assumption on both the outer and inner functions, which limits their applications to a wider range of problems. In this paper, we study the SCO problem in that both the outer and inner functions are Lipschitz continuous but possibly nonconvex and nonsmooth. In particular, we propose gradient-free stochastic methods for finding the $(\\delta, \\epsilon)$-Goldstein stationary points of such problems with non-asymptotic convergence rates. Our results also lead to an improved convergence rate for the convex nonsmooth SCO problem. Furthermore, we conduct numerical exper"
+  },
+  {
+    "id": "bxDok3uaK6",
+    "filePath": "data/NeurIPS/2024/bxDok3uaK6.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Long-Range Feedback Spiking Network Captures Dynamic and Static Representations of the Visual Cortex under Movie Stimuli",
+    "abstract": "Deep neural networks (DNNs) are widely used models for investigating biological visual representations. However, existing DNNs are mostly designed to analyze neural responses to static images, relying on feedforward structures and lacking physiological neuronal mechanisms. There is limited insight into how the visual cortex represents natural movie stimuli that contain context-rich information. To address these problems, this work proposes the long-range feedback spiking network (LoRaFB-SNet), which mimics top-down connections between cortical regions and incorporates spike information processing mechanisms inherent to biological neurons. Taking into account the temporal dependence of representations under movie stimuli, we present Time-Series Representational Similarity Analysis (TSRSA) t"
+  },
+  {
+    "id": "C4zmR2kyP8",
+    "filePath": "data/NeurIPS/2024/C4zmR2kyP8.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Stabilizing Zero-Shot Prediction: A Novel Antidote to Forgetting in Continual Vision-Language Tasks",
+    "abstract": "Continual learning (CL) empowers pre-trained vision-language (VL) models to efficiently adapt to a sequence of downstream tasks. However, these models often encounter challenges in retaining previously acquired skills due to parameter shifts and limited access to historical data. In response, recent efforts focus on devising specific frameworks and various replay strategies, striving for a typical learning-forgetting trade-off. Surprisingly, both our empirical research and theoretical analysis demonstrate that the stability of the model in consecutive zero-shot predictions serves as a reliable indicator of its anti-forgetting capabilities for previously learned tasks. \nMotivated by these insights, we develop a novel replay-free CL method named ZAF (Zero-shot Antidote to Forgetting), which "
+  },
+  {
+    "id": "M8dy0ZuSb1",
+    "filePath": "data/NeurIPS/2024/M8dy0ZuSb1.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Improving robustness to corruptions with multiplicative weight perturbations",
+    "abstract": "Deep neural networks (DNNs) excel on clean images but struggle with corrupted ones. Incorporating specific corruptions into the data augmentation pipeline can improve robustness to those corruptions but may harm performance on clean images and other types of distortion. In this paper, we introduce an alternative approach that improves the robustness of DNNs to a wide range of corruptions without compromising accuracy on clean images. We first demonstrate that input perturbations can be mimicked by multiplicative perturbations in the weight space. Leveraging this, we propose Data Augmentation via Multiplicative Perturbation (DAMP), a training method that optimizes DNNs under random multiplicative weight perturbations. We also examine the recently proposed Adaptive Sharpness-Aware Minimizati"
+  },
+  {
+    "id": "UO7Mvch1Z5",
+    "filePath": "data/NeurIPS/2024/UO7Mvch1Z5.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image",
+    "abstract": "In this work, we introduce Unique3D, a novel image-to-3D framework for efficiently generating high-quality 3D meshes from single-view images, featuring state-of-the-art generation fidelity and strong generalizability. Previous methods based on Score Distillation Sampling (SDS) can produce diversified 3D results by distilling 3D knowledge from large 2D diffusion models, but they usually suffer from long per-case optimization time with inconsistent issues. Recent works address the problem and generate better 3D results either by finetuning a multi-view diffusion model or training a fast feed-forward model. However, they still lack intricate textures and complex geometries due to inconsistency and limited generated resolution. To simultaneously achieve high fidelity, consistency, and efficien"
+  },
+  {
+    "id": "P6aJ7BqYlc",
+    "filePath": "data/NeurIPS/2024/P6aJ7BqYlc.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "GACL: Exemplar-Free Generalized Analytic Continual Learning",
+    "abstract": "Class incremental learning (CIL) trains a network on sequential tasks with separated categories in each task but suffers from catastrophic forgetting, where models quickly lose previously learned knowledge when acquiring new tasks. The generalized CIL (GCIL) aims to address the CIL problem in a more real-world scenario, where incoming data have mixed data categories and unknown sample size distribution. Existing attempts for the GCIL either have poor performance or invade data privacy by saving exemplars. In this paper, we propose a new exemplar-free GCIL technique named generalized analytic continual learning (GACL). The GACL adopts analytic learning (a gradient-free training technique) and delivers an analytical  (i.e., closed-form) solution to the GCIL scenario. This solution is derived"
+  },
+  {
+    "id": "LxRmdXf72k",
+    "filePath": "data/NeurIPS/2024/LxRmdXf72k.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Learning 1D Causal Visual Representation with De-focus Attention Networks",
+    "abstract": "Modality differences have led to the development of heterogeneous architectures for vision and language models. While images typically require 2D non-causal modeling, texts utilize 1D causal modeling. This distinction poses significant challenges in constructing unified multi-modal models. This paper explores the feasibility of representing images using 1D causal modeling. We identify an \"over-focus\" issue in existing 1D causal vision models, where attention overly concentrates on a small proportion of visual tokens. The issue of \"over-focus\" hinders the model's ability to extract diverse visual features and to receive effective gradients for optimization. To address this, we propose De-focus Attention Networks, which employ learnable bandpass filters to create varied attention patterns. D"
+  },
+  {
+    "id": "jDF2ZXI8AX",
+    "filePath": "data/NeurIPS/2024/jDF2ZXI8AX.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "MV2Cyl: Reconstructing 3D Extrusion Cylinders from Multi-View Images",
+    "abstract": "We present MV2Cyl, a novel method for reconstructing 3D from 2D multi-view images, not merely as a field or raw geometry but as a sketch-extrude CAD. Extracting extrusion cylinders from raw 3D geometry has been extensively researched in computer vision, while the processing of 3D data through neural networks has remained a bottleneck. Since 3D scans are generally accompanied by multi-view images, leveraging 2D convolutional neural networks allows these images to be exploited as a rich source for extracting extrusion cylinder information. However, we observe that extracting only the surface information of the extrudes and utilizing it results in suboptimal outcomes due to the challenges in the occlusion and surface segmentation. By synergizing with the extracted base curve information, we a"
+  },
+  {
+    "id": "6Wm4202Wvc",
+    "filePath": "data/NeurIPS/2024/6Wm4202Wvc.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Label Privacy in Split Learning for Large Models with Parameter-Efficient Training",
+    "abstract": "As deep learning models become larger and more expensive, many practitioners turn to fine-tuning APIs. \nThese web services allow fine-tuning a model between two parties: the client that provides the data, and the server that hosts the model.\nWhile convenient, these APIs raise a new concern: the data of the client is at risk of privacy breach during the training procedure.\nThis challenge presents an important practical case of vertical federated learning, where the two parties perform parameter-efficient fine-tuning (PEFT) of a large model.\nIn this study, we systematically search for a way to fine-tune models over an API *while keeping the labels private*.\nWe analyze the privacy of LoRA, a popular approach for parameter-efficient fine-tuning when training over an API.\nUsing this analysis, w"
+  },
+  {
+    "id": "zZVqZRXSao",
+    "filePath": "data/NeurIPS/2024/zZVqZRXSao.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Semantic Feature Learning for Universal Unsupervised Cross-Domain Retrieval",
+    "abstract": "Cross-domain retrieval (CDR) is finding increasingly broad applications across various domains. However, existing efforts have several major limitations, with the most critical being their reliance on accurate supervision. Recent studies thus focus on achieving unsupervised CDR, but they typically assume that the category spaces across domains are identical, an assumption that is often unrealistic in real-world scenarios. This is because only through dedicated and comprehensive analysis can the category composition of a data domain be obtained, which contradicts the premise of unsupervised scenarios. Therefore, in this work, we introduce the problem of **U**niversal **U**nsupervised **C**ross-**D**omain **R**etrieval (U^2CDR) for the first time and design a two-stage semantic feature learn"
+  },
+  {
+    "id": "mXpq6ut8J3",
+    "filePath": "data/NeurIPS/2024/mXpq6ut8J3.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+    "abstract": "Language model agents are increasingly being used to automate complicated tasks in digital environments. Just as humans benefit from powerful software applications, such as integrated development environments, for complex tasks like software engineering, we posit that language model agents represent a new category of end users with their own needs and abilities, and would benefit from specially built interfaces to the software they use. We investigate how the role of interface design affects the performance of language model agents. As a result of this exploration, we introduce SWE-agent: a system that facilitates language model agents to autonomously use computers to solve software engineering tasks. SWE-agent's custom agent-computer interface significantly enhances an agent's ability to "
+  },
+  {
+    "id": "HNH1ykRjXf",
+    "filePath": "data/NeurIPS/2024/HNH1ykRjXf.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Online Feature Updates Improve Online (Generalized) Label Shift Adaptation",
+    "abstract": "This paper addresses the prevalent issue of label shift in an online setting with missing labels, where data distributions change over time and obtaining timely labels is challenging. While existing methods primarily focus on adjusting or updating the final layer of a pre-trained classifier, we explore the untapped potential of enhancing feature representations using unlabeled data at test-time. Our novel method, Online Label Shift adaptation with Online Feature Updates (OLS-OFU), leverages self-supervised learning to refine the feature extraction process, thereby improving the prediction model. By carefully designing the algorithm, theoretically OLS-OFU maintains the similar online regret convergence to the results in the literature while taking the improved features into account. Empiric"
+  },
+  {
+    "id": "EJZfcKXdiT",
+    "filePath": "data/NeurIPS/2024/EJZfcKXdiT.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Event-3DGS: Event-based 3D Reconstruction Using 3D Gaussian Splatting",
+    "abstract": "Event cameras, offering high temporal resolution and high dynamic range, have brought a new perspective to addressing 3D reconstruction challenges in fast-motion and low-light scenarios. Most methods use the Neural Radiance Field (NeRF) for event-based photorealistic 3D reconstruction. However, these NeRF methods suffer from time-consuming training and inference, as well as limited scene-editing capabilities of implicit representations. To address these problems, we propose Event-3DGS, the first event-based reconstruction using 3D Gaussian splatting (3DGS) for synthesizing novel views freely from event streams. Technically, we first propose an event-based 3DGS framework that directly processes event data and reconstructs 3D scenes by simultaneously optimizing scenario and sensor parameters"
+  },
+  {
+    "id": "gktA1Qycj9",
+    "filePath": "data/NeurIPS/2024/gktA1Qycj9.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "CigTime: Corrective Instruction Generation Through Inverse Motion Editing",
+    "abstract": "Recent advancements in models linking natural language with human motions have shown significant promise in motion generation and editing based on instructional text. Motivated by applications in sports coaching and motor skill learning, we investigate the inverse problem: generating corrective instructional text, leveraging motion editing and generation models. We introduce a novel approach that, given a user’s current motion (source) and the desired motion (target), generates text instructions to guide the user towards achieving the target motion. We leverage large language models to generate corrective texts and utilize existing motion generation and editing frameworks to compile datasets of triplets (source motion, target motion, and corrective text). Using this data, we propose a new "
+  },
+  {
+    "id": "qqQFOcUEqM",
+    "filePath": "data/NeurIPS/2024/qqQFOcUEqM.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Conjugated Semantic Pool Improves OOD Detection with Pre-trained Vision-Language Models",
+    "abstract": "A straightforward pipeline for zero-shot out-of-distribution (OOD) detection involves selecting potential OOD labels from an extensive semantic pool and then leveraging a pre-trained vision-language model to perform classification on both in-distribution (ID) and OOD labels. In this paper, we theorize that enhancing performance requires expanding the semantic pool, while increasing the expected probability of selected OOD labels being activated by OOD samples, and ensuring low mutual dependence among the activations of these OOD labels. A natural expansion manner is to adopt a larger lexicon; however, the inevitable introduction of numerous synonyms and uncommon words fails to meet the above requirements, indicating that viable expansion manners move beyond merely selecting words from a le"
+  },
+  {
+    "id": "ZvQ4Bn75kN",
+    "filePath": "data/NeurIPS/2024/ZvQ4Bn75kN.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Video Diffusion Models are Training-free Motion Interpreter and Controller",
+    "abstract": "Video generation primarily aims to model authentic and customized motion across frames, making understanding and controlling the motion a crucial topic. Most diffusion-based studies on video motion focus on motion customization with training-based paradigms, which, however, demands substantial training resources and necessitates retraining for diverse models. Crucially, these approaches do not explore how video diffusion models encode cross-frame motion information in their features, lacking interpretability and transparency in their effectiveness. To answer this question, this paper introduces a novel perspective to understand, localize, and manipulate motion-aware features in video diffusion models. Through analysis using Principal Component Analysis (PCA), our work discloses that robust"
+  },
+  {
+    "id": "0uXtFk5KNJ",
+    "filePath": "data/NeurIPS/2024/0uXtFk5KNJ.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+    "abstract": "This work presents BAdam, an optimization method that leverages the block coordinate descent (BCD) framework with Adam's update rule. BAdam offers a memory efficient approach to the full parameter finetuning of large language models. We conduct \n  a theoretical convergence analysis for BAdam in the deterministic case. Experimentally, we apply BAdam to finetune the Llama 3-8B and Llama 3-70B models using a single RTX3090-24GB GPU and 4 A100-80GB GPUs, respectively. The results confirm BAdam's efficiency in terms of memory usage, running time, and optimization capability. Furthermore, the downstream performance evaluation based on MT-bench and math benchmarks shows that BAdam outperforms existing memory efficient baselines such as LoRA. It also demonstrates that BAdam can achieve comparable "
+  },
+  {
+    "id": "Te8vI2wGTh",
+    "filePath": "data/NeurIPS/2024/Te8vI2wGTh.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Hyper-opinion Evidential Deep Learning for Out-of-Distribution Detection",
+    "abstract": "Evidential Deep Learning (EDL), grounded in Evidence Theory and Subjective Logic (SL), provides a robust framework to estimate uncertainty for out-of-distribution (OOD) detection alongside traditional classification probabilities.However, the EDL framework is constrained by its focus on evidence that supports only single categories, neglecting the other collective evidences that could corroborate multiple in-distribution categories. This limitation leads to a diminished estimation of uncertainty and a subsequent decline in OOD detection performance.Additionally, EDL encounters the vanishing gradient problem within its fully-connected layers, further degrading classification accuracy.To address these issues, we introduce hyper-domain and propose Hyper-opinion Evidential Deep Learning (HEDL)"
+  },
+  {
+    "id": "90IpKvVdXd",
+    "filePath": "data/NeurIPS/2024/90IpKvVdXd.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Bandit-Feedback Online Multiclass Classification: Variants and Tradeoffs",
+    "abstract": "Consider the domain of multiclass classification within the adversarial online setting.  What is the price of relying on bandit feedback as opposed to full information? To what extent can an adaptive adversary amplify the loss compared to an oblivious one? To what extent can a randomized learner reduce the loss compared to a deterministic one? We study these questions in the mistake bound model and provide nearly tight answers.\nWe demonstrate that the optimal mistake bound under bandit feedback is at most $O(k)$ times higher than the optimal mistake bound in the full information case, where $k$ represents the number of labels. This bound is tight and provides an answer to an open question previously posed and studied by Daniely and Helbertal ['13] and by Long ['17, '20], who focused on det"
+  },
+  {
+    "id": "hdUCZiMkFO",
+    "filePath": "data/NeurIPS/2024/hdUCZiMkFO.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Happy: A Debiased Learning Framework for Continual Generalized Category Discovery",
+    "abstract": "Constantly discovering novel concepts is crucial in evolving environments. This paper explores the underexplored task of Continual Generalized Category Discovery (C-GCD), which aims to incrementally discover new classes from *unlabeled* data while maintaining the ability to recognize previously learned classes. Although several settings are proposed to study the C-GCD task, they have limitations that do not reflect real-world scenarios. We thus study a more practical C-GCD setting, which includes more new classes to be discovered over a longer period, without storing samples of past classes. In C-GCD, the model is initially trained on labeled data of known classes, followed by multiple incremental stages where the model is fed with unlabeled data containing both old and new classes. The co"
+  },
+  {
+    "id": "kV80nC1afE",
+    "filePath": "data/NeurIPS/2024/kV80nC1afE.json",
+    "conference": "NeurIPS",
+    "year": 2024,
+    "title": "Adaptive Passive-Aggressive Framework for Online Regression with Side Information",
+    "abstract": "The Passive-Aggressive (PA) method is widely used in online regression problems for handling large-scale streaming data, typically updating model parameters in a passive-aggressive manner based on whether the error exceeds a predefined threshold. However, this approach struggles with determining optimal thresholds and adapting to complex scenarios with side information, where tracking accuracy is not the sole metric in the regression model. To address these challenges, we introduce a novel adaptive framework that allows finer adjustments to the weight vector in PA using side information. This framework adaptively selects the threshold parameter in PA, theoretically ensuring convergence to the optimal setting. Additionally, we present an efficient implementation of our algorithm that signif"
   }
 ]

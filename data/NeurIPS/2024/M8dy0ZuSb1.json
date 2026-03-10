@@ -1,0 +1,39 @@
+{
+  "id": "M8dy0ZuSb1",
+  "or_id": "M8dy0ZuSb1",
+  "title": "Improving robustness to corruptions with multiplicative weight perturbations",
+  "title_zh": "",
+  "authors": [
+    "Trung Trinh",
+    "Markus Heinonen",
+    "Luigi Acerbi",
+    "Samuel Kaski"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Deep neural networks (DNNs) excel on clean images but struggle with corrupted ones. Incorporating specific corruptions into the data augmentation pipeline can improve robustness to those corruptions but may harm performance on clean images and other types of distortion. In this paper, we introduce an alternative approach that improves the robustness of DNNs to a wide range of corruptions without compromising accuracy on clean images. We first demonstrate that input perturbations can be mimicked by multiplicative perturbations in the weight space. Leveraging this, we propose Data Augmentation via Multiplicative Perturbation (DAMP), a training method that optimizes DNNs under random multiplicative weight perturbations. We also examine the recently proposed Adaptive Sharpness-Aware Minimization (ASAM) and show that it optimizes DNNs under adversarial multiplicative weight perturbations. Experiments on image classification datasets (CIFAR-10/100, TinyImageNet and ImageNet) and neural network architectures (ResNet50, ViT-S/16, ViT-B/16) show that DAMP enhances model generalization performance in the presence of corruptions across different settings. Notably, DAMP is able to train a ViT-S/16 on ImageNet from scratch, reaching the top-1 error of 23.7% which is comparable to ResNet50 without extensive data augmentations.",
+  "abstract_zh": "",
+  "tldr": "We show that simply perturbing weights during training with random multiplicative noises can improve robustness of neural networks to a wide range of corruptions.",
+  "keywords": [
+    "covariate shift",
+    "corruption robustness",
+    "generalization",
+    "regularization",
+    "training method",
+    "deep learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=M8dy0ZuSb1",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/cd357863b16fdaa3cf6a01d9517ccb415b187402.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We show that simply perturbing weights during training with random multiplicative noises can improve robustness of neural networks to a wide range of corruptions."
+  },
+  "collected_at": "2026-03-10T10:41:30.605Z"
+}

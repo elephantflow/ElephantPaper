@@ -1,0 +1,34 @@
+{
+  "id": "qqQFOcUEqM",
+  "or_id": "qqQFOcUEqM",
+  "title": "Conjugated Semantic Pool Improves OOD Detection with Pre-trained Vision-Language Models",
+  "title_zh": "",
+  "authors": [
+    "Mengyuan Chen",
+    "Junyu Gao",
+    "Changsheng Xu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "A straightforward pipeline for zero-shot out-of-distribution (OOD) detection involves selecting potential OOD labels from an extensive semantic pool and then leveraging a pre-trained vision-language model to perform classification on both in-distribution (ID) and OOD labels. In this paper, we theorize that enhancing performance requires expanding the semantic pool, while increasing the expected probability of selected OOD labels being activated by OOD samples, and ensuring low mutual dependence among the activations of these OOD labels. A natural expansion manner is to adopt a larger lexicon; however, the inevitable introduction of numerous synonyms and uncommon words fails to meet the above requirements, indicating that viable expansion manners move beyond merely selecting words from a lexicon. Since OOD detection aims to correctly classify input images into ID/OOD class groups, we can \"make up\" OOD label candidates which are not standard class names but beneficial for the process. Observing that the original semantic pool is comprised of unmodified specific class names, we correspondingly construct a conjugated semantic pool (CSP) consisting of modified superclass names, each serving as a cluster center for samples sharing similar properties across different categories. Consistent with our established theory, expanding OOD label candidates with the CSP satisfies the requirements and outperforms existing works by 7.89% in FPR95. Codes are available in https://github.com/MengyuanChen21/NeurIPS2024-CSP.",
+  "abstract_zh": "",
+  "tldr": "We show theoretical conditions for improving zero-shot OOD detection and propose a feasible method.",
+  "keywords": [
+    "out-of-distribution detection",
+    "zero-shot OOD detection",
+    "pre-trained vision-language models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=qqQFOcUEqM",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3c7240aebfc66bb661b3ec74c805bcb284715406.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show theoretical conditions for improving zero-shot OOD detection and propose a feasible method."
+  },
+  "collected_at": "2026-03-10T10:41:30.606Z"
+}

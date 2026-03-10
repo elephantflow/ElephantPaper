@@ -1,0 +1,34 @@
+{
+  "id": "C4zmR2kyP8",
+  "or_id": "C4zmR2kyP8",
+  "title": "Stabilizing Zero-Shot Prediction: A Novel Antidote to Forgetting in Continual Vision-Language Tasks",
+  "title_zh": "",
+  "authors": [
+    "Zijian Gao",
+    "Xingxing Zhang",
+    "Kele Xu",
+    "Xinjun Mao",
+    "Huaimin Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Continual learning (CL) empowers pre-trained vision-language (VL) models to efficiently adapt to a sequence of downstream tasks. However, these models often encounter challenges in retaining previously acquired skills due to parameter shifts and limited access to historical data. In response, recent efforts focus on devising specific frameworks and various replay strategies, striving for a typical learning-forgetting trade-off. Surprisingly, both our empirical research and theoretical analysis demonstrate that the stability of the model in consecutive zero-shot predictions serves as a reliable indicator of its anti-forgetting capabilities for previously learned tasks. \nMotivated by these insights, we develop a novel replay-free CL method named ZAF (Zero-shot Antidote to Forgetting), which preserves acquired knowledge through a zero-shot stability regularization applied to wild data in a plug-and-play manner. To enhance efficiency in adapting to new tasks and seamlessly access historical models, we introduce a parameter-efficient EMA-LoRA neural architecture based on the Exponential Moving Average (EMA). ZAF utilizes new data for low-rank adaptation (LoRA), complemented by a zero-shot antidote on wild data, effectively decoupling learning from forgetting. Our extensive experiments demonstrate ZAF's superior performance and robustness in pre-trained models across various continual VL concept learning tasks, achieving leads of up to 3.70\\%, 4.82\\%, and 4.38\\%, along with at least a 10x acceleration in training speed on three benchmarks, respectively. Additionally, our zero-shot antidote significantly reduces forgetting in existing models by at least 6.37\\%. Our code is available at https://github.com/Zi-Jian-Gao/Stabilizing-Zero-Shot-Prediction-ZAF.",
+  "abstract_zh": "",
+  "tldr": "We thoroughly investigate the link between model stability in zero-shot predictions and anti-forgetting capabilities, and propose a novel replay-free method with the EMA-LoRA architecture to enhance continual learning.",
+  "keywords": [
+    "Vision-language Learning;  Continual Learning;"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=C4zmR2kyP8",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1e4f89aa8989851c0193e90f12bf91641a6ce9a3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We thoroughly investigate the link between model stability in zero-shot predictions and anti-forgetting capabilities, and propose a novel replay-free method with the EMA-LoRA architecture to enhance continual learning."
+  },
+  "collected_at": "2026-03-10T10:41:30.605Z"
+}

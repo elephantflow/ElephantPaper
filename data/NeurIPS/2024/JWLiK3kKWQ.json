@@ -1,0 +1,39 @@
+{
+  "id": "JWLiK3kKWQ",
+  "or_id": "JWLiK3kKWQ",
+  "title": "Mind the Gap Between Prototypes and Images in Cross-domain Finetuning",
+  "title_zh": "",
+  "authors": [
+    "Hongduan Tian",
+    "Feng Liu",
+    "Zhanke Zhou",
+    "Tongliang Liu",
+    "Chengqi Zhang",
+    "Bo Han"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In _cross-domain few-shot classification_ (CFC), recent works mainly focus on adapting a simple transformation head on top of a frozen pre-trained backbone with few labeled data to project embeddings into a task-specific metric space where classification can be performed by measuring similarities between image instance and prototype representations. Technically, an _assumption_ implicitly adopted in such a framework is that the prototype and image instance embeddings share the same representation transformation. However, in this paper, we find that there naturally exists a gap, which resembles the modality gap, between the prototype and image instance embeddings extracted from the frozen pre-trained backbone, and simply applying the same transformation during the adaptation phase constrains exploring the optimal representation distributions and shrinks the gap between prototype and image representations. To solve this problem, we propose a simple yet effective method, _contrastive prototype-image adaptation_ (CoPA), to adapt different transformations for prototypes and images similarly to CLIP by treating prototypes as text prompts. \n  Extensive experiments on Meta-Dataset demonstrate that CoPA achieves the _state-of-the-art_ performance more efficiently. Meanwhile, further analyses also indicate that CoPA can learn better representation clusters, enlarge the gap, and achieve the minimum validation loss at the enlarged gap.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "few-shot classification",
+    "cross domain adaptation",
+    "representation gap",
+    "computer vision",
+    "deep learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=JWLiK3kKWQ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6380b9942d38d2a521405e779c603d7120ace9b6.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In _cross-domain few-shot classification_ (CFC), recent works mainly focus on adapting a simple transformation head on top of a frozen pre-trained backbone with few labeled data to project embeddings into a task-specific metric space where classification can be performed by measuring similarities be"
+  },
+  "collected_at": "2026-03-10T10:41:30.604Z"
+}
