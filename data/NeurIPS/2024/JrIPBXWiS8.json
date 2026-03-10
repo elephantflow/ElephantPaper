@@ -1,0 +1,38 @@
+{
+  "id": "JrIPBXWiS8",
+  "or_id": "JrIPBXWiS8",
+  "title": "Resfusion: Denoising Diffusion Probabilistic Models for Image Restoration Based on Prior Residual Noise",
+  "title_zh": "",
+  "authors": [
+    "Zhenning Shi",
+    "Haoshuai Zheng",
+    "Chen Xu",
+    "Changsheng Dong",
+    "Bin Pan",
+    "Xie xueshuo",
+    "Along He",
+    "Tao Li",
+    "Huazhu Fu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recently, research on denoising diffusion models has expanded its application to the field of image restoration. Traditional diffusion-based image restoration methods utilize degraded images as conditional input to effectively guide the reverse generation process, without modifying the original denoising diffusion process. However, since the degraded images already include low-frequency information, starting from Gaussian white noise will result in increased sampling steps. We propose Resfusion, a general framework that incorporates the residual term into the diffusion forward process, starting the reverse process directly from the noisy degraded images. The form of our inference process is consistent with the DDPM. We introduced a weighted residual noise, named resnoise, as the prediction target and explicitly provide the quantitative relationship between the residual term and the noise term in resnoise. By leveraging a smooth equivalence transformation, Resfusion determine the optimal acceleration step and maintains the integrity of existing noise schedules, unifying the training and inference processes. The experimental results demonstrate that Resfusion exhibits competitive performance on ISTD dataset, LOL dataset and Raindrop dataset with only five sampling steps. Furthermore, Resfusion can be easily applied to image generation and emerges with strong versatility. Our code and model are available at https://github.com/nkicsl/Resfusion.",
+  "abstract_zh": "",
+  "tldr": "We propose Resfusion, a general framework that incorporates the residual term into the diffusion forward process, starting the reverse process directly from the noisy degraded images.",
+  "keywords": [
+    "Diffusion based models; Image restoration;  Shadow removal; Low-light enhancement; Deraining"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=JrIPBXWiS8",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6ad207f44bca0f57ab8216b4e6b359253b763e6a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose Resfusion, a general framework that incorporates the residual term into the diffusion forward process, starting the reverse process directly from the noisy degraded images."
+  },
+  "collected_at": "2026-03-10T10:21:39.211Z"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "mp8u2Pcmqz",
+  "or_id": "mp8u2Pcmqz",
+  "title": "DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs",
+  "title_zh": "",
+  "authors": [
+    "Haokun Lin",
+    "Haobo Xu",
+    "Yichen Wu",
+    "Jingzhi Cui",
+    "Yingtao Zhang",
+    "Linzhan Mou",
+    "Linqi Song",
+    "Zhenan Sun",
+    "Ying Wei"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 oral",
+  "abstract": "Quantization of large language models (LLMs) faces significant challenges, particularly due to the presence of outlier activations that impede efficient low-bit representation. Traditional approaches predominantly address Normal Outliers, which are activations across all tokens with relatively large magnitudes. However, these methods struggle with smoothing Massive Outliers that display significantly larger values, which leads to significant performance degradation in low-bit quantization. In this paper, we introduce DuQuant, a novel approach that utilizes rotation and permutation transformations to more effectively mitigate both massive and normal outliers. First, DuQuant starts by constructing the rotation matrix, using specific outlier dimensions as prior knowledge, to redistribute outliers to adjacent channels by block-wise rotation. Second, We further employ a zigzag permutation to balance the distribution of outliers across blocks, thereby reducing block-wise variance. A subsequent rotation further smooths the activation landscape, enhancing model performance. DuQuant simplifies the quantization process and excels in managing outliers, outperforming the state-of-the-art baselines across various sizes and types of LLMs on multiple tasks, even with 4-bit weight-activation quantization. Our code is available at https://github.com/Hsu1023/DuQuant.",
+  "abstract_zh": "",
+  "tldr": "We identify massive outliers in the down-projection layer of the FFN module and introduce DuQuant, which uses rotation and permutation transformations to effectively mitigate both massive and normal outliers.",
+  "keywords": [
+    "Model compression",
+    "Post-training Quantization",
+    "PTQ of Large Language Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=mp8u2Pcmqz",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f75c5ce9e83cea209b9b5807072a3537bac72822.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We identify massive outliers in the down-projection layer of the FFN module and introduce DuQuant, which uses rotation and permutation transformations to effectively mitigate both massive and normal outliers."
+  },
+  "collected_at": "2026-03-10T10:21:39.209Z"
+}
