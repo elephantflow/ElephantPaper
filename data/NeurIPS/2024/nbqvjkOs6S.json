@@ -1,0 +1,37 @@
+{
+  "id": "nbqvjkOs6S",
+  "or_id": "nbqvjkOs6S",
+  "title": "Gradient-free Decoder Inversion in Latent Diffusion Models",
+  "title_zh": "",
+  "authors": [
+    "Seongmin Hong",
+    "Suh Yoon Jeon",
+    "Kyeonghyun Lee",
+    "Ernest K. Ryu",
+    "Se Young Chun"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In latent diffusion models (LDMs), denoising diffusion process efficiently takes place on latent space whose dimension is lower than that of pixel space. Decoder is typically used to transform the representation in latent space to that in pixel space. While a decoder is assumed to have an encoder as an accurate inverse, exact encoder-decoder pair rarely exists in practice even though applications often require precise inversion of decoder. In other words, encoder is not the left-inverse but the right-inverse of the decoder; decoder inversion seeks the left-inverse. Prior works for decoder inversion in LDMs employed gradient descent inspired by inversions of generative adversarial networks. However, gradient-based methods require larger GPU memory and longer computation time for larger latent space. For example, recent video LDMs can generate more than 16 frames, but GPUs with 24 GB memory can only perform gradient-based decoder inversion for 4 frames. Here, we propose an efficient gradient-free decoder inversion for LDMs, which can be applied to diverse latent models. Theoretical convergence property of our proposed inversion has been investigated not only for the forward step method, but also for the inertial Krasnoselskii-Mann (KM) iterations under mild assumption on cocoercivity that is satisfied by recent LDMs. Our proposed gradient-free method with Adam optimizer and learning rate scheduling significantly reduced computation time and memory usage over prior gradient-based methods and enabled efficient computation in applications such as noise-space watermarking and background-preserving image editing while achieving comparable error levels.",
+  "abstract_zh": "",
+  "tldr": "We propose an efficient gradient-free decoder inversion for LDMs for ensuring invertible latent diffusion model, which significantly reduced runtime and memory usage compared to gradient-based methods in various recent LDMs.",
+  "keywords": [
+    "Latent diffusion model",
+    "Inversion",
+    "Gradient-free inversion",
+    "Resource-efficient inversion"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=nbqvjkOs6S",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/673b4bd9c2c5df584e9ce2632909dde3257b93a8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose an efficient gradient-free decoder inversion for LDMs for ensuring invertible latent diffusion model, which significantly reduced runtime and memory usage compared to gradient-based methods in various recent LDMs."
+  },
+  "collected_at": "2026-03-10T16:01:49.822Z"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "DKSI3bULiZ",
+  "or_id": "DKSI3bULiZ",
+  "title": "Multiple Physics Pretraining for Spatiotemporal Surrogate Models",
+  "title_zh": "",
+  "authors": [
+    "Michael McCabe",
+    "Bruno Régaldo-Saint Blancard",
+    "Liam Holden Parker",
+    "Ruben Ohana",
+    "Miles Cranmer",
+    "Alberto Bietti",
+    "Michael Eickenberg",
+    "Siavash Golkar",
+    "Geraud Krawezik",
+    "Francois Lanusse",
+    "Mariel Pettee",
+    "Tiberiu Tesileanu",
+    "Kyunghyun Cho",
+    "Shirley Ho"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We introduce multiple physics pretraining (MPP), an autoregressive task-agnostic pretraining approach for physical surrogate modeling of spatiotemporal systems with transformers. In MPP, rather than training one model on a specific physical system, we train a backbone model to predict the dynamics of multiple heterogeneous physical systems simultaneously in order to learn features that are broadly useful across systems and facilitate transfer. In order to learn effectively in this setting, we introduce a shared embedding and normalization strategy that projects the fields of multiple systems into a shared embedding space. We validate the efficacy of our approach on both pretraining and downstream tasks over a broad fluid mechanics-oriented benchmark. We show that a single MPP-pretrained transformer is able to match or outperform task-specific baselines on all pretraining sub-tasks without the need for finetuning. For downstream tasks, we demonstrate that finetuning MPP-trained models results in more accurate predictions across multiple time-steps on systems with previously unseen physical components or higher dimensional systems compared to training from scratch or finetuning pretrained video foundation models. We open-source our code and model weights trained at multiple scales for reproducibility.",
+  "abstract_zh": "",
+  "tldr": "We develop approaches to enable autoregressive pretraining on multiple physical systems and show it can improve transfer performance across domain gaps.",
+  "keywords": [
+    "transfer learning",
+    "physics",
+    "pretraining",
+    "finetuning",
+    "surrogate models",
+    "spatiotemporal"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=DKSI3bULiZ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f17e2dec513bf41ef3a4a0158ce2876724a18c38.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We develop approaches to enable autoregressive pretraining on multiple physical systems and show it can improve transfer performance across domain gaps."
+  },
+  "collected_at": "2026-03-10T16:01:49.821Z"
+}
