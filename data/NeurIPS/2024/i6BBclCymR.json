@@ -1,0 +1,36 @@
+{
+  "id": "i6BBclCymR",
+  "or_id": "i6BBclCymR",
+  "title": "How to Use Diffusion Priors under Sparse Views?",
+  "title_zh": "",
+  "authors": [
+    "Qisen Wang",
+    "Yifan Zhao",
+    "Jiawei Ma",
+    "Jia Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Novel view synthesis under sparse views has been a long-term important challenge in 3D reconstruction. Existing works mainly rely on introducing external semantic or depth priors to supervise the optimization of 3D representations. However, the diffusion model, as an external prior that can directly provide visual supervision, has always underperformed in sparse-view 3D reconstruction using Score Distillation Sampling (SDS) due to the low information entropy of sparse views compared to text, leading to optimization challenges caused by mode deviation. To this end, we present a thorough analysis of SDS from the mode-seeking perspective and propose Inline Prior Guided Score Matching (IPSM), which leverages visual inline priors provided by pose relationships between viewpoints to rectify the rendered image distribution and decomposes the original optimization objective of SDS, thereby offering effective diffusion visual guidance without any fine-tuning or pre-training. Furthermore, we propose the IPSM-Gaussian pipeline, which adopts 3D Gaussian Splatting as the backbone and supplements depth and geometry consistency regularization based on IPSM to further improve inline priors and rectified distribution. Experimental results on different public datasets show that our method achieves state-of-the-art reconstruction quality. The code is released at https://github.com/iCVTEAM/IPSM.",
+  "abstract_zh": "",
+  "tldr": "A score distillation method for sparse views",
+  "keywords": [
+    "Novel View Synthesis",
+    "Sparse View",
+    "Diffusion Model",
+    "3D Gaussian Splatting"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=i6BBclCymR",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ff80e75c3b11f6fe3af3852cb89243a6754e0ba1.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A score distillation method for sparse views"
+  },
+  "collected_at": "2026-03-10T21:21:24.002Z"
+}

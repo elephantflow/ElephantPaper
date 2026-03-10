@@ -1,0 +1,36 @@
+{
+  "id": "Jup0qZxH7U",
+  "or_id": "Jup0qZxH7U",
+  "title": "Adaptive Layer Sparsity for Large Language Models via Activation Correlation Assessment",
+  "title_zh": "",
+  "authors": [
+    "Wei Li",
+    "Lujun Li",
+    "Mark G. Lee",
+    "Shengjie Sun"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large Language Models (LLMs) have revolutionized the field of natural language processing with their impressive capabilities. However, their enormous size presents challenges for deploying them in real-world applications. Traditional compression techniques, like pruning, often lead to suboptimal performance due to their uniform pruning ratios and lack of consideration for the varying importance of features across different layers. To address these limitations, we present a novel  Adaptive Layer Sparsity (ALS) approach to optimize LLMs. Our approach consists of two key steps. Firstly, we estimate the correlation matrix between intermediate layers by leveraging the concept of information orthogonality. This novel perspective allows for a precise measurement of the importance of each layer across the model. Secondly, we employ a linear optimization algorithm to develop an adaptive sparse allocation strategy based on evaluating the correlation matrix. This strategy enables us to selectively prune features in intermediate layers, achieving fine-grained optimization of the LLM model. Considering the varying importance across different layers, we can significantly reduce the model size without sacrificing performance. We conduct extensive experiments on publicly available language processing datasets, including the LLaMA-V1|V2|V3 family and OPT, covering various benchmarks. Our experimental results validate the effectiveness of our ALS method, showcasing its superiority over previous approaches. The performance gains demonstrate its potential for enhancing LLMs' efficiency and resource utilization. Notably, our approach surpasses the state-of-the-art models Wanda and SparseGPT, showcasing its ability to excel even under high sparsity levels.  Codes at: https://github.com/lliai/ALS.",
+  "abstract_zh": "",
+  "tldr": "We present a new layerwise sparsity allocation approach for pruning  large language models.",
+  "keywords": [
+    "layerwise sparsity allocation",
+    "large language models",
+    "model compression",
+    "network pruning."
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Jup0qZxH7U",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/aa1a3296dd3e918f169106355de0705b98aaae12.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present a new layerwise sparsity allocation approach for pruning  large language models."
+  },
+  "collected_at": "2026-03-10T21:21:24.003Z"
+}

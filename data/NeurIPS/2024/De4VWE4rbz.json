@@ -1,0 +1,36 @@
+{
+  "id": "De4VWE4rbz",
+  "or_id": "De4VWE4rbz",
+  "title": "HiCoM: Hierarchical Coherent Motion for Dynamic Streamable Scenes with 3D Gaussian Splatting",
+  "title_zh": "",
+  "authors": [
+    "Qiankun Gao",
+    "Jiarui Meng",
+    "Chengxiang Wen",
+    "Jie Chen",
+    "Jian Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The online reconstruction of dynamic scenes from multi-view streaming videos faces significant challenges in training, rendering and storage efficiency. Harnessing superior learning speed and real-time rendering capabilities, 3D Gaussian Splatting (3DGS) has recently demonstrated considerable potential in this field. However, 3DGS can be inefficient in terms of storage and prone to overfitting by excessively growing Gaussians, particularly with limited views. This paper proposes an efficient framework, dubbed HiCoM, with three key components. First, we construct a compact and robust initial 3DGS representation using a perturbation smoothing strategy. Next, we introduce a Hierarchical Coherent Motion mechanism that leverages the inherent non-uniform distribution and local consistency of 3D Gaussians to swiftly and accurately learn motions across frames. Finally, we continually refine the 3DGS with additional Gaussians, which are later merged into the initial 3DGS to maintain consistency with the evolving scene. To preserve a compact representation, an equivalent number of low-opacity Gaussians that minimally impact the representation are removed before processing subsequent frames. Extensive experiments conducted on two widely used datasets show that our framework improves learning efficiency of the state-of-the-art methods by about 20% and reduces the data storage by 85%, achieving competitive free-viewpoint video synthesis quality but with higher robustness and stability. Moreover, by parallel learning multiple frames simultaneously, our HiCoM decreases the average training wall time to <2 seconds per frame with negligible performance degradation, substantially boosting real-world applicability and responsiveness.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "3D Gaussian Splatting",
+    "Streamable Dynamic Scene",
+    "Online 4D Resconstruction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=De4VWE4rbz",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/17de5e34c47af4609af59ab7a10213ac03599699.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The online reconstruction of dynamic scenes from multi-view streaming videos faces significant challenges in training, rendering and storage efficiency. Harnessing superior learning speed and real-time rendering capabilities, 3D Gaussian Splatting (3DGS) has recently demonstrated considerable potent"
+  },
+  "collected_at": "2026-03-10T21:21:24.002Z"
+}

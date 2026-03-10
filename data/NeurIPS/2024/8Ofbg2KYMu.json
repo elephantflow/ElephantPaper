@@ -1,0 +1,34 @@
+{
+  "id": "8Ofbg2KYMu",
+  "or_id": "8Ofbg2KYMu",
+  "title": "Faster Neighborhood Attention: Reducing the O(n^2) Cost of Self Attention at the Threadblock Level",
+  "title_zh": "",
+  "authors": [
+    "Ali Hassani",
+    "Wen-mei Hwu",
+    "Humphrey Shi"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Neighborhood attention reduces the cost of self attention by restricting each token’s attention span to its nearest neighbors. This restriction, parameterized by a window size and dilation factor, draws a spectrum of possible attention patterns between linear projection and self attention. Neighborhood attention, and more generally sliding window attention patterns, have long been bounded by infrastructure, particularly in higher-rank spaces (2-D and 3-D), calling for the development of custom kernels, which have been limited in either functionality, or performance, if not both. In this work, we aim to massively improve upon existing infrastructure by providing two new methods for implementing neighborhood attention. We first show that neighborhood attention can be represented as a batched GEMM problem, similar to standard attention, and implement it for 1-D and 2-D neighborhood attention. These kernels on average provide 895% and 272% improvement in full precision runtime compared to existing naive CUDA kernels for 1-D and 2-D neighborhood attention respectively. We find that aside from being heavily bound by memory bandwidth, certain inherent inefficiencies exist in all unfused implementations of neighborhood attention, which in most cases undo their theoretical efficiency gain. Motivated by the progress made into fused dot-product attention kernels, we developed fused neighborhood attention; an adaptation of fused dot-product attention kernels that allow fine-grained control over attention across different spatial axes. Known for reducing the quadratic time complexity of self attention to a linear complexity, neighborhood attention can now enjoy a reduced and constant memory footprint, and record-breaking half precision runtime. We observe that our fused implementation successfully circumvents some of the unavoidable inefficiencies in unfused implementations. While our unfused GEMM-based kernels only improve half precision performance compared to naive kernels by",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "fused attention kernel",
+    "neighborhood attention",
+    "sliding window attention"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=8Ofbg2KYMu",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c776c48ab28b80d61ecdc8e1892789844332ad6c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Neighborhood attention reduces the cost of self attention by restricting each token’s attention span to its nearest neighbors. This restriction, parameterized by a window size and dilation factor, draws a spectrum of possible attention patterns between linear projection and self attention. Neighborh"
+  },
+  "collected_at": "2026-03-10T21:21:24.000Z"
+}

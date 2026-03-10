@@ -1,0 +1,37 @@
+{
+  "id": "MwmmBg1VYg",
+  "or_id": "MwmmBg1VYg",
+  "title": "Why are Visually-Grounded Language Models Bad at Image Classification?",
+  "title_zh": "",
+  "authors": [
+    "Yuhui Zhang",
+    "Alyssa Unell",
+    "Xiaohan Wang",
+    "Dhruba Ghosh",
+    "Yuchang Su",
+    "Ludwig Schmidt",
+    "Serena Yeung-Levy"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Image classification is one of the most fundamental capabilities of machine vision intelligence. In this work, we revisit the image classification task using visually-grounded language models (VLMs) such as GPT-4V and LLaVA. We find that existing proprietary and public VLMs, despite often using CLIP as a vision encoder and having many more parameters, significantly underperform CLIP on standard image classification benchmarks like ImageNet. To understand the reason, we explore several hypotheses concerning the inference algorithms, training objectives, and data processing in VLMs. Our analysis reveals that the primary cause is data-related: critical information for image classification is encoded in the VLM's latent space but can only be effectively decoded with enough training data. Specifically, there is a strong correlation between the frequency of class exposure during VLM training and instruction-tuning and the VLM's performance in those classes; when trained with sufficient data, VLMs can match the accuracy of state-of-the-art classification models. Based on these findings, we enhance a VLM by integrating classification-focused datasets into its training, and demonstrate that the enhanced classification performance of the VLM transfers to its general capabilities, resulting in an improvement of 11.8% on the newly collected ImageWikiQA dataset.",
+  "abstract_zh": "",
+  "tldr": "We explain why visually-grounded language models are bad at classification and propose a simple data intervention method to fix that.",
+  "keywords": [
+    "vision-language models",
+    "image classification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=MwmmBg1VYg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ee10974e360c467b026d1c2bea32baa06d183b17.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We explain why visually-grounded language models are bad at classification and propose a simple data intervention method to fix that."
+  },
+  "collected_at": "2026-03-10T21:21:24.001Z"
+}

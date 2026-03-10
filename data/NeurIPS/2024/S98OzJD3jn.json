@@ -1,0 +1,36 @@
+{
+  "id": "S98OzJD3jn",
+  "or_id": "S98OzJD3jn",
+  "title": "Diffusion Tuning: Transferring Diffusion Models via Chain of Forgetting",
+  "title_zh": "",
+  "authors": [
+    "Jincheng Zhong",
+    "Xingzhuo Guo",
+    "Jiaxiang Dong",
+    "Mingsheng Long"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Diffusion models have significantly advanced the field of generative modeling. However, training a diffusion model is computationally expensive, creating a pressing need to adapt off-the-shelf diffusion models for downstream generation tasks. Current fine-tuning methods focus on parameter-efficient transfer learning but overlook the fundamental transfer characteristics of diffusion models.\n  In this paper, we investigate the transferability of diffusion models and observe a monotonous chain of forgetting trend of transferability along the reverse process. Based on this observation and novel theoretical insights, we present Diff-Tuning, a frustratingly simple transfer approach that leverages the chain of forgetting tendency. Diff-Tuning encourages the fine-tuned model to retain the pre-trained knowledge at the end of the denoising chain close to the generated data while discarding the other noise side.\n  We conduct comprehensive experiments to evaluate Diff-Tuning, including the transfer of pre-trained Diffusion Transformer models to eight downstream generations and the adaptation of Stable Diffusion to five control conditions with ControlNet.\n  Diff-Tuning achieves a 24.6% improvement over standard fine-tuning and enhances the convergence speed of ControlNet by 24%. Notably, parameter-efficient transfer learning techniques for diffusion models can also benefit from Diff-Tuning. Code\n  is available at this repository: https://github.com/thuml/Diffusion-Tuning.",
+  "abstract_zh": "",
+  "tldr": "This paper introduces Diff-Tuning, a method to adapt pre-trained diffusion models, showing significant improvements over standard fine-tuning across eight tasks and  five conditions with ControlNet.",
+  "keywords": [
+    "Transfer Learning",
+    "Fine-tuning",
+    "Diffusion Model",
+    "Generative Model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=S98OzJD3jn",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9398f208bcb6bbbf4ffed912cbf0c4fa566bd00d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper introduces Diff-Tuning, a method to adapt pre-trained diffusion models, showing significant improvements over standard fine-tuning across eight tasks and  five conditions with ControlNet."
+  },
+  "collected_at": "2026-03-10T21:21:24.002Z"
+}

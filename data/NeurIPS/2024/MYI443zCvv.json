@@ -1,0 +1,38 @@
+{
+  "id": "MYI443zCvv",
+  "or_id": "MYI443zCvv",
+  "title": "DEPrune: Depth-wise Separable Convolution Pruning for Maximizing GPU Parallelism",
+  "title_zh": "",
+  "authors": [
+    "Cheonjun Park",
+    "Mincheol Park",
+    "Hyunchan Moon",
+    "Myung Kuk Yoon",
+    "Seokjin Go",
+    "Suhyun Kim",
+    "Won Woo Ro"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Depth-wise Separable Convolution (DSConv) has a powerful representation even with fewer parameters and computation, leading to its adoption by almost all of the state-of-the-art CNN models. \nDSConv models are already compact making it hard to apply pruning, and there are few  previous pruning techniques that target depth-wise convolution (DW-conv).\nIn this paper, we present Depth-wise Separable Convolution Pruning (DEPrune), a novel pruning method applied to both point-wise and depth-wise convolutions. \nDEPrune is optimized by analyzing the computation of DSConv on GPUs.\nDEPrune employs a fine-grained pruning approach, yet it achieves the structured sparsity typically absent in fine-grained pruning, enabling practical hardware acceleration. \nMoreover, this method maintains a high pruning ratio without causing any accuracy drop.\nWe additionally represent techniques that further enhance DEPrune performance: 1) balanced workload tuning (BWT), and 2) hardware-aware sparsity recalibration (HSR).\nExperiment results show that DEPrune achieves up to $3.74\\times$ practical speedup in DSConv inference on GPUs while maintaining the accuracy of EfficientNet-B0 on ImageNet.",
+  "abstract_zh": "",
+  "tldr": "Hardware-aware Pruning for Fast Depth-wise Separable Convolution",
+  "keywords": [
+    "Pruning",
+    "Depth-wise Separable Convolution",
+    "GPU"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=MYI443zCvv",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/13de79efe94138da96e04b11a8f6613a18c8052b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Hardware-aware Pruning for Fast Depth-wise Separable Convolution"
+  },
+  "collected_at": "2026-03-10T21:21:24.000Z"
+}
