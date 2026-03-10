@@ -1,0 +1,40 @@
+{
+  "id": "lJuQxkDbDo",
+  "or_id": "lJuQxkDbDo",
+  "title": "DisenGCD: A Meta Multigraph-assisted Disentangled Graph Learning Framework for  Cognitive Diagnosis",
+  "title_zh": "",
+  "authors": [
+    "Shangshang Yang",
+    "Mingyang Chen",
+    "Ziwen Wang",
+    "Xiaoshan Yu",
+    "Panpan Zhang",
+    "Haiping Ma",
+    "Xingyi Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Existing graph learning-based cognitive diagnosis (CD) methods have made relatively good results, but their student, exercise, and concept representations are learned and exchanged in an implicit unified graph, which makes the interaction-agnostic exercise and concept representations be learned poorly, failing to provide high robustness against noise in students' interactions. Besides,  lower-order exercise latent representations obtained in shallow layers are not well explored when learning the student representation. \nTo tackle the issues, this paper suggests a meta multigraph-assisted disentangled graph learning framework for CD (DisenGCD), which learns three types of representations on three disentangled graphs: student-exercise-concept interaction,  exercise-concept relation, and concept dependency graphs, respectively. \nSpecifically,  the latter two graphs are first disentangled from the interaction graph. \nThen, the student representation is learned from the interaction graph by a devised meta multigraph learning module; multiple learnable propagation paths in this module  enable current student latent representation to access  lower-order exercise latent representations,\nwhich can lead to  more effective nad robust student representations learned; \nthe exercise and concept representations are learned on the relation and dependency graphs by graph attention modules. \nFinally, a novel diagnostic function is devised to handle three disentangled representations for prediction.  Experiments show better performance and robustness of DisenGCD than state-of-the-art CD methods and demonstrate the effectiveness of the disentangled learning framework and meta multigraph module.The source code is available at https://github.com/BIMK/Intelligent-Education/tree/main/DisenGCD.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Cognitive Diagnosis",
+    "Intelligent Education",
+    "Disentanglement Learning",
+    "Robustness",
+    "Graph Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=lJuQxkDbDo",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e51af5d4e5dbe15572e497a2ca8aadbb75729501.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Existing graph learning-based cognitive diagnosis (CD) methods have made relatively good results, but their student, exercise, and concept representations are learned and exchanged in an implicit unified graph, which makes the interaction-agnostic exercise and concept representations be learned poor"
+  },
+  "collected_at": "2026-03-10T15:41:27.916Z"
+}

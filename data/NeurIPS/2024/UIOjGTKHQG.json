@@ -1,0 +1,39 @@
+{
+  "id": "UIOjGTKHQG",
+  "or_id": "UIOjGTKHQG",
+  "title": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "yikun jiang",
+    "Huanyu Wang",
+    "Lei Xie",
+    "Hanbin Zhao",
+    "Chao Zhang",
+    "Hui Qian",
+    "John C.S. Lui"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large language models have shown an impressive societal impact owing to their excellent understanding and logical reasoning skills. However, such strong ability relies on a huge amount of computing resources, which makes it difficult to deploy LLMs on computing resource-constrained platforms. Currently, LLMs process each token equivalently, but we argue that not every word is equally important. Some words should not be allocated excessive computing resources, particularly for dispensable terms in simple questions. In this paper, we propose a novel dynamic inference paradigm for LLMs, namely D-LLMs, which adaptively allocate computing resources in token processing. We design a dynamic decision module for each transformer layer that decides whether a network unit should be executed or skipped. Moreover, we tackle the issue of adapting D-LLMs to real-world applications, specifically concerning the missing KV-cache when layers are skipped. To overcome this, we propose a simple yet effective eviction policy to exclude the skipped layers from subsequent attention calculations. The eviction policy not only enables D-LLMs to be compatible with prevalent applications but also reduces considerable storage resources. Experimentally, D-LLMs show superior performance, in terms of computational cost and KV storage utilization. It can reduce up to 45\\% computational cost and KV storage on Q\\&A, summarization, and math solving tasks, 50\\% on commonsense reasoning tasks.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Large Language Models",
+    "Dynamic Inference",
+    "Inference Acceleration",
+    "Adaptive Computing Resource Allocation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=UIOjGTKHQG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/22bc9c92fe5f55a971fdc0b7090cca2f2b5453c6.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Large language models have shown an impressive societal impact owing to their excellent understanding and logical reasoning skills. However, such strong ability relies on a huge amount of computing resources, which makes it difficult to deploy LLMs on computing resource-constrained platforms. Curren"
+  },
+  "collected_at": "2026-03-10T15:41:27.916Z"
+}

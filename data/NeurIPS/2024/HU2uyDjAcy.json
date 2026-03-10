@@ -1,0 +1,38 @@
+{
+  "id": "HU2uyDjAcy",
+  "or_id": "HU2uyDjAcy",
+  "title": "Local and Adaptive Mirror Descents in Extensive-Form Games",
+  "title_zh": "",
+  "authors": [
+    "Côme Fiegel",
+    "Pierre Menard",
+    "Tadashi Kozuno",
+    "Remi Munos",
+    "Vianney Perchet",
+    "Michal Valko"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We study how to learn $\\epsilon$-optimal strategies in zero-sum imperfect information games (IIG) with *trajectory feedback*. In this setting, players update their policies sequentially, based on their observations over a fixed number of episodes denoted by $T$. Most existing procedures suffer from high variance due to the use of importance sampling over sequences of actions. To reduce this variance, we consider a *fixed sampling* approach, where players still update their policies over time, but with observations obtained through a given fixed sampling policy. Our approach is based on an adaptive Online Mirror Descent (OMD) algorithm that applies OMD locally to each information set, using individually decreasing learning rates and a *regularized loss*. We show that this approach guarantees a convergence rate of $\\tilde{\\mathcal{O}}(T^{-1/2})$ with high probability and has a near-optimal dependence on the game parameters when applied with the best theoretical choices of learning rates and sampling policies. To achieve these results, we generalize the notion of OMD stabilization, allowing for time-varying regularization with convex increments.",
+  "abstract_zh": "",
+  "tldr": "We study how to reduce the variance of algorithms that learn to play a large imperfect information game.",
+  "keywords": [
+    "online learning",
+    "game theory",
+    "extensive-form games",
+    "mirror descent"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=HU2uyDjAcy",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d611ef23f6215c52bc55a606306c5aa1359e045c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study how to reduce the variance of algorithms that learn to play a large imperfect information game."
+  },
+  "collected_at": "2026-03-10T15:41:27.916Z"
+}
