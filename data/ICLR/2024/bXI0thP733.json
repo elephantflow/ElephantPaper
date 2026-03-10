@@ -1,0 +1,35 @@
+{
+  "id": "bXI0thP733",
+  "or_id": "bXI0thP733",
+  "title": "Mitigating backdoor attacks with generative modelling and dataset relabelling",
+  "title_zh": "",
+  "authors": [
+    "Ivan Sabolic",
+    "Ivan Grubišić",
+    "Siniša Šegvić"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Data-poisoning attacks \nchange a small portion \nof the training dataset\nby introducing hand-crafted triggers \nand rewiring the corresponding labels \ntowards a desired target class.\nTraining on such data injects \na backdoor into the model,  \nthat causes incorrect inference \nin selected test examples.\nExisting defenses mitigate \nthe risks of such attacks \nthrough various modifications\nof the standard discriminative learning procedure.\nThis paper explores a different approach\nthat promises clean models \nby means of per-class generative modelling. \nWe start by mapping the input data\ninto a suitable latent space\nby leveraging a pre-trained \nself-supervised feature extractor.\nInterestingly, these representations\nget either preserved or heavily disturbed\nunder recent backdoor attacks.\nIn both cases, we find that \nper-class generative models\ngive rise to probabilistic densities\nthat allow both to detect the poisoned data\nand to find their original classes.\nThis allows to patch the poisoned dataset\nby reverting the original labels\nand considering the triggers \nas a kind of augmentation.\nOur experiments show that\ntraining on patched datasets\ngreatly reduces attack success rate\nand retains the clean accuracy.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel method to defend against backdoor attacks. Method filters and relabels poisoned samples using generative modelling.",
+  "keywords": [
+    "backdoor defense",
+    "backdoor learning",
+    "trusthworty AI",
+    "AI security"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=bXI0thP733",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8b3d28980713d9f8eae60847114d3dac89352aff.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel method to defend against backdoor attacks. Method filters and relabels poisoned samples using generative modelling."
+  },
+  "collected_at": "2026-03-10T23:24:26.041Z"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "ELlBpc0tfb",
+  "or_id": "ELlBpc0tfb",
+  "title": "MedJourney: Counterfactual Medical Image Generation by Instruction-Learning from Multimodal Patient Journeys",
+  "title_zh": "",
+  "authors": [
+    "Yu Gu",
+    "Jianwei Yang",
+    "Naoto Usuyama",
+    "Chunyuan Li",
+    "Sheng Zhang",
+    "Matthew P. Lungren",
+    "Jianfeng Gao",
+    "Hoifung Poon"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Rapid progress has been made in instruction-learning for image editing with natural-language instruction, as exemplified by InstructPix2Pix. In biomedicine, such counterfactual generation methods can help differentiate causal structure from spurious correlation and facilitate robust image interpretation for disease progression modeling. However, generic image-editing models are ill-suited for the biomedical domain, and counterfactual medical image generation is largely underexplored. In this paper, we present MedJourney, a novel method for counterfactual medical image generation by instruction-learning from multimodal patient journeys. Given a patient with two medical images taken at different time points, we use GPT-4 to process the corresponding imaging reports and generate natural language description of disease progression. The resulting triples (prior image, progression description, new image) are then used to train a latent diffusion model for counterfactual medical image generation. Given the relative scarcity of image time series data, we introduce a two-stage curriculum that first pretrains the denoising network using the much more abundant single image-report pairs (with dummy prior image), and then continues training using the counterfactual triples. Experiments using the standard MIMIC-CXR dataset demonstrate the promise of our method. In a comprehensive battery of tests on counterfactual medical image generation, MedJourney substantially outperforms prior state-of-the-art methods in instruction image editing and medical image generation such as InstructPix2Pix and RoentGen. To facilitate future study in counterfactual medical generation, we plan to release our instruction-learning code and pretrained models.",
+  "abstract_zh": "",
+  "tldr": "MedJourney, leveraging GPT-4 and instruction-learning, pioneers in counterfactual medical image generation from patient journeys, outshining models like InstructPix2Pix and RoentGen on the MIMIC-CXR dataset.",
+  "keywords": [
+    "instruction image editing",
+    "instruction-learning",
+    "image generation",
+    "diffusion",
+    "natural-language instruction",
+    "biomedicine",
+    "counterfactual generation",
+    "disease progression modeling",
+    "GPT-4",
+    "imaging reports",
+    "latent diffusion model",
+    "curriculum learning",
+    "MIMIC-CXR"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ELlBpc0tfb",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/76b744fd2835a75f66cc9e4844ffacd76d69c371.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "MedJourney, leveraging GPT-4 and instruction-learning, pioneers in counterfactual medical image generation from patient journeys, outshining models like InstructPix2Pix and RoentGen on the MIMIC-CXR dataset."
+  },
+  "collected_at": "2026-03-10T23:24:40.017Z"
+}

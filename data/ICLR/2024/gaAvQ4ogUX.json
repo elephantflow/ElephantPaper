@@ -1,0 +1,34 @@
+{
+  "id": "gaAvQ4ogUX",
+  "or_id": "gaAvQ4ogUX",
+  "title": "A Convergent Federated Clustering  Algorithm without Initial Condition",
+  "title_zh": "",
+  "authors": [
+    "Harsh Vardhan",
+    "Avishek Ghosh",
+    "Arya Mazumdar"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Federated learning (FL) is a distributed learning paradigm that allows multiple users to collaboratively train a shared model without exchanging their data with a central server. However, optimal models of different users often differ due to heterogeneity of data across users. \nIn this paper, we address the dichotomy between heterogeneous models and simultaneous training in FL via a clustering structure among the users.  The clustering framework is one way to allow for   high heterogeneity level between users, while users with similar data can still train a shared model. In this paper, we define a new clustering framework for FL based on the (optimal) local models of the users: two users belong to the same cluster if their local models are close. We propose an  algorithm, Successive Refine Federated Clustering Algorithm (SR-FCA), that treats each user as a singleton cluster as an initialization, and then successively refine the cluster estimation via exploiting similarity with other users. In any intermediate step, SR-FCA uses an  error-tolerant federated learning algorithm within each cluster to exploit simultaneous training and to correct clustering errors. Unlike some prominent prior works,  SR-FCA does not require any  good initialization (or warm start), both in theory and practice. We show that with proper choice of learning rate, SR-FCA incurs arbitrarily small clustering error. Additionally, SR-FCA does not require the knowledge of the number of clusters apriori like some prior works. We also validate the performance of our algorithm on real-world FL datasets including FEMNIST and Shakespeare in non-convex problems and show the benefits of SR-FCA over several baselines.",
+  "abstract_zh": "",
+  "tldr": "We propose and analyze a theoretically convergent and empirically superior Federated Clustering Algorithm",
+  "keywords": [
+    "Federated Learning",
+    "Heterogeneity",
+    "Clustering"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=gaAvQ4ogUX",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/dd40a544a4679a69e1aaf3a363eb603ee8b11044.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose and analyze a theoretically convergent and empirically superior Federated Clustering Algorithm"
+  },
+  "collected_at": "2026-03-10T23:24:40.014Z"
+}

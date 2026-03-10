@@ -1,0 +1,38 @@
+{
+  "id": "ABIcBDLBVG",
+  "or_id": "ABIcBDLBVG",
+  "title": "Fill in the Blank: Exploring and Enhancing LLM Capabilities for Backward Reasoning in Math Word Problems",
+  "title_zh": "",
+  "authors": [
+    "Aniruddha Deb",
+    "Neeva Hareshbhai Oza",
+    "Sarthak Singla",
+    "Dinesh Khandelwal",
+    "Dinesh Garg",
+    "Parag Singla"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "While forward reasoning (i.e., find the answer given the question) has been explored extensively in the recent literature, backward reasoning is relatively unexplored. We examine the backward reasoning capabilities of LLMs on Math Word Problems (MWPs): given a mathematical question and its answer, with some details omitted from the question, can LLMs effectively retrieve the missing information? \n\nIn this paper, we formally define the backward reasoning task on math word problems and modify three datasets to evaluate this task: GSM8k, SVAMP and MultiArith. Our findings show a significant drop in the accuracy of models on backward reasoning compared to forward reasoning across four SOTA LLMs (GPT4, GPT3.5, PaLM-2, and LLaMa). Utilizing the specific format of this task, we propose three novel techniques that improve performance: Rephrase reformulates the given problem into a forward reasoning problem, PAL-Tools combines the idea of Program-Aided LLMs to produce a set of equations that can be solved by an external solver, and Check your Work exploits the availability of natural verifier of high accuracy in the forward direction, interleaving solving and verification steps. Finally, realizing that each of our base methods correctly solves a different set of problems, we propose a novel Bayesian formulation for creating an ensemble over these base methods aided by a verifier to further boost the accuracy by a significant margin. Extensive experimentation demonstrates that our techniques successively improve the performance of LLMs on the backward reasoning task, with the final ensemble-based method resulting in a substantial performance gain compared to the raw LLMs with standard prompting techniques such as chain-of-thought.",
+  "abstract_zh": "",
+  "tldr": "We investigate first-of-a-kind problem that given a mathematical question and answer, with some details omitted from the question, can LLM effectively retrieve the missing information and propose novel techniques to boost LLM performance in this task",
+  "keywords": [
+    "large language models",
+    "prompting",
+    "mathematical reasoning",
+    "natural language processing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ABIcBDLBVG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5ca83a1c9d892ac987ffc2d7529291b0057a8c8e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We investigate first-of-a-kind problem that given a mathematical question and answer, with some details omitted from the question, can LLM effectively retrieve the missing information and propose novel techniques to boost LLM performance in this task"
+  },
+  "collected_at": "2026-03-10T23:24:40.015Z"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "H7R0z6V9fR",
+  "or_id": "H7R0z6V9fR",
+  "title": "TANGO: Time-Reversal Latent GraphODE for Multi-Agent Dynamical Systems",
+  "title_zh": "",
+  "authors": [
+    "Zijie Huang",
+    "Wanjia Zhao",
+    "Jingdong Gao",
+    "Ziniu Hu",
+    "Xiao Luo",
+    "Yadi Cao",
+    "Yizhou Sun",
+    "Wei Wang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Learning complex multi-agent system dynamics from data is crucial across many\ndomains, such as in physical simulations and material modeling. Extended from\npurely data-driven approaches, existing physics-informed approaches such as\nHamiltonian Neural Network strictly follow energy conservation law to introduce\ninductive bias, making their learning more sample efficiently. However, many\nreal-world systems do not strictly conserve energy, such as spring systems with\nfrictions. Recognizing this, we turn our attention to a broader physical principle:\nTime-Reversal Symmetry, which depicts that the dynamics of a system shall re-\nmain invariant when traversed back over time. It still helps to preserve energies\nfor conservative systems and in the meanwhile, serves as a strong inductive bias\nfor non-conservative, reversible systems. To inject such inductive bias, in this pa-\nper, we propose a simple-yet-effective self-supervised regularization term as a soft\nconstraint that aligns the forward and backward trajectories predicted by a contin-\nuous graph neural network-based ordinary differential equation (GraphODE). It\neffectively imposes time-reversal symmetry to enable more accurate model pre-\ndictions across a wider range of dynamical systems under classical mechanics. In\naddition, we further provide theoretical analysis to show that our regularization\nessentially minimizes higher-order Taylor expansion terms during the ODE inte-\ngration steps, which enables our model to be more noise-tolerant and even applica-\nble to irreversible systems. Experimental results on a variety of physical systems\ndemonstrate the effectiveness of our proposed method. Particularly, it achieves an\nMSE improvement of 11.5 % on a challenging chaotic triple-pendulum systems",
+  "abstract_zh": "",
+  "tldr": "Time-reversal Latent GraphODE for Modeling Multi-Agent Dynamical Systems",
+  "keywords": [
+    "NeuralODE",
+    "Graph Neural Networks",
+    "Dynamical Systems",
+    "Physical Simulations",
+    "Physics-informed Neural Networks"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=H7R0z6V9fR",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3466d8a23c2fa42c696af5078a9f8da9f53cace9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Time-reversal Latent GraphODE for Modeling Multi-Agent Dynamical Systems"
+  },
+  "collected_at": "2026-03-10T23:24:40.016Z"
+}

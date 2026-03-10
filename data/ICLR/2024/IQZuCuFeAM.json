@@ -1,0 +1,40 @@
+{
+  "id": "IQZuCuFeAM",
+  "or_id": "IQZuCuFeAM",
+  "title": "From Random to Relevant: Harnessing Salient Masks in Non-IID Federated Learning",
+  "title_zh": "",
+  "authors": [
+    "Riyasat Ohib",
+    "Bishal Thapaliya",
+    "Jingyu Liu",
+    "Vince Calhoun",
+    "Sergey Plis"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Federated learning (FL) offers the ability to train models using decentralized data at client sites, ensuring data privacy by eliminating the need for data centralization. A predominant challenge with FL is the constrained computation and narrow communication bandwidth, particularly evident in resource-restricted edge client nodes. Various solutions, such as transmitting sparse models and iterative pruning have been suggested to tackle this. However, many existing methods necessitate the transmission of full model weights throughout the training, rely heavily on arbitrary or random pruning criteria or costly iterative pruning schedules. \n\nIn this work, we propose SSFL, a streamlined approach for sparse decentralized FL training and communication. SSFL identifies a subnetwork prior to training, leveraging parameter saliency scores keeping in mind the distribution of local client data in non-IID scenarios. Distinctively, only the sparse model weights are communicated in each round between client models in a decentralized manner, sidestepping the conventional need of transferring the complete dense model at any phase of training. We validate SSFL's effectiveness using standard non-IID benchmarks, noting marked improvements in the sparsity-accuracy trade-offs. Finally, we deploy our method in a real-world federated learning framework and report improvement in communication time.",
+  "abstract_zh": "",
+  "tldr": "We propose a parameter saliency based sparse decentralized federated learning method that finds salient masks based on local data in the non-IID setting resulting in a performant sparse FL method.",
+  "keywords": [
+    "Sparsity",
+    "Pruning",
+    "Federated Learning",
+    "Sparse Federated Learning",
+    "Communication efficiency",
+    "Efficient FL",
+    "Pruning at Initialization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=IQZuCuFeAM",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4ff61d2653a257e96e71eeaac05d2e799905fb7d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a parameter saliency based sparse decentralized federated learning method that finds salient masks based on local data in the non-IID setting resulting in a performant sparse FL method."
+  },
+  "collected_at": "2026-03-10T23:24:40.017Z"
+}

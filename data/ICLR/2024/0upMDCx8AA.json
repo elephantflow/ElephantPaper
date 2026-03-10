@@ -1,0 +1,37 @@
+{
+  "id": "0upMDCx8AA",
+  "or_id": "0upMDCx8AA",
+  "title": "Post-Training Recovery from Injected Bias with Self-Influence",
+  "title_zh": "",
+  "authors": [
+    "Yeonsung Jung",
+    "Jaeyun Song",
+    "June Yong Yang",
+    "Jin-Hwa Kim",
+    "Sung-Yub Kim",
+    "Eunho Yang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Learning generalized models from biased data with strong spurious correlations to the class label is an important undertaking toward fairness in deep learning. In the absence of any prior knowledge or supervision of bias, recent studies tackle the problem by presuming the bias severity to be sufficiently high and employing a bias-amplified model trained by empirical risk minimization (ERM) to identify and utilize bias-conflicting samples that are free of spurious correlations. However, insufficient preciseness in detecting bias-conflicting samples results in injecting erroneous signals during training; conversely, it leads to learning malignant biases instead of excluding them. In practice, as the presumption about the magnitude of bias often does not hold, it is important for the model to demonstrate robust performance across a wide spectrum of biases. In this paper, we propose SePT (Self-influence-based Post-Training), a fine-tuning framework leveraging the self-influence score to filter bias-conflicting samples, which yields a pivotal subset with significantly diminished spurious correlations. Our method enables the quick recovery of a biased model from learned bias through fine-tuning with minimal friction. In addition, SePT also utilizes the remaining training dataset to adjust the model, thereby maintaining robust performance in situations with weak spurious correlation or even in the absence of it. Experiments on diverse benchmark datasets with a wide range of bias strengths show that SePT is capable of boosting the performance of both bias-injected and state-of-the-art debiased models.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Deep learning",
+    "dataset bias",
+    "debiasing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=0upMDCx8AA",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7bbb01fed90ee72d727d9aeddbd4932d64cdc416.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Learning generalized models from biased data with strong spurious correlations to the class label is an important undertaking toward fairness in deep learning. In the absence of any prior knowledge or supervision of bias, recent studies tackle the problem by presuming the bias severity to be suffici"
+  },
+  "collected_at": "2026-03-10T23:24:40.016Z"
+}
