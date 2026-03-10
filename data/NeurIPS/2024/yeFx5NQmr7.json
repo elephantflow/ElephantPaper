@@ -1,0 +1,36 @@
+{
+  "id": "yeFx5NQmr7",
+  "or_id": "yeFx5NQmr7",
+  "title": "Learning 3D Garment Animation from Trajectories of A Piece of Cloth",
+  "title_zh": "",
+  "authors": [
+    "Yidi Shao",
+    "Chen Change Loy",
+    "Bo Dai"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Garment animation is ubiquitous in various applications, such as virtual reality, gaming, and film producing. Recently, learning-based approaches obtain compelling performance in animating diverse garments under versatile scenarios. Nevertheless, to mimic the deformations of the observed garments, data-driven methods require large scale of garment data, which are both resource-wise expensive and time-consuming. In addition, forcing models to match the dynamics of observed garment animation may hinder the potentials to generalize to unseen cases. In this paper, instead of using garment-wise supervised-learning we adopt a disentangled scheme to learn how to animate observed garments: 1). learning constitutive behaviors from the observed cloth; 2). dynamically animate various garments constrained by the learned constitutive laws. Specifically, we propose Energy Unit network (EUNet) to model the constitutive relations in the format of energy. Without the priors from analytical physics models and differentiable simulation engines, EUNet is able to directly capture the constitutive behaviors from the observed piece of cloth and uniformly describes the change of energy caused by deformations, such as stretching and bending. We further apply the pre-trained EUNet to animate various garments based on energy optimizations. The disentangled scheme alleviates the need of garment data and enables us to utilize the dynamics of a piece of cloth for animating garments. Experiments show that while EUNet effectively delivers the energy gradients due to the deformations, models constrained by EUNet achieve more stable and physically plausible performance comparing with those trained in garment-wise supervised manner.",
+  "abstract_zh": "",
+  "tldr": "To learn to animate the garments, we adopt the disentangled scheme where we model the constitutive laws of a piece of cloth from the observations and animate garments using energy optimization constrained by our model.",
+  "keywords": [
+    "Garment",
+    "Cloth",
+    "Simulation",
+    "Constitutive Model",
+    "3D"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=yeFx5NQmr7",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d57b0731216ccd13a02117aa1f63730ec58dae56.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "To learn to animate the garments, we adopt the disentangled scheme where we model the constitutive laws of a piece of cloth from the observations and animate garments using energy optimization constrained by our model."
+  },
+  "collected_at": "2026-03-10T10:01:28.261Z"
+}

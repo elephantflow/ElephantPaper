@@ -1,0 +1,37 @@
+{
+  "id": "MbbTN9rPzC",
+  "or_id": "MbbTN9rPzC",
+  "title": "Quantile Activation: Departing from single point estimation for better generalization across distortions",
+  "title_zh": "",
+  "authors": [
+    "Aditya Challa",
+    "Sravan Danda",
+    "Laurent Najman",
+    "Snehanshu Saha"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "A classifier is, in its essence, a function which takes an input and returns the class of the input and implicitly assumes an underlying distribution which does not change. We argue in this article that one has to move away from this basic tenet to obtain generalisation across distributions. Specifically, the class of the sample should depend on the points from its “context distribution” for better generalisation across distributions. \nHow does one achieve this? – The key idea is to “adapt” the outputs of each neuron of the network to its context distribution. We propose quantile activation,QACT, which, in simple terms, outputs the relative quantile of the sample in its context distribution, instead of the actual values in traditional networks. The scope of this article is to validate the proposed activation across several experimental settings, and compare it with conventional techniques. For this, we use the datasets developed to test robustness against distortions – CIFAR10C, CIFAR100C, MNISTC, TinyImagenetC, and show that we achieve a significantly better generalisation across distortions than the conventional classifiers, across different architectures. Although this paper is only a proof of concept, we surprisingly find that this approach outperforms DINOv2(small) at large distortions, even though DINOv2 is trained with a far bigger network on a considerably larger dataset.",
+  "abstract_zh": "",
+  "tldr": "QACT: better generalization across distortions",
+  "keywords": [
+    "Uncertainty Quantification",
+    "Context Distribution",
+    "Robust Inference",
+    "Generalization across distortions",
+    "Neuronal Activation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=MbbTN9rPzC",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5c53abcd9cd6ee2cdbfc7664395aca139d510269.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "QACT: better generalization across distortions"
+  },
+  "collected_at": "2026-03-10T10:01:28.261Z"
+}

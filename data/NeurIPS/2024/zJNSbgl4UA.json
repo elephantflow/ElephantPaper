@@ -1,0 +1,38 @@
+{
+  "id": "zJNSbgl4UA",
+  "or_id": "zJNSbgl4UA",
+  "title": "Slicing Vision Transformer for Flexible Inference",
+  "title_zh": "",
+  "authors": [
+    "Yitian Zhang",
+    "Huseyin Coskun",
+    "Xu Ma",
+    "Huan Wang",
+    "Ke Ma",
+    "Stephen Xi Chen",
+    "Derek Hao Hu",
+    "Yun Fu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Vision Transformers (ViT) is known for its scalability. In this work, we target to scale down a ViT to fit in an environment with dynamic-changing resource constraints. We observe that smaller ViTs are intrinsically the sub-networks of a larger ViT with different widths. Thus, we propose a general framework, named Scala, to enable a single network to represent multiple smaller ViTs with flexible inference capability, which aligns with the inherent design of ViT to vary from widths. Concretely, Scala activates several subnets during training, introduces Isolated Activation to disentangle the smallest sub-network from other subnets, and leverages Scale Coordination to ensure each sub-network receives simplified, steady, and accurate learning objectives. Comprehensive empirical validations on different tasks demonstrate that with only one-shot training, Scala learns slimmable representation without modifying the original ViT structure and matches the performance of Separate Training. Compared with the prior art, Scala achieves an average improvement of 1.6% on ImageNet-1K with fewer parameters.",
+  "abstract_zh": "",
+  "tldr": "Use a single ViT to represent multiple smaller variants",
+  "keywords": [
+    "Vision Transformer",
+    "Flexible Inference"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=zJNSbgl4UA",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d586f3321f7b5f7435024391bab2f98aeaac3132.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Use a single ViT to represent multiple smaller variants"
+  },
+  "collected_at": "2026-03-10T10:01:28.260Z"
+}

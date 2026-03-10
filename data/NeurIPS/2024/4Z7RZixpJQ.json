@@ -1,0 +1,42 @@
+{
+  "id": "4Z7RZixpJQ",
+  "or_id": "4Z7RZixpJQ",
+  "title": "ProSST: Protein Language Modeling with Quantized Structure and Disentangled Attention",
+  "title_zh": "",
+  "authors": [
+    "Mingchen Li",
+    "Yang Tan",
+    "Xinzhu Ma",
+    "Bozitao Zhong",
+    "Huiqun Yu",
+    "Ziyi Zhou",
+    "Wanli Ouyang",
+    "Bingxin Zhou",
+    "Pan Tan",
+    "Liang Hong"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Protein language models (PLMs) have shown remarkable capabilities in various protein function prediction tasks. However, while protein function is intricately tied to structure, most existing PLMs do not incorporate protein structure information. To address this issue, we introduce ProSST, a Transformer-based protein language model that seamlessly integrates both protein sequences and structures. ProSST incorporates a structure quantization module and a Transformer architecture with disentangled attention. The structure quantization module translates a 3D protein structure into a sequence of discrete tokens by first serializing the protein structure into residue-level local structures and then embeds them into dense vector space. These vectors are then quantized into discrete structure tokens by a pre-trained clustering model. These tokens serve as an effective protein structure representation. Furthermore, ProSST explicitly learns the relationship between protein residue token sequences and structure token sequences through the sequence-structure disentangled attention. We pre-train ProSST on millions of protein structures using a masked language model objective, enabling it to learn comprehensive contextual representations of proteins. To evaluate the proposed ProSST, we conduct extensive experiments on the zero-shot mutation effect prediction and several supervised downstream tasks, where ProSST achieves the state-of-the-art performance among all baselines. Our code and pre-trained models are publicly available.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Protein",
+    "Protein Language Modeling",
+    "Protein structure",
+    "Disentangled Attention"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=4Z7RZixpJQ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6c75eed7fafd81f83f87f954b10f95768b59f37b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Protein language models (PLMs) have shown remarkable capabilities in various protein function prediction tasks. However, while protein function is intricately tied to structure, most existing PLMs do not incorporate protein structure information. To address this issue, we introduce ProSST, a Transfo"
+  },
+  "collected_at": "2026-03-10T10:01:28.259Z"
+}

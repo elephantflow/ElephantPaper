@@ -1,0 +1,40 @@
+{
+  "id": "25Ioxw576r",
+  "or_id": "25Ioxw576r",
+  "title": "You Only Cache Once: Decoder-Decoder Architectures for Language Models",
+  "title_zh": "",
+  "authors": [
+    "Yutao Sun",
+    "Li Dong",
+    "Yi Zhu",
+    "Shaohan Huang",
+    "Wenhui Wang",
+    "Shuming Ma",
+    "Quanlu Zhang",
+    "Jianyong Wang",
+    "Furu Wei"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 oral",
+  "abstract": "We introduce a decoder-decoder architecture, YOCO, for large language models, which only caches key-value pairs once. It consists of two components, i.e., a cross-decoder stacked upon a self-decoder. The self-decoder efficiently encodes global key-value (KV) caches that are reused by the cross-decoder via cross-attention. The overall model behaves like a decoder-only Transformer, although YOCO only caches once. The design substantially reduces GPU memory demands, yet retains global attention capability. Additionally, the computation flow enables prefilling to early exit without changing the final output, thereby significantly speeding up the prefill stage. Experimental results demonstrate that YOCO achieves favorable performance compared to Transformer in various settings of scaling up model size and number of training tokens. We also extend YOCO to 1M context length with near-perfect needle retrieval accuracy. The profiling results show that YOCO improves inference memory, prefill latency, and throughput by orders of magnitude across context lengths and model sizes.",
+  "abstract_zh": "",
+  "tldr": "We introduce a decoder-decoder architecture, YOCO, for large language models, which only caches key-value pairs once.",
+  "keywords": [
+    "Decoder-Decoder",
+    "Model Architecture"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=25Ioxw576r",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c001fdfd3a2894f8c62da3eef3be8317b3800c61.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We introduce a decoder-decoder architecture, YOCO, for large language models, which only caches key-value pairs once."
+  },
+  "collected_at": "2026-03-10T10:01:28.261Z"
+}
