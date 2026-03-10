@@ -1,0 +1,37 @@
+{
+  "id": "CpgoO6j6W1",
+  "or_id": "CpgoO6j6W1",
+  "title": "DECOUPLING REASONING FROM OBSERVATIONS FOR EFFICIENT AUGMENTED LANGUAGE MODELS",
+  "title_zh": "",
+  "authors": [
+    "Binfeng Xu",
+    "Zhiyuan PENG",
+    "Bowen Lei",
+    "Subhabrata Mukherjee",
+    "Dongkuan Xu"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Augmented Language Models (ALMs) blend the reasoning capabilities of Large Language Models (LLMs) with tools that allow for knowledge retrieval and action execution. Existing ALM systems trigger LLM thought processes while pulling observations from these tools in an interleaved fashion. Specifically, an LLM reasons to call an external tool, gets halted to fetch the tool's response, and then decides the next action based on all preceding response tokens. Such a paradigm, though straightforward and easy to implement, often leads to huge computation complexity from redundant prompts and repeated execution. This study addresses such challenges for the first time, proposing a modular paradigm ReWOO (Reasoning WithOut Observation) that detaches the reasoning process from external observations, thus significantly reducing token consumption. Comprehensive evaluations across six public NLP benchmarks and a curated dataset reveal consistent performance enhancements with our proposed methodology. Notably, ReWOO achieves 5x token efficiency and 4% accuracy improvement on HotpotQA, a multi-step reasoning benchmark. Furthermore, ReWOO demonstrates robustness under tool-failure scenarios. Beyond prompt efficiency, decoupling parametric modules from non-parametric tool calls enables instruction fine-tuning to offload LLMs into smaller language models, thus substantially reducing model sizes. Our illustrative work offloads reasoning ability from 175B GPT3.5 into 7B LLaMA successfully, demonstrating the significant potential for truly efficient and scalable ALM systems. Full code, model, and curated data are released for reproduction.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Tool augmented language model",
+    "Efficiency",
+    "Prompt redundancy",
+    "Instruction fine-tuning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=CpgoO6j6W1",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/73cdd90ef10de8fc6c45bacc06477bfdf23f5d5c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Augmented Language Models (ALMs) blend the reasoning capabilities of Large Language Models (LLMs) with tools that allow for knowledge retrieval and action execution. Existing ALM systems trigger LLM thought processes while pulling observations from these tools in an interleaved fashion. Specifically"
+  },
+  "collected_at": "2026-03-10T23:44:27.101Z"
+}

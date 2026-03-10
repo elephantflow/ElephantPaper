@@ -1,0 +1,33 @@
+{
+  "id": "nhub8Pjp7y",
+  "or_id": "nhub8Pjp7y",
+  "title": "Fewer is More: Trojan Attacks on Parameter-Efficient Fine-Tuning",
+  "title_zh": "",
+  "authors": [
+    "Lauren Hong",
+    "Ting Wang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Parameter-efficient fine-tuning (PEFT) enables efficient adaptation of pre-trained language models (PLMs) to specific tasks. By tuning only a minimal set of (extra) parameters, PEFT achieves performance comparable to full fine-tuning. However, despite its prevalent use, the security implications of PEFT remain largely unexplored. In this paper, we conduct a pilot study revealing that PEFT exhibits unique vulnerability to trojan attacks. Specifically, we present PETA, a novel attack that accounts for downstream adaptation through bilevel optimization: the upper-level objective embeds the backdoor into a PLM while the lower-level objective simulates PEFT to retain the PLM's task-specific performance. With extensive evaluation across a variety of downstream tasks and trigger designs, we demonstrate PETA's effectiveness in terms of both attack success rate and unaffected clean accuracy, even after the victim user performs PEFT over the backdoored PLM using untainted data. Moreover, we empirically provide possible explanations for PETA's efficacy: the bilevel optimization inherently 'orthogonalizes' the backdoor and PEFT modules, thereby retaining the backdoor throughout PEFT. Based on this insight, we explore a simple defense that omits PEFT in selected layers of the backdoored PLM and unfreezes a subset of these layers' parameters, which is shown to effectively neutralize PETA.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Trojan attacks",
+    "Parameter-efficient fine-tuning",
+    "Pre-trained language models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=nhub8Pjp7y",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8d4fa09f7efceabe13b16a6eeb7b7db2419c905d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Parameter-efficient fine-tuning (PEFT) enables efficient adaptation of pre-trained language models (PLMs) to specific tasks. By tuning only a minimal set of (extra) parameters, PEFT achieves performance comparable to full fine-tuning. However, despite its prevalent use, the security implications of "
+  },
+  "collected_at": "2026-03-10T23:44:27.103Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "uz7d2N2zul",
+  "or_id": "uz7d2N2zul",
+  "title": "Bayesian Coreset Optimization for Personalized Federated Learning",
+  "title_zh": "",
+  "authors": [
+    "Prateek Chanda",
+    "Shrey Modi",
+    "Ganesh Ramakrishnan"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "In a distributed machine learning setting like Federated Learning where there are multiple clients involved which update their individual weights to a single central server, often training on the entire individual client's dataset for each client becomes cumbersome. To address this issue we propose CORESET-PFEDBAYES : a personalized coreset weighted federated learning setup where the training updates for each individual clients are forwarded to the central server based on only individual client coreset based representative data points instead of the entire client data. Through theoretical analysis we present how the average generalization error is minimax optimal up to logarithm bounds (upper bounded by $\\mathcal{O}(n_k^{-\\frac{2 \\beta}{2 \\beta+\\boldsymbol{\\Lambda}}} \\log ^{2 \\delta^{\\prime}}(n_k))$) and lower bounds of $\\mathcal{O}(n_k^{-\\frac{2 \\beta}{2 \\beta+\\boldsymbol{\\Lambda}}})$, and how the overall generalization error on the data likelihood differs from a vanilla Federated Learning setup as a closed form function ${\\boldsymbol{\\Im}}(\\boldsymbol{w}, n_k)$ of the coreset weights $\\boldsymbol{w}$ and coreset sample size $n_k$. \nOur experiments on different benchmark datasets based on a variety of recent personalized federated learning architectures show significant gains as compared to random sampling on the training data followed by federated learning, thereby indicating how intelligently selecting such training samples can help in performance. Additionally, through experiments on medical datasets our proposed method showcases some gains as compared to  other submodular optimization based approaches used for subset selection on client's data.",
+  "abstract_zh": "",
+  "tldr": "The paper deals with utilizing a bayesian coreset on individual client's data in a federated learning setting that takes into account personalization at each client's side.",
+  "keywords": [
+    "federated learning",
+    "personalized federated learning",
+    "bayesian coreset",
+    "submodularity",
+    "variational inference",
+    "coresets",
+    "optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=uz7d2N2zul",
+    "arxiv": "https://arxiv.org/abs/2511.01800",
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/cd650d7bda1c2da0c78084f2b993c15c2ec0925f.pdf"
+  },
+  "citationCount": 2,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The paper deals with utilizing a bayesian coreset on individual client's data in a federated learning setting that takes into account personalization at each client's side."
+  },
+  "collected_at": "2026-03-10T23:44:26.317Z"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "JiTVtCUOpS",
+  "or_id": "JiTVtCUOpS",
+  "title": "Rethinking Channel Dependence for Multivariate Time Series Forecasting: Learning from Leading Indicators",
+  "title_zh": "",
+  "authors": [
+    "Lifan Zhao",
+    "Yanyan Shen"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Recently, channel-independent methods have achieved state-of-the-art performance in multivariate time series (MTS) forecasting. Despite reducing overfitting risks, these methods miss potential opportunities in utilizing channel dependence for accurate predictions. We argue that there exist locally stationary lead-lag relationships between variates, i.e., some lagged variates may follow the leading indicators within a short time period. Exploiting such channel dependence is beneficial since leading indicators offer advance information that can be used to reduce the forecasting difficulty of the lagged variates. In this paper, we propose a new method named LIFT that first efficiently estimates leading indicators and their leading steps at each time step and then judiciously allows the lagged variates to utilize the advance information from leading indicators. LIFT plays as a plugin that can be seamlessly collaborated with arbitrary time series forecasting methods. Extensive experiments on six real-world datasets demonstrate that LIFT improves the state-of-the-art methods by 5.4% in average forecasting performance. Our code is available at https://github.com/SJTU-Quant/LIFT.",
+  "abstract_zh": "",
+  "tldr": "We rethink the distribution shift in multivariate time series, where channel dependence varies over time. We propose LIFT to dynamically select and leverage leading indicators, which emprically improves SOTA forecasting methods by 5.5% in average.",
+  "keywords": [
+    "Multivariate time series forecasting",
+    "channel dependence",
+    "lead-lag relationships",
+    "distribution shift"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=JiTVtCUOpS",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d434e3f2213d54e8999f551b44bbc2454529e8fb.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We rethink the distribution shift in multivariate time series, where channel dependence varies over time. We propose LIFT to dynamically select and leverage leading indicators, which emprically improves SOTA forecasting methods by 5.5% in average."
+  },
+  "collected_at": "2026-03-10T23:44:27.102Z"
+}
