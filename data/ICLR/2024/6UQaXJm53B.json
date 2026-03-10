@@ -1,0 +1,35 @@
+{
+  "id": "6UQaXJm53B",
+  "or_id": "6UQaXJm53B",
+  "title": "DfPO: Degeneration-free Policy Optimization via Action Masking in Natural Language Action Spaces",
+  "title_zh": "",
+  "authors": [
+    "Youngsoo Jang",
+    "Geon-Hyeong Kim",
+    "Byoungjip Kim",
+    "Honglak Lee",
+    "Moontae Lee"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "As the pre-training objectives (e.g., next token prediction) of language models (LMs) are inherently not aligned with task scores, optimizing LMs to achieve higher downstream task scores is essential. One of the promising approaches is to fine-tune LMs by using reinforcement learning (RL). However, conventional RL methods based on PPO and a penalty of KL divergence are vulnerable to the text degeneration problem which LMs do not generate natural texts anymore after RL fine-tuning. To address this problem, we provide Degeneration-free Policy Optimization (DfPO) that can fine-tune LMs to generate texts that achieve improved downstream task scores, while preserving the naturalness of the generated texts. To achieve this, we introduce action-masked policy with which a behavior policy can avoid to select tokens that potentially make policy optimization unexpected. Then, we devise clipped advantage functions to separately perform likelihood maximization and minimization, conditioned on texts sampled from the action-masked policy. Our experiments on the GRUE benchmark demonstrate that DfPO successfully improves the downstream task scores, while preserving the naturalness of the generated texts. Moreover, even DfPO does not perform hyperparameter search, it outperforms PPO and NLPO which require additional hyperparameter search for the penalty ratio of KL divergence.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Reinforcement learning",
+    "Natural language processing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6UQaXJm53B",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/61f6389b14cdeed07428f0d00b56ffc905e2e939.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "As the pre-training objectives (e.g., next token prediction) of language models (LMs) are inherently not aligned with task scores, optimizing LMs to achieve higher downstream task scores is essential. One of the promising approaches is to fine-tune LMs by using reinforcement learning (RL). However, "
+  },
+  "collected_at": "2026-03-10T17:21:26.514Z"
+}

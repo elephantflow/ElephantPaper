@@ -1,0 +1,34 @@
+{
+  "id": "yxOrSmS5wR",
+  "or_id": "yxOrSmS5wR",
+  "title": "AV-Cloud: Spatial Audio Rendering Through Audio-Visual Cloud Splatting",
+  "title_zh": "",
+  "authors": [
+    "Mingfei Chen",
+    "Eli Shlizerman"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We propose a novel approach for rendering high-quality spatial audio for 3D scenes that is in synchrony with the visual stream but does not rely or explicitly conditioned on the visual rendering. We demonstrate that such an approach enables the experience of immersive virtual tourism - performing a real-time dynamic navigation within the scene, experiencing both audio and visual content. Current audio-visual rendering approaches typically rely on visual cues, such as images, and thus visual artifacts could cause inconsistency in the audio quality. Furthermore, when such approaches are incorporated with visual rendering, audio generation at each viewpoint occurs after the rendering of the image of the viewpoint and thus could lead to audio lag that affects the integration of audio and visual streams. Our proposed approach, AV-Cloud, overcomes these challenges by learning the representation of the audio-visual scene based on a set of sparse AV anchor points, that constitute the Audio-Visual Cloud, and are derived from the camera calibration. The Audio-Visual Cloud serves as an audio-visual representation from which the generation of spatial audio for arbitrary listener location can be generated. In particular, we propose a novel module Audio-Visual Cloud Splatting which decodes AV anchor points into a spatial audio transfer function for the arbitrary viewpoint of the target listener. This function, applied through the Spatial Audio Render Head module, transforms monaural input into viewpoint-specific spatial audio. As a result, AV-Cloud efficiently renders the spatial audio aligned with any visual viewpoint and eliminates the need for pre-rendered images. We show that AV-Cloud surpasses current state-of-the-art accuracy on audio reconstruction, perceptive quality, and acoustic effects on two real-world datasets. AV-Cloud also outperforms previous methods when tested on scenes \"in the wild\".",
+  "abstract_zh": "",
+  "tldr": "We propose a novel approach, AV-Cloud, for rendering high-quality spatial audio in 3D scenes that is in synchrony with the visual stream but does not rely or explicitly conditioned on the visual rendering.",
+  "keywords": [
+    "audio-visual",
+    "audio scenes reconstruction",
+    "spatial audio",
+    "point-based scene rendering"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=yxOrSmS5wR",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ddf8493e6466b57d0cba1ab7e5d9b9b4ab8c6d6d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel approach, AV-Cloud, for rendering high-quality spatial audio in 3D scenes that is in synchrony with the visual stream but does not rely or explicitly conditioned on the visual rendering."
+  },
+  "collected_at": "2026-03-10T17:21:25.509Z"
+}
