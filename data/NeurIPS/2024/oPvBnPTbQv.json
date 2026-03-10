@@ -1,0 +1,36 @@
+{
+  "id": "oPvBnPTbQv",
+  "or_id": "oPvBnPTbQv",
+  "title": "Referencing Where to Focus: Improving Visual Grounding with Referential Query",
+  "title_zh": "",
+  "authors": [
+    "Yabing Wang",
+    "Zhuotao Tian",
+    "Qingpei Guo",
+    "Zheng Qin",
+    "Sanping Zhou",
+    "Ming Yang",
+    "Le Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Visual Grounding aims to localize the referring object in an image given a natural language expression. Recent advancements in DETR-based visual grounding methods have attracted considerable attention, as they directly predict the coordinates of the target object without relying on additional efforts, such as pre-generated proposal candidates or pre-defined anchor boxes. However, existing research primarily focuses on designing stronger multi-modal decoder, which typically generates learnable queries by random initialization or by using linguistic embeddings.  This vanilla query generation approach inevitably increases the learning difficulty for the model, as it does not involve any target-related information at the beginning of decoding. Furthermore, they only use the deepest image feature during the query learning process, overlooking the importance of features from other levels. To address these issues, we propose a novel approach, called RefFormer. It consists of the query adaption module that can be seamlessly integrated into CLIP and generate the referential query to provide the prior context for decoder, along with a task-specific decoder. By incorporating the referential query into the decoder, we can effectively mitigate the learning difficulty of the decoder, and accurately concentrate on the target object. Additionally, our proposed query adaption module can also act as an adapter, preserving the rich knowledge within CLIP without the need to tune the parameters of the backbone network. Extensive experiments demonstrate the effectiveness and efficiency of our proposed method, outperforming state-of-the-art approaches on five visual grounding benchmarks.",
+  "abstract_zh": "",
+  "tldr": "Our proposed RefFormer can iteratively refine the target-related context and generate referential queries, which provide the decoder with prior context.",
+  "keywords": [
+    "Visual Grounding"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=oPvBnPTbQv",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4ee331051d6635715c830b6da249a25520489f44.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Our proposed RefFormer can iteratively refine the target-related context and generate referential queries, which provide the decoder with prior context."
+  },
+  "collected_at": "2026-03-10T17:41:25.483Z"
+}

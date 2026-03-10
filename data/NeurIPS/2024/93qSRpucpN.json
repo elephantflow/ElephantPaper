@@ -1,0 +1,40 @@
+{
+  "id": "93qSRpucpN",
+  "or_id": "93qSRpucpN",
+  "title": "Robust Guided Diffusion for Offline Black-box Optimization",
+  "title_zh": "",
+  "authors": [
+    "Can Chen",
+    "Christopher Beckham",
+    "Zixuan Liu",
+    "Xue Liu",
+    "Christopher Pal"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Offline black-box optimization aims to maximize a black-box function using an offline dataset of designs and their measured properties. Two main approaches have emerged: the forward approach, which learns a mapping from input to its value, thereby acting as a proxy to guide optimization, and the inverse approach, which learns a mapping from value to input for conditional generation. (a) Although proxy-free (classifier-free) diffusion shows promise in robustly modeling the inverse mapping, it lacks explicit guidance from proxies, essential for generating high-performance samples beyond the training distribution. Therefore, we propose proxy-enhanced sampling which utilizes the explicit guidance from a trained proxy to bolster proxy-free diffusion with enhanced sampling control. (b) Yet, the trained proxy is susceptible to out-of-distribution issues. To address this, we devise the module diffusion-based proxy refinement, which seamlessly integrates insights from proxy-free diffusion back into the proxy for refinement. To sum up, we propose Robust Guided Diffusion for Offline Black-box Optimization (RGD), combining proxy and proxy-free diffusion for effective conditional generation. Empirical evaluations on design-bench underscore the efficacy of RGD. Our code is here.",
+  "abstract_zh": "",
+  "tldr": "We propose Robust Guided Diffusion for Offline Black-box Optimization (RGD), melding the advantages of proxy (explicit guidance) and proxy-free diffusion (robustness) for effective conditional generation.",
+  "keywords": [
+    "offline model-based optimization",
+    "black-box optimization",
+    "diffusion models",
+    "score-based SDE",
+    "guided diffusion",
+    "classifier diffusion guidance",
+    "classifier-free diffusion guidance"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=93qSRpucpN",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/bd478271fbe62ba2e27dfaf4fb8b4008738bfa68.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose Robust Guided Diffusion for Offline Black-box Optimization (RGD), melding the advantages of proxy (explicit guidance) and proxy-free diffusion (robustness) for effective conditional generation."
+  },
+  "collected_at": "2026-03-10T17:41:25.486Z"
+}

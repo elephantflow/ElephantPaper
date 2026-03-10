@@ -1,0 +1,39 @@
+{
+  "id": "c3Pakdyi3t",
+  "or_id": "c3Pakdyi3t",
+  "title": "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning",
+  "title_zh": "",
+  "authors": [
+    "Runqian Wang",
+    "Soumya Ghosh",
+    "David Daniel Cox",
+    "Diego Antognini",
+    "Aude Oliva",
+    "Rogerio Feris",
+    "Leonid Karlinsky"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Low-rank adapters (LoRA) and their variants are popular parameter-efficient fine-tuning (PEFT) techniques that closely match full model fine-tune performance while requiring only a small number of additional parameters. These additional LoRA parameters are specific to the base model being adapted. When the base model needs to be deprecated and replaced with a new one, all the associated LoRA modules need to be re-trained. Such re-training requires access to the data used to train the LoRA for the original base model. This is especially problematic for commercial cloud applications where the LoRA modules and the base models are hosted by service providers who may not be allowed to host proprietary client task data. To address this challenge, we propose $\\textit{Trans-LoRA}$ --- a novel method for lossless, nearly data-free transfer of LoRAs across base models. Our approach relies on synthetic data to transfer LoRA modules. Using large language models, we design a synthetic data generator to approximate the data-generating process of the $\\textit{observed}$ task data subset. Training on the resulting synthetic dataset transfers LoRA modules to new models. We show the effectiveness of our approach using both LLama and Gemma model families. Our approach achieves lossless (mostly improved) LoRA transfer between models within and across different base model families, and even between different PEFT methods, on a wide variety of tasks.",
+  "abstract_zh": "",
+  "tldr": "$\\textit{Trans-LoRA}$ enables nearly data-free transfer of existing LoRA to different base models.",
+  "keywords": [
+    "Parameter Efficient Finetuning",
+    "Knowledge Distillation",
+    "Large Language Model",
+    "Data Synthesis"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=c3Pakdyi3t",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/33225dd1a42b912e79c3bc10fd2ec971206701e5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "$\\textit{Trans-LoRA}$ enables nearly data-free transfer of existing LoRA to different base models."
+  },
+  "collected_at": "2026-03-10T17:41:25.483Z"
+}

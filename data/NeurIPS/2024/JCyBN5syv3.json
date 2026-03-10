@@ -1,0 +1,38 @@
+{
+  "id": "JCyBN5syv3",
+  "or_id": "JCyBN5syv3",
+  "title": "SimGen: Simulator-conditioned Driving Scene Generation",
+  "title_zh": "",
+  "authors": [
+    "Yunsong Zhou",
+    "Michael Simon",
+    "Zhenghao Peng",
+    "Sicheng Mo",
+    "Hongzi Zhu",
+    "Minyi Guo",
+    "Bolei Zhou"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Controllable synthetic data generation can substantially lower the annotation cost of training data. Prior works use diffusion models to generate driving images conditioned on the 3D object layout. However, those models are trained on small-scale datasets like nuScenes, which lack appearance and layout diversity. Moreover, overfitting often happens, where the trained models can only generate images based on the layout data from the validation set of the same dataset. In this work, we introduce a simulator-conditioned scene generation framework called SimGen that can learn to generate diverse driving scenes by mixing data from the simulator and the real world. It uses a novel cascade diffusion pipeline to address challenging sim-to-real gaps and multi-condition conflicts. A driving video dataset DIVA is collected to enhance the generative diversity of SimGen, which contains over 147.5 hours of real-world driving videos from 73 locations worldwide and simulated driving data from the MetaDrive simulator. SimGen achieves superior generation quality and diversity while preserving controllability based on the text prompt and the layout pulled from a simulator. We further demonstrate the improvements brought by SimGen for synthetic data augmentation on the BEV detection and segmentation task and showcase its capability in safety-critical data generation.",
+  "abstract_zh": "",
+  "tldr": "This paper introduces a simulator-conditioned diffusion model, which follows the layout guidance from the simulator and cues of the rich text prompts to generate images of diverse driving scenes.",
+  "keywords": [
+    "Autonomous Driving",
+    "Generative Models",
+    "Simulators"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=JCyBN5syv3",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/767991e0d8bf535e0c7ec95c3f3222ed05c30813.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper introduces a simulator-conditioned diffusion model, which follows the layout guidance from the simulator and cues of the rich text prompts to generate images of diverse driving scenes."
+  },
+  "collected_at": "2026-03-10T17:41:25.482Z"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "i8JaxY7tDI",
+  "or_id": "i8JaxY7tDI",
+  "title": "$\\textit{Read-ME}$: Refactorizing LLMs as Router-Decoupled Mixture of Experts with System Co-Design",
+  "title_zh": "",
+  "authors": [
+    "Ruisi Cai",
+    "Yeonju Ro",
+    "Geon-Woo Kim",
+    "Peihao Wang",
+    "Babak Ehteshami Bejnordi",
+    "Aditya Akella",
+    "Zhangyang Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The proliferation of large language models (LLMs) has led to the adoption of Mixture-of-Experts (MoE) architectures that dynamically leverage specialized subnetworks for improved efficiency and performance. Despite their benefits, MoE models face significant challenges during inference, including inefficient memory management and suboptimal batching, due to misaligned design choices between the model architecture and the system policies. Furthermore, the conventional approach of training MoEs from scratch is increasingly prohibitive in terms of cost. \nIn this paper, we propose a novel framework $\\textit{Read-ME}$ that transforms pre-trained dense LLMs into smaller MoE models (in contrast to ``upcycling\" generalist MoEs), avoiding the high costs of ground-up training. Our approach employs activation sparsity to extract experts. \nTo compose experts, we examine the widely-adopted layer-wise router design and show its redundancy, and thus we introduce the pre-gating router decoupled from the MoE backbone that facilitates system-friendly pre-computing and lookahead scheduling, enhancing expert-aware batching and caching.\nOur codesign therefore addresses critical gaps on both the algorithmic and system fronts, establishing a scalable and efficient alternative for LLM inference in resource-constrained settings.\n$\\textit{Read-ME}$  outperforms other popular open-source dense models of similar scales, achieving improvements of up to 10.1\\% on MMLU, and improving mean end-to-end latency up to 6.1\\%. \nCodes are available at: \\url{https://github.com/VITA-Group/READ-ME}.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "MoE",
+    "Machine Learning",
+    "Efficient Inference",
+    "Mixture-of-experts",
+    "LLM",
+    "MoE Inference",
+    "Efficient serving",
+    "LLM serving"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=i8JaxY7tDI",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/45fc4a2f5ffb5fea7118544b185a36593c608ece.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The proliferation of large language models (LLMs) has led to the adoption of Mixture-of-Experts (MoE) architectures that dynamically leverage specialized subnetworks for improved efficiency and performance. Despite their benefits, MoE models face significant challenges during inference, including in"
+  },
+  "collected_at": "2026-03-10T17:41:25.482Z"
+}
