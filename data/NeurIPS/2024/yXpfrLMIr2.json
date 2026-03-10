@@ -1,0 +1,38 @@
+{
+  "id": "yXpfrLMIr2",
+  "or_id": "yXpfrLMIr2",
+  "title": "Binarized Diffusion Model for Image Super-Resolution",
+  "title_zh": "",
+  "authors": [
+    "Zheng Chen",
+    "Haotong Qin",
+    "Yong Guo",
+    "Xiongfei Su",
+    "Xin Yuan",
+    "Linghe Kong",
+    "Yulun Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Advanced diffusion models (DMs) perform impressively in image super-resolution (SR), but the high memory and computational costs hinder their deployment. Binarization, an ultra-compression algorithm, offers the potential for effectively accelerating DMs. Nonetheless, due to the model structure and the multi-step iterative attribute of DMs, existing binarization methods result in significant performance degradation. In this paper, we introduce a novel binarized diffusion model, BI-DiffSR, for image SR. First, for the model structure, we design a UNet architecture optimized for binarization. We propose the consistent-pixel-downsample (CP-Down) and consistent-pixel-upsample (CP-Up) to maintain dimension consistent and facilitate the full-precision information transfer. Meanwhile, we design the channel-shuffle-fusion (CS-Fusion) to enhance feature fusion in skip connection. Second, for the activation difference across timestep, we design the timestep-aware redistribution (TaR) and activation function (TaA). The TaR and TaA dynamically adjust the distribution of activations based on different timesteps, improving the flexibility and representation alability of the binarized module. Comprehensive experiments demonstrate that our BI-DiffSR outperforms existing binarization methods. Code is released at: https://github.com/zhengchen1999/BI-DiffSR.",
+  "abstract_zh": "",
+  "tldr": "A binarized diffusion model, BI-DiffSR, for image SR.",
+  "keywords": [
+    "diffusion model",
+    "binarization",
+    "image super-resolution"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=yXpfrLMIr2",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/bdcbf03ed2b041a6f0730d46d010316bdcad8da7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A binarized diffusion model, BI-DiffSR, for image SR."
+  },
+  "collected_at": "2026-03-10T22:04:26.501Z"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "lpFDhC91Oj",
+  "or_id": "lpFDhC91Oj",
+  "title": "Black-Box Forgetting",
+  "title_zh": "",
+  "authors": [
+    "Yusuke Kuwana",
+    "Yuta Goto",
+    "Takashi Shibata",
+    "Go Irie"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large-scale pre-trained models (PTMs) provide remarkable zero-shot classification capability covering a wide variety of object classes. However, practical applications do not always require the classification of all kinds of objects, and leaving the model capable of recognizing unnecessary classes not only degrades overall accuracy but also leads to operational disadvantages. To mitigate this issue, we explore the selective forgetting problem for PTMs, where the task is to make the model unable to recognize only the specified classes, while maintaining accuracy for the rest. All the existing methods assume ''white-box'' settings, where model information such as architectures, parameters, and gradients is available for training. However, PTMs are often ''black-box,'' where information on such models is unavailable for commercial reasons or social responsibilities. In this paper, we address a novel problem of selective forgetting for black-box models, named Black-Box Forgetting, and propose an approach to the problem. Given that information on the model is unavailable, we optimize the input prompt to decrease the accuracy of specified classes through derivative-free optimization. To avoid difficult high-dimensional optimization while ensuring high forgetting performance, we propose Latent Context Sharing, which introduces common low-dimensional latent components among multiple tokens for the prompt. Experiments on four standard benchmark datasets demonstrate the superiority of our method with reasonable baselines. The code is available at https://github.com/yusukekwn/Black-Box-Forgetting.",
+  "abstract_zh": "",
+  "tldr": "We introduce a novel problem of selective forgetting for black-box models and propose a novel method for this problem.",
+  "keywords": [
+    "Black-Box Tuning",
+    "Vision-Language Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=lpFDhC91Oj",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/44c580114e459439b5c85268f8c524a7df6cb64d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce a novel problem of selective forgetting for black-box models and propose a novel method for this problem."
+  },
+  "collected_at": "2026-03-10T22:04:26.502Z"
+}

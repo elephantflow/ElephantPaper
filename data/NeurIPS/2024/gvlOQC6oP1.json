@@ -1,0 +1,35 @@
+{
+  "id": "gvlOQC6oP1",
+  "or_id": "gvlOQC6oP1",
+  "title": "Image Copy Detection for Diffusion Models",
+  "title_zh": "",
+  "authors": [
+    "Wenhao Wang",
+    "Yifan Sun",
+    "Zhentao Tan",
+    "Yi Yang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Images produced by diffusion models are increasingly popular in digital artwork and visual marketing. However, such generated images might replicate content from existing ones and pose the challenge of content originality. Existing Image Copy Detection (ICD) models, though accurate in detecting hand-crafted replicas, overlook the challenge from diffusion models. This motivates us to introduce ICDiff, the first ICD specialized for diffusion models. To this end, we construct a Diffusion-Replication (D-Rep) dataset and correspondingly propose a novel deep embedding method. D-Rep uses a state-of-the-art diffusion model (Stable Diffusion V1.5) to generate 40, 000 image-replica pairs, which are manually annotated into 6 replication levels ranging from 0 (no replication) to 5 (total replication). Our method, PDF-Embedding, transforms the replication level of each image-replica pair into a probability density function (PDF) as the supervision signal. The intuition is that the probability of neighboring replication levels should be continuous and smooth. Experimental results show that PDF-Embedding surpasses protocol-driven methods and non-PDF choices on the D-Rep test set. Moreover, by utilizing PDF-Embedding, we find that the replication ratios of well-known diffusion models against an open-source gallery range from 10% to 20%. The project is publicly available at https://icdiff.github.io/.",
+  "abstract_zh": "",
+  "tldr": "We propose a timely and important ICD task, i.e, Image Copy Detection for Diffusion Models (ICDiff), designed specifically to identify the replication caused by diffusion models.",
+  "keywords": [
+    "Image Copy Detection",
+    "Diffusion Models",
+    "Replicated Content"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=gvlOQC6oP1",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d33680959e90956d425acc64ab0bb0cd0ff308e8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a timely and important ICD task, i.e, Image Copy Detection for Diffusion Models (ICDiff), designed specifically to identify the replication caused by diffusion models."
+  },
+  "collected_at": "2026-03-10T22:04:26.502Z"
+}

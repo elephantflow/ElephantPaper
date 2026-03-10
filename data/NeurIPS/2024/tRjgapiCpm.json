@@ -1,0 +1,41 @@
+{
+  "id": "tRjgapiCpm",
+  "or_id": "tRjgapiCpm",
+  "title": "The Last Iterate Advantage: Empirical Auditing and Principled Heuristic Analysis of Differentially Private SGD",
+  "title_zh": "",
+  "authors": [
+    "Milad Nasr",
+    "Thomas Steinke",
+    "Borja Balle",
+    "Christopher A. Choquette-Choo",
+    "Arun Ganesh",
+    "Matthew Jagielski",
+    "Jamie Hayes",
+    "Abhradeep Guha Thakurta",
+    "Adam Smith",
+    "Andreas Terzis"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "We propose a simple heuristic privacy analysis of noisy clipped stochastic gradient descent (DP-SGD) in the setting where only the last iterate is released and the intermediate iterates remain hidden. Namely, our heuristic assumes a linear structure for the model.\n\nWe show experimentally that our heuristic is predictive of the outcome of privacy auditing applied to various training procedures. Thus it can be used prior to training as a rough estimate of the final privacy leakage. We also probe the limitations of our heuristic by providing some artificial counterexamples where it underestimates the privacy leakage.\n\nThe standard composition-based privacy analysis of DP-SGD effectively assumes that the adversary has access to all intermediate iterates, which is often unrealistic.\nHowever, this analysis remains the state of the art in practice. \nWhile our heuristic does not replace a rigorous privacy analysis, it illustrates the large gap between the best theoretical upper bounds and the privacy auditing lower bounds and sets a target for further work to improve the theoretical privacy analyses.",
+  "abstract_zh": "",
+  "tldr": "We propose a heuristic privacy analysis of DP-SGD based on linearization. We compare it to privacy auditing and theoretical upper bounds.",
+  "keywords": [
+    "differential privacy",
+    "heuristics",
+    "privacy auditing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=tRjgapiCpm",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2936d0abb6730a2340f95b33e34519e59df48707.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a heuristic privacy analysis of DP-SGD based on linearization. We compare it to privacy auditing and theoretical upper bounds."
+  },
+  "collected_at": "2026-03-10T22:04:26.501Z"
+}

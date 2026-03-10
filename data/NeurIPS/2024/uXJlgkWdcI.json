@@ -1,0 +1,39 @@
+{
+  "id": "uXJlgkWdcI",
+  "or_id": "uXJlgkWdcI",
+  "title": "PACE: Pacing Operator Learning to Accurate Optical Field Simulation for Complicated Photonic Devices",
+  "title_zh": "",
+  "authors": [
+    "Hanqing Zhu",
+    "Wenyan Cong",
+    "Guojin Chen",
+    "Shupeng Ning",
+    "Ray Chen",
+    "Jiaqi Gu",
+    "David Z. Pan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Electromagnetic field simulation is central to designing, optimizing, and validating photonic devices and circuits. \nHowever, costly computation associated with numerical simulation poses a significant bottleneck, hindering scalability and turnaround time in the photonic circuit design process.\nNeural operators offer a promising alternative, but existing SOTA approaches, Neurolight, struggle with predicting high-fidelity fields for real-world complicated photonic devices, with the best reported 0.38 normalized mean absolute error in Neurolight.\nThe interplays of highly complex light-matter interaction, e.g., scattering and resonance, sensitivity to local structure details, non-uniform learning complexity for full-domain simulation, and rich frequency information, contribute to the failure of existing neural PDE solvers.\nIn this work, we boost the prediction fidelity to an unprecedented level for simulating complex photonic devices with a novel operator design driven by the above challenges.\nWe propose a novel cross-axis factorized PACE operator with a strong long-distance modeling capacity to connect the full-domain complex field pattern with local device structures.\nInspired by human learning, we further divide and conquer the simulation task for extremely hard cases into two progressively easy tasks, with a first-stage model learning an initial solution refined by a second model.\nOn various complicated photonic device benchmarks, we demonstrate one sole PACE model is capable of achieving 73% lower error with 50% fewer parameters compared with various recent ML for PDE solvers.\nThe two-stage setup further advances high-fidelity simulation for even more intricate cases.\nIn terms of runtime, \nPACE demonstrates 154-577x and 11.8-12x simulation speedup over numerical solver using scipy or highly-optimized pardiso solver, respectively.\nWe open-sourced the code and *complicated* optical device dataset at [PACE-Light](https://github.com/zhuhanqing/PACE-Light).",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "AI for Scienece",
+    "Optical simulation",
+    "Neural opeartor",
+    "AI for PDE"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=uXJlgkWdcI",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/10b54377d0cf5b57481e75058fec3c1d6858aede.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Electromagnetic field simulation is central to designing, optimizing, and validating photonic devices and circuits. \nHowever, costly computation associated with numerical simulation poses a significant bottleneck, hindering scalability and turnaround time in the photonic circuit design process.\nNeur"
+  },
+  "collected_at": "2026-03-10T22:04:26.499Z"
+}
