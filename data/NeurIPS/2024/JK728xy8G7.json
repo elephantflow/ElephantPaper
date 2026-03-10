@@ -1,0 +1,31 @@
+{
+  "id": "JK728xy8G7",
+  "or_id": "JK728xy8G7",
+  "title": "Smoothed Energy Guidance: Guiding Diffusion Models with Reduced Energy Curvature of Attention",
+  "title_zh": "",
+  "authors": [
+    "Susung Hong"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Conditional diffusion models have shown remarkable success in visual content generation, producing high-quality samples across various domains, largely due to classifier-free guidance (CFG). Recent attempts to extend guidance to unconditional models have relied on heuristic techniques, resulting in suboptimal generation quality and unintended effects. In this work, we propose Smoothed Energy Guidance (SEG), a novel training- and condition-free approach that leverages the energy-based perspective of the self-attention mechanism to enhance image generation. By defining the energy of self-attention, we introduce a method to reduce the curvature of the energy landscape of attention and use the output as the unconditional prediction. Practically, we control the curvature of the energy landscape by adjusting the Gaussian kernel parameter while keeping the guidance scale parameter fixed. Additionally, we present a query blurring method that is equivalent to blurring the entire attention weights without incurring quadratic complexity in the number of tokens. In our experiments, SEG achieves a Pareto improvement in both quality and the reduction of side effects. The code is available at https://github.com/SusungHong/SEG-SDXL.",
+  "abstract_zh": "",
+  "tldr": "This paper proposes Smoothed Energy Guidance (SEG), a novel training- and label-free diffusion guidance method that leverages the energy-based perspective of the self-attention mechanism to enhance image generation.",
+  "keywords": [
+    "Diffusion Models",
+    "Diffusion Guidance"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=JK728xy8G7",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4f24aa67f3286a54a9f8960ffea7bf16c84c2b46.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper proposes Smoothed Energy Guidance (SEG), a novel training- and label-free diffusion guidance method that leverages the energy-based perspective of the self-attention mechanism to enhance image generation."
+  },
+  "collected_at": "2026-03-10T11:41:26.412Z"
+}

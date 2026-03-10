@@ -1,0 +1,37 @@
+{
+  "id": "IfpNsorodK",
+  "or_id": "IfpNsorodK",
+  "title": "PFDiff: Training-free Acceleration of Diffusion Models through the Gradient Guidance of Past and Future",
+  "title_zh": "",
+  "authors": [
+    "Guangyi Wang",
+    "Yuren Cai",
+    "lijiang Li",
+    "Wei Peng",
+    "Song-Zhi Su"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Diffusion Probabilistic Models (DPMs) have shown remarkable potential in image generation, but their sampling efficiency is hindered by the need for numerous denoising steps. Most existing solutions accelerate the sampling process by proposing fast ODE solvers. However, the inevitable discretization errors of the ODE solvers are significantly magnified when the number of function evaluations (NFE) is fewer. In this work, we propose PFDiff, a novel training-free and orthogonal timestep-skipping strategy, which enables existing fast ODE solvers to operate with fewer NFE. Based on two key observations: a significant similarity in the model's outputs at time step size that is not excessively large during the denoising process of existing ODE solvers, and a high resemblance between the denoising process and SGD. PFDiff, by employing gradient replacement from past time steps and foresight updates inspired by Nesterov momentum, rapidly updates intermediate states, thereby reducing unnecessary NFE while correcting for discretization errors inherent in first-order ODE solvers. Experimental results demonstrate that PFDiff exhibits flexible applicability across various pre-trained DPMs, particularly excelling in conditional DPMs and surpassing previous state-of-the-art training-free methods. For instance, using DDIM as a baseline, we achieved 16.46 FID (4 NFE) compared to 138.81 FID with DDIM on ImageNet 64x64 with classifier guidance, and 13.06 FID (10 NFE) on Stable Diffusion with 7.5 guidance scale.",
+  "abstract_zh": "",
+  "tldr": "We propose a new training-free fast sampler for accelerated sampling of diffusion models, which is orthogonal to existing fast solvers.",
+  "keywords": [
+    "diffusion models",
+    "accelerated sampling",
+    "training-free sampler",
+    "orthogonal sampling method"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=IfpNsorodK",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/912048f72537b51f78fbbd1f1ca58de842313c78.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a new training-free fast sampler for accelerated sampling of diffusion models, which is orthogonal to existing fast solvers."
+  },
+  "collected_at": "2026-03-10T11:41:26.412Z"
+}

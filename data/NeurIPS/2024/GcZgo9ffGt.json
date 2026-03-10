@@ -1,0 +1,37 @@
+{
+  "id": "GcZgo9ffGt",
+  "or_id": "GcZgo9ffGt",
+  "title": "Instruction Tuning With Loss Over Instructions",
+  "title_zh": "",
+  "authors": [
+    "Zhengyan Shi",
+    "Adam X. Yang",
+    "Bin Wu",
+    "Laurence Aitchison",
+    "Emine Yilmaz",
+    "Aldo Lipani"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Instruction tuning plays a crucial role in shaping the outputs of language models (LMs) to desired styles. In this work, we propose a simple yet effective method, Instruction Modelling (IM), which trains LMs by applying a loss function to the instruction and prompt part rather than solely to the output part. Through experiments across 21 diverse benchmarks, we show that, in many scenarios, IM can effectively improve the LM performance on both NLP tasks (*e.g.,* MMLU, TruthfulQA, and HumanEval) and open-ended generation benchmarks (*e.g.,* MT-Bench and AlpacaEval). Remarkably, in the most advantageous case, IM boosts model performance on AlpacaEval 1.0 by over 100%. We identify two key factors influencing the effectiveness of IM: (1) The ratio between instruction length and output length in the training data; and (2) The number of training examples. We observe that IM is especially beneficial when trained on datasets with lengthy instructions paired with brief outputs, or under the Superficial Alignment Hypothesis (SAH) where a small amount of training examples are used for instruction tuning. Further analysis substantiates our hypothesis that our improvement can be attributed to reduced overfitting to instruction tuning datasets. It is worth noting that we are not proposing \\ours as a replacement for the current instruction tuning process.\nInstead, our work aims to provide practical guidance for instruction tuning LMs, especially in low-resource scenarios.\nOur code is available at https://github.com/ZhengxiangShi/InstructionModelling.",
+  "abstract_zh": "",
+  "tldr": "We show that in many scenarios, applying loss to instructions rather than outputs only, which we refer to as Instruction Modelling, could largely improve the performance of instruction tuning on both various NLP and open-ended generation benchmarks.",
+  "keywords": [
+    "Instruction Tuning",
+    "Language Models",
+    "Low-Resource Methods for NLP"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=GcZgo9ffGt",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2489a69de5d25fdd19c9250d4ef90033722cebc1.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show that in many scenarios, applying loss to instructions rather than outputs only, which we refer to as Instruction Modelling, could largely improve the performance of instruction tuning on both various NLP and open-ended generation benchmarks."
+  },
+  "collected_at": "2026-03-10T11:41:26.414Z"
+}

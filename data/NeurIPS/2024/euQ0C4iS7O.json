@@ -1,0 +1,35 @@
+{
+  "id": "euQ0C4iS7O",
+  "or_id": "euQ0C4iS7O",
+  "title": "Leveraging Drift to Improve Sample Complexity of Variance Exploding Diffusion Models",
+  "title_zh": "",
+  "authors": [
+    "Ruofeng Yang",
+    "Zhijie Wang",
+    "Bo Jiang",
+    "Shuai Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Variance exploding (VE) based diffusion models, an important class of diffusion models, have shown state-of-the-art (SOTA) performance. However, only a few theoretical works analyze VE-based models, and those works suffer from a worse forward convergence rate $1/\\text{poly}(T)$ than the $\\exp{(-T)}$ of variance preserving (VP) based models, where $T$ is the forward diffusion time and the rate measures the distance between forward marginal distribution $q_T$ and pure Gaussian noise. The slow rate is due to the Brownian Motion without a drift term. In this work, we design a new drifted VESDE forward process, which allows a faster $\\exp{(-T)}$ forward convergence rate. With this process, we achieve the first efficient polynomial sample complexity for a series of VE-based models with reverse SDE under the manifold hypothesis. Furthermore, unlike previous works, we allow the diffusion coefficient to be unbounded instead of a constant, which is closer to the SOTA models. Besides the reverse SDE, the other common reverse process is the probability flow ODE  (PFODE) process, which is deterministic and enjoys faster sample speed. To deepen the understanding of VE-based models, we consider a more general setting considering reverse SDE and PFODE simultaneously, propose a unified tangent-based analysis framework, and prove the first quantitative convergence guarantee for SOTA VE-based models with reverse PFODE.\nWe also show that the drifted VESDE can balance different error terms and improve generated samples without training through synthetic and real-world experiments.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Variance exploding diffusion models",
+    "Convergence guarantee",
+    "Manifold hypothesis"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=euQ0C4iS7O",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/05ca69f4daef20ab2561b65902f0cc6bb096148c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Variance exploding (VE) based diffusion models, an important class of diffusion models, have shown state-of-the-art (SOTA) performance. However, only a few theoretical works analyze VE-based models, and those works suffer from a worse forward convergence rate $1/\\text{poly}(T)$ than the $\\exp{(-T)}$"
+  },
+  "collected_at": "2026-03-10T11:41:26.414Z"
+}
