@@ -1,0 +1,35 @@
+{
+  "id": "9Pa6cCB3gL",
+  "or_id": "9Pa6cCB3gL",
+  "title": "UMB: Understanding Model Behavior for Open-World Object Detection",
+  "title_zh": "",
+  "authors": [
+    "Xing Xi",
+    "Yangyang Huang",
+    "Zhijie Zhong",
+    "Ronghua Luo"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Open-World Object Detection (OWOD) is a challenging task that requires the detector to identify unlabeled objects and continuously demands the detector to learn new knowledge based on existing ones. Existing methods primarily focus on recalling unknown objects, neglecting to explore the reasons behind them. This paper aims to understand the model's behavior in predicting the unknown category. First, we model the text attribute and the positive sample probability, obtaining their empirical probability, which can be seen as the detector's estimation of the likelihood of the target with certain known attributes being predicted as the foreground. Then, we jointly decide whether the current object should be categorized in the unknown category based on the empirical, the in-distribution, and the out-of-distribution probability. Finally, based on the decision-making process, we can infer the similarity of an unknown object to known classes and identify the attribute with the most significant impact on the decision-making process. This additional information can help us understand the behavior of the model's prediction in the unknown class. The evaluation results on the Real-World Object Detection (RWD) benchmark, which consists of five real-world application datasets, show that we surpassed the previous state-of-the-art (SOTA) with an absolute gain of 5.3 mAP for unknown classes, reaching 20.5 mAP. Our code is available at https://github.com/xxyzll/UMB.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Computer Vision",
+    "Object Detection",
+    "Open-World Object Detection"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=9Pa6cCB3gL",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/be9c8f516c205741c8fa3ab79f27118e93b9c5e0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Open-World Object Detection (OWOD) is a challenging task that requires the detector to identify unlabeled objects and continuously demands the detector to learn new knowledge based on existing ones. Existing methods primarily focus on recalling unknown objects, neglecting to explore the reasons behi"
+  },
+  "collected_at": "2026-03-10T12:01:28.722Z"
+}

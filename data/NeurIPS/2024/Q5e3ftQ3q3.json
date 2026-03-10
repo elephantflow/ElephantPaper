@@ -1,0 +1,35 @@
+{
+  "id": "Q5e3ftQ3q3",
+  "or_id": "Q5e3ftQ3q3",
+  "title": "Almost Minimax Optimal Best Arm Identification in Piecewise Stationary Linear Bandits",
+  "title_zh": "",
+  "authors": [
+    "Yunlong Hou",
+    "Vincent Y. F. Tan",
+    "Zixin Zhong"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We propose a novel piecewise stationary linear bandit (PSLB) model, where the environment randomly samples a context from an unknown probability distribution at each changepoint, and the quality of an arm is measured by its return averaged over all contexts. The contexts and their distribution, as well as the changepoints are unknown to the agent.\nWe design Piecewise-Stationary $\\varepsilon$-Best Arm Identification$^+$ (PS$\\varepsilon$BAI$^+$), an algorithm that is guaranteed to identify an $\\varepsilon$-optimal arm with probability $\\ge 1-\\delta$ and with a minimal number of samples.\nPS$\\varepsilon$BAI$^+$ consists of two subroutines, PS$\\varepsilon$BAI and Naïve $\\varepsilon$-BAI (N$\\varepsilon$BAI), which are executed in parallel. PS$\\varepsilon$BAI actively detects changepoints and aligns contexts to facilitate the arm identification process.\nWhen  PS$\\varepsilon$BAI and N$\\varepsilon$BAI are utilized judiciously in parallel,  PS$\\varepsilon$BAI$^+$ is shown to have a finite expected sample complexity. \nBy proving a  lower bound, we show the expected sample complexity of PS$\\varepsilon$BAI$^+$ is optimal up to a logarithmic factor.\nWe compare PS$\\varepsilon$BAI$^+$ to baseline algorithms using numerical experiments which demonstrate its   efficiency.\nBoth our analytical and numerical results corroborate that the efficacy   of PS$\\varepsilon$BAI$^+$ is due to   the delicate change detection and context alignment procedures embedded in PS$\\varepsilon$BAI.",
+  "abstract_zh": "",
+  "tldr": "We propose a minimax-optimal algorithm PS$\\varepsilon$BAI$^+$ to identify an $\\varepsilon$-best arm in the piecewise-stationary linear bandits problem.",
+  "keywords": [
+    "Multi-armed bandits",
+    "piecewise stationary bandits",
+    "best arm identification",
+    "fixed-confidence"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Q5e3ftQ3q3",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/921af89c2e2daa295a74d33344c1e3147cad90e3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a minimax-optimal algorithm PS$\\varepsilon$BAI$^+$ to identify an $\\varepsilon$-best arm in the piecewise-stationary linear bandits problem."
+  },
+  "collected_at": "2026-03-10T12:01:28.722Z"
+}

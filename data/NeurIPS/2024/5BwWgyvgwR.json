@@ -1,0 +1,38 @@
+{
+  "id": "5BwWgyvgwR",
+  "or_id": "5BwWgyvgwR",
+  "title": "Unsupervised Modality Adaptation with Text-to-Image Diffusion Models for Semantic Segmentation",
+  "title_zh": "",
+  "authors": [
+    "Ruihao Xia",
+    "Yu Liang",
+    "Peng-Tao Jiang",
+    "Hao Zhang",
+    "Bo Li",
+    "Yang Tang",
+    "Pan Zhou"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Despite their success, unsupervised domain adaptation methods for semantic segmentation primarily focus on adaptation between image domains and do not utilize other abundant visual modalities like depth, infrared and event. This limitation hinders their performance and restricts their application in real-world multimodal scenarios. To address this issue, we propose Modality Adaptation with text-to-image Diffusion Models (MADM) for semantic segmentation task which utilizes text-to-image diffusion models pre-trained on extensive image-text pairs to enhance the model's cross-modality capabilities. Specifically, MADM comprises two key complementary components to tackle major challenges. First, due to the large modality gap, using one modal data to generate pseudo labels for another modality suffers from a significant drop in accuracy. To address this, MADM designs diffusion-based pseudo-label generation which adds latent noise to stabilize pseudo-labels and enhance label accuracy. Second, to overcome the limitations of latent low-resolution features in diffusion models, MADM introduces the label palette and latent regression which converts one-hot encoded labels into the RGB form by palette and regresses them in the latent space, thus ensuring the pre-trained decoder for up-sampling to obtain fine-grained features. Extensive experimental results demonstrate that MADM achieves state-of-the-art adaptation performance across various modality tasks, including images to depth, infrared, and event modalities. We open-source our code and models at https://github.com/XiaRho/MADM.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Domain adaption",
+    "Semantic segmentation",
+    "Multi-modality"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=5BwWgyvgwR",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/90678708628f9ad04321a23499e73041a00e6297.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Despite their success, unsupervised domain adaptation methods for semantic segmentation primarily focus on adaptation between image domains and do not utilize other abundant visual modalities like depth, infrared and event. This limitation hinders their performance and restricts their application in"
+  },
+  "collected_at": "2026-03-10T12:01:28.722Z"
+}
