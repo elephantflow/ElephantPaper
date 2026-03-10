@@ -1,0 +1,37 @@
+{
+  "id": "qNXRXUC90b",
+  "or_id": "qNXRXUC90b",
+  "title": "Uncertainty-aware Fine-tuning of Segmentation Foundation Models",
+  "title_zh": "",
+  "authors": [
+    "Kangning Liu",
+    "Brian L. Price",
+    "Jason Kuen",
+    "Yifei Fan",
+    "Zijun Wei",
+    "Luis Figueroa",
+    "Krzysztof J. Geras",
+    "Carlos Fernandez-Granda"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The Segment Anything Model (SAM) is a large-scale foundation model that has revolutionized segmentation methodology. Despite its impressive generalization ability, the segmentation accuracy of SAM on images with intricate structures is often unsatisfactory. Recent works have proposed lightweight fine-tuning using high-quality annotated data to improve accuracy on such images. However, here we provide extensive empirical evidence that this strategy leads to forgetting how to \"segment anything\": these models lose the original generalization abilities of SAM, in the sense that they perform worse for segmentation tasks not represented in the annotated fine-tuning set. To improve performance without forgetting, we introduce a novel framework that combines high-quality annotated data with a large unlabeled dataset. The framework relies on two methodological innovations. First, we quantify the uncertainty in the SAM pseudo labels associated with the unlabeled data and leverage it to perform uncertainty-aware fine-tuning. Second, we encode the type of segmentation task associated with each training example using a $\\textit{task prompt}$ to reduce ambiguity. We evaluated the proposed Segmentation with Uncertainty Model (SUM) on a diverse test set consisting of 14 public benchmarks, where it achieves state-of-the-art results. Notably, our method consistently surpasses SAM by 3-6 points in mean IoU and 4-7 in mean boundary IoU across point-prompt interactive segmentation rounds. Code is available at https://github.com/Kangningthu/SUM",
+  "abstract_zh": "",
+  "tldr": "We introduce the Segmentation with Uncertainty Model (SUM), which enhances the accuracy of segmentation foundation models by incorporating an uncertainty-aware training loss and prompt sampling based on the estimated uncertainty of pseudo-labels.",
+  "keywords": [
+    "Segmentation foundation model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=qNXRXUC90b",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0fc25afd9425b35ac875b47913c45db57670edef.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce the Segmentation with Uncertainty Model (SUM), which enhances the accuracy of segmentation foundation models by incorporating an uncertainty-aware training loss and prompt sampling based on the estimated uncertainty of pseudo-labels."
+  },
+  "collected_at": "2026-03-10T09:41:36.021Z"
+}

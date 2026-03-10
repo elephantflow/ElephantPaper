@@ -1,0 +1,41 @@
+{
+  "id": "7sdkLVuYCU",
+  "or_id": "7sdkLVuYCU",
+  "title": "QTIP: Quantization with Trellises and Incoherence Processing",
+  "title_zh": "",
+  "authors": [
+    "Albert Tseng",
+    "Qingyao Sun",
+    "David Hou",
+    "Christopher De Sa"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Post-training quantization (PTQ) reduces the memory footprint of LLMs by quantizing weights to low-precision datatypes.\nSince LLM inference is usually memory-bound, PTQ methods can improve inference throughput.\nRecent state-of-the-art PTQ approaches use vector quantization (VQ) to quantize multiple weights at once, which improves information utilization through better shaping.\nHowever, VQ requires a codebook with size exponential in the dimension.\nThis limits current VQ-based PTQ works to low VQ dimensions ($\\le 8$) that in turn limit quantization quality.\nHere, we introduce QTIP, which instead uses trellis coded quantization (TCQ) to achieve ultra-high-dimensional quantization. \nTCQ uses a stateful decoder that separates the codebook size from the bitrate and effective dimension. \nQTIP introduces a spectrum of lookup-only to computed lookup-free trellis codes designed for a hardware-efficient \"bitshift\" trellis structure; these codes achieve state-of-the-art results in both quantization quality and inference speed.",
+  "abstract_zh": "",
+  "tldr": "We present the first tractable ultra-high dimensional quantizer for LLM PTQ that supports fast inference, enabling in state of the art quantization quality and inference speed.",
+  "keywords": [
+    "quantization",
+    "llms",
+    "trellises",
+    "fast inference",
+    "post training quantization",
+    "trellis coded quantization",
+    "model compression",
+    "computed codes"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=7sdkLVuYCU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/38b6702730caf063684e5a0cd860918f99833335.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We present the first tractable ultra-high dimensional quantizer for LLM PTQ that supports fast inference, enabling in state of the art quantization quality and inference speed."
+  },
+  "collected_at": "2026-03-10T09:41:36.020Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "S4YRCLbUK1",
+  "or_id": "S4YRCLbUK1",
+  "title": "Who Evaluates the Evaluations? Objectively Scoring Text-to-Image Prompt Coherence Metrics with T2IScoreScore (TS2)",
+  "title_zh": "",
+  "authors": [
+    "Michael Saxon",
+    "Fatima Jahara",
+    "Mahsa Khoshnoodi",
+    "Yujie Lu",
+    "Aditya Sharma",
+    "William Yang Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "With advances in the quality of text-to-image (T2I) models has come interest in benchmarking their prompt faithfulness---the semantic coherence of generated images to the prompts they were conditioned on. A variety of T2I faithfulness metrics have been proposed, leveraging advances in cross-modal embeddings and vision-language models (VLMs). However, these metrics are not rigorously compared and benchmarked, instead presented with correlation to human Likert scores over a set of easy-to-discriminate images against seemingly weak baselines. \n\nWe introduce T2IScoreScore, a curated set of semantic error graphs containing a prompt and a set of increasingly erroneous images. These allow us to rigorously judge whether a given prompt faithfulness metric can correctly order images with respect to their objective error count and significantly discriminate  between different error nodes, using meta-metric scores derived from established statistical tests. Surprisingly, we find that the state-of-the-art VLM-based metrics (e.g., TIFA, DSG, LLMScore, VIEScore) we tested fail to significantly outperform simple (and supposedly worse) feature-based metrics like CLIPScore, particularly on a hard subset of naturally-occurring T2I model errors. TS2 will enable the development of better T2I prompt faithfulness metrics through more rigorous comparison of their conformity to expected orderings and separations under objective criteria.",
+  "abstract_zh": "",
+  "tldr": "We propose a meta-metric for objectively evaluating text-to-image faithfulness metrics, by assessing their ability to sort and discriminate images of increasing error counts in a \"Semantic Error Graph\", and many existing metrics are surprisingly bad.",
+  "keywords": [
+    "text-to-image",
+    "t2i",
+    "metric",
+    "meta-metric",
+    "analysis"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=S4YRCLbUK1",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a66fbcdc022a25f214f22e630fac504dc4b80efd.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We propose a meta-metric for objectively evaluating text-to-image faithfulness metrics, by assessing their ability to sort and discriminate images of increasing error counts in a \"Semantic Error Graph\", and many existing metrics are surprisingly bad."
+  },
+  "collected_at": "2026-03-10T09:41:36.020Z"
+}

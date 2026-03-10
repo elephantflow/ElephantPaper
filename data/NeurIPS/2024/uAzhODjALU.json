@@ -1,0 +1,37 @@
+{
+  "id": "uAzhODjALU",
+  "or_id": "uAzhODjALU",
+  "title": "The Mamba in the Llama: Distilling and Accelerating Hybrid Models",
+  "title_zh": "",
+  "authors": [
+    "Junxiong Wang",
+    "Daniele Paliotta",
+    "Avner May",
+    "Alexander M Rush",
+    "Tri Dao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Linear RNN architectures, like Mamba, can be competitive with Transformer models in language modeling while having advantageous deployment characteristics. Given the focus on training large-scale Transformer models, we consider the challenge of converting these pretrained models for deployment. \nWe demonstrate that it is feasible to distill large Transformers into linear RNNs by reusing the linear projection weights from attention layers with academic GPU resources. The resulting hybrid model, which incorporates a quarter of the attention layers, achieves performance comparable to the original Transformer in chat benchmarks and outperforms open-source hybrid Mamba models trained from scratch with trillions of tokens in both chat benchmarks and general benchmarks. Moreover, we introduce a hardware-aware speculative decoding algorithm that accelerates the inference speed of Mamba and hybrid models. Overall we show how, with limited computation resources, we can remove many of the original attention layers and generate from the resulting model more efficiently. \nOur top-performing model, distilled from Llama3-8B-Instruct, achieves a 29.61 length-controlled win rate on AlpacaEval 2 against GPT-4 and 7.35 on MT-Bench, surpassing the best 8B scale instruction-tuned linear RNN model.  We also find that the distilled model has natural length extrapolation, showing almost perfect accuracy in the needle-in-a-haystack test at 20x the distillation length. Code and pre-trained checkpoints are open-sourced at [MambaInLlama](https://github.com/jxiw/MambaInLlama) for distillation and [SpeculativeMamba](https://github.com/itsdaniele/speculative\\_mamba) for speculative decoding.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Mamba",
+    "Transformer",
+    "Knowledge Distillation",
+    "Speculative Decoding"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=uAzhODjALU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/669243b56f6a425c55c92536184abde35c26027c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Linear RNN architectures, like Mamba, can be competitive with Transformer models in language modeling while having advantageous deployment characteristics. Given the focus on training large-scale Transformer models, we consider the challenge of converting these pretrained models for deployment. \nWe "
+  },
+  "collected_at": "2026-03-10T09:41:36.020Z"
+}
