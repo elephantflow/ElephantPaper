@@ -1,0 +1,33 @@
+{
+  "id": "KEe4IUp20I",
+  "or_id": "KEe4IUp20I",
+  "title": "SpaceByte: Towards Deleting Tokenization from Large Language Modeling",
+  "title_zh": "",
+  "authors": [
+    "Kevin Slagle"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Tokenization is widely used in large language models because it significantly improves performance. However, tokenization imposes several disadvantages, such as performance biases, increased adversarial vulnerability, decreased character-level modeling performance, and increased modeling complexity. To address these disadvantages without sacrificing performance, we propose SpaceByte, a novel byte-level decoder architecture that closes the performance gap between byte-level and subword autoregressive language modeling. SpaceByte consists of a byte-level Transformer model, but with extra larger transformer blocks inserted in the middle of the layers. We find that performance is significantly improved by applying these larger blocks only after certain bytes, such as space characters, which typically denote word boundaries. Our experiments show that for a fixed training and inference compute budget, SpaceByte outperforms other byte-level architectures and roughly matches the performance of tokenized Transformer architectures.",
+  "abstract_zh": "",
+  "tldr": "SpaceByte is a byte-level autoregressive language model that roughly matches the performance of tokenized Transformers in compute-controlled experiments.",
+  "keywords": [
+    "byte level language model",
+    "model architecture",
+    "tokenization",
+    "efficient pretraining"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=KEe4IUp20I",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ff60ffa81a9d27ebcb787af7c4a54387d56d9d2d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "SpaceByte is a byte-level autoregressive language model that roughly matches the performance of tokenized Transformers in compute-controlled experiments."
+  },
+  "collected_at": "2026-03-10T20:21:24.007Z"
+}

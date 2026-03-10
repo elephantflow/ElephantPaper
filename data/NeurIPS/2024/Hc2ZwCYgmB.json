@@ -1,0 +1,40 @@
+{
+  "id": "Hc2ZwCYgmB",
+  "or_id": "Hc2ZwCYgmB",
+  "title": "AdaFace: A Versatile Face Encoder for Zero-Shot Diffusion Model Personalization",
+  "title_zh": "",
+  "authors": [
+    "Shaohua Li",
+    "Xiuchao Sui",
+    "HONG YANG",
+    "Pin Nean Lai",
+    "Weide Liu",
+    "Xinxing Xu",
+    "Yong Liu",
+    "Rick Siow Mong Goh"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Since the advent of diffusion models, personalizing these models -- conditioning them to render novel subjects -- has been widely studied. Recently, several methods propose training a dedicated image encoder on a large variety of subject images. This encoder maps the images to identity embeddings (ID embeddings). During inference, these ID embeddings, combined with conventional prompts, condition a diffusion model to generate new images of the subject. However, such methods often face challenges in achieving a good balance between authenticity and compositionality -- accurately capturing the subject's likeness while effectively integrating them into varied and complex scenes. A primary source for this issue is that the ID embeddings reside in the \\emph{image token space} (``image prompts\"), which is not fully composable with the text prompt encoded by the CLIP text encoder. In this work, we present AdaFace, an image encoder that maps human faces into the \\emph{text prompt space}. After being trained only on 400K face images with 2 GPUs, it achieves high authenticity of the generated subjects and high compositionality with various text prompts. In addition, as the ID embeddings are integrated in a normal text prompt, it is highly compatible with existing pipelines and can be used without modification to generate authentic videos. We showcase the generated images and videos of celebrities under various compositional prompts. The source code is released on an anonymous repository \\url{https://github.com/adaface-neurips/adaface}.",
+  "abstract_zh": "",
+  "tldr": "A face encoder that generates highly authentic subject images/videos with composite prompts in zero-shot.",
+  "keywords": [
+    "face encoder",
+    "diffusion model personalization",
+    "composability",
+    "zero-shot"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Hc2ZwCYgmB",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fd86b263cee8ab376378ec10633d6b3c1cdca2e0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A face encoder that generates highly authentic subject images/videos with composite prompts in zero-shot."
+  },
+  "collected_at": "2026-03-10T20:21:24.009Z"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "bzPmjmiaz8",
+  "or_id": "bzPmjmiaz8",
+  "title": "Quantifying and Optimizing Global Faithfulness in Persona-driven Role-playing",
+  "title_zh": "",
+  "authors": [
+    "Letian Peng",
+    "Jingbo Shang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Persona-driven role-playing (PRP) aims to build AI characters that can respond to user queries by faithfully sticking with \\emph{all} (factual) statements in persona documents.\nUnfortunately, existing faithfulness criteria for PRP are limited to coarse-grained LLM-based scoring without a clear definition or formulation.\nThis paper presents a pioneering exploration to quantify PRP faithfulness evaluation as a fine-grained and explainable criterion, which also serves as a reliable reference for faithfulness optimization.\nOur criterion first discriminates persona statements into \\emph{active} and \\emph{passive} constraints by identifying the query-statement relevance.\nThen, we incorporate all constraints following the principle that the AI character's response should be (a) entailed by active constraints and (b) not contradicted by passive constraints.\nWe translate this principle mathematically into a novel Active-Passive-Constraint (APC) score, a constraint-wise sum of statement-to-response natural language inference (NLI) scores weighted by constraint-query relevance scores. \nIn practice, we build the APC scoring system by symbolically distilling small NLI and relevance discriminators (300M parameters) from GPT-4 for efficiency, and both show high consistency with GPT-4's discrimination.\nWe validate the quality of the APC score against human evaluation based on example personas with tens of statements, and the results show a high correlation.\nAs the APC score could faithfully reflect the PRP quality, we further leverage it as a reward system in direct preference optimization (DPO) for better AI characters. \nOur experiments offer a fine-grained and explainable comparison between existing PRP techniques, revealing their advantages and limitations.\nWe further find APC-based DPO to be one of the most competitive techniques for sticking with all constraints and can be well incorporated with other techniques.\nWe then extend the scale of the experiments to real persons with",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Persona-driven Role-playing",
+    "Global Faithfulness Control",
+    "Evaluation Metric",
+    "Direct Preference Optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=bzPmjmiaz8",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7320b1176a2e393847ded67e352ffa677c207b0a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Persona-driven role-playing (PRP) aims to build AI characters that can respond to user queries by faithfully sticking with \\emph{all} (factual) statements in persona documents.\nUnfortunately, existing faithfulness criteria for PRP are limited to coarse-grained LLM-based scoring without a clear defin"
+  },
+  "collected_at": "2026-03-10T20:21:24.005Z"
+}
