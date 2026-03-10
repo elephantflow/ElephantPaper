@@ -1,0 +1,37 @@
+{
+  "id": "4FwlejUlg5",
+  "or_id": "4FwlejUlg5",
+  "title": "Causal Effect Estimation with Mixed Latent Confounders and Post-treatment Variables",
+  "title_zh": "",
+  "authors": [
+    "Yaochen Zhu",
+    "Jing Ma",
+    "Liang Wu",
+    "Qi Guo",
+    "Liangjie Hong",
+    "Jundong Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Causal inference from observational data has attracted considerable attention among researchers. One main obstacle to drawing valid causal conclusions is handling of confounders. As the direct measurement of confounders may not always be feasible, recent methods seek to address the confounding bias via proxy variables, i.e., variables postulated to be causally related to unobserved confounders. However, the selected proxies may scramble both latent confounders and latent post-treatment variables in practice, where existing methods risk biasing the estimation by unintentionally controlling for variables affected by the treatment. In this paper, we systematically investigate the bias of latent post-treatment variables, i.e., latent post-treatment bias, in causal effect estimation. We first derive the bias of existing covariate adjustment-based methods when selected proxies scramble both latent confounders and latent post-treatment variables, which we demonstrate can be arbitrarily bad. We then propose a novel Confounder-identifiable VAE (CiVAE) to address the bias. CiVAE is built upon a mild assumption that the prior of latent variables that generate the proxy belongs to a general exponential family with at least one invertible sufficient statistic in the factorized part. Based on this assumption, we show that latent confounders and latent post-treatment variables can be individually identified up to simple bijective transformations. We then prove that with individual identification, the intractable disentanglement problem of latent confounders and post-treatment variables can be transformed to a tractable conditional independence test problem. Finally, we prove that the true causal effects can be unbiasedly estimated with transformed confounders inferred by CiVAE. Experiments on both simulated and real-world datasets demonstrate that CiVAE is significantly more robust to latent post-treatment bias than existing methods. The codes are provided in the following anonymo",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "causal effect estimation",
+    "latent post-treatment bias",
+    "identifiable VAE"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=4FwlejUlg5",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a92ccf65a054ab56ae06d593914b52db835f8aec.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Causal inference from observational data has attracted considerable attention among researchers. One main obstacle to drawing valid causal conclusions is handling of confounders. As the direct measurement of confounders may not always be feasible, recent methods seek to address the confounding bias "
+  },
+  "collected_at": "2026-03-10T12:41:25.229Z"
+}

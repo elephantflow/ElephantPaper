@@ -1,0 +1,39 @@
+{
+  "id": "iSfCWhvEGA",
+  "or_id": "iSfCWhvEGA",
+  "title": "Learn To be Efficient: Build Structured Sparsity in Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Haizhong Zheng",
+    "Xiaoyan Bai",
+    "Xueshen Liu",
+    "Zhuoqing Mao",
+    "Beidi Chen",
+    "Fan Lai",
+    "Atul Prakash"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Large Language Models (LLMs) have achieved remarkable success with their billion-level parameters, yet they incur high inference overheads. The emergence of activation sparsity in LLMs provides a natural approach to reduce this cost by involving only parts of the parameters for inference. However, existing methods only focus on utilizing this naturally formed activation sparsity in a post-training setting, overlooking the potential for further amplifying this inherent sparsity. In this paper, we hypothesize that LLMs can learn to be efficient by achieving more structured activation sparsity. To achieve this, we introduce a novel training algorithm, Learn-To-be-Efficient (LTE), designed to train efficiency-aware LLMs to learn to activate fewer neurons and achieve a better trade-off between sparsity and performance. Furthermore, unlike SOTA MoEfication methods, which mainly focus on ReLU-based models, LTE can also be applied to LLMs like LLaMA using non-ReLU activations. Extensive evaluation on language understanding, language generation, and instruction tuning tasks show that LTE consistently outperforms SOTA baselines. Along with our hardware-aware custom kernel implementation, LTE reduces LLaMA2-7B inference latency by 25% at 50% sparsity.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel training algorithm to train efficiency-aware LLMs that have more structured contextual sparsity for fast inference.",
+  "keywords": [
+    "LLM inference efficiency",
+    "Moefication",
+    "Contexual Sparsity"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=iSfCWhvEGA",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/cbc38b75fb9f4610e187bea81a58d84cd2bde26a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We propose a novel training algorithm to train efficiency-aware LLMs that have more structured contextual sparsity for fast inference."
+  },
+  "collected_at": "2026-03-10T12:41:25.230Z"
+}
