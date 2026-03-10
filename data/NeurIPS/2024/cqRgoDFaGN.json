@@ -1,0 +1,35 @@
+{
+  "id": "cqRgoDFaGN",
+  "or_id": "cqRgoDFaGN",
+  "title": "FasterDiT: Towards Faster Diffusion Transformers Training without Architecture Modification",
+  "title_zh": "",
+  "authors": [
+    "Jingfeng Yao",
+    "Cheng Wang",
+    "Wenyu Liu",
+    "Xinggang Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Diffusion Transformers (DiT) have attracted significant attention in research. However, they suffer from a slow convergence rate. In this paper, we aim to accelerate DiT training without any architectural modification. We identify the following issues in the training process: firstly, certain training strategies do not consistently perform well across different data. Secondly, the effectiveness of supervision at specific timesteps is limited. In response, we propose the following contributions: (1) We introduce a new perspective for interpreting the failure of the strategies. Specifically, we slightly extend the definition of Signal-to-Noise Ratio (SNR) and suggest observing the Probability Density Function (PDF) of SNR to understand the essence of the data robustness of the strategy. (2) We conduct numerous experiments and report over one hundred experimental results to empirically summarize a unified accelerating strategy from the perspective of PDF. (3) We develop a new supervision method that further accelerates the training process of DiT. Based on them, we propose FasterDiT, an exceedingly simple and practicable design strategy. With few lines of code modifications, it achieves 2.30 FID on ImageNet at 256x256 resolution with 1000 iterations, which is comparable to DiT (2.27 FID) but 7 times faster in training.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Generative Model",
+    "Diffusion Transformers",
+    "Flow Matching"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=cqRgoDFaGN",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/94ce28a4d652148b0b278970906ae6841d4ab774.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Diffusion Transformers (DiT) have attracted significant attention in research. However, they suffer from a slow convergence rate. In this paper, we aim to accelerate DiT training without any architectural modification. We identify the following issues in the training process: firstly, certain traini"
+  },
+  "collected_at": "2026-03-10T21:41:32.412Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "VKKY3Uv7vi",
+  "or_id": "VKKY3Uv7vi",
+  "title": "BPQP: A Differentiable Convex Optimization Framework for Efficient End-to-End Learning",
+  "title_zh": "",
+  "authors": [
+    "Jianming Pan",
+    "Zeqi Ye",
+    "Xiao Yang",
+    "Xu Yang",
+    "Weiqing Liu",
+    "Lewen Wang",
+    "Jiang Bian"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Data-driven decision-making processes increasingly utilize end-to-end learnable deep neural networks to render final decisions. Sometimes, the output of the forward functions in certain layers is determined by the solutions to mathematical optimization problems, leading to the emergence of differentiable optimization layers that permit gradient back-propagation.\nHowever, real-world scenarios often involve large-scale datasets and numerous constraints, presenting significant challenges. Current methods for differentiating optimization problems typically rely on implicit differentiation, which necessitates costly computations on the Jacobian matrices, resulting in low efficiency.\nIn this paper, we introduce BPQP, a differentiable convex optimization framework designed for efficient end-to-end learning. To enhance efficiency, we reformulate the backward pass as a simplified and decoupled quadratic programming problem by leveraging the structural properties of the Karush–Kuhn–Tucker (KKT) matrix. This reformulation enables the use of first-order optimization algorithms in calculating the backward pass gradients, allowing our framework to potentially utilize any state-of-the-art solver. As solver technologies evolve, BPQP can continuously adapt and improve its efficiency.\nExtensive experiments on both simulated and real-world datasets demonstrate that BPQP achieves a significant improvement in efficiency—typically an order of magnitude faster in overall execution time compared to other differentiable optimization layers. Our results not only highlight the efficiency gains of BPQP but also underscore its superiority over differential optimization layer baselines.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Differentiable optimization layers",
+    "machine learning",
+    "end-to-end learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=VKKY3Uv7vi",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/59ae5159172fe4a7a66b4a77141977269e5a21d6.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "Data-driven decision-making processes increasingly utilize end-to-end learnable deep neural networks to render final decisions. Sometimes, the output of the forward functions in certain layers is determined by the solutions to mathematical optimization problems, leading to the emergence of differentiable optimization layers that permit gradient back-propagation.\nHowever, real-world scenarios often"
+  },
+  "collected_at": "2026-03-10T21:41:32.411Z"
+}

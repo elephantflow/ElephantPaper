@@ -1,0 +1,33 @@
+{
+  "id": "6IyYa4gETN",
+  "or_id": "6IyYa4gETN",
+  "title": "IMAGPose: A Unified Conditional Framework for Pose-Guided Person Generation",
+  "title_zh": "",
+  "authors": [
+    "Fei Shen",
+    "Jinhui Tang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Diffusion models represent a promising avenue for image generation, having demonstrated competitive performance in pose-guided person image generation. \nHowever, existing methods are limited to generating target images from a source image and a target pose, overlooking two critical user scenarios: generating multiple target images with different poses simultaneously and generating target images from multi-view source images.\nTo overcome these limitations, we propose IMAGPose, a unified conditional framework for pose-guided image generation, which incorporates three pivotal modules: a feature-level conditioning (FLC) module, an image-level conditioning (ILC) module, and a cross-view attention (CVA) module. \nFirstly, the FLC module combines the low-level texture feature from the VAE encoder with the high-level semantic feature from the image encoder, addressing the issue of missing detail information due to the absence of a dedicated person image feature extractor. \nThen, the ILC module achieves an alignment of images and poses to adapt to flexible and diverse user scenarios by injecting a variable number of source image conditions and introducing a masking strategy.\nFinally, the CVA module introduces decomposing global and local cross-attention, ensuring local fidelity and global consistency of the person image when multiple source image prompts. \nThe three modules of IMAGPose work together to unify the task of person image generation under various user scenarios.\nExtensive experiment results demonstrate the consistency and photorealism of our proposed IMAGPose under challenging user scenarios. \nThe code and model will be available at https://github.com/muzishen/IMAGPose.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Pose-Guided Person Image Generation",
+    "Diffusion Model",
+    "Consistency Generation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6IyYa4gETN",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b3d40c0e6b07e67f29b1d3f1893f4598c5f13631.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Diffusion models represent a promising avenue for image generation, having demonstrated competitive performance in pose-guided person image generation. \nHowever, existing methods are limited to generating target images from a source image and a target pose, overlooking two critical user scenarios: g"
+  },
+  "collected_at": "2026-03-10T21:41:32.412Z"
+}

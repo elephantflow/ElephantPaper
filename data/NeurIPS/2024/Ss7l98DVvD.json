@@ -1,0 +1,34 @@
+{
+  "id": "Ss7l98DVvD",
+  "or_id": "Ss7l98DVvD",
+  "title": "Wild-GS: Real-Time Novel View Synthesis from Unconstrained Photo Collections",
+  "title_zh": "",
+  "authors": [
+    "Jiacong Xu",
+    "Yiqun Mei",
+    "Vishal M. Patel"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Photographs captured in unstructured tourist environments frequently exhibit variable appearances and transient occlusions, challenging accurate scene reconstruction and inducing artifacts in novel view synthesis. Although prior approaches have integrated the Neural Radiance Field (NeRF) with additional learnable modules to handle the dynamic appearances and eliminate transient objects, their extensive training demands and slow rendering speeds limit practical deployments. Recently, 3D Gaussian Splatting (3DGS) has emerged as a promising alternative to NeRF, offering superior training and inference efficiency along with better rendering quality. This paper presents \\textit{Wild-GS}, an innovative adaptation of 3DGS optimized for unconstrained photo collections while preserving its efficiency benefits. \\textit{Wild-GS} determines the appearance of each 3D Gaussian by their inherent material attributes, global illumination and camera properties per image, and point-level local variance of reflectance. Unlike previous methods that model reference features in image space, \\textit{Wild-GS} explicitly aligns the pixel appearance features to the corresponding local Gaussians by sampling the triplane extracted from the reference image. This novel design effectively transfers the high-frequency detailed appearance of the reference view to 3D space and significantly expedites the training process. Furthermore, 2D visibility maps and depth regularization are leveraged to mitigate the transient effects and constrain the geometry, respectively. Extensive experiments demonstrate that \\textit{Wild-GS} achieves state-of-the-art rendering performance and the highest efficiency in both training and inference among all the existing techniques. The code can be accessed via: https://github.com/XuJiacong/Wild-GS",
+  "abstract_zh": "",
+  "tldr": "This paper presents an adaptation of 3DGS to resolve the unconstrained photo collections.",
+  "keywords": [
+    "3D Gaussian Splatting",
+    "Novel View Synthesis",
+    "3D Reconstruction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Ss7l98DVvD",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0aef2c7ba708df29630528c5e2792d90218ee5dc.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper presents an adaptation of 3DGS to resolve the unconstrained photo collections."
+  },
+  "collected_at": "2026-03-10T21:41:32.410Z"
+}

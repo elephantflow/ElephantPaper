@@ -1,0 +1,34 @@
+{
+  "id": "OWmu3QOa0O",
+  "or_id": "OWmu3QOa0O",
+  "title": "Sparse maximal update parameterization: A holistic approach to sparse training dynamics",
+  "title_zh": "",
+  "authors": [
+    "Nolan Simran Dey",
+    "Shane Bergsma",
+    "Joel Hestness"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Several challenges make it difficult for sparse neural networks to compete with dense models.  First, setting a large fraction of weights to zero impairs forward and gradient signal propagation. Second, sparse studies often need to test multiple sparsity levels, while also introducing new hyperparameters (HPs), leading to prohibitive tuning costs. Indeed, the standard practice is to re-use the learning HPs originally crafted for dense models.  Unfortunately, we show sparse and\ndense networks do not share the same optimal HPs. Without stable dynamics and effective training recipes, it is costly to test sparsity at scale, which is key to surpassing dense networks and making the business case for sparsity acceleration in hardware.\n\nA holistic approach is needed to tackle these challenges and we propose S$\\textmu$Par as one such approach. For random unstructured static sparsity, S$\\textmu$Par ensures activations, gradients, and weight updates all scale independently of sparsity level. Further, by reparameterizing the HPs, S$\\textmu$Par enables the same HP values to be optimal as we vary both sparsity level and model width. HPs can be tuned on small dense networks and transferred to large sparse models, greatly reducing tuning costs. On large-scale language modeling, S$\\textmu$Par shows increasing improvements over standard parameterization as sparsity increases, leading up to 11.9\\% relative loss improvement at 99.2\\% sparsity. A minimal implementation of S$\\textmu$Par is available at https://github.com/EleutherAI/nanoGPT-mup/tree/supar.",
+  "abstract_zh": "",
+  "tldr": "We introduce the sparse maximal update parameterization (S$\\textmu$Par) which ensures optimal HPs remain the same for any width or sparsity level. This dramatically reduces HP tuning costs, allowing S$\\textmu$Par to achieve superior losses.",
+  "keywords": [
+    "sparsity",
+    "large language models",
+    "scaling laws"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=OWmu3QOa0O",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0906d16e1447d3d0df540c03e4c6cfdd6a8e399f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce the sparse maximal update parameterization (S$\\textmu$Par) which ensures optimal HPs remain the same for any width or sparsity level. This dramatically reduces HP tuning costs, allowing S$\\textmu$Par to achieve superior losses."
+  },
+  "collected_at": "2026-03-10T21:41:32.410Z"
+}

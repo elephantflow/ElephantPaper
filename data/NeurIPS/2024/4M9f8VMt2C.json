@@ -1,0 +1,43 @@
+{
+  "id": "4M9f8VMt2C",
+  "or_id": "4M9f8VMt2C",
+  "title": "Long-form factuality in large language models",
+  "title_zh": "",
+  "authors": [
+    "Jerry Wei",
+    "Chengrun Yang",
+    "Xinying Song",
+    "Yifeng Lu",
+    "Nathan Zixia Hu",
+    "Jie Huang",
+    "Dustin Tran",
+    "Daiyi Peng",
+    "Ruibo Liu",
+    "Da Huang",
+    "Cosmo Du",
+    "Quoc V Le"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large language models (LLMs) often generate content that contains factual errors when responding to fact-seeking prompts on open-ended topics. To benchmark a model’s long-form factuality in open domains, we first use GPT-4 to generate LongFact, a prompt set comprising thousands of questions spanning 38 topics. We then propose that LLM agents can be used as automated evaluators for long-form factuality through a method which we call Search-Augmented Factuality Evaluator (SAFE). SAFE utilizes an LLM to break down a long-form response into a set of individual facts and to evaluate the accuracy of each fact using a multi-step reasoning process comprising sending search queries to Google Search and determining whether a fact is supported by the search results. Furthermore, we propose extending F1 score as an aggregated metric for long-form factuality. To do so, we balance the percentage of supported facts in a response (precision) with the percentage of provided facts relative to a hyperparameter representing a user’s preferred response length (recall).\n\nEmpirically, we demonstrate that LLM agents can outperform crowdsourced human annotators—on a set of∼16k individual facts, SAFE agrees with crowdsourced human annotators 72% of the time, and on a random subset of 100 disagreement cases, SAFE wins 76% of the time. At the same time, SAFE is more than 20 times cheaper than human annotators.  We also benchmark thirteen language models on LongFact across four model families (Gemini, GPT, Claude, and PaLM-2), finding that larger language models generally achieve better long-form factuality. LongFact, SAFE, and all experimental code are available at https://github.com/google-deepmind/long-form-factuality.",
+  "abstract_zh": "",
+  "tldr": "We propose a dataset, evaluation method, and metric for benchmarking long-form factuality in large language models.",
+  "keywords": [
+    "natural language processing",
+    "machine learning",
+    "factuality"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=4M9f8VMt2C",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a2aa82687764bc3707d25f7ccc532b2a4cd7de2e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a dataset, evaluation method, and metric for benchmarking long-form factuality in large language models."
+  },
+  "collected_at": "2026-03-10T21:41:32.410Z"
+}

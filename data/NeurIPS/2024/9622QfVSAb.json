@@ -1,0 +1,36 @@
+{
+  "id": "9622QfVSAb",
+  "or_id": "9622QfVSAb",
+  "title": "Implicit Multimodal Alignment: On the Generalization of Frozen LLMs to Multimodal Inputs",
+  "title_zh": "",
+  "authors": [
+    "Mustafa Shukor",
+    "Matthieu Cord"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large Language Models (LLMs) have demonstrated impressive performance on multimodal tasks, without any multimodal finetuning. They are the de facto building block for Large Multimodal Models (LMMs), yet, we still lack a proper understanding of their success. In this work, we expose frozen LLMs to image, video, audio and text inputs and analyse their internal representation with the attempt to understand their generalization beyond textual inputs. Our work provides the following **findings.** Perceptual tokens (1) are easily distinguishable from textual ones inside LLMs, with significantly different representations (e.g. live in different narrow cones), and complete translation to textual tokens does not exists. Yet, (2) both perceptual and textual tokens activate similar LLM weights. Despite their differences, (3) perceptual tokens are implicitly aligned to textual tokens inside LLMs, we call this the implicit multimodal alignment effect (IMA), and argue that this is linked to architectural design, helping LLMs to generalize. This provide more evidence to believe that the generalization of LLMs to multimodal inputs is mainly due to their architecture.  These findings lead to several **implications.** This work provides several implications. (1) We find a positive correlation between the implicit alignment score and the task performance, suggesting that this could act as a proxy metric for model evaluation and selection. (2) A negative correlation exists regarding hallucinations (e.g. describing non-existing objects in images), revealing that this problem is mainly due to misalignment between the internal perceptual and textual representations. (3) Perceptual tokens change slightly throughout the model, thus, we propose different approaches to skip computations (e.g. in FFN layers), and significantly reduce the inference cost. (4) Due to the slowly changing embeddings across layers, and the high overlap between textual and multimodal activated weights, we compress LL",
+  "abstract_zh": "",
+  "tldr": "We analyse frozen LLMs when exposed to multimodal inputs. Inside LLMs, multimodal tokens are significantly different than textual ones, yet they are implicitly aligned. Our findings led to implications on performance, safety and efficiency.",
+  "keywords": [
+    "Large multimodal models",
+    "LLMs",
+    "cross-modal alignment",
+    "efficiency",
+    "safety",
+    "interpretability"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=9622QfVSAb",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1c63bbb0cdac3e041f2098f24d0e97ec8468bb2b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We analyse frozen LLMs when exposed to multimodal inputs. Inside LLMs, multimodal tokens are significantly different than textual ones, yet they are implicitly aligned. Our findings led to implications on performance, safety and efficiency."
+  },
+  "collected_at": "2026-03-10T21:41:32.411Z"
+}
