@@ -1,0 +1,40 @@
+{
+  "id": "6uv9ViIoMj",
+  "or_id": "6uv9ViIoMj",
+  "title": "Towards Next-Level Post-Training Quantization of Hyper-Scale Transformers",
+  "title_zh": "",
+  "authors": [
+    "Junhan Kim",
+    "Chungman Lee",
+    "Eulrang Cho",
+    "Kyungphil Park",
+    "Ho-young Kim",
+    "Joonyoung Kim",
+    "Yongkweon Jeon"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "With the increasing complexity of generative AI models, post-training quantization (PTQ) has emerged as a promising solution for deploying hyper-scale models on edge devices such as mobile and TVs.\nExisting PTQ schemes, however, consume considerable time and resources, which could be a bottleneck in real situations where frequent model updates and multiple hyperparameter tunings are required.\nAs a cost-effective alternative, learning-free PTQ schemes have been proposed. \nHowever, the performance is somewhat limited because they cannot consider the inter-layer dependency within the attention module, which is a significant feature of Transformers.\nIn this paper, we thus propose a novel PTQ algorithm that balances accuracy and efficiency.\nThe key idea of the proposed algorithm called aespa is to perform quantization layer-wise for efficiency while targeting attention-wise reconstruction to consider the cross-layer dependency.\nThrough extensive experiments on various language models and complexity analysis, we demonstrate that aespa is accurate and efficient in quantizing Transformer models. The code will be available at https: //github.com/SamsungLabs/aespa.",
+  "abstract_zh": "",
+  "tldr": "We have proposed a next-level post-training quantization scheme for Hyper-scale Transformer models",
+  "keywords": [
+    "Hyper-scale",
+    "Compression",
+    "Quantization",
+    "Transformers",
+    "LLM"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6uv9ViIoMj",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/92b693f63079c7ab2c8fcfce715dcc49a20e6fd4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We have proposed a next-level post-training quantization scheme for Hyper-scale Transformer models"
+  },
+  "collected_at": "2026-03-10T15:21:35.641Z"
+}

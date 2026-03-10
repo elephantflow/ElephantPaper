@@ -1,0 +1,37 @@
+{
+  "id": "ctxtY3VGGq",
+  "or_id": "ctxtY3VGGq",
+  "title": "Online Weighted Paging with Unknown Weights",
+  "title_zh": "",
+  "authors": [
+    "Orin Levy",
+    "Noam Touitou",
+    "Aviv Rosenberg"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Online paging is a fundamental problem in the field of online algorithms, in which one maintains a cache of $k$ slots as requests for fetching pages arrive online. \nIn the weighted variant of this problem, each page has its own fetching cost; a substantial line of work on this problem culminated in an (optimal) $O(\\log k)$-competitive randomized algorithm, due to Bansal, Buchbinder and Naor (FOCS'07).\n\nExisting work for weighted paging assumes that page weights are known in advance, which is not always the case in practice.\nFor example, in multi-level caching architectures, the expected cost of fetching a memory block is a function of its probability of being in a mid-level cache rather than the main memory.\nThis complex property cannot be predicted in advance; over time, however, one may glean information about page weights through sampling their fetching cost multiple times.\n\nWe present the first algorithm for online weighted paging that does not know page weights in advance, but rather learns from weight samples.\nIn terms of techniques, this requires providing (integral) samples to a fractional solver, requiring a delicate interface between this solver and the randomized rounding scheme; we believe that our work can inspire online algorithms to other problems that involve cost sampling.",
+  "abstract_zh": "",
+  "tldr": "We study the Online Weighted Paging problem, where the weights are unknown. We provide algorithm and analyze it's performance in terms of competitive ratio and regret.",
+  "keywords": [
+    "Online Learning",
+    "Online Weighted Paging",
+    "Online Algorithms",
+    "Competitive Ratio",
+    "Regret",
+    "Theory"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ctxtY3VGGq",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b8e68d1aa68c06fb6c2a89b058f372f08726dcda.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study the Online Weighted Paging problem, where the weights are unknown. We provide algorithm and analyze it's performance in terms of competitive ratio and regret."
+  },
+  "collected_at": "2026-03-10T15:21:35.642Z"
+}

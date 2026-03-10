@@ -1,0 +1,35 @@
+{
+  "id": "T0axIflVDD",
+  "or_id": "T0axIflVDD",
+  "title": "Frequency Adaptive Normalization For Non-stationary Time Series Forecasting",
+  "title_zh": "",
+  "authors": [
+    "Weiwei Ye",
+    "Songgaojun Deng",
+    "Qiaosha Zou",
+    "Ning Gui"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Time series forecasting typically needs to address non-stationary data with evolving trend and seasonal patterns. To address the non-stationarity, reversible instance normalization has been recently proposed to alleviate impacts from the trend with certain statistical measures, e.g., mean and variance. Although they  demonstrate improved predictive accuracy, they are limited to expressing basic trends and are incapable of handling seasonal patterns. To address this limitation, this paper proposes a new instance normalization solution, called frequency adaptive normalization (FAN), which extends instance normalization in handling both dynamic trend and seasonal patterns. Specifically, we employ the Fourier transform to identify instance-wise predominant frequent components that cover most non-stationary factors. \nFurthermore,  the discrepancy of those frequency components between inputs and outputs is explicitly modeled as a prediction task with a simple MLP model. FAN is a model-agnostic method that can be applied to arbitrary predictive backbones.  We instantiate FAN on four widely used forecasting models as the backbone and evaluate their prediction performance improvements on eight benchmark datasets. FAN demonstrates significant performance advancement, achieving 7.76\\%$\\sim$37.90\\%  average  improvements in MSE. Our code is publicly available at http://github.com/icannotnamemyself/FAN.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Timeseries Normalization",
+    "Non-stationary Timeseries Forecasting",
+    "Timeseries Forecasting"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=T0axIflVDD",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/86aeb855802263e84f1d0a0ee4a42e932e56b41b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Time series forecasting typically needs to address non-stationary data with evolving trend and seasonal patterns. To address the non-stationarity, reversible instance normalization has been recently proposed to alleviate impacts from the trend with certain statistical measures, e.g., mean and varian"
+  },
+  "collected_at": "2026-03-10T15:21:35.641Z"
+}

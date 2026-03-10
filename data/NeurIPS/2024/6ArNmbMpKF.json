@@ -1,0 +1,34 @@
+{
+  "id": "6ArNmbMpKF",
+  "or_id": "6ArNmbMpKF",
+  "title": "Noisy Dual Mirror Descent: A Near Optimal Algorithm for Jointly-DP Convex Resource Allocation",
+  "title_zh": "",
+  "authors": [
+    "Du Chen",
+    "Geoffrey A. Chua"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We study convex resource allocation problems with $m$ hard constraints under $(\\varepsilon,\\delta)$-joint differential privacy (Joint-DP or JDP) in an offline setting. To approximately solve the problem, we propose a generic algorithm called Noisy Dual Mirror Descent. The algorithm applies noisy Mirror Descent to a dual problem from relaxing the hard constraints for private shadow prices, and then uses the shadow prices to coordinate allocations in the primal problem. Leveraging weak duality theory, we show that the optimality gap is upper bounded by $\\mathcal{O}(\\frac{\\sqrt{m\\ln(1/\\delta)}}{\\varepsilon})$, and constraint violation is no more than $\\mathcal{O}(\\frac{\\sqrt{m\\ln(1/\\delta)}}{\\varepsilon})$ per constraint. When strong duality holds, both preceding results can be improved to $\\widetilde{\\mathcal{O}}(\\frac{\\sqrt{\\ln(1/\\delta)}}{\\varepsilon})$ by better utilizing the geometric structure of the dual space, which is neglected by existing works. To complement our results under strong duality, we derive a minimax lower bound $\\Omega(\\frac{m}{\\varepsilon})$ for any JDP algorithm outputting feasible allocations. The lower bound matches our upper bounds up to some logarithmic factors for $\\varepsilon\\geq \\max(1, 1/(n\\gamma))$, where $n\\gamma$ is the available resource level. Numerical studies further confirm the effectiveness of our algorithm.",
+  "abstract_zh": "",
+  "tldr": "we propose an algorithm to (near) optimally solve convex resource allocation problems under joint-DP",
+  "keywords": [
+    "joint differential privacy",
+    "resource allocation",
+    "near optimal algorithm",
+    "mirror descent"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6ArNmbMpKF",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/93244a46c3816db2023adc86515cf94f65d0b4ea.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "we propose an algorithm to (near) optimally solve convex resource allocation problems under joint-DP"
+  },
+  "collected_at": "2026-03-10T15:21:35.642Z"
+}

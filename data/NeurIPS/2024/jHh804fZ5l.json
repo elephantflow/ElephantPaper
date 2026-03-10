@@ -1,0 +1,34 @@
+{
+  "id": "jHh804fZ5l",
+  "or_id": "jHh804fZ5l",
+  "title": "Generalization Bound and Learning Methods for Data-Driven Projections in Linear Programming",
+  "title_zh": "",
+  "authors": [
+    "Shinsaku Sakaue",
+    "Taihei Oki"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "How to solve high-dimensional linear programs (LPs) efficiently is a fundamental question.\nRecently, there has been a surge of interest in reducing LP sizes using *random projections*, which can accelerate solving LPs independently of improving LP solvers. \nThis paper explores a new direction of *data-driven projections*, which use projection matrices learned from data instead of random projection matrices.\nGiven training data of $n$-dimensional LPs, we learn an $n\\times k$ projection matrix with $n > k$. \nWhen addressing a future LP instance, we reduce its dimensionality from $n$ to $k$ via the learned projection matrix, solve the resulting LP to obtain a $k$-dimensional solution, and apply the learned matrix to it to recover an $n$-dimensional solution.\n\nOn the theoretical side, a natural question is: how much data is sufficient to ensure the quality of recovered solutions? We address this question based on the framework of *data-driven algorithm design*, which connects the amount of data sufficient for establishing generalization bounds to the *pseudo-dimension* of performance metrics. We obtain an $\\tilde{\\mathrm{O}}(nk^2)$ upper bound on the pseudo-dimension, where $\\tilde{\\mathrm{O}}$ compresses logarithmic factors. We also provide an $\\Omega(nk)$ lower bound, implying our result is tight up to an $\\tilde{\\mathrm{O}}(k)$ factor. \n\nOn the practical side, we explore two simple methods for learning projection matrices: PCA- and gradient-based methods. While the former is relatively efficient, the latter can sometimes achieve better solution quality. Experiments demonstrate that learning projection matrices from data is indeed beneficial: it leads to significantly higher solution quality than the existing random projection while greatly reducing the time for solving LPs.",
+  "abstract_zh": "",
+  "tldr": "We present a generalization bound and learning methods for reducing the dimensionality of linear programs with projection matrices learned from data.",
+  "keywords": [
+    "data-driven algorithm design",
+    "linear programming",
+    "dimensionality reduction",
+    "generalization bound"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=jHh804fZ5l",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/15fa41b681ea89d3fba0400543d7954b091a2576.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present a generalization bound and learning methods for reducing the dimensionality of linear programs with projection matrices learned from data."
+  },
+  "collected_at": "2026-03-10T15:21:35.642Z"
+}
