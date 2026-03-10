@@ -1,0 +1,36 @@
+{
+  "id": "GgIJeoSLjQ",
+  "or_id": "GgIJeoSLjQ",
+  "title": "Continuous Heatmap Regression for Pose Estimation via Implicit Neural Representation",
+  "title_zh": "",
+  "authors": [
+    "Shengxiang Hu",
+    "Huaijiang Sun",
+    "Dong Wei",
+    "Xiaoning Sun",
+    "Jin Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Heatmap regression has dominated human pose estimation due to its superior performance and strong generalization. To meet the requirements of traditional explicit neural networks for output form, existing heatmap-based methods discretize the originally continuous heatmap representation into 2D pixel arrays, which leads to performance degradation due to the introduction of quantization errors. This problem is significantly exacerbated as the size of the input image decreases, which makes heatmap-based methods not much better than coordinate regression on low-resolution images. In this paper, we propose a novel neural representation for human pose estimation called NerPE to achieve continuous heatmap regression. Given any position within the image range, NerPE regresses the corresponding confidence scores for body joints according to the surrounding image features, which guarantees continuity in space and confidence during training. Thanks to the decoupling from spatial resolution, NerPE can output the predicted heatmaps at arbitrary resolution during inference without retraining, which easily achieves sub-pixel localization precision. To reduce the computational cost, we design progressive coordinate decoding to cooperate with continuous heatmap regression, in which localization no longer requires the complete generation of high-resolution heatmaps. The code is available at https://github.com/hushengxiang/NerPE.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Human pose estimation",
+    "continuous heatmap regression",
+    "implicit neural representation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=GgIJeoSLjQ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2cbaae74b11fa86b402462c765defdd46a8c6ff3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Heatmap regression has dominated human pose estimation due to its superior performance and strong generalization. To meet the requirements of traditional explicit neural networks for output form, existing heatmap-based methods discretize the originally continuous heatmap representation into 2D pixel"
+  },
+  "collected_at": "2026-03-10T18:01:28.774Z"
+}

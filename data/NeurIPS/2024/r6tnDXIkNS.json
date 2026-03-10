@@ -1,0 +1,34 @@
+{
+  "id": "r6tnDXIkNS",
+  "or_id": "r6tnDXIkNS",
+  "title": "Neural Signed Distance Function Inference through Splatting 3D Gaussians Pulled on Zero-Level Set",
+  "title_zh": "",
+  "authors": [
+    "Wenyuan Zhang",
+    "Yu-Shen Liu",
+    "Zhizhong Han"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "It is vital to infer a signed distance function (SDF) for multi-view based surface reconstruction. 3D Gaussian splatting (3DGS) provides a novel perspective for volume rendering, and shows advantages in rendering efficiency and quality. Although 3DGS provides a promising neural rendering option, it is still hard to infer SDFs for surface reconstruction with 3DGS due to the discreteness, the sparseness, and the off-surface drift of 3D Gaussians. To resolve these issues, we propose a method that seamlessly merge 3DGS with the learning of neural SDFs. Our key idea is to more effectively constrain the SDF inference with the multi-view consistency. To this end, we dynamically align 3D Gaussians on the zero-level set of the neural SDF, and then render the aligned 3D Gaussians through the differentiable rasterization. Meanwhile, we update the neural SDF by pulling neighboring space to the pulled 3D Gaussians, which progressively refine the signed distance field near the surface. With both differentiable pulling and splatting, we jointly optimize 3D Gaussians and the neural SDF with both RGB and geometry constraints, which recovers more accurate, smooth, and complete surfaces with more geometry details. Our numerical and visual comparisons show our superiority over the state-of-the-art results on the widely used benchmarks.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Gaussian Splatting",
+    "Signed distance function",
+    "3D reconstruction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=r6tnDXIkNS",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/840219aff71fd45610db672eca004b4ce1d0ff91.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "It is vital to infer a signed distance function (SDF) for multi-view based surface reconstruction. 3D Gaussian splatting (3DGS) provides a novel perspective for volume rendering, and shows advantages in rendering efficiency and quality. Although 3DGS provides a promising neural rendering option, it "
+  },
+  "collected_at": "2026-03-10T18:01:28.774Z"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "HAocQ9dSAX",
+  "or_id": "HAocQ9dSAX",
+  "title": "DOGS: Distributed-Oriented Gaussian Splatting for Large-Scale 3D Reconstruction  Via Gaussian Consensus",
+  "title_zh": "",
+  "authors": [
+    "Yu Chen",
+    "Gim Hee Lee"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The recent advances in 3D Gaussian Splatting (3DGS) show promising results on the novel view synthesis (NVS) task. With its superior rendering performance and high-fidelity rendering quality, 3DGS is excelling at its previous NeRF counterparts. The most recent 3DGS method focuses either on improving the instability of rendering efficiency or reducing the model size. On the other hand, the training efficiency of 3DGS on large-scale scenes has not gained much attention. In this work, we propose DoGaussian, a method that trains 3DGS distributedly. Our method first decomposes a scene into $K$ blocks and then introduces the Alternating Direction Method of Multipliers (ADMM) into the training procedure of 3DGS. During training, our DoGaussian maintains one global 3DGS model on the master node and $K$ local 3DGS models on the slave nodes. The $K$ local 3DGS models are dropped after training and we only query the global 3DGS model during inference. The training time is reduced by scene decomposition, and the training convergence and stability are guaranteed through the consensus on the shared 3D Gaussians. Our method accelerates the training of 3DGS by $6+$ times when evaluated on large-scale scenes while concurrently achieving state-of-the-art rendering quality. Our code is publicly available at [https://github.com/AIBluefisher/DOGS](https://github.com/AIBluefisher/DOGS).",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Gaussian Splatting",
+    "distributed training",
+    "3D Reconstruction",
+    "Novel View Synthesis"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=HAocQ9dSAX",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/964cd99e77e60db83528d7a5c3548299f7ecb9b5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The recent advances in 3D Gaussian Splatting (3DGS) show promising results on the novel view synthesis (NVS) task. With its superior rendering performance and high-fidelity rendering quality, 3DGS is excelling at its previous NeRF counterparts. The most recent 3DGS method focuses either on improving"
+  },
+  "collected_at": "2026-03-10T18:01:28.775Z"
+}

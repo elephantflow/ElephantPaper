@@ -1,0 +1,39 @@
+{
+  "id": "3gZBGBglBf",
+  "or_id": "3gZBGBglBf",
+  "title": "Beware of Overestimated Decoding Performance Arising from Temporal Autocorrelations in Electroencephalogram Signals",
+  "title_zh": "",
+  "authors": [
+    "Xiran Xu",
+    "Bo Wang",
+    "Boda Xiao",
+    "Yadong Niu",
+    "Yiwen Wang",
+    "Xihong Wu",
+    "Jing Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Researchers have reported high decoding accuracy (>95%) using non-invasive Electroencephalogram (EEG) signals for brain-computer interface (BCI) decoding tasks like image decoding, emotion recognition, auditory spatial attention detection, etc. Since these EEG data were usually collected with well-designed paradigms in labs, the reliability and robustness of the corresponding decoding methods were doubted by some researchers, and they argued that such decoding accuracy was overestimated due to the inherent temporal autocorrelation of EEG signals. However, the coupling between the stimulus-driven neural responses and the EEG temporal autocorrelations makes it difficult to confirm whether this overestimation exists in truth. Furthermore, the underlying pitfalls behind overestimated decoding accuracy have not been fully explained due to a lack of appropriate formulation. In this work, we formulate the pitfall in various EEG decoding tasks in a unified framework. EEG data were recorded from watermelons to remove stimulus-driven neural responses. Labels were assigned to continuous EEG according to the experimental design for EEG recording of several typical datasets, and then the decoding methods were conducted. The results showed the label can be successfully decoded as long as continuous EEG data with the same label were split into training and test sets. Further analysis indicated that high accuracy of various BCI decoding tasks could be achieved by associating labels with EEG intrinsic temporal autocorrelation features. These results underscore the importance of choosing the right experimental designs and data splits in BCI decoding tasks to prevent inflated accuracies due to EEG temporal correlations. The watermelon EEG dataset collected in this work can be obtained at Zenodo: https://zenodo.org/records/11238929, and all the codes of this work can be obtained in the supplementary materials.",
+  "abstract_zh": "",
+  "tldr": "Due to utilizing domain features of EEG, it could achieve high decoding accuracy and even generate image on the testing set of Watermelon EEG dataset when using the same experimental design and data splitting strategy as some current BCI works used.",
+  "keywords": [
+    "Brain-computer interfaces",
+    "EEG",
+    "domain",
+    "temporal autocorrelations"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=3gZBGBglBf",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6fb5e3e25e891f44a19be8611a9d64e4b065a884.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Due to utilizing domain features of EEG, it could achieve high decoding accuracy and even generate image on the testing set of Watermelon EEG dataset when using the same experimental design and data splitting strategy as some current BCI works used."
+  },
+  "collected_at": "2026-03-10T18:01:28.769Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "9vcqleAHPl",
+  "or_id": "9vcqleAHPl",
+  "title": "FAST: A Dual-tier Few-Shot Learning Paradigm for Whole Slide Image Classification",
+  "title_zh": "",
+  "authors": [
+    "Kexue Fu",
+    "xiaoyuan Luo",
+    "Linhao Qu",
+    "Shuo Wang",
+    "Ying Xiong",
+    "Ilias Maglogiannis",
+    "Longxiang Gao",
+    "Manning Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The expensive fine-grained annotation and data scarcity \n  have become the primary obstacles for the widespread adoption of deep learning-based Whole Slide Images (WSI) classification algorithms in clinical practice. Unlike few-shot learning methods in natural images that can leverage the labels of each image, existing few-shot WSI classification methods only utilize a small number of fine-grained labels or weakly supervised slide labels for training in order to avoid expensive fine-grained annotation. They lack sufficient mining of available WSIs, severely limiting WSI classification performance. To address the above issues, we propose a novel and efficient dual-tier few-shot learning paradigm for WSI classification, named FAST. FAST consists of a dual-level annotation strategy and a dual-branch classification framework. Firstly, to avoid expensive fine-grained annotation, we collect a very small number of WSIs at the slide level, and annotate an extremely small number of patches. Then, to fully mining the available WSIs, we use all the patches and available patch labels to build a cache branch, which utilizes the labeled patches to learn the labels of unlabeled patches and through knowledge retrieval for patch classification. In addition to the cache branch, we also construct a prior branch that includes learnable prompt vectors, using the text encoder of visual-language models for patch classification. Finally, we integrate the results from both branches to achieve WSI classification. Extensive experiments on binary and multi-class datasets demonstrate that our proposed method significantly surpasses existing few-shot classification methods and approaches the accuracy of fully supervised methods with only 0.22% annotation costs. All codes and models will be publicly available on https://github.com/fukexue/FAST.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel and efficient dual-tier few-shot learning paradigm for WSI classification.  This paradigm can effectively reduce the fine-grained annotation cost of WSI while fully utilizing limited WSI data.",
+  "keywords": [
+    "Whole Slide Image Classification",
+    "Few-shot Learning",
+    "Vision-Language Model Adaption",
+    "Multimodal Large Model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=9vcqleAHPl",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/529e424cec522c1bd383518b695a49d8bfc14a1a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel and efficient dual-tier few-shot learning paradigm for WSI classification.  This paradigm can effectively reduce the fine-grained annotation cost of WSI while fully utilizing limited WSI data."
+  },
+  "collected_at": "2026-03-10T18:01:28.775Z"
+}

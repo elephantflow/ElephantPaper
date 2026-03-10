@@ -1,0 +1,36 @@
+{
+  "id": "i1xjK5a0X8",
+  "or_id": "i1xjK5a0X8",
+  "title": "PCP-MAE: Learning to Predict Centers for Point Masked Autoencoders",
+  "title_zh": "",
+  "authors": [
+    "Xiangdong Zhang",
+    "Shaofeng Zhang",
+    "Junchi Yan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Masked autoencoder has been widely explored in point cloud self-supervised learning, whereby the point cloud is generally divided into visible and masked parts. These methods typically include an encoder accepting visible patches (normalized) and corresponding patch centers (position) as input, with the decoder accepting the output of the encoder and the centers (position) of the masked parts to reconstruct each point in the masked patches. Then, the pre-trained encoders are used for downstream tasks. In this paper, we show a motivating empirical result that when directly feeding the centers of masked patches to the decoder without information from the encoder, it still reconstructs well. In other words, the centers of patches are important and the reconstruction objective does not necessarily rely on representations of the encoder, thus preventing the encoder from learning semantic representations. Based on this key observation, we propose a simple yet effective method, $i.e.$, learning to \\textbf{P}redict \\textbf{C}enters for \\textbf{P}oint \\textbf{M}asked \\textbf{A}uto\\textbf{E}ncoders (\\textbf{PCP-MAE}) which guides the model to learn to predict the significant centers and use the predicted centers to replace the directly provided centers. Specifically, we propose a Predicting Center Module (PCM) that shares parameters with the original encoder with extra cross-attention to predict centers. Our method is of high pre-training efficiency compared to other alternatives and achieves great improvement over Point-MAE, particularly surpassing it by \\textbf{5.50\\% on OBJ-BG, 6.03\\% on OBJ-ONLY, and 5.17\\% on PB-T50-RS} for 3D object classification on the ScanObjectNN dataset. The code is available at \\url{https://github.com/aHapBean/PCP-MAE}.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Self-supervised Learning",
+    "Point Cloud",
+    "Transfer Learning",
+    "Masked Autoencoders"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=i1xjK5a0X8",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b818d048207faef6da67184389f8afb17b0ec9c3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "Masked autoencoder has been widely explored in point cloud self-supervised learning, whereby the point cloud is generally divided into visible and masked parts. These methods typically include an encoder accepting visible patches (normalized) and corresponding patch centers (position) as input, with the decoder accepting the output of the encoder and the centers (position) of the masked parts to r"
+  },
+  "collected_at": "2026-03-10T18:01:28.774Z"
+}
