@@ -1,0 +1,36 @@
+{
+  "id": "SLXHVsbU8r",
+  "or_id": "SLXHVsbU8r",
+  "title": "End-to-End Autonomous Driving without Costly Modularization and 3D Manual Annotation",
+  "title_zh": "",
+  "authors": [
+    "Mingzhe Guo",
+    "Zhipeng Zhang",
+    "Yuan He",
+    "Ke Wang",
+    "Liping Jing"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "We propose UAD, a method for vision-based end-to-end autonomous driving (E2EAD), achieving the best open-loop evaluation performance in nuScenes, meanwhile showing robust closed-loop driving quality in CARLA. Our motivation stems from the observation that current E2EAD models still mimic the modular architecture in typical driving stacks, with carefully designed supervised perception and prediction subtasks to provide environment information for oriented planning. Although achieving groundbreaking progress, such design has certain drawbacks: 1) preceding subtasks require massive high-quality 3D annotations as supervision, posing a significant impediment to scaling the training data; 2) each submodule entails substantial computation overhead in both training and inference. To this end, we propose UAD, an E2EAD framework with an unsupervised proxy to address all these issues. Firstly, we design a novel Angular Perception Pretext to eliminate the annotation requirement. The pretext models the driving scene by predicting the angular-wise spatial objectness and temporal dynamics, without manual annotation. Secondly, a self-supervised training strategy, which learns the consistency of the predicted trajectories under different augment views, is proposed to enhance the planning robustness in steering scenarios. Our UAD achieves 38.7% relative improvements over UniAD on the average collision rate in nuScenes and surpasses VAD for 6.40 points on the driving score in CARLA's Town05 Long benchmark. Moreover, the proposed method only consumes 44.3% training resources of UniAD and runs 3.4$\\times$ faster in inference. Our innovative design not only for the first time demonstrates unarguable performance advantages over supervised counterparts, but also enjoys unprecedented efficiency in data, training, and inference.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "End-to-End Autonomous Driving",
+    "Unsupervised Pretext Task",
+    "Direction-Aware Planning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=SLXHVsbU8r",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/bed49d5f0786075d1eec82e7669974d7794ac992.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose UAD, a method for vision-based end-to-end autonomous driving (E2EAD), achieving the best open-loop evaluation performance in nuScenes, meanwhile showing robust closed-loop driving quality in CARLA. Our motivation stems from the observation that current E2EAD models still mimic the modular"
+  },
+  "collected_at": "2026-03-10T14:21:35.766Z"
+}

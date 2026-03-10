@@ -1,0 +1,40 @@
+{
+  "id": "mdK1vhgpa5",
+  "or_id": "mdK1vhgpa5",
+  "title": "Variational Continual Test-Time Adaptation",
+  "title_zh": "",
+  "authors": [
+    "Fan Lyu",
+    "Kaile Du",
+    "Yuyang Li",
+    "hanyu zhao",
+    "Fuyuan Hu",
+    "Zhang Zhang",
+    "Guangcan Liu",
+    "Liang Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Continual Test-Time Adaptation (CTTA) task investigates effective domain adaptation under the scenario of continuous domain shifts during testing time. \nDue to the utilization of solely unlabeled samples, there exists significant uncertainty in model updates, leading CTTA to encounter severe error accumulation issues.\nIn this paper, we introduce VCoTTA, a variational Bayesian approach to measure uncertainties in CTTA. \nAt the source stage, we transform a pre-trained deterministic model into a Bayesian Neural Network (BNN) via a variational warm-up strategy, injecting uncertainties into the model. \nDuring the testing time, we employ a mean-teacher update strategy using variational inference for the student model and exponential moving average for the teacher model. \nOur novel approach updates the student model by combining priors from both the source and teacher models. \nThe evidence lower bound is formulated as the cross-entropy between the student and teacher models, along with the Kullback-Leibler (KL) divergence of the prior mixture. \nExperimental results on three datasets demonstrate the method's effectiveness in mitigating error accumulation within the CTTA framework.",
+  "abstract_zh": "",
+  "tldr": "In this paper, we introduce VCoTTA, a variational Bayesian approach to reduce error accumulation in CTTA.",
+  "keywords": [
+    "Continual test-time adaptation",
+    "Continual learning",
+    "Domain adaptation",
+    "Test-time adaptation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=mdK1vhgpa5",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8dcdb9e75767403d159e45ddaa964b3c475f639c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In this paper, we introduce VCoTTA, a variational Bayesian approach to reduce error accumulation in CTTA."
+  },
+  "collected_at": "2026-03-10T14:21:35.766Z"
+}
