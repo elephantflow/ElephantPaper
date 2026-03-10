@@ -1,0 +1,41 @@
+{
+  "id": "UGwdz3kjht",
+  "or_id": "UGwdz3kjht",
+  "title": "Prioritize Alignment in Dataset Distillation",
+  "title_zh": "",
+  "authors": [
+    "Zekai Li",
+    "Ziyao Guo",
+    "Wangbo Zhao",
+    "Tianle Zhang",
+    "Zhi-Qi Cheng",
+    "Samir Khaki",
+    "Kaipeng Zhang",
+    "Ahmad Sajedi",
+    "Kai Wang",
+    "Konstantinos N Plataniotis",
+    "Yang You"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Dataset Distillation aims to compress a large dataset into a significantly more compact, synthetic one without compromising the performance of the trained models. To achieve this, existing methods use the agent model to extract information from the target dataset and embed it into the distilled dataset. Consequently, the quality of extracted and embedded information determines the quality of the distilled dataset. In this work, we find that existing methods introduce misaligned information in both information extraction and embedding stages. To alleviate this, we propose Prioritize Alignment in Dataset Distillation (PAD), which aligns information from the following two perspectives. 1) We prune the target dataset according to the compressing ratio to filter the information that can be extracted by the agent model. 2) We use only deep layers of the agent model to perform the distillation to avoid excessively introducing low-level information. This simple strategy effectively filters out misaligned information and brings non-trivial improvement for mainstream matching-based distillation algorithms. Furthermore, built on trajectory matching, PAD achieves remarkable improvements on various benchmarks, achieving state-of-the-art performance. The code and distilled datasets will be made public.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "dataset distillation",
+    "efficient learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=UGwdz3kjht",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e7dbbdc94f3efd26fc3ac686be2347b5c2d588bc.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Dataset Distillation aims to compress a large dataset into a significantly more compact, synthetic one without compromising the performance of the trained models. To achieve this, existing methods use the agent model to extract information from the target dataset and embed it into the distilled data"
+  },
+  "collected_at": "2026-03-10T16:41:31.064Z"
+}

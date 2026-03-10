@@ -1,0 +1,37 @@
+{
+  "id": "Cx2O6Xz03H",
+  "or_id": "Cx2O6Xz03H",
+  "title": "TAPTRv2: Attention-based Position Update Improves Tracking Any Point",
+  "title_zh": "",
+  "authors": [
+    "Hongyang Li",
+    "Hao Zhang",
+    "Shilong Liu",
+    "Zhaoyang Zeng",
+    "Feng Li",
+    "Bohan Li",
+    "Tianhe Ren",
+    "Lei Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In this paper, we present TAPTRv2, a Transformer-based approach built upon TAPTR for solving the Tracking Any Point (TAP) task. TAPTR borrows designs from DEtection TRansformer (DETR) and formulates each tracking point as a point query, making it possible to leverage well-studied operations in DETR-like algorithms. TAPTRv2 improves TAPTR by addressing a critical issue regarding its reliance on cost-volume, which contaminates the point query’s content feature and negatively impacts both visibility prediction and cost-volume computation. In TAPTRv2, we propose a novel attention-based position update (APU) operation and use key-aware deformable attention to realize. For each query, this operation uses key-aware attention weights to combine their corresponding deformable sampling positions to predict a new query position. This design is based on the observation that local attention is essentially the same as cost-volume, both of which are computed by dot-production between a query and its surrounding features. By introducing this new operation, TAPTRv2 not only removes the extra burden of cost-volume computation, but also leads to a substantial performance improvement. TAPTRv2 surpasses TAPTR and achieves state-of-the-art performance on many challenging datasets, demonstrating the effectiveness of our approach.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Tracking Any Point; 2D Detection; Attention"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Cx2O6Xz03H",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3ecc6c6d7700bc1318396853854712d909d571c0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In this paper, we present TAPTRv2, a Transformer-based approach built upon TAPTR for solving the Tracking Any Point (TAP) task. TAPTR borrows designs from DEtection TRansformer (DETR) and formulates each tracking point as a point query, making it possible to leverage well-studied operations in DETR-"
+  },
+  "collected_at": "2026-03-10T16:41:31.066Z"
+}

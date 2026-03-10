@@ -1,0 +1,35 @@
+{
+  "id": "qIkYlfDZaI",
+  "or_id": "qIkYlfDZaI",
+  "title": "A Closer Look at the CLS Token for Cross-Domain Few-Shot Learning",
+  "title_zh": "",
+  "authors": [
+    "Yixiong Zou",
+    "Shuai Yi",
+    "Yuhua Li",
+    "Ruixuan Li"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Vision Transformer (ViT) has shown great power in learning from large-scale datasets. However, collecting sufficient data for expert knowledge is always difficult. To handle this problem, Cross-Domain Few-Shot Learning (CDFSL) has been proposed to transfer the source-domain knowledge learned from sufficient data to target domains where only scarce data is available. In this paper, we find an intriguing phenomenon neglected by previous works for the CDFSL task based on ViT: leaving the CLS token to random initialization, instead of loading source-domain trained parameters, could consistently improve target-domain performance. We then delve into this phenomenon for an interpretation. We find **the CLS token naturally absorbs domain information** due to the inherent structure of the ViT, which is represented as the low-frequency component in the Fourier frequency space of images. Based on this phenomenon and interpretation, we further propose a method for the CDFSL task to decouple the domain information in the CLS token during the source-domain training, and adapt the CLS token on the target domain for efficient few-shot learning. Extensive experiments on four benchmarks validate our rationale and state-of-the-art performance. Our codes are available at https://github.com/Zoilsen/CLS_Token_CDFSL.",
+  "abstract_zh": "",
+  "tldr": "We find the CLS token naturally absorbs domain information, and propose to decouple domain information from the CLS token and adapt it for cross-domain few-shot learning.",
+  "keywords": [
+    "Cross-Domain Few-Shot Learning",
+    "CLS Token",
+    "Vision Transformer"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=qIkYlfDZaI",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/094a7e1a785ccc56a91ff11df3f3815a786a77a0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We find the CLS token naturally absorbs domain information, and propose to decouple domain information from the CLS token and adapt it for cross-domain few-shot learning."
+  },
+  "collected_at": "2026-03-10T16:41:31.066Z"
+}

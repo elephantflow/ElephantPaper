@@ -1,0 +1,43 @@
+{
+  "id": "5KEb1mqZRl",
+  "or_id": "5KEb1mqZRl",
+  "title": "General Compression Framework for Efficient Transformer Object Tracking",
+  "title_zh": "",
+  "authors": [
+    "Lingyi Hong",
+    "Jinglun Li",
+    "Xinyu Zhou",
+    "Shilin Yan",
+    "Pinxue Guo",
+    "Kaixun Jiang",
+    "Zhaoyu Chen",
+    "Shuyong Gao",
+    "Wei Zhang",
+    "Hong Lu",
+    "Wenqiang Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Transformer-based trackers have established a dominant role in the field of visual object tracking. While these trackers exhibit promising performance, their deployment on resource-constrained devices remains challenging due to inefficiencies. To improve the inference efficiency and reduce the computation cost, prior approaches have aimed to either design lightweight trackers or distill knowledge from larger teacher models into more compact student trackers. However, these solutions often sacrifice accuracy for speed. Thus, we propose a general model compression framework for efficient transformer object tracking, named CompressTracker, to reduce the size of a pre-trained tracking model into a lightweight tracker with minimal performance degradation. Our approach features a novel stage division strategy that segments the transformer layers of the teacher model into distinct stages, enabling the student model to emulate each corresponding teacher stage more effectively. Additionally, we also design a unique replacement training technique that involves randomly substituting specific stages in the student model with those from the teacher model, as opposed to training the student model in isolation. Replacement training enhances the student model's ability to replicate the teacher model's behavior. To further forcing student model to emulate teacher model, we incorporate prediction guidance and stage-wise feature mimicking to provide additional supervision during the teacher model's compression process. Our framework CompressTracker is structurally agnostic, making it compatible with any transformer architecture. We conduct a series of experiment to verify the effectiveness and generalizability of CompressTracker. Our CompressTracker-4 with 4 transformer layers, which is compressed from OSTrack, retains about $\\mathbf{96\\%}$ performance on LaSOT ($\\mathbf{66.1\\%}$ AUC) while achieves $\\mathbf{2.17\\times}$ speed up.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel and general model compression framework for efficient transformer object tracking.",
+  "keywords": [
+    "Object Tracking",
+    "Efficient Tracking",
+    "Lightweight Model",
+    "Knowledge Distillation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=5KEb1mqZRl",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f90123531990749e1c976170af1c5362a57c53ed.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel and general model compression framework for efficient transformer object tracking."
+  },
+  "collected_at": "2026-03-10T16:41:31.065Z"
+}

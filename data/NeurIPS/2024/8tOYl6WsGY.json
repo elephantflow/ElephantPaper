@@ -1,0 +1,36 @@
+{
+  "id": "8tOYl6WsGY",
+  "or_id": "8tOYl6WsGY",
+  "title": "BoostAdapter: Improving Vision-Language Test-Time Adaptation via Regional Bootstrapping",
+  "title_zh": "",
+  "authors": [
+    "Taolin Zhang",
+    "Jinpeng Wang",
+    "Hang Guo",
+    "Tao Dai",
+    "Bin Chen",
+    "Shu-Tao Xia"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Adaptation of \npretrained vision-language models such as CLIP to various downstream tasks have raised great interest in recent researches. \nPrevious works have proposed a variety of test-time adaptation (TTA) methods to achieve strong generalization without any knowledge of the target domain. \nHowever, existing training-required TTA approaches like TPT necessitate entropy minimization that involves large computational overhead, while training-free methods like TDA overlook the potential for information mining from the test samples themselves.\nIn this paper, we break down the design of existing popular training-required and training-free TTA methods and bridge the gap between them within our framework.\nSpecifically, we maintain a light-weight key-value memory for feature retrieval from  instance-agnostic historical samples and instance-aware boosting samples. \nThe historical samples are filtered from the testing data stream and serve to extract useful information from the target distribution, while the boosting samples are drawn from regional bootstrapping and capture the knowledge of the test sample itself.\nWe theoretically justify the rationality behind our method and empirically verify its effectiveness on both the out-of-distribution and the cross-domain datasets, showcasing its applicability in  real-world situations.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Test-time adaptation",
+    "Vision-Language models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=8tOYl6WsGY",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d9225658a4fa3cf894c2c7de62efef0ed1c224e3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Adaptation of \npretrained vision-language models such as CLIP to various downstream tasks have raised great interest in recent researches. \nPrevious works have proposed a variety of test-time adaptation (TTA) methods to achieve strong generalization without any knowledge of the target domain. \nHowev"
+  },
+  "collected_at": "2026-03-10T16:41:31.065Z"
+}
