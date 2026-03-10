@@ -1,0 +1,37 @@
+{
+  "id": "kVr3L73pNH",
+  "or_id": "kVr3L73pNH",
+  "title": "Data Attribution for Text-to-Image Models by Unlearning Synthesized Images",
+  "title_zh": "",
+  "authors": [
+    "Sheng-Yu Wang",
+    "Aaron Hertzmann",
+    "Alexei A Efros",
+    "Jun-Yan Zhu",
+    "Richard Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The goal of data attribution for text-to-image models is to identify the training images that most influence the generation of a new image. Influence is defined such that, for a given output, if a model is retrained from scratch without the most influential images, the model would fail to reproduce the same output. Unfortunately, directly searching for these influential images is computationally infeasible, since it would require repeatedly retraining models from scratch. In our work, we propose an efficient data attribution method by simulating unlearning the synthesized image. We achieve this by increasing the training loss on the output image, without catastrophic forgetting of other, unrelated concepts. We then identify training images with significant loss deviations after the unlearning process and label these as influential. We evaluate our method with a computationally intensive but \"gold-standard\" retraining from scratch and demonstrate our method's advantages over previous methods.",
+  "abstract_zh": "",
+  "tldr": "We identify influential training images that make a synthesized image possible, using our proposed attribution method by unlearning a synthesized image.",
+  "keywords": [
+    "Data Attribution",
+    "Influence Estimation",
+    "Text-to-Image models",
+    "Machine Unlearning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=kVr3L73pNH",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2e32e842f544c74dfff23ed357c51ab664e326cb.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We identify influential training images that make a synthesized image possible, using our proposed attribution method by unlearning a synthesized image."
+  },
+  "collected_at": "2026-03-10T20:41:29.385Z"
+}

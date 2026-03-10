@@ -1,0 +1,39 @@
+{
+  "id": "C4SInFLvuB",
+  "or_id": "C4SInFLvuB",
+  "title": "Reshuffling Resampling Splits Can Improve Generalization of Hyperparameter Optimization",
+  "title_zh": "",
+  "authors": [
+    "Thomas Nagler",
+    "Lennart Schneider",
+    "Bernd Bischl",
+    "Matthias Feurer"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Hyperparameter optimization is crucial for obtaining peak performance of machine learning models. The standard protocol evaluates various hyperparameter configurations using a resampling estimate of the generalization error to guide optimization and select a final hyperparameter configuration. Without much evidence, paired resampling splits, i.e., either a fixed train-validation split or a fixed cross-validation scheme, are often recommended. We show that, surprisingly, reshuffling the splits for every configuration often improves the final model's generalization performance on unseen data. Our theoretical analysis explains how reshuffling affects the asymptotic behavior of the validation loss surface and provides a bound on the expected regret in the limiting regime. This bound connects the potential benefits of reshuffling to the signal and noise characteristics of the underlying optimization problem. We confirm our theoretical results in a  controlled simulation study and demonstrate the practical usefulness of reshuffling in a large-scale, realistic hyperparameter optimization experiment. While reshuffling leads to test performances that are competitive with using fixed splits, it drastically improves results for a single train-validation holdout protocol and can often make holdout become competitive with standard CV while being computationally cheaper.",
+  "abstract_zh": "",
+  "tldr": "We propose to reshuffle resampling splits during hyperparameter optimization to improve generalization performance, demonstrating its effectiveness through theoretical analysis, simulations and benchmark experiments.",
+  "keywords": [
+    "Hyperparameter Optimization",
+    "Generalization Performance",
+    "Cross-Validation",
+    "Resampling",
+    "Validation Splits",
+    "Model Selection",
+    "Automated Machine Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=C4SInFLvuB",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0b9a9aacca5cf5afd9829212a78f4f96d2a8736f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose to reshuffle resampling splits during hyperparameter optimization to improve generalization performance, demonstrating its effectiveness through theoretical analysis, simulations and benchmark experiments."
+  },
+  "collected_at": "2026-03-10T20:41:29.384Z"
+}

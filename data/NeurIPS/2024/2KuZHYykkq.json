@@ -1,0 +1,39 @@
+{
+  "id": "2KuZHYykkq",
+  "or_id": "2KuZHYykkq",
+  "title": "Mini-Sequence Transformers: Optimizing Intermediate Memory for Long Sequences Training",
+  "title_zh": "",
+  "authors": [
+    "Cheng Luo",
+    "Jiawei Zhao",
+    "Zhuoming Chen",
+    "Beidi Chen",
+    "Anima Anandkumar"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We introduce Mini-Sequence Transformer (MsT), a simple and effective methodology for highly efficient and accurate LLM training with extremely long sequences. MsT partitions input sequences and iteratively processes mini-sequences to reduce intermediate memory usage. Integrated with activation recomputation, it enables significant memory savings in both forward and backward passes. In experiments with the Llama3-8B model, with MsT, we measure no degradation in throughput or convergence even with 12x longer sequences than standard implementations. MsT is fully general, implementation-agnostic, and requires minimal code changes to integrate with existing LLM training frameworks. Integrated with the huggingface library, MsT successfully extends the maximum context length of Qwen, Mistral, and Gemma-2 by 12-24x.",
+  "abstract_zh": "",
+  "tldr": "We propose Mini Sequence to reduce intermediate memory overhead for long sequence training, with 12X longer than the standard implementation of LLaMA3-8b training on a single A100 device.",
+  "keywords": [
+    "Long-Context",
+    "Foundation Models",
+    "Systems for ML",
+    "LLM Training",
+    "GPUs",
+    "Memory-efficient Training"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=2KuZHYykkq",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4d9da30aab84b194a9fd674bd8464c02f46a7e23.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose Mini Sequence to reduce intermediate memory overhead for long sequence training, with 12X longer than the standard implementation of LLaMA3-8b training on a single A100 device."
+  },
+  "collected_at": "2026-03-10T20:41:29.385Z"
+}

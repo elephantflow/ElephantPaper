@@ -1,0 +1,40 @@
+{
+  "id": "NTWXVvIXJM",
+  "or_id": "NTWXVvIXJM",
+  "title": "Meta-Diffu$B$: A Contextualized Sequence-to-Sequence Text Diffusion Model with Meta-Exploration",
+  "title_zh": "",
+  "authors": [
+    "Yunyen Chuang",
+    "Hung-Min Hsu",
+    "Kevin Lin",
+    "Chen-Sheng Gu",
+    "Ling Zhen Li",
+    "Ray-I Chang",
+    "Hung-yi Lee"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The diffusion model, a new generative modeling paradigm, has achieved significant success in generating images, audio, video, and text. It has been adapted for sequence-to-sequence text generation (Seq2Seq) through DiffuSeq, termed the S2S-Diffusion model. Existing S2S-Diffusion models predominantly rely on fixed or hand-crafted rules to schedule noise during the diffusion and denoising processes. However, these models are limited by non-contextualized noise, which fails to fully consider the characteristics of Seq2Seq tasks. In this paper, we propose the Meta-Diffu$B$ framework—a novel scheduler-exploiter S2S-Diffusion paradigm designed to overcome the limitations of existing S2S-Diffusion models. We employ Meta-Exploration to train an additional scheduler model dedicated to scheduling contextualized noise for each sentence. Our exploiter model, an S2S-Diffusion model, leverages the noise scheduled by our scheduler model for updating and generation. Meta-Diffu$B$ achieves state-of-the-art performance compared to previous S2S-Diffusion models and fine-tuned pre-trained language models (PLMs) across four Seq2Seq benchmark datasets. We further investigate and visualize the impact of Meta-Diffu$B$'s noise scheduling on the generation of sentences with varying difficulties. Additionally, our scheduler model can function as a \"plug-and-play\" model to enhance DiffuSeq without the need for fine-tuning during the inference stage.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel scheduler-exploiter framework, Meta-Diffu$B$, to achieve contextualized noise scheduling inspired by Meta-Exploration.",
+  "keywords": [
+    "Diffusion Models",
+    "Sequence-to-Sequence",
+    "Text Generation",
+    "Meta-Exploration",
+    "Noise Scheduling"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=NTWXVvIXJM",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/19e8f13c8a44c597c74f914a2b74aa68f2b5e906.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel scheduler-exploiter framework, Meta-Diffu$B$, to achieve contextualized noise scheduling inspired by Meta-Exploration."
+  },
+  "collected_at": "2026-03-10T20:41:29.379Z"
+}

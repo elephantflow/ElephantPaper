@@ -1,0 +1,34 @@
+{
+  "id": "R1Rrb2d5BH",
+  "or_id": "R1Rrb2d5BH",
+  "title": "EZ-HOI: VLM Adaptation via Guided Prompt Learning for Zero-Shot HOI Detection",
+  "title_zh": "",
+  "authors": [
+    "Qinqian Lei",
+    "Bo Wang",
+    "Robby T. Tan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Detecting Human-Object Interactions (HOI) in zero-shot settings, where models must handle unseen classes, poses significant challenges. Existing methods that rely on aligning visual encoders with large Vision-Language Models (VLMs) to tap into the extensive knowledge of VLMs, require large, computationally expensive models and encounter training difficulties. Adapting VLMs with prompt learning offers an alternative to direct alignment. However, fine-tuning on task-specific datasets often leads to overfitting to seen classes and suboptimal performance on unseen classes, due to the absence of unseen class labels. To address these challenges, we introduce a novel prompt learning-based framework for Efficient Zero-Shot HOI detection (EZ-HOI). First, we introduce Large Language Model (LLM) and VLM guidance for learnable prompts, integrating detailed HOI descriptions and visual semantics to adapt VLMs to HOI tasks. However, because training datasets contain seen-class labels alone, fine-tuning VLMs on such datasets tends to optimize learnable prompts for seen classes instead of unseen ones. Therefore, we design prompt learning for unseen classes using information from related seen classes, with LLMs utilized to highlight the differences between unseen and related seen classes. Quantitative evaluations on benchmark datasets demonstrate that our EZ-HOI achieves state-of-the-art performance across various zero-shot settings with only 10.35\\% to 33.95\\% of the trainable parameters compared to existing methods. Code is available at https://github.com/ChelsieLei/EZ-HOI.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Zero-shot HOI detection",
+    "Human-Object Interaction",
+    "Prompt Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=R1Rrb2d5BH",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/02907b5e4ee03887e94480f5e33062b6722a2766.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Detecting Human-Object Interactions (HOI) in zero-shot settings, where models must handle unseen classes, poses significant challenges. Existing methods that rely on aligning visual encoders with large Vision-Language Models (VLMs) to tap into the extensive knowledge of VLMs, require large, computat"
+  },
+  "collected_at": "2026-03-10T20:41:29.385Z"
+}
