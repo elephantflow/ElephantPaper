@@ -1,0 +1,36 @@
+{
+  "id": "zkfCa4oESF",
+  "or_id": "zkfCa4oESF",
+  "title": "TPR: Topology-Preserving Reservoirs for Generalized Zero-Shot Learning",
+  "title_zh": "",
+  "authors": [
+    "Hui Chen",
+    "Yanbin Liu",
+    "Yongqiang Ma",
+    "Nanning Zheng",
+    "Xin Yu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Pre-trained vision-language models (VLMs) such as CLIP have shown excellent performance for zero-shot classification. Based on CLIP, recent methods design various learnable prompts to evaluate the zero-shot generalization capability on a base-to-novel setting. This setting assumes test samples are already divided into either base or novel classes, limiting its application to realistic scenarios. In this paper, we focus on a more challenging and practical setting: generalized zero-shot learning (GZSL), i.e., testing with no information about the base/novel division. To address this challenging zero-shot problem, we introduce two unique designs that enable us to classify an image without the need of knowing whether it comes from seen or unseen classes. Firstly, most existing methods only adopt a single latent space to align visual and linguistic features, which has a limited ability to represent complex visual-linguistic patterns, especially for fine-grained tasks. Instead, we propose a dual-space feature alignment module that effectively augments the latent space with a novel attribute space induced by a well-devised attribute reservoir. In particular, the attribute reservoir consists of a static vocabulary and learnable tokens complementing each other for flexible control over feature granularity. Secondly, finetuning CLIP models (e.g., prompt learning) on seen base classes usually sacrifices the model's original generalization capability on unseen novel classes. To mitigate this issue, we present a new topology-preserving objective that can enforce feature topology structures of the combined base and novel classes to resemble the topology of CLIP. In this manner, our model will inherit the generalization ability of CLIP through maintaining the pairwise class angles in the attribute space. Extensive experiments on twelve object recognition datasets demonstrate that our model, termed Topology-Preserving Reservoir (TPR), outperforms strong baselines including both pro",
+  "abstract_zh": "",
+  "tldr": "a model incorporating dual-space alignment and topology-preserving strategies for GZSL",
+  "keywords": [
+    "Generalized Zero-shot Learning",
+    "Vision-Language Models",
+    "Contrastive Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=zkfCa4oESF",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e9ab97ad78449ecd4bb7169860020d90e331f252.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "a model incorporating dual-space alignment and topology-preserving strategies for GZSL"
+  },
+  "collected_at": "2026-03-10T22:24:23.833Z"
+}

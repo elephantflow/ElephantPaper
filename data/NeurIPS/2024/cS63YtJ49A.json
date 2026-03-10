@@ -1,0 +1,39 @@
+{
+  "id": "cS63YtJ49A",
+  "or_id": "cS63YtJ49A",
+  "title": "Training-Free Adaptive Diffusion with Bounded Difference Approximation Strategy",
+  "title_zh": "",
+  "authors": [
+    "Hancheng Ye",
+    "Jiakang Yuan",
+    "Renqiu Xia",
+    "Xiangchao Yan",
+    "Tao Chen",
+    "Junchi Yan",
+    "Botian Shi",
+    "Bo Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Diffusion models have recently achieved great success in the synthesis of high-quality images and videos. However, the existing denoising techniques in diffusion models are commonly based on step-by-step noise predictions, which suffers from high computation cost, resulting in a prohibitive latency for interactive applications. In this paper, we propose AdaptiveDiffusion to relieve this bottleneck by adaptively reducing the noise prediction steps during the denoising process. Our method considers the potential of skipping as many noise prediction steps as possible while keeping the final denoised results identical to the original full-step ones. Specifically, the skipping strategy is guided by the third-order latent difference that indicates the stability between timesteps during the denoising process, which benefits the reusing of previous noise prediction results. Extensive experiments on image and video diffusion models demonstrate that our method can significantly speed up the denoising process while generating identical results to the original process, achieving up to an average 2-5x speedup without quality degradation. The code is available at https://github.com/UniModal4Reasoning/AdaptiveDiffusion",
+  "abstract_zh": "",
+  "tldr": "We explore the training-free diffusion acceleration that dynamically selects the denoising path according to given prompts. We design the third-order estimator to indicate the computation redundancy.",
+  "keywords": [
+    "Adaptive Diffusion",
+    "Diffusion Probabilistic Models",
+    "Third-order Difference"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=cS63YtJ49A",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9e7a5fae2084f95deda1fd4826e01e33d3efb7df.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We explore the training-free diffusion acceleration that dynamically selects the denoising path according to given prompts. We design the third-order estimator to indicate the computation redundancy."
+  },
+  "collected_at": "2026-03-10T22:24:23.833Z"
+}

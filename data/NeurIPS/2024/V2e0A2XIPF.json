@@ -1,0 +1,38 @@
+{
+  "id": "V2e0A2XIPF",
+  "or_id": "V2e0A2XIPF",
+  "title": "QT-ViT: Improving Linear Attention in ViT with Quadratic Taylor Expansion",
+  "title_zh": "",
+  "authors": [
+    "Yixing Xu",
+    "Chao Li",
+    "Dong Li",
+    "Xiao Sheng",
+    "Fan Jiang",
+    "Lu Tian",
+    "Emad Barsoum"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Vision transformer model (ViT) is widely used and performs well in vision tasks due to its ability to capture long-range dependencies. However, the time complexity and memory consumption increase quadratically with the number of input patches which limits the usage of ViT in real-world applications. Previous methods have employed linear attention to mitigate the complexity of the original self-attention mechanism at the expense of effectiveness. In this paper, we propose QT-ViT models that improve the previous linear self-attention using quadratic Taylor expansion. Specifically, we substitute the softmax-based attention with second-order Taylor expansion, and then accelerate the quadratic expansion by reducing the time complexity with a fast approximation algorithm. The proposed method capitalizes on the property of quadratic expansion to achieve superior performance while employing linear approximation for fast inference. Compared to previous studies of linear attention, our approach does not necessitate knowledge distillation or high-order attention residuals to facilitate the training process. Extensive experiments demonstrate the efficiency and effectiveness of the proposed QT-ViTs, showcasing the state-of-the-art results. Particularly, the proposed QT-ViTs consistently surpass the previous SOTA EfficientViTs under different model sizes, and achieve a new Pareto-front in terms of accuracy and speed.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Vision Transformer",
+    "linear attention",
+    "quadratic Taylor expansion"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=V2e0A2XIPF",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4ac991a45662655a31b18c39d382096b531809a4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Vision transformer model (ViT) is widely used and performs well in vision tasks due to its ability to capture long-range dependencies. However, the time complexity and memory consumption increase quadratically with the number of input patches which limits the usage of ViT in real-world applications."
+  },
+  "collected_at": "2026-03-10T22:24:23.832Z"
+}

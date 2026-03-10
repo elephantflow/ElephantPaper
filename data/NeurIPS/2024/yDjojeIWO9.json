@@ -1,0 +1,39 @@
+{
+  "id": "yDjojeIWO9",
+  "or_id": "yDjojeIWO9",
+  "title": "Transferable Adversarial Attacks on SAM and Its Downstream Models",
+  "title_zh": "",
+  "authors": [
+    "Song Xia",
+    "Wenhan Yang",
+    "Yi Yu",
+    "Xun Lin",
+    "Henghui Ding",
+    "LINGYU DUAN",
+    "Xudong Jiang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The utilization of large foundational models has a dilemma: while fine-tuning downstream tasks from them holds promise for making use of the well-generalized knowledge in practical applications, their open accessibility also poses threats of adverse usage.\nThis paper, for the first time, explores the feasibility of adversarial attacking various downstream models fine-tuned from the segment anything model (SAM), by solely utilizing the information from the open-sourced SAM. \nIn contrast to prevailing transfer-based adversarial attacks, we demonstrate the existence of adversarial dangers even without accessing the downstream task and dataset to train a similar surrogate model.\nTo enhance the effectiveness of the adversarial attack towards models fine-tuned on unknown datasets, we propose a universal meta-initialization (UMI) algorithm to extract the intrinsic vulnerability inherent in the foundation model, which is then utilized as the prior knowledge to guide the generation of adversarial perturbations.\nMoreover, by formulating the gradient difference in the attacking process between the open-sourced SAM and its fine-tuned downstream models, we theoretically demonstrate that a deviation occurs in the adversarial update direction by directly maximizing the distance of encoded feature embeddings in the open-sourced SAM.\nConsequently, we propose a gradient robust loss that simulates the associated uncertainty with gradient-based noise augmentation to enhance the robustness of generated adversarial examples (AEs) towards this deviation, thus improving the transferability.\nExtensive experiments demonstrate the effectiveness of the proposed universal meta-initialized and gradient robust adversarial attack (UMI-GRAT) toward SAMs and their downstream models.\nCode is available at https://github.com/xiasong0501/GRAT.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Segment anything",
+    "Security of large fundation model",
+    "Transfer-based adversarial attack",
+    "Fine-tuning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=yDjojeIWO9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/57573eaf34a55e1f4cc6ab0db0b428f8ee35133a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The utilization of large foundational models has a dilemma: while fine-tuning downstream tasks from them holds promise for making use of the well-generalized knowledge in practical applications, their open accessibility also poses threats of adverse usage.\nThis paper, for the first time, explores th"
+  },
+  "collected_at": "2026-03-10T22:24:23.832Z"
+}

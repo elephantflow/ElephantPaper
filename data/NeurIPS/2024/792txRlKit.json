@@ -1,0 +1,36 @@
+{
+  "id": "792txRlKit",
+  "or_id": "792txRlKit",
+  "title": "DataStealing: Steal Data from Diffusion Models in Federated Learning with Multiple Trojans",
+  "title_zh": "",
+  "authors": [
+    "Yuan Gan",
+    "Jiaxu Miao",
+    "Yi Yang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Federated Learning (FL) is commonly used to collaboratively train models with privacy preservation. In this paper, we found out that the popular diffusion models have introduced a new vulnerability to FL, which brings serious privacy threats. Despite stringent data management measures, attackers can steal massive private data from local clients through multiple Trojans, which control generative behaviors with multiple triggers. We refer to the new task as ${\\bf\\textit{DataStealing}}$ and demonstrate that the attacker can achieve the purpose based on our proposed Combinatorial Triggers (ComboTs) in a vanilla FL system. However, advanced distance-based FL defenses are still effective in filtering the malicious update according to the distances between each local update. Hence, we propose an Adaptive Scale Critical Parameters (AdaSCP) attack to circumvent the defenses and seamlessly incorporate malicious updates into the global model. Specifically, AdaSCP evaluates the importance of parameters with the gradients in dominant timesteps of the diffusion model. Subsequently, it adaptively seeks the optimal scale factor and magnifies critical parameter updates before uploading to the server. As a result, the malicious update becomes similar to the benign update, making it difficult for distance-based defenses to identify. Extensive experiments reveal the risk of leaking thousands of images in training diffusion models with FL. Moreover, these experiments demonstrate the effectiveness of AdaSCP in defeating advanced distance-based defenses. We hope this work will attract more attention from the FL community to the critical privacy security issues of Diffusion Models. Code: https://github.com/yuangan/DataStealing.",
+  "abstract_zh": "",
+  "tldr": "This paper presents a new privacy vulnerability in training diffusion models with Federated Learning and proposes an adaptive Trojan attack to bypass advanced defenses and achieve DataStealing.",
+  "keywords": [
+    "Federated Learning",
+    "Diffusion Models",
+    "DataStealing",
+    "Multiple Trojans",
+    "Adaptive Scale"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=792txRlKit",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/61223f540ba47cae13875bfd5fe864082b18a8d4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper presents a new privacy vulnerability in training diffusion models with Federated Learning and proposes an adaptive Trojan attack to bypass advanced defenses and achieve DataStealing."
+  },
+  "collected_at": "2026-03-10T22:24:23.833Z"
+}
