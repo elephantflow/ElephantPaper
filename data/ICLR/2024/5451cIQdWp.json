@@ -1,0 +1,34 @@
+{
+  "id": "5451cIQdWp",
+  "or_id": "5451cIQdWp",
+  "title": "On Synthetic Data and Iterative Magnitude Pruning: a Linear Mode Connectivity Study",
+  "title_zh": "",
+  "authors": [
+    "Luke McDermott",
+    "Daniel Cummings"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Recent works have shown that distilled data representations can be leveraged for accelerating the training of DNNs. However, to date, very little is understood about the effect of these synthetic data representations in the area of architectural optimization, specifically with Iterative Magnitude Pruning (IMP) and pruning at initialization. We push the boundaries of pruning with distilled data, matching the performance of traditional IMP on ResNet-18 \\& CIFAR-10 while using 150x less training points to find a sparsity mask. We find that distilled data guides IMP to discard parameters contributing to the sharpness of the loss landscape, fostering smoother landscapes. These synthetic subnetworks are stable to SGD noise at initialization in settings when the dense model or subnetworks found with standard IMP are not, such as ResNet-10 on ImageNet-10. In other words, training from initialization across different shuffling of data will result in linear mode connectivity, a phenomenon which rarely happens without some pretraining. We visualize these loss landscapes and quantitatively measure sharpness through hessian approximations to understand these effects. This behavior is heavily linked to the compressed representation of the data, highlighting the importance of synthetic data in neural architectural validation. In order to find both a high performing and robust sparse architecture, a more optimal synthetic data representation is needed that can compress irrelevant noise like distilled data, yet better maintain task-specific information from the real data as dataset complexity increases.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Neural Network Pruning",
+    "Linear Mode Connectivity",
+    "Dataset Distillation",
+    "Sparse Neural Networks"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=5451cIQdWp",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5542f4da0325eea1490db0db38522082a4710d5e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Recent works have shown that distilled data representations can be leveraged for accelerating the training of DNNs. However, to date, very little is understood about the effect of these synthetic data representations in the area of architectural optimization, specifically with Iterative Magnitude Pr"
+  },
+  "collected_at": "2026-03-10T23:04:24.762Z"
+}

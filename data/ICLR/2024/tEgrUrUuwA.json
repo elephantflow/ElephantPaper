@@ -1,0 +1,37 @@
+{
+  "id": "tEgrUrUuwA",
+  "or_id": "tEgrUrUuwA",
+  "title": "Partitioning Message Passing for Graph Fraud Detection",
+  "title_zh": "",
+  "authors": [
+    "Wei Zhuo",
+    "Zemin Liu",
+    "Bryan Hooi",
+    "Bingsheng He",
+    "Guang Tan",
+    "Rizal Fathony",
+    "Jia Chen"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Label imbalance and homophily-heterophily mixture are the fundamental problems encountered when applying Graph Neural Networks (GNNs) to Graph Fraud Detection (GFD) tasks. Existing GNN-based GFD models are designed to augment graph structure to accommodate the inductive bias of GNNs towards homophily, by excluding heterophilic neighbors during message passing. In our work, we argue that the key to applying GNNs for GFD is not to exclude but to {\\em distinguish} neighbors with different labels. Grounded in this perspective, we introduce Partitioning Message Passing (PMP), an intuitive yet effective message passing paradigm expressly crafted for GFD. Specifically, in the neighbor aggregation stage of PMP, neighbors with different classes are aggregated with distinct node-specific aggregation functions. By this means, the center node can adaptively adjust the information aggregated from its heterophilic and homophilic neighbors, thus avoiding the model gradient being dominated by benign nodes which occupy the majority of the population. We theoretically establish a connection between the spatial formulation of PMP and spectral analysis to characterize that PMP operates an adaptive node-specific spectral graph filter, which demonstrates the capability of PMP to handle heterophily-homophily mixed graphs. Extensive experimental results show that PMP can significantly boost the performance on GFD tasks.",
+  "abstract_zh": "",
+  "tldr": "Applyiing GNNs on fraud detection by distinguishing neighbors during message passing.",
+  "keywords": [
+    "Graph Neural Networks",
+    "Fraud Detection"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=tEgrUrUuwA",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7abe6053f04ef235ce8ddd5996dd27e266c6e058.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Applyiing GNNs on fraud detection by distinguishing neighbors during message passing."
+  },
+  "collected_at": "2026-03-10T23:04:24.762Z"
+}

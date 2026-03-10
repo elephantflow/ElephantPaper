@@ -1,0 +1,35 @@
+{
+  "id": "1zhM0XkQh0",
+  "or_id": "1zhM0XkQh0",
+  "title": "ProFeAT: Projected Feature Adversarial Training for Self-Supervised Learning of Robust Representations",
+  "title_zh": "",
+  "authors": [
+    "Sravanti Addepalli",
+    "Priyam Dey",
+    "Venkatesh Babu Radhakrishnan"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Supervised adversarial training has been the most successful approach for improving the robustness of Deep Neural Networks against adversarial attacks. While several recent works have attempted to overcome the need for supervision or labeled training data by integrating adversarial training with contrastive Self-Supervised Learning (SSL) approaches such as SimCLR, their performance has been sub-optimal due to the increased training complexity. A recent approach mitigates this by utilizing supervision from a standard self-supervised trained model in a teacher-student setting that mimics supervised adversarial training. However, we find that there is still a large gap in performance when compared to supervised training, specifically on larger capacity models. We show that this is a result of mismatch in training objectives of the teacher and student, and propose Projected Feature Adversarial Training (ProFeAT) to bridge this gap by using a projection head in the adversarial training step. We further propose appropriate attack and defense losses at the feature and projector spaces, coupled with a  combination of weak and strong augmentations for the teacher and student respectively, to improve generalization without increasing the training complexity. We demonstrate significant improvements in performance when compared to existing SSL methods, and performance on par with TRADES, a popular supervised adversarial training method, on several benchmark datasets and models.",
+  "abstract_zh": "",
+  "tldr": "ProFeAT bridges the performance gap between self-supervised and supervised adversarial training methods by introducing a projection head alongside appropriate training losses and augmentations in a distillation framework.",
+  "keywords": [
+    "Self-supervised Adversarial Training",
+    "Adversarial Training",
+    "Adversarial Robustness",
+    "Contrastive Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=1zhM0XkQh0",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6c3cb3eee4c6549818e55c655664e2315218ed17.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "ProFeAT bridges the performance gap between self-supervised and supervised adversarial training methods by introducing a projection head alongside appropriate training losses and augmentations in a distillation framework."
+  },
+  "collected_at": "2026-03-10T23:04:24.763Z"
+}

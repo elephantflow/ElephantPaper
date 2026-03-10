@@ -1,0 +1,38 @@
+{
+  "id": "lhZEodF8Dn",
+  "or_id": "lhZEodF8Dn",
+  "title": "Efficient Denoising Diffusion via Probabilistic Masking",
+  "title_zh": "",
+  "authors": [
+    "Zhiwei Zhang",
+    "Renjie Pi",
+    "Zhongming Jin",
+    "Yuan Gao",
+    "Jieping Ye",
+    "Kani Chen",
+    "WEIZHONG ZHANG"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Diffusion models have exhibited remarkable advancements in generating high-quality data. However, a critical drawback of these models is their computationally intensive inference process, which requires a large number of timesteps to generate a single sample. Existing methods address this challenge by decoupling the forward and reverse processes, and they rely on handcrafted rules (e.g., uniform skipping) for sampling acceleration, leading to the risk of discarding important steps and deviating from the optimal trajectory. In this paper, we propose an Efficient Denoising Diffusion method via Probabilistic Masking (EDDPM) that can identify and skip the redundant steps during training. To determine whether a timestep should be skipped or not, we employ probabilistic reparameterization to continualize the binary determination mask. The mask distribution parameters are learned jointly with the diffusion model weights. By incorporating a real-time sparse constraint, our method can effectively identify and eliminate unnecessary steps during the training iterations, thereby improving inference efficiency. Notably, as the model becomes fully trained, the random masks converge to a sparse and deterministic one, retaining only a small number of essential steps. Empirical results demonstrate the superiority of our proposed EDDPM over the state-of-the-art sampling acceleration methods across various domains. EDDPM can generate high-quality samples with only 20\\% of the  steps for time series imputation and achieve 4.89 FID with 5 steps for CIFAR-10. Moreover, when starting from a pretrained model, our method efficiently identifies the most informative timesteps within a single epoch, which demonstrates the potential of EDDPM to be a practical tool to explore large diffusion models with limited resources.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Diffusion Model",
+    "Sparse Training",
+    "Model Compression"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=lhZEodF8Dn",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/314846653be1b09845b92742993b952bf9d09b7e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Diffusion models have exhibited remarkable advancements in generating high-quality data. However, a critical drawback of these models is their computationally intensive inference process, which requires a large number of timesteps to generate a single sample. Existing methods address this challenge "
+  },
+  "collected_at": "2026-03-10T23:04:24.763Z"
+}
