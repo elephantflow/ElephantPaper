@@ -1,0 +1,44 @@
+{
+  "id": "ybHPzL7eYT",
+  "or_id": "ybHPzL7eYT",
+  "title": "Large Spatial Model: End-to-end Unposed Images to Semantic 3D",
+  "title_zh": "",
+  "authors": [
+    "Zhiwen Fan",
+    "Jian Zhang",
+    "Wenyan Cong",
+    "Peihao Wang",
+    "Renjie Li",
+    "Kairun Wen",
+    "Shijie Zhou",
+    "Achuta Kadambi",
+    "Zhangyang Wang",
+    "Danfei Xu",
+    "Boris Ivanovic",
+    "Marco Pavone",
+    "Yue Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Reconstructing and understanding 3D structures from a limited number of images is a classical problem in computer vision. Traditional approaches typically decompose this task into multiple subtasks, involving several stages of complex mappings between different data representations. For example, dense reconstruction using Structure-from-Motion (SfM) requires transforming images into key points, optimizing camera parameters, and estimating structures. Following this, accurate sparse reconstructions are necessary for further dense modeling, which is then input into task-specific neural networks. This multi-stage paradigm leads to significant processing times and engineering complexity.\n\nIn this work, we introduce the Large Spatial Model (LSM), which directly processes unposed RGB images into semantic radiance fields. LSM simultaneously estimates geometry, appearance, and semantics in a single feed-forward pass and can synthesize versatile label maps by interacting through language at novel views. Built on a general Transformer-based framework, LSM predicts global geometry via pixel-aligned point maps. To improve spatial attribute regression, we adopt local context aggregation with multi-scale fusion, enhancing the accuracy of fine local details. To address the scarcity of labeled 3D semantic data and enable natural language-driven scene manipulation, we incorporate a pre-trained 2D language-based segmentation model into a 3D-consistent semantic feature field. An efficient decoder parameterizes a set of semantic anisotropic Gaussians, allowing supervised end-to-end learning. Comprehensive experiments on various tasks demonstrate that LSM unifies multiple 3D vision tasks directly from unposed images, achieving real-time semantic 3D reconstruction for the first time.",
+  "abstract_zh": "",
+  "tldr": "We propose a method that utilizes two unposed and uncalibrated images as input, and reconstructs the explicit radiance field, encompassing geometry, appearance, and semantics in real-time.",
+  "keywords": [
+    "3D Reconstruction",
+    "3D Scene Understanding",
+    "Gaussian Splatting"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ybHPzL7eYT",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ee1ddc8c08fa974be5694c1cffee72f12da261ad.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a method that utilizes two unposed and uncalibrated images as input, and reconstructs the explicit radiance field, encompassing geometry, appearance, and semantics in real-time."
+  },
+  "collected_at": "2026-03-10T14:41:35.033Z"
+}

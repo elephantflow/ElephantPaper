@@ -1,0 +1,37 @@
+{
+  "id": "xSziO6gQgG",
+  "or_id": "xSziO6gQgG",
+  "title": "Implicit Optimization Bias of Next-token Prediction in Linear Models",
+  "title_zh": "",
+  "authors": [
+    "Christos Thrampoulidis"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We initiate an investigation into the optimization properties of next-token prediction (NTP), the dominant training paradigm for modern language models. Specifically, we study the structural properties of the solutions selected by gradient-based optimizers among the many possible minimizers of the NTP objective. By framing NTP as cross-entropy minimization  across \\emph{distinct} contexts, each tied with a \\emph{sparse}  conditional probability distribution across a finite vocabulary of tokens, we introduce ``NTP-separability conditions'' that enable reaching the data-entropy lower bound. With this setup, and focusing on linear models with fixed context embeddings, we characterize the optimization bias of gradient descent (GD): Within the data subspace defined by the sparsity patterns of distinct contexts, GD selects parameters that equate the logits' differences of in-support tokens to their log-odds. In the orthogonal subspace, the GD parameters diverge in norm and select the direction that maximizes a margin specific to NTP. These findings extend previous research on implicit bias in one-hot classification to the NTP setting, highlighting key differences and prompting further research into the optimization and generalization properties of NTP, irrespective of the specific architecture used to generate the context embeddings.",
+  "abstract_zh": "",
+  "tldr": "By framing next-token prediction training as sparse soft-label classification, we characterize the implicit optimization biases of gradient descent in language models trained to achieve their entropy lower bound.",
+  "keywords": [
+    "entropy",
+    "gradient descent",
+    "SVM",
+    "next-token prediction",
+    "linear models",
+    "separability",
+    "language models",
+    "word embeddings"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=xSziO6gQgG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/174e95ac9c3ffa8d220ddbe8561c2d8a3a48c25e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "By framing next-token prediction training as sparse soft-label classification, we characterize the implicit optimization biases of gradient descent in language models trained to achieve their entropy lower bound."
+  },
+  "collected_at": "2026-03-10T14:41:35.034Z"
+}

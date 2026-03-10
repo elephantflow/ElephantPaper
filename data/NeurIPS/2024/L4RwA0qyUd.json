@@ -1,0 +1,35 @@
+{
+  "id": "L4RwA0qyUd",
+  "or_id": "L4RwA0qyUd",
+  "title": "Proximal Causal Inference With Text Data",
+  "title_zh": "",
+  "authors": [
+    "Jacob M. Chen",
+    "Rohit Bhattacharya",
+    "Katherine A. Keith"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recent text-based causal methods attempt to mitigate confounding bias by estimating proxies of confounding variables that are partially or imperfectly measured from unstructured text data. These approaches, however, assume analysts have supervised labels of the confounders given text for a subset of instances, a constraint that is sometimes infeasible due to data privacy or annotation costs. In this work, we address settings in which an important confounding variable is completely unobserved. We propose a new causal inference method that uses two instances of pre-treatment text data, infers two proxies using two zero-shot models on the separate instances, and applies these proxies in the proximal g-formula. We prove, under certain assumptions about the instances of text and accuracy of the zero-shot predictions, that our method of inferring text-based proxies satisfies identification conditions of the proximal g-formula while other seemingly reasonable proposals do not. To address untestable assumptions associated with our method and the proximal g-formula, we further propose an odds ratio falsification heuristic that flags when to proceed with downstream effect estimation using the inferred proxies. We evaluate our method in synthetic and semi-synthetic settings---the latter with real-world clinical notes from MIMIC-III and open large language models for zero-shot prediction---and find that our method produces estimates with low bias. We believe that this text-based design of proxies allows for the use of proximal causal inference in a wider range of scenarios, particularly those for which obtaining suitable proxies from structured data is difficult.",
+  "abstract_zh": "",
+  "tldr": "We propose a new causal inference method that infers valid proxies from unstructured text data for proximal causal inference.",
+  "keywords": [
+    "proximal causal inference",
+    "directed acyclic graphs",
+    "electronic health records",
+    "causal inference"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=L4RwA0qyUd",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0b66e866067ce02be0fd5a73f12ff0ac335a4cdf.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a new causal inference method that infers valid proxies from unstructured text data for proximal causal inference."
+  },
+  "collected_at": "2026-03-10T14:41:35.034Z"
+}

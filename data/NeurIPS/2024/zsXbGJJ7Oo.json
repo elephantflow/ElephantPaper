@@ -1,0 +1,36 @@
+{
+  "id": "zsXbGJJ7Oo",
+  "or_id": "zsXbGJJ7Oo",
+  "title": "G2D: From Global to Dense Radiography Representation Learning via Vision-Language Pre-training",
+  "title_zh": "",
+  "authors": [
+    "Che Liu",
+    "Cheng Ouyang",
+    "Sibo Cheng",
+    "Anand Shah",
+    "Wenjia Bai",
+    "Rossella Arcucci"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Medical imaging tasks require an understanding of subtle and localized visual features due to the inherently detailed and area-specific nature of pathological patterns, which are crucial for clinical diagnosis. Although recent advances in medical vision-language pre-training (VLP) enable models to learn clinically relevant visual features by leveraging both medical images and their associated radiology reports, current medical VLP methods primarily focus on aligning images with entire reports. This focus hinders the learning of dense (pixel-level) visual features and is suboptimal for dense prediction tasks (e.g., medical image segmentation).\n\nTo address this challenge, we propose a novel medical VLP framework, named **Global to Dense level representation learning (G2D)**, which aims to learn global and dense visual features simultaneously using only image-text pairs without extra annotations. In particular, G2D designs a **Pseudo Segmentation (PS)** task, which enables the model to learn dense visual features during VLP. Notably, generating PS masks can be performed on the fly during VLP, which does not incur extra trainable parameters. With this simple yet effective idea, G2D achieves superior performance across 5 medical imaging tasks and 25 diseases. Particularly, in the segmentation task which requires dense visual features, **G2D surpasses existing models even with just 1% of the training data for finetuning, compared to 100% used by other models**. The code can be found in https://github.com/cheliu-computation/G2D-NeurIPS24/tree/main.",
+  "abstract_zh": "",
+  "tldr": "We propose G2D, a novel medical VLP framework that learns global and dense visual features solely from image-text pairs, outperforming existing methods even with only 1% of the training data compared to their use of 100%.",
+  "keywords": [
+    "Medical Vision-Language Pre-training",
+    "dense visual learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=zsXbGJJ7Oo",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/266314e449f23eb30c332e9f0688da33556f643c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose G2D, a novel medical VLP framework that learns global and dense visual features solely from image-text pairs, outperforming existing methods even with only 1% of the training data compared to their use of 100%."
+  },
+  "collected_at": "2026-03-10T14:41:35.034Z"
+}

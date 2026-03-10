@@ -1,0 +1,34 @@
+{
+  "id": "WH5blx5tZ1",
+  "or_id": "WH5blx5tZ1",
+  "title": "Large Scale Transfer Learning for Tabular Data  via Language Modeling",
+  "title_zh": "",
+  "authors": [
+    "Joshua P Gardner",
+    "Juan Carlos Perdomo",
+    "Ludwig Schmidt"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Tabular data – structured, heterogeneous, spreadsheet-style data with rows and columns – is widely used in practice across many domains. However, while recent foundation models have reduced the need for developing task-specific datasets and predictors in domains such as language modeling and computer vision, this transfer learning paradigm has not had similar impact in the tabular domain. In this work, we seek to narrow this gap and present TABULA-8B, a language model for tabular prediction. We define a process for extracting a large, high-quality training dataset from the TabLib corpus, proposing methods for tabular data filtering and quality control. Using the resulting dataset, which comprises over 2.1B rows from 4.2M unique tables, we fine-tune a Llama 3-8B large language model (LLM) for tabular data prediction (classification and binned regression) using a novel packing and attention scheme for tabular prediction. Through evaluation across a test suite of 329 datasets, we find that TABULA-8B has zero-shot accuracy on unseen tables that is over 15 percentage points (pp) higher than random guessing, a feat that is not possible with existing state-of-the-art tabular prediction models (e.g. XGBoost, TabPFN). In the few-shot setting (1-32 shots), without any fine-tuning on the target datasets, TABULA-8B is 5-15 pp more accurate than XGBoost and TabPFN models that are explicitly trained on equal, or even up to 16× more data. We release our model, code, and data along with the publication of this paper.",
+  "abstract_zh": "",
+  "tldr": "We introduce a new model and training dataset for transfer learning on tabular data that achieves strong zero- and few-shot accuracy across 300 tabular benchmark datasets",
+  "keywords": [
+    "tabular",
+    "foundation model",
+    "language model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=WH5blx5tZ1",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/43927250681c0a0037ece3a72e51d375046e2152.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce a new model and training dataset for transfer learning on tabular data that achieves strong zero- and few-shot accuracy across 300 tabular benchmark datasets"
+  },
+  "collected_at": "2026-03-10T14:41:35.035Z"
+}
