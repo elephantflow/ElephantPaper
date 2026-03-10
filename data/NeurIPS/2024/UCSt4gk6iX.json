@@ -1,0 +1,40 @@
+{
+  "id": "UCSt4gk6iX",
+  "or_id": "UCSt4gk6iX",
+  "title": "3D Gaussian Splatting as Markov Chain Monte Carlo",
+  "title_zh": "",
+  "authors": [
+    "Shakiba Kheradmand",
+    "Daniel Rebain",
+    "Gopal Sharma",
+    "Weiwei Sun",
+    "Yang-Che Tseng",
+    "Hossam Isack",
+    "Abhishek Kar",
+    "Andrea Tagliasacchi",
+    "Kwang Moo Yi"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "While 3D Gaussian Splatting has recently become popular for neural rendering, current methods rely on carefully engineered cloning and splitting strategies for placing Gaussians, which does not always generalize and may lead to poor-quality renderings. For many real-world scenes this leads to their heavy dependence on good initializations. In this work, we rethink the set of 3D Gaussians as a random sample drawn from an underlying probability distribution describing the physical representation of the scene—in other words, Markov Chain Monte Carlo (MCMC) samples. Under this view, we show that the 3D Gaussian updates can be converted as Stochastic Gradient Langevin Dynamics (SGLD) update by simply introducing noise. We then rewrite the densification and pruning strategies in 3D Gaussian Splatting as simply a deterministic state transition of MCMC samples, removing these heuristics from the framework. To do so, we revise the ‘cloning’ of Gaussians into a relocalization scheme that approximately preserves sample probability. To encourage efficient use of Gaussians, we introduce an L1-regularizer on the Gaussians. On various standard evaluation scenes, we show that our method provides improved rendering quality, easy control over the number of Gaussians, and robustness to initialization. The project website is available at https://3dgs-mcmc.github.io/.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Novel View Synthesis",
+    "3D Gaussian Splatting"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=UCSt4gk6iX",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/178046bf1115afd62e70f5e880b7b1c05069e093.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "While 3D Gaussian Splatting has recently become popular for neural rendering, current methods rely on carefully engineered cloning and splitting strategies for placing Gaussians, which does not always generalize and may lead to poor-quality renderings. For many real-world scenes this leads to their heavy dependence on good initializations. In this work, we rethink the set of 3D Gaussians as a rand"
+  },
+  "collected_at": "2026-03-10T11:21:28.725Z"
+}
