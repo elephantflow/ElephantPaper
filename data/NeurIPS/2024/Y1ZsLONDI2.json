@@ -1,0 +1,33 @@
+{
+  "id": "Y1ZsLONDI2",
+  "or_id": "Y1ZsLONDI2",
+  "title": "Soft ascent-descent as a stable and flexible alternative to flooding",
+  "title_zh": "",
+  "authors": [
+    "Matthew J. Holland",
+    "Kosuke Nakatani"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "As a heuristic for improving test accuracy in classification, the \"flooding\" method proposed by Ishida et al. (2020) sets a threshold for the average surrogate loss at training time; above the threshold, gradient descent is run as usual, but below the threshold, a switch to gradient *ascent* is made. While setting the threshold is non-trivial and is usually done with validation data, this simple technique has proved remarkably effective in terms of accuracy. On the other hand, what if we are also interested in other metrics such as model complexity or average surrogate loss at test time? As an attempt to achieve better overall performance with less fine-tuning, we propose a softened, pointwise mechanism called SoftAD (soft ascent-descent) that downweights points on the borderline, limits the effects of outliers, and retains the ascent-descent effect of flooding, with no additional computational overhead. We contrast formal stationarity guarantees with those for flooding, and empirically demonstrate how SoftAD can realize classification accuracy competitive with flooding (and the more expensive alternative SAM) while enjoying a much smaller loss generalization gap and model norm.",
+  "abstract_zh": "",
+  "tldr": "We propose and study a learning algorithm that encourages training losses to concentrate around a pre-fixed threshold.",
+  "keywords": [
+    "Flooding",
+    "classification",
+    "ascent-descent"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Y1ZsLONDI2",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/951f259f1b33272b545627df94924cce29f1e376.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose and study a learning algorithm that encourages training losses to concentrate around a pre-fixed threshold."
+  },
+  "collected_at": "2026-03-10T16:21:39.317Z"
+}

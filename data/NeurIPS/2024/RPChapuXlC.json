@@ -1,0 +1,36 @@
+{
+  "id": "RPChapuXlC",
+  "or_id": "RPChapuXlC",
+  "title": "Lisa: Lazy Safety Alignment for Large Language Models against Harmful Fine-tuning Attack",
+  "title_zh": "",
+  "authors": [
+    "Tiansheng Huang",
+    "Sihao Hu",
+    "Fatih Ilhan",
+    "Selim Furkan Tekin",
+    "Ling Liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recent studies show that Large Language Models (LLMs) with safety alignment can be jail-broken by fine-tuning on a dataset mixed with harmful data. For the first time in the literature, we show that the jail-break effect can be mitigated by separating two states in the fine-tuning stage to respectively optimize over the alignment and user datasets. Unfortunately, our subsequent study shows that this simple Bi-State Optimization (BSO) solution experiences convergence instability when steps invested in its alignment state is too small, leading to downgraded alignment performance. By statistical analysis, we show that the \\textit{excess drift} towards the switching iterates of the two states could be a probable reason for the instability. To remedy this issue, we propose \\textbf{L}azy(\\textbf{i}) \\textbf{s}afety \\textbf{a}lignment (\\textbf{Lisa}), which introduces a proximal term to constraint the drift of each state. Theoretically, the benefit of the proximal term is supported by the convergence analysis, wherein we show that a sufficient large proximal factor is necessary to guarantee Lisa's convergence.   Empirically, our results on four downstream fine-tuning tasks show that Lisa with a proximal term can significantly increase alignment performance while maintaining the LLM's accuracy on the user tasks.  Code is available at https://github.com/git-disl/Lisa.",
+  "abstract_zh": "",
+  "tldr": "This paper proposes a lazy safety alignment against harmful finetuning attack in Large language models.",
+  "keywords": [
+    "Large language model",
+    "safety alignment",
+    "harmful finetuning attack"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=RPChapuXlC",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fa55c75e7e028109e0278fcd68fa3c20db53aa8d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper proposes a lazy safety alignment against harmful finetuning attack in Large language models."
+  },
+  "collected_at": "2026-03-10T16:21:39.316Z"
+}

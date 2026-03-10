@@ -1,0 +1,40 @@
+{
+  "id": "04EC4ZnZJj",
+  "or_id": "04EC4ZnZJj",
+  "title": "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers",
+  "title_zh": "",
+  "authors": [
+    "Ning Ding",
+    "Yehui Tang",
+    "Haochen Qin",
+    "Zhenli Zhou",
+    "Chao Xu",
+    "Lin Li",
+    "Kai Han",
+    "Liao Heng",
+    "Yunhe Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In order to reduce the computational complexity of large language models, great efforts have been made to to improve the efficiency of transformer models such as linear attention and flash-attention. However, the model size and corresponding computational complexity are constantly scaled up in pursuit of higher performance. In this work, we present MemoryFormer, a novel transformer architecture which significantly reduces the computational complexity (FLOPs) from a new perspective.  We eliminate nearly all the computations of the transformer model except for the necessary computation required by the multi-head attention operation. This is made possible by utilizing an alternative method for feature transformation to replace the linear projection of fully-connected layers. Specifically, we first construct a group of in-memory lookup tables that store a large amount of discrete vectors to replace the weight matrix used in linear projection. We then use a hash algorithm to retrieve a correlated subset of vectors dynamically based on the input embedding. The retrieved vectors combined together will form the output embedding, which provides an estimation of the result of matrix multiplication operation in a fully-connected layer. Compared to conducting matrix multiplication, retrieving data blocks from memory is a much cheaper operation which requires little computations. We train MemoryFormer from scratch and conduct extensive experiments on various benchmarks to demonstrate the effectiveness of the proposed model.",
+  "abstract_zh": "",
+  "tldr": "Use \"retrieving-from-lookup-tables\" operation which has near-zero FLOPs to replace the matrix multiplication used in fully-connected layer to greatly reduce the computational complexity of transformer models.",
+  "keywords": [
+    "transformer architecture",
+    "large language model",
+    "computational complexity reduction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=04EC4ZnZJj",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3182fbee67403ec98f7f114ce0d5398a511c94cf.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Use \"retrieving-from-lookup-tables\" operation which has near-zero FLOPs to replace the matrix multiplication used in fully-connected layer to greatly reduce the computational complexity of transformer models."
+  },
+  "collected_at": "2026-03-10T16:21:39.320Z"
+}

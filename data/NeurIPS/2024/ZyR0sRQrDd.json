@@ -1,0 +1,38 @@
+{
+  "id": "ZyR0sRQrDd",
+  "or_id": "ZyR0sRQrDd",
+  "title": "OPUS: Occupancy Prediction Using a Sparse Set",
+  "title_zh": "",
+  "authors": [
+    "JiaBao Wang",
+    "Zhaojiang Liu",
+    "Qiang Meng",
+    "Liujiang Yan",
+    "Ke Wang",
+    "JIE YANG",
+    "Wei Liu",
+    "Qibin Hou",
+    "Ming-Ming Cheng"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Occupancy prediction, aiming at predicting the occupancy status within voxelized 3D environment, is quickly gaining momentum within the autonomous driving community. Mainstream occupancy prediction works first discretize the 3D environment into voxels, then perform classification on such dense grids. However, inspection on sample data reveals that the vast majority of voxels is unoccupied. Performing classification on these empty voxels demands suboptimal computation resource allocation, and reducing such empty voxels necessitates complex algorithm designs. To this end, we present a novel perspective on the occupancy prediction task: formulating it as a streamlined set prediction paradigm without the need for explicit space modeling or complex sparsification procedures. Our proposed framework, called OPUS, utilizes a transformer encoder-decoder architecture to simultaneously predict occupied locations and classes using a set of learnable queries. Firstly, we employ the Chamfer distance loss to scale the set-to-set comparison problem to unprecedented magnitudes, making training such model end-to-end a reality. Subsequently, semantic classes are adaptively assigned using nearest neighbor search based on the learned locations. In addition, OPUS incorporates a suite of non-trivial strategies to enhance model performance, including coarse-to-fine learning, consistent point sampling, and adaptive re-weighting, etc. Finally, compared with current state-of-the-art methods, our lightest model achieves superior RayIoU on the Occ3D-nuScenes dataset at near 2x FPS, while our heaviest model surpasses previous best results by 6.1 RayIoU.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Occupancy Prediction; 3D Perception; Transformer"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ZyR0sRQrDd",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9bc95b7b8108f0b381e0120ce85262d9ef7570a2.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Occupancy prediction, aiming at predicting the occupancy status within voxelized 3D environment, is quickly gaining momentum within the autonomous driving community. Mainstream occupancy prediction works first discretize the 3D environment into voxels, then perform classification on such dense grids"
+  },
+  "collected_at": "2026-03-10T16:21:39.315Z"
+}
