@@ -1,0 +1,33 @@
+{
+  "id": "SXbyy0a3rY",
+  "or_id": "SXbyy0a3rY",
+  "title": "GrounDiT: Grounding Diffusion Transformers via Noisy Patch Transplantation",
+  "title_zh": "",
+  "authors": [
+    "Yuseung Lee",
+    "TaeHoon Yoon",
+    "Minhyuk Sung"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We introduce GrounDiT, a novel training-free spatial grounding technique for text-to-image generation using Diffusion Transformers (DiT). Spatial grounding with bounding boxes has gained attention for its simplicity and versatility, allowing for enhanced user control in image generation. However, prior training-free approaches often rely on updating the noisy image during the reverse diffusion process via backpropagation from custom loss functions, which frequently struggle to provide precise control over individual bounding boxes. In this work, we leverage the flexibility of the Transformer architecture, demonstrating that DiT can generate noisy patches corresponding to each bounding box, fully encoding the target object and allowing for fine-grained control over each region. Our approach builds on an intriguing property of DiT, which we refer to as semantic sharing. Due to semantic sharing, when a smaller patch is jointly denoised alongside a generatable-size image, the two become semantic clones. Each patch is denoised in its own branch of the generation process and then transplanted into the corresponding region of the original noisy image at each timestep, resulting in robust spatial grounding for each bounding box. In our experiments on the HRS and DrawBench benchmarks, we achieve state-of-the-art performance compared to previous training-free approaches. Project Page: https://groundit-diffusion.github.io/.",
+  "abstract_zh": "",
+  "tldr": "We introduce a novel training-free approach for bounding box-based image generation leveraging the semantic sharing properties of Diffusion Transformers.",
+  "keywords": [
+    "Text-to-Image Generation",
+    "Visual Grounding"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=SXbyy0a3rY",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5f41a28a6da94a036c8b0e1287ce2e32ed965cce.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce a novel training-free approach for bounding box-based image generation leveraging the semantic sharing properties of Diffusion Transformers."
+  },
+  "collected_at": "2026-03-10T18:21:27.839Z"
+}

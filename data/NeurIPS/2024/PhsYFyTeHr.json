@@ -1,0 +1,37 @@
+{
+  "id": "PhsYFyTeHr",
+  "or_id": "PhsYFyTeHr",
+  "title": "ENAT: Rethinking Spatial-temporal Interactions in Token-based Image Synthesis",
+  "title_zh": "",
+  "authors": [
+    "Zanlin Ni",
+    "Yulin Wang",
+    "Renping Zhou",
+    "Yizeng Han",
+    "Jiayi Guo",
+    "Zhiyuan Liu",
+    "Yuan Yao",
+    "Gao Huang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recently, token-based generation approaches have demonstrated their effectiveness in synthesizing visual content. As a representative example, non-autoregressive Transformers (NATs) can generate decent-quality images in just a few steps. NATs perform generation in a progressive manner, where the latent tokens of a resulting image are incrementally revealed step-by-step. At each step, the unrevealed image regions are padded with [MASK] tokens and inferred by NAT, with the most reliable predictions preserved as newly revealed, visible tokens. In this paper, we delve into understanding the mechanisms behind the effectiveness of NATs and uncover two important interaction patterns that naturally emerge from NAT’s paradigm: Spatially (within a step), although [MASK] and visible tokens are processed uniformly by NATs, the interactions between them are highly asymmetric. In specific, [MASK] tokens mainly gather information for decoding. On the contrary, visible tokens tend to primarily provide information, and their deep representations can be built only upon themselves. Temporally (across steps), the interactions between adjacent generation steps mostly concentrate on updating the representations of a few critical tokens, while the computation for the majority of tokens is generally repetitive. Driven by these findings, we propose EfficientNAT (ENAT), a NAT model that explicitly encourages these critical interactions inherent in NATs. At the spatial level, we disentangle the computations of visible and [MASK] tokens by encoding visible tokens independently, while decoding [MASK] tokens conditioned on the fully encoded visible tokens. At the temporal level, we prioritize the computation of the critical tokens at each step, while maximally reusing previously computed token representations to supplement necessary information. ENAT improves the performance of NATs notably with significantly reduced computational cost. Experiments on ImageNet-256 2 & 512 2 and MS-COCO validate ",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Token-based Generation; Non-autoregressive Transformers"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=PhsYFyTeHr",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/78a7b4a305548083b1b20912d1ab565c09cfe1d8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Recently, token-based generation approaches have demonstrated their effectiveness in synthesizing visual content. As a representative example, non-autoregressive Transformers (NATs) can generate decent-quality images in just a few steps. NATs perform generation in a progressive manner, where the lat"
+  },
+  "collected_at": "2026-03-10T18:21:27.840Z"
+}
