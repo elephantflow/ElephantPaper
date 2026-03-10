@@ -1,0 +1,37 @@
+{
+  "id": "ACCqGLviig",
+  "or_id": "ACCqGLviig",
+  "title": "Vector Quantization Prompting for Continual Learning",
+  "title_zh": "",
+  "authors": [
+    "Li Jiao",
+    "Qiuxia Lai",
+    "YU LI",
+    "Qiang Xu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Continual learning requires to overcome catastrophic forgetting when training a single model on a sequence of tasks.   Recent top-performing approaches are prompt-based methods that utilize a set of learnable parameters (i.e., prompts) to encode task knowledge, from which appropriate ones are selected to guide the fixed pre-trained model in generating features tailored to a certain task. However, existing methods rely on predicting prompt identities for prompt selection, where the identity prediction process cannot be optimized with task loss. This limitation leads to sub-optimal prompt selection and inadequate adaptation of pre-trained features for a specific task. Previous efforts have tried to address this by directly generating prompts from input queries instead of selecting from a set of candidates. However, these prompts are continuous, which lack sufficient abstraction for task knowledge representation, making them less effective for continual learning. To address these challenges, we propose VQ-Prompt, a prompt-based continual learning method that incorporates Vector Quantization (VQ) into end-to-end training of a set of discrete prompts.  In this way, VQ-Prompt can optimize the prompt selection process with task loss and meanwhile achieve effective abstraction of task knowledge for continual learning. Extensive experiments show that VQ-Prompt outperforms state-of-the-art continual learning methods across a variety of benchmarks under the challenging class-incremental setting.",
+  "abstract_zh": "",
+  "tldr": "This study focuses on one critical deficiency inherent in current prompt-based continual learning methods, i.e., the end-to-end optimization of prompt selection with task loss while keeping its discrete nature as task knowledge representation.",
+  "keywords": [
+    "continual learning",
+    "incremental learning",
+    "life-long learning",
+    "image classification",
+    "deep learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ACCqGLviig",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fe56049dfd050804f643de97820660c0ab7ace62.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This study focuses on one critical deficiency inherent in current prompt-based continual learning methods, i.e., the end-to-end optimization of prompt selection with task loss while keeping its discrete nature as task knowledge representation."
+  },
+  "collected_at": "2026-03-10T11:01:33.500Z"
+}
