@@ -1,0 +1,34 @@
+{
+  "id": "89fSR2gpxp",
+  "or_id": "89fSR2gpxp",
+  "title": "Offline Behavior Distillation",
+  "title_zh": "",
+  "authors": [
+    "Shiye Lei",
+    "Sen Zhang",
+    "Dacheng Tao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Massive reinforcement learning (RL) data are typically collected to train policies offline without the need for interactions, but the large data volume can cause training inefficiencies. To tackle this issue, we formulate offline behavior distillation (OBD), which synthesizes limited expert behavioral data from sub-optimal RL data, enabling rapid policy learning. We propose two naive OBD objectives, DBC and PBC, which measure distillation performance via the decision difference between policies trained on distilled data and either offline data or a near-expert policy. Due to intractable bi-level optimization, the OBD objective is difficult to minimize to small values, which deteriorates PBC by its distillation performance guarantee with quadratic discount complexity $\\mathcal{O}(1/(1-\\gamma)^2)$. We theoretically establish the equivalence between the policy performance and action-value weighted decision difference, and introduce action-value weighted PBC (Av-PBC) as a more effective OBD objective. By optimizing the weighted decision difference, Av-PBC achieves a superior distillation guarantee with linear discount complexity $\\mathcal{O}(1/(1-\\gamma))$. Extensive experiments on multiple D4RL datasets reveal that Av-PBC offers significant improvements in OBD performance, fast distillation convergence speed, and robust cross-architecture/optimizer generalization.",
+  "abstract_zh": "",
+  "tldr": "We distill a large offline RL dataset into a few expert behavioral dataset for rapid policy learning.",
+  "keywords": [
+    "Efficient Deep Learning",
+    "Dataset Distillation",
+    "Offline Reinforcement Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=89fSR2gpxp",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/01ac06766484d1c8d8849a0b6ad390eccfb98ea0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We distill a large offline RL dataset into a few expert behavioral dataset for rapid policy learning."
+  },
+  "collected_at": "2026-03-10T13:01:26.027Z"
+}
