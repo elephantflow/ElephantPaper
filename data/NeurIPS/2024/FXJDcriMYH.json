@@ -1,0 +1,39 @@
+{
+  "id": "FXJDcriMYH",
+  "or_id": "FXJDcriMYH",
+  "title": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+  "title_zh": "",
+  "authors": [
+    "Wenyu Du",
+    "Tongxu Luo",
+    "Zihan Qiu",
+    "Zeyu Huang",
+    "Yikang Shen",
+    "Reynold Cheng",
+    "Yike Guo",
+    "Jie Fu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "LLMs are computationally expensive to pre-train due to their large scale.\nModel growth emerges as a promising approach by leveraging smaller models to accelerate the training of larger ones. \nHowever, the viability of these model growth methods in efficient LLM pre-training remains underexplored.\nThis work identifies three critical $\\underline{\\textit{O}}$bstacles: ($\\textit{O}$1) lack of comprehensive evaluation, ($\\textit{O}$2) untested viability for scaling, and ($\\textit{O}$3) lack of empirical guidelines.\nTo tackle $\\textit{O}$1, we summarize existing approaches into four atomic growth operators and systematically evaluate them in a standardized LLM pre-training setting.\nOur findings reveal that a depthwise stacking operator, called $G_{\\text{stack}}$, exhibits remarkable acceleration in training, leading to decreased loss and improved overall performance on eight standard NLP benchmarks compared to strong baselines. \nMotivated by these promising results, we conduct extensive experiments to delve deeper into $G_{\\text{stack}}$ to address $\\textit{O}$2 and $\\textit{O}$3.\nFor $\\textit{O}$2 (untested scalability), our study shows that $G_{\\text{stack}}$ is scalable and consistently performs well, with experiments up to 7B LLMs after growth and pre-training LLMs with 750B tokens.\nFor example, compared to a conventionally trained 7B model using 300B tokens, our $G_{\\text{stack}}$ model converges to the same loss with 194B tokens, resulting in a 54.6\\% speedup. \nWe further address $\\textit{O}$3 (lack of empirical guidelines) by formalizing guidelines to determine growth timing and growth factor for $G_{\\text{stack}}$, making it practical in general LLM pre-training.\nWe also provide in-depth discussions and comprehensive ablation studies of $G_{\\text{stack}}$. \nOur code and pre-trained model are available at https://llm-stacking.github.io/.",
+  "abstract_zh": "",
+  "tldr": "We systematically study model growth techniques for efficient LLM pre-training, finding a depth-wise stacking operator with great acceleration and scalability, and propose clear guidelines for its use.",
+  "keywords": [
+    "Efficient LLM pre-training",
+    "Model growth"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=FXJDcriMYH",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2c7146fd80b9afb7935702797fb5bfb715dfb090.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We systematically study model growth techniques for efficient LLM pre-training, finding a depth-wise stacking operator with great acceleration and scalability, and propose clear guidelines for its use."
+  },
+  "collected_at": "2026-03-10T13:41:38.357Z"
+}

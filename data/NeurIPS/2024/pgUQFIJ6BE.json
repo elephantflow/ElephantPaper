@@ -1,0 +1,34 @@
+{
+  "id": "pgUQFIJ6BE",
+  "or_id": "pgUQFIJ6BE",
+  "title": "Near-Optimal Distributed Minimax Optimization under the Second-Order Similarity",
+  "title_zh": "",
+  "authors": [
+    "Qihao Zhou",
+    "Haishan Ye",
+    "Luo Luo"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "This paper considers the distributed convex-concave minimax optimization under the second-order similarity.\nWe propose stochastic variance-reduced optimistic gradient sliding (SVOGS) method, which takes the advantage of the finite-sum structure in the objective by involving the mini-batch client sampling and variance reduction.\nWe prove SVOGS can achieve the $\\varepsilon$-duality gap within communication rounds of \n${\\mathcal O}(\\delta D^2/\\varepsilon)$, \ncommunication complexity of ${\\mathcal O}(n+\\sqrt{n}\\delta D^2/\\varepsilon)$,\nand local gradient calls of \n$\\tilde{\\mathcal O}(n+(\\sqrt{n}\\delta+L)D^2/\\varepsilon\\log(1/\\varepsilon))$, \nwhere $n$ is the number of nodes, $\\delta$ is the degree of the second-order similarity, $L$ is the smoothness parameter and $D$ is the diameter of the constraint set.\nWe can verify that all of above complexity (nearly) matches the corresponding lower bounds.\nFor the specific $\\mu$-strongly-convex-$\\mu$-strongly-convex case, \nour algorithm has the upper bounds on communication rounds,  communication complexity, and local gradient calls of $\\mathcal O(\\delta/\\mu\\log(1/\\varepsilon))$, ${\\mathcal O}((n+\\sqrt{n}\\delta/\\mu)\\log(1/\\varepsilon))$, and $\\tilde{\\mathcal O}(n+(\\sqrt{n}\\delta+L)/\\mu)\\log(1/\\varepsilon))$ respectively, which are also nearly tight.\nFurthermore, we conduct the numerical experiments to show the empirical advantages of proposed method.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "distributed optimization",
+    "minimax optmization",
+    "second-order similarity"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=pgUQFIJ6BE",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b064e9a30204be0e7d128cbb02db397e56aba3b8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper considers the distributed convex-concave minimax optimization under the second-order similarity.\nWe propose stochastic variance-reduced optimistic gradient sliding (SVOGS) method, which takes the advantage of the finite-sum structure in the objective by involving the mini-batch client sam"
+  },
+  "collected_at": "2026-03-10T13:41:38.354Z"
+}

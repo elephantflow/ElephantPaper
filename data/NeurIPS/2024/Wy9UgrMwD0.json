@@ -1,0 +1,38 @@
+{
+  "id": "Wy9UgrMwD0",
+  "or_id": "Wy9UgrMwD0",
+  "title": "No Representation, No Trust: Connecting Representation, Collapse, and Trust Issues in PPO",
+  "title_zh": "",
+  "authors": [
+    "Skander Moalla",
+    "Andrea Miele",
+    "Daniil Pyatko",
+    "Razvan Pascanu",
+    "Caglar Gulcehre"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Reinforcement learning (RL) is inherently rife with non-stationarity since the states and rewards the agent observes during training depend on its changing policy.\nTherefore, networks in deep RL must be capable of adapting to new observations and fitting new targets.\nHowever, previous works have observed that networks trained under non-stationarity exhibit an inability to continue learning, termed loss of plasticity, and eventually a collapse in performance.\nFor off-policy deep value-based RL methods, this phenomenon has been correlated with a decrease in representation rank and the ability to fit random targets, termed capacity loss.\nAlthough this correlation has generally been attributed to neural network learning under non-stationarity, the connection to representation dynamics has not been carefully studied in on-policy policy optimization methods.\nIn this work, we empirically study representation dynamics in Proximal Policy Optimization (PPO) on the Atari and MuJoCo environments, revealing that PPO agents are also affected by feature rank deterioration and capacity loss.\nWe show that this is aggravated by stronger non-stationarity, ultimately driving the actor's performance to collapse, regardless of the performance of the critic.\nWe ask why the trust region, specific to methods like PPO, cannot alleviate or prevent the collapse and find a connection between representation collapse and the degradation of the trust region, one exacerbating the other.\nFinally, we present Proximal Feature Optimization (PFO), a novel auxiliary loss that, along with other interventions, shows that regularizing the representation dynamics mitigates the performance collapse of PPO agents.\nCode and run histories are available at https://github.com/CLAIRE-Labo/no-representation-no-trust.",
+  "abstract_zh": "",
+  "tldr": "We show that PPO suffers from feature rank degradation, that it harms its heuristic trust region, and that it is connected to performance collapse.",
+  "keywords": [
+    "proximal policy optimization",
+    "plasticity loss",
+    "trust region",
+    "feature rank collapse",
+    "regularization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Wy9UgrMwD0",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/575fc0fb8e8f423ef4cdbb2ea7b50c7ec78bb2f8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show that PPO suffers from feature rank degradation, that it harms its heuristic trust region, and that it is connected to performance collapse."
+  },
+  "collected_at": "2026-03-10T13:41:38.358Z"
+}
