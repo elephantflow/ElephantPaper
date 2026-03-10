@@ -1,0 +1,41 @@
+{
+  "id": "Llu9nJal7b",
+  "or_id": "Llu9nJal7b",
+  "title": "MaskLLM: Learnable Semi-Structured Sparsity for Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Gongfan Fang",
+    "Hongxu Yin",
+    "Saurav Muralidharan",
+    "Greg Heinrich",
+    "Jeff Pool",
+    "Jan Kautz",
+    "Pavlo Molchanov",
+    "Xinchao Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "Large Language Models (LLMs) are distinguished by their massive parameter counts, which typically result in significant redundancy. This work introduces MaskLLM, a learnable pruning method that establishes Semi-structured (or ``N:M'') Sparsity in LLMs, aimed at reducing computational overhead during inference. Instead of developing a new importance criterion, MaskLLM explicitly models N:M patterns as a learnable distribution through Gumbel Softmax sampling. This approach facilitates end-to-end training on large-scale datasets and offers two notable advantages: 1) High-quality Masks - our method effectively scales to large datasets and learns accurate masks; 2) Transferability - the probabilistic modeling of mask distribution enables the transfer learning of sparsity across domains or tasks. We assessed MaskLLM using 2:4 sparsity on various LLMs, including LLaMA-2, Nemotron-4, and GPT-3, with sizes ranging from 843M to 15B parameters, and our empirical results show substantial improvements over state-of-the-art methods. For instance, leading approaches achieve a perplexity (PPL) of 10 or greater on Wikitext compared to the dense model's 5.12 PPL, but MaskLLM achieves a significantly lower 6.72 PPL solely by learning the masks with frozen weights. Furthermore, MaskLLM's learnable nature allows customized masks for lossless application of 2:4 sparsity to downstream tasks or domains. Code is available at https://github.com/NVlabs/MaskLLM.",
+  "abstract_zh": "",
+  "tldr": "Learnable Semi-structured Sparsity for LLMs",
+  "keywords": [
+    "Sparsity",
+    "Pruning",
+    "LLMs",
+    "Semi-structured Pruning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Llu9nJal7b",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9f3722ddd8d9682b00ab8e00e22d7f39e647575d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "Learnable Semi-structured Sparsity for LLMs"
+  },
+  "collected_at": "2026-03-10T19:41:24.536Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "zWuHSIALBh",
+  "or_id": "zWuHSIALBh",
+  "title": "FLAME : Factuality-Aware Alignment for Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Sheng-Chieh Lin",
+    "Luyu Gao",
+    "Barlas Oguz",
+    "Wenhan Xiong",
+    "Jimmy Lin",
+    "Wen-tau Yih",
+    "Xilun Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Alignment is a procedure to fine-tune pre-trained large language models (LLMs) to follow natural language instructions and serve as helpful AI assistants. \nWe have observed, however, that the conventional alignment process fails to enhance the factual accuracy of LLMs, and often leads to the generation of more false facts (i.e., *hallucination*). \nIn this paper, we study how to make the LLM alignment process more factual, by first identifying factors that lead to hallucination in both alignment steps: supervised fine-tuning (SFT) and reinforcement learning (RL).\nIn particular, we find that training the LLM on new or unfamiliar knowledge can encourage hallucination.\nThis makes SFT less factual as it trains on human-labeled data that may be novel to the LLM. \nFurthermore, reward functions used in standard RL often inadequately capture factuality and favor longer and more detailed responses, which inadvertently promote hallucination.\nBased on these observations, we propose *FactuaLity-aware AlignMEnt*, comprised of *factuality-aware SFT* and *factuality-aware RL* through direct preference optimization. \nExperiments show that our proposed *FLAME* guides LLMs to output more factual responses while maintaining their instruction-following capability.",
+  "abstract_zh": "",
+  "tldr": "We find that the standard alignment process encourages hallucination, and propose factuality-aware alignment while maintaining the LLM's general instruction-following capability.",
+  "keywords": [
+    "large language models",
+    "factuality",
+    "alignment"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=zWuHSIALBh",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2f86bf598e6a6290e2144203a3b529f671fa6870.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We find that the standard alignment process encourages hallucination, and propose factuality-aware alignment while maintaining the LLM's general instruction-following capability."
+  },
+  "collected_at": "2026-03-10T19:41:24.535Z"
+}
