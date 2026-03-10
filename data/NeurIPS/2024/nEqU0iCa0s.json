@@ -1,0 +1,38 @@
+{
+  "id": "nEqU0iCa0s",
+  "or_id": "nEqU0iCa0s",
+  "title": "Self-Distilled Depth Refinement with Noisy Poisson Fusion",
+  "title_zh": "",
+  "authors": [
+    "Jiaqi Li",
+    "Yiran Wang",
+    "Jinghong Zheng",
+    "Zihao Huang",
+    "Ke Xian",
+    "Zhiguo Cao",
+    "Jianming Zhang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Depth refinement aims to infer high-resolution depth with fine-grained edges and details, refining low-resolution results of depth estimation models. The prevailing methods adopt tile-based manners by merging numerous patches, which lacks efficiency and produces inconsistency. Besides, prior arts suffer from fuzzy depth boundaries and limited generalizability. Analyzing the fundamental reasons for these limitations, we model depth refinement as a noisy Poisson fusion problem with local inconsistency and edge deformation noises. We propose the Self-distilled Depth Refinement (SDDR) framework to enforce robustness against the noises, which mainly consists of depth edge representation and edge-based guidance. With noisy depth predictions as input, SDDR generates low-noise depth edge representations as pseudo-labels by coarse-to-fine self-distillation. Edge-based guidance with edge-guided gradient loss and edge-based fusion loss serves as the optimization objective equivalent to Poisson fusion. When depth maps are better refined, the labels also become more noise-free. Our model can acquire strong robustness to the noises, achieving significant improvements in accuracy, edge quality, efficiency, and generalizability on five different benchmarks. Moreover, directly training another model with edge labels produced by SDDR brings improvements, suggesting that our method could help with training robust refinement models in future works.",
+  "abstract_zh": "",
+  "tldr": "SDDR proposes to model the depth refinement task by noisy Poisson fusion and train the refinement network in a self-distillation paradigm, achieving both high accuracy and efficiency.",
+  "keywords": [
+    "Depth refinement",
+    "Noisy Poisson fusion",
+    "Self-distilled training"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=nEqU0iCa0s",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/652424a5ba1133321596e1672a29b0226cb640f8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "SDDR proposes to model the depth refinement task by noisy Poisson fusion and train the refinement network in a self-distillation paradigm, achieving both high accuracy and efficiency."
+  },
+  "collected_at": "2026-03-10T21:01:25.673Z"
+}

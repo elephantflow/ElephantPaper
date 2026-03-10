@@ -1,0 +1,32 @@
+{
+  "id": "12A1RT1L87",
+  "or_id": "12A1RT1L87",
+  "title": "Are Large-scale Soft Labels Necessary for Large-scale Dataset Distillation?",
+  "title_zh": "",
+  "authors": [
+    "Lingao Xiao",
+    "Yang He"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In ImageNet-condensation, the storage for auxiliary soft labels exceeds that of the condensed dataset by over 30 times.\nHowever, are large-scale soft labels necessary for large-scale dataset distillation?\nIn this paper, we first discover that the high within-class similarity in condensed datasets necessitates the use of large-scale soft labels.\nThis high within-class similarity can be attributed to the fact that previous methods use samples from different classes to construct a single batch for batch normalization (BN) matching.\nTo reduce the within-class similarity, we introduce class-wise supervision during the image synthesizing process by batching the samples within classes, instead of across classes.\nAs a result, we can increase within-class diversity and reduce the size of required soft labels.\nA key benefit of improved image diversity is that soft label compression can be achieved through simple random pruning, eliminating the need for complex rule-based strategies. Experiments validate our discoveries.\nFor example, when condensing ImageNet-1K to 200 images per class, our approach compresses the required soft labels from 113 GB to 2.8 GB (40$\\times$ compression) with a 2.6\\% performance gain.\nCode is available at: https://github.com/he-y/soft-label-pruning-for-dataset-distillation",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Dataset Condensation",
+    "Dataset Distillation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=12A1RT1L87",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/468e1b0cf32e2ed29a29f0b20ae5414d0a8576e3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In ImageNet-condensation, the storage for auxiliary soft labels exceeds that of the condensed dataset by over 30 times.\nHowever, are large-scale soft labels necessary for large-scale dataset distillation?\nIn this paper, we first discover that the high within-class similarity in condensed datasets ne"
+  },
+  "collected_at": "2026-03-10T21:01:25.679Z"
+}

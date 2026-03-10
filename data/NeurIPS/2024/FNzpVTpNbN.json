@@ -1,0 +1,38 @@
+{
+  "id": "FNzpVTpNbN",
+  "or_id": "FNzpVTpNbN",
+  "title": "DiffusionFake: Enhancing Generalization in Deepfake Detection via Guided Stable Diffusion",
+  "title_zh": "",
+  "authors": [
+    "Ke Sun",
+    "Shen Chen",
+    "Taiping Yao",
+    "Hong Liu",
+    "Xiaoshuai Sun",
+    "Shouhong Ding",
+    "Rongrong Ji"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The rapid progress of Deepfake technology has made face swapping highly realistic, raising concerns about the malicious use of fabricated facial content. Existing methods often struggle to generalize to unseen domains due to the diverse nature of facial manipulations. In this paper, we revisit the generation process and identify a universal principle: Deepfake images inherently contain information from both source and target identities, while genuine faces maintain a consistent identity. Building upon this insight, we introduce DiffusionFake, a novel plug-and-play framework that reverses the generative process of face forgeries to enhance the generalization of detection models. DiffusionFake achieves this by injecting the features extracted by the detection model into a frozen pre-trained Stable Diffusion model, compelling it to reconstruct the corresponding target and source images. This guided reconstruction process constrains the detection network to capture the source and target related features to facilitate the reconstruction, thereby learning rich and disentangled representations that are more resilient to unseen forgeries. Extensive experiments demonstrate that DiffusionFake significantly improves cross-domain generalization of various detector architectures without introducing additional parameters during inference. The code are available in https://github.com/skJack/DiffusionFake.git.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Deepfake Detection",
+    "Face forgery Detection",
+    "Stable Diffusion"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=FNzpVTpNbN",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/de3d7bfc4ad38cae0ae8bc83a64c953f5ed81fdc.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The rapid progress of Deepfake technology has made face swapping highly realistic, raising concerns about the malicious use of fabricated facial content. Existing methods often struggle to generalize to unseen domains due to the diverse nature of facial manipulations. In this paper, we revisit the g"
+  },
+  "collected_at": "2026-03-10T21:01:25.676Z"
+}

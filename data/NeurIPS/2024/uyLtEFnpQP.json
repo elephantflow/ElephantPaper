@@ -1,0 +1,42 @@
+{
+  "id": "uyLtEFnpQP",
+  "or_id": "uyLtEFnpQP",
+  "title": "Du-IN: Discrete units-guided mask modeling for decoding speech from Intracranial Neural signals",
+  "title_zh": "",
+  "authors": [
+    "Hui Zheng",
+    "Haiteng Wang",
+    "Weibang Jiang",
+    "Zhongtao Chen",
+    "Li He",
+    "Peiyang Lin",
+    "Penghu Wei",
+    "Guoguang Zhao",
+    "Yunzhe Liu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Invasive brain-computer interfaces with Electrocorticography (ECoG) have shown promise for high-performance speech decoding in medical applications, but less damaging methods like intracranial stereo-electroencephalography (sEEG) remain underexplored. With rapid advances in representation learning, leveraging abundant recordings to enhance speech decoding is increasingly attractive. However, popular methods often pre-train temporal models based on brain-level tokens, overlooking that brain activities in different regions are highly desynchronized during tasks. Alternatively, they pre-train spatial-temporal models based on channel-level tokens but fail to evaluate them on challenging tasks like speech decoding, which requires intricate processing in specific language-related areas. To address this issue, we collected a well-annotated Chinese word-reading sEEG dataset targeting language-related brain networks from 12 subjects. Using this benchmark, we developed the Du-IN model, which extracts contextual embeddings based on region-level tokens through discrete codex-guided mask modeling. Our model achieves state-of-the-art performance on the 61-word classification task, surpassing all baselines. Model comparisons and ablation studies reveal that our design choices, including (\\romannumeral1) temporal modeling based on region-level tokens by utilizing 1D depthwise convolution to fuse channels in the ventral sensorimotor cortex (vSMC) and superior temporal gyrus (STG) and (\\romannumeral2) self-supervision through discrete codex-guided mask modeling, significantly contribute to this performance. Overall, our approach -- inspired by neuroscience findings and capitalizing on region-level representations from specific brain regions -- is suitable for invasive brain modeling and represents a promising neuro-inspired AI approach in brain-computer interfaces. Code and dataset are available at https://github.com/liulab-repository/Du-IN.",
+  "abstract_zh": "",
+  "tldr": "We propose  the Du-IN model, a framework for sEEG-to-Word translation task, learning contextual embeddings through discrete codebook-guided pre-training on specific brain regions.",
+  "keywords": [
+    "neuroscience",
+    "sEEG",
+    "speech decoding",
+    "self-supervision",
+    "neuro-AI"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=uyLtEFnpQP",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ab4aacca59beba81baaa0ab0761739c5e4d46f7a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose  the Du-IN model, a framework for sEEG-to-Word translation task, learning contextual embeddings through discrete codebook-guided pre-training on specific brain regions."
+  },
+  "collected_at": "2026-03-10T21:01:25.679Z"
+}

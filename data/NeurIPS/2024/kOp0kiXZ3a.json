@@ -1,0 +1,37 @@
+{
+  "id": "kOp0kiXZ3a",
+  "or_id": "kOp0kiXZ3a",
+  "title": "Nearly Lossless Adaptive Bit Switching",
+  "title_zh": "",
+  "authors": [
+    "Haiduo Huang",
+    "Zhenhua Liu",
+    "Tian Xia",
+    "Wenzhe zhao",
+    "Pengju Ren"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Model quantization is widely applied for compressing and accelerating deep neural networks (DNNs). However, conventional Quantization-aware training (QAT) focuses on training DNNs with uniform bit-width. The bit-width settings vary across different hardware and transmission demands, which induces considerable training and storage costs. Hence, the scheme of one-shot joint training multiple precisions is proposed to address this issue. Previous works either store a larger FP32 model to switch between different precision models for higher accuracy or store a smaller INT8 model but compromise accuracy due to using shared quantization parameters. In this paper, we introduce the ${\\bf  Double Rounding}$ quantization method, which fully utilizes the quantized representation range to accomplish nearly lossless bit-switching while reducing storage by using the highest integer precision instead of full precision. Furthermore, we observe a competitive interference among different precisions during one-shot joint training, primarily due to inconsistent gradients of quantization scales during backward propagation. To tackle this problem, we propose an Adaptive Learning Rate Scaling (${\\bf ALRS}$) technique that dynamically adapts learning rates for various precisions to optimize the training process. Additionally, we extend our \\emph{Double Rounding} to one-shot mixed precision training and develop a Hessian-aware Stochastic Bit-switching (${\\bf HASB}$) strategy. Experimental results on the ImageNet-1K classification demonstrate that our methods have enough advantages to state-of-the-art one-shot joint QAT in both multi-precision and mixed-precision. Our codes are available at https://anonymous.4open.science/r/Double-Rounding-EF78/README.md.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Model Quantization",
+    "One-Shot Mixed-Precision",
+    "Multi-Preciison",
+    "Quantization-Aware Training"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=kOp0kiXZ3a",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/85d87c36bfe7716bb22a9578e3d37bb767148496.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Model quantization is widely applied for compressing and accelerating deep neural networks (DNNs). However, conventional Quantization-aware training (QAT) focuses on training DNNs with uniform bit-width. The bit-width settings vary across different hardware and transmission demands, which induces co"
+  },
+  "collected_at": "2026-03-10T21:01:25.680Z"
+}
