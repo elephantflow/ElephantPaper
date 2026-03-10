@@ -1,0 +1,40 @@
+{
+  "id": "VJMYOfJVC2",
+  "or_id": "VJMYOfJVC2",
+  "title": "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Peng Wang",
+    "Zexi Li",
+    "Ningyu Zhang",
+    "Ziwen Xu",
+    "Yunzhi Yao",
+    "Yong Jiang",
+    "Pengjun Xie",
+    "Fei Huang",
+    "Huajun Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Large language models (LLMs) need knowledge updates to meet the ever-growing world facts and correct the hallucinated responses, facilitating the methods of lifelong model editing. Where the updated knowledge resides in memories is a fundamental question for model editing. In this paper, we find that editing either long-term memory (direct model parameters) or working memory (non-parametric knowledge of neural network activations/representations by retrieval) will result in an impossible triangle---reliability, generalization, and locality can not be realized together in the lifelong editing settings. For long-term memory, directly editing the parameters will cause conflicts with irrelevant pretrained knowledge or previous edits (poor reliability and locality). For working memory, retrieval-based activations can hardly make the model understand the edits and generalize (poor generalization). Therefore, we propose WISE to bridge the gap between memories. In WISE, we design a dual parametric memory scheme, which consists of the main memory for the pretrained knowledge and a side memory for the edited knowledge. We only edit the knowledge in the side memory and train a router to decide which memory to go through when given a query. For continual editing, we devise a knowledge-sharding mechanism where different sets of edits reside in distinct subspaces of parameters, and are subsequently merged into a shared memory without conflicts. Extensive experiments show that WISE can outperform previous model editing methods and overcome the impossible triangle under lifelong model editing of question answering, hallucination, and out-of-distribution settings across trending LLM architectures, e.g., GPT, LLaMA, and Mistral.",
+  "abstract_zh": "",
+  "tldr": "We propose an effective method of lifelong model editing for large language models.",
+  "keywords": [
+    "Lifelong Model Editing",
+    "Large Language Model",
+    "Knowledge Memory"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=VJMYOfJVC2",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/64fe388096ecd4f527ff377f26ab7324e1172858.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose an effective method of lifelong model editing for large language models."
+  },
+  "collected_at": "2026-03-10T20:01:26.105Z"
+}

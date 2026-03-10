@@ -1,0 +1,37 @@
+{
+  "id": "fXDpDzHTDV",
+  "or_id": "fXDpDzHTDV",
+  "title": "DeepStack: Deeply Stacking Visual Tokens is Surprisingly Simple and Effective for LMMs",
+  "title_zh": "",
+  "authors": [
+    "Lingchen Meng",
+    "Jianwei Yang",
+    "Rui Tian",
+    "Xiyang Dai",
+    "Zuxuan Wu",
+    "Jianfeng Gao",
+    "Yu-Gang Jiang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Most large multimodal models (LMMs) are implemented by feeding visual tokens as a sequence into the first layer of a large language model (LLM). \nThe resulting architecture is simple but significantly increases computation and memory costs, as it has to handle a large number of additional tokens in its input layer. \nThis paper presents a new architecture *DeepStack* for LMMs. \nConsidering $N$ layers in the language and vision transformer of LMMs, we stack the visual tokens into $N$ groups and feed each group to its aligned transformer layer from bottom to top. Surprisingly, this simple method greatly enhances the power of LMMs to model interactions among visual tokens across layers but with minimal additional cost. We apply *DeepStack* to both language and vision transformer in LMMs, and \nvalidate the effectiveness of *DeepStack* LMMs with extensive empirical results. Using the same context length, our DeepStack 7B and 13B parameters surpass their counterparts by 2.7 and 2.9 on average across 9 benchmarks, respectively. Using only one-fifth of the context length, DeepStack rivals closely to the counterparts that use the full context length. These gains are particularly pronounced on high-resolution tasks, *e.g.*, 4.2, 11.0, and 4.0 improvements on TextVQA, DocVQA, and InfoVQA compared to LLaVA-1.5-7B, respectively. We further apply *DeepStack* to vision transformer layers, which brings us a similar amount of improvements, 3.8 on average compared with LLaVA-1.5-7B.",
+  "abstract_zh": "",
+  "tldr": "In this work, we present DeepStack, a simple yet effective way to connect vision and language in the context of LMMs.",
+  "keywords": [
+    "Large Multi-modal Models",
+    "High-resolution Visual Token"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=fXDpDzHTDV",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/58a15b88449f1356c5a407e4f805daa23e11edfc.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In this work, we present DeepStack, a simple yet effective way to connect vision and language in the context of LMMs."
+  },
+  "collected_at": "2026-03-10T20:01:26.105Z"
+}

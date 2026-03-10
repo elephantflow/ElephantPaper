@@ -1,0 +1,35 @@
+{
+  "id": "i4MutM2TZb",
+  "or_id": "i4MutM2TZb",
+  "title": "Pre-trained Large Language Models Use Fourier Features to Compute Addition",
+  "title_zh": "",
+  "authors": [
+    "Tianyi Zhou",
+    "Deqing Fu",
+    "Vatsal Sharan",
+    "Robin Jia"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Pre-trained large language models (LLMs) exhibit impressive mathematical reasoning capabilities, yet how they compute basic arithmetic, such as addition, remains unclear. \nThis paper shows that pre-trained LLMs add numbers using Fourier features---dimensions in the hidden state that represent numbers via a set of features sparse in the frequency domain. \nWithin the model, MLP and attention layers use Fourier features in complementary ways: MLP layers primarily approximate the magnitude of the answer using low-frequency features, while attention layers primarily perform modular addition (e.g., computing whether the answer is even or odd) using high-frequency features.\nPre-training is crucial for this mechanism: models trained from scratch to add numbers only exploit low-frequency features, leading to lower accuracy.\nIntroducing pre-trained token embeddings to a randomly initialized model rescues its performance.\nOverall, our analysis demonstrates that appropriate pre-trained representations (e.g., Fourier features) can unlock the ability of Transformers to learn precise mechanisms for algorithmic tasks.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "large language models",
+    "arithmetic task",
+    "Fourier analysis"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=i4MutM2TZb",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8343215d89aad236d6bde71afab09fa47320a578.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Pre-trained large language models (LLMs) exhibit impressive mathematical reasoning capabilities, yet how they compute basic arithmetic, such as addition, remains unclear. \nThis paper shows that pre-trained LLMs add numbers using Fourier features---dimensions in the hidden state that represent number"
+  },
+  "collected_at": "2026-03-10T20:01:26.105Z"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "1jG5ngXVs3",
+  "or_id": "1jG5ngXVs3",
+  "title": "FlowTurbo: Towards Real-time Flow-Based Image Generation with Velocity Refiner",
+  "title_zh": "",
+  "authors": [
+    "Wenliang Zhao",
+    "Minglei Shi",
+    "Xumin Yu",
+    "Jie Zhou",
+    "Jiwen Lu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Building on the success of diffusion models in visual generation, flow-based models reemerge as another prominent family of generative models that have achieved competitive or better performance in terms of both visual quality and inference speed. By learning the velocity field through flow-matching, flow-based models tend to produce a straighter sampling trajectory, which is advantageous during the sampling process. However, unlike diffusion models for which fast samplers are well-developed, efficient sampling of flow-based generative models has been rarely explored. In this paper, we propose a framework called FlowTurbo to accelerate the sampling of flow-based models while still enhancing the sampling quality. Our primary observation is that the velocity predictor's outputs in the flow-based models will become stable during the sampling, enabling the estimation of velocity via a lightweight velocity refiner. Additionally, we introduce several techniques including a pseudo corrector and sample-aware compilation to further reduce inference time. Since FlowTurbo does not change the multi-step sampling paradigm, it can be effectively applied for various tasks such as image editing, inpainting, etc. By integrating FlowTurbo into different flow-based models, we obtain an acceleration ratio of 53.1\\%$\\sim$58.3\\% on class-conditional generation and 29.8\\%$\\sim$38.5\\% on text-to-image generation. Notably, FlowTurbo reaches an FID of 2.12 on ImageNet with 100 (ms / img) and FID of 3.93 with 38 (ms / img), achieving the real-time image generation and establishing the new state-of-the-art. Code is available at https://github.com/shiml20/FlowTurbo.",
+  "abstract_zh": "",
+  "tldr": "We propose a framework called FlowTurbo to accerate flow-based generative models by 29.8%-58.3%, which is efficient in both training (<6 GPU hours) and inference (~40ms / img)",
+  "keywords": [
+    "flow-based generation",
+    "diffusion models",
+    "efficient sampling",
+    "image generation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=1jG5ngXVs3",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6f20a0dec44b610dfcb9210877572960e5ca840e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a framework called FlowTurbo to accerate flow-based generative models by 29.8%-58.3%, which is efficient in both training (<6 GPU hours) and inference (~40ms / img)"
+  },
+  "collected_at": "2026-03-10T20:01:26.103Z"
+}
