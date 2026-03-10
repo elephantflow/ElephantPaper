@@ -1,0 +1,37 @@
+{
+  "id": "974ojuN0jU",
+  "or_id": "974ojuN0jU",
+  "title": "RandNet-Parareal: a time-parallel PDE solver using Random Neural Networks",
+  "title_zh": "",
+  "authors": [
+    "Guglielmo Gattiglio",
+    "Lyudmila Grigoryeva",
+    "Massimiliano Tamborrino"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Parallel-in-time (PinT) techniques have been proposed to solve systems of time-dependent differential equations by parallelizing the temporal domain. Among them, Parareal computes the solution sequentially using an inaccurate (fast) solver, and then ``corrects'' it using an accurate (slow) integrator that runs in  parallel across temporal subintervals. This work introduces RandNet-Parareal, a novel method to learn the discrepancy between the coarse and fine solutions using random neural networks (RandNets). RandNet-Parareal achieves speed gains up to x125 and x22 compared to the fine solver run serially and Parareal, respectively. Beyond theoretical guarantees of RandNets as universal approximators, these models are quick to train, allowing the PinT solution of partial differential equations on a spatial mesh of up to $10^5$ points with minimal overhead, dramatically increasing the scalability of existing PinT approaches. RandNet-Parareal's numerical performance is illustrated on systems of real-world significance, such as the viscous Burgers' equation, the Diffusion-Reaction equation, the two- and three-dimensional Brusselator, and the shallow water equation.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Random Neural Networks",
+    "Extreme Learning Machines",
+    "Parareal",
+    "Parallel-in-time algorithms",
+    "Scalability",
+    "Ordinary and Partial Differential Equations"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=974ojuN0jU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/65b64e0582a032c305c997c1ca54ea11388f0d11.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Parallel-in-time (PinT) techniques have been proposed to solve systems of time-dependent differential equations by parallelizing the temporal domain. Among them, Parareal computes the solution sequentially using an inaccurate (fast) solver, and then ``corrects'' it using an accurate (slow) integrato"
+  },
+  "collected_at": "2026-03-10T18:41:25.247Z"
+}

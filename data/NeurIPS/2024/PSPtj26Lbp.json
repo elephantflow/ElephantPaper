@@ -1,0 +1,40 @@
+{
+  "id": "PSPtj26Lbp",
+  "or_id": "PSPtj26Lbp",
+  "title": "L4GM: Large 4D Gaussian Reconstruction Model",
+  "title_zh": "",
+  "authors": [
+    "Jiawei Ren",
+    "Kevin Xie",
+    "Ashkan Mirzaei",
+    "hanxue liang",
+    "Xiaohui Zeng",
+    "Karsten Kreis",
+    "Ziwei Liu",
+    "Antonio Torralba",
+    "Sanja Fidler",
+    "Seung Wook Kim",
+    "Huan Ling"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We present L4GM, the first 4D Large Reconstruction Model that produces animated objects from a single-view video input -- in a single feed-forward pass that takes only a second.\nKey to our success is a novel dataset of multiview videos containing curated, rendered animated objects from Objaverse. This dataset depicts 44K diverse objects with 110K animations rendered in 48 viewpoints, resulting in 12M videos with a total of 300M frames. \nWe keep our L4GM simple for scalability and build directly on top of LGM, a pretrained 3D Large Reconstruction Model that outputs 3D Gaussian ellipsoids from multiview image input.\nL4GM outputs a per-frame 3D Gaussian splat representation from video frames sampled at a low fps and then upsamples the representation to a higher fps to achieve temporal smoothness. We add temporal self-attention layers to the base LGM to help it learn consistency across time, and utilize a per-timestep multiview rendering loss to train the model. The representation is upsampled to a higher framerate by training an interpolation model which produces intermediate 3D Gaussian representations. \nWe showcase that L4GM that is only trained on synthetic data generalizes well on in-the-wild videos, producing high quality animated 3D assets.",
+  "abstract_zh": "",
+  "tldr": "We present the first 4D Large Reconstruction Model that produces animated objects from a single-view video input -- in a single feed-forward pass that takes only a second.",
+  "keywords": [
+    "4D Reconstruction; 4D Generation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=PSPtj26Lbp",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3cf5c2c6b69733b025643bdcb785b92bd8e930b8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present the first 4D Large Reconstruction Model that produces animated objects from a single-view video input -- in a single feed-forward pass that takes only a second."
+  },
+  "collected_at": "2026-03-10T18:41:25.247Z"
+}

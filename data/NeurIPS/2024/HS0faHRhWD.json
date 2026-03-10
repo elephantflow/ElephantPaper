@@ -1,0 +1,37 @@
+{
+  "id": "HS0faHRhWD",
+  "or_id": "HS0faHRhWD",
+  "title": "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+  "title_zh": "",
+  "authors": [
+    "Qingxiang Liu",
+    "Xu Liu",
+    "Chenghao Liu",
+    "Qingsong Wen",
+    "Yuxuan Liang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Unlike natural language processing and computer vision, the development of Foundation Models (FMs) for time series forecasting is blocked due to data scarcity. \nWhile recent efforts are focused on building such FMs by unlocking the potential of language models (LMs) for time series analysis, dedicated parameters for various downstream forecasting tasks need training, which hinders the common knowledge sharing across domains.\nMoreover, data owners may hesitate to share the access to local data due to privacy concerns and copyright protection, which makes it impossible to simply construct a FM on cross-domain training instances.\nTo address these issues, we propose Time-FFM, a Federated Foundation Model for Time series forecasting by leveraging pretrained LMs.\nSpecifically, we begin by transforming time series into the modality of text tokens.\nTo bootstrap LMs for time series reasoning, we propose a prompt adaption module to determine domain-customized prompts dynamically instead of artificially.\nGiven the data heterogeneity across domains, we design a personalized federated training strategy by learning global encoders and local prediction heads. \nOur comprehensive experiments indicate that Time-FFM outperforms state-of-the-arts and promises effective few-shot and zero-shot forecaster.\nThe code is available at https://github.com/CityMind-Lab/NeurIPS24-Time-FFM/tree/main.",
+  "abstract_zh": "",
+  "tldr": "We present the first attempt to build a federated foundation model for time series forecasting by exploiting the sequence reasoning potential of language models, avoiding the disclosure of local data.",
+  "keywords": [
+    "Foundation Model",
+    "Cross-Modality Adaption",
+    "Time Series Forecasting",
+    "Federated Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=HS0faHRhWD",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fce8e52fef24ac2ef7ab7968cf1f547be23d463a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present the first attempt to build a federated foundation model for time series forecasting by exploiting the sequence reasoning potential of language models, avoiding the disclosure of local data."
+  },
+  "collected_at": "2026-03-10T18:41:25.247Z"
+}
