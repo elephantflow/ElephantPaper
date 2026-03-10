@@ -1,0 +1,34 @@
+{
+  "id": "apI1GltwSx",
+  "or_id": "apI1GltwSx",
+  "title": "DELT: A Simple Diversity-driven EarlyLate Training for Dataset Distillation",
+  "title_zh": "",
+  "authors": [
+    "Zhiqiang Shen",
+    "Ammar Sherif",
+    "Zeyuan Yin",
+    "Shitong Shao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Recent advances in dataset distillation have led to solutions in two main directions. The conventional batch-to-batch matching mechanism is ideal for small-scale datasets and includes bi-level optimization methods on models and syntheses, such as FRePo, RCIG, and RaT-BPTT, as well as other methods like distribution matching, gradient matching, and weight trajectory matching. Conversely, batch-to-global matching typifies decoupled methods, which are particularly advantageous for large-scale datasets. This approach has garnered substantial interest within the community, as seen in SRe$^2$L, G-VBSM, WMDD, and CDA. A primary challenge with the second approach is the lack of diversity among syntheses within each class since samples are optimized independently and the same global supervision signals are reused across different synthetic images. In this study, we propose a new EarlyLate training scheme to enhance the diversity of images in batch-to-global matching with less computation. Our approach is conceptually simple yet effective, it partitions predefined IPC samples into smaller subtasks and employs local optimizations to distill each subset into distributions from distinct phases, reducing the uniformity induced by the unified optimization process. These distilled images from the subtasks demonstrate effective generalization when applied to the entire task. We conducted extensive experiments on CIFAR, Tiny-ImageNet, ImageNet-1K, and its sub-datasets. Our empirical results demonstrate that the proposed approach significantly improves over previous state-of-the-art methods under various IPCs.",
+  "abstract_zh": "",
+  "tldr": "We propose a new EarlyLate training scheme to enhance the diversity of images in batch-to-global matching with less computation for dataset distillation.",
+  "keywords": [
+    "Dataset Distillation",
+    "Diversity-driven EarlyLate Training"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=apI1GltwSx",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e08655ff8d0d5ab4e2db4122917bd1cf1442689b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a new EarlyLate training scheme to enhance the diversity of images in batch-to-global matching with less computation for dataset distillation."
+  },
+  "collected_at": "2026-03-10T17:01:26.843Z"
+}

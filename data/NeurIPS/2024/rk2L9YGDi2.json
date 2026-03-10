@@ -1,0 +1,37 @@
+{
+  "id": "rk2L9YGDi2",
+  "or_id": "rk2L9YGDi2",
+  "title": "Sequoia: Scalable and Robust Speculative Decoding",
+  "title_zh": "",
+  "authors": [
+    "Zhuoming Chen",
+    "Avner May",
+    "Ruslan Svirschevski",
+    "Yu-Hsun Huang",
+    "Max Ryabinin",
+    "Zhihao Jia",
+    "Beidi Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 spotlight",
+  "abstract": "As the usage of large language models (LLMs) grows, it becomes increasingly important to serve them quickly and efficiently. While speculative decoding has recently emerged as a promising direction for accelerating LLM serving, existing methods are limited in their ability to scale to larger speculation budgets and adapt to different hyperparameters. This paper introduces Sequoia, a scalable and robust algorithm for speculative decoding. To improve scalability, Sequoia introduces a dynamic programming algorithm to find an optimal tree structure for the speculated tokens. To achieve robust speculative decoding, Sequoia uses a novel sampling and verification method that outperforms prior work across different decoding temperatures. Sequoia improves the decoding speed of Llama2-7B, Llama2-13B, and Vicuna-33B on an A100 GPU by up to $4.04\\times$, $3.73\\times$, and $2.27 \\times$. To serve Llama3-70B-Instruct on a single L40 GPU through offloading, Sequoia reduces the per-token decoding latency to 0.60 s/token, $9.5\\times$ faster than DeepSpeed-Zero-Inference.",
+  "abstract_zh": "",
+  "tldr": "Accelerate LLM inference with a scalable and robust tree based speculative decoding algorithm",
+  "keywords": [
+    "LLM inference; Speculative Decoding"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=rk2L9YGDi2",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b37bd645defe5a17e94f0ba7ac5d5cb2c3db1b4f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "Accelerate LLM inference with a scalable and robust tree based speculative decoding algorithm"
+  },
+  "collected_at": "2026-03-10T17:01:26.840Z"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "X3ydKRcQr6",
+  "or_id": "X3ydKRcQr6",
+  "title": "MUVERA: Multi-Vector Retrieval via Fixed Dimensional Encoding",
+  "title_zh": "",
+  "authors": [
+    "Rajesh Jayaram",
+    "Laxman Dhulipala",
+    "Majid Hadian",
+    "Jason Lee",
+    "Vahab Mirrokni"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Neural embedding models have become a fundamental component of modern information retrieval (IR) pipelines. These models produce a single embedding $x \\in \\mathbb{R}^d$ per data-point, allowing for fast retrieval via highly optimized maximum inner product search (MIPS) algorithms. Recently, beginning with the landmark ColBERT paper, multi-vector models, which produce a set of embedding per data point, have achieved markedly superior performance for IR tasks. Unfortunately, using these models for IR is computationally expensive due to the increased complexity of multi-vector retrieval and scoring. \n\nIn this paper, we introduce MUVERA (MUlti-VEctor Retrieval Algorithm), a retrieval mechanism which reduces multi-vector similarity search to single-vector similarity search. This enables the usage of off-the-shelf MIPS solvers for multi-vector retrieval. \nMUVERA asymmetrically generates Fixed Dimensional Encodings (FDEs) of queries and documents, which are vectors whose inner product approximates multi-vector similarity. We prove that FDEs give high-quality $\\epsilon$-approximations, thus providing the first single-vector proxy for multi-vector similarity with theoretical guarantees. Empirically, we find that FDEs achieve the same recall as prior state-of-the-art heuristics while retrieving 2-5$\\times$ fewer candidates. Compared to prior state of the art implementations, MUVERA achieves consistently good end-to-end recall and latency across a diverse set of the BEIR retrieval datasets, achieving an average of 10% improved recall with 90% lower latency.",
+  "abstract_zh": "",
+  "tldr": "We give a new and highly-efficient algorithm for multi-vector retrieval via a provable reduction to single-vector retrieval.",
+  "keywords": [
+    "Retrieval",
+    "Late Interaction",
+    "ColBERT",
+    "Multi-Vector"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=X3ydKRcQr6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3afbc85392452987bf48005868cf4249f54ca5d3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We give a new and highly-efficient algorithm for multi-vector retrieval via a provable reduction to single-vector retrieval."
+  },
+  "collected_at": "2026-03-10T17:01:26.839Z"
+}

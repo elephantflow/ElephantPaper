@@ -1,0 +1,40 @@
+{
+  "id": "C1d3VVfdVG",
+  "or_id": "C1d3VVfdVG",
+  "title": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+  "title_zh": "",
+  "authors": [
+    "Chufan Shi",
+    "Cheng Yang",
+    "Xinyu Zhu",
+    "Jiahao Wang",
+    "Taiqiang Wu",
+    "Siheng Li",
+    "Deng Cai",
+    "Yujiu Yang",
+    "Yu Meng"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Mixture-of-Experts (MoE) has emerged as a prominent architecture for scaling model size while maintaining computational efficiency. In MoE, each token in the input sequence activates a different subset of experts determined by a routing mechanism. However, the unchosen experts in MoE models do not contribute to the output, potentially leading to underutilization of the model's capacity.\nIn this work, we first conduct exploratory studies to demonstrate that increasing the number of activated experts does not necessarily improve and can even degrade the output quality. Then, we show that output distributions from an MoE model using different routing strategies substantially differ, indicating that different experts do not always act synergistically. \nMotivated by these findings, we propose **S**elf-**C**ontrast **M**ixture-**o**f-**E**xperts (SCMoE), a training-free strategy that utilizes unchosen experts in a self-contrast manner during inference. \nIn SCMoE, the next-token probabilities are determined by contrasting the outputs from strong and weak activation using the same MoE model.\nOur method is conceptually simple and computationally lightweight, as it incurs minimal latency compared to greedy decoding. \nExperiments on several benchmarks (GSM8K, StrategyQA, MBPP and HumanEval) demonstrate that SCMoE can consistently enhance Mixtral 8x7B’s reasoning capability across various domains. For example, it improves the accuracy on GSM8K from 61.79 to 66.94. \nMoreover, combining SCMoE with self-consistency yields additional gains, increasing major@20 accuracy from 75.59 to 78.31.",
+  "abstract_zh": "",
+  "tldr": "Enhancing Mixture-of-Experts models by utilizing unchosen experts in a self-contrast manner.",
+  "keywords": [
+    "Mixture-of-Experts",
+    "Self-Contrast",
+    "Text Generation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=C1d3VVfdVG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/067fc4537caa9562aed142113b799e22fd5a39a7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Enhancing Mixture-of-Experts models by utilizing unchosen experts in a self-contrast manner."
+  },
+  "collected_at": "2026-03-10T17:01:26.844Z"
+}
