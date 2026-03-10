@@ -1,0 +1,39 @@
+{
+  "id": "xoCFd1WKpf",
+  "or_id": "xoCFd1WKpf",
+  "title": "Unified Lexical Representation for Interpretable Visual-Language Alignment",
+  "title_zh": "",
+  "authors": [
+    "Yifan Li",
+    "Yikai Wang",
+    "Yanwei Fu",
+    "Dongyu Ru",
+    "Zheng Zhang",
+    "Tong He"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Visual-Language Alignment (VLA) has gained a lot of attention since CLIP's groundbreaking work. \nAlthough CLIP performs well, the typical direct latent feature alignment lacks clarity in its representation and similarity scores. \nOn the other hand, lexical representation, a vector whose element represents the similarity between the sample and a word from the vocabulary, is a natural sparse representation and interpretable, providing exact matches for individual words.\nHowever, lexical representations are difficult to learn due to no ground-truth supervision and false-discovery issues, and thus requires complex design to train effectively.\nIn this paper, we introduce LexVLA, a more interpretable VLA framework by learning a unified lexical representation for both modalities without complex design. \nWe use DINOv2 as our visual model for its local-inclined features and Llama 2, a generative language model, to leverage its in-context lexical prediction ability.\nTo avoid the false discovery, we propose an overuse penalty to refrain the lexical representation from falsely frequently activating meaningless words.\nWe demonstrate that these two pre-trained uni-modal models can be well-aligned by fine-tuning on the modest multi-modal dataset and avoid intricate training configurations. \nOn cross-modal retrieval benchmarks, LexVLA, trained on the CC-12M multi-modal dataset, outperforms baselines fine-tuned on larger datasets (e.g., YFCC15M) and those trained from scratch on even bigger datasets (e.g., 1.1B data, including CC-12M).\nWe conduct extensive experiments to analyze LexVLA. \nCodes are available at https://github.com/Clementine24/LexVLA.",
+  "abstract_zh": "",
+  "tldr": "We introduce LexVLA, a interpretable Visual-Language Alignment framework by learning a unified lexical representation for both modalities without complex design.",
+  "keywords": [
+    "Multi-modal",
+    "Alignment",
+    "Retrieval",
+    "Sparse Retrieval",
+    "Lexical Representation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=xoCFd1WKpf",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3206cbc8f56e0bf6c85cccc342384845c2232940.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce LexVLA, a interpretable Visual-Language Alignment framework by learning a unified lexical representation for both modalities without complex design."
+  },
+  "collected_at": "2026-03-10T13:21:32.690Z"
+}

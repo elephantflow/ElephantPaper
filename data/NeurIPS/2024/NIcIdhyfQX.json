@@ -1,0 +1,38 @@
+{
+  "id": "NIcIdhyfQX",
+  "or_id": "NIcIdhyfQX",
+  "title": "Q-Distribution guided Q-learning for offline reinforcement learning: Uncertainty penalized Q-value via consistency model",
+  "title_zh": "",
+  "authors": [
+    "Jing Zhang",
+    "Linjiajie Fang",
+    "Kexin Shi",
+    "Wenjia Wang",
+    "Bingyi Jing"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "``Distribution shift'' is the primary obstacle to the success of offline reinforcement learning. As a learning policy may take actions beyond the knowledge of the behavior policy (referred to as Out-of-Distribution (OOD) actions), the Q-values of these OOD actions can be easily overestimated. Consequently, the learning policy becomes biasedly optimized using the incorrect recovered Q-value function. One commonly used idea to avoid the overestimation of Q-value is to make a pessimistic adjustment. Our key idea is to penalize the Q-values of OOD actions that correspond to high uncertainty. In this work, we propose Q-Distribution guided Q-learning (QDQ) which  pessimistic Q-value on OOD regions based on uncertainty estimation. The uncertainty measure is based on the conditional Q-value distribution, which is learned via a high-fidelity and efficient consistency model. On the other hand, to avoid the overly conservative problem, we introduce an uncertainty-aware optimization objective to update the Q-value function. The proposed QDQ demonstrates solid theoretical guarantees for the accuracy of Q-value distribution learning and uncertainty measurement, as well as the performance of the learning policy. QDQ consistently exhibits strong performance in the D4RL benchmark and shows significant improvements for many tasks. Our code can be found at <code link>.",
+  "abstract_zh": "",
+  "tldr": "Overcome the too conservative problem in pessimistic Q learning in offline RL by pessimistic Q value by uncertainty via consistency model.",
+  "keywords": [
+    "offline Reinforcement Learning",
+    "Q value distribution",
+    "Uncertainty measure",
+    "pessimistic Q learning",
+    "Consistency model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=NIcIdhyfQX",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/53d70d64c6f933d868e66a9e1bdd77bcb6b537e7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Overcome the too conservative problem in pessimistic Q learning in offline RL by pessimistic Q value by uncertainty via consistency model."
+  },
+  "collected_at": "2026-03-10T13:21:32.691Z"
+}

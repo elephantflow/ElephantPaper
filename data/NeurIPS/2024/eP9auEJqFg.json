@@ -1,0 +1,40 @@
+{
+  "id": "eP9auEJqFg",
+  "or_id": "eP9auEJqFg",
+  "title": "Representation Noising: A Defence Mechanism Against Harmful Finetuning",
+  "title_zh": "",
+  "authors": [
+    "Domenic Rosati",
+    "Jan Wehner",
+    "Kai Williams",
+    "Lukasz Bartoszcze",
+    "Robie Gonzales",
+    "carsten maple",
+    "Subhabrata Majumdar",
+    "Hassan Sajjad",
+    "Frank Rudzicz"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Releasing open-source large language models (LLMs) presents a dual-use risk since bad actors can easily fine-tune these models for harmful purposes. Even without the open release of weights, weight stealing and fine-tuning APIs make closed models vulnerable to harmful fine-tuning attacks (HFAs). While safety measures like preventing jailbreaks and improving safety guardrails are important, such measures can easily be reversed through fine-tuning. In this work, we propose Representation Noising (\\textsf{\\small RepNoise}), a defence mechanism that operates even when attackers have access to the weights. \\textsf{\\small RepNoise} works by removing information about harmful representations such that it is difficult to recover them during fine-tuning. Importantly, our defence is also able to generalize across different subsets of harm that have not been seen during the defence process as long as they are drawn from the same distribution of the attack set. Our method does not degrade the general capability of LLMs and retains the ability to train the model on harmless tasks. We provide empirical evidence that the efficacy of our defence lies in its ``depth'': the degree to which information about harmful representations is removed across {\\em all layers} of the LLM. We also find areas where \\textsf{\\small RepNoise} still remains ineffective and highlight how those limitations can inform future research.",
+  "abstract_zh": "",
+  "tldr": "We provide a method that removes information about harmful representations in large language models which can mitigate the model from being fine-tuned on harmful datasets.",
+  "keywords": [
+    "Harmful Fine-tuning",
+    "LLM Security",
+    "Domain Authorization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=eP9auEJqFg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d1c9a27d1f0015f12f9faf5af4bf3193768bc5d5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We provide a method that removes information about harmful representations in large language models which can mitigate the model from being fine-tuned on harmful datasets."
+  },
+  "collected_at": "2026-03-10T13:21:32.690Z"
+}
