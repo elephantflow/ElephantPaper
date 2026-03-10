@@ -1,0 +1,57 @@
+{
+  "id": "5tOVh81aze",
+  "or_id": "5tOVh81aze",
+  "title": "Language models scale reliably with over-training and on downstream tasks",
+  "title_zh": "",
+  "authors": [
+    "Samir Yitzhak Gadre",
+    "Georgios Smyrnis",
+    "Vaishaal Shankar",
+    "Suchin Gururangan",
+    "Mitchell Wortsman",
+    "Rulin Shao",
+    "Jean Mercat",
+    "Alex Fang",
+    "Jeffrey Li",
+    "Sedrick Keh",
+    "Rui Xin",
+    "Marianna Nezhurina",
+    "Igor Vasiljevic",
+    "Luca Soldaini",
+    "Jenia Jitsev",
+    "Alex Dimakis",
+    "Gabriel Ilharco",
+    "Pang Wei Koh",
+    "Shuran Song",
+    "Thomas Kollar",
+    "Yair Carmon",
+    "Achal Dave",
+    "Reinhard Heckel",
+    "Niklas Muennighoff",
+    "Ludwig Schmidt"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Scaling laws are useful guides for derisking expensive training runs, as they predict performance of large models using cheaper, small-scale experiments. However, there remain gaps between current scaling studies and how language models are ultimately trained and evaluated. For instance, scaling is usually studied in the compute-optimal training regime (i.e., \"Chinchilla optimal\" regime). In contrast, models are often over-trained to reduce inference costs. Moreover, scaling laws mostly predict loss on next-token prediction, but models are usually compared on downstream task performance. To address both shortcomings, we create a testbed of 104 models with 0.011B to 6.9B parameters trained with various numbers of tokens on three data distributions. First, we fit scaling laws that extrapolate in both the amount of over-training and the number of model parameters. This enables us to predict the validation loss of a 1.4B parameter, 900B token run (i.e., 32$\\times$ over-trained) and a 6.9B parameter, 138B token run (i.e., a compute-optimal run)––each from experiments that take 300$\\times$ less compute. Second, we relate the perplexity of a language model to its downstream task performance by proposing a power law. We use this law to predict top-1 error averaged over downstream tasks for the two aforementioned models, using experiments that take 20$\\times$ less compute.",
+  "abstract_zh": "",
+  "tldr": "Fit our scaling laws to small-scale runs trained near compute-optimal, predict the downstream error (average top-1) of large over-trained runs.",
+  "keywords": [
+    "large language models",
+    "scaling laws",
+    "over-training",
+    "task prediction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=5tOVh81aze",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d90ec848f2c792b564d4f13cf075db29933593f0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Fit our scaling laws to small-scale runs trained near compute-optimal, predict the downstream error (average top-1) of large over-trained runs."
+  },
+  "collected_at": "2026-03-10T22:44:29.632Z"
+}

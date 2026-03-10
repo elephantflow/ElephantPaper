@@ -1,0 +1,39 @@
+{
+  "id": "hwuUBsMlBf",
+  "or_id": "hwuUBsMlBf",
+  "title": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+  "title_zh": "",
+  "authors": [
+    "Jiachen Li",
+    "Xinyao Wang",
+    "Sijie Zhu",
+    "Chia-Wen Kuo",
+    "Lu XU",
+    "Fan Chen",
+    "Jitesh Jain",
+    "Humphrey Shi",
+    "Longyin Wen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Recent advancements in Multimodal Large Language Models (LLMs) have focused primarily on scaling by increasing text-image pair data and enhancing LLMs to improve performance on multimodal tasks. However, these scaling approaches are computationally expensive and overlook the significance of efficiently improving model capabilities from the vision side. \nInspired by the successful applications of Mixture-of-Experts (MoE) in LLMs, which improves model scalability during training while keeping inference costs similar to those of smaller models, we propose CuMo, which incorporates Co-upcycled Top-K sparsely-gated Mixture-of-experts blocks into both the vision encoder and the MLP connector, thereby enhancing the multimodal LLMs with neglectable additional activated parameters during inference.\nCuMo first pre-trains the MLP blocks and then initializes each expert in the MoE block from the pre-trained MLP block during the visual instruction tuning stage, with auxiliary losses to ensure a balanced loading of experts.\nCuMo outperforms state-of-the-art multimodal LLMs across various VQA and visual-instruction-following benchmarks within each model size group, all while training exclusively on open-sourced datasets.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Mixture-of-Experts",
+    "Multimodal LLM"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hwuUBsMlBf",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f9d3434ee7bc78c3c09f5488b04345aff7f59570.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Recent advancements in Multimodal Large Language Models (LLMs) have focused primarily on scaling by increasing text-image pair data and enhancing LLMs to improve performance on multimodal tasks. However, these scaling approaches are computationally expensive and overlook the significance of efficien"
+  },
+  "collected_at": "2026-03-10T22:44:29.632Z"
+}

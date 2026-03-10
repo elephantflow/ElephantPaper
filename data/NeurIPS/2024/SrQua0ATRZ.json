@@ -1,0 +1,39 @@
+{
+  "id": "SrQua0ATRZ",
+  "or_id": "SrQua0ATRZ",
+  "title": "Diffusion-Inspired Truncated Sampler for Text-Video Retrieval",
+  "title_zh": "",
+  "authors": [
+    "Jiamian Wang",
+    "Pichao WANG",
+    "Dongfang Liu",
+    "Qiang Guan",
+    "Sohail Dianat",
+    "MAJID RABBANI",
+    "Raghuveer Rao",
+    "ZHIQIANG TAO"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Prevalent text-to-video retrieval methods represent multimodal text-video data in a joint embedding space, aiming at bridging the relevant text-video pairs and pulling away irrelevant ones. One main challenge in state-of-the-art retrieval methods lies in the modality gap, which stems from the substantial disparities between text and video and can persist in the joint space. In this work, we leverage the potential of Diffusion models to address the text-video modality gap by progressively aligning text and video embeddings in a unified space. However, we identify two key limitations of existing Diffusion models in retrieval tasks: The L2 loss does not fit the ranking problem inherent in text-video retrieval, and the generation quality heavily depends on the varied initial point drawn from the isotropic Gaussian, causing inaccurate retrieval. To this end, we introduce a new Diffusion-Inspired Truncated Sampler (DITS) that jointly performs progressive alignment and modality gap modeling in the joint embedding space. The key innovation of DITS is to leverage the inherent proximity of text and video embeddings, defining a truncated diffusion flow from the fixed text embedding to the video embedding, enhancing controllability compared to adopting the isotropic Gaussian. Moreover, DITS adopts the contrastive loss to jointly consider the relevant and irrelevant pairs, not only facilitating alignment but also yielding a discriminatively structured embedding. Experiments on five benchmark datasets suggest the state-of-the-art performance of DITS. We empirically find that DITS can also improve the structure of the CLIP embedding space. Code is available at https://github.com/Jiamian- Wang/DITS-text-video-retrieval",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "text-video retrieval",
+    "diffusion model",
+    "multimodal"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=SrQua0ATRZ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7c7acf1335b4f24831d0925133663ff3c63f4e23.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Prevalent text-to-video retrieval methods represent multimodal text-video data in a joint embedding space, aiming at bridging the relevant text-video pairs and pulling away irrelevant ones. One main challenge in state-of-the-art retrieval methods lies in the modality gap, which stems from the substa"
+  },
+  "collected_at": "2026-03-10T22:44:29.631Z"
+}

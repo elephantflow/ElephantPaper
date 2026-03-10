@@ -1,0 +1,36 @@
+{
+  "id": "MHCnLo2QeA",
+  "or_id": "MHCnLo2QeA",
+  "title": "Estimating Ego-Body Pose from Doubly Sparse Egocentric Video Data",
+  "title_zh": "",
+  "authors": [
+    "Seunggeun Chi",
+    "Pin-Hao Huang",
+    "Enna Sachdeva",
+    "Hengbo Ma",
+    "Karthik Ramani",
+    "Kwonjoon Lee"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We study the problem of estimating the body movements of a camera wearer from egocentric videos. Current methods for ego-body pose estimation rely on temporally dense sensor data, such as IMU measurements from spatially sparse body parts like the head and hands. However, we propose that even temporally sparse observations, such as hand poses captured intermittently from egocentric videos during natural or periodic hand movements, can effectively constrain overall body motion. Naively applying diffusion models to generate full-body pose from head pose and sparse hand pose leads to suboptimal results. To overcome this, we develop a two-stage approach that decomposes the problem into temporal completion and spatial completion. First, our method employs masked autoencoders to impute hand trajectories by leveraging the spatiotemporal correlations between the head pose sequence and intermittent hand poses, providing uncertainty estimates. Subsequently, we employ conditional diffusion models to generate plausible full-body motions based on these temporally dense trajectories of the head and hands, guided by the uncertainty estimates from the imputation. The effectiveness of our methods was rigorously tested and validated through comprehensive experiments conducted on various HMD setup with AMASS and Ego-Exo4D datasets. Project page: https://sgchi.github.io/dsposer",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "pose estimation",
+    "egocentric pose estimation."
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=MHCnLo2QeA",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b2ca4cb4233c240dab1f8ccf0565f16272492265.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study the problem of estimating the body movements of a camera wearer from egocentric videos. Current methods for ego-body pose estimation rely on temporally dense sensor data, such as IMU measurements from spatially sparse body parts like the head and hands. However, we propose that even tempora"
+  },
+  "collected_at": "2026-03-10T22:44:29.631Z"
+}

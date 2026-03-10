@@ -1,0 +1,35 @@
+{
+  "id": "gCCMzedgbo",
+  "or_id": "gCCMzedgbo",
+  "title": "TrAct: Making First-layer Pre-Activations Trainable",
+  "title_zh": "",
+  "authors": [
+    "Felix Petersen",
+    "Christian Borgelt",
+    "Stefano Ermon"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We consider the training of the first layer of vision models and notice the clear relationship between pixel values and gradient update magnitudes: the gradients arriving at the weights of a first layer are by definition directly proportional to (normalized) input pixel values. Thus, an image with low contrast has a smaller impact on learning than an image with higher contrast, and a very bright or very dark image has a stronger impact on the weights than an image with moderate brightness. In this work, we propose performing gradient descent on the embeddings produced by the first layer of the model. However, switching to discrete inputs with an embedding layer is not a reasonable option for vision models. Thus, we propose the conceptual procedure of (i) a gradient descent step on first layer activations to construct an activation proposal, and (ii) finding the optimal weights of the first layer, i.e., those weights which minimize the squared distance to the activation proposal. We provide a  closed form solution of the procedure and adjust it for robust stochastic training while computing everything efficiently. Empirically, we find that TrAct (Training Activations) speeds up training by factors between 1.25x and 4x while requiring only a small computational overhead. We demonstrate the utility of TrAct with different optimizers for a range of different vision models including convolutional and transformer architectures.",
+  "abstract_zh": "",
+  "tldr": "Making the training dynamics of the first layer of vision models similar to those of the embedding layer of language models.",
+  "keywords": [
+    "computer vision",
+    "convolution",
+    "second-order",
+    "optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=gCCMzedgbo",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/36ebc96c6cc3bb9d241bfbe90714af100fc0bb94.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Making the training dynamics of the first layer of vision models similar to those of the embedding layer of language models."
+  },
+  "collected_at": "2026-03-10T22:44:29.632Z"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "vYUx8j5KK2",
+  "or_id": "vYUx8j5KK2",
+  "title": "Curriculum Fine-tuning of Vision Foundation Model for Medical Image Classification Under Label Noise",
+  "title_zh": "",
+  "authors": [
+    "Yeonguk Yu",
+    "Minhwan Ko",
+    "Sungho Shin",
+    "Kangmin Kim",
+    "Kyoobin Lee"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Deep neural networks have demonstrated remarkable performance in various vision tasks, but their success heavily depends on the quality of the training data. Noisy labels are a critical issue in medical datasets and can significantly degrade model performance. Previous clean sample selection methods have not utilized the well pre-trained features of vision foundation models (VFMs) and assumed that training begins from scratch. In this paper, we propose CUFIT, a curriculum fine-tuning paradigm of VFMs for medical image classification under label noise. Our method is motivated by the fact that linear probing of VFMs is relatively unaffected by noisy samples, as it does not update the feature extractor of the VFM, thus robustly classifying the training samples. Subsequently, curriculum fine-tuning of two adapters is conducted, starting with clean sample selection from the linear probing phase. Our experimental results demonstrate that CUFIT outperforms previous methods across various medical image benchmarks. Specifically, our method surpasses previous baselines by 5.0\\%, 2.1\\%, 4.6\\%, and 5.8\\% at a 40\\% noise rate on the HAM10000, APTOS-2019, BloodMnist, and OrgancMnist datasets, respectively. Furthermore, we provide extensive analyses to demonstrate the impact of our method on noisy label detection. For instance, our method shows higher label precision and recall compared to previous approaches. Our work highlights the potential of leveraging VFMs in medical image classification under challenging conditions of noisy labels.",
+  "abstract_zh": "",
+  "tldr": "We propose CUFIT, a robust fine-tuning method for vision foundation models under noisy label conditions, based on the advantages of linear probing and adapters.",
+  "keywords": [
+    "Learning with noisy label",
+    "medical image classification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=vYUx8j5KK2",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d5aa08cc841e6f20d9d81a173a38781d31ff4224.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose CUFIT, a robust fine-tuning method for vision foundation models under noisy label conditions, based on the advantages of linear probing and adapters."
+  },
+  "collected_at": "2026-03-10T22:44:29.631Z"
+}

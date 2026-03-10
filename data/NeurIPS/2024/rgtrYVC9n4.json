@@ -1,0 +1,42 @@
+{
+  "id": "rgtrYVC9n4",
+  "or_id": "rgtrYVC9n4",
+  "title": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Lujun Li",
+    "Peijie Dong",
+    "Zhenheng Tang",
+    "Xiang Liu",
+    "Qiang Wang",
+    "Wenhan Luo",
+    "Wei Xue",
+    "Qifeng Liu",
+    "Xiaowen Chu",
+    "Yike Guo"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "In this paper, we present DSA, the first automated framework for discovering sparsity allocation schemes for layer-wise pruning in Large Language Models (LLMs).  LLMs have become increasingly powerful, but their large parameter counts make them computationally expensive.  Existing pruning methods for compressing LLMs primarily focus on evaluating redundancies and removing element-wise weights.  However, these methods fail to allocate adaptive layer-wise sparsities, leading to performance degradation in challenging tasks.  We observe that per-layer importance statistics can serve as allocation indications, but their effectiveness depends on the allocation function between layers.  To address this issue, we develop an expression discovery framework to explore potential allocation strategies.  Our allocation functions involve two steps: reducing element-wise metrics to per-layer importance scores, and modelling layer importance to sparsity ratios.  To search for the most effective allocation function, we construct a search space consisting of pre-process, reduction, transform, and post-process operations.  We leverage an evolutionary algorithm to perform crossover and mutation on superior candidates within the population, guided by performance evaluation.  Finally, we seamlessly integrate our discovered functions into various uniform methods, resulting in significant performance improvements.  We conduct extensive experiments on multiple challenging tasks such as arithmetic, knowledge reasoning, and multimodal benchmarks spanning GSM8K, MMLU, SQA, and VQA, demonstrating that our DSA method achieves significant performance gains on the LLaMA-1|2|3, Mistral, and OPT models.   Notably, the LLaMA-1|2|3 model pruned by our DSA reaches 4.73\\%|6.18\\%|10.65\\% gain over the state-of-the-art techniques (e.g., Wanda and SparseGPT).",
+  "abstract_zh": "",
+  "tldr": "In this paper, we present a new method for optimizing layerwise sparsity allocation in large language models.",
+  "keywords": [
+    "network pruning",
+    "layerwise sparsity allocation",
+    "large language models",
+    "model compression."
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=rgtrYVC9n4",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/aba7c7e8e4ea4b2a16b69717191fff7299facc30.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In this paper, we present a new method for optimizing layerwise sparsity allocation in large language models."
+  },
+  "collected_at": "2026-03-10T22:44:29.631Z"
+}
