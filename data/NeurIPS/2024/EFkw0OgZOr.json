@@ -1,0 +1,36 @@
+{
+  "id": "EFkw0OgZOr",
+  "or_id": "EFkw0OgZOr",
+  "title": "Training an Open-Vocabulary Monocular 3D Detection Model without 3D Data",
+  "title_zh": "",
+  "authors": [
+    "Rui Huang",
+    "Henry Zheng",
+    "Yan Wang",
+    "Zhuofan Xia",
+    "Marco Pavone",
+    "Gao Huang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Open-vocabulary 3D object detection has recently attracted considerable attention due to its broad applications in autonomous driving and robotics, which aims to effectively recognize novel classes in previously unseen domains. However, existing point cloud-based open-vocabulary 3D detection models are limited by their high deployment costs. In this work, we propose a novel open-vocabulary monocular 3D object detection framework, dubbed OVM3D-Det, which trains detectors using only RGB images, making it both cost-effective and scalable to publicly available data. Unlike traditional methods, OVM3D-Det does not require high-precision LiDAR or 3D sensor data for either input or generating 3D bounding boxes. Instead, it employs open-vocabulary 2D models and pseudo-LiDAR to automatically label 3D objects in RGB images, fostering the learning of open-vocabulary monocular 3D detectors. However, training 3D models with labels directly derived from pseudo-LiDAR is inadequate due to imprecise boxes estimated from noisy point clouds and severely occluded objects. To address these issues, we introduce two innovative designs: adaptive pseudo-LiDAR erosion and bounding box refinement with prior knowledge from large language models. These techniques effectively calibrate the 3D labels and enable RGB-only training for 3D detectors. Extensive experiments demonstrate the superiority of OVM3D-Det over baselines in both indoor and outdoor scenarios. The code will be released.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Monocular 3D Detection",
+    "Open-Vocabulary 3D Detection"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=EFkw0OgZOr",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1b5443632dd3e212aedfac2690b7cf97f64fd4c8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Open-vocabulary 3D object detection has recently attracted considerable attention due to its broad applications in autonomous driving and robotics, which aims to effectively recognize novel classes in previously unseen domains. However, existing point cloud-based open-vocabulary 3D detection models "
+  },
+  "collected_at": "2026-03-10T19:01:29.970Z"
+}

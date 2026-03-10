@@ -1,0 +1,42 @@
+{
+  "id": "tLXgzQ5WZl",
+  "or_id": "tLXgzQ5WZl",
+  "title": "SCube: Instant Large-Scale Scene Reconstruction using VoxSplats",
+  "title_zh": "",
+  "authors": [
+    "Xuanchi Ren",
+    "Yifan Lu",
+    "hanxue liang",
+    "Jay Zhangjie Wu",
+    "Huan Ling",
+    "Mike Chen",
+    "Sanja Fidler",
+    "Francis Williams",
+    "Jiahui Huang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We present SCube, a novel method for reconstructing large-scale 3D scenes (geometry, appearance, and semantics) from a sparse set of posed images. Our method encodes reconstructed scenes using a novel representation VoxSplat, which is a set of 3D Gaussians supported on a high-resolution sparse-voxel scaffold. To reconstruct a VoxSplat from images, we employ a hierarchical voxel latent diffusion model conditioned on the input images followed by a feedforward appearance prediction model. The diffusion model generates high-resolution grids progressively in a coarse-to-fine manner, and the appearance network predicts a set of Gaussians within each voxel. From as few as 3 non-overlapping input images, SCube can generate millions of Gaussians with a 10243 voxel grid spanning hundreds of meters in 20 seconds. Past works tackling scene reconstruction from images either rely on per-scene optimization and fail to reconstruct the scene away from input views (thus requiring dense view coverage as input) or leverage geometric priors based on low-resolution models, which produce blurry results. In contrast, SCube leverages high-resolution sparse networks and produces sharp outputs from few views. We show the superiority of SCube compared to prior art using the Waymo self-driving dataset on 3D reconstruction and demonstrate its applications, such as LiDAR simulation and text-to-scene generation.",
+  "abstract_zh": "",
+  "tldr": "SCube reconstructs large-scale 3D scenes represented with voxel-supported Gasussian splats from non-overlapping sparse views in 20 seconds.",
+  "keywords": [
+    "Large-scale Scene Reconstruction",
+    "Sparse-view Reconstruction",
+    "Sparse Voxels",
+    "Gaussian Splatting",
+    "Diffusion Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=tLXgzQ5WZl",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/92cbfcd4a6ff12dcf1feabe0149772877fc6b95d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "SCube reconstructs large-scale 3D scenes represented with voxel-supported Gasussian splats from non-overlapping sparse views in 20 seconds."
+  },
+  "collected_at": "2026-03-10T19:01:29.971Z"
+}

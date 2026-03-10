@@ -1,0 +1,42 @@
+{
+  "id": "ca2mABGV6p",
+  "or_id": "ca2mABGV6p",
+  "title": "Faster Diffusion: Rethinking the Role of the Encoder for Diffusion Model Inference",
+  "title_zh": "",
+  "authors": [
+    "Senmao Li",
+    "taihang Hu",
+    "Joost van de Weijer",
+    "Fahad Khan",
+    "Tao Liu",
+    "Linxuan Li",
+    "Shiqi Yang",
+    "Yaxing Wang",
+    "Ming-Ming Cheng",
+    "jian Yang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "One of the main drawback of diffusion models is the slow inference time for image generation. Among the most successful approaches to addressing this problem are distillation methods. However, these methods require considerable computational resources. In this paper, we take another approach to diffusion model acceleration. We conduct a comprehensive study of the UNet encoder and empirically analyze the encoder features. This provides insights regarding their changes during the inference process. In particular, we find that encoder features change minimally, whereas the decoder features exhibit substantial variations across different time-steps. This insight motivates us to omit encoder computation at certain adjacent time-steps and reuse encoder features of previous time-steps as input to the decoder in multiple time-steps. Importantly, this allows us to perform decoder computation in parallel, further accelerating the denoising process. Additionally,  we introduce a prior noise injection method to improve the texture details in the generated image. Besides the standard text-to-image task, we also validate our approach on other tasks: text-to-video, personalized generation and reference-guided generation. Without utilizing any knowledge distillation technique, our approach accelerates both the Stable Diffusion (SD) and DeepFloyd-IF model sampling by 41$\\%$ and 24$\\%$ respectively, and DiT model sampling by 34$\\%$, while maintaining high-quality generation performance. Our code will be publicly released.",
+  "abstract_zh": "",
+  "tldr": "We introduce a simple yet effective encoder propagation (unet feature reuse) scheme to accelerate the diffusion (i.e., StableDiffusion, and DiT) sampling for a diverse set of tasks.",
+  "keywords": [
+    "generative model",
+    "UNet",
+    "acceleration",
+    "inference phase"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ca2mABGV6p",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5599879dea7e3719be1e4fa4ab3fa1fa269864ee.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce a simple yet effective encoder propagation (unet feature reuse) scheme to accelerate the diffusion (i.e., StableDiffusion, and DiT) sampling for a diverse set of tasks."
+  },
+  "collected_at": "2026-03-10T19:01:29.971Z"
+}

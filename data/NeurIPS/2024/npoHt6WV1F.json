@@ -1,0 +1,36 @@
+{
+  "id": "npoHt6WV1F",
+  "or_id": "npoHt6WV1F",
+  "title": "NeuralFuse: Learning to Recover the Accuracy of Access-Limited Neural Network Inference in Low-Voltage Regimes",
+  "title_zh": "",
+  "authors": [
+    "Hao-Lun Sun",
+    "Lei Hsiung",
+    "Nandhini Chandramoorthy",
+    "Pin-Yu Chen",
+    "Tsung-Yi Ho"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Deep neural networks (DNNs) have become ubiquitous in machine learning, but their energy consumption remains problematically high. An effective strategy for reducing such consumption is supply-voltage reduction, but if done too aggressively, it can lead to accuracy degradation. This is due to random bit-flips in static random access memory (SRAM), where model parameters are stored. To address this challenge, we have developed NeuralFuse, a novel add-on module that handles the energy-accuracy tradeoff in low-voltage regimes by learning input transformations and using them to generate error-resistant data representations, thereby protecting DNN accuracy in both nominal and low-voltage scenarios. As well as being easy to implement, NeuralFuse can be readily applied to DNNs with limited access, such cloud-based APIs that are accessed remotely or non-configurable hardware. Our experimental results demonstrate that, at a 1% bit-error rate, NeuralFuse can reduce SRAM access energy by up to 24% while recovering accuracy by up to 57%. To the best of our knowledge, this is the first approach to addressing low-voltage-induced bit errors that requires no model retraining.",
+  "abstract_zh": "",
+  "tldr": "NeuralFuse provides model-independent protection for AI accelerators built on a chip, allowing them to maintain stable performance when suffering low-voltage-induced bit errors.",
+  "keywords": [
+    "machine learning",
+    "energy efficient inference",
+    "bit error resilience"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=npoHt6WV1F",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/91d39ad2f125f9e4d02522c589a6199f92aa6e6a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "NeuralFuse provides model-independent protection for AI accelerators built on a chip, allowing them to maintain stable performance when suffering low-voltage-induced bit errors."
+  },
+  "collected_at": "2026-03-10T19:01:29.972Z"
+}

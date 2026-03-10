@@ -1,0 +1,40 @@
+{
+  "id": "tRRWoa9e80",
+  "or_id": "tRRWoa9e80",
+  "title": "Token Merging for Training-Free Semantic Binding in Text-to-Image Synthesis",
+  "title_zh": "",
+  "authors": [
+    "taihang Hu",
+    "Linxuan Li",
+    "Joost van de Weijer",
+    "Hongcheng Gao",
+    "Fahad Khan",
+    "Jian Yang",
+    "Ming-Ming Cheng",
+    "Kai Wang",
+    "Yaxing Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Although text-to-image (T2I) models exhibit remarkable generation capabilities,\nthey frequently fail to accurately bind semantically related objects or attributes\nin the input prompts; a challenge termed semantic binding. Previous approaches\neither involve intensive fine-tuning of the entire T2I model or require users or\nlarge language models to specify generation layouts, adding complexity. In this\npaper, we define semantic binding as the task of associating a given object with its\nattribute, termed attribute binding, or linking it to other related sub-objects, referred\nto as object binding. We introduce a novel method called Token Merging (ToMe),\nwhich enhances semantic binding by aggregating relevant tokens into a single\ncomposite token. This ensures that the object, its attributes and sub-objects all share\nthe same cross-attention map. Additionally, to address potential confusion among\nmain objects with complex textual prompts, we propose end token substitution as\na complementary strategy. To further refine our approach in the initial stages of\nT2I generation, where layouts are determined, we incorporate two auxiliary losses,\nan entropy loss and a semantic binding loss, to iteratively update the composite\ntoken to improve the generation integrity. We conducted extensive experiments to\nvalidate the effectiveness of ToMe, comparing it against various existing methods\non the T2I-CompBench and our proposed GPT-4o object binding benchmark. Our\nmethod is particularly effective in complex scenarios that involve multiple objects\nand attributes, which previous methods often fail to address. The code will be\n publicly available at https://github.com/hutaihang/ToMe",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Diffusion model",
+    "Attribute binding",
+    "Text Embedding"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=tRRWoa9e80",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f83aad7dcfb8bc237df660f4fe4b024935d4b8cb.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Although text-to-image (T2I) models exhibit remarkable generation capabilities,\nthey frequently fail to accurately bind semantically related objects or attributes\nin the input prompts; a challenge termed semantic binding. Previous approaches\neither involve intensive fine-tuning of the entire T2I mod"
+  },
+  "collected_at": "2026-03-10T19:01:29.972Z"
+}

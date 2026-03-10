@@ -1,0 +1,35 @@
+{
+  "id": "KI5TANE02e",
+  "or_id": "KI5TANE02e",
+  "title": "Score-based generative models are provably robust: an uncertainty quantification perspective",
+  "title_zh": "",
+  "authors": [
+    "Nikiforos Mimikos-Stamatopoulos",
+    "Benjamin Zhang",
+    "Markos Katsoulakis"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Through an uncertainty quantification (UQ) perspective, we show that score-based generative models (SGMs) are provably robust to the multiple sources of error in practical implementation. Our primary tool is the Wasserstein uncertainty propagation (WUP) theorem, a *model-form UQ* bound that describes how the $L^2$ error from learning the score function propagates to a Wasserstein-1 ($\\mathbf{d}_1$) ball around the true data distribution under the evolution of the Fokker-Planck equation. We show how errors due to (a) finite sample approximation, (b) early stopping, (c) score-matching objective choice, (d) score function parametrization expressiveness, and (e) reference distribution choice, impact the quality of the generative model in terms of a $\\mathbf{d}_1$ bound of computable quantities. The WUP theorem relies on Bernstein estimates for Hamilton-Jacobi-Bellman partial differential equations (PDE) and the regularizing properties of diffusion processes. Specifically, *PDE regularity theory* shows that *stochasticity* is the key mechanism ensuring SGM algorithms are provably robust. The WUP theorem applies to integral probability metrics beyond $\\mathbf{d}_1$, such as the total variation distance and the maximum mean discrepancy. Sample complexity and generalization bounds in $\\mathbf{d}_1$ follow directly from the WUP theorem. Our approach requires minimal assumptions, is agnostic to the manifold hypothesis and avoids absolute continuity assumptions for the target distribution. Additionally, our results clarify the *trade-offs* among multiple error sources in SGMs.",
+  "abstract_zh": "",
+  "tldr": "Using techniques from analysis of partial differential equations and Hamilton-Jacobi equations, we show score-based generative models are robust, and also yield generalization bounds.",
+  "keywords": [
+    "Score-based generative modeling",
+    "uncertainty quantification",
+    "Hamilton-Jacobi equations",
+    "generalization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=KI5TANE02e",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8bfa78e777b655bb35abb1bf07c5e9aa7e59cda8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Using techniques from analysis of partial differential equations and Hamilton-Jacobi equations, we show score-based generative models are robust, and also yield generalization bounds."
+  },
+  "collected_at": "2026-03-10T19:01:29.973Z"
+}
