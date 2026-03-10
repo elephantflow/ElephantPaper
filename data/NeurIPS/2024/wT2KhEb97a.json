@@ -1,0 +1,37 @@
+{
+  "id": "wT2KhEb97a",
+  "or_id": "wT2KhEb97a",
+  "title": "Iterative Methods via Locally Evolving Set Process",
+  "title_zh": "",
+  "authors": [
+    "Baojian Zhou",
+    "Yifan Sun",
+    "Reza Babanezhad Harikandeh",
+    "Xingzhi Guo",
+    "Deqing Yang",
+    "Yanghua Xiao"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Given the damping factor $\\alpha$ and precision tolerance $\\epsilon$, \\citet{andersen2006local} introduced Approximate Personalized PageRank (APPR), the \\textit{de facto local method} for approximating the PPR vector, with runtime bounded by $\\Theta(1/(\\alpha\\epsilon))$ independent of the graph size. Recently,  Fountoulakis \\& Yang asked whether faster local algorithms could be developed using $\\tilde{\\mathcal{O}}(1/(\\sqrt{\\alpha}\\epsilon))$ operations. By noticing that APPR is a local variant of Gauss-Seidel, this paper explores the question of *whether standard iterative solvers can be effectively localized*. We propose to use the *locally evolving set process*, a novel framework to characterize the algorithm locality, and demonstrate that many standard solvers can be effectively localized. Let $\\overline{\\operatorname{vol}}{ (\\mathcal S_t)}$ and $\\overline{\\gamma_t}$ be the running average of volume and the residual ratio of active nodes $\\textstyle \\mathcal{S_t}$ during the process. We show $\\overline{\\operatorname{vol}}{ (\\mathcal S_t)}/\\overline{\\gamma_t} \\leq 1/\\epsilon$ and prove APPR admits a new runtime bound $\\tilde{\\mathcal{O}}(\\overline{\\operatorname{vol}}(\\mathcal S_t)/(\\alpha\\overline{\\gamma_t}))$ mirroring the actual performance. Furthermore, when the geometric mean of residual reduction is $\\Theta(\\sqrt{\\alpha})$, then there exists $c \\in (0,2)$ such that the local Chebyshev method has runtime $\\tilde{\\mathcal{O}}(\\overline{\\operatorname{vol}}(\\mathcal{S_t})/(\\sqrt{\\alpha}(2-c)))$ without the monotonicity assumption. Numerical results confirm the efficiency of this novel framework and show up to a hundredfold speedup over corresponding standard solvers on real-world graphs.",
+  "abstract_zh": "",
+  "tldr": "This paper introduces a novel approach to efficiently solve sparse linear systems by localizing standard iterative solvers using a locally evolving set process.",
+  "keywords": [
+    "local computation",
+    "Personalized PageRank",
+    "graph clustering"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=wT2KhEb97a",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/018805bdb5e7dfb1133288f180c5012bb6b6e388.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper introduces a novel approach to efficiently solve sparse linear systems by localizing standard iterative solvers using a locally evolving set process."
+  },
+  "collected_at": "2026-03-10T14:01:40.510Z"
+}

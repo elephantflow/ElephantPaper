@@ -1,0 +1,35 @@
+{
+  "id": "fC2SV2sQ8J",
+  "or_id": "fC2SV2sQ8J",
+  "title": "LaKD: Length-agnostic Knowledge Distillation for Trajectory Prediction with Any Length Observations",
+  "title_zh": "",
+  "authors": [
+    "Yuhang Li",
+    "Changsheng Li",
+    "Ruilin Lv",
+    "Rongqing Li",
+    "Ye Yuan",
+    "Guoren Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Trajectory prediction is a crucial technology to help systems avoid traffic accidents, ensuring safe autonomous driving. Previous methods typically use a fixed-length and sufficiently long trajectory of an agent as observations to predict its future trajectory. However, in real-world scenarios, we often lack the time to gather enough trajectory points before making predictions, e.g., when a car suddenly appears due to an obstruction, the system must make immediate predictions to prevent a collision. This poses a new challenge for trajectory prediction systems, requiring them to be capable of making accurate predictions based on observed trajectories of arbitrary lengths, leading to the failure of existing methods. In this paper, we propose a Length-agnostic Knowledge Distillation framework, named LaKD,  which can make accurate trajectory predictions, regardless of the length of observed data. Specifically, considering the fact that long trajectories, containing richer temporal information but potentially additional interference, may perform better or worse than short trajectories, we devise a dynamic length-agnostic knowledge distillation mechanism for exchanging information among trajectories of arbitrary lengths, dynamically determining the transfer direction based on prediction performance. In contrast to traditional knowledge distillation, LaKD employs a unique model that simultaneously serves as both the teacher and the student, potentially causing knowledge collision during the distillation process. Therefore, we design a dynamic soft-masking mechanism, where we first calculate the importance of neuron units and then apply soft-masking to them, so as to safeguard critical units from disruption during the knowledge distillation process. In essence, LaKD is a general and principled framework that can be naturally compatible with existing trajectory prediction models of different architectures. Extensive experiments on three benchmark datasets, Argoverse 1, nuSce",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Trajectory Prediction"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=fC2SV2sQ8J",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7cf0348cc3747c46278bb98d27d152a16c5722d3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Trajectory prediction is a crucial technology to help systems avoid traffic accidents, ensuring safe autonomous driving. Previous methods typically use a fixed-length and sufficiently long trajectory of an agent as observations to predict its future trajectory. However, in real-world scenarios, we o"
+  },
+  "collected_at": "2026-03-10T14:01:40.510Z"
+}

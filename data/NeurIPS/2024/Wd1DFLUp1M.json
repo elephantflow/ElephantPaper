@@ -1,0 +1,38 @@
+{
+  "id": "Wd1DFLUp1M",
+  "or_id": "Wd1DFLUp1M",
+  "title": "Aligning Diffusion Behaviors with Q-functions for Efficient Continuous Control",
+  "title_zh": "",
+  "authors": [
+    "Huayu Chen",
+    "Kaiwen Zheng",
+    "Hang Su",
+    "Jun Zhu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Drawing upon recent advances in language model alignment, we formulate offline Reinforcement Learning as a two-stage optimization problem: First pretraining expressive generative policies on reward-free behavior datasets, then finetuning these policies to align with task-specific annotations like Q-values. This strategy allows us to leverage abundant and diverse behavior data to enhance generalization and enable rapid adaptation to downstream tasks using minimal annotations. In particular, we introduce Efficient Diffusion Alignment (EDA) for solving continuous control problems. EDA utilizes diffusion models for behavior modeling. However, unlike previous approaches, we represent diffusion policies as the derivative of a scalar neural network with respect to action inputs. This representation is critical because it enables direct density calculation for diffusion models, making them compatible with existing LLM alignment theories. During policy fine-tuning, we extend preference-based alignment methods like Direct Preference Optimization (DPO) to align diffusion behaviors with continuous Q-functions. Our evaluation on the D4RL benchmark shows that EDA exceeds all baseline methods in overall performance. Notably, EDA maintains about 95\\% of performance and still outperforms several baselines given only 1\\% of Q-labelled data during fine-tuning.",
+  "abstract_zh": "",
+  "tldr": "We propose an alignment strategy for diffusion models in continuous control",
+  "keywords": [
+    "diffusion",
+    "offline",
+    "RL",
+    "alignment",
+    "continuous control",
+    "DPO"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Wd1DFLUp1M",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/36b802a6ae74a169344f720fea7757c283bcdf0d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose an alignment strategy for diffusion models in continuous control"
+  },
+  "collected_at": "2026-03-10T14:01:40.512Z"
+}

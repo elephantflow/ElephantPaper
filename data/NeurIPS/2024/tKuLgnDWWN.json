@@ -1,0 +1,36 @@
+{
+  "id": "tKuLgnDWWN",
+  "or_id": "tKuLgnDWWN",
+  "title": "SILENCE: Protecting privacy in offloaded speech understanding on resource-constrained devices",
+  "title_zh": "",
+  "authors": [
+    "DONGQI CAI",
+    "Shangguang Wang",
+    "Zeling Zhang",
+    "Felix Xiaozhu Lin",
+    "Mengwei Xu"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Speech serves as a ubiquitous input interface for embedded mobile devices. \nCloud-based solutions, while offering powerful speech understanding services, raise significant concerns regarding user privacy. \nTo address this, disentanglement-based encoders have been proposed to remove sensitive information from speech signals without compromising the speech understanding functionality. \nHowever, these encoders demand high memory usage and computation complexity, making them impractical for resource-constrained wimpy devices.\nOur solution is based on a key observation that speech understanding hinges on long-term dependency knowledge of the entire utterance, in contrast to privacy-sensitive elements that are short-term dependent. \nExploiting this observation, we propose SILENCE, a lightweight system that selectively obscuring short-term details, without damaging the long-term dependent speech understanding performance.\nThe crucial part of SILENCE is a differential mask generator derived from interpretable learning to \nautomatically configure the masking process.\nWe have implemented SILENCE on the STM32H7 microcontroller and evaluate its efficacy under different attacking scenarios. \nOur results demonstrate that SILENCE offers speech understanding performance and privacy protection capacity comparable to existing encoders, while achieving up to 53.3$\\times$ speedup and 134.1$\\times$ reduction in memory footprint.",
+  "abstract_zh": "",
+  "tldr": "We provide a lightweight, privacy-preserving encoder that can be efficiently embedded into low-power audio devices.",
+  "keywords": [
+    "spoken language understanding",
+    "resource-constrained devices",
+    "privacy-preserving"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=tKuLgnDWWN",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f916b7a4e107eaa97efdcf615a87e1d4a63f8d66.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We provide a lightweight, privacy-preserving encoder that can be efficiently embedded into low-power audio devices."
+  },
+  "collected_at": "2026-03-10T14:01:40.511Z"
+}
