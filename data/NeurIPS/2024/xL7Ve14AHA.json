@@ -1,0 +1,36 @@
+{
+  "id": "xL7Ve14AHA",
+  "or_id": "xL7Ve14AHA",
+  "title": "Regularized Adaptive Momentum Dual Averaging with an Efficient Inexact Subproblem Solver for Training Structured Neural Network",
+  "title_zh": "",
+  "authors": [
+    "Zih-Syuan Huang",
+    "Ching-pei Lee"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "We propose a Regularized Adaptive Momentum Dual Averaging (RAMDA) algorithm for training structured neural networks. Similar to existing regularized adaptive methods, the subproblem for computing the update direction of RAMDA involves a nonsmooth regularizer and a diagonal preconditioner, and therefore does not possess a closed-form solution in general. We thus also carefully devise an implementable inexactness condition that retains convergence guarantees similar to the exact versions, and propose a companion efficient solver for the subproblems of both RAMDA and existing methods to make them practically feasible. We leverage the theory of manifold identification in variational analysis to show that, even in the presence of such inexactness, the iterates of RAMDA attain the ideal structure induced by the regularizer at the stationary point of asymptotic convergence. This structure is locally optimal near the point of convergence, so RAMDA is guaranteed to obtain the best structure possible among all methods converging to the same point, making it the first regularized adaptive method outputting models that possess outstanding predictive performance while being (locally) optimally structured. Extensive numerical experiments in large-scale modern computer vision, language modeling, and speech tasks show that the proposed RAMDA is efficient and consistently outperforms state of the art for training structured neural network. Implementation of our algorithm is available at https://www.github.com/ismoptgroup/RAMDA.",
+  "abstract_zh": "",
+  "tldr": "A regularized adaptive momentum dual averaging algorithm for training structured neural networks with guarantees for finding the locally optimal structure, and exhibits outstanding performance in language, speech and image classification tasks.",
+  "keywords": [
+    "structured neural networks",
+    "variance reduction",
+    "manifold identification",
+    "proximal methods",
+    "adaptive methods",
+    "inexact subproblem solution"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=xL7Ve14AHA",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f308a40b9bbe024a4cee23bc7fdaab4fdbd357c3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A regularized adaptive momentum dual averaging algorithm for training structured neural networks with guarantees for finding the locally optimal structure, and exhibits outstanding performance in language, speech and image classification tasks."
+  },
+  "collected_at": "2026-03-10T19:21:33.508Z"
+}

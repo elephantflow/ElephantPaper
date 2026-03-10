@@ -1,0 +1,33 @@
+{
+  "id": "ZupoMzMNrO",
+  "or_id": "ZupoMzMNrO",
+  "title": "Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching",
+  "title_zh": "",
+  "authors": [
+    "Xinyin Ma",
+    "Gongfan Fang",
+    "Michael Bi Mi",
+    "Xinchao Wang"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Diffusion Transformers have recently demonstrated unprecedented generative capabilities for various tasks. The encouraging results, however, come with the cost of slow inference, since each denoising step requires inference on a transformer model with a large scale of parameters. In this study, we make an interesting and somehow surprising observation: the computation of a large proportion of layers in the diffusion transformer, through introducing a caching mechanism, can be readily removed even without updating the model parameters. In the case of U-ViT-H/2, for example, we may remove up to 93.68% of the computation in the cache steps (46.84% for all steps), with less than 0.01 drop in FID. To achieve this, we introduce a novel scheme, named Learning-to-Cache (L2C), that learns to conduct caching in a dynamic manner for diffusion transformers. Specifically, by leveraging the identical structure of layers in transformers and the sequential nature of diffusion, we explore redundant computations between timesteps by treating each layer as the fundamental unit for caching. To address the challenge of the exponential search space in deep models for identifying layers to cache and remove, we propose a novel differentiable optimization objective. An input-invariant yet timestep-variant router is then optimized, which can finally produce a static computation graph. Experimental results show that L2C largely outperforms samplers such as DDIM and DPM-Solver, alongside prior cache-based methods at the same inference speed.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "efficient generative model; diffusion model; inference acceleration"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ZupoMzMNrO",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e0dd6138f0edd430eb05a16e317daaca32ed2e08.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Diffusion Transformers have recently demonstrated unprecedented generative capabilities for various tasks. The encouraging results, however, come with the cost of slow inference, since each denoising step requires inference on a transformer model with a large scale of parameters. In this study, we m"
+  },
+  "collected_at": "2026-03-10T19:21:33.507Z"
+}

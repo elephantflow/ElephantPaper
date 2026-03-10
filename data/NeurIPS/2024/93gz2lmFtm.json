@@ -1,0 +1,34 @@
+{
+  "id": "93gz2lmFtm",
+  "or_id": "93gz2lmFtm",
+  "title": "UNION: Unsupervised 3D Object Detection using Object Appearance-based Pseudo-Classes",
+  "title_zh": "",
+  "authors": [
+    "Ted Lentsch",
+    "Holger Caesar",
+    "Dariu Gavrila"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Unsupervised 3D object detection methods have emerged to leverage vast amounts of data without requiring manual labels for training. Recent approaches rely on dynamic objects for learning to detect mobile objects but penalize the detections of static instances during training. Multiple rounds of (self) training are used to add detected static instances to the set of training targets; this procedure to improve performance is computationally expensive. To address this, we propose the method UNION. We use spatial clustering and self-supervised scene flow to obtain a set of static and dynamic object proposals from LiDAR. Subsequently, object proposals' visual appearances are encoded to distinguish static objects in the foreground and background by selecting static instances that are visually similar to dynamic objects. As a result, static and dynamic mobile objects are obtained together, and existing detectors can be trained with a single training. In addition, we extend 3D object discovery to detection by using object appearance-based cluster labels as pseudo-class labels for training object classification. We conduct extensive experiments on the nuScenes dataset and increase the state-of-the-art performance for unsupervised 3D object discovery, i.e. UNION more than doubles the average precision to 38.4. The code is available at github.com/TedLentsch/UNION.",
+  "abstract_zh": "",
+  "tldr": "Camera and LiDAR data are jointly exploited to learn to detect 3D objects in an unsupervised manner.",
+  "keywords": [
+    "3D Object Detection",
+    "Multi-Modal Data",
+    "Self-Supervision"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=93gz2lmFtm",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b06760d565fb66db067b646c0986223b57c6f9a8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Camera and LiDAR data are jointly exploited to learn to detect 3D objects in an unsupervised manner."
+  },
+  "collected_at": "2026-03-10T19:21:33.507Z"
+}

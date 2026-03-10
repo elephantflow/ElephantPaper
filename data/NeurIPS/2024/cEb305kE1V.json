@@ -1,0 +1,39 @@
+{
+  "id": "cEb305kE1V",
+  "or_id": "cEb305kE1V",
+  "title": "Deep Implicit Optimization for Robust and Flexible Image Registration",
+  "title_zh": "",
+  "authors": [
+    "Rohit Jena",
+    "Pratik Chaudhari",
+    "James Gee"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Deep Learning in Image Registration (DLIR) methods have been tremendously successful in image registration due to their speed and ability to incorporate weak label supervision at training time. However, DLIR methods forego many of the benefits of classical optimization-based methods. The functional nature of deep networks do not guarantee that the predicted transformation is a local minima of the registration objective, the representation of the transformation (displacement/velocity field/affine) is fixed, and the networks are not robust to domain shift. Our method aims to bridge this gap between classical and learning methods by incorporating optimization as a layer in a deep network. A deep network is trained to predict multi-scale dense feature images that are registered using a black box iterative optimization solver. This optimal warp is then used to minimize image and label alignment errors. By implicitly differentiating end-to-end through an iterative optimization solver, our learned features are registration and label-aware, and the warp functions are guaranteed to be local minima of the registration objective in the feature space. Our framework shows excellent performance on in-domain datasets, and is agnostic to domain shift such as anisotropy and varying intensity profiles. For the first time, our method allows switching between arbitrary transformation representations (free-form to diffeomorphic) at test time with zero retraining. End-to-end feature learning also facilitates interpretability of features, and out-of-the-box promptability using additional label-fidelity terms at inference.",
+  "abstract_zh": "",
+  "tldr": "A new paradigm for deformable image registration which maps registration in a learned feature space to registration in intensity and label spaces using implicit differentiation through optimization",
+  "keywords": [
+    "image registration",
+    "image alignment",
+    "medical image registration",
+    "T1-weighed MRI",
+    "image alignment",
+    "deformable image registration",
+    "diffeomorphism",
+    "optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=cEb305kE1V",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3eac8992d4f3b966b0602bf9c4fc877efaaa26ef.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A new paradigm for deformable image registration which maps registration in a learned feature space to registration in intensity and label spaces using implicit differentiation through optimization"
+  },
+  "collected_at": "2026-03-10T19:21:30.142Z"
+}

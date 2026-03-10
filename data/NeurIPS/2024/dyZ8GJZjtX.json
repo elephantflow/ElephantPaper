@@ -1,0 +1,35 @@
+{
+  "id": "dyZ8GJZjtX",
+  "or_id": "dyZ8GJZjtX",
+  "title": "Multi-Head Mixture-of-Experts",
+  "title_zh": "",
+  "authors": [
+    "Xun Wu",
+    "Shaohan Huang",
+    "Wenhui Wang",
+    "Shuming Ma",
+    "Li Dong",
+    "Furu Wei"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "Sparse Mixtures of Experts (SMoE) scales model capacity without significant increases in computational costs. However, it exhibits the low expert activation issue, i.e., only a small subset of experts are activated for optimization, leading to suboptimal performance and limiting its effectiveness in learning a larger number of experts in complex tasks. In this paper, we propose Multi-Head Mixture-of-Experts (MH-MoE). MH-MoE split each input token into multiple sub-tokens, then these sub-tokens are assigned to and processed by a diverse set of experts in parallel, and seamlessly reintegrated into the original token form. The above operations enables MH-MoE to significantly enhance expert activation while collectively attend to information from various representation spaces within different experts to deepen context understanding. Besides, it's worth noting that our MH-MoE is straightforward to implement and decouples from other SMoE frameworks, making it easy to integrate with these frameworks for enhanced performance. Extensive experimental results across different parameter scales (300M to 7B) and three pre-training tasks—English-focused language modeling, multi-lingual language modeling and masked multi-modality modeling—along with multiple downstream validation tasks, demonstrate the effectiveness of MH-MoE.",
+  "abstract_zh": "",
+  "tldr": "An novel Mixture-of-Experts model utilizing a multi-head mechanism to augment the expert utilization and refine the granularity of understanding capabilities.",
+  "keywords": [
+    "Mixture-of-Experts; Multi-head Mechanism"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=dyZ8GJZjtX",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/46247a300fc3820e1ead7c7fbae186c9f252330b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "An novel Mixture-of-Experts model utilizing a multi-head mechanism to augment the expert utilization and refine the granularity of understanding capabilities."
+  },
+  "collected_at": "2026-03-10T19:21:33.508Z"
+}

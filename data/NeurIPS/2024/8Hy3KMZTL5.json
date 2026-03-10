@@ -1,0 +1,39 @@
+{
+  "id": "8Hy3KMZTL5",
+  "or_id": "8Hy3KMZTL5",
+  "title": "Parameter-efficient Fine-tuning in Hyperspherical Space for Open-vocabulary Semantic Segmentation",
+  "title_zh": "",
+  "authors": [
+    "Zelin Peng",
+    "Zhengqin Xu",
+    "Zhilin Zeng",
+    "Yaoming Wang",
+    "Lingxi Xie",
+    "Qi Tian",
+    "Wei Shen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "Submitted to NeurIPS 2024",
+  "abstract": "Open-vocabulary semantic segmentation seeks to label each pixel in an image with arbitrary text descriptions. Vision-language foundation models, especially CLIP, have recently emerged as powerful tools for acquiring open-vocabulary capabilities. \nHowever, fine-tuning CLIP to equip it with pixel-level prediction ability often suffers three issues: 1) high computational cost, 2) misalignment between the two inherent modalities of CLIP, and 3) degraded generalization ability on unseen categories. To address these issues, we propose \\alg, a symmetrical parameter-efficient fine-tuning (PEFT) strategy conducted in hyperspherical space for both of the two CLIP modalities. Specifically, the PEFT strategy is achieved by a series of efficient block-diagonal learnable transformation matrices and a dual cross-relation communication module among all learnable matrices. Since the PEFT strategy is conducted symmetrically to the two CLIP modalities, the misalignment between them is mitigated. Furthermore, we apply an additional constraint to PEFT on the CLIP text encoder according to the hyperspherical energy principle, i.e., minimizing hyperspherical energy during fine-tuning preserves the intrinsic structure of the original parameter space, to prevent the destruction of the generalization ability offered by the CLIP text encoder. Extensive evaluations across various benchmarks show that H-CLIP achieves new SOTA open-vocabulary semantic segmentation results while only requiring updating approximately 4\\% of the total parameters of CLIP.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Open-vocabulary Semantic Segmentation",
+    "Hyperspherical Energy",
+    "Partial Orthogonal Fine-tuning",
+    "Dual Cross Relation Communication"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=8Hy3KMZTL5",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/97c25a36ac7a38fd69bb3d459154eeb002fe17ea.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Open-vocabulary semantic segmentation seeks to label each pixel in an image with arbitrary text descriptions. Vision-language foundation models, especially CLIP, have recently emerged as powerful tools for acquiring open-vocabulary capabilities. \nHowever, fine-tuning CLIP to equip it with pixel-leve"
+  },
+  "collected_at": "2026-03-10T19:21:33.507Z"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "09nyBqSdUz",
+  "or_id": "09nyBqSdUz",
+  "title": "RefDrop: Controllable Consistency in Image or Video Generation via Reference Feature Guidance",
+  "title_zh": "",
+  "authors": [
+    "Jiaojiao Fan",
+    "Haotian Xue",
+    "Qinsheng Zhang",
+    "Yongxin Chen"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "There is a rapidly growing interest in controlling consistency across multiple generated images using diffusion models. Among various methods, recent works have found that simply manipulating attention modules by concatenating features from multiple reference images provides an efficient approach to enhancing consistency without fine-tuning. Despite its popularity and success, few studies have elucidated the underlying mechanisms that contribute to its effectiveness. In this work, we reveal that the popular approach is a linear interpolation of image self-attention and cross-attention between synthesized content and reference features, with a constant rank-1 coefficient. Motivated by this observation, we find that a rank-1 coefficient is not necessary and simplifies the controllable generation mechanism. The resulting algorithm, which we coin as RefDrop, allows users to control the influence of reference context in a direct and precise manner. Besides further enhancing consistency in single-subject image generation, our method also enables more interesting applications, such as the consistent generation of multiple subjects, suppressing specific features to encourage more diverse content, and high-quality personalized video generation by boosting temporal consistency. Even compared with state-of-the-art image-prompt-based generators, such as IP-Adapter, RefDrop is competitive in terms of controllability and quality while avoiding the need to train a separate image encoder for feature injection from reference images, making it a versatile plug-and-play solution for any image or video diffusion model.",
+  "abstract_zh": "",
+  "tldr": "Our novel self-attention layers boosts control over feature injection from a single or multiple reference images, enhancing both image and video generation for diffusion model.",
+  "keywords": [
+    "Consistent image generation",
+    "Diverse image generation",
+    "Improve temporal-consistency",
+    "Feature injection from multiple images"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=09nyBqSdUz",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/666abdc45ab3cd2b2837525f6f089ce0643ac59d.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Our novel self-attention layers boosts control over feature injection from a single or multiple reference images, enhancing both image and video generation for diffusion model."
+  },
+  "collected_at": "2026-03-10T19:21:33.508Z"
+}

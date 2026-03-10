@@ -1,0 +1,34 @@
+{
+  "id": "NLmAGkN6nn",
+  "or_id": "NLmAGkN6nn",
+  "title": "PTQ4DiT: Post-training Quantization for Diffusion Transformers",
+  "title_zh": "",
+  "authors": [
+    "Junyi Wu",
+    "Haoxuan Wang",
+    "Yuzhang Shang",
+    "Mubarak Shah",
+    "Yan Yan"
+  ],
+  "conference": "NeurIPS",
+  "year": 2024,
+  "venue": "NeurIPS 2024 poster",
+  "abstract": "The recent introduction of Diffusion Transformers (DiTs) has demonstrated exceptional capabilities in image generation by using a different backbone architecture, departing from traditional U-Nets and embracing the scalable nature of transformers. Despite their advanced capabilities, the wide deployment of DiTs, particularly for real-time applications, is currently hampered by considerable computational demands at the inference stage. Post-training Quantization (PTQ) has emerged as a fast and data-efficient solution that can significantly reduce computation and memory footprint by using low-bit weights and activations. However, its applicability to DiTs has not yet been explored and faces non-trivial difficulties due to the unique design of DiTs. In this paper, we propose PTQ4DiT, a specifically designed PTQ method for DiTs. We discover two primary quantization challenges inherent in DiTs, notably the presence of salient channels with extreme magnitudes and the temporal variability in distributions of salient activation over multiple timesteps. To tackle these challenges, we propose Channel-wise Salience Balancing (CSB) and Spearmen's $\\rho$-guided Salience Calibration (SSC). CSB leverages the complementarity property of channel magnitudes to redistribute the extremes, alleviating quantization errors for both activations and weights. SSC extends this approach by dynamically adjusting the balanced salience to capture the temporal variations in activation. Additionally, to eliminate extra computational costs caused by PTQ4DiT during inference, we design an offline re-parameterization strategy for DiTs. Experiments demonstrate that our PTQ4DiT successfully quantizes DiTs to 8-bit precision (W8A8) while preserving comparable generation ability and further enables effective quantization to 4-bit weight precision (W4A8) for the first time.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel Post-training Quantization method for Diffusion Transformers to enhance the inference efficiency.",
+  "keywords": [
+    "Model Quantization; Diffusion Transformer; Efficiency"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=NLmAGkN6nn",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e43097144c858dad7778347dd4cbed8e8919978e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel Post-training Quantization method for Diffusion Transformers to enhance the inference efficiency."
+  },
+  "collected_at": "2026-03-10T19:21:33.508Z"
+}
