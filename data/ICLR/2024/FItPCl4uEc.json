@@ -1,0 +1,36 @@
+{
+  "id": "FItPCl4uEc",
+  "or_id": "FItPCl4uEc",
+  "title": "Efficient Transfer Learning from Arbitrary Pre-Trained Models",
+  "title_zh": "",
+  "authors": [
+    "Shikai Qiu",
+    "Boran Han",
+    "Danielle C. Maddix",
+    "Shuai Zhang",
+    "Bernie Wang",
+    "Andrew Gordon Wilson"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Transfer learning typically involves loading pre-trained weights as an initialization, followed by fine-tuning on a downstream task. As pre-trained models become ever larger, this procedure is becoming prohibitively expensive, as we are forced to re-use the pre-trained architecture for fine-tuning. This procedure also precludes combining multiple pre-trained models that learn complementary information. Moreover, alternatives such as knowledge distillation do not reflect that we wish to transfer aspects of the pre-trained representation that are most relevant to the downstream task. To address these challenges, we introduce Adaptive Feature Transfer (AFT). Instead of transferring weights, AFT operates purely on features, thereby decoupling the choice of the pre-trained model from the possibly smaller downstream model. AFT (1) enables transfer from multiple pre-trained models, even over multiple modalities, with minimal training overhead and no inference overhead; (2) selectively transfers the information in the pre-trained features most relevant for the downstream task, through a prior that favors low mutual information between the downstream inputs and features given the pre-trained features; (3) performs feature transfer in an efficient kernel formulation that prioritizes the most relevant degrees of freedom. Empirically, AFT delivers a substantial boost in performance across diverse vision, language, and multi-modal datasets, relative to both standard transfer learning and knowledge distillation with the downstream model.",
+  "abstract_zh": "",
+  "tldr": "We introduce a compute efficient method for transfer learning from any type and number of pre-trained models.",
+  "keywords": [
+    "Transfer learning",
+    "Foundation models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=FItPCl4uEc",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e8b3c931d965bc3dcbaaeee9d611b52f488e2085.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce a compute efficient method for transfer learning from any type and number of pre-trained models."
+  },
+  "collected_at": "2026-03-11T03:45:37.577Z"
+}

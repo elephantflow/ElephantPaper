@@ -1,0 +1,44 @@
+{
+  "id": "ZlZakr4GYK",
+  "or_id": "ZlZakr4GYK",
+  "title": "COTIC: Embracing Non-uniformity in Event Sequence Data via Multilayer Continuous Convolution",
+  "title_zh": "",
+  "authors": [
+    "Vladislav Andreevich Zhuzhel",
+    "Vsevolod Grabar",
+    "Galina Boeva",
+    "Artem Zabolotnyi",
+    "Alexander Stepikin",
+    "Vladimir Zholobov",
+    "Maria Ivanova",
+    "Mikhail Orlov",
+    "Ivan A Kireev",
+    "Evgeny Burnaev",
+    "Rodrigo Rivera-Castro",
+    "Alexey Zaytsev"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Massive samples of event sequences occur in various domains, including e-commerce, healthcare, and finance. There are two main challenges regarding modeling such data: methodological and computational. The methodological peculiarity for event sequences is their non-uniformity and sparsity. These requirements make time series models unsuitable. The computational challenge arises from a large amount of available data and the significant length of each sequence. Thus, the problem requires complex and efficient models.\nExisting solutions include large recurrent and transformer neural network architectures. \nOn top of existing blocks, their authors introduce specific intensity functions defined at each moment.\nHowever, due to their parametric nature, these continuous-time-aware intensities represent only a limited class of event sequences. \n\nWe propose the COTIC method based on an efficient continuous convolution neural network suitable for the non-uniform occurrence of events in time. In COTIC, dilations and multi-layer architecture efficiently handle long-term dependencies between events. Furthermore, the model provides intensity dynamics in continuous time --- including self-excitement encountered in practice. Being the first to introduce multiple continuous convolution layers that can handle arbitrary complex dependencies via MLP-modeled convolutions, we obtain these properties.\n\nWhen benchmarked against existing models, the COTIC consistently outperforms them, especially in predicting the next event time and type: it has the average rank of 2.125 vs. 3.688 of the primal competitor. Additionally, its ability to produce effective embeddings showcases its potential for a range of downstream tasks, as produced embeddings are sufficient to solve various downstream tasks, e.g., 0.459 vs. 0.452 baseline accuracy on a 4-label age bin prediction for transactions dataset. The code of the proposed method is available at  https://anonymous.4open.science/r/COTIC-F47D/README.md",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "temporal point process",
+    "time series",
+    "continuous convolutions",
+    "neural networks"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ZlZakr4GYK",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3016fea094db023201e6980f15a2b14d31d744af.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Massive samples of event sequences occur in various domains, including e-commerce, healthcare, and finance. There are two main challenges regarding modeling such data: methodological and computational. The methodological peculiarity for event sequences is their non-uniformity and sparsity. These req"
+  },
+  "collected_at": "2026-03-11T03:45:37.580Z"
+}

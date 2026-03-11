@@ -1,0 +1,38 @@
+{
+  "id": "QlFlo5533z",
+  "or_id": "QlFlo5533z",
+  "title": "Auto DP-SGD: Dual Improvements of Privacy and Accuracy via Automatic Clipping Threshold and Noise Multiplier Estimation",
+  "title_zh": "",
+  "authors": [
+    "Sai Venkatesh Chilukoti",
+    "Md Imran Hossen",
+    "Liqun Shan",
+    "Vijay Srinivas Tida",
+    "Xiali Hei"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Differentially Private Stochastic Gradient Descent (DP-SGD) has emerged as a popular method to protect personally identifiable information in deep learning (DL) applications. Unfortunately, DP-SGD's per-sample gradient clipping and uniform noise addition during training can significantly degrade model utility. To enhance the model's utility, researchers proposed various adaptive/dynamic DP-SGD methods by adapting the noise multiplier and clipping threshold. However, we examined and discovered that these established techniques result in greater privacy leakage or lower accuracy than the traditional DP-SGD method, or a lack of evaluation on a complex data set such as CIFAR100. To address these limitations, we propose an automatic DP-SGD (Auto DP-SGD). Our method automates clipping threshold estimation based on the DL model's total gradient norm and scales the gradients of each training sample instead of simply clipping them without losing gradient information or requiring an additional privacy budget. This helps to improve the algorithm's utility while using a less privacy budget. To further improve accuracy, we introduce automatic noise multiplier decay mechanisms to decrease the noise multiplier after every epoch. Finally, we develop closed-form mathematical expressions using the truncated concentrated differential privacy (tCDP) accountant, which offers a straightforward and tight privacy-bound analysis for automatic noise multiplier and automatic clipping estimation. Through extensive experimentation, we demonstrate that Auto DP-SGD outperforms existing state-of-the-art (SOTA) classification results in privacy and accuracy on various benchmark datasets. We also show that privacy can be improved by lowering the scale factor and using learning rate schedulers without significantly reducing privacy. Moreover, we also explain how to select the best Auto DP-SGD variant without additional privacy leakage. Specifically, Auto DP-SGD, when used with a step noise multiplier",
+  "abstract_zh": "",
+  "tldr": "An automatic DP-SGD algorithm that improves accuracy and privacy",
+  "keywords": [
+    "Differential Privacy",
+    "tCDP",
+    "Auto DP-SGD",
+    "clipping threshold estimation",
+    "noise multiplier decay"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=QlFlo5533z",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c93f3b4ffbcbec5ba7cd8a3d84db2de6850d4b72.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "An automatic DP-SGD algorithm that improves accuracy and privacy"
+  },
+  "collected_at": "2026-03-11T03:45:37.577Z"
+}

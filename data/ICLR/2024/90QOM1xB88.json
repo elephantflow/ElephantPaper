@@ -1,0 +1,32 @@
+{
+  "id": "90QOM1xB88",
+  "or_id": "90QOM1xB88",
+  "title": "Improved order analysis and design of exponential integrator for diffusion models sampling",
+  "title_zh": "",
+  "authors": [
+    "Qinsheng Zhang",
+    "Jiaming Song",
+    "Yongxin Chen"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Efficient differential equation solvers have significantly reduced the sampling time of diffusion models (DMs) while retaining high sampling quality. Among these solvers, exponential integrators (EI) have gained prominence by demonstrating state-of-the-art performance. However, existing high-order EI-based sampling algorithms rely on degenerate EI solvers, resulting in inferior error bounds and reduced accuracy in contrast to the theoretically anticipated results under optimal settings. This situation makes the sampling quality extremely vulnerable to seemingly innocuous design choices such as timestep schedules. For example, an inefficient timestep scheduler might necessitate twice the number of steps to achieve a quality comparable to that obtained through carefully optimized timesteps. To address this issue, we reevaluate the design of high-order differential solvers for DMs. Through a thorough order analysis, we reveal that the degeneration of existing high-order EI solvers can be attributed to the absence of essential order conditions. By reformulating the differential equations in DMs and capitalizing on the theory of exponential integrators, we propose refined EI solvers that fulfill all the order conditions, which we designate as Refined Exponential Solver (RES). Utilizing these improved solvers, RES exhibits more favorable error bounds theoretically and achieves superior sampling efficiency and stability in practical applications. For instance, a simple switch from the single-step DPM-Solver++ to our order-satisfied numerical scheme when NFE$=9$, results in a reduction of numerical defects by 25.2 and FID improvement of  25.4 (16.77 vs 12.51) on a pre-trained ImageNet diffusion model.",
+  "abstract_zh": "",
+  "tldr": "improved order analysis and design of diffusion model sampling algorithm",
+  "keywords": [
+    "diffusion model;order analysis;fast sampling"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=90QOM1xB88",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/14f901156f2343058a7f9f80ccc8a786932f7be4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "improved order analysis and design of diffusion model sampling algorithm"
+  },
+  "collected_at": "2026-03-11T03:45:37.578Z"
+}
