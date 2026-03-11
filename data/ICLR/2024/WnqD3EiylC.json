@@ -1,0 +1,34 @@
+{
+  "id": "WnqD3EiylC",
+  "or_id": "WnqD3EiylC",
+  "title": "The Representation Jensen-Shannon Divergence",
+  "title_zh": "",
+  "authors": [
+    "Jhoan Keider Hoyos",
+    "Santiago Posso-Murillo",
+    "Luis Gonzalo Sanchez Giraldo"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Statistical divergences quantify the difference between probability distributions, thereby allowing for multiple uses in machine-learning. However, a fundamental challenge of these quantities is their estimation from empirical samples since the underlying distributions of the data are usually unknown. In this work, we propose a divergence inspired by the Jensen-Shannon divergence which avoids the estimation of the probability density functions. Our approach embeds the data in an reproducing kernel Hilbert space (RKHS) where we associate data distributions with uncentered covariance operators in this representation space. Therefore, we name this measure the representation Jensen-Shannon divergence (RJSD). We provide an estimator from empirical covariance matrices by explicitly mapping the data to an RKHS using Fourier features. This estimator is flexible, scalable, differentiable, and suitable for minibatch-based optimization problems. Additionally, we provide an estimator based on kernel matrices without an explicit mapping to the RKHS. We provide consistency convergence results for the proposed estimator. Moreover, we demonstrate that this quantity is a lower bound on the Jensen-Shannon divergence, leading to a variational approach to estimate it with theoretical guarantees. We leverage the proposed divergence to train generative networks, where our method mitigates mode collapse and encourages samples diversity.  Additionally, RJSD surpasses other state-of-the-art techniques in multiple two-sample testing problems, demonstrating superior performance and reliability in discriminating between distributions.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel divergence based on covariance operators in reproducing kernel Hilbert spaces.",
+  "keywords": [
+    "Statistical Divergence",
+    "Kernel methods",
+    "Two sample testing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=WnqD3EiylC",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f7f0ff17e4c00e64a23fabbeb90bb3441acaeac4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel divergence based on covariance operators in reproducing kernel Hilbert spaces."
+  },
+  "collected_at": "2026-03-11T03:25:39.912Z"
+}

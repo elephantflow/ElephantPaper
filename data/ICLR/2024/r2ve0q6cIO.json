@@ -1,0 +1,33 @@
+{
+  "id": "r2ve0q6cIO",
+  "or_id": "r2ve0q6cIO",
+  "title": "Graph Neural Networks Gone Hogwild",
+  "title_zh": "",
+  "authors": [
+    "Olga Solodova",
+    "Nick Richardson",
+    "Deniz Oktay",
+    "Ryan P Adams"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Graph neural networks (GNNs) constitute a dominant class of architectures for modelling graph-structured data.\n  Message-passing GNNs in particular appear to be ideal for applications where distributed inference is desired, since node updates can be performed locally. \n  Implementing distributed inference of GNNs on enormous graphs is a conspicuous example of such an application.\n  In this work, we are particularly motivated by the view that GNNs can be interpreted as parametric communication policies between agents which collectively solve a distributed optimization problem (e.g., in robotic swarms or sensor networks).\n  For these applications, node synchrony and central control are undesirable, since they result in communication bottlenecks and reduce fault tolerance and scalability.\n  We examine GNN inference under asynchrony, and find that most GNNs generate arbitrarily incorrect predictions in this regime. \n  A notable exception is GNNs which cast message passing as a fixed point iteration with contractive update functions. \n  We propose a novel GNN architecture, energy GNNs, in which node embeddings are computed by minimizing a scalar-valued convex \"energy\" function.\n  By framing message passing as convex optimization, we unlock a richer class of update functions which preserve robustness under asynchronous execution. \n  We show that, empirically, we outperform other GNNs which are amenable to asynchronous execution on a multitude of tasks across both synthetic and real-world datasets.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "graph neural network"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=r2ve0q6cIO",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ba714f4ba5352148a92bf9dbaf47358553843af3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Graph neural networks (GNNs) constitute a dominant class of architectures for modelling graph-structured data.\n  Message-passing GNNs in particular appear to be ideal for applications where distributed inference is desired, since node updates can be performed locally. \n  Implementing distributed inf"
+  },
+  "collected_at": "2026-03-11T03:25:39.911Z"
+}

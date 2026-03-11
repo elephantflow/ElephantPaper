@@ -1,0 +1,38 @@
+{
+  "id": "ZMuPAOY8Oz",
+  "or_id": "ZMuPAOY8Oz",
+  "title": "Positional Description Matters for Transformers Arithmetic",
+  "title_zh": "",
+  "authors": [
+    "Ruoqi Shen",
+    "Sebastien Bubeck",
+    "Ronen Eldan",
+    "Yin Tat Lee",
+    "Yuanzhi Li",
+    "Yi Zhang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Transformers, central to the successes in modern Natural Language Processing, often falter on arithmetic tasks despite their vast capabilities --which paradoxically include remarkable coding abilities. We observe that a crucial challenge is their naive reliance on positional information to solve arithmetic problems with a small number of digits, leading to poor performance on larger numbers. Herein, we delve deeper into the role of positional encoding, and propose several ways to fix the issue, either by modifying the positional encoding directly, or by modifying the representation of the arithmetic task to leverage standard positional encoding differently. We investigate the value of these modifications for three tasks: (i) classical multiplication, (ii) length extrapolation in addition, and (iii) addition in natural language context. For (i) we train a small model on a small dataset (100M parameters and 300k samples) with remarkable aptitude in (direct, no scratchpad) 15 digits multiplication and essentially perfect up to 12 digits, while usual training in this context would give a model failing at 4 digits multiplication. In the experiments on addition, we use a mere 120k samples to demonstrate: for (ii) extrapolation from 10 digits to testing on 12 digits numbers while usual training would have no extrapolation, and for (iii) almost perfect accuracy up to 5 digits while usual training would be correct only up to 3 digits (which is essentially memorization with a training set of 120k samples).",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Transformer",
+    "Arithmetic",
+    "Language Model",
+    "Deep Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ZMuPAOY8Oz",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1663f658ed18db859e825f86c037a76ede3b5419.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Transformers, central to the successes in modern Natural Language Processing, often falter on arithmetic tasks despite their vast capabilities --which paradoxically include remarkable coding abilities. We observe that a crucial challenge is their naive reliance on positional information to solve ari"
+  },
+  "collected_at": "2026-03-11T03:25:39.911Z"
+}

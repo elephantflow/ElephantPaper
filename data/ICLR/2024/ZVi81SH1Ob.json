@@ -1,0 +1,33 @@
+{
+  "id": "ZVi81SH1Ob",
+  "or_id": "ZVi81SH1Ob",
+  "title": "Neural Collapse meets Differential Privacy:  Curious behaviors of NoisySGD with Near-Perfect Representation Learning",
+  "title_zh": "",
+  "authors": [
+    "Chendi Wang",
+    "Yuqing Zhu",
+    "Weijie J Su",
+    "Yu-Xiang Wang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "In recent studies, it has been demonstrated that large-scale representation learning through pre-training on gigantic datasets significantly enhances differentially private learning for downstream tasks. By training on Google's proprietary JFT dataset, one can achieve an unprecedented 83% Top 1 accuracy on ImageNet with strong privacy parameters $(0.5,8\\times 10^{-7})$-DP, even given the high dimensionality of the feature space.\nWhile the exact behaviors of NoisySGD in these scenarios remain theoretically challenging to analyze, we explore an idealized setting using a layer-peeled model for representation learning, which results in interesting phenomena of the learned features known as neural collapse. Under this setting, we have observed several notable behaviors of NoisySGD.\nSpecifically, we demonstrate that under perfect neural collapse, the misclassification error is unaffected by the dimension of the features. This dimension-independent result holds with any learning rate and even with class imbalance and is not influenced by the nature of the loss functions.\nNevertheless, a dimension dependency emerges when introducing minor perturbations in either the feature or model space. To address this dependency under perturbation, we suggest several strategies, such as pre-processing features or employing principal component analysis to reduce feature dimensions.",
+  "abstract_zh": "",
+  "tldr": "We investigate DP-SGD's performance in fine-tuning under the regime of neural collapse and assess its resilience to perturbations in pre-trained features.",
+  "keywords": [
+    "Differential privacy; neural collapse; DP-SGD; representation Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ZVi81SH1Ob",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/dd1453ee86419e4df82edef4d49bc25aeba105e8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We investigate DP-SGD's performance in fine-tuning under the regime of neural collapse and assess its resilience to perturbations in pre-trained features."
+  },
+  "collected_at": "2026-03-11T03:25:39.909Z"
+}
