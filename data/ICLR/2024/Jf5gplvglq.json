@@ -1,0 +1,38 @@
+{
+  "id": "Jf5gplvglq",
+  "or_id": "Jf5gplvglq",
+  "title": "SKILL-MIX: a Flexible and Expandable Family of Evaluations for AI Models",
+  "title_zh": "",
+  "authors": [
+    "Dingli Yu",
+    "Simran Kaur",
+    "Arushi Gupta",
+    "Jonah Brown-Cohen",
+    "Anirudh Goyal",
+    "Sanjeev Arora"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "With LLMs shifting their role from statistical modeling of language to serving as general-purpose AI agents, how should LLM evaluations change? Arguably, a key ability of an AI agent is to flexibly combine, as needed, the basic skills it has learned. The capability to combine skills plays an important role in (human) pedagogy and also in a paper on emergence phenomena (Arora & Goyal, 2023).\n\nThis work introduces SKILL-MIX, a new evaluation to measure ability to combine skills. Using a list of $N$  skills the evaluator repeatedly picks random subsets of $k$ skills and asks the LLM to produce text combining that subset of skills. Since the number of subsets grows like $N^k$, for even modest $k$ this evaluation will, with high probability, require the LLM to produce text significantly different from any text in the training set. \nThe paper develops a methodology for (a) designing and administering such an evaluation, and (b) automatic grading (plus spot-checking by humans) of the results using GPT-4 as well as the open LLaMA-2 70B model. \n\nAdministering a version of SKILL-MIX to popular chatbots gave results that,  while generally in line with prior expectations, contained surprises. Sizeable differences exist among model capabilities that are not captured by their ranking on popular LLM leaderboards (\"cramming for the leaderboard\"). Furthermore, simple probability calculations indicate that GPT-4's reasonable performance on $k=5$ is suggestive of going beyond \"stochastic parrot\" behavior (Bender et al., 2021), i.e., it combines skills in ways that it had not seen during training.\n\nWe sketch how the methodology can lead to a SKILL-MIX based eco-system of open evaluations for AI capabilities of future models. We maintain a leaderboard of SKILL-MIX at [https://skill-mix.github.io](https://skill-mix.github.io).",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Large language model",
+    "skill evaluation",
+    "LLM benchmark",
+    "emergence"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Jf5gplvglq",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2f6d42f9e2ebcdc95ea494a075e5cd3fc7e5e119.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "With LLMs shifting their role from statistical modeling of language to serving as general-purpose AI agents, how should LLM evaluations change? Arguably, a key ability of an AI agent is to flexibly combine, as needed, the basic skills it has learned. The capability to combine skills plays an importa"
+  },
+  "collected_at": "2026-03-11T01:05:37.705Z"
+}

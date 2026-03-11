@@ -1,0 +1,37 @@
+{
+  "id": "fjRM5ozPv9",
+  "or_id": "fjRM5ozPv9",
+  "title": "Local-Forward: Towards Biological Plausibility in Deep Reinforcement Learning",
+  "title_zh": "",
+  "authors": [
+    "Jonas Guan",
+    "Shon Eduard Verch",
+    "Claas A Voelcker",
+    "Ethan C Jackson",
+    "Nicolas Papernot",
+    "William A Cunningham"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "A lasting critique of deep learning as a model for biological intelligence and learning is the biological implausibility of backpropagation.\nBackpropagation requires caching local outputs and propagating a global error via derivatives, neither of which are known to be implemented by biological neurons.\nIn reinforcement learning, building more biologically plausible agents would allow us to better model human cognition and social behavior, and improve computational efficiency.\nWe propose Local-Forward, a new temporal-difference learning algorithm (and associated architecture) that trains neural networks to predict Q-values.\nRather than backpropagating error derivates, we rely on updates that are local to each layer of the architecture and additionally use forward connections in time to pass information from upper layers to lower layers via activations. Our approach builds on the recently proposed Forward-Forward algorithm, as well as recurrence and attention in neural architectures. \nThis approach no longer suffer the aforementioned contradictions with biology.\nFurthermore, as a proof-of-concept, we train reinforcement learning agents with Local-Forward to solve control tasks in the MinAtar environments, and show that our method's potential warrants further investigation because it opens avenues for more computational efficient training.",
+  "abstract_zh": "",
+  "tldr": "We propose a new TD-learning algorithm that is more biologically plausible than DQNs, and show it can achieve comparable performance on the MinAtar testbed.",
+  "keywords": [
+    "biological plausibility",
+    "deep Q-learning",
+    "TD learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=fjRM5ozPv9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/47b538f5fcbf15b78faf83f35f5b7068fc5d24b5.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a new TD-learning algorithm that is more biologically plausible than DQNs, and show it can achieve comparable performance on the MinAtar testbed."
+  },
+  "collected_at": "2026-03-11T01:05:37.705Z"
+}

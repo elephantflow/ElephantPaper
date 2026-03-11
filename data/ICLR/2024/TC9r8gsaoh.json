@@ -1,0 +1,32 @@
+{
+  "id": "TC9r8gsaoh",
+  "or_id": "TC9r8gsaoh",
+  "title": "Nuisance-Robust Weighting Network for End-to-End Causal Effect Estimation",
+  "title_zh": "",
+  "authors": [
+    "Akira Tanimoto"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "We combine the two major approaches to causal inference: the conventional statistical approach based on weighting and the end-to-end learning with adversarial networks.\nCausal inference concerns the expected loss in a distribution different from the training distribution due to intervening on the input variables.\nRecently, the representation balancing approach with neural networks has repeatedly demonstrated superior performance for complex problems, owing to its end-to-end modeling by adversarial formulation.\nHowever, some recent work has shown that the limitation lies in the unrealistic theoretical assumption of the invertibility of the representation extractor.\nThis inherent difficulty stems from the fact that the representation-level discrepancy in representation balancing accounts only for the uncertainty of the later layers than the representation, i.e., the hypothesis layers and the loss.\nTherefore, we shed light once again on the conventional weighting-based approach, retaining the spirit of end-to-end learning.\nMost conventional statistical methods are based on inverse probability weighting using propensity scores, which involves nuisance estimation of propensity as an intermediate step.\nThey often suffer from inaccurate estimation of the propensity scores and instability due to large weights.\nOne might be tempted to jointly optimize the nuisance and the target, though it may lead to an optimistic evaluation, e.g., avoiding noisy instances by weighting less when noise levels are heterogeneous.\nIn this paper, we propose a simple method that amalgamates the strengths of both approaches: adversarial joint optimization of the nuisance and the target.\nOur formulation follows the pessimistic evaluation principle in offline reinforcement learning, which brings provable robustness to the estimation uncertainty of the nuisance and the instability due to extreme weights.\nOur method performed consistently well under challenging settings with heterogeneous noise. Our c",
+  "abstract_zh": "",
+  "tldr": "We control for uncertainty in the nuisance estimation of propensity scores based on the pessimism principle by adversarial joint optimization of propensity model under a likelihood constraint and a stability regularizer.",
+  "keywords": [
+    "causal inference",
+    "pessimism",
+    "adversarial training"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=TC9r8gsaoh",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c2a90d9ed5e3a3a47c054c2ef06b6e12fc8e8f7b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We control for uncertainty in the nuisance estimation of propensity scores based on the pessimism principle by adversarial joint optimization of propensity model under a likelihood constraint and a stability regularizer."
+  },
+  "collected_at": "2026-03-11T01:05:37.705Z"
+}

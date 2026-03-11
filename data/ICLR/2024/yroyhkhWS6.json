@@ -1,0 +1,39 @@
+{
+  "id": "yroyhkhWS6",
+  "or_id": "yroyhkhWS6",
+  "title": "A Quadratic Synchronization Rule for Distributed Deep Learning",
+  "title_zh": "",
+  "authors": [
+    "Xinran Gu",
+    "Kaifeng Lyu",
+    "Sanjeev Arora",
+    "Jingzhao Zhang",
+    "Longbo Huang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "In distributed deep learning with data parallelism, synchronizing gradients at each training step can cause a huge communication overhead, especially when many nodes work together to train large models.\n  Local gradient methods, such as Local SGD, address this issue by allowing workers to compute locally for $H$ steps without synchronizing with others, hence reducing communication frequency.\n  While $H$ has been viewed as a hyperparameter to trade optimization efficiency for communication cost, recent research indicates that setting a proper  $H$ value can lead to generalization improvement. Yet, selecting a proper $H$ is elusive. This work proposes a theory-grounded method for determining $H$, named the Quadratic Synchronization Rule (QSR), which recommends dynamically setting $H$ in proportion to $\\frac{1}{\\eta^2}$ as the learning rate $\\eta$ decays over time.\n  Extensive ImageNet experiments on ResNet and ViT show that local gradient methods with QSR consistently improve the test accuracy over other synchronization strategies. Compared to the standard data parallel training, QSR enables Local AdamW to cut the training time on 16 or 64 GPUs down from 26.7 to 20.2 hours or from 8.6 to 5.5 hours and, at the same time, achieves 1.16% or 0.84% higher top-1 validation accuracy.",
+  "abstract_zh": "",
+  "tldr": "We propose Quadratic Synchronization Rule (QSR) to dynamically set the synchronization period in local gradient methods based on the learning rate, reducing wall-clock training time and improving test accuracy of ResNet and ViT on ImageNet.",
+  "keywords": [
+    "distributed training",
+    "Local SGD",
+    "local gradient methods",
+    "generalization",
+    "implicit bias",
+    "sharpness"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=yroyhkhWS6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d7d0725ff6973ff72e22785c8490bab873333e1c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose Quadratic Synchronization Rule (QSR) to dynamically set the synchronization period in local gradient methods based on the learning rate, reducing wall-clock training time and improving test accuracy of ResNet and ViT on ImageNet."
+  },
+  "collected_at": "2026-03-11T01:05:37.705Z"
+}

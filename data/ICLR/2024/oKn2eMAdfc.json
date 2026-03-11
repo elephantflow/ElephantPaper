@@ -1,0 +1,39 @@
+{
+  "id": "oKn2eMAdfc",
+  "or_id": "oKn2eMAdfc",
+  "title": "OrthCaps: An Orthogonal CapsNet with Sparse Attention Routing and Pruning",
+  "title_zh": "",
+  "authors": [
+    "Xinyu Geng",
+    "Jiaming Wang",
+    "Jiawei Gong",
+    "yuerong xue",
+    "Jun Xu",
+    "Fanglin Chen",
+    "Xiaolin Huang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Redundancy is a persistent challenge in Capsule Networks (CapsNet), leading to high computational costs and parameter counts (Jeong et al., 2019; Sharifi et al., 2021; Renzulli & Grangetto, 2022). Although previous works have introduced pruning after the initial capsule layer, dynamic routing’s iterative and fully connected nature reintroduces inefficiencies and redundancy in deeper layers. In this paper, we propose the Orthogonal Capsule Network (OrthCaps) to reduce redundancy, improve routing performance and decrease parameter count. Specifically, an efficient pruned capsule layer is placed to discard redundant capsules and dynamic routing is replaced with orthogonal sparse attention routing. Besides, we orthogonalize weight matrices during routing to ensure feature diversity and sustain low capsule similarity, the idea of which is inspired by the application of orthogonality in Convolutional Neural Networks (CNNs). Moreover, a novel activation function named Capsule ReLU is proposed to address vanishing gradients. Our experiments on baseline datasets affirm the efficiency and robustness of OrthCaps in classification tasks, in which ablation studies validate the criticality of each component. Remarkably, with only 110k parameters, merely 1.25% of a standard Capsule Network’s total, OrthCaps-Shallow outperforms state-of-the-art (SOTA) benchmarks on four datasets, while OrthCaps-Deep attains nearly SOTA accuracy with 1.2% of its parameters on four datasets. The code is available at https://github.com/ornamentt/Orthogonal-Capsnet",
+  "abstract_zh": "",
+  "tldr": "We propose the Orthogonal Capsule Network (OrthCaps) to reduce redundancy, improve routing performance and decrease parameter count.",
+  "keywords": [
+    "Deep Learing",
+    "Capsule Network",
+    "Orthogonality",
+    "Pruning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=oKn2eMAdfc",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f142fc13d6e419caf5ed3073b1e82050d96241a1.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose the Orthogonal Capsule Network (OrthCaps) to reduce redundancy, improve routing performance and decrease parameter count."
+  },
+  "collected_at": "2026-03-11T01:05:37.705Z"
+}

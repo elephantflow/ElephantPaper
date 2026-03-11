@@ -1,0 +1,37 @@
+{
+  "id": "DE7IVrk8Ks",
+  "or_id": "DE7IVrk8Ks",
+  "title": "Latent Shattering: Turning Unconditional Pretrained Generators Into Conditional Models By Imposing Latent Structure",
+  "title_zh": "",
+  "authors": [
+    "Walter Gerych",
+    "Luke Buquicchio",
+    "Kavin Chandrasekaran",
+    "Emmanuel Agu",
+    "Elke Rundensteiner"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Deep generative models, such as GANs and VAEs, have gained substantial attention for their ability to synthesize realistic data. Pretrained generative models are often unconditional, thus do not easily allow the user to specify the class of the output. Yet supporting conditional generation offers inherent benefits for many tasks. Due to current models requiring huge data sets and often prohibitively expensive computational resources for training, it is desirable to have a lightweight method that can convert pretrained unconditional generators into conditional models without retraining. Previous research into this problem is limited, typically assuming either access to classifiers that identify which regions of the generator’s latent space correspond to specific classes, access to labeled data, or even retraining of the generative model itself. These strict requirements pose a serious limitation. In this work, we propose LASH, a fresh approach at the conversion of unconditional generators into conditional models in a completely unsupervised manner without requiring retraining nor access to any real data. Instead, the key principle of LASH is to identify points in the generator’s latent space that are\nmapped to low-density regions of the output space. The insight is that by removing these points, LASH “shatters” the latent space into distinct clusters where each cluster corresponds to a semantically meaningful mode in the output space. We demonstrate that these modes correspond to distinct real-world classes. Lastly, LASH utilizes a simple Gaussian mixture model to adaptively sample from these\nclusters, supporting unsupervised conditional generation. Through a series of experiments on MNIST, FashionMNIST, and CelebA, we demonstrate that LASH significantly outperforms existing methods in unsupervised conditional sampling.",
+  "abstract_zh": "",
+  "tldr": "We develop an unsupervised method to convert pretrained unconditional generators into conditional models, without finetuning or classifier feedback",
+  "keywords": [
+    "generative models",
+    "generative modeling",
+    "GANs",
+    "VAEs"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=DE7IVrk8Ks",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ad1f79a161c9ce579d720502055df3e1400fe3f3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We develop an unsupervised method to convert pretrained unconditional generators into conditional models, without finetuning or classifier feedback"
+  },
+  "collected_at": "2026-03-11T01:05:37.705Z"
+}

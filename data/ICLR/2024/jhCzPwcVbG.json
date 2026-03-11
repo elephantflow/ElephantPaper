@@ -1,0 +1,39 @@
+{
+  "id": "jhCzPwcVbG",
+  "or_id": "jhCzPwcVbG",
+  "title": "LLMZip: Lossless Text Compression using Large Language Models",
+  "title_zh": "",
+  "authors": [
+    "Chandra Shekhara Kaushik Valmeekam",
+    "Krishna Narayanan",
+    "Dileep Kalathil",
+    "Jean-Francois Chamberland",
+    "Srinivas Shakkottai"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "We design a lossless compression algorithm for compressing English text by using the large language model LLaMA-7B as a predictor for the next token given a window of past tokens. Specifically, the proposed LLMZip algorithm uses the conditional probabilities at the output of the large language model in conjunction with Arithmetic Coding. We show that our scheme outperforms state-of-the-art text compression schemes such as BSC, ZPAQ, and paq8h. We show that it is possible to marginally improve the compression performance further by first extracting a summary from the document and compressing the text by conditioning on the summary. Finally, we investigate the compression performance of LLMZip when the summary (side information) is available both at the encoder and decoder. We show that the LLM is able to exploit the available side information to significantly improve the compression performance. As an important byproduct, we provide new estimates of an asymptotic upper bound on the entropy of English which is significantly smaller than currently available estimates in \\cite{cover1978convergent}, \\cite{lutati2023focus}.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Large Language Models",
+    "Transformers",
+    "Compression",
+    "Arithmetic Coding",
+    "Zip",
+    "Lossless Text Compression"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=jhCzPwcVbG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/050511831435350136fb77ba84f0cc619bba4208.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We design a lossless compression algorithm for compressing English text by using the large language model LLaMA-7B as a predictor for the next token given a window of past tokens. Specifically, the proposed LLMZip algorithm uses the conditional probabilities at the output of the large language model"
+  },
+  "collected_at": "2026-03-11T01:05:37.703Z"
+}
