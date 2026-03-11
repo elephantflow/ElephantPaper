@@ -1,0 +1,37 @@
+{
+  "id": "u8zA1a2Vhf",
+  "or_id": "u8zA1a2Vhf",
+  "title": "Combine and Compare: Graph Rationale Learning with Conditional Non-Rationale Sampling",
+  "title_zh": "",
+  "authors": [
+    "Fangzhou Yao",
+    "Linan Yue",
+    "Min Hou",
+    "Ye Liu",
+    "Jiayu Liu",
+    "Qi Liu"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Traditional Graph Neural Networks (GNNs) assume an ideal distribution of independent and identically distributed (i.i.d) data, a rarely met condition in real-world datasets. Therefore, how to address distribution shifts between training and testing sets becomes paramount in GNNs. Recently, the rationale learning method has garnered much attention as a graph generalization method. It first divides the graph into label-related rationale subgraphs and label-unrelated non-rationale ones. Then, it creates diverse training distributions by combining different non-rationales with rationales. Finally, by exploring the invariant rationales across training distributions, the performance of GNNs facing out-of-distribution (OOD) graphs is boosted. However, this method still faces two problems: (\\textit{i}) when combining non-rationales with rationales, it commonly \\textit{randomly} samples a non-rationale and combines it with the rationale. This may inadvertently produce duplicate samples. (\\textit{ii}) the relationship between the rationales, non-rationales and labels is not properly considered, where non-rationales and labels should be de-correlated compared to the rationales. To address these problems, we propose a Combine and Compare (CoCo) with non-rationales for Graph Rationale Learning method with the conditional non-rationale sampling. Specifically, from the framework of rationale learning, CoCo first employs the diverse sampling method to sample non-rationales, avoiding sampling duplicate non-rationales. Besides, we introduce a non-rationale progressive hard sampling method to de-correlate hard non-rationales and labels, enhancing the model's discrimination ability. Extensive experiments on both benchmarks and synthetic datasets demonstrate the effectiveness of our method for OOD graphs. Code is released at \\url{https://anonymous.4open.science/r/CoCo-5410/}",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Non-Rationale Sampling",
+    "Rationale representation learning",
+    "Graph Generalization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=u8zA1a2Vhf",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e9e7d3099cd51fbda6f6012184e3d0a6ea5a3a9c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Traditional Graph Neural Networks (GNNs) assume an ideal distribution of independent and identically distributed (i.i.d) data, a rarely met condition in real-world datasets. Therefore, how to address distribution shifts between training and testing sets becomes paramount in GNNs. Recently, the ratio"
+  },
+  "collected_at": "2026-03-11T00:05:37.399Z"
+}

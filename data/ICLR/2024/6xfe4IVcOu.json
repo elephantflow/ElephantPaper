@@ -1,0 +1,34 @@
+{
+  "id": "6xfe4IVcOu",
+  "or_id": "6xfe4IVcOu",
+  "title": "Chain of Hindsight aligns Language Models with Feedback",
+  "title_zh": "",
+  "authors": [
+    "Hao Liu",
+    "Carmelo Sferrazza",
+    "Pieter Abbeel"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Learning from human preferences is important for language models to match human needs and to align with human and social values. \nPrior works have achieved remarkable successes by learning from human feedback to understand and follow instructions. Nonetheless, these methods are either founded on hand-picked model generations that are favored by human annotators, rendering them inefficient in terms of data utilization and challenging to apply in general, or they depend on reinforcement learning, which often suffers from imperfect reward functions and relies on extremely challenging optimizations. In this work, we propose a novel technique, Chain of Hindsight, that is easy to optimize and can learn from any form of feedback, regardless of its polarity. Our idea is inspired by how humans learn from extensive feedback presented in the form of languages. We convert all types of feedback into sequences of sentences, which are then used to fine-tune the model, allowing us to take advantage of the language comprehension capabilities of language models.\nWe condition the model on a sequence of model generations paired with feedback. By doing so, the model is trained to generate outputs based on feedback, while learning to identify and correct negative attributes or errors.  Applying our method to large language models, we observed that Chain of Hindsight significantly surpasses previous methods in aligning language models with human preferences. We report significant improvements on summarization and dialogue benchmarks, with our approach markedly preferred in human evaluations.",
+  "abstract_zh": "",
+  "tldr": "We present a method for learning from human feedback that's simpler than RLHF",
+  "keywords": [
+    "Reinforcement Learning",
+    "Reinforcement Learning from Human Feedback",
+    "RLHF"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=6xfe4IVcOu",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6dc18121c96221c694b6c583053368af3aa30ace.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present a method for learning from human feedback that's simpler than RLHF"
+  },
+  "collected_at": "2026-03-11T00:05:37.395Z"
+}

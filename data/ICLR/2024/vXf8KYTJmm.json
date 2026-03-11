@@ -1,0 +1,34 @@
+{
+  "id": "vXf8KYTJmm",
+  "or_id": "vXf8KYTJmm",
+  "title": "MAP's not dead yet: Uncovering true language model modes by conditioning away degeneracy",
+  "title_zh": "",
+  "authors": [
+    "Davis Yoshida",
+    "Kartik Goyal",
+    "Kevin Gimpel"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "It has been widely observed that exact or approximate MAP (mode-seeking) decoding from natural language generation (NLG) models consistently leads to degenerate outputs (Stahlberg and Byrne, 2019, Holtzman et al., 2019). This has generally been attributed to either a fundamental inadequacy of modes in models or weaknesses in language modeling. Contrastingly in this work, we emphasize that degenerate modes can even occur in the absence of any model error, due to contamination of the training data. Specifically, we show that mixing even a tiny amount of low-entropy noise with a population text distribution can cause the data distribution's mode to become degenerate, implying that any models trained on it will be as well. As the unconditional mode of NLG models will often be degenerate, we therefore propose to apply MAP decoding to the model's distribution conditional on avoiding specific degeneracies. Using exact-search, we empirically verify that the length-conditional modes of machine translation models and language models are indeed more fluent and topical than their unconditional modes. For the first time, we also share many examples of exact modal sequences from these models, and from several variants of the LLaMA-7B model. Notably, the modes of the LLaMA models are still degenerate, showing that improvements in modeling have not fixed this issue. Because of the cost of exact mode finding algorithms, we develop an approximate mode finding approach, ACBS, which finds sequences that are both high-likelihood and high-quality. We apply this approach to LLaMA-7B, a model which was not trained for instruction following, and find that we are able to elicit reasonable outputs without any finetuning.",
+  "abstract_zh": "",
+  "tldr": "We explain why MAP leads to bad outputs, show the exact modes of several modes (including LLaMA), and develop conditional search methods to address NLG degeneracies.",
+  "keywords": [
+    "language modeling",
+    "natural language generation",
+    "decoding algorithms"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=vXf8KYTJmm",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/5b191ebaa0efc2314f2c49ea82cb427414581c43.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We explain why MAP leads to bad outputs, show the exact modes of several modes (including LLaMA), and develop conditional search methods to address NLG degeneracies."
+  },
+  "collected_at": "2026-03-11T00:05:37.398Z"
+}

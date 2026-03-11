@@ -1,0 +1,38 @@
+{
+  "id": "RXFVcynVe1",
+  "or_id": "RXFVcynVe1",
+  "title": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+  "title_zh": "",
+  "authors": [
+    "Xiaoxin He",
+    "Xavier Bresson",
+    "Thomas Laurent",
+    "Adam Perold",
+    "Yann LeCun",
+    "Bryan Hooi"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Representation learning on text-attributed graphs (TAGs) has become a critical research problem in recent years. A typical example of a TAG is a paper citation graph, where the text of each paper serves as node attributes. Initial graph neural network (GNN) pipelines handled these text attributes by transforming them into shallow or hand-crafted features, such as skip-gram or bag-of-words features. Recent efforts have focused on enhancing these pipelines with language models (LMs), which typically demand intricate designs and substantial computational resources. With the advent of powerful large language models (LLMs) such as GPT or Llama2, which demonstrate an ability to reason and to utilize general knowledge, there is a growing need for techniques which combine the textual modelling abilities of LLMs with the structural learning capabilities of GNNs. Hence, in this work, we focus on leveraging LLMs to capture textual information as features, which can be used to boost GNN performance on downstream tasks. A key innovation is our use of \\emph{explanations as features}: we prompt an LLM to perform zero-shot classification, request textual explanations for its decision-making process, and design an \\emph{LLM-to-LM interpreter} to translate these explanations into informative features for downstream GNNs. Our experiments demonstrate that our method achieves state-of-the-art results on well-established TAG datasets, including \\texttt{Cora}, \\texttt{PubMed}, \\texttt{ogbn-arxiv}, as well as our newly introduced dataset, \\texttt{tape-arxiv23}. Furthermore, our method significantly speeds up training, achieving a 2.88 times improvement over the closest baseline on \\texttt{ogbn-arxiv}. Lastly, we believe the versatility of the proposed method extends beyond TAGs and holds the potential to enhance other tasks involving graph-text data~\\footnote{Our codes and datasets are available at: \\url{https://github.com/XiaoxinHe/TAPE}}.",
+  "abstract_zh": "",
+  "tldr": "We propose the first framework that leverages LLMs to enhance representation learning on text-attributed graphs, achieving SOTA results on four benchmark datasets.",
+  "keywords": [
+    "large language models (LLM)",
+    "feature learning",
+    "text attributed graphs (TAG)",
+    "graph neural networks (GNN)"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=RXFVcynVe1",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0db04867c257dc081f5a8f03268da344deb07417.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose the first framework that leverages LLMs to enhance representation learning on text-attributed graphs, achieving SOTA results on four benchmark datasets."
+  },
+  "collected_at": "2026-03-11T00:05:37.400Z"
+}
