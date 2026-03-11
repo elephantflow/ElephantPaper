@@ -1,0 +1,36 @@
+{
+  "id": "OF5x1dzWSS",
+  "or_id": "OF5x1dzWSS",
+  "title": "Doubly Robust Instance-Reweighted Adversarial Training",
+  "title_zh": "",
+  "authors": [
+    "Daouda Sow",
+    "Sen Lin",
+    "Zhangyang Wang",
+    "Yingbin Liang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Assigning importance weights to adversarial data has achieved great success in training adversarially robust networks under limited model capacity. However, existing instance-reweighted adversarial training (AT) methods heavily depend on heuristics and/or geometric interpretations to determine those importance weights, making these algorithms lack rigorous theoretical justification/guarantee. Moreover, recent research has shown that adversarial training suffers from a severe non-uniform robust performance across the training distribution, e.g., data points belonging to some classes can be much more vulnerable to adversarial attacks than others. To address both issues, in this paper, we propose a novel doubly-robust instance reweighted AT framework, which allows to obtain the importance weights via exploring distributionally robust optimization (DRO) techniques, and at the same time boosts the robustness on the most vulnerable examples. In particular, our importance weights are obtained by optimizing the KL-divergence regularized loss function, which allows us to devise new algorithms with a theoretical convergence guarantee. \nExperiments on standard classification datasets demonstrate that our proposed approach outperforms related state-of-the-art baseline methods in terms of average robust performance, and at the same time improves the robustness against attacks on the weakest data points. Codes can be found in the Supplement.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel doubly robust instance reweighted adversarial training framework based on DRO",
+  "keywords": [
+    "adversarial training",
+    "distributionally robust optimization",
+    "bilevel optimization",
+    "instance reweighting"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=OF5x1dzWSS",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c8cb1e0f5f66335caae7b2b8cebef4a72602b4ad.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel doubly robust instance reweighted adversarial training framework based on DRO"
+  },
+  "collected_at": "2026-03-11T03:05:38.982Z"
+}

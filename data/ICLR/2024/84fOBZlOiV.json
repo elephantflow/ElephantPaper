@@ -1,0 +1,36 @@
+{
+  "id": "84fOBZlOiV",
+  "or_id": "84fOBZlOiV",
+  "title": "Estimating uncertainty from feed-forward network based sensing using quasilinear approximation",
+  "title_zh": "",
+  "authors": [
+    "Songhan Zhang",
+    "Matthew Singh",
+    "ShiNung Ching"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Artificial neural networks are increasingly integrated into both sensing hardware (e.g., \"smart sensors\") and dedicated decision-making circuits that operate on this information. As this technology is deployed in safety-critical environments (pedestrian-detection, power management, and flight-controls) it is critical to assess the real-time confidence of information built on these networks. However, while stand-alone confidence of sensing (e.g. object detection) neural networks are common, tools are much more limited for integrating such information into formal estimation of latent variables upstream of the sensor. To make this distinction clear, consider the common problem of target-tracking from a mobile camera. The geographic position of the target is a function of the camera position and orientation in addition to position within the image, whereas the neural network only reports confidence in pixel-space. Likewise, optimally leveraging an image-sequence requires consideration of uncertainty in the camera and target dynamics, as well as the sensing neural network. As we will demonstrate, fusing dynamical system models with large sensing networks presents a major computational challenge. Specifically, popular approaches such as first-order (Jacobian) linearization prove inaccurate, whereas nonlinear sampling-based approaches, while effective, are intractable for high-dimensional measurements such as images. In this work, we borrow an analytic approach from control engineering, quasilinear system approximation, to propagate the dynamics of environmental uncertainty through feedforward neural network architectures. The approximation enables direct Bayesian (i.e., Kalman-style) filtering to estimate latent variables, thus obviating the need for taxing sampling-based approaches. Thus, the proposed framework may enable real-time confidence estimation in high-dimensional network-based sensing deployments.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Uncertainty propagation",
+    "quasilinear approximation",
+    "stochastic linearization",
+    "neural networks",
+    "Kalman filter."
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=84fOBZlOiV",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ccc2b8a0a9be105a40bbaace11df1e32193c6549.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Artificial neural networks are increasingly integrated into both sensing hardware (e.g., \"smart sensors\") and dedicated decision-making circuits that operate on this information. As this technology is deployed in safety-critical environments (pedestrian-detection, power management, and flight-contro"
+  },
+  "collected_at": "2026-03-11T03:05:38.983Z"
+}

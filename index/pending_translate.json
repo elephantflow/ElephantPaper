@@ -1,245 +1,5 @@
 [
   {
-    "id": "HvTJLthEGQ",
-    "filePath": "data/ICLR/2024/HvTJLthEGQ.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Zero-shot Clustering of Embeddings with Pretrained and Self-Supervised Learning Encoders",
-    "abstract": "In this work, we explore whether pretrained models can provide a useful representation space for datasets they were not trained on, and whether these representations can be used to group novel unlabelled data into meaningful clusters. To this end, we conduct experiments using image representation encoders pretrained on ImageNet using either supervised or self-supervised training techniques. These encoders are deployed on image datasets that were not seen during training, and we investigate whether their embeddings can be clustered with conventional clustering algorithms. We find that it is possible to create well-defined clusters using self-supervised feature encoders, especially when using the agglomerative clustering method, and that it is possible to do so even for very fine-grained dat"
-  },
-  {
-    "id": "aD4YLji1PW",
-    "filePath": "data/ICLR/2024/aD4YLji1PW.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Genetic Algorithm for Curriculum Generation in Multi-Agent Reinforcement Learning",
-    "abstract": "As the deployment of autonomous agents increases in real life, there is an increased interest in extending their usage to competitive environments populated by other robots. Self-play in Reinforcement Learning (RL) allows agents to explore and learn competitive strategies. However, the complex dynamics of multi-agent RL interactions introduce instability in training and susceptibility to overfitting. Several game-theoretic approaches address the latter by generating approximate Nash equilibrium strategies to train against. The challenge of learning a policy in a complex and unstable multi-agent environment, the former, is not yet well addressed. This paper aims to address this issue by using a curriculum learning approach. We introduce curriculum design by a genetic algorithm to the multi-"
-  },
-  {
-    "id": "PsRL00864k",
-    "filePath": "data/ICLR/2024/PsRL00864k.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Correct and speak: accent reduction with minimum supervision",
-    "abstract": "Accent conversion(AC) aims to convert non-native accented speech to native speech by changing the pronunciation pattern and prosody of source speakers while preserving linguistic content and speaker identity. This problem is quite challenging since 1) the parallel data with same speaker speaking the same content in different accent is rarely existed; 2) the accent features not only affect the prosody but also corrupt the pronunciation units in some heavy accents like Indian accent. In this work, we propose a new framework with a correction module and speaking module based on speech generative models in which the accent removal is achieved by correcting the source accented semantic tokens to the target native ones.\nSpecifically, a separate sequence-to-sequence task based on autoregressive d"
-  },
-  {
-    "id": "7XXineVQeU",
-    "filePath": "data/ICLR/2024/7XXineVQeU.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Faster Maximum Inner Product Search in High Dimensions",
-    "abstract": "Maximum Inner Product Search (MIPS) is a ubiquitous task in machine learning applications such as recommendation systems. \nGiven a query vector and $n$ atom vectors in $d$-dimensional space, the goal of MIPS is to find the atom that has the highest inner product with the query vector. \nExisting MIPS algorithms scale at least as $O(\\sqrt{d})$, which becomes computationally prohibitive in high-dimensional settings. In this work, we present BanditMIPS, a novel randomized MIPS algorithm whose complexity is independent of $d$. \nBanditMIPS estimates the inner product for each atom by subsampling coordinates and adaptively evaluates more coordinates for more promising atoms. The specific adaptive sampling strategy is motivated by multi-armed bandits. We provide theoretical guarantees that BanditM"
-  },
-  {
-    "id": "GzNaCp6Vcg",
-    "filePath": "data/ICLR/2024/GzNaCp6Vcg.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "PINNACLE: PINN Adaptive ColLocation and Experimental points selection",
-    "abstract": "Physics-Informed Neural Networks (PINNs), which incorporate PDEs as soft constraints, train with a composite loss function that contains multiple training point types: different types of collocation points chosen during training to enforce each PDE and initial/boundary conditions, and experimental points which are usually costly to obtain via experiments or simulations. Training PINNs using this loss function is challenging as it typically requires selecting large numbers of points of different types, each with different training dynamics. Unlike past works that focused on the selection of either collocation or experimental points, this work introduces PINN Adaptive ColLocation and Experimental points selection (PINNACLE), the first algorithm that jointly optimizes the selection of all tra"
-  },
-  {
-    "id": "kjn99xFUF3",
-    "filePath": "data/ICLR/2024/kjn99xFUF3.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "FedDA: Faster Adaptive Gradient Methods for Federated Constrained Optimization",
-    "abstract": "Federated learning (FL) is an emerging learning paradigm where a set of distributed clients learns a task under the coordination of a server. The FedAvg algorithm is one of the most widely used methods in FL. In FedAvg, the learning rate is a constant rather than changing adaptively. Adaptive gradient methods have demonstrated superior performance over the constant learning rate schedules in non-distributed settings, and they have recently been adapted to FL. However, the majority of these methods are designed for unconstrained settings. Meanwhile, many crucial FL applications, like disease diagnosis and biomarker identification, often rely on constrained formulations such as Lasso and group Lasso. It remains an open question as to whether adaptive gradient methods can be effectively appli"
-  },
-  {
-    "id": "pUKJWr5zOE",
-    "filePath": "data/ICLR/2024/pUKJWr5zOE.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "A Differentiable Physical Simulation Framework for Soft Robots on Multiple-Task Learning",
-    "abstract": "Learning multiple tasks is challenging for soft robots. Differentiable physics enables efficient gradient-based optimizations of neural network (NN) controllers for soft robot learning. However, existing work typically delivers NN controllers with limited capability and generalizability. We present a practical learning framework that outputs unified NN controllers capable of multiple tasks with significantly improved complexity and diversity. Our framework consists of a high-performance differentiable deformable bodies simulator supporting the material point method (MPM) and mass-spring systems, an automatic differentiation module that enables gradient-based optimizations, and a practical training module for soft robots on learning multiple locomotion tasks with a single NN controller. Usi"
-  },
-  {
-    "id": "6ujgouOiAA",
-    "filePath": "data/ICLR/2024/6ujgouOiAA.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Use Your INSTINCT: INSTruction optimization usIng Neural bandits Coupled with Transformers",
-    "abstract": "Large language models (LLMs) have shown remarkable instruction-following capabilities and achieved impressive performances in various applications. However, the performances of LLMs depend heavily on the instructions given to them, which are typically manually tuned with substantial human efforts. Recent work has used the query-efficient Bayesian optimization (BO) algorithm to automatically optimize the instructions given to black-box LLMs. However, BO usually falls short when optimizing highly sophisticated (e.g., high-dimensional) objective functions, such as the functions mapping an instruction to the performance of an LLM. This is mainly due to the limited expressive power of the Gaussian process (GP) model which is used by BO as a surrogate to model the objective function. Meanwhile, "
-  },
-  {
-    "id": "kTRGF2JEcx",
-    "filePath": "data/ICLR/2024/kTRGF2JEcx.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Instructing Large Language Models to Identify and Ignore Irrelevant Conditions",
-    "abstract": "Math word problem (MWP) solving requires generating a reasoning path based on a given problem description that often contains irrelevant conditions. Existing chain-of-thought (CoT) prompting methods elicited multi-step reasoning abilities of large language models (LLMs) to solve MWPs. However, they were seriously confused by the irrelevant conditions, resulting in low accuracy. In this paper, we propose a novel approach named I$^3$C that instructs LLMs to identify and ignore irrelevant conditions. It identifies a set of irrelevant condition candidates that have a weak semantic relevance with the question. Then it prompts LLMs to verify the irrelevant conditions. Lastly it instructs the LLMs with the verification on relevant and irrelevant conditions to avoid confusion and improve reasoning"
-  },
-  {
-    "id": "5M2MjyNR2w",
-    "filePath": "data/ICLR/2024/5M2MjyNR2w.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Adaptive Expansion for Hypergraph Learning",
-    "abstract": "Hypergraph, with its powerful ability to capture higher-order complex relationships, has attracted substantial attention recently. Consequently, an increasing number of hypergraph neural networks (HyGNNs) have emerged to model the high-order relationships among nodes and hyperedges. In general, most HyGNNs leverage typical expansion methods, such as clique expansion (CE), to convert hypergraphs into graphs for representation learning. However, they still face the following limitations in hypergraph expansion: (i) Some expansion methods expand hypergraphs in a straightforward manner, resulting in information loss and redundancy; (ii) Most expansion methods often employ fixed edge weights while ignoring the fact that nodes having similar attribute features within the same hyperedge are more "
-  },
-  {
-    "id": "sP0Aev2Gis",
-    "filePath": "data/ICLR/2024/sP0Aev2Gis.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "G2PTL: A Pre-trained Model for Delivery Address and its Applications in Logistics System",
-    "abstract": "Text-based delivery addresses, as the data foundation for logistics systems, contain abundant and crucial location information. How to effectively encode the delivery address is a core task to boost the performance of downstream tasks in the logistics system. Pre-trained Models (PTMs) designed for Natural Language Process (NLP) have emerged as the dominant tools for encoding semantic information in text. Though promising, those NLP-based PTMs fall short of encoding geographic knowledge in the delivery address, which considerably trims down the performance of delivery-related tasks in logistic systems such as Cainiao. To tackle the above problem, we propose a domain-specific pre-trained model, named G2PTL, a Geography-Graph Pre-trained model for delivery address in Logistics field. G2PTL co"
-  },
-  {
-    "id": "7Ttk3RzDeu",
-    "filePath": "data/ICLR/2024/7Ttk3RzDeu.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "BooookScore: A systematic exploration of book-length summarization in the era of LLMs",
-    "abstract": "Summarizing book-length documents ($>$100K tokens)  that exceed the context window size of large language models (LLMs) requires first breaking the input document into smaller chunks and then prompting an LLM to merge, update, and compress chunk-level summaries. Despite the complexity and importance of this task, it has yet to be meaningfully studied due to the challenges of evaluation: existing book-length summarization datasets (e.g., BookSum) are in the pretraining data of most public LLMs, and existing evaluation methods struggle to capture errors made by modern LLM summarizers. In this paper, we present the first study of the coherence of LLM-based book-length summarizers implemented via two prompting workflows: (1) hierarchically merging chunk-level summaries, and (2) incrementally u"
-  },
-  {
-    "id": "h9LcbJ3l9r",
-    "filePath": "data/ICLR/2024/h9LcbJ3l9r.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Value-Evolutionary-Based Reinforcement Learning",
-    "abstract": "Combining Evolutionary Algorithms (EAs) and Reinforcement Learning (RL) for policy search has been proven to improve RL performance. However, prior research largely overlooks value-based RL in favor of merging EAs with policy-based RL. This paper introduces Value-Evolutionary-Based Reinforcement Learning (VEB-RL), a framework that combines EAs and RL for policy search with a focus on value-based RL. The framework maintains a population of value functions instead of policies and leverages negative Temporal Difference (TD) error as the fitness metric for evolution. The metric is more sample efficient for population evaluation than cumulative rewards of simulation and is closely associated with the accuracy of the value function approximation. In addition, VEB-RL enables elites of the populat"
-  },
-  {
-    "id": "qT7DXUmX7j",
-    "filePath": "data/ICLR/2024/qT7DXUmX7j.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Extending Power of Nature from Binary to Real-Valued Graph Learning in Real World",
-    "abstract": "Nature performs complex computations constantly at clearly lower cost and higher performance than digital computers. It is crucial to understand how to harness the unique computational power of nature in Machine Learning (ML). In the past decade, besides the development of Neural Networks (NNs), the community has also relentlessly explored nature-powered ML paradigms. Although most of them are still predominantly theoretical, a new practical paradigm enabled by the recent advent of CMOS-compatible room-temperature nature-based computers has emerged. By harnessing a dynamical system's intrinsic behavior of chasing the lowest energy state, this paradigm can solve some simple binary problems delivering considerable speedup and energy savings compared with NNs, while maintaining comparable acc"
-  },
-  {
-    "id": "gqmELEp3lZ",
-    "filePath": "data/ICLR/2024/gqmELEp3lZ.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "OpenReviewer: Mitigating Challenges in LLM Reviewing",
-    "abstract": "Human reviews of research papers are slow and of variable quality. Hence there is increasing interest in using large language models (LLMs) such as GPT to review research papers. This paper develops a proof-of-concept LLM review process that shows LLMs offer consistently high-quality reviews almost instantly. However, many challenges and limitations remain: risk of misuse, inflated review scores, overconfident ratings, skewed score distributions, and limited prompt length. We mitigate these issues without prompt engineering by using LLM watermarking to mark LLM-generated reviews; classifying and detection errors and shortcomings of papers; and using long-context windows that include the review form, entire paper, reviewer guidelines, code of ethics and conduct, area chair guidelies, and pr"
-  },
-  {
-    "id": "e5lR6tySR7",
-    "filePath": "data/ICLR/2024/e5lR6tySR7.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Transformer-Based Large Language Models Are Not General Learners: A Universal Circuit Perspective",
-    "abstract": "Large Language Models (LLMs) have demonstrated remarkable proficiency across diverse tasks, evoking perceptions of ``sparks of Artificial General Intelligence (AGI)\" (Bubeck et al., 2023). A key question naturally arises: *Can foundation models lead to AGI?* In this work, we try to answer this question partially by formally considering the capabilities of Transformer-based LLMs (T-LLMs) from the perspective of universal circuits. \nBy investigating the expressive power of realistic T-LLMs as universal circuits, we show that a T-LLM of size $\\operatorname{poly}(n)$ cannot perform all the basic operators of input length $O\\left(\\operatorname{poly}(\\log n)\\right)$. We also demonstrate that a constant-depth-$\\operatorname{poly}(n)$-size log-precision T-LLM cannot faithfully execute prompts of c"
-  },
-  {
-    "id": "WwCirclMvl",
-    "filePath": "data/ICLR/2024/WwCirclMvl.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Posterior Sampling via Langevin Monte Carlo for Offline Reinforcement Learning",
-    "abstract": "In this paper, we consider offline reinforcement learning (RL) problems. Within this setting, posterior sampling has been rarely used, perhaps partly due to its explorative nature. The only work using posterior sampling for offline RL that we are aware of is the model-based posterior sampling of \\cite{uehara2021pessimistic}. However, this framework does not permit any tractable algorithm (not even in the linear models) where simulations of posterior samples become challenging, especially in high dimensions. In addition, the algorithm only admits a weak form of guarantees -- Bayesian sub-optimality bounds which depend on the prior distribution. To address these problems, we propose and analyze the use of Markov Chain Monte Carlo methods for offline RL. We show that for low-rank Markov decis"
-  },
-  {
-    "id": "6cGiRiExUd",
-    "filePath": "data/ICLR/2024/6cGiRiExUd.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Efficient Point Cloud Matching for 3D Geometric Shape Assembly",
-    "abstract": "Learning to assemble geometric shapes into a larger target structure is a fundamental task with various high-level visual applications. In this work, we frame this problem as geometric registration with extremely low overlap. Our goal is to establish accurate correspondences on the mating surface of the shape fragments to predict their relative rigid transformations for assembly. To this end, we introduce Proxy Match Transform (PMT), an approximate high-order feature transform layer that enables reliable correspondences between dense point clouds of shape fragments, while incurring low costs in memory and compute. In our experiments, we demonstrate that Proxy Match Transform surpasses existing state-of-the-art baselines on a popular geometric shape assembly dataset, while exhibiting higher"
-  },
-  {
-    "id": "2uwvigLUr8",
-    "filePath": "data/ICLR/2024/2uwvigLUr8.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "From Deterministic to Probabilistic World: Balancing Enhanced Doubly Robust Learning for Debiased Recommendation",
-    "abstract": "In recommender systems, selection bias arises from the users' selective interactions with items, which poses a widely-recognized challenge for unbiased evaluation and learning for recommendation models. Recently, doubly robust and its variants have been widely studied to achieve debiased learning of prediction models, which enables unbiasedness when either imputed errors or learned propensities are accurate. However, we find that previous studies achieve unbiasedness using the doubly robust learning approaches are all based on deterministic error imputation model and deterministic propensity model, and these approaches fail to be unbiased when using probabilistic models to impute errors and learn propensities. To tackle this problem, in this paper, we first derive the bias of doubly robust"
-  },
-  {
-    "id": "4bat0pSQBq",
-    "filePath": "data/ICLR/2024/4bat0pSQBq.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "FLOOD SIMULATION WITH PHYSICS-INFORMED MESSAGE PASSING",
-    "abstract": "Flood modeling is an important tool for supporting preventive and emergency\nmeasures to mitigate flood risks. Recently, there has been an increasing interest\nin exploring machine learning-based models as an alternative to traditional hydrodynamic models for flood simulation to address challenges such as scalability and accuracy. However, current ML approaches are ineffective at modeling early stages of flooding events, limiting their ability to simulate the entire evolution of the flood. Another key challenge is how to incorporate physics domain-knowledge into these data-driven models. In this paper, we address these challenges by introducing a physics-inspired graph neural network for flood simulation. Given a (geographical) region and precipitation data, our model predicts water depths i"
-  },
-  {
-    "id": "HrTGl8AhnS",
-    "filePath": "data/ICLR/2024/HrTGl8AhnS.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "PACIA: Parameter-Efficient Adapter for Few-Shot Molecular Property Prediction",
-    "abstract": "Molecular property prediction (MPP) plays a crucial role in biomedical applications, but it often encounters challenges due to a scarcity of labeled data. Existing works commonly adopt gradient-based strategy to update a large amount of parameter for property-level adaptation.  However, the increase of adaptive parameters can cause overfitting and lead to poor performance. Observing that graph neural network (GNN) performs well as both encoder and predictor, we propose PACIA, a parameter-efficient GNN adapter for few-shot MPP. We design a unified adapter to generate a few adaptive parameters to modulate the message passing process of GNN. We then adopt hierarchical adaptation mechanism to adapt the encoder on property-level and the predictor on molecule-level by the unified GNN adapter. Ex"
-  },
-  {
-    "id": "aEGUT3OGCW",
-    "filePath": "data/ICLR/2024/aEGUT3OGCW.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Provable Repair of Vision Transformers: Last Layer is All You Need",
-    "abstract": "Vision Transformers have emerged as state-of-the-art image recognition tools, but may still exhibit incorrect behavior. Incorrect image recognition can have disastrous consequences in safety-critical real-world applications such as self-driving automobiles. In this paper, we present Provable Repair of Vision Transformers (PRoViT), a provable repair approach that guarantees the correct classification of\nimages in a repair set for a given Vision Transformer without modifying its ar-\nchitecture. PRoViT avoids negatively affecting correctly classified images (draw-\ndown) by minimizing the changes made to the Vision Transformer’s parameters\nand original output. We observe that for Vision Transformers, unlike for other\narchitectures such as ResNet or VGG, editing just the parameters in the last "
-  },
-  {
-    "id": "jhCzPwcVbG",
-    "filePath": "data/ICLR/2024/jhCzPwcVbG.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "LLMZip: Lossless Text Compression using Large Language Models",
-    "abstract": "We design a lossless compression algorithm for compressing English text by using the large language model LLaMA-7B as a predictor for the next token given a window of past tokens. Specifically, the proposed LLMZip algorithm uses the conditional probabilities at the output of the large language model in conjunction with Arithmetic Coding. We show that our scheme outperforms state-of-the-art text compression schemes such as BSC, ZPAQ, and paq8h. We show that it is possible to marginally improve the compression performance further by first extracting a summary from the document and compressing the text by conditioning on the summary. Finally, we investigate the compression performance of LLMZip when the summary (side information) is available both at the encoder and decoder. We show that the "
-  },
-  {
-    "id": "UK7Hs7f0So",
-    "filePath": "data/ICLR/2024/UK7Hs7f0So.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "VMFTransformer: An Angle-Preserving and Auto-Scaling Machine for Multi-horizon Probabilistic Forecasting",
-    "abstract": "Time series forecasting has historically been a key area of academic research and industrial applications. As deep learning develops, the major research methodologies of time series forecasting can be divided into two categories, i.e., iterative and direct methods. In the iterative methods, since a small amount of error is produced at each time step, the recursive structure can potentially lead to large error accumulations over longer forecasting horizons. Although the direct methods can avoid this puzzle involved in the iterative methods, it faces abuse of conditional independence among time points. This impractical assumption can also lead to biased models. To solve these challenges, we propose a direct approach for multi-horizon probabilistic forecasting, which can effectively character"
-  },
-  {
-    "id": "qDl4SWrrgg",
-    "filePath": "data/ICLR/2024/qDl4SWrrgg.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "AdaO2B: Adaptive Online to Batch Conversion for Out-of-Distribution Generalization",
-    "abstract": "Online to batch conversion involves constructing a new batch learner by utilizing a series of models generated by an existing online learning algorithm, for achieving generalization guarantees under i.i.d assumption. However, when applied to real-world streaming applications such as streaming recommender systems, the data stream may be sampled from time-varying distributions instead of persistently being i.i.d. This poses a challenge in terms of out-of-distribution (OOD) generalization. Existing approaches employ fixed conversion mechanisms that are unable to adapt to novel testing distributions, hindering the testing accuracy of the batch learner. To address these issues, we propose AdaO2B, an adaptive online to batch conversion approach under the bandit setting. AdaO2B is designed to be "
-  },
-  {
-    "id": "ElykcDu5YK",
-    "filePath": "data/ICLR/2024/ElykcDu5YK.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Meta-VBO: Utilizing Prior Tasks in Optimizing Risk Measures with Gaussian Processes",
-    "abstract": "Research on optimizing the risk measure of a blackbox function using Gaussian processes, especially Bayesian optimization (BO) of risk measures, has become increasingly important due to the inevitable presence of uncontrollable variables in real-world applications. Nevertheless, existing works on BO of risk measures start the optimization from scratch for every new task without considering the results of prior tasks. In contrast, its vanilla BO counterpart has received a thorough investigation on utilizing prior tasks to speed up the current task through the body of works on meta-BO which, however, have not considered risk measures. To bridge this gap, this paper presents the first algorithm for meta-BO of risk measures (i.e., value-at-risk (VaR) and the conditional VaR), namely meta-VBO, "
-  },
-  {
-    "id": "qxGXjWxabq",
-    "filePath": "data/ICLR/2024/qxGXjWxabq.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Data Debugging with Shapley Importance over Machine Learning Pipelines",
-    "abstract": "When a machine learning (ML) model exhibits poor quality (e.g., poor accuracy or fairness), the problem can often be traced back to errors in the training data. Being able to discover the data examples that are the most likely culprits is a fundamental concern that has received a lot of attention recently. One prominent way to measure \"data importance\" with respect to model quality is the Shapley value. Unfortunately, existing methods only focus on the ML model in isolation, without considering the broader ML pipeline for data preparation and feature extraction, which appears in the majority of real-world ML code. This presents a major limitation to applying existing methods in practical settings. In this paper, we propose Datascope, a method for efficiently computing Shapley-based data im"
-  },
-  {
-    "id": "uRXxnoqDHH",
-    "filePath": "data/ICLR/2024/uRXxnoqDHH.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "MoAT: Multi-Modal Augmented Time Series Forecasting",
-    "abstract": "Time series forecasting plays a pivotal role in various domains, facilitating optimized resource allocation and strategic decision-making. However, the scarcity of training samples often hinders the accuracy of the forecasting task. To address this, we explore the potential of leveraging information from different modalities that are commonly associated with time series data. In this paper, we introduce MoAT, a novel multi-modal augmented time series forecasting approach that strategically integrates both feature-wise and sample-wise augmentation methods to enrich multi-modal representation learning. It further enhances prediction accuracy through joint trend-seasonal decomposition across all modalities and fuses the information for the final prediction. Extensive experiments show that MoA"
-  },
-  {
-    "id": "5t57omGVMw",
-    "filePath": "data/ICLR/2024/5t57omGVMw.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Learning to Relax: Setting Solver Parameters Across a Sequence of Linear System Instances",
-    "abstract": "Solving a linear system ${\\bf Ax}={\\bf b}$ is a fundamental scientific computing primitive for which numerous solvers and preconditioners have been developed. \n\tThese come with parameters whose optimal values depend on the system being solved and are often impossible or too expensive to identify;\n\tthus in practice sub-optimal heuristics are used.\n\tWe consider the common setting in which many related linear systems need to be solved, e.g. during a single numerical simulation.\n\tIn this scenario, can we sequentially choose parameters that attain a near-optimal overall number of iterations, without extra matrix computations?\n\tWe answer in the affirmative for Successive Over-Relaxation (SOR), a standard solver whose parameter $\\omega$ has a strong impact on its runtime.\n\tFor this method, we pro"
-  },
-  {
-    "id": "1PaDPHDhwe",
-    "filePath": "data/ICLR/2024/1PaDPHDhwe.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Group Robustness via Adaptive Class-Specific Scaling",
-    "abstract": "Group distributionally robust optimization, which aims to improve robust accuracies such as worst-group or unbiased accuracy, is one of the mainstream algorithms to mitigate spurious correlation and handle dataset bias. Existing approaches have apparently improved robust accuracy, but, in fact, these performance gains mainly come from trade-offs at the expense of average accuracy. To control the trade-off flexibly and efficiently, we first propose a simple class-specific scaling strategy, directly applicable to existing debiasing algorithms without additional training. We also develop an instance-wise adaptive scaling technique to overcome the trade-off and improve the performance even further in terms of both accuracies. Our approach reveals that a na\\\"ive ERM baseline matches or even out"
-  },
-  {
     "id": "hgQFmoZT4g",
     "filePath": "data/ICLR/2024/hgQFmoZT4g.json",
     "conference": "ICLR",
@@ -1598,5 +1358,245 @@
     "year": 2024,
     "title": "Understanding In-Context Learning in Transformers and LLMs by Learning to Learn Discrete Functions",
     "abstract": "In order to understand the in-context learning phenomenon, recent works have adopted a stylized experimental framework and demonstrated that Transformers can match the performance of gradient-based learning algorithms for various classes of real-valued functions. However, the limitations of Transformers in implementing learning algorithms, and their ability to learn other forms of algorithms are not well understood. Additionally, the degree to which these capabilities are confined to attention-based models is unclear. Furthermore, it remains to be seen whether the insights derived from these stylized settings can be extrapolated to pretrained Large Language Models (LLMs). In this work, we take a step towards answering these questions by demonstrating the following: (a) On a test-bed with a"
+  },
+  {
+    "id": "mSSi0zYkEA",
+    "filePath": "data/ICLR/2024/mSSi0zYkEA.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Initializing the Layer-wise Learning Rate",
+    "abstract": "The standard method to assign learning rates has been to rely on the optimizer and to use a single, global learning rate across all its layers. We propose to assign individual learning rates as well, according to the layer-wise gradient magnitude at initialization. Even if individual layers are initialized to preserve gradient variance, architectural characteristics result in uneven gradient magnitude even when the network has not started training. We interpret this gradient magnitude as a measure of architecture-induced convergence bias, and adjust the layer-wise learning rate opposite to its gradient magnitude at initialization. This relative learning rate is maintained throughout the entire training scheme. Experiments on convolutional and transformer architectures on ImageNet-1k show i"
+  },
+  {
+    "id": "CARclfc9ci",
+    "filePath": "data/ICLR/2024/CARclfc9ci.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Relational Convolutional Networks: A framework for learning representations of hierarchical relations",
+    "abstract": "A maturing area of research in deep learning is the development of architectures that can learn explicit representations of relational features. In this paper, we focus on the problem of learning representations of *hierarchical* relations, proposing an architectural framework we call \"relational convolutional networks\". Given a sequence of objects, a \"multi-dimensional inner product relation\" module produces a relation tensor describing all pairwise relations. A \"relational convolution\" layer then transforms the relation tensor into a sequence of new objects, each describing the relations within some group of objects at the previous layer. Graphlet filters, analogous to filters in convolutional neural networks, represent a template of relations against which the relation tensor is compare"
+  },
+  {
+    "id": "M8Q3XTUJP9",
+    "filePath": "data/ICLR/2024/M8Q3XTUJP9.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "How does overparametrization affect features?",
+    "abstract": "Overparametrization, the condition where models have more parameters than necessary to fit their training loss, is a crucial factor for the success of deep learning. However, the characteristics of the features learned by overparametrized networks are not well understood. In this work, we explore this question by comparing models with the same architecture but different widths. We first examine the expressivity of the features of these models, and show that the feature space of overparametrized networks cannot be spanned by concatenating many underparametrized features, and vice versa. This reveals that both overparametrized and underparametrized networks acquire some distinctive features. We then evaluate the performance of these models, and find that overparametrized networks outperform "
+  },
+  {
+    "id": "4g02l2N2Nx",
+    "filePath": "data/ICLR/2024/4g02l2N2Nx.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+    "abstract": "Linear attentions have shown promise for improving Transformer efficiency, reducing attention's quadratic complexity to linear in sequence length. This holds exciting promise for (1) training linear Transformers from scratch, (2) `inetuned-conversion of task-specific Transformers into linear versions that recover task performance, and (3) pretrained-conversion of Transformers, such as language models, into linear versions readily finetunable on downstream tasks. However, linear attentions often underperform compared to standard softmax attention. To close this performance gap, we study the behaviors of softmax and linear attentions in various train-from-scratch and finetuned-conversion settings. We find prior linear attentions lack key properties of softmax attention tied to good performan"
+  },
+  {
+    "id": "gLZeEpfVjy",
+    "filePath": "data/ICLR/2024/gLZeEpfVjy.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Understanding and Robustifying Sub-domain Alignment for Domain Adaptation",
+    "abstract": "In unsupervised domain adaptation (UDA), aligning source and target domains improves the predictive performance of learned models on the target domain. A common methodological improvement in alignment methods is to divide the domains and align sub-domains instead. These sub-domain-based algorithms have demonstrated great empirical success but lack theoretical support. In this work, we establish a rigorous theoretical understanding of the advantages of these methods that have the potential to enhance their overall impact on the field. Our theory uncovers that sub-domain-based methods optimize an error bound that is at least as strong as non-sub-domain-based error bounds and is empirically verified to be much stronger. Furthermore, our analysis indicates that when the marginal weights of sub"
+  },
+  {
+    "id": "XNa6r6ZjoB",
+    "filePath": "data/ICLR/2024/XNa6r6ZjoB.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Abstractors and relational cross-attention: An inductive bias for explicit relational reasoning in Transformers",
+    "abstract": "An extension of Transformers is proposed that enables explicit relational reasoning through a novel module called the *Abstractor*. At the core of the Abstractor is a variant of attention called *relational cross-attention*. The approach is motivated by an architectural inductive bias for relational learning that disentangles relational information from object-level features. This enables explicit relational reasoning, supporting abstraction and generalization from limited data. The Abstractor is first evaluated on simple discriminative relational tasks and compared to existing relational architectures. Next, the Abstractor is evaluated on purely relational sequence-to-sequence tasks, where dramatic improvements are seen in sample efficiency compared to standard Transformers. Finally, Abst"
+  },
+  {
+    "id": "OF5x1dzWSS",
+    "filePath": "data/ICLR/2024/OF5x1dzWSS.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Doubly Robust Instance-Reweighted Adversarial Training",
+    "abstract": "Assigning importance weights to adversarial data has achieved great success in training adversarially robust networks under limited model capacity. However, existing instance-reweighted adversarial training (AT) methods heavily depend on heuristics and/or geometric interpretations to determine those importance weights, making these algorithms lack rigorous theoretical justification/guarantee. Moreover, recent research has shown that adversarial training suffers from a severe non-uniform robust performance across the training distribution, e.g., data points belonging to some classes can be much more vulnerable to adversarial attacks than others. To address both issues, in this paper, we propose a novel doubly-robust instance reweighted AT framework, which allows to obtain the importance wei"
+  },
+  {
+    "id": "84fOBZlOiV",
+    "filePath": "data/ICLR/2024/84fOBZlOiV.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Estimating uncertainty from feed-forward network based sensing using quasilinear approximation",
+    "abstract": "Artificial neural networks are increasingly integrated into both sensing hardware (e.g., \"smart sensors\") and dedicated decision-making circuits that operate on this information. As this technology is deployed in safety-critical environments (pedestrian-detection, power management, and flight-controls) it is critical to assess the real-time confidence of information built on these networks. However, while stand-alone confidence of sensing (e.g. object detection) neural networks are common, tools are much more limited for integrating such information into formal estimation of latent variables upstream of the sensor. To make this distinction clear, consider the common problem of target-tracking from a mobile camera. The geographic position of the target is a function of the camera position a"
+  },
+  {
+    "id": "FjifPJV2Ol",
+    "filePath": "data/ICLR/2024/FjifPJV2Ol.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "SOLVING SCHRODINGER BRIDGE PROBLEM VIA STOCHASTIC ACTION MINIMIZATION",
+    "abstract": "The Schrodinger bridge problem is a classical entropy-regularized optimal transport problem that seeks to find optimal diffusion trajectories that transform one probability distribution into another. Although mathematical theory has reached\na mature stage, the ongoing research in algorithmic advancements remains a dynamic field, driven by recent innovations in diffusion models. We introduce stochastic Lagrangian and stochastic action as viable alter-\nnative for serving as a direct loss function. We demonstrate the feasibility of incorporating all the vital physical constraints necessary to solve the problem directly into the Lagrangian,  providing an intuitive grasp of the loss function and streamlining the training process."
+  },
+  {
+    "id": "YCWjhGrJFD",
+    "filePath": "data/ICLR/2024/YCWjhGrJFD.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Training Diffusion Models with Reinforcement Learning",
+    "abstract": "Diffusion models are a class of flexible generative models trained with an approximation to the log-likelihood objective. However, most use cases of diffusion models are not concerned with likelihoods, but instead with downstream objectives such as human-perceived image quality or drug effectiveness. In this paper, we investigate reinforcement learning methods for directly optimizing diffusion models for such objectives. We describe how posing denoising as a multi-step decision-making problem enables a class of policy gradient algorithms, which we refer to as denoising diffusion policy optimization ( DDPO), that are more effective than alternative reward-weighted likelihood approaches. Empirically, DDPO can adapt text-to-image diffusion models to objectives that are difficult to express vi"
+  },
+  {
+    "id": "Yp01vcQSNl",
+    "filePath": "data/ICLR/2024/Yp01vcQSNl.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "DIRECTIONALITY IN GRAPH TRANSFORMERS",
+    "abstract": "We study how one can capture directionality in graph transformers, for learning over directed graphs. Most existing graph transformers do not take edge direction into account. We therefore introduce a novel graph transformer architecture that explicitly takes into account the edge directionality. To achieve this, we make use of dual encodings to represent both potential roles, i.e., source or target, of each pair of vertices linked by a directed edge. These dual encodings are learned by leveraging the latent adjacency information extracted from a novel directional attention module, localized with $k$-hop neighborhood information. We also study alternative approaches to incorporating directionality into other graph transformers to enhance their performance on directed graph learning tasks. "
+  },
+  {
+    "id": "OnLAftJkhV",
+    "filePath": "data/ICLR/2024/OnLAftJkhV.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Latent Conservative Objective Models for Offline Data-Driven Crystal Structure Prediction",
+    "abstract": "In computational chemistry, crystal structure prediction (CSP) is an optimization problem that involves discovering the lowest energy stable crystal structure for a given chemical formula. This problem is challenging as it requires discovering globally optimal designs with the lowest energies on complex manifolds. One approach to tackle this problem involves building simulators based on density functional theory (DFT) followed by running search in simulation, but these simulators are painfully slow. In this paper, we study present and study an alternate, data-driven approach to crystal structure prediction: instead of directly searching for the most stable structures in simulation, we train a surrogate model of the crystal formation energy from a database of existing crystal structures, an"
+  },
+  {
+    "id": "D2eOVqPX9g",
+    "filePath": "data/ICLR/2024/D2eOVqPX9g.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Finite-Time Analysis of On-Policy Heterogeneous Federated Reinforcement Learning",
+    "abstract": "Federated reinforcement learning (FRL) has emerged as a promising paradigm for reducing the sample complexity of reinforcement learning tasks by exploiting information from different agents. However, when each agent interacts with a potentially different environment, little to nothing is known theoretically about the non-asymptotic performance of FRL algorithms. The lack of such results can be attributed to various technical challenges and their intricate interplay: Markovian sampling, linear function approximation, multiple local updates to save communication, heterogeneity in the reward functions and transition kernels of the agents' MDPs, and continuous state-action spaces.  Moreover, in the on-policy setting, the behavior policies vary with time, further complicating the analysis. In r"
+  },
+  {
+    "id": "jQ596tXT3k",
+    "filePath": "data/ICLR/2024/jQ596tXT3k.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Explaining the Out-of-Distribution Detection Paradox through Likelihood Peaks",
+    "abstract": "Likelihood-based deep generative models (DGMs) commonly exhibit a puzzling behaviour: when trained on a relatively complex dataset, they assign higher likelihood values to out-of-distribution (OOD) data from simpler sources. Adding to the mystery, OOD samples are never generated by these DGMs despite having high likelihoods. This two-pronged paradox has yet to be conclusively explained, making likelihood-based OOD detection unreliable. Our primary observation is that high-likelihood regions will not be generated if they contain minimal probability mass, which can occur if the density is sharply peaked. We demonstrate how this seeming contradiction of large densities yet low probability mass can occur on data confined to low dimensional manifolds. We also show that this scenario can be iden"
+  },
+  {
+    "id": "fe6ANBxcKM",
+    "filePath": "data/ICLR/2024/fe6ANBxcKM.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Federated Q-Learning: Linear Regret Speedup with Low Communication Cost",
+    "abstract": "In this paper, we consider federated reinforcement learning for tabular episodic Markov Decision Processes (MDP) where, under the coordination of a central server, multiple agents collaboratively explore the environment and learn an optimal policy without sharing their raw data.  While linear speedup in the number of agents has been achieved for some metrics, such as convergence rate and sample complexity, in similar settings, it is unclear whether it is possible to design a *model-free* algorithm to achieve linear *regret* speedup with low communication cost. We propose two federated Q-Learning algorithms termed as FedQ-Hoeffding and FedQ-Bernstein, respectively, and show that the corresponding total regrets achieve a linear speedup compared with their single-agent counterparts, while the"
+  },
+  {
+    "id": "MeHmwCDifc",
+    "filePath": "data/ICLR/2024/MeHmwCDifc.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "The Trickle-down Impact of Reward Inconsistency on RLHF",
+    "abstract": "Standard practice within Reinforcement Learning from Human Feedback (RLHF) involves optimizing against a Reward Model (RM), which itself is trained to reflect human preferences for desirable generations. A notable subject that is understudied is the (in-)consistency of RMs --- whether they can recognize the semantic changes to different prompts and \nappropriately adapt their reward assignments\n\n--- and their impact on the downstream RLHF model.\n\nIn this paper, we visit a series of research questions relevant to RM inconsistency:\n(1) How can we measure the consistency of reward models? \n(2) How consistent are the existing RMs and how can we improve them? \n(3) In what ways does reward inconsistency influence the chatbots resulting from the RLHF model training?\n\n\nWe propose **Contrast Instruc"
+  },
+  {
+    "id": "nZ7rpEp6wj",
+    "filePath": "data/ICLR/2024/nZ7rpEp6wj.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Multi-Resolution Learning with DeepONets and Long Short-Term Memory Neural Networks",
+    "abstract": "Deep operator networks (DeepONets, DONs) offer a distinct advantage over traditional neural networks in their ability to be trained on multi-resolution data. This property becomes especially relevant in real-world scenarios where high-resolution measurements are difficult to obtain, while low-resolution data is more readily available. Nevertheless, DeepONets alone often struggle to capture and maintain dependencies over long sequences compared to other state-of-the-art algorithms.\nWe propose a novel architecture, named DON-LSTM, which extends the DeepONet with a long short-term memory network (LSTM). Combining these two architectures, we equip the network with explicit mechanisms to leverage multi-resolution data, as well as capture temporal dependencies in long sequences. We test our meth"
+  },
+  {
+    "id": "qVILwUxjLG",
+    "filePath": "data/ICLR/2024/qVILwUxjLG.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Non-stationary Contextual Bandit Learning via Neural Predictive Ensemble Sampling",
+    "abstract": "Real-world applications of contextual bandits often exhibit non-stationarity due to seasonality, serendipity, and evolving social trends. \nWhile a number of non-stationary contextual bandit learning algorithms have been proposed in the literature, they excessively explore due to a lack of prioritization for information of enduring value, or are designed in ways that do not scale in modern applications with high-dimensional user-specific features and large action set, or both. In this paper, we introduce a novel non-stationary contextual bandit algorithm that addresses these concerns. It combines a scalable, deep-neural-network-based architecture with a carefully designed exploration mechanism that strategically prioritizes collecting information with the most lasting value in a non-station"
+  },
+  {
+    "id": "wceM64q7Pd",
+    "filePath": "data/ICLR/2024/wceM64q7Pd.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Depth From Camera Model",
+    "abstract": "Depth estimation is pivotal for robotics and vision-centric tasks. In monocular depth estimation, supervised learning methods typically necessitate expensive ground truth labeling. Despite their accuracy, they come with higher costs compared to self-supervised methods. Nevertheless, supervised methods outperform self-supervised ones in depth estimation accuracy. In the era of deep learning, many methods focus on leveraging image relationships to train neural networks. However, the intrinsic and extrinsic properties of the camera, which can offer a wealth of supervisory data, are often overlooked. By tapping into the camera's inherent properties, depth information for ground regions and areas connected to the ground can be deduced based on physical principles. This approach capitalizes on f"
+  },
+  {
+    "id": "Kwm1OyINXt",
+    "filePath": "data/ICLR/2024/Kwm1OyINXt.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Deep probabilistic 3D angular regression for directional dark matter detectors",
+    "abstract": "Modern detectors of elementary particles are  approaching a fundamental sensitivity limit where individual quanta of charge can be localized and counted in 3D. This enables novel detectors capable of unambiguously demonstrating the particle nature of dark matter by inferring the 3D directions of elementary particles from complex point cloud data. The most complex scenario involves inferring the initial directions of low-energy electrons from their tortuous trajectories. To address this problem we develop and demonstrate the first probabilistic deep learning model that predicts 3D directions using a heteroscedastic von Mises-Fisher distribution that allows us to model data uncertainty. Our approach generalizes the cosine distance loss which is a special case of our loss function in which th"
+  },
+  {
+    "id": "eeaKRQIaYd",
+    "filePath": "data/ICLR/2024/eeaKRQIaYd.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Unsupervised Sign Language Translation and Generation",
+    "abstract": "Sign language translation and generation are crucial in facilitating communication between the deaf and hearing communities.However, the scarcity of parallel sign language video-to-text data poses a considerable challenge to developing effective sign language translation and generation systems.Motivated by the success of unsupervised neural machine translation (UNMT), this paper introduces an unsupervised sign language translation and generation network (USLNet), which learns from abundant single-modality (text and video) data without parallel sign language data. Inspired by UNMT,  USLNet comprises two main components: single-modality reconstructing modules (text and video) that rebuild the input from its noisy version in the same modality and cross-modality back-translation modules (text-"
+  },
+  {
+    "id": "o1TKGCrSL7",
+    "filePath": "data/ICLR/2024/o1TKGCrSL7.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Cross-modality debiasing: using language to mitigate sub-population shifts in imaging",
+    "abstract": "Sub-population shift is a specific type of domain shift that highlights changes in data distribution within specific sub-groups or populations between training and testing. Sub-population shift accounts for a significant source of algorithmic bias and calls for distributional robustness. Recent studies found inherent distributional robustness in multi-modality foundation models, such as the vision-language model CLIP, yet this robustness is vulnerable through parameter fine-tuning. In this paper, we propose leveraging the connection of robustness among different modalities and reshaping the distributional robustness of one modality with another. Specifically, in the context of the distributional robustness of CLIP, we propose to leverage natural language inputs to debias the image feature "
+  },
+  {
+    "id": "edETIhDTwL",
+    "filePath": "data/ICLR/2024/edETIhDTwL.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Decompose Time and Frequency Dependencies: Multivariate Time Series Physiological Signal Emotion Recognition",
+    "abstract": "In this study, we proposed a transformer based end-to-end solution to capture the relationship between the physiological signals and affective changes. We first convert the physiological signal emotion recognition prediction task to a sequence-to-sequence multivariate time series prediction task. We utilize the state-of-the-art (SOTA) self-attention mechanism to decompose the physiological signals into separate frequency domain and time domain representations, and capture the channel dependencies via Two-Stage Attention (TSA). Meanwhile, we implement the multitask learning framework to better predict the valence and arousal affective states individually. We evaluate our system on the Continuously Annotated Signals of Emotion (CASE) dataset used in the Emotion Physiology and Experience Coll"
+  },
+  {
+    "id": "PKsTHJXn4d",
+    "filePath": "data/ICLR/2024/PKsTHJXn4d.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Understanding Your Agent: Leveraging Large Language Models for Behavior Explanation",
+    "abstract": "Intelligent agents such as robots are increasingly deployed in real-world, safety-critical settings. It is vital that these agents are able to explain the reasoning behind their decisions to human counterparts; however, their behavior is often produced by uninterpretable models such as deep neural networks. We propose an approach to generate natural language explanations for an agent’s behavior based only on observations of states and actions, thus making our method independent from the underlying model’s representation. For such models, we first learn a behavior representation and subsequently use it to produce plausible explanations with minimal hallucination while affording user interaction with a pre-trained large language model. We evaluate our method in a multi-agent search-and-rescu"
+  },
+  {
+    "id": "RVaUSKSh9t",
+    "filePath": "data/ICLR/2024/RVaUSKSh9t.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Continual Graph Learning for Thermal Analysis of Composite Materials under Interface Variations",
+    "abstract": "Thermal analysis is an important topic in many fields, such as building, machinery, and microelectronics. As the types of materials in a system are increasingly diverse, conventional numerical methods or machine learning-based surrogate models face tremendous challenges in computation cost and accuracy. Furthermore, a realistic system usually suffers from random fabrication variations that induce significant errors in model prediction. To overcome these issues, we propose Graph Neural Networks (GNN) as a framework for thermal analysis of composite materials with diverse thermal conductivity and thermal interface variations. Using chiplets in microelectronics as the study case, we first partition the system into sub-blocks based on their material property. Then we develop a physics-constrai"
+  },
+  {
+    "id": "XJiN1VkgA0",
+    "filePath": "data/ICLR/2024/XJiN1VkgA0.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Generating with Confidence: Uncertainty Quantification for Black-box Large Language Models",
+    "abstract": "Large language models (LLMs) specializing in natural language generation (NLG) have recently started exhibiting promising capabilities across a variety of domains. However, gauging the trustworthiness of responses generated by LLMs remains an open challenge, with limited research on uncertainty quantification (UQ) for NLG. Furthermore, existing literature typically assumes white-box access to language models, which is becoming unrealistic either due to the closed-source nature of the latest LLMs or computational constraints. In this work, we investigate UQ in NLG for *black-box* LLMs. We first differentiate *uncertainty* vs *confidence*: the former refers to the “dispersion” of the potential predictions for a fixed input, and the latter refers to the confidence on a particular prediction/g"
+  },
+  {
+    "id": "e3tveFVmoH",
+    "filePath": "data/ICLR/2024/e3tveFVmoH.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Stochastic two points method for deep model gradient free optimization",
+    "abstract": "Large foundation models, such as large language models, have performed exceptionally well in various application scenarios. Building or fully fine-tuning such large models is usually prohibitive due to either hardware budget or lack of access to backpropagation. The zeroth-order methods offer a promising direction for tackling this challenge, where only forward passes are needed to update the model. This paper introduces an efficient Stochastic Two-Point (S2P) approach within the gradient-free regime. We present the theoretical convergence properties of S2P under the general and relaxed smoothness assumptions. The theoretical properties also shed light on a faster and more stable S2P variant, Accelerated S2P (AS2P), through exploiting our new convergence properties that better represent th"
+  },
+  {
+    "id": "Q8ypeYHKFO",
+    "filePath": "data/ICLR/2024/Q8ypeYHKFO.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "SafeDiffuser: Safe Planning with Diffusion Probabilistic Models",
+    "abstract": "Diffusion model-based approaches have shown promise in data-driven planning. Although these planners are typically used in decision-critical applications, there are yet no known safety guarantees established for them.  In this paper, we address this limitation by introducing SafeDiffuser, a method to equip probabilistic diffusion models with safety guarantees via control barrier functions. The key idea of our approach is to embed finite-time diffusion invariance, i.e., a form of specification mainly consisting of safety constraints, into the denoising diffusion procedure. This way we enable data generation under safety constraints. We show that SafeDiffusers maintain the generative performance of diffusion models while also providing robustness in safe data generation. We finally test our "
+  },
+  {
+    "id": "RPWs9kOv0I",
+    "filePath": "data/ICLR/2024/RPWs9kOv0I.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Logic-Based Adaptive Reward Shaping for Reinforcement Learning",
+    "abstract": "There is a growing interest in using formal languages such as Linear Temporal Logic (LTL) to specify complex tasks and reward functions for reinforcement learning (RL) precisely and succinctly. Nevertheless, existing methods often assign sparse rewards, which may require millions of exploratory episodes to converge to a quality policy. To address this limitation, we adopt the notion of task progression to measure the degree to which a task specified by a co-safe LTL formula is partially completed and design several reward functions to incentivize a RL agent to satisfy the task specification as much as possible. We also develop an adaptive reward shaping approach that dynamically updates reward functions during the learning process. Experimental results on a range of benchmark RL environmen"
+  },
+  {
+    "id": "EuwZ3Ki81R",
+    "filePath": "data/ICLR/2024/EuwZ3Ki81R.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Revisitng graph neural networks for traffic forecasting",
+    "abstract": "Accurate traffic forecasting is crucial for a wide range of traffic management applications. In recent years, Graph Neural Networks (GNNs) have emerged as one of the most promising methods to predict traffic. However, their complex architectures prevent them from being used in large networks and long-term forecasting. Although there are complex spatial-temporal dependencies in traffic data, the evolution of the traffic flow, in particular, is governed by linear dynamics, based on the law of flow conservation. Hence, we conjecture that linear models are sufficient for accurate traffic flow predictions. In this study, we investigate linear regression models to predict traffic flow. Models are created for different periods in the day, and exploit historical traffic data from the neighboring r"
   }
 ]

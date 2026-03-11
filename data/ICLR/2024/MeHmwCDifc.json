@@ -1,0 +1,40 @@
+{
+  "id": "MeHmwCDifc",
+  "or_id": "MeHmwCDifc",
+  "title": "The Trickle-down Impact of Reward Inconsistency on RLHF",
+  "title_zh": "",
+  "authors": [
+    "Lingfeng Shen",
+    "Sihao Chen",
+    "Linfeng Song",
+    "Lifeng Jin",
+    "Baolin Peng",
+    "Haitao Mi",
+    "Daniel Khashabi",
+    "Dong Yu"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Standard practice within Reinforcement Learning from Human Feedback (RLHF) involves optimizing against a Reward Model (RM), which itself is trained to reflect human preferences for desirable generations. A notable subject that is understudied is the (in-)consistency of RMs --- whether they can recognize the semantic changes to different prompts and \nappropriately adapt their reward assignments\n\n--- and their impact on the downstream RLHF model.\n\nIn this paper, we visit a series of research questions relevant to RM inconsistency:\n(1) How can we measure the consistency of reward models? \n(2) How consistent are the existing RMs and how can we improve them? \n(3) In what ways does reward inconsistency influence the chatbots resulting from the RLHF model training?\n\n\nWe propose **Contrast Instruction** -- a benchmarking strategy for the consistency of RM.  \nEach example in **Contrast Instruction** features a pair of lexically similar instructions with different ground truth responses. A consistent RM is expected to rank the corresponding instruction and response higher than other combinations. We observe that current RMs trained with the standard ranking objective fail miserably on \\contrast{} compared to average humans. To show that RM consistency can be improved efficiently without using extra training budget, we propose two techniques **ConvexDA** and **RewardFusion**, which enhance reward consistency \nthrough extrapolation during the RM training and inference stage, respectively.\nWe show that RLHF models trained with a more consistent RM yield more useful responses, suggesting that reward inconsistency exhibits a trickle-down effect on the downstream RLHF process.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Large language model",
+    "reward model",
+    "RLHF",
+    "consistency"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=MeHmwCDifc",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a8dad7978440d43316bc0727f7c324cbffe5e4c0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Standard practice within Reinforcement Learning from Human Feedback (RLHF) involves optimizing against a Reward Model (RM), which itself is trained to reflect human preferences for desirable generations. A notable subject that is understudied is the (in-)consistency of RMs --- whether they can recog"
+  },
+  "collected_at": "2026-03-11T03:05:38.983Z"
+}

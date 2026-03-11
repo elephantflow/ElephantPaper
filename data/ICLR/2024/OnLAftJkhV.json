@@ -1,0 +1,36 @@
+{
+  "id": "OnLAftJkhV",
+  "or_id": "OnLAftJkhV",
+  "title": "Latent Conservative Objective Models for Offline Data-Driven Crystal Structure Prediction",
+  "title_zh": "",
+  "authors": [
+    "Han Qi",
+    "Stefano Rando",
+    "Xinyang Geng",
+    "Iku Ohama",
+    "Aviral Kumar",
+    "Sergey Levine"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "In computational chemistry, crystal structure prediction (CSP) is an optimization problem that involves discovering the lowest energy stable crystal structure for a given chemical formula. This problem is challenging as it requires discovering globally optimal designs with the lowest energies on complex manifolds. One approach to tackle this problem involves building simulators based on density functional theory (DFT) followed by running search in simulation, but these simulators are painfully slow. In this paper, we study present and study an alternate, data-driven approach to crystal structure prediction: instead of directly searching for the most stable structures in simulation, we train a surrogate model of the crystal formation energy from a database of existing crystal structures, and then optimize this model with respect to the parameters of the crystal structure. This surrogate model is trained to be conservative so as to prevent exploitation of its errors by the optimizer. To handle optimization in the non-Euclidean space of crystal structures, we first utilize a state-of-the-art graph variational auto-encoder (CD-VAE) to convert a crystal structure into a vector-based search space and then optimize a conservative surrogate model of the crystal energy, trained on top of this vector representation. We show that our approach, dubbed LCOMs (latent conservative objective models), performs comparably to the best current approaches in terms of success rate of structure prediction, while also drastically reducing computational cost.",
+  "abstract_zh": "",
+  "tldr": "We propose latent conservative models that performs conservative optimization in the latent space of a graph variational auto-encoder to crystal structure prediction",
+  "keywords": [
+    "crystal structure prediction",
+    "offline model-based optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=OnLAftJkhV",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ddab36c1a7f5c7e37f316321fbddc5629eb55fa1.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose latent conservative models that performs conservative optimization in the latent space of a graph variational auto-encoder to crystal structure prediction"
+  },
+  "collected_at": "2026-03-11T03:05:38.983Z"
+}
