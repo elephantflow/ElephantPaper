@@ -1,0 +1,36 @@
+{
+  "id": "Oy1NtlFDmD",
+  "or_id": "Oy1NtlFDmD",
+  "title": "STRUCTDROP: A STRUCTURED RANDOM ALGORITHM TOWARDS EFFICIENT LARGE-SCALE GRAPH TRAINING",
+  "title_zh": "",
+  "authors": [
+    "Hongyi Liu",
+    "Zirui Liu",
+    "Kaixiong Zhou",
+    "Tong Zhao",
+    "Neil Shah",
+    "Xia Hu"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Graph neural networks (GNNs) have gained considerable success in graph-based learning tasks, yet training GNNs on large graphs is still inefficient. The root cause is the graph-based sparse operations are difficult to accelerate with commodity hardware. Prior art reduces the computation cost of sparse matrix based operations (e.g., linear) via sampling-based approximation. However, two under-explored pain points still persist in this paradigm. Inefficiency Issue: The random-based sampling approaches have the non-zero entries randomly distributing over adjacency matrix, which slows down memory access process and is difficult to accelerate with commodity hardware. Under-fitting Problem: The previous sampling methods only utilize the same subset of nodes during the training, which may cause the under-fitting problem on other remain nodes. Aiming to systematically address these two pain points, we propose StructuredDropout, a.k.a, StructDrop. This method involves the selective random sampling of columns and rows from a sparse matrix for computation. Comprehensive experiments validate the efficiency and generalization of our framework: StructDrop achieves up to 5.09x speedup for a single sparse operation and 6.48x end-to-end speedup with negligible accuracy loss or even better accuracy.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Efficient Training",
+    "Randomized Algorithm"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Oy1NtlFDmD",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/055b25a30e7339e8ad16b900f98a712e7195633a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Graph neural networks (GNNs) have gained considerable success in graph-based learning tasks, yet training GNNs on large graphs is still inefficient. The root cause is the graph-based sparse operations are difficult to accelerate with commodity hardware. Prior art reduces the computation cost of spar"
+  },
+  "collected_at": "2026-03-11T02:25:37.649Z"
+}

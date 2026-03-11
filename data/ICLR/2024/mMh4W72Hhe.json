@@ -1,0 +1,35 @@
+{
+  "id": "mMh4W72Hhe",
+  "or_id": "mMh4W72Hhe",
+  "title": "Improving Branching in Neural Network Verification with Bound Implication Graph",
+  "title_zh": "",
+  "authors": [
+    "Zhuolin Yang",
+    "Kaidi Xu",
+    "Bo Li",
+    "Huan Zhang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Many state-of-the-art neural network verifiers for ReLU networks rely on Branch and Bound (BaB)-based methods. They branch ReLUs into positive (active) and negative (inactive) parts, and bound each subproblem independently. Since the cost of verification heavily depends on the number of subproblems, reducing the total number of branches is the key to verifying neural networks efficiently. In this paper, we consider \\emph{bound implications} during branching - i.e., when one or more ReLU neurons are branched into the active (or inactive) case, they may imply that a set of other neurons from any layers become active or inactive, or have their bounds tightened. These implications can eliminate subproblems and improve bounds. We propose a scalable method to find implications among all neurons within tens of seconds even for large ResNets, by reusing pre-computed variables in popular bound-propagation-based verification methods such as $\\alpha$-CROWN, and solving a cheap linear programming problem. Then, we build the bound implication graph (BIG) which connects neurons with bound implications, and it can be used by any BaB-based verifier to reduce the number of branching needed. When evaluated on a set of popular verification benchmarks and a new benchmark consisting of harder verification problems, BIG consistently reduces the verification time and verifies more problems than state-of-the-art verification tools.",
+  "abstract_zh": "",
+  "tldr": "We improve branch and bound based verification by exploiting the dependencies among neurons and building an implication graph.",
+  "keywords": [
+    "neural network verification",
+    "adversarial robustness",
+    "branch and bound"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=mMh4W72Hhe",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/265e1b6b051d587a95cfcfc312e31e068c2de2e4.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We improve branch and bound based verification by exploiting the dependencies among neurons and building an implication graph."
+  },
+  "collected_at": "2026-03-11T02:25:37.651Z"
+}

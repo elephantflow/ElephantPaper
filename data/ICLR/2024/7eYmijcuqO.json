@@ -1,0 +1,37 @@
+{
+  "id": "7eYmijcuqO",
+  "or_id": "7eYmijcuqO",
+  "title": "On the Dynamics of Learning Time-Aware Behavior with RNNs",
+  "title_zh": "",
+  "authors": [
+    "Peter DelMastro",
+    "Rushiv Arora",
+    "Edward Rietman",
+    "Hava T Siegelmann"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Recurrent Neural Networks (RNNs) have shown great success in modeling time-dependent patterns, but there is limited research on how they develop representations of temporal features during training. To address this gap, we use timed automata (TA) to introduce a family of supervised learning tasks modeling behavior dependent on hidden temporal variables whose complexity is directly controllable. Building upon past studies from the perspective of dynamical systems theory, we train RNNs to emulate a new class of TA called temporal flipflops, and we find they undergo *phase transitions during training* characterized by sudden and rapid discovery of the hidden time-dependent features. In the case of periodic \"time-of-day\" aware flipflop, we show that the RNNs learn stable periodic cycles that encode time modulo the period of the transition rules. We then use fixed point stability analysis to monitor changes in the RNN dynamics during training, and we observe that the phase transition coincides with a *bifurcation* from which stable periodic behavior emerges. We also show that these cycles initially lose stability if the RNN is later trained on the same TA task but with a different period, and we explain this result through analysis of a simple differential equation for learning oscillations via gradient flow. Through this work, we demonstrate how dynamical systems theory can provide insights into not only learned representations, but also the dynamics and pathologies of the learning process itself.",
+  "abstract_zh": "",
+  "tldr": "We introduce a family of tasks based on timed automata to study how RNNs discover hidden temporal variables, and we use techniques from dynamical systems theory to explain how these models develop representations of time during training.",
+  "keywords": [
+    "recurrent neural networks",
+    "latent temporal features",
+    "developmental interpretability",
+    "phase transitions",
+    "dynamical systems theory"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=7eYmijcuqO",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a2e07cec97b1d2c7e2b1d9ba62dbee7c9e6005ef.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce a family of tasks based on timed automata to study how RNNs discover hidden temporal variables, and we use techniques from dynamical systems theory to explain how these models develop representations of time during training."
+  },
+  "collected_at": "2026-03-11T02:25:37.651Z"
+}

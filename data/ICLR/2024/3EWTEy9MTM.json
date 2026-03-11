@@ -1,0 +1,36 @@
+{
+  "id": "3EWTEy9MTM",
+  "or_id": "3EWTEy9MTM",
+  "title": "Chain of Thought Empowers Transformers to Solve Inherently Serial Problems",
+  "title_zh": "",
+  "authors": [
+    "Zhiyuan Li",
+    "Hong Liu",
+    "Denny Zhou",
+    "Tengyu Ma"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Generating a sequence of intermediate steps, \\emph{a.k.a.}, a chain of thought (CoT), is a highly effective method to improve the accuracy of large language models (LLMs) on arithmetics and symbolic reasoning tasks. However, the mechanism behind CoT remains unclear. \nThis work provides a theoretical understanding of the power of CoT for decoder-only transformers through the lens of expressiveness. Conceptually, CoT empowers the model with the ability to perform inherently serial computation, which is otherwise lacking in transformers, especially when depth is low. Given input length $n$, previous works have constant-depth transformers with finite precision $\\mathsf{poly}(n)$ embedding size can only solve problems in $\\mathsf{TC}^0$ without CoT. We first show an even tighter expressiveness upper bound for constant-depth transformers with constant-bit precision, which can only solve problems in $\\mathsf{AC}^0$, a proper subset of $ \\mathsf{TC}^0$. However, with $T$ steps of CoT, constant-depth transformers using constant-bit precision and $O(\\log n)$ embedding size can solve any problem solvable by boolean circuits of size $T$. Empirically, enabling CoT dramatically improves the accuracy for tasks that are hard for parallel computation, including the composition of permutation groups, iterated squaring, and circuit value problems, especially for low-depth transformers.",
+  "abstract_zh": "",
+  "tldr": "We show both theoretically and empirically transformers with polynomial steps of CoT can simulate polysize circuits and thus are strictly more expressive than transformers without CoT.",
+  "keywords": [
+    "Chain of thought",
+    "language modeling",
+    "circuit complexity",
+    "deep learning theory"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=3EWTEy9MTM",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2c3e913d1014164603f487f70dace6570bb0a1d0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show both theoretically and empirically transformers with polynomial steps of CoT can simulate polysize circuits and thus are strictly more expressive than transformers without CoT."
+  },
+  "collected_at": "2026-03-11T02:25:37.649Z"
+}

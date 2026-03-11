@@ -1,0 +1,37 @@
+{
+  "id": "mPOVOwsDOO",
+  "or_id": "mPOVOwsDOO",
+  "title": "Talking Models: Distill Pre-trained Knowledge to Downstream Models via Interactive Communication",
+  "title_zh": "",
+  "authors": [
+    "Zhe Zhao",
+    "Qingyun Liu",
+    "Huan Gui",
+    "Bang An",
+    "Lichan Hong",
+    "Ed H. Chi"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Many recent breakthroughs in machine learning have been enabled by the pre-trained foundation models. By scaling up model parameters, training data, and computation resources, foundation models have significantly advanced the state-of-the-art in many applications. However, it is still an open question of how to use these models to perform downstream tasks efficiently. Knowledge distillation (KD) has been explored to tackle this challenge. KD is a technique that transfers knowledge from a large teacher model to a smaller student model. While KD has been successful in improving student model performance, recent research has discovered that a powerful teacher does not necessarily lead to a powerful student, due to their huge capacity gap. In addition, the potential distribution shifts between the pre-training data and downstream tasks can make knowledge transfer in KD sub-optimal for improving downstream task performance.\n\nIn this paper, we extend the knowledge distillation paradigm by introducing an interactive communication process to help student models of downstream tasks learn effectively from pre-trained foundation models. Our design is inspired by the way humans learn from teachers who can explain knowledge in a way that meets the students' needs. Specifically, we let each model (i.e., student and teacher) train two components: (1) an encoder which encodes the model's hidden states to a message in a shared message space with other models and (2) a decoder which decodes any message to its own hidden states. With encoder and decoder, not only can the teacher model transfer rich information by encoding its hidden states to messages, but also the student model can send messages with information of downstream tasks to teacher so that the teacher can interpret and generate responses. With this interactive communication process, knowledge passing from teacher to student can be tailored to the student's model capacity and downstream tasks' distributions. We conducted ex",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Knowledge Distillation",
+    "Interactive Communication",
+    "Distill Foundation Model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=mPOVOwsDOO",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/753ea6f1fed8cc6ee0e63025ad91acbb54dd33d9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Many recent breakthroughs in machine learning have been enabled by the pre-trained foundation models. By scaling up model parameters, training data, and computation resources, foundation models have significantly advanced the state-of-the-art in many applications. However, it is still an open questi"
+  },
+  "collected_at": "2026-03-11T02:25:37.649Z"
+}
