@@ -1,0 +1,41 @@
+{
+  "id": "uhtQyRrTzY",
+  "or_id": "uhtQyRrTzY",
+  "title": "MIMIC: Masked Image Modeling with Image Correspondences",
+  "title_zh": "",
+  "authors": [
+    "Kalyani Marathe",
+    "Mahtab Bigverdi",
+    "Nishat Anjum Khan",
+    "Tuhin Kundu",
+    "Aniruddha Kembhavi",
+    "Linda Shapiro",
+    "Ranjay Krishna"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Dense pixel-specific representation learning at scale has been bottlenecked due to the unavailability of large-scale multi-view datasets. Current methods for building effective pretraining datasets heavily rely on annotated 3D meshes, point clouds, and camera parameters from simulated environments, preventing them from building datasets from real-world data sources where such metadata is lacking. We propose a pretraining dataset-curation approach that does not require any additional annotations. Our method allows us to generate multi-view datasets from both real-world videos and simulated environments at scale. Specifically, we experiment with two scales: MIMIC-1M with 1.3M and MIMIC-3M with 3.1M multi-view image pairs. We train multiple models with different masked image modeling objectives to showcase the following findings: Representations trained on our automatically generated MIMIC-3M outperform those learned from expensive crowdsourced datasets (ImageNet-1K) and those learned from synthetic environments (MULTIVIEW-HABITAT) on two dense geometric tasks: depth estimation on NYUv2 (↑1.7%), and surface normals estimation on Taskonomy (↓2.05%). For dense tasks which also require object understanding, we outperform MULTIVIEW- HABITAT, on semantic segmentation on ADE20K (↑3.89%), pose estimation on MSCOCO (↑9.4%), and reduce the gap with models pre-trained on the object-centric expensive ImageNet-1K. We outperform even when the representations are frozen, and when downstream training data is limited to few-shot. Larger dataset (MIMIC-3M) significantly improves performance, which is promising since our curation method can arbitrarily scale to produce even larger datasets.",
+  "abstract_zh": "",
+  "tldr": "We propose a pretraining data curation method to mine multi-view image pairs from real videos and synthetic 3D environments for downstream dense vision tasks.",
+  "keywords": [
+    "Data curation techniques",
+    "Masked Image Modeling",
+    "Dense vision tasks",
+    "Large scale pretraining",
+    "Self supervised learning",
+    "Datasets"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=uhtQyRrTzY",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ee8ad62b33eb0278b5645e90eb0b1a621d9fd35a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a pretraining data curation method to mine multi-view image pairs from real videos and synthetic 3D environments for downstream dense vision tasks."
+  },
+  "collected_at": "2026-03-11T02:45:37.148Z"
+}

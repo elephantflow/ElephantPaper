@@ -1,0 +1,38 @@
+{
+  "id": "HgVEz6wwbM",
+  "or_id": "HgVEz6wwbM",
+  "title": "What's the Magic Word? A Control Theory of LLM Prompting",
+  "title_zh": "",
+  "authors": [
+    "Aman Bhargava",
+    "Cameron Witkowski",
+    "Manav Shah",
+    "Matt Thomson"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Prompt engineering is effective and important in the deployment of LLMs but is poorly understood mathematically. \nHere, we formalize prompt engineering as an optimal control problem on LLMs -- where the prompt is considered a control variable for modulating the output distribution of the LLM. \nWithin this framework, we ask a simple question: given a sequence of tokens, does there always exist a prompt we can prepend that will steer the LLM toward accurately predicting the final token?\nWe call such an optimal prompt the magic word since prepending the prompt causes the LLM to output the correct answer. If magic words exist, can we find them? If so, what are their properties?\nWe offer analytic analysis on the controllability of a self-attention head where we prove a bound on controllability as a function of the singular values of its weight matrices.\nWe take inspiration from control theory to propose a metric called $k - \\epsilon$ controllability to characterize LLM steerability. \nWe compute the $k-\\epsilon$ controllability of a panel of large language models, including Falcon-7b, Llama-7b, and Falcon-40b on 5000 WikiText causal language modeling tasks. \nRemarkably, we find that magic words of 10 tokens or less exist for over 97\\% of WikiText instances surveyed for each model.",
+  "abstract_zh": "",
+  "tldr": "We prove bounds and empirically measure the controllability of LLMs via prompting.",
+  "keywords": [
+    "language models",
+    "control theory",
+    "LLMs",
+    "prompt optimization",
+    "alignment",
+    "mechanistic interpretability"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=HgVEz6wwbM",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d48637017ba8cd0cc7676d093c8dc1384fd086f6.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We prove bounds and empirically measure the controllability of LLMs via prompting."
+  },
+  "collected_at": "2026-03-11T02:45:37.145Z"
+}

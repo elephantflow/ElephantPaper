@@ -1,0 +1,32 @@
+{
+  "id": "MJXqei2uy7",
+  "or_id": "MJXqei2uy7",
+  "title": "Parameter-Efficient Tuning Helps Language Model Alignment",
+  "title_zh": "",
+  "authors": [
+    "Tianci Xue",
+    "Ziqi Wang",
+    "Heng Ji"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Aligning large language models (LLMs) with human preferences is essential for safe and useful LLMs. Previous works mainly adopt reinforcement learning (RLHF) and direct preference optimization (DPO) with human feedback for alignment. Nevertheless, they have certain drawbacks. One such limitation is that they can only align models with one preference at the training time (e.g., they cannot learn to generate concise responses when the preference data prefers detailed responses), or have certain constraints for the data format (e.g., DPO only supports pairwise preference data). To this end, prior works incorporate controllable generations for alignment to make language models learn multiple preferences and provide outputs with different preferences during inference if asked. Controllable generation also offers more flexibility with regard to data format (e.g., it supports pointwise preference data). Specifically, it uses different control tokens for different preferences during training and inference, making LLMs behave differently when required. Current controllable generation methods either use a special token or hand-crafted prompts as control tokens, and optimize them together with LLMs. As control tokens are typically much lighter than LLMs, this optimization strategy may not effectively optimize control tokens. To this end, we first use parameter-efficient tuning (e.g., prompting tuning and low-rank adaptation) to optimize control tokens and then fine-tune models for controllable generations, similar to prior works. Our approach, alignMEnt with parameter-Efficient Tuning (MEET), improves the quality of control tokens, thus improving controllable generation quality consistently by an apparent margin on two well-recognized datasets compared with prior works.",
+  "abstract_zh": "",
+  "tldr": "MEET, a novel approach that incorporates parameter-efficient tuning to better optimize control tokens, thus benefitting controllable generation",
+  "keywords": [
+    "Alignment; Large Lanugage Models; Controllable Generations"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=MJXqei2uy7",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e73e61948dc397e2b2377a09b72f834fb0732bf6.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "MEET, a novel approach that incorporates parameter-efficient tuning to better optimize control tokens, thus benefitting controllable generation"
+  },
+  "collected_at": "2026-03-11T02:45:37.148Z"
+}

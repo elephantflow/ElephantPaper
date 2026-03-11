@@ -1,0 +1,34 @@
+{
+  "id": "D8DAQhpznu",
+  "or_id": "D8DAQhpznu",
+  "title": "Llamas Know What GPTs Don't Show: Surrogate Models for Selective Classification",
+  "title_zh": "",
+  "authors": [
+    "Vaishnavi Shrivastava",
+    "Percy Liang",
+    "Ananya Kumar"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "To maintain user trust, large language models (LLMs) should signal low confidence on examples they get incorrect, instead of misleading the user.\nThe standard approach of estimating confidence is to use the softmax probabilities of these models, but state-of-the-art LLMs such as GPT-4 and Claude do not provide access to these probabilities.\nWe first study eliciting confidence linguistically---asking an LLM for its confidence in its answer---but we find that this leaves a lot of room for improvement (79\\% AUC on GPT-4 averaged across 12 question-answering datasets---only 5\\% above a random baseline).\nWe then explore using a \\emph{surrogate} confidence model---using a model where we do have probabilities to evaluate the original model's confidence in a given question.\nSurprisingly, even though these probabilities come from a different model, this method leads to higher AUC than linguistic confidences on 10 out of 12 datasets.\nOur best method mixing linguistic confidences and surrogate model probabilities gives state-of-the-art performance on all 12 datasets (85\\% average AUC on GPT-4).",
+  "abstract_zh": "",
+  "tldr": "To estimate the uncertainty of closed models not providing log probabilities, we propose ensembling their linguistic confidences with probabilities from other open models.",
+  "keywords": [
+    "calibration",
+    "uncertainty estimation",
+    "large language models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=D8DAQhpznu",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/73991355618f0589d851815686ead7b9870b7819.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "To estimate the uncertainty of closed models not providing log probabilities, we propose ensembling their linguistic confidences with probabilities from other open models."
+  },
+  "collected_at": "2026-03-11T02:45:37.147Z"
+}

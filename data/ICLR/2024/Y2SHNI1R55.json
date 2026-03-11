@@ -1,0 +1,37 @@
+{
+  "id": "Y2SHNI1R55",
+  "or_id": "Y2SHNI1R55",
+  "title": "ABKD: Graph Neural Network Compression with Attention-Based Knowledge Distillation",
+  "title_zh": "",
+  "authors": [
+    "Anshul Ahluwalia",
+    "Rohit Das",
+    "Payman Behnam",
+    "Alind Khare",
+    "Pan Li",
+    "Alexey Tumanov"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Graph Neural Networks (GNNs) have proven to be quite versatile for a variety of applications, including recommendation systems, fake news detection, drug discovery, and even computer vision. Due to the expanding size of graph-structured data, GNN models have also increased in complexity, leading to substantial latency issues. This is primarily attributed to the irregular structure of graph data and its access pattern into memory. The natural solution to reduce latency is to compress large  GNNs into small GNNs. One way to do this is via knowledge distillation (KD). However, most KD approaches for GNNs only consider the outputs of the last layers and do not consider the outputs of the intermediate layers of the GNNs; these layers may contain important inductive biases indicated by the graph structure. To address this shortcoming, we propose a novel KD approach to GNN compression that we call Attention-Based Knowledge Distillation (ABKD). ABKD is a KD approach that uses attention to identify important intermediate teacher-student layer pairs and focuses on aligning their outputs. ABKD enables higher compression of GNNs with a smaller accuracy dropoff compared to existing KD approaches. On average, we achieve a 1.79% increase in accuracy with a $32.3\\times$ compression ratio on OGBN-Mag, a large graph dataset, compared to state-of-the-art approaches.",
+  "abstract_zh": "",
+  "tldr": "We create a novel knowledge distillation algorithm for Graph Neural Networks that incorporates more of the inductive bias present in GNNs than other KD methods",
+  "keywords": [
+    "Graph Neural Networks",
+    "Compression",
+    "Knowledge Distillation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Y2SHNI1R55",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/65f738d1520d7cd671b2397ff7acfd5de419dcc8.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We create a novel knowledge distillation algorithm for Graph Neural Networks that incorporates more of the inductive bias present in GNNs than other KD methods"
+  },
+  "collected_at": "2026-03-11T02:45:37.147Z"
+}

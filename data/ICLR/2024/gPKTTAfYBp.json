@@ -1,0 +1,38 @@
+{
+  "id": "gPKTTAfYBp",
+  "or_id": "gPKTTAfYBp",
+  "title": "FlashFFTConv: Efficient Convolutions for Long Sequences with Tensor Cores",
+  "title_zh": "",
+  "authors": [
+    "Daniel Y Fu",
+    "Hermann Kumbong",
+    "Eric Nguyen",
+    "Christopher Re"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Convolution models with long filters have demonstrated state-of-the-art reasoning abilities in many long-sequence tasks but lag behind the most optimized Transformers in wall-clock time.\nA major bottleneck is the Fast Fourier Transform (FFT)---which allows long convolutions to run in $O(N\\log N)$ time in sequence length $N$ but has poor hardware utilization.\nIn this paper, we study how to optimize the FFT convolution.\nWe find two key bottlenecks: the FFT does not effectively use specialized matrix multiply units, and it incurs expensive I/O between layers of the memory hierarchy.\nIn response, we propose FlashFFTConv.\nFlashFFTConv uses a matrix decomposition that computes the FFT using matrix multiply units and enables kernel fusion for long sequences, reducing I/O.\nWe also present two sparse convolution algorithms---1) partial convolutions and 2) frequency-sparse convolutions---which can be implemented simply by skipping blocks in the matrix decomposition, enabling further opportunities for memory and compute savings.\nFlashFFTConv speeds up exact FFT convolutions by up to 8.7$\\times$ over PyTorch and achieves up to 4.4$\\times$ speedup end-to-end.\nGiven the same compute budget, FlashFFTConv allows Hyena-GPT-s to achieve 2.3 points better perplexity and M2-BERT-base to achieve 3.3 points higher GLUE score---matching models with twice the parameter count.\nFlashFFTConv also achieves 96.1% accuracy on Path-512, a high-resolution vision task where no model had previously achieved better than 50%.\nFurthermore, partial convolutions enable longer-sequence models---yielding the first DNA model that can process the longest human genes (2.3M base pairs)---and frequency-sparse convolutions speed up pretrained models while maintaining or improving model quality.",
+  "abstract_zh": "",
+  "tldr": "We propose FlashFFTConv, a new system that optimizes the FFT convolution algorithm to speed up long convolutions and enable long-sequence applications.",
+  "keywords": [
+    "convolutions",
+    "GPUs",
+    "hardware-efficient algorithms",
+    "long context",
+    "fast fourier transform",
+    "I/O awareness"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=gPKTTAfYBp",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c77f3c8f339aae3682e72c37d33ce5bf90cd1134.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose FlashFFTConv, a new system that optimizes the FFT convolution algorithm to speed up long convolutions and enable long-sequence applications."
+  },
+  "collected_at": "2026-03-11T02:45:37.148Z"
+}

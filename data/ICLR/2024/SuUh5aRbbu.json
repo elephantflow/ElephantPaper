@@ -1,0 +1,39 @@
+{
+  "id": "SuUh5aRbbu",
+  "or_id": "SuUh5aRbbu",
+  "title": "End-to-end Story Plot Generator",
+  "title_zh": "",
+  "authors": [
+    "Hanlin Zhu",
+    "Andrew Cohen",
+    "Danqing Wang",
+    "Kevin Yang",
+    "Xiaomeng Yang",
+    "Jiantao Jiao",
+    "Yuandong Tian"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Story plots, while short, carry most of the essential information of a full story that may contain tens of thousands of words. We study the problem of automatic generation of story plots, which includes story premise, character descriptions, plot outlines, etc. To generate a single engaging plot, existing plot generators (e.g., DOC (Yang et al., 2022a)) require hundreds to thousands of calls to LLMs (e.g., OpenAI API) in the planning stage of the story plot, which is costly and takes at least several minutes. Moreover, the hard-wired nature of the method makes the pipeline non-differentiable, blocking fast specialization and personalization of the plot generator. In this paper, we overcome these issues with an end-to-end story plot generator, which is (1) faster and cheaper to generate and (2) end-to-end fine-tunable with human feedback. Compared to DOC, our work replaces expensive OpenAI API calls with Llama2 models via careful prompt designs, which leads to the cheap generation of high-quality training datasets. We then perform supervised fine-tuning (SFT) using approximately 13000 story plots to obtain an end-to-end model. The end-to-end model can generate story plots of comparable quality to the previous DOC method and is $>10\\times$ faster (1k tokens in only 30 seconds on average). Furthermore, fine-tuned with RLHF on several different reward models for different aspects of story quality, our model achieves 60.0\\% winning rate against the model after SFT in the aspect of suspense and surprise.",
+  "abstract_zh": "",
+  "tldr": "We study end-to-end story plot generation, which is much faster than previous methods and easy to further fine-tune with human feedback.",
+  "keywords": [
+    "automatic story generation",
+    "end-to-end generator",
+    "reader-specific reward model",
+    "rlhf"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=SuUh5aRbbu",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9689eb335ce5efb6983b30ca42c53225e86bec92.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study end-to-end story plot generation, which is much faster than previous methods and easy to further fine-tune with human feedback."
+  },
+  "collected_at": "2026-03-11T02:45:37.145Z"
+}
