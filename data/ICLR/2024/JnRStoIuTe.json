@@ -1,0 +1,41 @@
+{
+  "id": "JnRStoIuTe",
+  "or_id": "JnRStoIuTe",
+  "title": "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+  "title_zh": "",
+  "authors": [
+    "Patrik Okanovic",
+    "Roger Waleffe",
+    "Vasilis Mageirakos",
+    "Konstantinos Nikolakakis",
+    "Amin Karbasi",
+    "Dionysios Kalogerias",
+    "Nezihe Merve Gürel",
+    "Theodoros Rekatsinas"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Methods for carefully selecting or generating a small set of training data to learn from, i.e., data pruning, coreset selection, and dataset distillation, have been shown to be effective in reducing the ever-increasing cost of training neural networks. Behind this success are rigorously designed, yet expensive, strategies for identifying the most informative training examples out of large datasets. In this work, we revisit these methods to understand if the additional computational costs associated with such strategies are justified from the perspective of time-to-accuracy, which has become a critical efficiency measure of deep neural network training over large datasets. Surprisingly, we find that many of the recently proposed methods underperform what we call Repeated Sampling of Random Subsets (RSRS or RS2), a powerful yet overlooked extension of the standard random baseline that learns from repeatedly sampled data throughout training instead of a fixed random subset. We test RS2 against thirty-two state-of-the-art data pruning and distillation methods across four datasets including ImageNet. Our results demonstrate that RS2 significantly reduces time-to-accuracy, particularly in practical regimes where accuracy, but not runtime, is similar to that of training on full dataset. For example, when training ResNet-18 on ImageNet, with 10\\% of the dataset each epoch RS2 reaches an accuracy of 66\\% versus 69\\% when training with the full dataset. The best competing method achieves only 55\\% while training 1.6$\\times$ slower than RS2. Beyond the above meta-study, we discuss the theoretical properties of RS2 such as its convergence rate and generalization error. Our primary goal is to highlight that future works that aim to minimize total training cost by using subset selection, need to consider 1) the total computation cost (including preparing the subset) and 2) should aim to outperform a simple extension of random sampling (i.e., RS2).",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "data pruning",
+    "dataset distillation",
+    "random sampling",
+    "corset selection",
+    "data-efficient learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=JnRStoIuTe",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d7e4c9daefbd1d5624c0875538fb1fb95b9a2ce9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Methods for carefully selecting or generating a small set of training data to learn from, i.e., data pruning, coreset selection, and dataset distillation, have been shown to be effective in reducing the ever-increasing cost of training neural networks. Behind this success are rigorously designed, ye"
+  },
+  "collected_at": "2026-03-11T01:25:39.298Z"
+}

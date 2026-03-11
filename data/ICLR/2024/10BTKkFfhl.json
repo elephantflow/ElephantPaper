@@ -1,0 +1,34 @@
+{
+  "id": "10BTKkFfhl",
+  "or_id": "10BTKkFfhl",
+  "title": "Efficient Backdoor Mitigation in Federated Learning with Contrastive Loss",
+  "title_zh": "",
+  "authors": [
+    "Hal Ferguson",
+    "Rui Ning",
+    "Jiang Li",
+    "Hongyi Wu",
+    "Chunsheng Xin"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Due to the data-driven nature of deep neural networks and privacy concerns around user data, a backdoor could be easily injected into deep neural networks in federated learning without attracting the attention of users. An affected global model operates normally as a clean model in regular tasks and behaves differently when the trigger is presented. In this paper, we propose a novel reverse engineering approach to detect and mitigate the backdoor attack in federated learning by adopting a self-supervised Contrastive learning loss. In contrast to existing reverse engineering techniques, such as Neural Cleanse, which involve iterating through each class in the dataset, we employ the contrastive loss as a whole to identify triggers in the backdoored model. Our method compares the last-layer feature outputs of a potentially affected model with these from a clean one preserved beforehand to reconstruct the trigger under the guidance of the contrastive loss. The reverse-engineered trigger is then applied to patch the affected global model to remove the backdoor. If the global model is free from backdoors, the Contrastive loss will lead to either a blank trigger or one with random pattern. We evaluated the proposed method on three datasets under two backdoor attacks and compared it against three existing defense methods. Our results showed that while many popular reverse engineering algorithms were successful in centralized learning settings, they had difficulties detecting backdoors in federated learning, including Neural Cleanse, TABOR, and DeepInspect. Our method successfully detected backdoors in federated learning and was more time-efficient.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Backdoor Defense; Federated Learning; Contrastive Loss"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=10BTKkFfhl",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8c3ce21dcbf6ccd930ae02a09e9ac83443e40f60.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Due to the data-driven nature of deep neural networks and privacy concerns around user data, a backdoor could be easily injected into deep neural networks in federated learning without attracting the attention of users. An affected global model operates normally as a clean model in regular tasks and"
+  },
+  "collected_at": "2026-03-11T01:25:39.296Z"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "ZDGKPbF0VQ",
+  "or_id": "ZDGKPbF0VQ",
+  "title": "Leftover Lunch: Advantage-based Offline Reinforcement Learning for Language Models",
+  "title_zh": "",
+  "authors": [
+    "Ashutosh Baheti",
+    "Ximing Lu",
+    "Faeze Brahman",
+    "Ronan Le Bras",
+    "Maarten Sap",
+    "Mark Riedl"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Reinforcement Learning with Human Feedback (RLHF) is the most prominent method for Language Model (LM) alignment. However, RLHF is an unstable and data-hungry process that continually requires new high-quality LM-generated data for finetuning. We introduce Advantage-Leftover Lunch RL (A-LoL), a new class of offline policy gradient algorithms that enable RL training on any pre-existing data. By assuming the entire LM output sequence as a single action, A-LoL allows incorporating sequence-level classifiers or human-designed scoring functions as\nrewards. Subsequently, by using LM’s value estimate, A-LoL only trains on positive advantage (leftover) data points, making it resilient to noise. Overall, A-LoL is an easy-to-implement, sample-efficient, and stable LM training recipe.\n\nWe demonstrate the effectiveness of A-LoL and its variants with a set of four different language generation tasks. We compare against both online RL (PPO) and recent preference-based (DPO, PRO) and reward-based (GOLD) offline RL baselines. On the commonly-used RLHF benchmark, Helpful and Harmless Assistant (HHA), LMs trained with A-LoL methods achieve the highest diversity while also being rated more safe and helpful than the baselines according to humans. Additionally, in the remaining three tasks, A-LoL could optimize multiple distinct reward functions even when using noisy or suboptimal training data.",
+  "abstract_zh": "",
+  "tldr": "Advantage Leftover Lunch RL (A-LoL), a simple training algorithm that uses offline policy gradients for learning language generation tasks as a single action RL game.",
+  "keywords": [
+    "Reinforcement Learning",
+    "Natural Language Generation",
+    "Offline Policy Gradients"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ZDGKPbF0VQ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/12ee80d1f10cff1b285c1198d93c7a1190f0dac3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Advantage Leftover Lunch RL (A-LoL), a simple training algorithm that uses offline policy gradients for learning language generation tasks as a single action RL game."
+  },
+  "collected_at": "2026-03-11T01:25:39.297Z"
+}

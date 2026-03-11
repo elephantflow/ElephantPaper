@@ -1,0 +1,36 @@
+{
+  "id": "J4zh8rXMm9",
+  "or_id": "J4zh8rXMm9",
+  "title": "Flashback: Understanding and Mitigating Forgetting in Federated Learning",
+  "title_zh": "",
+  "authors": [
+    "Mohammed Aljahdali",
+    "Ahmed M. Abdelmoniem",
+    "Marco Canini"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "In the realm of Federated Learning (FL), the convergence and effectiveness of learning algorithms can be severely hampered by the phenomenon of forgetting—where knowledge obtained in one round becomes diluted or lost in subsequent rounds. Such a challenge is a result of severe data heterogeneity across clients. Although FL algorithms like FedAvg have been pivotal, they often falter in scenarios of high data heterogeneity. This work delves into the nuances of this problem, establishing the critical role forgetting plays in the inefficient learning of FL in the context of severe data heterogeneity. Knowledge loss occurs in both the local update and the aggregation step; addressing one phase without considering the other will not mitigate forgetting. We introduce a novel metric that offers a granular measurement of forgetting at every round while ensuring that the occurrence of forgetting is distinctly recognized and not obscured by the simultaneous acquisition of new class-specific knowledge. Leveraging these insights, we propose Flashback, an FL algorithm that integrates a novel dynamic distillation approach. The knowledge of different models is estimated and the distillation loss is adapted accordingly. This adaptive distillation is applied both at the local and global update phases, ensuring models retain essential knowledge across rounds while also assimilating new knowledge. Our approach seeks to robustly mitigate the detrimental effects of forgetting, paving the way for more efficient and consistent FL algorithms, especially in environments of high data heterogeneity. By effectively mitigating forgetting, Flashback achieves faster convergence to target accuracy outperforming baselines, by being up to 88.5$\\times$ faster and at least 4.6$\\times$ faster across the different benchmarks.",
+  "abstract_zh": "",
+  "tldr": "We tackle the forgetting challenge in Federated Learning due to data heterogeneity, introducing a novel metric for its measurement and proposing Flashback, an FL algorithm that uses dynamic distillation, that accelerates convergence.",
+  "keywords": [
+    "Federated Learning",
+    "Forgetting",
+    "Knowledge Distillation",
+    "Deep Learning",
+    "Continual Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=J4zh8rXMm9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/6ad5ac63aaa83a60b643fa0e202859598345d126.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We tackle the forgetting challenge in Federated Learning due to data heterogeneity, introducing a novel metric for its measurement and proposing Flashback, an FL algorithm that uses dynamic distillation, that accelerates convergence."
+  },
+  "collected_at": "2026-03-11T01:25:39.296Z"
+}

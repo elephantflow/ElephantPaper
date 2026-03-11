@@ -1,0 +1,36 @@
+{
+  "id": "mlJLVigNHp",
+  "or_id": "mlJLVigNHp",
+  "title": "RECOMP: Improving Retrieval-Augmented LMs with Context Compression and Selective Augmentation",
+  "title_zh": "",
+  "authors": [
+    "Fangyuan Xu",
+    "Weijia Shi",
+    "Eunsol Choi"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Retrieval-augmented language models improve language models (LMs) by retrieving documents and prepending them in-context.\nHowever, these documents, often spanning hundreds of words, make inference substantially less efficient. We propose compressing the retrieved documents into textual summaries prior to in-context integration. This not only reduces the computational costs but also relieve the burden of LMs to identify relevant information in long retrieved documents. We present two compressors -- an extractive compressor which selects useful sentences from retrieved documents  and an abstractive compressor which generates summary by synthesizing information from multiple documents. Both are trained to achieve performance gain in LMs when we prepend the generated summary from the compressor to LMs' input, while minimizing the summary length. When retrieved documents are irrelevant to the input or offer no additional information to LM, our compressors output an empty string, enabling selective augmentation. We evaluate our approach on the language modeling task and open domain question answering task. We achieve a compression rate of as low as 6% with minimal loss in performance for both tasks, significantly outperforming the off-the-shelf summarization models. We show that our compressors trained for one LM can transfer to other LMs on the language modeling task and provide a summary largely faithful to the retrieved documents.",
+  "abstract_zh": "",
+  "tldr": "We train compressor models to shorten retrieved documents passed to language models.",
+  "keywords": [
+    "retrieval augmented language model",
+    "language modeling",
+    "question answering",
+    "summarization",
+    "distillation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=mlJLVigNHp",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/43938c98697c89512480fceb61ff554001727889.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We train compressor models to shorten retrieved documents passed to language models."
+  },
+  "collected_at": "2026-03-11T01:25:39.297Z"
+}

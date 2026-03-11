@@ -1,0 +1,35 @@
+{
+  "id": "LUEe72DwPG",
+  "or_id": "LUEe72DwPG",
+  "title": "Multi-Method Self-Training: Improving Code Generation With Text, And Vice Versa",
+  "title_zh": "",
+  "authors": [
+    "Shriyash Kaustubh Upadhyay",
+    "Etan Jacob Ginsberg"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Large Language Models have many methods for solving the same problem. This introduces novel strengths (different methods may work well for different problems) and weaknesses (it may be difficult for users to know which method to use). In this paper, we introduce Multi-Method Self-Training (MMST), where one method is trained on the filtered outputs of another, allowing us to augment the strengths and ameliorate the weaknesses of each method. Using a 176B parameter model trained on both language and code, we show that MMST can 1) improve the less performant method (up to 30\\%) making the model easier to use, 2) improve the more performant method (up to 32.2\\%) making the model more performant, and 3) improve the performance of related but distinct tasks (up to 10.3\\%) by improving the ability of the model to generate rationales. We then conduct ablation analyses to explore why MMST works. We show that MMST generates more data than traditional self-training, but the improvement in performance is driven by the use of multiple methods. We also analyze prompt-engineering and anti-correlated performance between methods as means of making MMST more effective. We hope the evidence from our paper motivates machine learning researchers to explore ways in which advances in language models allow for new forms of training.",
+  "abstract_zh": "",
+  "tldr": "Self-training with LLMs can be made more effective by using multiple different methods (e.g. text and code) to solve each problem (we demonstrate an improvement of 30%+).",
+  "keywords": [
+    "self-training",
+    "large langauge models",
+    "finetuning",
+    "bootstrapping",
+    "multi-modal"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=LUEe72DwPG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d6b0ba5d4a157bcd64953d129fe4b1787ea8e2ad.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Self-training with LLMs can be made more effective by using multiple different methods (e.g. text and code) to solve each problem (we demonstrate an improvement of 30%+)."
+  },
+  "collected_at": "2026-03-11T01:25:39.297Z"
+}
