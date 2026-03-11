@@ -1,0 +1,34 @@
+{
+  "id": "5M2MjyNR2w",
+  "or_id": "5M2MjyNR2w",
+  "title": "Adaptive Expansion for Hypergraph Learning",
+  "title_zh": "",
+  "authors": [
+    "Yiyue Qian",
+    "Tianyi Ma",
+    "Chuxu Zhang",
+    "Yanfang Ye"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Hypergraph, with its powerful ability to capture higher-order complex relationships, has attracted substantial attention recently. Consequently, an increasing number of hypergraph neural networks (HyGNNs) have emerged to model the high-order relationships among nodes and hyperedges. In general, most HyGNNs leverage typical expansion methods, such as clique expansion (CE), to convert hypergraphs into graphs for representation learning. However, they still face the following limitations in hypergraph expansion: (i) Some expansion methods expand hypergraphs in a straightforward manner, resulting in information loss and redundancy; (ii) Most expansion methods often employ fixed edge weights while ignoring the fact that nodes having similar attribute features within the same hyperedge are more likely to be connected compared with nodes with dissimilar features. In light of these challenges, we design a novel CE-based \\textbf{Ad}aptive \\textbf{E}xpansion method called \\textbf{AdE} to expand hypergraphs into weighted graphs that preserve the higher-order hypergraph structure information. Specifically, we first introduce a Global Simulation Network to pick two representative nodes for symbolizing each hyperedge in an adaptive manner. We then connect the rest of the nodes within the same hyperedge to the corresponding selected nodes. Instead of leveraging the fixed edge weights, we further design a distance-aware kernel function to dynamically adjust the edge weights to make sure that node pairs having similar attribute features within the corresponding hyperedge are more likely to be connected with large weights. After obtaining the adaptive weighted graphs, we employ graph neural networks to model the rich relationships among nodes for downstream tasks. Extensive theoretical justifications and empirical experiments over five benchmark hypergraph datasets demonstrate that AdE has excellent rationality, generalization, and effectiveness compared to classic expansion models.",
+  "abstract_zh": "",
+  "tldr": "Design an adaptive expansion method for hypergraph expansion.",
+  "keywords": [
+    "Hypergraph",
+    "Hypergraph Expansion."
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=5M2MjyNR2w",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/27058e4f27354d77f260d3ad20939248b5fb3c6a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Design an adaptive expansion method for hypergraph expansion."
+  },
+  "collected_at": "2026-03-11T00:45:39.430Z"
+}

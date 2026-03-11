@@ -1,0 +1,36 @@
+{
+  "id": "kTRGF2JEcx",
+  "or_id": "kTRGF2JEcx",
+  "title": "Instructing Large Language Models to Identify and Ignore Irrelevant Conditions",
+  "title_zh": "",
+  "authors": [
+    "Zhenyu Wu",
+    "Meng Jiang",
+    "Chao Shen"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Math word problem (MWP) solving requires generating a reasoning path based on a given problem description that often contains irrelevant conditions. Existing chain-of-thought (CoT) prompting methods elicited multi-step reasoning abilities of large language models (LLMs) to solve MWPs. However, they were seriously confused by the irrelevant conditions, resulting in low accuracy. In this paper, we propose a novel approach named I$^3$C that instructs LLMs to identify and ignore irrelevant conditions. It identifies a set of irrelevant condition candidates that have a weak semantic relevance with the question. Then it prompts LLMs to verify the irrelevant conditions. Lastly it instructs the LLMs with the verification on relevant and irrelevant conditions to avoid confusion and improve reasoning paths. Moreover, we propose to select (problem, reasoning paths)-pairs as demonstrations to enhance I$^3$C with few-shot reasoning. We develop I$^3$C-Select that selects the most confusing problems based on the semantic relevance measurement. We conduct extensive experiments on six MWP datasets. I$^3$C can be combined with any CoT prompting methods to improve the performance of solving MWPs. Notably, I$^3$C-Select achieves an accuracy of $93.7$ and $90.9$ on GSM-IC2-1K and GSM-ICM-1K, respectively, significantly outperforming the state-of-the-art few-shot prompting method Auto-CoT by $+19.4$ and $+25.7$.",
+  "abstract_zh": "",
+  "tldr": "Instructing large language models to explicitly identify and ignore irrelevant conditions to avoid confusion and improve reasoning paths.",
+  "keywords": [
+    "Math Word Problem Solving",
+    "Multi-step Reasoning",
+    "Prompting",
+    "Chain-of-Thought",
+    "Large Language Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=kTRGF2JEcx",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f498bd40f99b488f5e3faff05a09cbb615546aec.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Instructing large language models to explicitly identify and ignore irrelevant conditions to avoid confusion and improve reasoning paths."
+  },
+  "collected_at": "2026-03-11T00:45:39.430Z"
+}

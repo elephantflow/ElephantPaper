@@ -1,0 +1,37 @@
+{
+  "id": "WwCirclMvl",
+  "or_id": "WwCirclMvl",
+  "title": "Posterior Sampling via Langevin Monte Carlo for Offline Reinforcement Learning",
+  "title_zh": "",
+  "authors": [
+    "Thanh Nguyen-Tang",
+    "Ming Yin",
+    "Masatoshi Uehara",
+    "Yu-Xiang Wang",
+    "Mengdi Wang",
+    "Raman Arora"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "In this paper, we consider offline reinforcement learning (RL) problems. Within this setting, posterior sampling has been rarely used, perhaps partly due to its explorative nature. The only work using posterior sampling for offline RL that we are aware of is the model-based posterior sampling of \\cite{uehara2021pessimistic}. However, this framework does not permit any tractable algorithm (not even in the linear models) where simulations of posterior samples become challenging, especially in high dimensions. In addition, the algorithm only admits a weak form of guarantees -- Bayesian sub-optimality bounds which depend on the prior distribution. To address these problems, we propose and analyze the use of Markov Chain Monte Carlo methods for offline RL. We show that for low-rank Markov decision processes (MDPs), using the Langevin Monte Carlo (LMC) algorithm, our algorithm obtains the (frequentist) sub-optimality bound that competes against any comparator policy $\\pi$ and interpolates between $\\tilde{\\mathcal{O}}(H^2 d \\sqrt{C_{\\pi}/ K})$ and $\\tilde{\\mathcal{O}}(H^2  \\sqrt{d C_{\\pi}/ K})$, where $C_{\\pi}$ is the concentrability coefficient of $\\pi$, $d$ is the dimension of the linear feature, $H$ is the episode length, and $K$ is the number of episodes in the offline data. For general MDPs with overparameterized neural network function approximation, we show that our LMC-based algorithm obtains the sub-optimality bounds of $\\tilde{\\mathcal{O}}(H^{2.5}  \\tilde{d}  \\sqrt{C_{\\pi} /K})$,  where $\\tilde{d}$ is the effective dimension of the neural network. Finally, we collaborate our findings with numerical evaluations to demonstrate that LMC-based algorithms could be both efficient and competitive for offline RL in high dimensions.",
+  "abstract_zh": "",
+  "tldr": "A study of approximate posterior sampling via Langevin Monte Carlo for offline RL",
+  "keywords": [
+    "reinforcement learning",
+    "offline RL",
+    "posterior sampling"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=WwCirclMvl",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2fd474b9201dc137851f730c84bc2611a24c5106.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A study of approximate posterior sampling via Langevin Monte Carlo for offline RL"
+  },
+  "collected_at": "2026-03-11T00:45:39.430Z"
+}

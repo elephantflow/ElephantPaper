@@ -1,0 +1,36 @@
+{
+  "id": "PsRL00864k",
+  "or_id": "PsRL00864k",
+  "title": "Correct and speak: accent reduction with minimum supervision",
+  "title_zh": "",
+  "authors": [
+    "zhijun jia",
+    "Huaying Xue",
+    "Xiulian Peng",
+    "Yan Lu"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Accent conversion(AC) aims to convert non-native accented speech to native speech by changing the pronunciation pattern and prosody of source speakers while preserving linguistic content and speaker identity. This problem is quite challenging since 1) the parallel data with same speaker speaking the same content in different accent is rarely existed; 2) the accent features not only affect the prosody but also corrupt the pronunciation units in some heavy accents like Indian accent. In this work, we propose a new framework with a correction module and speaking module based on speech generative models in which the accent removal is achieved by correcting the source accented semantic tokens to the target native ones.\nSpecifically, a separate sequence-to-sequence task based on autoregressive decoder-only transformer has been designed to accomplish the correction. Conditioned on this corrected semantic token, a speech generative model based on TF-Codec, trained with large amounts of native speech has been proposed to generate speech with native prosody. Different from multi-stage generation used in other generative models, we use a single-stage autoregressive generation to reduce the complexity and latency of the generation process. To relieve the dependence of the parallel data, we pretrain the correction module with a pretext task in a self-supervised manner using large amounts of native speech to learn the probability space of the target native semantic tokens first so that small amounts of parallel data are needed to learn the mapping of specific corrupted pronunciation units with their native targets. Experimental results show the proposed framework achieved the state-of-the-art performance in terms of accentedness, speech quality and speaker maintanence. With the pretraining, only 15 minutes of parallel data which is not constrained to the same speaker are required to achieve a good correction quality. The proposed generative model also achieves higher speech quali",
+  "abstract_zh": "",
+  "tldr": "We design a separate sequence-to-sequence task based on autoregressive decoder-only transformer to accomplish the accent correction",
+  "keywords": [
+    "Voice Conversion",
+    "Spoken Language Models",
+    "speech tokenizer",
+    "In-context Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=PsRL00864k",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3e3a6bba5ba527ac99ee590b2dfaf550876a4486.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We design a separate sequence-to-sequence task based on autoregressive decoder-only transformer to accomplish the accent correction"
+  },
+  "collected_at": "2026-03-11T00:45:39.429Z"
+}

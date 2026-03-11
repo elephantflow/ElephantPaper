@@ -1,0 +1,37 @@
+{
+  "id": "cPgh4gWZlz",
+  "or_id": "cPgh4gWZlz",
+  "title": "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources",
+  "title_zh": "",
+  "authors": [
+    "Xingxuan Li",
+    "Ruochen Zhao",
+    "Yew Ken Chia",
+    "Bosheng Ding",
+    "Shafiq Joty",
+    "Soujanya Poria",
+    "Lidong Bing"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "We present chain-of-knowledge (CoK), a novel framework that augments large language models (LLMs) by dynamically incorporating grounding information from heterogeneous sources. It results in more factual rationales and reduced hallucination in generation. \nSpecifically, CoK consists of three stages: reasoning preparation, dynamic knowledge adapting, and answer consolidation. \nGiven a knowledge-intensive question, CoK first prepares several preliminary rationales and answers while identifying the relevant knowledge domains.\nIf there is no majority consensus among the answers from samples, CoK corrects the rationales step by step by adapting knowledge from the identified domains.\nThese corrected rationales can plausibly serve as a better foundation for the final answer consolidation.\nUnlike prior studies that primarily use unstructured data, CoK also leverages structured knowledge sources such as Wikidata and tables that provide more reliable factual information.\nTo access both unstructured and structured knowledge sources in the dynamic knowledge adapting stage, we propose an adaptive query generator that allows the generation of queries for various types of query languages, including SPARQL, SQL, and natural sentences. Moreover, to minimize error propagation between rationales, CoK corrects the rationales progressively using preceding corrected rationales to generate and correct subsequent rationales.\nExtensive experiments show that CoK consistently improves the performance of LLMs on knowledge-intensive tasks across different domains.",
+  "abstract_zh": "",
+  "tldr": "We present chain-of-knowledge, a novel framework that augments large language models dynamically by incorporating grounding information from heterogeneous sources.",
+  "keywords": [
+    "large language model",
+    "knowledge grounding"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=cPgh4gWZlz",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/99bf7907ce66cffb067fbb21e933967471cbfdb7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We present chain-of-knowledge, a novel framework that augments large language models dynamically by incorporating grounding information from heterogeneous sources."
+  },
+  "collected_at": "2026-03-11T00:45:39.428Z"
+}
