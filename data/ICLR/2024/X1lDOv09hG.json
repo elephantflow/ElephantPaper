@@ -1,0 +1,35 @@
+{
+  "id": "X1lDOv09hG",
+  "or_id": "X1lDOv09hG",
+  "title": "High variance score function estimates help diffusion models generalize",
+  "title_zh": "",
+  "authors": [
+    "John Vastola"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "How do diffusion-based generative models generalize beyond their training set? In particular, do they perform something similar to kernel density estimation? If so, what is the kernel, and which aspects of training and sampling determine its form? We argue that a key contributor to generalization is the fact that the denoising score matching objective usually used to train diffusion models tends to obtain high variance score function estimates at early times. We investigate this claim by mathematically studying (unconditional) diffusion models in a variety of analytically tractable settings (e.g., when the training distribution is a Gaussian mixture), and are able to compute various exact and asymptotic expressions for quantities like the variance of score function parameter estimates. We show that the effect of this high variance is mathematically equivalent to running reverse diffusion using the \"optimal\" score, and then convolving the result with a data-dependent kernel function.",
+  "abstract_zh": "",
+  "tldr": "The denoising score matching objective used to train diffusion models produces extremely noisy small-time score function estimates in a way that helps diffusion models generalize.",
+  "keywords": [
+    "generative modeling",
+    "score-based modeling",
+    "score matching",
+    "generalization",
+    "diffusion",
+    "theory"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=X1lDOv09hG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/74133e4072640eec9ba0c91ffd1bae80df8a8131.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The denoising score matching objective used to train diffusion models produces extremely noisy small-time score function estimates in a way that helps diffusion models generalize."
+  },
+  "collected_at": "2026-03-11T00:25:37.039Z"
+}

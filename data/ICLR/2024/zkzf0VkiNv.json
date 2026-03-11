@@ -1,0 +1,37 @@
+{
+  "id": "zkzf0VkiNv",
+  "or_id": "zkzf0VkiNv",
+  "title": "Certified Robustness on Visual Graph Matching via Searching Optimal Smoothing Range",
+  "title_zh": "",
+  "authors": [
+    "Huaqing Shao",
+    "Lanjun Wang",
+    "Yongwei Wang",
+    "Qibing Ren",
+    "Junchi Yan"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Deep visual graph matching (GM) is a challenging task in combinatorial learning that involves finding a permutation matrix that indicates the correspondence between keypoints from a pair of images and their associated keypoint positions. \nNevertheless, recent empirical studies have demonstrated that visual GM is susceptible to adversarial attacks, which can severely impair the matching quality and jeopardize the reliability of downstream applications.\nTo the best of our knowledge, certifying robustness for deep visual GM remains an open challenge, which entails addressing two main difficulties: how to handle the paired inputs and the large permutation output space, and how to balance the trade-off between certified robustness and matching performance. \n\nIn this paper, we propose a method, Certified Robustness based on Optimal Smoothing Range Search (CR-OSRS), which provides a robustness guarantee for deep visual GM, inspired by the random smoothing technique. Unlike the conventional random smoothing methods that use isotropic Gaussian distributions, we build the smoothed model with a joint Gaussian distribution, which can capture the structural information between keypoints and mitigate the performance degradation caused by smoothing. We design a global optimization algorithm to search the optimal joint Gaussian distribution that helps achieve a larger certified space and higher matching performance. Considering the large permutation output space, we partition the output space based on similarity, which can reduce the computational complexity and certification difficulty arising from the diversity of the output matrix. Furthermore, we apply data augmentation and a similarity-based regularization term to enhance the smoothed model performance during the training phase. Since the certified space we obtain is high-dimensional and multivariable, it is challenging to evaluate directly and quantitatively, so we propose two methods (sampling and marginal radii) to measure ",
+  "abstract_zh": "",
+  "tldr": "We introduce the first definition of certified robustness for visual graph matching and proposes a novel method, named CR-OSRS. Experiments on different GM solvers and datasets show that our method achieves state-of-the-art robustness certification.",
+  "keywords": [
+    "Visual graph matching (GM)",
+    "certified robustness",
+    "randomized smoothing",
+    "joint smoothing distribution"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=zkzf0VkiNv",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/82330d67327210e0ee5a77d0e940358d0c61b22f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We introduce the first definition of certified robustness for visual graph matching and proposes a novel method, named CR-OSRS. Experiments on different GM solvers and datasets show that our method achieves state-of-the-art robustness certification."
+  },
+  "collected_at": "2026-03-11T00:25:37.038Z"
+}

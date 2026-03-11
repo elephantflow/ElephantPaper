@@ -1,0 +1,33 @@
+{
+  "id": "EIfcSw6MW0",
+  "or_id": "EIfcSw6MW0",
+  "title": "Achieving Certified Robustness and Maintaining Clean Accuracy via Vanilla Model Guide",
+  "title_zh": "",
+  "authors": [
+    "Chunlin Yu",
+    "Yukun Ma",
+    "Chuliang Weng"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Certified robustness can provide theoretical defense guarantees for deep neural network models against adversarial examples within a certain perturbation range. However, existing research on obtaining certified robustness requires specialized certified robust training from scratch for DNNs models. This approach significantly decreases the clean accuracy of normal inputs compared to vanilla models trained with vanilla training, affecting the main inference task of DNNs models and causing practical difficulties for security methods.\nWe propose a practical training method that aims to obtain certified robustness while maintaining clean accuracy.\nThis method involves adding a pre-trained vanilla model and applying singular value decomposition (SVD) to the weight matrices of each network layer of the vanilla model. This process yields rotation matrices and singular values that respectively affect clean accuracy and certified robustness. The vanilla model is used as a guide model, establishing a knowledge transfer process based on the similarity of rotation matrices between the guide model and the certification model that obtains certified robustness. In order to select important rotation matrix information and reduce computational cost, a low-rank approximation is used for practical knowledge transfer. Experimental results demonstrate that our approach significantly improves clean accuracy while only slightly reducing certified accuracy.",
+  "abstract_zh": "",
+  "tldr": "With the help of pre-trained vanilla model guidance improves the model's ability to represent clean inputs in certified robust training.",
+  "keywords": [
+    "Adversarial examples",
+    "Certified Robustness"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=EIfcSw6MW0",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/836838bf30de96c080d3f1cb5cd899caf855006f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "With the help of pre-trained vanilla model guidance improves the model's ability to represent clean inputs in certified robust training."
+  },
+  "collected_at": "2026-03-11T00:25:37.039Z"
+}
