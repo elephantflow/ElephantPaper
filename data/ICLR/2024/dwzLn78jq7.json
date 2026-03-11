@@ -1,0 +1,38 @@
+{
+  "id": "dwzLn78jq7",
+  "or_id": "dwzLn78jq7",
+  "title": "On the Scalability and Memory Efficiency of Semidefinite Programs  for Lipschitz Constant Estimation of Neural Networks",
+  "title_zh": "",
+  "authors": [
+    "Zi Wang",
+    "Bin Hu",
+    "Aaron J Havens",
+    "Alexandre Araujo",
+    "Yang Zheng",
+    "Yudong Chen",
+    "Somesh Jha"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Lipschitz constant estimation plays an important role in understanding generalization, robustness, and fairness in deep learning. Unlike naive bounds based on the network weight norm product, semidefinite programs (SDPs) have shown great promise in providing less conservative Lipschitz bounds with polynomial-time complexity guarantees. However, due to the memory consumption and running speed, standard SDP algorithms cannot scale to modern neural network architectures. In this paper, we transform the SDPs for Lipschitz constant estimation into an eigenvalue optimization problem, which aligns with the modern large-scale optimization paradigms based on first-order methods. This is amenable to autodiff frameworks such as PyTorch and TensorFlow, requiring significantly less memory than standard SDP algorithms. The transformation also allows us to leverage various existing numerical techniques for eigenvalue optimization, opening the way for further memory improvement and computational speedup. The essential technique of our eigenvalue-problem transformation is to introduce redundant quadratic constraints and then utilize both Lagrangian and Shor's SDP relaxations under a certain trace constraint.  Notably, our numerical study successfully scales the SDP-based Lipschitz constant estimation to address large neural networks on ImageNet. Our numerical examples on CIFAR10 and ImageNet demonstrate that our technique is more scalable than existing approaches. Our code is available at https://github.com/z1w/LipDiff.",
+  "abstract_zh": "",
+  "tldr": "We scale the SDP for Lipschitz constant estimation to practical CIFAR10/ImageNet networks.",
+  "keywords": [
+    "Semidefinite programming",
+    "Lipschitz constant",
+    "Deep learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=dwzLn78jq7",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/333a8145de80d282eac48f6722bab292ed03b563.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We scale the SDP for Lipschitz constant estimation to practical CIFAR10/ImageNet networks."
+  },
+  "collected_at": "2026-03-11T01:45:39.604Z"
+}

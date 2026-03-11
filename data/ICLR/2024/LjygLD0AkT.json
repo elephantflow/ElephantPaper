@@ -1,0 +1,37 @@
+{
+  "id": "LjygLD0AkT",
+  "or_id": "LjygLD0AkT",
+  "title": "Rethinking Test-time Likelihood: The Likelihood Path Principle and Its Application to OOD Detection",
+  "title_zh": "",
+  "authors": [
+    "Sicong Huang",
+    "Jiawei He",
+    "Yik Chau Lui"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "While likelihood is attractive in theory, its estimates by deep generative models (DGMs) are often broken in practice, and perform poorly for OOD Detection. Various recent works started to consider alternative summary statistics and achieved better performances. However, such recipes do not come with provable guarantees, nor is it clear that their choices extract sufficient information.\n\nWe attempt to change this by conducting a case study on variational autoencoders (VAEs). First, we introduce the *likelihood path (LPath) principle*, generalizing the likelihood principle. This narrows the search for informative summary statistics down to the *minimal sufficient statistics* of VAEs' conditional likelihoods. Second, introducing new theoretic tools such as *essential support*, *essential distance* and *co-Lipschitzness*, we obtain non-asymptotic provable OOD detection guarantees for certain distillation of the minimal sufficient statistics. The corresponding LPath algorithm demonstrates SOTA performances, even using simple and small VAEs with poor likelihood estimates. To our best knowledge, this is the first provable unsupervised OOD method that delivers excellent empirical results, better than any other VAEs based techniques.",
+  "abstract_zh": "",
+  "tldr": "By leveraging sufficient statistics from the likelihood path (LPath) of VAEs, our mathematically provable method delivers SOTA performance for unsupervised, one sample OOD detection",
+  "keywords": [
+    "outlier detection",
+    "ood",
+    "out-of-distribution",
+    "anomaly detection",
+    "variational autoencoder",
+    "VAE"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=LjygLD0AkT",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/af08c31cd0ba8c5d5997c7bccb13095e1b01eb9f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "By leveraging sufficient statistics from the likelihood path (LPath) of VAEs, our mathematically provable method delivers SOTA performance for unsupervised, one sample OOD detection"
+  },
+  "collected_at": "2026-03-11T01:45:39.603Z"
+}

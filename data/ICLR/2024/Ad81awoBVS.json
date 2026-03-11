@@ -1,0 +1,35 @@
+{
+  "id": "Ad81awoBVS",
+  "or_id": "Ad81awoBVS",
+  "title": "Rotation Has Two Sides: Evaluating Data Augmentation for Deep One-class Classification",
+  "title_zh": "",
+  "authors": [
+    "Guodong Wang",
+    "Yunhong Wang",
+    "Xiuguo Bao",
+    "Di Huang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 spotlight",
+  "abstract": "One-class classification (OCC) involves predicting whether a new data is normal or anomalous based solely on the data from a single class during training. Various attempts have been made to learn suitable representations for OCC within a self-supervised framework. Notably, discriminative methods that use geometric visual transformations, such as rotation, to generate pseudo-anomaly samples have exhibited impressive detection performance. Although rotation is commonly viewed as a distribution-shifting transformation and is widely used in the literature, the cause of its effectiveness remains a mystery. In this study, we are the first to make a surprising observation: there exists a strong linear relationship (Pearson's Correlation, $r > 0.9$) between the accuracy of rotation prediction and the performance of OCC. This suggests that a classifier that effectively distinguishes different rotations is more likely to excel in OCC, and vice versa. The root cause of this phenomenon can be attributed to the transformation bias in the dataset, where representations learned from transformations already present in the dataset tend to be less effective, making it essential to accurately estimate the transformation distribution before utilizing pretext tasks involving these transformations for reliable self-supervised representation learning. To the end, we propose a novel two-stage method to estimate the transformation distribution within the dataset. In the first stage, we learn general representations through standard contrastive pre-training. In the second stage, we select potentially semantics-preserving samples from the entire augmented dataset, which includes all rotations, by employing density matching with the provided reference distribution. By sorting samples based on semantics-preserving versus shifting transformations, we achieve improved performance on OCC benchmarks.",
+  "abstract_zh": "",
+  "tldr": "We observe a robust relationship between the accuracy of rotation prediction and one-class classification (OCC), with a novel method proposed for estimating the transformation distribution within the dataset, thus enhancing OCC.",
+  "keywords": [
+    "self-supervised learning",
+    "deep one-class cilassification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Ad81awoBVS",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7bf21feb9bcffeac0dec9c48b1b50d05663b5a16.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": true,
+  "sections": {
+    "note": "Detailed extraction pending",
+    "method_summary": "We observe a robust relationship between the accuracy of rotation prediction and one-class classification (OCC), with a novel method proposed for estimating the transformation distribution within the dataset, thus enhancing OCC."
+  },
+  "collected_at": "2026-03-11T01:45:39.602Z"
+}
