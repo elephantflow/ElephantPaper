@@ -1,0 +1,37 @@
+{
+  "id": "BoMvv7ypDF",
+  "or_id": "BoMvv7ypDF",
+  "title": "Recursive Score Estimation Accelerates Diffusion-Based Monte Carlo",
+  "title_zh": "",
+  "authors": [
+    "Xunpeng Huang",
+    "Difan Zou",
+    "Hanze Dong",
+    "Yian Ma",
+    "Tong Zhang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "To sample from a general target distribution $p_*\\propto e^{-f_*}$ beyond the isoperimetric condition, \\citet{huang2023monte} proposed to perform sampling through reverse diffusion, giving rise to *Diffusion-based  Monte Carlo* (DMC). Specifically,  DMC follows the reverse SDE of a diffusion process that transforms the target distribution to the standard Gaussian, utilizing a non-parametric score estimation. However, the original DMC algorithm encountered high gradient complexity, resulting in an *exponential dependency* on the error tolerance $\\epsilon$ of the obtained samples. In this paper, we demonstrate that \nthe high complexity of the original DMC algorithm originates from its redundant design of score estimation, and proposed a  more efficient DMC algorithm, called RS-DMC, based on a novel recursive score estimation method. \n\nIn particular, we first divide the entire diffusion process into multiple segments and then formulate the score estimation step (at any time step) as a series of interconnected mean estimation and sampling subproblems accordingly, which are correlated in a recursive manner. Importantly, we show that with a proper design of the segment decomposition, all sampling subproblems will only need to tackle a strongly log-concave distribution, which can be very efficient to solve using the standard sampler (e.g., Langevin Monte Carlo) with a provably rapid convergence rate. As a result, we prove that the gradient complexity of RS-DMC only has a *quasi-polynomial dependency* on $\\epsilon$, which significantly improves exponential gradient complexity in \\citet{huang2023monte}. \nFurthermore, under commonly used dissipative conditions, our algorithm is provably much faster than the popular Langevin-based algorithms. Our algorithm design and theoretical framework illuminate a novel direction for addressing sampling problems, which could be of broader applicability in the community.",
+  "abstract_zh": "",
+  "tldr": "We provide an efficient diffusion-based Monte Calro method that can sample non-log-concave distribution with quasi-polynomial gradient complexity.",
+  "keywords": [
+    "posterior sampling",
+    "non-isopermetric conditions",
+    "Monte Carlo",
+    "SDE"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=BoMvv7ypDF",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f84d4db8a616fa636da1c077ec160ab6f2f5eadc.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We provide an efficient diffusion-based Monte Calro method that can sample non-log-concave distribution with quasi-polynomial gradient complexity."
+  },
+  "collected_at": "2026-03-11T02:05:38.673Z"
+}

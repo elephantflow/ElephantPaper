@@ -1,0 +1,34 @@
+{
+  "id": "hdCDVSPQ7v",
+  "or_id": "hdCDVSPQ7v",
+  "title": "Jorge: Approximate Preconditioning for GPU-Efficient Second-Order Optimization",
+  "title_zh": "",
+  "authors": [
+    "Siddharth Singh",
+    "Zachary Sating",
+    "Abhinav Bhatele"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Despite their better convergence properties compared to first-order optimizers,\nsecond-order optimizers for deep learning have been less popular due to their\nsignificant computational costs. The primary efficiency bottleneck in such\noptimizers is matrix inverse calculations in the preconditioning step, which\nare expensive to compute on GPUs.  In this paper, we introduce Jorge, a\nsecond-order optimizer that promises the best of both worlds -- rapid\nconvergence benefits of second-order methods, and high computational efficiency\ntypical of first-order methods. We address the primary computational bottleneck\nof computing matrix inverses by completely eliminating them using an\napproximation of the preconditioner computation. This makes Jorge extremely\nefficient on GPUs in terms of wall-clock time. Further, we describe an approach\nto determine Jorge's hyperparameters directly from a well-tuned SGD baseline,\nthereby significantly minimizing tuning efforts. Our empirical evaluations\ndemonstrate the distinct advantages of using Jorge, outperforming\nstate-of-the-art optimizers such as SGD, AdamW, and Shampoo across multiple\ndeep learning models, both in terms of sample efficiency and wall-clock time.",
+  "abstract_zh": "",
+  "tldr": "We propose Jorge, a new second order optimizer that is extremely efficient on GPU platforms.",
+  "keywords": [
+    "second order optimizer",
+    "hardware efficiency",
+    "approximate preconditioning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hdCDVSPQ7v",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0b1f1bf98f7e3c440910f83f2ecf7214a425bbed.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose Jorge, a new second order optimizer that is extremely efficient on GPU platforms."
+  },
+  "collected_at": "2026-03-11T02:05:38.672Z"
+}

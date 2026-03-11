@@ -1,0 +1,39 @@
+{
+  "id": "4stB7DFLp6",
+  "or_id": "4stB7DFLp6",
+  "title": "InstructRetro: Instruction Tuning post Retrieval-Augmented Pretraining",
+  "title_zh": "",
+  "authors": [
+    "Boxin Wang",
+    "Wei Ping",
+    "Lawrence McAfee",
+    "Peng Xu",
+    "Bo Li",
+    "Mohammad Shoeybi",
+    "Bryan Catanzaro"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Pretraining auto-regressive large language models (LLMs) with retrieval demonstrates better perplexity and factual accuracy by leveraging external databases. However, the size of existing pretrained retrieval-augmented LLM is still limited (e.g., Retro has 7.5B parameters), which limits the effectiveness of instruction tuning and zero-shot generalization. In this work, we introduce Retro 48B, the largest LLM pretrained with retrieval before instruction tuning. Specifically, we continue to pretrain the 43B GPT model on additional 100 billion tokens using the Retro augmentation method by retrieving from 1.2 trillion tokens. The obtained foundation model, Retro 48B, largely outperforms the original 43B GPT in terms of perplexity. After instruction tuning on Retro, InstructRetro demonstrates significant improvement over the instruction tuned GPT on zero-shot question answering (QA) tasks. Specifically, the average improvement of InstructRetro is 7% over its GPT counterpart across 8 short-form QA tasks, and 10% over GPT across 4 challenging long-form QA tasks. Surprisingly, we find that one can ablate the encoder from InstructRetro architecture and directly use its decoder backbone, while achieving comparable results. We hypothesize that pretraining with retrieval makes its decoder good at incorporating context for QA. Our results highlights the promising direction to obtain a better GPT decoder for QA through continued pretraining with retrieval before instruction tuning.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Large Language Models",
+    "Pretraining",
+    "Retrieval",
+    "Instruction Tuning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=4stB7DFLp6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3b69edccc8147fa3baafe6fe01bff43405655c18.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Pretraining auto-regressive large language models (LLMs) with retrieval demonstrates better perplexity and factual accuracy by leveraging external databases. However, the size of existing pretrained retrieval-augmented LLM is still limited (e.g., Retro has 7.5B parameters), which limits the effectiv"
+  },
+  "collected_at": "2026-03-11T02:05:38.673Z"
+}

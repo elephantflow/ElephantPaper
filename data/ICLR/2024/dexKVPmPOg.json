@@ -1,0 +1,34 @@
+{
+  "id": "dexKVPmPOg",
+  "or_id": "dexKVPmPOg",
+  "title": "Efficient Recomputation of Marginal Likelihood upon Adding Training Data in Gaussian Processes and Simulator Fusion",
+  "title_zh": "",
+  "authors": [
+    "Yusuke Ohtsubo",
+    "Hiroki Ohashi"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "To reduce generalization loss in line with the bias-variance trade-off, machine learning engineers should construct models based on their knowledge of the modeling target and, as training data increases, choose more flexible models with reduced dependence on that knowledge if that knowledge is unreliable. \nTo achieve this automatically, methods have been proposed to determine the amount of model's assumed prior knowledge directly from training data, rather than relying solely on an engineer's intuition.\nA widely studied approach involves using both a flexible model and a knowledge-dependent simulator, selectively incorporating simulator-generated data into the flexible model's training data.\nWhile neural networks have been used as flexible models, Gaussian processes are also candidates due to their flexibility and ability to output prediction uncertainty.\nHowever, direct methods for adding simulator-generated data to Gaussian process training data remain unstudied. The Subset of Data (SoD) method, the closest alternative, often adds inappropriate data due to its assumption about the true distribution.\nThe log marginal likelihood, grounded in theory, determines the inclusion of generated data. However, its computation in Gaussian processes is costly. We propose a faster method considering the Cholesky factor and matrix element dependencies.\nExperiments indicate that, in terms of MSE, metrics using exact negative log likelihood outperform Subset of Data and other basic methods.",
+  "abstract_zh": "",
+  "tldr": "When augmenting the training data of a Gaussian process using a simulator, a method for rapidly calculating which data to add to the training set and when to stop data augmentation.",
+  "keywords": [
+    "Gaussian Process",
+    "bias variance tradeoff",
+    "marginal likelihood",
+    "model selection"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=dexKVPmPOg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b5d2450781699f71924b23ae95d0fa6c089b2a52.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "When augmenting the training data of a Gaussian process using a simulator, a method for rapidly calculating which data to add to the training set and when to stop data augmentation."
+  },
+  "collected_at": "2026-03-11T02:05:38.670Z"
+}

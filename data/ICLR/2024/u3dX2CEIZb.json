@@ -1,0 +1,39 @@
+{
+  "id": "u3dX2CEIZb",
+  "or_id": "u3dX2CEIZb",
+  "title": "Scaling physics-informed hard constraints with mixture-of-experts",
+  "title_zh": "",
+  "authors": [
+    "Nithin Chalapathi",
+    "Yiheng Du",
+    "Aditi S. Krishnapriyan"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Imposing known physical constraints, such as conservation laws, during neural network training introduces an inductive bias that can improve accuracy, reliability, convergence, and data efficiency for modeling physical dynamics. While such constraints can be softly imposed via loss function penalties, recent advancements in differentiable physics and optimization improve performance by incorporating PDE-constrained optimization as individual layers in neural networks. This enables a stricter adherence to physical constraints. However, imposing hard constraints significantly increases computational and memory costs, especially for complex dynamical systems. This is because it requires solving an optimization problem over a large number of points in a mesh, representing spatial and temporal discretizations, which greatly increases the complexity of the constraint. To address this challenge, we develop a scalable approach to enforce hard physical constraints using Mixture-of-Experts (MoE), which can be used with any neural network architecture. Our approach imposes the constraint over smaller decomposed domains, each of which is solved by an ``expert'' through differentiable optimization. During training, each expert independently performs a localized backpropagation step by leveraging the implicit function theorem; the independence of each expert allows for parallelization across multiple GPUs. Compared to standard differentiable optimization, our scalable approach achieves greater accuracy in the neural PDE solver setting for predicting the dynamics of challenging non-linear systems. We also improve training stability and require significantly less computation time during both training and inference stages.",
+  "abstract_zh": "",
+  "tldr": "We scale incorporating differentiable PDE-constrained optimization (physics-informed hard constraints) as individual layers in a neural network through a mixture-of-experts formulation.",
+  "keywords": [
+    "Physics-Informed Machine Learning",
+    "PDEs",
+    "differentiable optimization",
+    "differentiable physics",
+    "neural networks",
+    "mixture of experts",
+    "constrained optimization",
+    "neural operators"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=u3dX2CEIZb",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0dbb1a4e1eb20fc5d0e7c94834773579d30e5b4b.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We scale incorporating differentiable PDE-constrained optimization (physics-informed hard constraints) as individual layers in a neural network through a mixture-of-experts formulation."
+  },
+  "collected_at": "2026-03-11T02:05:38.673Z"
+}
