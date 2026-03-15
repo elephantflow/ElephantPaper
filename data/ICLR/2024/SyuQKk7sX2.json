@@ -1,0 +1,36 @@
+{
+  "id": "SyuQKk7sX2",
+  "or_id": "SyuQKk7sX2",
+  "title": "(Dynamic) Prompting might be all you need to repair Compressed LLMs",
+  "title_zh": "",
+  "authors": [
+    "Duc N.M Hoang",
+    "Minsik Cho",
+    "Thomas Merth",
+    "Mohammad Rastegari",
+    "Zhangyang Wang"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Large language models (LLMs), while transformative for NLP, come with significant computational demands, underlining the need for efficient, training-free compression. Notably, the reliability of perplexity as a benchmark for compressed model efficacy is in question, as our tests using LLaMA-7B and OPT-6.7b reveal a significant performance drop in several realistic downstream tasks, underscoring the disparity between perplexity as a performance indicator and real-world performance. Investigation into the trade-off between resource-intensive post-compression re-training highlights the prospect of prompt-driven recovery as a lightweight adaption tool. However, existing studies, confined mainly to perplexity evaluations and simple tasks, fail to offer unequivocal confidence in the scalability and generalizability of prompting.We tackle this uncertainty in two key ways. First, we uncover the vulnerability of naive prompts in LLM compression as an over-reliance on a singular prompt per input. In response, we propose \\textit{inference-time dynamic prompting} (IDP), a mechanism that autonomously chooses from a set of curated prompts based on the context of each individual input. Second, we delve into a scientific understanding of why ``prompting might be all you need post-LLM compression\". Our findings suggest that compression doesn't irretrievably erase LLM model knowledge but displace it, necessitating a new inference path. IDP effectively redirects this path, enabling the model to tap into its inherent yet displaced knowledge and thereby recover performance. Empirical tests affirm the value of IDP, demonstrating an average performance improvement of 1.24\\% across nine varied tasks spanning multiple knowledge domains.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "LLMs",
+    "Compression",
+    "Prompting"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=SyuQKk7sX2",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/fced83f091b60023b16af19176cb2c7bcedd1c73.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Large language models (LLMs), while transformative for NLP, come with significant computational demands, underlining the need for efficient, training-free compression. Notably, the reliability of perplexity as a benchmark for compressed model efficacy is in question, as our tests using LLaMA-7B and "
+  },
+  "collected_at": "2026-03-15T19:11:13.196Z"
+}

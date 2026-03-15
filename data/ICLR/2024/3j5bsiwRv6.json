@@ -1,0 +1,40 @@
+{
+  "id": "3j5bsiwRv6",
+  "or_id": "3j5bsiwRv6",
+  "title": "Sparse Refinement for Efficient High-Resolution Semantic Segmentation",
+  "title_zh": "",
+  "authors": [
+    "Zhijian Liu",
+    "Zhuoyang Zhang",
+    "Shang Yang",
+    "Haotian Tang",
+    "Chenfeng Xu",
+    "Kurt Keutzer",
+    "Song Han"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Semantic segmentation empowers numerous real-world applications, such as autonomous driving and augmented/mixed reality. These applications often operate on high-resolution images (e.g., 8 megapixels) to capture the fine details. However, this comes at the cost of considerable computational complexity, hindering the deployment in latency-sensitive scenarios. In this paper, we introduce SparseRefine, a novel approach that enhances dense low-resolution predictions with sparse high-resolution refinements. Based on coarse low-resolution outputs, SparseRefine first uses an entropy selector to identify a sparse set of pixels with the least confidence. It then employs a sparse feature extractor to efficiently generate the refinements for those pixels of interest. Finally, it leverages a gated ensembler to apply these sparse refinements to the initial coarse predictions. SparseRefine can be seamlessly integrated into any existing semantic segmentation model, regardless of CNN- or ViT-based. SparseRefine achieves significant speedup: 1.5 to 3.9 times when applied to HRNet-W48, SegFormer-B5, Mask2Former-T/L and SegNeXt-L on Cityscapes, with negligible to no loss of accuracy. We will release the code to reproduce our results. We hope that our \"dense+sparse\" paradigm could inspire future research on efficient high-resolution visual computing.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Efficient machine learning",
+    "Semantic segmentation",
+    "Sparsity",
+    "Efficient model design",
+    "Model compression and acceleration"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=3j5bsiwRv6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d1204a84f262050089a8b5fce2b7960e6b82f1e3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Semantic segmentation empowers numerous real-world applications, such as autonomous driving and augmented/mixed reality. These applications often operate on high-resolution images (e.g., 8 megapixels) to capture the fine details. However, this comes at the cost of considerable computational complexi"
+  },
+  "collected_at": "2026-03-15T19:11:13.197Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "hr4HTShC6l",
+  "or_id": "hr4HTShC6l",
+  "title": "Detecting Shortcuts using Mutual Information",
+  "title_zh": "",
+  "authors": [
+    "Mohammed Adnan",
+    "Yani Ioannou",
+    "Kenyon Tsai",
+    "Angus Galloway",
+    "Hamid Tizhoosh",
+    "Rahul G Krishnan",
+    "Graham W. Taylor"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "The failure of deep neural networks to generalize to out-of-distribution (OOD) data is a well-known problem that raises concerns about the deployment of trained networks in safety-critical domains such as healthcare and autonomous vehicles. We study a particular kind of distribution shift — shortcuts or spurious correlations in the training data. These correlations are not present in real-world test data, so there\nis a performance drop due to distribution shift, also referred to as shortcut learning. Shortcut learning is often only exposed when models are evaluated in carefully controlled experimental settings, posing a serious dilemma for AI practitioners to properly assess the effectiveness of a trained model for real-world applications. In this work, we try to understand shortcut learning using information-theoretic tools and propose to use the mutual information (MI) between the learned representation and the input space as a domain-agnostic metric for detecting shortcuts in the training datasets. For studying the training dynamics of shortcut learning, we develop a Neural Tangent Kernel (NTK) based framework, which can be used to detect shortcuts and spurious correlations in the training data without requiring class labels\nof the test data. We empirically demonstrate on multiple datasets, such as MNIST, CelebA, NICO, Waterbirds, and BenchMD, that MI can effectively detect shortcuts. We benchmark against multiple OOD detection baselines to show that OOD detectors cannot detect shortcuts, and our method can be used in complementary with OOD detectors to identify all types of distribution shifts in the datasets, including\nshortcuts.",
+  "abstract_zh": "",
+  "tldr": "Proposed a mutual-information based method to detect shortcuts/spurious correlations.",
+  "keywords": [
+    "shortcuts",
+    "spurious correlation",
+    "mutual information",
+    "information theory",
+    "neural tangent kernel"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=hr4HTShC6l",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ca51045eef9d7fcc21c7c83eaf9e2cd5f0cd86f2.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Proposed a mutual-information based method to detect shortcuts/spurious correlations."
+  },
+  "collected_at": "2026-03-15T19:11:13.198Z"
+}

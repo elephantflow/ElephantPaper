@@ -1,0 +1,35 @@
+{
+  "id": "vbebD7QRxP",
+  "or_id": "vbebD7QRxP",
+  "title": "Modular Learning of Deep Causal Generative Models for High-dimensional Causal Inference",
+  "title_zh": "",
+  "authors": [
+    "Md Musfiqur Rahman",
+    "Murat Kocaoglu"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Pearl’s causal hierarchy establishes a clear separation between observational, interventional, and counterfactual questions. Researchers proposed sound and complete algorithms to compute identifiable causal queries at a given level of the hierarchy using the causal structure and data from the lower levels of the hierarchy. However, most of these algorithms assume that we can accurately estimate the probability distribution of the data, which is an impractical assumption for high-dimensional variables such as images. On the other hand, modern generative deep learning architectures can be trained to learn how to accurately sample from such high-dimensional distributions.  Especially with the recent rise of foundation models for images, it is desirable to leverage pre-trained models to answer causal queries with such high-dimensional data. To address this, we propose a sequential training algorithm that, given the causal structure and a pre-trained conditional generative model, can train a deep causal generative model, which utilizes the pre-trained model and can provably sample from identifiable interventional and counterfactual distributions. Our algorithm, called WhatIfGAN, uses adversarial training to learn the network weights, and to the best of our knowledge, is the first algorithm that can make use of pre-trained models and provably sample from any identifiable causal query in the presence of latent confounders with high-dimensional data. We demonstrate the utility of our algorithm using semi-synthetic and real-world datasets containing images as variables in the causal structure.",
+  "abstract_zh": "",
+  "tldr": "We propose a novel adversarial training algorithm to learn deep causal generative models from high-dimensional data in a modular fashion, enabling the use of pre-trained models for causal and counterfactual effect estimation.",
+  "keywords": [
+    "Causal inference",
+    "Structural causal models",
+    "Causal graphs",
+    "Causal effect",
+    "Generative Adversarial Networks."
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=vbebD7QRxP",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/068795bb22e6f04e5b13b9d0f4a1df0e3ecfd49c.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a novel adversarial training algorithm to learn deep causal generative models from high-dimensional data in a modular fashion, enabling the use of pre-trained models for causal and counterfactual effect estimation."
+  },
+  "collected_at": "2026-03-15T19:11:13.198Z"
+}

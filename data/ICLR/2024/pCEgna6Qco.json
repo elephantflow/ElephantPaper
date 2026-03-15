@@ -1,0 +1,38 @@
+{
+  "id": "pCEgna6Qco",
+  "or_id": "pCEgna6Qco",
+  "title": "Two-stage LLM Fine-tuning with Less Specialization and More Generalization",
+  "title_zh": "",
+  "authors": [
+    "Yihan Wang",
+    "Si Si",
+    "Daliang Li",
+    "Michal Lukasik",
+    "Felix Yu",
+    "Cho-Jui Hsieh",
+    "Inderjit S Dhillon",
+    "Sanjiv Kumar"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Pretrained large language models (LLMs) are general purpose problem solvers applicable to a diverse set of tasks with prompts. They can be further improved towards a specific task by fine-tuning on a specialized dataset. However, fine-tuning usually makes the model narrowly specialized on this dataset with reduced general in-context learning performances, which is undesirable whenever the fine-tuned model needs to handle additional tasks where no fine-tuning data is available. \nIn this work, we first demonstrate that fine-tuning on a single task indeed decreases LLMs' general in-context learning performance. We discover one important cause of such forgetting, format specialization, where the model overfits to the format of the fine-tuned task.We further show that format specialization happens at the very beginning of fine-tuning. To solve this problem, we propose Prompt Tuning with MOdel Tuning (ProMoT), a simple yet effective two-stage fine-tuning framework that reduces format specialization and improves generalization.ProMoT offloads task-specific format learning into additional and removable parameters by first doing prompt tuning and then fine-tuning the model itself with this soft prompt attached. \nWith experiments on several fine-tuning tasks and 8 in-context evaluation tasks, we show that ProMoT achieves comparable performance on fine-tuned tasks to standard fine-tuning, but with much less loss of in-context learning performances across a board range of  out-of-domain evaluation tasks. More importantly, ProMoT can even enhance generalization on in-context learning tasks that are semantically related to the fine-tuned task, e.g. ProMoT on En-Fr translation significantly improves performance on other language pairs, and ProMoT on NLI improves performance on summarization.\nExperiments also show that ProMoT can improve the generalization performance of  multi-task training.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "language model",
+    "Generalization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=pCEgna6Qco",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/967d482dc9ddfbf84e0116bc826d1f2205123e77.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Pretrained large language models (LLMs) are general purpose problem solvers applicable to a diverse set of tasks with prompts. They can be further improved towards a specific task by fine-tuning on a specialized dataset. However, fine-tuning usually makes the model narrowly specialized on this datas"
+  },
+  "collected_at": "2026-03-15T19:11:13.195Z"
+}

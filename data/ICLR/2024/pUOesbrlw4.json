@@ -1,0 +1,36 @@
+{
+  "id": "pUOesbrlw4",
+  "or_id": "pUOesbrlw4",
+  "title": "Deep Unlearning: Fast and Efficient Training-free Approach to Controlled Forgetting",
+  "title_zh": "",
+  "authors": [
+    "Sangamesh Kodge",
+    "Gobinda Saha",
+    "Kaushik Roy"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Machine {\\em unlearning} has emerged as a prominent and challenging area of interest, driven in large part by the rising regulatory demands for industries to delete user data upon request and the heightened awareness of privacy. Existing approaches either retrain models from scratch or use several finetuning steps for every deletion request, often constrained by computational resource limitations and restricted access to the original training data. In this work, we introduce a novel class unlearning algorithm designed to strategically eliminate an entire class or a group of classes from the learned model. To that end, our algorithm first estimates the Retain Space and the Forget Space, representing the feature or activation spaces for samples from classes to be retained and unlearned, respectively. To obtain these spaces, we propose a novel singular value decomposition-based technique that requires layer wise collection of network activations from a few forward passes through the network. We then compute the shared information between these spaces and remove it from the forget space to isolate class-discriminatory feature space for unlearning. Finally, we project the model weights in the orthogonal direction of the class-discriminatory space to obtain the unlearned model. We demonstrate our algorithm’s efficacy on ImageNet using a Vision Transformer with only $\\sim 1.5$% drop in retain accuracy compared to the original model, while maintaining under $1$% accuracy on the unlearned class samples. Further our comprehensive analysis on a variety of image classification datasets and network architectures shows up to $4.07$% better retain accuracy with similar unlearning (forgetting) on the forget class samples while being $6.5\\times$ faster as compared to a strong baseline we propose. Additionally, we investigate the impact of unlearning on network decision boundaries and conduct saliency-based analysis to illustrate that the post-unlearning model struggles to identify c",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "General machine learning",
+    "representation learning for computer vision",
+    "Machine Unlearning",
+    "Singular Value Decomposition",
+    "Privacy"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=pUOesbrlw4",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e1afce875b27ffb1989b63ce1823c82e436d879f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Machine {\\em unlearning} has emerged as a prominent and challenging area of interest, driven in large part by the rising regulatory demands for industries to delete user data upon request and the heightened awareness of privacy. Existing approaches either retrain models from scratch or use several f"
+  },
+  "collected_at": "2026-03-15T19:11:13.198Z"
+}

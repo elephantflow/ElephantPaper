@@ -1,0 +1,34 @@
+{
+  "id": "XWfjugkXzN",
+  "or_id": "XWfjugkXzN",
+  "title": "On Sampling Information Sets to Learn from Imperfect Information",
+  "title_zh": "",
+  "authors": [
+    "Timo Bertram",
+    "Johannes Fürnkranz",
+    "Martin Müller"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "In many real-world decision-making scenarios, agents are confronted with incomplete and imperfect information, requiring them to make choices based on limited knowledge. Imperfect-information games tackle this challenge by organising different potential situations into so-called information sets, i.e. sets of possible world states that are indistinguishable from one observer's perspective, but directly evaluating an information set is difficult. A common but often suboptimal strategy is to evaluate the individual states in the set with a perfect information evaluator and combine the results. This not only presents problems related to translating perfect information evaluations to imperfect information settings but is also immensely costly in situations with extensive hidden information. This work focuses on learning direct evaluators for information sets by assessing only a subset of the states in the information set, thereby reducing the overall cost of evaluation. Critically, we focus on one question: How many states should be sampled from a given information set? This involves a trade-off between the cost of computing a training signal and its accuracy. We present experimental results in three settings: an artificial MNIST variant with hidden information, Heads-Up Poker, and Reconnaissance Blind Chess. Our results show that the number of sampled states significantly influences the efficiency of training neural networks. However, there are diminishing returns when sampling a large number of states. Notably, in the three regarded domains, using one, two and two samples respectively leads to the best performance concerning the total number of evaluations required. This research contributes to the understanding of how to optimise the sampling of information sets in scenarios of incomplete information, thus offering practical insight into the balance between computational cost and accuracy.",
+  "abstract_zh": "",
+  "tldr": "We investigate how the number of states sampled from an information set influences how well a learner is able to approximate the value of the information set.",
+  "keywords": [
+    "Games",
+    "Imperfect Information",
+    "Neural Networks"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=XWfjugkXzN",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/aaebdf49edc614e14d64b05c7a3c1a64160948e0.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We investigate how the number of states sampled from an information set influences how well a learner is able to approximate the value of the information set."
+  },
+  "collected_at": "2026-03-15T19:11:13.198Z"
+}

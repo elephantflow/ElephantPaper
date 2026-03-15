@@ -1,0 +1,36 @@
+{
+  "id": "fjZMGKB2dU",
+  "or_id": "fjZMGKB2dU",
+  "title": "A neuro-symbolic framework for answering conjunctive queries",
+  "title_zh": "",
+  "authors": [
+    "Pablo Barcelo",
+    "tamara cucumides",
+    "Floris Geerts",
+    "Juan L Reutter",
+    "Miguel Romero Orth"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "The problem of answering logical queries over incomplete knowledge graphs is receiving significant attention in the machine learning community. Neuro-symbolic models are a promising recent approach, showing good performance and allowing for good interpretability properties. These models rely on trained architectures to execute atomic queries, combining them with modules that simulate the symbolic operators in queries. Unfortunately, most neuro-symbolic query processors are limited to the so-called _tree-like_ logical queries that admit a bottom-up execution, where the leaves are constant values or _anchors_, and the root is the target variable. Tree-like queries, while expressive, fail short to express properties in knowledge graphs that are important in practice, such as the existence of multiple edges between entities or the presence of triangles. \n\nWe propose a framework for answering arbitrary conjunctive queries over incomplete knowledge graphs. The main idea of our method is to approximate a cyclic query by an infinite family of tree-like queries, and then leverage existing models for the latter. Our approximations achieve strong guarantees: they are _complete_, i.e. there are no false negatives, and  _optimal_, i.e. they provide the best possible approximation using tree-like queries. Our method requires the approximations to be tree-like queries where the leaves are anchors or existentially quantified variables. Hence, we also show how some of the existing neuro-symbolic models can handle these queries, which is of independent interest. Experiments show that our approximation strategy achieves competitive results, and that including queries with existentially quantified variables tends to improve the general performance of these models, both on tree-like queries and on our approximation strategy.",
+  "abstract_zh": "",
+  "tldr": "Extend neuro-symbolic models so that they can deal with cyclic queries. Approach is based on approximations.",
+  "keywords": [
+    "Knowledge graph",
+    "query answering",
+    "neuro-symbolic complex queries"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=fjZMGKB2dU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0cae0cfa797565385a2df545e450ccf57e1ca8b3.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Extend neuro-symbolic models so that they can deal with cyclic queries. Approach is based on approximations."
+  },
+  "collected_at": "2026-03-15T19:11:13.194Z"
+}
