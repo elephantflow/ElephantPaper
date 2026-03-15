@@ -1,0 +1,35 @@
+{
+  "id": "UJkgGbLfWA",
+  "or_id": "UJkgGbLfWA",
+  "title": "Guiding Language Models Reasoning with Planning Tokens",
+  "title_zh": "",
+  "authors": [
+    "Xinyi Wang",
+    "Lucas Caccia",
+    "Oleksiy Ostapenko",
+    "Xingdi Yuan",
+    "Alessandro Sordoni"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Large language models (LLMs) have recently attracted considerable interest for their ability to perform complex reasoning tasks, such as chain-of-thought reasoning. However, most of the existing approaches to enhance this ability rely heavily on data-driven methods, while neglecting the structural aspects of the model’s reasoning capacity. We find that while LLMs can manage individual reasoning steps well, they struggle with maintaining consistency across an entire reasoning chain. To solve this, we introduce 'planning tokens' at the start of each reasoning step, serving as a guide for the model. These tokens embeddings are then fine-tuned along with the rest of the model parameters. Our approach requires a negligible increase in trainable parameters (just 0.001%) and can be applied through either full fine-tuning or a more parameter-efficient scheme. We demonstrate our method's effectiveness by applying it to three different LLMs, showing notable accuracy improvements across three math word problem datasets w.r.t. plain chain-of-thought fine-tuning baselines.",
+  "abstract_zh": "",
+  "tldr": "We propose to prepend a planning token to each chain-of-thoughts reasoning step, to giude the reasoning flow of LLM on a high level.",
+  "keywords": [
+    "Large language model",
+    "chain-of-thoughts reasoning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=UJkgGbLfWA",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c045a1154602e616a52636356ed6f64cbe732116.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose to prepend a planning token to each chain-of-thoughts reasoning step, to giude the reasoning flow of LLM on a high level."
+  },
+  "collected_at": "2026-03-15T18:31:12.581Z"
+}

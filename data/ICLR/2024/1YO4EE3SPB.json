@@ -1,0 +1,37 @@
+{
+  "id": "1YO4EE3SPB",
+  "or_id": "1YO4EE3SPB",
+  "title": "A Variational Perspective on Solving Inverse Problems with Diffusion Models",
+  "title_zh": "",
+  "authors": [
+    "Morteza Mardani",
+    "Jiaming Song",
+    "Jan Kautz",
+    "Arash Vahdat"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Diffusion models have emerged as a key pillar of foundation models in visual domains. One of their critical applications is to universally solve different downstream inverse tasks via a single diffusion prior without re-training for each task. Most inverse tasks can be formulated as inferring a posterior distribution over data (e.g., a full image) given a measurement (e.g., a masked image). This is however challenging in diffusion models since the nonlinear and iterative nature of the diffusion process renders the posterior intractable. To cope with this challenge, we propose a variational approach that by design seeks to approximate the true posterior distribution. We show that our approach naturally leads to regularization by denoising diffusion process (RED-diff) where denoisers at different timesteps concurrently impose different structural constraints over the image. To gauge the contribution of denoisers from different timesteps, we propose a weighting mechanism based on signal-to-noise-ratio (SNR). Our approach provides a new variational perspective for solving inverse problems with diffusion models, allowing us to formulate sampling as stochastic optimization, where one can simply apply off-the-shelf solvers with lightweight iterates. Our experiments for various linear and nonlinear image restoration tasks demonstrate the strengths of our method compared with state-of-the-art sampling-based diffusion models. The code is available online \\footnote{\\url{https://github.com/NVlabs/RED-diff}}.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "diffusion models",
+    "score matching",
+    "variational approximation",
+    "regularization by denoising",
+    "inverse problems"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=1YO4EE3SPB",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/98565461a56247bb80f25ac785745223d4ec97f7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Diffusion models have emerged as a key pillar of foundation models in visual domains. One of their critical applications is to universally solve different downstream inverse tasks via a single diffusion prior without re-training for each task. Most inverse tasks can be formulated as inferring a post"
+  },
+  "collected_at": "2026-03-15T18:31:12.581Z"
+}

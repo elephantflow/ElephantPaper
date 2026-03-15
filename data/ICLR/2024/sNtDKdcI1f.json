@@ -1,0 +1,36 @@
+{
+  "id": "sNtDKdcI1f",
+  "or_id": "sNtDKdcI1f",
+  "title": "A Long Way To Go: Investigating Length Correlations in RLHF",
+  "title_zh": "",
+  "authors": [
+    "Prasann Singhal",
+    "Tanya Goyal",
+    "Jiacheng Xu",
+    "Greg Durrett"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Great successes have been reported using Reinforcement Learning from Human Feedback (RLHF) to align large language models. As the growth of open-source preference datasets, reward models, and language models has enabled wider experimentation, RLHF's benefits have been demonstrated in settings beyond general chat agents, including web question answering, summarization, and multi-turn dialogue. However, RLHF has also been consistently observed to drive models to produce longer outputs. This paper demonstrates that optimizing for response length is a significant factor behind RLHF's reported improvements on helpfulness. First, we study the relationship between reward and length for reward models trained on three open-source preference datasets. In these settings, length correlates strongly with reward, and improvements in reward score are driven in large part by shifting the distribution over output lengths. We then explore interventions during both RL and reward model learning to see if we can achieve the same downstream improvements as RLHF without increasing length. While our interventions mitigate length increases, they aren't uniformly effective across settings. Furthermore, we find that even running RLHF with a reward based solely on length can reproduce most of the downstream improvements over the initial policy model, showing that reward models in these settings have a long way to go.",
+  "abstract_zh": "",
+  "tldr": "Many of the gains of RLHF with open reward models can be attributed to making outputs longer.",
+  "keywords": [
+    "Natural Language Processing",
+    "Large Language Models",
+    "RLHF",
+    "Reward Hacking"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=sNtDKdcI1f",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/4146ee05dd3ab5c84e989aabf86bc238bde30a5a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Many of the gains of RLHF with open reward models can be attributed to making outputs longer."
+  },
+  "collected_at": "2026-03-15T18:31:12.581Z"
+}

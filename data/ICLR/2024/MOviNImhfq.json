@@ -1,0 +1,36 @@
+{
+  "id": "MOviNImhfq",
+  "or_id": "MOviNImhfq",
+  "title": "Effective Graph Representation Learning via Smoothed Contrastive Learning",
+  "title_zh": "",
+  "authors": [
+    "Maysam Behmanesh",
+    "Maks Ovsjanikov"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Graph contrastive learning (GCL) aligns node representations through the utilization of positive/negative node pairs, a selection process that typically relies on the correspondences and non-correspondences among nodes within two augmented graphs. The conventional GCL approaches incorporate negative samples uniformly in the contrastive loss, resulting in the equal treatment of misclassified false negative nodes, regardless of their proximity to the true positive. In this paper, we present a Smoothed Graph Contrastive Learning model (SGCL), which leverages the geometric structure of augmented graphs to exploit proximity information associated with positive/negative pairs in contrastive loss. The proposed SGCL adjusts the significance of these pairs in contrastive loss by incorporating three distinct smoothing techniques that yield smoothed positive/negative pairs. To enhance scalability for large-scale graphs, the proposed framework incorporates a graph batch-generating strategy that partitions the given graphs into multiple subgraphs, facilitating efficient training in separate batches. Through extensive experimentation in an unsupervised setting on various benchmark datasets, particularly those of large scale, we demonstrate the superiority of our proposed framework.",
+  "abstract_zh": "",
+  "tldr": "GCL aligns node representations but suffers from misclassification due to incorporating similar negative samples. We introduce Smoothed Graph Contrastive Learning (SGCL) to enhance alignment using geometric structures and smoothing techniques",
+  "keywords": [
+    "Graph representation learning",
+    "Contrastive learning",
+    "Graph neural network",
+    "Laplacian smoothing",
+    "Batch-generating",
+    "Large-scaled graphs"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=MOviNImhfq",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e8d7d16607e79a145462c3348c31775e4336f883.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "GCL aligns node representations but suffers from misclassification due to incorporating similar negative samples. We introduce Smoothed Graph Contrastive Learning (SGCL) to enhance alignment using geometric structures and smoothing techniques"
+  },
+  "collected_at": "2026-03-15T18:31:12.580Z"
+}

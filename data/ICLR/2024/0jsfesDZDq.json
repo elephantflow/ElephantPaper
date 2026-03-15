@@ -1,0 +1,42 @@
+{
+  "id": "0jsfesDZDq",
+  "or_id": "0jsfesDZDq",
+  "title": "Sparse Spiking Neural Network: Exploiting Heterogeneity in Timescales for Pruning Recurrent SNN",
+  "title_zh": "",
+  "authors": [
+    "Biswadeep Chakraborty",
+    "Beomseok Kang",
+    "Harshit Kumar",
+    "Saibal Mukhopadhyay"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Recurrent Spiking Neural Networks (RSNNs) have emerged as a computationally efficient and brain-inspired machine learning model. The design of sparse RSNNs with fewer neurons and synapses helps reduce the computational complexity of RSNNs. Traditionally, sparse SNNs are obtained by first training a dense and complex SNN for a target task and, next, eliminating neurons with low activity (activity-based pruning) while maintaining task performance. In contrast, this paper presents a task-agnostic methodology for designing sparse RSNNs by pruning an untrained (arbitrarily initialized) large model. \nWe introduce a novel Lyapunov Noise Pruning (LNP) algorithm that uses graph sparsification methods and utilizes Lyapunov exponents to design a stable sparse RSNN from an untrained RSNN. We show that the LNP can leverage diversity in neuronal timescales to design a sparse Heterogeneous RSNN (HRSNN). Further, we show that the same sparse HRSNN model can be trained for different tasks, such as image classification and time-series prediction. The experimental results show that, in spite of being task-agnostic, LNP increases computational efficiency (fewer neurons and synapses) and prediction performance of RSNNs compared to traditional activity-based pruning of trained dense models.",
+  "abstract_zh": "",
+  "tldr": "A task-agnostic pruning method that exploits the diversity in timescales for heterogeneous RSNNs and gives small, stable pruned networks",
+  "keywords": [
+    "spiking neural network",
+    "SNN",
+    "network pruning",
+    "stability",
+    "neuromorphic",
+    "leaky integrate and fire",
+    "STDP",
+    "sparsification",
+    "task-agnostic pruning",
+    "timescale optimization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=0jsfesDZDq",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/7e55c6eb14311819313269f9b7f133c8cee91597.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A task-agnostic pruning method that exploits the diversity in timescales for heterogeneous RSNNs and gives small, stable pruned networks"
+  },
+  "collected_at": "2026-03-15T18:31:12.581Z"
+}

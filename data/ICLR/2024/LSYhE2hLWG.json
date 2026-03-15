@@ -1,0 +1,38 @@
+{
+  "id": "LSYhE2hLWG",
+  "or_id": "LSYhE2hLWG",
+  "title": "SineNet: Learning Temporal Dynamics in Time-Dependent Partial Differential Equations",
+  "title_zh": "",
+  "authors": [
+    "Xuan Zhang",
+    "Jacob Helwig",
+    "Yuchao Lin",
+    "Yaochen Xie",
+    "Cong Fu",
+    "Stephan Wojtowytsch",
+    "Shuiwang Ji"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "We consider using deep neural networks to solve time-dependent partial differential equations (PDEs), where multi-scale processing is crucial for modeling complex, time-evolving dynamics. While the U-Net architecture with skip connections is commonly used by prior studies to enable multi-scale processing, our analysis shows that the need for features to evolve across layers results in temporally misaligned features in skip connections, which limits the model’s performance. To address this limitation, we propose SineNet, consisting of multiple sequentially connected U-shaped network blocks, referred to as waves. In SineNet, high-resolution features are evolved progressively through multiple stages, thereby reducing the amount of misalignment within each stage. We furthermore analyze the role of skip connections in enabling both parallel and sequential processing of multi-scale information. Our method is rigorously tested on multiple PDE datasets, including the Navier-Stokes equations and shallow water equations, showcasing the advantages of our proposed approach over conventional U-Nets with a comparable parameter budget. We further demonstrate that increasing the number of waves in SineNet while maintaining the same number of parameters leads to a monotonically improved performance. The results highlight the effectiveness of SineNet and the potential of our approach in advancing the state-of-the-art in neural PDE solver design. Our code is available as part of AIRS (https://github.com/divelab/AIRS).",
+  "abstract_zh": "",
+  "tldr": "Multi-stage U-Net for time-evolving PDEs",
+  "keywords": [
+    "Partial differential equations",
+    "Physics simulation",
+    "Dynamics learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=LSYhE2hLWG",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e09653bff41011adca550b8b7e3e27bd1e59e9f1.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Multi-stage U-Net for time-evolving PDEs"
+  },
+  "collected_at": "2026-03-15T18:31:12.580Z"
+}
