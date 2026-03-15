@@ -1,0 +1,36 @@
+{
+  "id": "87XbxDnPqj",
+  "or_id": "87XbxDnPqj",
+  "title": "Gradient Descent Provably Solves Nonlinear Tomographic Reconstruction",
+  "title_zh": "",
+  "authors": [
+    "Sara Fridovich-Keil",
+    "Fabrizio Valdivia",
+    "Gordon Wetzstein",
+    "Benjamin Recht",
+    "Mahdi Soltanolkotabi"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "In computed tomography (CT), the forward model consists of a linear Radon transform followed by an exponential nonlinearity based on the attenuation of light according to the Beer–Lambert Law. Conventional reconstruction often involves inverting this nonlinearity as a preprocessing step and then solving a convex inverse problem. However, this nonlinear measurement preprocessing required to use the Radon transform is poorly conditioned in the vicinity of high-density materials, such as metal. This preprocessing makes CT reconstruction methods numerically sensitive and susceptible to artifacts near high-density regions. In this paper, we study a technique where the signal is directly reconstructed from raw measurements through the nonlinear forward model. Though this optimization is nonconvex, we show that gradient descent provably converges to the global optimum at a geometric rate, perfectly reconstructing the underlying signal with a near minimal number of random measurements. We also prove similar results in the under-determined setting where the number of measurements is significantly smaller than the dimension of the signal. This is achieved by enforcing prior structural information about the signal through constraints on the optimization variables. We illustrate the benefits of direct nonlinear CT reconstruction with cone-beam CT experiments on synthetic and real 3D volumes. We show that this approach reduces metal artifacts compared to a commercial reconstruction of a human skull with metal dental crowns.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "computed tomography",
+    "nonconvex optimization",
+    "compressive sensing"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=87XbxDnPqj",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/2ecaa9f661c9f93d520693429b144c4571c51009.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In computed tomography (CT), the forward model consists of a linear Radon transform followed by an exponential nonlinearity based on the attenuation of light according to the Beer–Lambert Law. Conventional reconstruction often involves inverting this nonlinearity as a preprocessing step and then sol"
+  },
+  "collected_at": "2026-03-15T17:11:12.197Z"
+}
