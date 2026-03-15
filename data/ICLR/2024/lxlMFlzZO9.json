@@ -1,0 +1,34 @@
+{
+  "id": "lxlMFlzZO9",
+  "or_id": "lxlMFlzZO9",
+  "title": "DS-Prover: A Dynamic Sampling Based Approach for Neural Theorem Proving",
+  "title_zh": "",
+  "authors": [
+    "Rahul Vishwakarma",
+    "Subhankar Mishra"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Theorem proving is a fundamental task in mathematics. With the advent of large language models (LLMs) and interactive theorem provers (ITPs) like Lean, there has been growing interest in integrating LLMs and ITPs to automate theorem proving. In this approach, the LLM generates proof steps (tactics), and the ITP checks the applicability of the tactics at the current goal. The two systems work together to complete the proof. In this paper, we introduce DS-Prover, a novel dynamic sampling method for theorem proving. This method dynamically determines the number of tactics to apply to expand the current goal, taking into account the remaining time compared to the total allocated time for proving a theorem. This makes the proof search process more efficient by adjusting the balance between exploration and exploitation as time passes. We also study the effect of augmenting the training dataset by decomposing simplification and rewrite tactics with multiple premises into tactics with single premises. This gives the model more examples to learn from and helps it to predict the tactics with premises more accurately. We perform our experiments using the Mathlib dataset of the Lean theorem prover and report the performance on two standard datasets, MiniF2F and ProofNet. Our methods achieve significant performance gains on both datasets. We achieve a new state-of-the-art performance of 30.6% on MiniF2F using Lean, and a performance of 13.65% on ProofNet, which is comparable to the state-of-the-art.",
+  "abstract_zh": "",
+  "tldr": "Proposed a dynamic sampling method for neural theorem proving.",
+  "keywords": [
+    "Interactive Theorem Prover",
+    "Large Language Model",
+    "Neural Theorem Proving",
+    "Dynamic Sampling"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=lxlMFlzZO9",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f8156cb9aac8a70800b1bde558475e1b8f0b315a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Proposed a dynamic sampling method for neural theorem proving."
+  },
+  "collected_at": "2026-03-15T18:51:56.832Z"
+}

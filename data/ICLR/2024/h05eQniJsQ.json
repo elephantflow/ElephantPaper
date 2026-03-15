@@ -1,0 +1,36 @@
+{
+  "id": "h05eQniJsQ",
+  "or_id": "h05eQniJsQ",
+  "title": "Understanding Certified Training with Interval Bound Propagation",
+  "title_zh": "",
+  "authors": [
+    "Yuhao Mao",
+    "Mark Niklas Mueller",
+    "Marc Fischer",
+    "Martin Vechev"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "As robustness verification methods are becoming more precise, training certifiably robust neural networks is becoming ever more relevant. To this end, certified training methods compute and then optimize an upper bound on the worst-case loss over a robustness specification. Curiously, training methods based on the imprecise interval bound propagation (IBP) consistently outperform those leveraging more precise bounds. Still, we lack a theoretical understanding of the mechanisms making IBP so successful. In this work, we investigate these mechanisms by leveraging a novel metric measuring the tightness of IBP bounds. We first show theoretically that, for deep linear models (DLNs), tightness decreases with width and depth at initialization, but improves with IBP training. We, then, derive sufficient and necessary conditions on weight matrices for IBP bounds to become exact and demonstrate that these impose strong regularization, providing an explanation for the observed robustness-accuracy trade-off. Finally, we show how these results on DLNs transfer to ReLU networks, before conducting an extensive empirical study, (i) confirming this transferability and yielding state-of-the-art certified accuracy, (ii) finding that while all IBP-based training methods lead to high tightness, this increase is dominated by the size of the propagated input regions rather than the robustness specification, and finally (iii) observing that non-IBP-based methods do not increase tightness. Together, these results help explain the success of recent certified training methods and may guide the development of new ones.",
+  "abstract_zh": "",
+  "tldr": "We theoretically investigate certified training with Interval Bound Propagation, using a novel metric measuring the tightness of the resulting bounds.",
+  "keywords": [
+    "Certified Robustness",
+    "Adversarial Robustness",
+    "Neural Network Verification",
+    "Certified Training"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=h05eQniJsQ",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3368ca8a5f0ec99ee88301ab1de8634647f5ce72.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We theoretically investigate certified training with Interval Bound Propagation, using a novel metric measuring the tightness of the resulting bounds."
+  },
+  "collected_at": "2026-03-15T18:51:56.831Z"
+}

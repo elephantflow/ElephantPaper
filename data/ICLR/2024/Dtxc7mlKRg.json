@@ -1,0 +1,38 @@
+{
+  "id": "Dtxc7mlKRg",
+  "or_id": "Dtxc7mlKRg",
+  "title": "Class-Conditional Conformal Prediction for Imbalanced Data via Top-$k$ Classes",
+  "title_zh": "",
+  "authors": [
+    "Yuanjie Shi",
+    "SUBHANKAR GHOSH",
+    "Taha Belkhouja",
+    "Jana Doppa",
+    "Yan Yan"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Classification tasks where data contains skewed class proportions (aka {\\em imbalanced data}) arises in many real-world applications including medical diagnosis. Safe deployment of classifiers for imbalanced data settings require theoretically-sound uncertainty quantification. Conformal prediction (CP) is a promising framework for producing prediction sets from black-box classifiers with a user-specified coverage (i.e., true class is contained with high probability). Existing class-conditional CP (CCP) method employs a black-box classifier to find one threshold for each class during calibration and then includes every class label that meets the corresponding threshold for testing inputs, leading to large prediction sets. This paper studies the problem of how to develop provable CP methods with small prediction sets for the class-conditional coverage setting and makes several contributions. First, we theoretically show that marginal CP can perform arbitrarily poorly and cannot provide coverage guarantee for minority classes. Second, we propose a principled algorithm referred to as {\\em $k$-Class-conditional CP ($k$-CCP)}. The key idea behind $k$-CCP is to restrict the candidate labels for the prediction set of a testing input to only top-$k$ labels based on the classifier scores (in contrast to all labels in CCP). Third, we prove that $k$-CCP provides class-conditional coverage and produces smaller prediction sets over the CCP method. Our experiments on benchmark datasets demonstrate that $k$-CCP achieves class-conditional coverage and produces smaller prediction sets over baseline methods.",
+  "abstract_zh": "",
+  "tldr": "Provable conformal prediction method to produce small prediction sets for a target class-conditional coverage for imbalanced classification problems using the top-k labels from classifier scores.",
+  "keywords": [
+    "Uncertainty Quantification",
+    "Conformal Prediction",
+    "Imbalanced Data",
+    "Class-conditional Coverage",
+    "Deep Models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Dtxc7mlKRg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/56b931f5ea884eaa004e6b213b73d33c87bc9092.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Provable conformal prediction method to produce small prediction sets for a target class-conditional coverage for imbalanced classification problems using the top-k labels from classifier scores."
+  },
+  "collected_at": "2026-03-15T18:51:53.610Z"
+}

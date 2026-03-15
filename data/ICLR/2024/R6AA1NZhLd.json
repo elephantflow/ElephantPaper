@@ -1,0 +1,36 @@
+{
+  "id": "R6AA1NZhLd",
+  "or_id": "R6AA1NZhLd",
+  "title": "Topoformer: brain-like topographic organization in Transformer language models through spatial querying and reweighting",
+  "title_zh": "",
+  "authors": [
+    "Taha Osama A Binhuraib",
+    "Greta Tuckute",
+    "Nicholas Blauch"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Spatial functional organization is a hallmark of biological brains: neurons are arranged topographically according to their response properties at different scales. In contrast, representations within most machine learning models lack spatial biases, and instead manifest as disorganized vector spaces that are difficult to visualize and interpret. Here, we propose a novel form of self-attention that turn Transformers into \"Topoformers\" with topographic organization. Our primary contribution is Spatial Querying, where keys and queries are arranged on 2D grids, and local pools of queries are associated with a given key. Our secondary contribution is Spatial Reweighting, where we convert the standard fully connected layer of self-attention into a locally connected layer. We first demonstrate the feasibility of our approach using by training a 1-layer Topoformer on a sentiment classification task. We show that training with Spatial Querying results in corresponding topographic organization between queries and keys, and Spatial Reweighting results in corresponding topographic organization between values and self-attention outputs. This emergent organization is \\textit{semantically interpretable}: the internal activation magnitudes show spatial biases for sentences with positive and negative sentiment. Moreover, generic topographic organization is seen in the low dimensional structure of activations revealed through principal component analysis. After establishing that we can indeed obtain interpretable topography, we apply the Topoformer motifs at scale. We train the widely used BERT architecture on larger corpora with a masked language modeling objective. We find that the topographic variant of this model performs on par with a non-topographic control architecture on downstream NLP benchmarks. Finally, we analyze an fMRI dataset of human brain responses to a large set of naturalistic sentences, demonstrating that the Topoformer yields similar forms of topographic organiz",
+  "abstract_zh": "",
+  "tldr": "We spatialize self-attention to organize transformer representations as brain-like topographic maps",
+  "keywords": [
+    "Transformer",
+    "Topographic organization",
+    "Cortex",
+    "Neuroscience",
+    "Language"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=R6AA1NZhLd",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c366cf0393421a3b008c56c9aa0baaf203cb1886.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We spatialize self-attention to organize transformer representations as brain-like topographic maps"
+  },
+  "collected_at": "2026-03-15T18:51:56.831Z"
+}
