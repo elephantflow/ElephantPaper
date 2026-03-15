@@ -1,0 +1,37 @@
+{
+  "id": "P50qJuu4IY",
+  "or_id": "P50qJuu4IY",
+  "title": "Self-Supervised Learning with the Matching Gap",
+  "title_zh": "",
+  "authors": [
+    "Zoe Piran",
+    "Michal Klein",
+    "Jason Ramapuram",
+    "Dan Busbridge",
+    "Soledad Villar",
+    "Armand Joulin",
+    "marco cuturi"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Contrastive learning (CL) is a fundamental paradigm in self-supervised learning. CL methods rely on a loss that nudges the features of various views from one image to stay closer, while pulling away those drawn from different images. Such a loss favors invariance: feature representations of the same perturbed image should collapse to the same vector, while remaining far enough from those of any other\nimage. Although intuitive, CL leaves room for trivial solutions, and has a documented propensity to collapse representations for very different images. This is often mitigated by using a very large variety of augmentations. In this work, we address this tension by introducing a different loss, the matching gap. Given a set of $n$ images transformed in two different ways, the matching gap is the difference between the mean cost (e.g. a squared distance), in representation space, of the $n$ paired images, and the optimal matching cost obtained by running an optimal matching solver across these two families of $n$ images. The matching gap naturally mitigates the problem of data augmentation invariance, since it can be zero without requiring features from the same image to collapse. We implement the matching gap using the Sinkhorn algorithm and show that it can be easily differentiated using Danskin’s theorem. In practice, we show that we can learn competitive features, even without extensive data augmentations: Using only cropping and flipping, we achieve 74.2% top-1 accuracy with a ViT-B/16 on ImageNet-1k, to be compared to 72.9% for I-JEPA (Assran et al., 2023).",
+  "abstract_zh": "",
+  "tldr": "A new loss for SSL that leverages optimal matchings to learn representations; easy to compute using the Sinkhorn algorithm, without having to differentiate Sinkhorn iterations, using Danskin's theorem.",
+  "keywords": [
+    "optimal transport",
+    "self-supervised learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=P50qJuu4IY",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b6ddb3648f0807c34583ab73de60d2f53c29ae6f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "A new loss for SSL that leverages optimal matchings to learn representations; easy to compute using the Sinkhorn algorithm, without having to differentiate Sinkhorn iterations, using Danskin's theorem."
+  },
+  "collected_at": "2026-03-15T16:31:14.567Z"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "wQCPHxtzGV",
+  "or_id": "wQCPHxtzGV",
+  "title": "RF-POLICY: Rectified Flows are Adaptive Decision Makers",
+  "title_zh": "",
+  "authors": [
+    "Xixi Hu",
+    "Bo Liu",
+    "Xingchao Liu",
+    "qiang liu"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Diffusion-based imitation learning improves Behavioral Cloning (BC) on multi-modal decision-making but comes at the cost of significantly slower inference due to the recursion in the diffusion process. However, in real-world scenarios, states that require multi-modal decision-making are rare, and the huge consumption of diffusion models is not necessary for most cases. It inspires us to design efficient policy generators that can wisely allocate computation for different contexts. To address this challenge, we propose RF-POLICY (Rectified Flow-Policy), an imitation learning algorithm based on Rectified Flow, a recent advancement in flow-based generative modeling~\\citep{liu2022flow}. RF-POLICY adopts probability flow ordinary differential equations (ODEs) for diverse policy generation, with the learning principle of following straight trajectories as much as possible. We uncover and leverage a surprisingly intriguing advantage of these flow-based models over previous diffusion models: their training objective indicates the uncertainty of a certain state, and\nwhen the state is uni-modal, they automatically reduce to one-step generators since the probability flows admit straight lines.\nTherefore, RF-POLICY is naturally an adaptive decision maker, offering rapid inference without sacrificing diversity. Our comprehensive empirical evaluation shows that \\ours{}, to the best of our knowledge, is the first algorithm to achieve high performance across all dimensions, including success rate, behavioral diversity, and inference speed.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "robot learning",
+    "imitation learning",
+    "flow-based policies"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=wQCPHxtzGV",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ccd629266cfd854de4339e43a051aaf420100ac6.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Diffusion-based imitation learning improves Behavioral Cloning (BC) on multi-modal decision-making but comes at the cost of significantly slower inference due to the recursion in the diffusion process. However, in real-world scenarios, states that require multi-modal decision-making are rare, and th"
+  },
+  "collected_at": "2026-03-15T16:31:14.566Z"
+}

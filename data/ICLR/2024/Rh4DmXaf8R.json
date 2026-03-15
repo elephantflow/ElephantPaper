@@ -1,0 +1,36 @@
+{
+  "id": "Rh4DmXaf8R",
+  "or_id": "Rh4DmXaf8R",
+  "title": "Multi-timestep models for Model-based Reinforcement Learning",
+  "title_zh": "",
+  "authors": [
+    "Abdelhakim Benechehab",
+    "Giuseppe Paolo",
+    "Albert Thomas",
+    "Maurizio Filippone",
+    "Balázs Kégl"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "In model-based reinforcement learning (MBRL), most algorithms rely on simulating trajectories from one-step dynamics models learned on data. A critical challenge of this approach is the compounding of one-step prediction errors as length of the trajectory grows. In this paper we tackle this issue by using a multi-timestep objective to train one-step models. Our objective is a weighted sum of a loss function (e.g., negative log-likelihood) at various future horizons. We explore and test a range of weights profiles. We find that exponentially decaying weights lead to models that significantly improve the long-horizon R2 score. This improvement is particularly noticeable when the models were evaluated on noisy data. Finally, using a soft actor-critic (SAC) agent in pure batch reinforcement learning (RL) and iterated batch RL scenarios, we found that our multi-timestep models outperform or match standard one-step models. This was especially evident in a noisy variant of the considered environment, highlighting the potential of our approach in real-world applications.",
+  "abstract_zh": "",
+  "tldr": "In the context of model-based reinforcement learning, we propose a novel training objective for 1-step dynamics models that jointly optimizes the error at future horizons.",
+  "keywords": [
+    "Model-based Reinforcement Learning",
+    "Compounding errors",
+    "Multi-timestep models"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Rh4DmXaf8R",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/611e86ebf01abadd4ae8f15234260cf055334259.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In the context of model-based reinforcement learning, we propose a novel training objective for 1-step dynamics models that jointly optimizes the error at future horizons."
+  },
+  "collected_at": "2026-03-15T16:31:14.567Z"
+}
