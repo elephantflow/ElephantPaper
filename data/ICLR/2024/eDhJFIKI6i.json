@@ -1,0 +1,40 @@
+{
+  "id": "eDhJFIKI6i",
+  "or_id": "eDhJFIKI6i",
+  "title": "UnifiedGT: Exploring the Effective Ingredients of Transformers in Large Graphs",
+  "title_zh": "",
+  "authors": [
+    "Junhong Lin",
+    "Xiaojie Guo",
+    "Shuaicheng Zhang",
+    "Dawei Zhou",
+    "Yada Zhu",
+    "Julian Shun"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "In recent years, transformer models have demonstrated great potential for modeling graph-structured data, and many graph transformers (GT) have been proposed and applied to graph representation learning tasks. However, while GTs are effective, existing GTs have mostly been applied to small graphs, and their critical ingredients for success and the connections among these components when processing large graphs are poorly understood. Through a systematic investigation of using GTs on large graphs, we find that (i) explicit graph structure injection through direct neighbor attention masking is significantly more effective than implicitly using graph structure through positional encoding; (ii) combining a direct neighbor-attended GT with a message-passing graph neural network (MP-GNN) boosts accuracy; and (iii) the FFN acts as a semantic mixer and plays an important role, even though some existing GTs neglect the FFN. As part of our systematic investigation, we break down the design space of state-of-the-art GTs and introduce a modular unified GT framework, called UnifiedGT, which is effective at handling both large-scale heterogeneous and homogeneous graph data. UnifiedGT consists of five major components: (i) graph sampling, (ii) structural prior injection, (iii) attention calculation, (iv) composition of local message-passing and long-range attention, and (v) fully-connected layer. UnifiedGT provides different options for each component, which enables practitioners to create new GT methods that significantly improve accuracy over existing methods. Based on comprehensive experiments using UnifiedGT on the Open Academic Graph, we identify our best-performing method, ParDNTrans (GT with a parallel connected MP-GNN and direct neighbor attention masking), which boosts accuracy by 4.5–5.3% over the state-of-the-art graph transformer.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "graph transformer",
+    "graph learning",
+    "graph neural network",
+    "large-scale graph",
+    "heterogeneous graph",
+    "homogeneous graph"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=eDhJFIKI6i",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/79f69d25b6e50d02bdd0067cad11eb014d51598f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "In recent years, transformer models have demonstrated great potential for modeling graph-structured data, and many graph transformers (GT) have been proposed and applied to graph representation learning tasks. However, while GTs are effective, existing GTs have mostly been applied to small graphs, a"
+  },
+  "collected_at": "2026-03-15T17:31:13.766Z"
+}

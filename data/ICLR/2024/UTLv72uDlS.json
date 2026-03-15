@@ -1,0 +1,36 @@
+{
+  "id": "UTLv72uDlS",
+  "or_id": "UTLv72uDlS",
+  "title": "Scaling Safe Learning-based Control to  Long-Horizon Temporal Tasks",
+  "title_zh": "",
+  "authors": [
+    "Navid Hashemi",
+    "Bardh Hoxha",
+    "Danil V. Prokhorov",
+    "Georgios Fainekos",
+    "Jyotirmoy V. Deshmukh"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "This paper introduces a model-based approach for training parameterized policies for an autonomous agent operating in a highly nonlinear (albeit deterministic) environment. We desire the trained policy to ensure that the agent satisfies specific task objectives and safety constraints, both expressed in Signal Temporal Logic. We show that this learning problem reduces to the problem of training recurrent neural networks (RNNs), where the number of recurrent units is proportional to the temporal horizon of the agent's task objectives. This poses a challenge: RNNs are susceptible to vanishing and exploding gradients, and naive gradient descent-based strategies to solve long-horizon task objectives thus suffer from the same problems. To tackle this challenge, we introduce a novel gradient approximation algorithm based on the idea of gradient sampling, and a smooth computation graph that provides a neurosymblic encoding of STL formulas. We show that these two methods combined improve the quality of the stochastic gradient, enabling scalable backpropagation over long time horizon trajectories. We demonstrate the efficacy of our approach on various motion planning applications requiring complex spatio-temporal and sequential tasks ranging over thousands of time steps.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "neural network",
+    "control",
+    "signal temporal logics"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=UTLv72uDlS",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/23e8660db570def1038884e95bdcfec011939dcd.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper introduces a model-based approach for training parameterized policies for an autonomous agent operating in a highly nonlinear (albeit deterministic) environment. We desire the trained policy to ensure that the agent satisfies specific task objectives and safety constraints, both expressed"
+  },
+  "collected_at": "2026-03-15T17:31:13.765Z"
+}

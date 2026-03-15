@@ -1,0 +1,37 @@
+{
+  "id": "RnYd44LR2v",
+  "or_id": "RnYd44LR2v",
+  "title": "OODRobustBench: benchmarking and analyzing adversarial robustness under distribution shift",
+  "title_zh": "",
+  "authors": [
+    "Lin Li",
+    "Yifei Wang",
+    "Chawin Sitawarin",
+    "David Wagner",
+    "Michael W. Spratling"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Existing works have made great progress in improving adversarial robustness, but typically test their method only on data from the same distribution as the training data, i.e. in-distribution (ID) testing. \nAs a result, it is unclear how such robustness generalizes under input distribution shifts, i.e. out-of-distribution (OOD) testing. This is a concerning omission as such distribution shifts are unavoidable when methods are deployed in the wild. \nTo address this issue we propose a benchmark named OODRobustBench to comprehensively assess OOD adversarial robustness using 23 dataset-wise shifts (i.e. naturalistic shifts in input distribution) and 6 threat-wise shifts (i.e., unforeseen adversarial threat models). \nOODRobustBench is used to assess 706 robust models using 60.7K adversarial evaluations. This large-scale analysis shows that: 1) adversarial robustness suffers from a severe OOD generalization issue; 2) ID robustness correlates strongly with OOD robustness, in a positive linear way, under many distribution shifts. The latter enables the prediction of OOD robustness from ID robustness. Based on this, we are able to predict the upper limit of OOD robustness for existing robust training schemes. The results suggest that achieving OOD robustness requires designing novel methods beyond the conventional ones. Last, we discover that extra data, data augmentation, advanced model architectures and particular regularization approaches can improve OOD robustness. Noticeably, the discovered training schemes, compared to the baseline, exhibit dramatically higher robustness under threat shift while keeping high ID robustness, demonstrating new promising solutions for robustness against both multi-attack and unforeseen attacks.",
+  "abstract_zh": "",
+  "tldr": "a benchmark of adversarial robustness under distribution shift, ID robustness correlates linearly with OOD robustness",
+  "keywords": [
+    "adversarial robustness",
+    "OOD generalization",
+    "robustness benchmark",
+    "distribution shift"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=RnYd44LR2v",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f8c4a3ce0b88b79c3e4983e195e77f47b925f6e7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "a benchmark of adversarial robustness under distribution shift, ID robustness correlates linearly with OOD robustness"
+  },
+  "collected_at": "2026-03-15T17:31:13.764Z"
+}

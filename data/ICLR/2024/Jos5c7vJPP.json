@@ -1,0 +1,38 @@
+{
+  "id": "Jos5c7vJPP",
+  "or_id": "Jos5c7vJPP",
+  "title": "Exchangeable Dataset Amortization for Bayesian Posterior Inference",
+  "title_zh": "",
+  "authors": [
+    "Sarthak Mittal",
+    "Niels Leif Bracher",
+    "Guillaume Lajoie",
+    "Priyank Jaini",
+    "Marcus A Brubaker"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Bayesian inference is a natural approach to reasoning about uncertainty. Unfortunately, in practice it generally requires expensive iterative methods like MCMC to approximate posterior distributions. Not only are these methods computationally expensive, they must be re-run when new observations are available, making them impractical or of limited use in many contexts. In this work, we amortize the posterior parameter inference for probabilistic models by leveraging permutation invariant, set-based network architectures which respect the inherent exchangeability of independent observations of a dataset. Such networks take a set of observations explicitly as input to predict the posterior with a single forward pass and allow the model to generalize to datasets of different cardinality and different orderings. Our experiments explore the effectiveness of this approach for both posterior estimation directly as well as model predictive performance. They show that our approach is comparable to dataset-specific procedures like Maximum Likelihood estimation and MCMC on a range of probabilistic models. Our proposed approach uses a reverse KL-based training objective which does not require the availability of ground truth parameter values during training. This allows us to train the amortization networks more generally. We compare this approach to existing forward KL-based training methods and show substantially improved generalization performance. Finally, we also compare various architectural elements, including different set-based architectures (DeepSets vs Transformers) and distributional parameterizations (Gaussian vs Normalizing Flows).",
+  "abstract_zh": "",
+  "tldr": "We propose a neural network-based approach that can handle exchangeable observations and amortize over datasets to convert the problem of Bayesian posterior inference into a single forward pass of a network.",
+  "keywords": [
+    "Bayesian Inference",
+    "Amortization",
+    "Variational Inference",
+    "Transformers",
+    "Permutation Invariance"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Jos5c7vJPP",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/82994a1c4f9d2c8e823ef8696f0544933d327904.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We propose a neural network-based approach that can handle exchangeable observations and amortize over datasets to convert the problem of Bayesian posterior inference into a single forward pass of a network."
+  },
+  "collected_at": "2026-03-15T17:31:13.766Z"
+}

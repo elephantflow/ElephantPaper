@@ -1,0 +1,40 @@
+{
+  "id": "B4XM9nQ8Ns",
+  "or_id": "B4XM9nQ8Ns",
+  "title": "HyperSINDy: Deep Generative Modeling of Nonlinear Stochastic Governing Equations",
+  "title_zh": "",
+  "authors": [
+    "Mozes Jacobs",
+    "Bingni W Brunton",
+    "Steven Brunton",
+    "J. Nathan Kutz",
+    "Ryan V. Raut"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "The discovery of governing differential equations from data is an open frontier in machine learning. The {\\em sparse identification of nonlinear dynamics} (SINDy) \\citep{brunton_discovering_2016} framework enables data-driven discovery of interpretable models in the form of sparse, deterministic governing laws. Recent works have sought to adapt this approach to the stochastic setting, though these adaptations are severely hampered by the curse of dimensionality. On the other hand, Bayesian-inspired deep learning methods have achieved widespread success in high-dimensional probabilistic modeling via computationally efficient approximate inference techniques, suggesting the use of these techniques for efficient stochastic equation discovery. Here, we introduce {\\em HyperSINDy}, a framework for modeling stochastic dynamics via a deep generative model of sparse, nonlinear governing equations whose parametric form is discovered from data. HyperSINDy employs a variational encoder to approximate the distribution of observed states and derivatives. A hypernetwork \\citep{ha_hypernetworks_2016} transforms samples from this distribution into the coefficients of a differential equation whose sparse form is learned simultaneously using a trainable binary mask \\citep{louizos_learning_2018}. Once trained, HyperSINDy generates stochastic dynamics via a differential equation whose coefficients are driven by a Wiener process. In experiments HyperSINDy accurately recovers ground truth stochastic governing equations, with stochasticity scaled to match that of the data. Finally, HyperSINDy provides uncertainty quantification that scales to high-dimensional systems, retaining computational efficiency and interpretability. Taken together, HyperSINDy offers a promising framework for model discovery and uncertainty quantification in real-world systems, integrating sparse equation discovery methods with advances in statistical machine learning and deep generative modeling.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "generative modeling",
+    "deep learning",
+    "equation discovery",
+    "system identification",
+    "VAE",
+    "hypernetwork",
+    "SINDy"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=B4XM9nQ8Ns",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/d10ae3aff607ff4f293eb232546ae86514c6e311.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "The discovery of governing differential equations from data is an open frontier in machine learning. The {\\em sparse identification of nonlinear dynamics} (SINDy) \\citep{brunton_discovering_2016} framework enables data-driven discovery of interpretable models in the form of sparse, deterministic gov"
+  },
+  "collected_at": "2026-03-15T17:31:13.766Z"
+}

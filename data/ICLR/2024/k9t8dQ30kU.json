@@ -1,0 +1,36 @@
+{
+  "id": "k9t8dQ30kU",
+  "or_id": "k9t8dQ30kU",
+  "title": "Task structure and nonlinearity jointly determine learned representational geometry",
+  "title_zh": "",
+  "authors": [
+    "Matteo Alleman",
+    "Jack Lindsey",
+    "Stefano Fusi"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "The utility of a learned neural representation depends on how well its geometry supports performance in downstream tasks. This geometry depends on the structure of the inputs, the structure of the target outputs, and on the architecture of the network.  By studying the learning dynamics of networks with one hidden layer, we discovered that the network's activation function has an unexpectedly strong impact on the representational geometry: Tanh networks tend to learn representations that reflect the structure of the target outputs, while ReLU networks retain more information about the structure of the raw inputs. This difference is consistently observed across a broad class of parameterized tasks in which we modulated the degree of alignment between the geometry of the task inputs and that of the task labels. We analyzed the learning dynamics in weight space and show how the differences between the networks with Tanh and ReLU nonlinearities arise from the asymmetric saturation of ReLU, which leads feature neurons to specialize for different regions of input space. Feature neurons in Tanh networks, by contrast, tend to inherit the task label structure. Consequently, when the target outputs are low dimensional, Tanh networks generate neural representations that are more disentangled than those obtained with a ReLU nonlinearity. Our findings shed light on the interplay between input-output geometry, nonlinearity, and learned representations in neural networks.",
+  "abstract_zh": "",
+  "tldr": "We show that the geometry of learned representations can be understood in terms of input and target geometries, and that tanh networks, more than relu networks, tend to align with output geometry",
+  "keywords": [
+    "representational geometry",
+    "kernel target alignment",
+    "disentanglement",
+    "activation function",
+    "out-of-distribution generalization"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=k9t8dQ30kU",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b8a9d014f343b3669b6457839a9e6aa1801d1174.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show that the geometry of learned representations can be understood in terms of input and target geometries, and that tanh networks, more than relu networks, tend to align with output geometry"
+  },
+  "collected_at": "2026-03-15T17:31:13.764Z"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "mnRLzeNsVN",
+  "or_id": "mnRLzeNsVN",
+  "title": "Travelling Salesman Problem Goes Sparse With Graph Neural Networks",
+  "title_zh": "",
+  "authors": [
+    "Attila Lischka",
+    "Jiaming Wu",
+    "Rafael Basso",
+    "Morteza Haghir Chehreghani",
+    "Balazs Kulcsar"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Machine learning based approaches to solve the Travelling Salesman Problem (TSP) have achieved astonishing performance in the last years.\nA large number of works proposing such approaches use a type of encoder in their underlying frameworks to learn vector representations of the given problem.\nSince TSP can easily be interpreted as a graph theoretic problem, Graph Neural Networks (GNNs) have been a popular encoder architecture for this task. \nHowever, most papers ignore that GNNs are not designed to operate on complete graph instances like the TSP.\nWe therefore propose two data preprocessing methods for GNNs to make the TSP instances sparse: a nearest neighbor based heuristic and a method based on minimum spanning tree called 1-Tree.\nWe show that making the underlying TSP instances sparse by deleting unpromising edges in the preprocessing step improves the performance of the overall learning framework while, at the same time, the runtime decreases. \nIn particular, the proposed method achieves an up to $\\times 2 $ performance improvement w.r.t. the optimality gap and a decrease in runtime by 10\\% during training and validation, when applied to GCNs. \nFor GATs, the improvements in regards of runtime and optimality gap are even bigger when sparsifying the data first: We report up to $\\times 22$ improvements for the optimality gap while reducing the runtime by 50\\%.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Graph Neural Networks",
+    "Travelling Salesman Problem",
+    "Graph Sparsification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=mnRLzeNsVN",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/1f520605b9fcc6162b601492174dc695e97142fd.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Machine learning based approaches to solve the Travelling Salesman Problem (TSP) have achieved astonishing performance in the last years.\nA large number of works proposing such approaches use a type of encoder in their underlying frameworks to learn vector representations of the given problem.\nSince"
+  },
+  "collected_at": "2026-03-15T17:31:13.765Z"
+}
