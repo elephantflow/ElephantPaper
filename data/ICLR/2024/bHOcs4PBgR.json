@@ -1,0 +1,34 @@
+{
+  "id": "bHOcs4PBgR",
+  "or_id": "bHOcs4PBgR",
+  "title": "Flatter, Faster: Scaling Momentum for Optimal Speedup of SGD",
+  "title_zh": "",
+  "authors": [
+    "Aditya Cowsik",
+    "Tankut Can",
+    "Paolo Glorioso"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Commonly used optimization algorithms often show a trade-off between good generalization and fast training times. For instance, stochastic gradient descent (SGD) tends to have good generalization; however, adaptive gradient methods have superior training times. Momentum can help accelerate training with SGD, but so far there has been no principled way to select the momentum hyperparameter. Here we study training dynamics arising from the interplay between SGD with label noise and momentum in the training of overparametrized neural networks. We find that scaling the momentum hyperparameter $1-\\beta$ with the learning rate to the power of $2/3$ maximally accelerates training, without sacrificing generalization. To analytically derive this result we develop an architecture-independent framework, where the main assumption is the existence of a degenerate manifold of global minimizers, as is natural in overparametrized models. Training dynamics display the emergence of two characteristic timescales that are well-separated for generic values of the hyperparameters. The maximum acceleration of training is reached when these two timescales meet, which in turn determines the scaling limit we propose. Our experiments in matrix-sensing, a 6-layer MLP on FashionMNIST and ResNet-18 on CIFAR10 validate this scaling for the time to convergence, and additionally for the momentum hyperparameter which maximizes generalization.",
+  "abstract_zh": "",
+  "tldr": "We find a power-law relationship between the optimal momentum hyperparameter and learning rate which maximizes generalization.",
+  "keywords": [
+    "stochastic gradient descent",
+    "momentum",
+    "power-law scaling"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=bHOcs4PBgR",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c9f826b2348823dd2a818d60c7eac293c6fd0bb7.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We find a power-law relationship between the optimal momentum hyperparameter and learning rate which maximizes generalization."
+  },
+  "collected_at": "2026-03-15T18:11:16.935Z"
+}

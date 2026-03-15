@@ -1,245 +1,5 @@
 [
   {
-    "id": "Cdng6X2Joq",
-    "filePath": "data/ICLR/2024/Cdng6X2Joq.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "A New, Physics-Based Continuous-Time Reinforcement Learning Algorithm with Performance Guarantees",
-    "abstract": "We introduce a new, physics-based continuous-time reinforcement learning (CT-RL) algorithm for control of affine nonlinear systems, an area that enables a plethora of well-motivated applications. Based on fundamental input/output control mechanisms, our approach uses reference command input (RCI) as probing noise in learning. With known physical dynamics of the environment, and by leveraging on the Kleinman algorithm structure, our RCI-based CT-RL algorithm not only provides theoretical guarantees such as learning convergence, solution optimality, and closed-loop stability, but also well-behaved dynamic system responses with data efficiency during learning. Our results are therefore an advance from the two currently available classes of approaches to CT-RL. The first school of adaptive dyn"
-  },
-  {
-    "id": "ogV88XPnK6",
-    "filePath": "data/ICLR/2024/ogV88XPnK6.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Graph neural processes and their application to molecular functions",
-    "abstract": "Neural processes (NPs) are models for meta-learning which output uncertainty estimates. So far, most studies of NPs have focused on low-dimensional datasets of highly-correlated tasks. While these homogeneous datasets are useful for benchmarking, they may not be representative of realistic transfer-learning. In particular, applications in scientific research may prove especially challenging due to the potential novelty of meta-testing tasks. Drug discovery is one such research area that is characterized by sparse datasets of many functions on a shared molecular space. In this paper, we study the application of graph NPs to drug discovery with DOCKSTRING, a diverse dataset of docking scores. Graph NPs show competitive performance in few-shot learning tasks relative to supervised learning ba"
-  },
-  {
-    "id": "kXHEBK9uAY",
-    "filePath": "data/ICLR/2024/kXHEBK9uAY.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Simple Hierarchical Planning with Diffusion",
-    "abstract": "Diffusion-based generative methods have proven effective in modeling trajectories with offline datasets. However, they often face computational challenges and can falter in generalization, especially in capturing temporal abstractions for long-horizon tasks. To overcome this, we introduce the Hierarchical Diffuser, a simple, fast, yet effective planning method combining the advantages of hierarchical and diffusion-based planning. Our model adopts a “jumpy” planning strategy at the high level, which allows it to have a larger receptive field but at a lower computational cost—a crucial factor for diffusion-based planning methods, as we have empirically verified. Additionally, the jumpy sub-goals guide our low-level planner, facilitating a fine-tuning stage and further improving our approach’"
-  },
-  {
-    "id": "fj2E5OcLFn",
-    "filePath": "data/ICLR/2024/fj2E5OcLFn.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Stochastic Gradient Descent for Gaussian Processes Done Right",
-    "abstract": "As is well known, both sampling from the posterior and computing the mean of the posterior in Gaussian process regression reduces to solving a large linear system of equations. We study the use of stochastic gradient descent for solving this linear system, and show that when done right---by which we mean using specific insights from the optimisation and kernel communities---stochastic gradient descent is highly effective. To that end, we introduce a particularly simple stochastic dual descent algorithm, explain its design in an intuitive manner and illustrate the design choices through a series of ablation studies. Further experiments demonstrate that our new method is highly competitive. In particular, our evaluations on the UCI regression tasks and on Bayesian optimisation set our approa"
-  },
-  {
-    "id": "gkfUvn0fLU",
-    "filePath": "data/ICLR/2024/gkfUvn0fLU.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Confronting Reward Model Overoptimization with Constrained RLHF",
-    "abstract": "Large language models are typically aligned with human preferences by optimizing reward models (RMs) fitted to human feedback. However, human preferences are multi-faceted, and it is increasingly common to derive reward from a composition of simpler reward models which each capture a different aspect of language quality. This itself presents a challenge, as it is difficult to appropriately weight these component RMs when combining them. Compounding this difficulty, because any RM is only a proxy for human evaluation, this process is vulnerable to *overoptimization*, wherein past a certain point, accumulating higher reward is associated with worse human ratings. In this paper, we perform the first study on overoptimization in composite RMs, showing that correlation between component RMs has"
-  },
-  {
-    "id": "c56TWtYp0W",
-    "filePath": "data/ICLR/2024/c56TWtYp0W.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "GAFormer: Enhancing Timeseries Transformers Through Group-Aware Embeddings",
-    "abstract": "Analyzing multivariate time series is important in many domains. However, it has been difficult to learn robust and generalizable representations within multivariate datasets due to complex inter-channel relationships and dynamic shifts. In this paper, we introduce a novel approach for learning spatiotemporal structure and using it to improve the application of transformers to timeseries datasets. Our framework learns a set of group tokens, and builds an instance-specific group embedding (GE) layer that assigns input tokens to a small number of group tokens to incorporate  structure into learning. We then introduce a novel architecture, Group-Aware transFormer (GAFormer), which incorporates both spatial and temporal group embeddings to achieve state-of-the-art performance on a number of ti"
-  },
-  {
-    "id": "90QOM1xB88",
-    "filePath": "data/ICLR/2024/90QOM1xB88.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Improved order analysis and design of exponential integrator for diffusion models sampling",
-    "abstract": "Efficient differential equation solvers have significantly reduced the sampling time of diffusion models (DMs) while retaining high sampling quality. Among these solvers, exponential integrators (EI) have gained prominence by demonstrating state-of-the-art performance. However, existing high-order EI-based sampling algorithms rely on degenerate EI solvers, resulting in inferior error bounds and reduced accuracy in contrast to the theoretically anticipated results under optimal settings. This situation makes the sampling quality extremely vulnerable to seemingly innocuous design choices such as timestep schedules. For example, an inefficient timestep scheduler might necessitate twice the number of steps to achieve a quality comparable to that obtained through carefully optimized timesteps. "
-  },
-  {
-    "id": "OCx7dp58H1",
-    "filePath": "data/ICLR/2024/OCx7dp58H1.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Setting the Record Straight on Transformer Oversmoothing",
-    "abstract": "Transformer-based models have recently become wildly successful across a diverse set of domains. At the same time, recent work has shown that Transformers are inherently low-pass filters that can oversmooth the input. This causes their performance to quickly saturate as model depth increases. A natural question is: How can Transformers achieve success given this shortcoming? In this work we show that in fact Transformers are not inherently low-pass filters. Instead, whether Transformers oversmooth or not depends on the eigenspectrum of their update equations. Our analysis extends prior work in oversmoothing and in the closely-related phenomenon of rank collapse. We show that many successful Transformer models have attention and weights which satisfy conditions that avoid oversmoothing. Fin"
-  },
-  {
-    "id": "vrhrhGrdXm",
-    "filePath": "data/ICLR/2024/vrhrhGrdXm.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "KBFormer: A Transformer-based Diffusion Model of Structured Entities with Heterogeneous Properties",
-    "abstract": "We present a generative attention-based architecture that models structured entities comprising different property types, such as numerical, categorical, string, and composite. This architecture handles such heterogeneous data through a mixed continuous-discrete diffusion process over the properties. This flexible framework is capable of modeling entities with arbitrary hierarchical properties, enabling applications to structured KB entities and tabular data. Experiments with a device KB and a nuclear physics dataset demonstrate the model's ability to learn representations useful for entity completion in diverse settings. This has many downstream use cases, including modeling numerical properties with high accuracy - critical for science applications. An additional benefit of the model is "
-  },
-  {
-    "id": "DP4NkPZOpD",
-    "filePath": "data/ICLR/2024/DP4NkPZOpD.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Bridging Sequence and Structure: Latent Diffusion for Conditional Protein Generation",
-    "abstract": "Protein design encompasses a range of challenging tasks, including protein folding, inverse folding, and protein-protein docking. Despite significant progress in this domain, many existing methods address these tasks separately, failing to adequately leverage the joint relationship between protein sequence and three-dimensional structure. In this work, we propose a novel generative modeling technique to capture this joint distribution. Our approach is based on a diffusion model applied on a geometrically-structured latent space, obtained through an encoder that produces roto-translational invariant representations of the input protein complex. It can be used for any of the aforementioned tasks by using the diffusion model to sample the conditional distribution of interest. Our experiments "
-  },
-  {
-    "id": "3aZCPl3ZvR",
-    "filePath": "data/ICLR/2024/3aZCPl3ZvR.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Why is SAM Robust to Label Noise?",
-    "abstract": "Sharpness-Aware Minimization (SAM) is most known for achieving state-of the-art performances on natural image and language tasks. However, its most pronounced improvements (of tens of percent) is rather in the presence of label noise. Understanding SAM's label noise robustness requires a departure from characterizing the robustness of minimas lying in ``flatter'' regions of the loss landscape. In particular, the peak performance under label noise occurs with early stopping, far before the loss converges. We decompose SAM's robustness into two effects: one induced by changes to the logit term and the other induced by changes to the network Jacobian. The first can be observed in linear logistic regression where SAM provably up-weights the gradient contribution from clean examples. Although t"
-  },
-  {
-    "id": "fAGEAEQvRr",
-    "filePath": "data/ICLR/2024/fAGEAEQvRr.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Gradient descent for matrix factorization: Understanding large initialization",
-    "abstract": "In deep learning practice, large random initialization is commonly used. Understanding the behavior of gradient descent (GD) with such initialization is both crucial and challenging. This paper focuses on a simplified matrix factorization problem, delving into the dynamics of GD when using large initialization. Leveraging a novel signal-to-noise ratio argument and an inductive argument, we offer a detailed trajectory analysis of GD from the initial point to the global minima. Our insights indicate that even with a large initialization, GD can exhibit incremental learning, which coincides with experimental observations."
-  },
-  {
-    "id": "xnUIMz5u2s",
-    "filePath": "data/ICLR/2024/xnUIMz5u2s.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "How FaR Are Large Language Models From Agents with Theory-of-Mind?",
-    "abstract": "\"*Thinking is for Doing.*\" Humans can infer other people’s mental states from observations–an ability called Theory-of-Mind (ToM)–and subsequently act pragmatically on those inferences. Existing question answering benchmarks such as ToMi ask models questions to make inferences about beliefs of characters in a story, but do not test whether models can then use these inferences to guide their actions. We propose a new evaluation paradigm for large language models (LLMs): Thinking for Doing (T4D), which requires models to connect inferences about others’ mental states to actions in social scenarios. Experiments on T4D demonstrate that LLMs such as GPT-4 and PaLM 2 seemingly excel at tracking characters’ beliefs in stories, but they struggle to translate this capability into strategic action.\n"
-  },
-  {
-    "id": "xxaEhwC1I4",
-    "filePath": "data/ICLR/2024/xxaEhwC1I4.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Revisiting the Last-Iterate Convergence of Stochastic Gradient Methods",
-    "abstract": "In the past several years, the last-iterate convergence of the Stochastic Gradient Descent (SGD) algorithm has triggered people's interest due to its good performance in practice but lack of theoretical understanding. For Lipschitz convex functions, different works have established the optimal $O(\\log(1/\\delta)\\log T/\\sqrt{T})$ or $O(\\sqrt{\\log(1/\\delta)/T})$ high-probability convergence rates for the final iterate, where $T$ is the time horizon and $\\delta$ is the failure probability. However, to prove these bounds, all the existing works are either limited to compact domains or require almost surely bounded noises. It is natural to ask whether the last iterate of SGD can still guarantee the optimal convergence rate but without these two restrictive assumptions. Besides this important que"
-  },
-  {
-    "id": "ajG8vLTHh5",
-    "filePath": "data/ICLR/2024/ajG8vLTHh5.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Learning transferrable and interpretable representation for brain network",
-    "abstract": "The human brain is a complex, dynamic network, which is commonly studied using functional magnetic resonance imaging (fMRI) and modeled as network of Regions of interest (ROIs) for understanding various brain functions. Recent studies predominantly utilize Graph Neural Networks (GNNs) to learn the brain network representation based on the functional connectivity (FC) profile, typically falling into two main categories. The Fixed-FC approaches, utilize the FC profile which represents the linear temporal relation within the brain network, is limited by failing to capture the informative temporal dynamics of brain activity. On the other hand, the Dynamic-FC approaches, modeling the evolving FC profile over time, often exhibit less satisfactory performance due to challenges in handling the inh"
-  },
-  {
-    "id": "O8ouVV8PjF",
-    "filePath": "data/ICLR/2024/O8ouVV8PjF.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "CNN Kernels Can Be the Best Shapelets",
-    "abstract": "Shapelets and CNN are two typical approaches to model time series. Shapelets aim at finding a set of sub-sequences that extract feature-based interpretable shapes, but may suffer from accuracy and efficiency issues. CNN performs well by encoding sequences with a series of hidden representations, but lacks interpretability. In this paper, we demonstrate that shapelets are essentially equivalent to a specific type of CNN kernel with a squared norm and pooling. Based on this finding, we propose ShapeConv, an interpretable CNN layer with its kernel serving as shapelets to conduct time-series modeling tasks in both supervised and unsupervised settings. By incorporating shaping regularization, we enforce the similarity for maximum interpretability. We also find human knowledge can be easily inje"
-  },
-  {
-    "id": "ZlZakr4GYK",
-    "filePath": "data/ICLR/2024/ZlZakr4GYK.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "COTIC: Embracing Non-uniformity in Event Sequence Data via Multilayer Continuous Convolution",
-    "abstract": "Massive samples of event sequences occur in various domains, including e-commerce, healthcare, and finance. There are two main challenges regarding modeling such data: methodological and computational. The methodological peculiarity for event sequences is their non-uniformity and sparsity. These requirements make time series models unsuitable. The computational challenge arises from a large amount of available data and the significant length of each sequence. Thus, the problem requires complex and efficient models.\nExisting solutions include large recurrent and transformer neural network architectures. \nOn top of existing blocks, their authors introduce specific intensity functions defined at each moment.\nHowever, due to their parametric nature, these continuous-time-aware intensities repr"
-  },
-  {
-    "id": "YfZMfrpEnl",
-    "filePath": "data/ICLR/2024/YfZMfrpEnl.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Stochastic Vision Transformers with Wasserstein Distance-Aware Attention",
-    "abstract": "Self-supervised learning is one of the most promising approaches to acquiring knowledge from limited labeled data. Despite the substantial advancements made in recent years, self-supervised models have posed a challenge to practitioners, as they do not readily provide insight into the model's confidence and uncertainty. Tackling this issue is no simple feat, primarily due to the complexity involved in implementing techniques that can make use of the latent representations learned during pre-training without relying on explicit labels.\nMotivated by this, we introduce a new stochastic vision transformer that integrates uncertainty and distance awareness into self-supervised learning (SSL) pipelines. Instead of the conventional deterministic vector embedding, our novel stochastic vision trans"
-  },
-  {
-    "id": "RtOTTdWbZd",
-    "filePath": "data/ICLR/2024/RtOTTdWbZd.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Fine-Tuning Language Models with Advantage-Induced Policy Alignment",
-    "abstract": "Reinforcement learning from human feedback (RLHF) has emerged as a reliable approach to aligning large language models (LLMs) to human preferences.\nAmong the plethora of RLHF techniques, proximal policy optimization (PPO) is of the most widely used methods. Despite its popularity, however, PPO may suffer from mode collapse, instability, and poor sample efficiency.\nWe show that these issues can be alleviated by a novel algorithm that we refer to as Advantage-Induced Policy Alignment (APA), which leverages a squared error loss function based on the estimated advantages.\nWe demonstrate empirically that APA consistently outperforms PPO in language tasks by a large margin, when a separate reward model is employed as the evaluator.\nIn addition, compared with PPO, APA offers a more stable form of"
-  },
-  {
-    "id": "YBSEwwveMr",
-    "filePath": "data/ICLR/2024/YBSEwwveMr.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Score-Based Multimodal Autoencoders",
-    "abstract": "Multimodal Variational Autoencoders (VAEs) represent a promising group of generative models that facilitate the construction of a tractable posterior within the latent space, given multiple modalities. Daunhawer et al. (2022) demonstrate that as the number of modalities increases, the generative quality of each modality declines. In this study, we explore an alternative approach to enhance the generative performance of multimodal VAEs by jointly modeling the latent space of unimodal VAEs using score-based models (SBMs). The role of the SBM is to enforce multimodal coherence by learning the correlation among the latent variables. Consequently, our model combines the superior generative quality of unimodal VAEs with coherent integration across different modalities."
-  },
-  {
-    "id": "rTBR0eqE4G",
-    "filePath": "data/ICML/2024/rTBR0eqE4G.json",
-    "conference": "ICML",
-    "year": 2024,
-    "title": "Decomposing and Editing Predictions by Modeling Model Computation",
-    "abstract": "*How does the internal computation of a machine learning model transform inputs into predictions?* To tackle this question, we introduce a framework called *component modeling* for decomposing a model prediction in terms of its components---architectural \"building blocks\" such as convolution filters or attention heads. We focus on a special case of this framework, *component attribution*, where the goal is to estimate the counterfactual impact of individual components on a given prediction. We then present COAR, a scalable algorithm for estimating component attributions, and demonstrate its effectiveness across models, datasets and modalities. Finally, we show that COAR directly enables effective model editing. Our code is available at [github.com/MadryLab/modelcomponents]([https://github."
-  },
-  {
-    "id": "WPZ2yPag4K",
-    "filePath": "data/ICLR/2024/WPZ2yPag4K.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Fine-Tuning Language Models for Factuality",
-    "abstract": "The fluency and creativity of large pre-trained language models (LLMs) have led to their widespread use, sometimes even as a replacement for traditional search engines. Yet language models are prone to making convincing but factually inaccurate claims, often referred to as `hallucinations.' These errors can inadvertently spread misinformation or harmfully perpetuate misconceptions. Further, manual fact-checking of model responses is a time-consuming process, making human factuality labels expensive to acquire. In this work, we fine-tune language models to be more factual, without human labeling and targeting more open-ended generation settings than past work. We leverage two key recent innovations in NLP to do so. First, several recent works have proposed methods for judging the factuality"
-  },
-  {
-    "id": "4Hf5pbk74h",
-    "filePath": "data/ICLR/2024/4Hf5pbk74h.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Improving classifier decision boundaries using nearest neighbors",
-    "abstract": "In this paper, we show that neural networks are not learning optimal decision boundaries. Decision boundaries go through areas of low training data density. They are impacted by few training samples which can easily lead to overfitting. We show that performing a weighted average of the prediction of a sample and its nearest neighbors' (computed in latent space) leads to a variety of minor favorable outcomes. In our evaluation, we employ various self-trained and pre-trained convolutional neural networks to show that our approach improves (i) resistance to label noise,  (ii) robustness against adversarial attacks, (iii) classification accuracy, and to some degree even (iv) interpretability. While improvements are not necessarily large in all four areas, our approach is conceptually simple, i"
-  },
-  {
-    "id": "f3g5XpL9Kb",
-    "filePath": "data/ICLR/2024/f3g5XpL9Kb.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "LiDAR: Sensing Linear Probing Performance in Joint Embedding SSL Architectures",
-    "abstract": "Joint embedding (JE) architectures have emerged as a promising avenue for ac-\nquiring transferable data representations. A key obstacle to using JE methods,\nhowever, is the inherent challenge of evaluating learned representations without\naccess to a downstream task, and an annotated dataset. Without efficient and re-\nliable evaluation, it is difficult to iterate on architectural and training choices for\nJE methods. In this paper, we introduce LiDAR (Linear Discriminant Analysis\nRank), a metric designed to measure the quality of representations within JE archi-\ntectures. Our metric addresses several shortcomings of recent approaches based\non feature covariance rank by discriminating between informative and uninforma-\ntive features. In essence, LiDAR quantifies the rank of the Linear Discrim"
-  },
-  {
-    "id": "t8D9JxEn0J",
-    "filePath": "data/ICLR/2024/t8D9JxEn0J.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Malcom-PSGD: Inexact Proximal Stochastic Gradient Descent for Communication Efficient Decentralized Machine Learning",
-    "abstract": "Recent research indicates that frequent model communication stands as a major bottleneck to the efficiency of decentralized machine learning (ML), particularly for large-scale and over-parameterized neural networks (NNs). In this paper, we introduce \\textsc{Malcom-PSGD}, a new decentralized ML algorithm that strategically integrates gradient compression techniques with model sparsification. \\textsc{Malcom-PSGD} leverages proximal stochastic gradient descent to handle the non-smoothness resulting from the $\\ell_1$ regularization in model sparsification. Furthermore, we adapt vector source coding and dithering-based quantization for compressed gradient communication of sparsified models. Our analysis shows that decentralized proximal stochastic gradient descent with compressed communication "
-  },
-  {
-    "id": "IS6usp1u2X",
-    "filePath": "data/ICLR/2024/IS6usp1u2X.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Absolute Policy Optimization",
-    "abstract": "In recent years, trust region on-policy reinforcement learning has achieved impressive results in addressing complex control tasks and gaming scenarios. However, contemporary state-of-the-art algorithms within this category primarily emphasize improvement in expected performance, lacking the ability to control over the worst-case performance outcomes. To address this limitation, we introduce a novel objective function; by optimizing which, it will lead to guaranteed monotonic improvement in the lower bound of near-total performance samples (absolute performance). Considering this groundbreaking theoretical advancement, we then refine this theoretically grounded algorithm through a series of approximations, resulting in a practical solution called Absolute Policy Optimization (APO). \nOur ex"
-  },
-  {
-    "id": "lOwkOIUJtx",
-    "filePath": "data/ICLR/2024/lOwkOIUJtx.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Improved Efficiency Based on Learned Saccade and Continuous Scene Reconstruction From Foveated Visual Sampling",
-    "abstract": "High accuracy, low latency and high energy efficiency represent a set of contradictory goals when searching for  system solutions for image classification and detection. While high-quality images naturally result in more precise detection and classification, they also result in a heavier computational workload for imaging and processing, reduce camera refresh rates, and increase the volume of data communication between the camera and processor. Taking inspiration from the foveal-peripheral sampling mechanism, saccade mechanism observed in the human visual system and the filling-in phenomena of brain, we have developed an active scene reconstruction architecture based on multiple foveal views. This model stitches together information from foveal and peripheral vision, which are sampled from"
-  },
-  {
-    "id": "kz5igjl04W",
-    "filePath": "data/ICLR/2024/kz5igjl04W.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Approaching an unknown communication system by latent space exploration and causal inference",
-    "abstract": "This paper proposes a methodology for discovering meaningful properties in data by exploring the latent space of unsupervised deep generative models. We combine manipulation of individual latent variables to extreme values with methods inspired by causal inference into an approach we call causal disentanglement with extreme values (CDEV) and show that this method yields insights for model interpretability. With this, we can test for what properties of unknown data the model encodes as meaningful, using it to glean insight into the communication system of sperm whales (Physeter macrocephalus), one of the most intriguing and understudied animal communication systems. The network architecture used has been shown to learn meaningful representations of speech; here, it is used as a learning mec"
-  },
-  {
-    "id": "FcxwXnYXWh",
-    "filePath": "data/ICLR/2024/FcxwXnYXWh.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Limited-Memory Greedy Quasi-Newton Method with Non-asymptotic Superlinear Convergence Rate",
-    "abstract": "Non-asymptotic convergence analysis of quasi-Newton methods has gained attention with a landmark result establishing an explicit local superlinear rate of $\\mathcal{O}((1/\\sqrt{t})^t)$. The methods that obtain this rate, however, exhibit a well-known drawback: they require the storage of the previous Hessian approximation matrix or instead storing all past curvature information to form the current Hessian inverse approximation. Limited-memory variants of quasi-Newton methods such as the celebrated L-BFGS alleviate this issue by leveraging a limited window of past curvature information to construct the Hessian inverse approximation. As a result, their per iteration complexity and storage requirement is $\\mathcal{O}(\\tau d)$ where $\\tau \\le d$ is the size of the window and $d$ is the problem"
-  },
-  {
-    "id": "Tigr1kMDZy",
-    "filePath": "data/ICLR/2024/Tigr1kMDZy.json",
-    "conference": "ICLR",
-    "year": 2024,
-    "title": "Overthinking the Truth: Understanding how Language Models Process False Demonstrations",
-    "abstract": "Modern language models can imitate complex patterns through few-shot learning, enabling them to complete challenging tasks without fine-tuning. However, imitation can also lead models to reproduce inaccuracies or harmful content if present in the context. We study harmful imitation through the lens of a model’s internal representations, and identify two related phenomena: overthinking and false induction heads. The first phenomenon, overthinking, appears when we decode predictions from intermediate layers, given correct vs. incorrect few-shot demonstrations. At early layers, both demonstrations induce similar model behavior, but the behavior diverges sharply at some “critical layer”, after which the accuracy given incorrect demonstrations progressively decreases. The second phenomenon, fal"
-  },
-  {
     "id": "VPl472SKaB",
     "filePath": "data/ICLR/2024/VPl472SKaB.json",
     "conference": "ICLR",
@@ -1598,5 +1358,245 @@
     "year": 2024,
     "title": "Lie Group Decompositions for Equivariant Neural Networks",
     "abstract": "Invariance and equivariance to geometrical transformations have proven to be very useful inductive biases when training (convolutional) neural network models, especially in the low-data regime.\nMuch work has focused on the case where the symmetry group employed is compact or abelian, or both.\nRecent work has explored enlarging the class of transformations used to the case of Lie groups, principally through the use of their Lie algebra, as well as the group exponential and logarithm maps.\nThe applicability of such methods to larger transformation groups is limited by the fact that depending on the group of interest $G$, the exponential map may not be surjective.\nFurther limitations are encountered when $G$ is neither compact nor abelian.\nUsing the structure and geometry of Lie groups and th"
+  },
+  {
+    "id": "ByW9j60mvV",
+    "filePath": "data/ICLR/2024/ByW9j60mvV.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "RL Algorithms are Information-State Policies in the Bayes-Adaptive MDP",
+    "abstract": "RL studies the challenge of maximizing reward in unknown environments; the Bayes-Adaptive MDP (BAMDP) provides a formal specification of this problem, albeit one that may be intractable to solve directly. In this paper, rather than trying to solve the BAMDP, we use it as a theoretical resource. In particular, we view RL algorithms as *hand-written information-state policies* for the BAMDP and derive a number of insights from this approach. For instance, one simple observation from bandit theory is that optimal policies for the BAMDP, i.e., ideal RL algorithms, do not necessarily converge to optimal policies for the underlying MDP---even though RL theory has typically regarded the latter property as essential. We also apply the theory of potential-based reward shaping in the BAMDP to analyz"
+  },
+  {
+    "id": "QiJuMJl0QS",
+    "filePath": "data/ICLR/2024/QiJuMJl0QS.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Efficient Heterogeneous Meta-Learning via Channel Shuffling Modulation",
+    "abstract": "We tackle the problem of meta-learning across heterogenous tasks. This problem seeks to extract and generalize transferable meta-knowledge through streaming task sets from a multi-modal task distribution. The extracted meta-knowledge can be used to create predictors for new tasks using a small number of labeled samples. Most meta-learning methods assume a homogeneous task distribution, thus limiting their generalization capacity when handling multi-modal task distributions. Recent work has shown that the generalization of meta-learning depends on the similarity of tasks in the training distribution, and this has led to many clustering approaches that aim to detect homogeneous clusters of tasks. However, these methods suffer from a significant increase in parameter complexity. To overcome t"
+  },
+  {
+    "id": "ZmzLrl8nTa",
+    "filePath": "data/ICLR/2024/ZmzLrl8nTa.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "A Mechanism for Solving Relational Tasks in Transformer Language Models",
+    "abstract": "A primary criticism towards language models (LMs) is their inscrutability. This paper presents evidence that, despite their size and complexity, LMs sometimes exploit a simple computational mechanism to solve one-to-one relational tasks (e.g., capital\\_of(Poland)=Warsaw). We investigate a range of language model sizes (from 124M parameters to 176B parameters) in an in-context learning setting, and find that for a variety of tasks (involving capital cities, upper-casing, and past-tensing) a key part of the mechanism reduces to a simple linear update typically applied by the feedforward (FFN) networks. These updates also tend to promote the output of the relation in a content-independent way (e.g., encoding Poland:Warsaw::China:Beijing), revealing a predictable pattern that these models take"
+  },
+  {
+    "id": "A6kK5e3DhR",
+    "filePath": "data/ICLR/2024/A6kK5e3DhR.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Controllable Data Generation via Iterative Data-Property Mutual Mappings",
+    "abstract": "Deep generative models have been widely used for their ability to generate realistic data samples in various areas, such as images, molecules, text, and speech. One major goal of data generation is controllability, namely to generate new data with desired properties. Despite growing interest in the area of controllable generation, significant challenges still remain, including 1) Disentangling desired properties with unrelated latent variables, 2) out-of-distribution property control, and 3) objective optimization for out-of-distribution property control. To address these challenges, in this paper, we propose a general framework to enhance VAE-based data generators with property controllability and disentanglement ensure. Our proposed objective can be optimized on both data seen and unseen"
+  },
+  {
+    "id": "UHjE5v5MB7",
+    "filePath": "data/ICLR/2024/UHjE5v5MB7.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "To Grok or not to Grok: Disentangling Generalization and Memorization on Corrupted Algorithmic Datasets",
+    "abstract": "Robust generalization is a major challenge in deep learning, particularly when the number of trainable parameters is very large. In general, it is very difficult to know if the network has memorized a particular set of examples or understood the underlying rule (or both). Motivated by this challenge, we study an interpretable model where generalizing representations are understood analytically, and are easily distinguishable from the memorizing ones. Namely, we consider multi-layer perceptron (MLP) and Transformer architectures trained on modular arithmetic tasks, where ($\\xi \\cdot 100\\\\%$) of labels are corrupted (*i.e.* some results of the modular operations in the training set are incorrect). We show that (i) it is possible for the network to memorize the corrupted labels *and* achieve "
+  },
+  {
+    "id": "eFVQaqkf8Z",
+    "filePath": "data/ICLR/2024/eFVQaqkf8Z.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Revisiting Non-separable Binary Classification and its Applications in Anomaly Detection",
+    "abstract": "The inability to linearly classify $\\texttt{XOR}$ has motivated much of deep learning.\nWe revisit this age-old problem and show that $\\textit{linear}$ classification of $\\texttt{XOR}$ is indeed possible.\nInstead of separating data between halfspaces, we propose a slightly different paradigm, $\\texttt{equality separation}$, that adapts the SVM objective to distinguish data within or outside the margin.\nOur classifier can then be integrated into neural network pipelines with a smooth approximation.\nFrom its properties, we intuit that equality separation is suitable for anomaly detection.\nTo formalize this notion, we introduce $\\textit{closing numbers}$, a quantitative measure on the capacity for classifiers to form closed decision regions for anomaly detection.\nSpringboarding from this theor"
+  },
+  {
+    "id": "HmKav4WZ9w",
+    "filePath": "data/ICLR/2024/HmKav4WZ9w.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Basis Function Encoding of Numerical Features in Factorization Machines for Improved Accuracy",
+    "abstract": "Factorization machine (FM) variants are widely used for large scale real-time content recommendation systems, since they offer an excellent balance between model accuracy and low computational costs for training and inference. These systems are trained on tabular data with both numerical and categorical columns. Incorporating numerical columns poses a challenge, and they are typically incorporated using a scalar transformation or binning, which can be either learned or chosen a-priori. In this work, we provide a systematic and theoretically-justified way to incorporate numerical features into FM variants by encoding them into a vector of function values for a set of functions of one's choice.\n \n We view factorization machines as approximators of *segmentized* functions, namely, functions f"
+  },
+  {
+    "id": "voLFfrWzFI",
+    "filePath": "data/ICLR/2024/voLFfrWzFI.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Task Generalization in Decision-Focused Learning",
+    "abstract": "Real-world optimization problems often contain uncertain parameters that must be predicted prior to solving. For example, a delivery company must make its routing decisions when the traffic conditions, and thus the road traversal times, are uncertain. The models used to predict these uncertain quantities are commonly trained in a way that is agnostic of the optimization problem and that focuses solely on predictive accuracy. However, such a prediction-focused training procedure generally does not minimize the downstream task loss of interest (e.g., the suboptimality of the roads that are selected based on the predictions). This has led to the development of decision-focused learning (DFL) methods, which specifically train the predictive model to make predictions that lead to good decisions"
+  },
+  {
+    "id": "wrqAn3AJA1",
+    "filePath": "data/ICLR/2024/wrqAn3AJA1.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Everybody Needs a Little HELP: Explaining Graphs via Hierarchical Concepts",
+    "abstract": "Graph neural networks (GNNs) have led to major breakthroughs in a variety of domains such as drug discovery, social network analysis, and travel time estimation. However, they lack interpretability which hinders human trust and thereby deployment to settings with high-stakes decisions. A line of interpretable methods approach this by discovering a small set of relevant concepts as subgraphs in the last GNN layer that together explain the prediction. This can yield oversimplified explanations, failing to explain the interaction between GNN layers. To address this oversight, we provide HELP (Hierarchical Explainable Latent Pooling), a novel, inherently interpretable graph pooling approach that reveals how concepts from different GNN layers compose to new ones in later steps. HELP is more tha"
+  },
+  {
+    "id": "ONhwvkaIe6",
+    "filePath": "data/ICLR/2024/ONhwvkaIe6.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Hypernymy Understanding Evaluation of Text-to-Image Models via WordNet Hierarchy",
+    "abstract": "Text-to-image synthesis has recently attracted widespread attention of the community due to rapidly improving generation quality and numerous practical applications.\n  However, little is known about the language understanding capabilities of text-to-image models, making it difficult to reason about prompt formulations that the model would understand well.\n  In this work, we measure the capability of popular text-to-image models to understand *hypernymy*, or the ``is-a\" relation between words.\n  To this end, we design two automatic metrics based on the WordNet semantic hierarchy and existing image classifiers pretrained on ImageNet.\n  These metrics both enable quantitative comparison of linguistic capabilities for text-to-image models and offer a way of finding qualitative differences, such"
+  },
+  {
+    "id": "bgIZDxd2bM",
+    "filePath": "data/ICLR/2024/bgIZDxd2bM.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Generation, Reconstruction, Representation All-in-One: A Joint Autoencoding Diffusion Model",
+    "abstract": "The vast applications of deep generative models are founded on the premise of three fundamental capabilities: generating new instances (e.g., image/text synthesis and molecule design), reconstructing inputs (e.g., data editing and restoration), and learning latent representations (e.g., structure discovery and downstream classification). Existing model families, including Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs), autoregressive models, and diffusion models, generally excel in specific capabilities but fall short in others. We introduce Joint Autoencoding Diffusion (JEDI), a new generative framework that unifies all three core capabilities, offering versatile applications and strong performance in a single model. Specifically, JEDI generalizes the noising/deno"
+  },
+  {
+    "id": "ntUmktUfZg",
+    "filePath": "data/ICLR/2024/ntUmktUfZg.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Generate to Discriminate: Expert Routing for Continual Learning",
+    "abstract": "In many real-world settings, norms, regulations, or economic incentives\npermit the sharing of models but not data across environments. \nProminent examples arise in healthcare \ndue to regulatory concerns. \nIn this scenario, the practitioner wishes to adapt the model to each new environment\nbut faces the danger of losing performance on previous environments\ndue to the well-known problem of catastrophic forgetting. \nIn this paper, we propose Generate-to-Discriminate (G2D), a novel approach that leverages recent advancements in generative models to alleviate the catastrophic forgetting problem in continual learning. \nUnlike previous approaches based on generative models \nthat primarily use synthetic data\nfor training the label classifier,\nwe use synthetic data to train a domain discriminator.\n"
+  },
+  {
+    "id": "bHOcs4PBgR",
+    "filePath": "data/ICLR/2024/bHOcs4PBgR.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Flatter, Faster: Scaling Momentum for Optimal Speedup of SGD",
+    "abstract": "Commonly used optimization algorithms often show a trade-off between good generalization and fast training times. For instance, stochastic gradient descent (SGD) tends to have good generalization; however, adaptive gradient methods have superior training times. Momentum can help accelerate training with SGD, but so far there has been no principled way to select the momentum hyperparameter. Here we study training dynamics arising from the interplay between SGD with label noise and momentum in the training of overparametrized neural networks. We find that scaling the momentum hyperparameter $1-\\beta$ with the learning rate to the power of $2/3$ maximally accelerates training, without sacrificing generalization. To analytically derive this result we develop an architecture-independent framewo"
+  },
+  {
+    "id": "YhpgUWE4Rt",
+    "filePath": "data/ICLR/2024/YhpgUWE4Rt.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Recurrent Neural Cellular Automata with Self-Attention for Multi-agent System",
+    "abstract": "Many-agent systems, such as epidemic spread, rumor propagation through crowd, prey-predator model, and forest fire, exhibit complex global dynamics originated from local, relatively simple, and often stochastic interactions between agents. Despite significant advancements in predictive modeling through deep learning, such interactions among many agents have rarely explored as a specific domain for predictive modeling. We present Recurrent Attention-based Neural Cellular Automata (RA-NCA), to effectively discover the local stochastic interaction by associating the temporal information between neighboring agents in a permutation-invariant manner. RA-NCA exhibits the superior generalizability across various agent configurations (i.e., spatial distribution of agents), data efficiency and robus"
+  },
+  {
+    "id": "SUUrkC3STJ",
+    "filePath": "data/ICLR/2024/SUUrkC3STJ.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "VCR-Graphormer: A Mini-batch Graph Transformer via Virtual Connections",
+    "abstract": "Graph transformer has been proven as an effective graph learning method for its adoption of attention mechanism that is capable of capturing expressive representations from complex topological and feature information of graphs. Graph transformer conventionally performs dense attention (or global attention) for every pair of nodes to learn node representation vectors, resulting in quadratic computational costs that are unaffordable for large-scale graph data. Therefore, mini-batch training for graph transformers is a promising direction, but limited samples in each mini-batch can not support effective dense attention to encode informative representations. Facing this bottleneck, (1) we start by assigning each node a token list that is sampled by personalized PageRank (PPR) and then apply st"
+  },
+  {
+    "id": "tz9iIJtGgu",
+    "filePath": "data/ICLR/2024/tz9iIJtGgu.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Hierarchical Image Transformer Based on the Segment Anything Model",
+    "abstract": "We propose a hierarchical image transformer generation Model based on Segment Anything Model (SAM), and explore a new research paradigm of customized large-scale model for transformer image generation. samformer applies a fine-tuning strategy based on Low rank (LoRA) to SAM image encoders, Together with self-attention, hierarchical vae encoders, mask transformer decoders, and predictive head transformer, it is fine-tuned on Imagenet-like image datasets. SAM is chosen based on its semantic mask for the image level. Specifically, in the first stage, we use SAM-based segmentation features for hierarchical encoding using attention and decoding through reconstruction losses, and the first stage algorithm achieves better performance in both vector quantization and image generation. The second ph"
+  },
+  {
+    "id": "Ol7RxVOet6",
+    "filePath": "data/ICLR/2024/Ol7RxVOet6.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Mitigating Accumulated Distribution Divergence in Batch Normalization for Unsupervised Domain Adaptation",
+    "abstract": "Batch Normalization (BN) is a widely used technique in modern deep neural networks that has been proven to be effective in tasks such as Unsupervised Domain Adaptation (UDA) in cross-domain scenarios. However, existing BN variants tend to aggregate source and target domain knowledge in the same channel, which can lead to suboptimal transferability due to unaligned features between domains. To address this issue, we propose a new normalization method called Refined Batch Normalization (RBN), which leverages estimated shift to quantify the difference between estimated population statistics and expected statistics. Our key finding is that the estimated shift can accumulate due to BN stacking in the network, which can adversely affect target domain performance. We further demonstrate that RBN "
+  },
+  {
+    "id": "u7Xo4sG6Ux",
+    "filePath": "data/ICLR/2024/u7Xo4sG6Ux.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Composite Backdoor Attacks Against Large Language Models",
+    "abstract": "Large language models (LLMs) have demonstrated superior performance compared to previous methods on various tasks, and often serve as the foundation models for many researches and services. However, the untrustworthy third-party LLMs may covertly introduce vulnerabilities for downstream tasks. In this paper, we explore the vulnerability of LLMs through the lens of backdoor attacks. Different from existing backdoor attacks against LLMs, ours scatters multiple trigger keys in different prompt components. Such a Composite Backdoor Attack (CBA) is shown to be stealthier than implanting the same multiple trigger keys in only a single component. CBA ensures that the backdoor is activated only when all trigger keys appear. Our experiments demonstrate that CBA is effective in both natural language"
+  },
+  {
+    "id": "D4NJFfrqoq",
+    "filePath": "data/ICLR/2024/D4NJFfrqoq.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Optimistic Bayesian Optimization with Unknown Constraints",
+    "abstract": "Though some research efforts have been dedicated to constrained Bayesian optimization (BO), there remains a notable absence of a principled approach with a theoretical performance guarantee in the decoupled setting. Such a setting involves independent evaluations of the objective function and constraints at different inputs, and is hence a relaxation of the commonly-studied coupled setting where functions must be evaluated together. As a result, the decoupled setting requires an adaptive selection between evaluating either the objective function or a constraint, in addition to selecting an input (in the coupled setting). This paper presents a novel constrained BO algorithm with a provable performance guarantee that can address the above relaxed setting. Specifically, it considers the funda"
+  },
+  {
+    "id": "vTsaPLtZTn",
+    "filePath": "data/ICLR/2024/vTsaPLtZTn.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Enhanced Adversarial Domain Generation via Optimized Batch Normalization and Classifier",
+    "abstract": "In the endeavor of domain generalization, the objective is to develop a classification model, utilizing multiple source domains, that can subsequently be generalized to unseen target domains. The crux of domain generalization lies in discerning and learning discriminative features that are invariant across domains. Techniques utilizing adversarial domain generalization are paramount in achieving invariant representations. To mitigate the aforementioned impediment, we introduce a novel methodology, termed Auxiliary Classifier in Adversarial Domain Generalization (ACADG). ACADG endeavors to augment the diversity within the source domain through the integration of an auxiliary classifier. By amalgamating standard task-related losses—such as cross-entropy loss for classification and adversaria"
+  },
+  {
+    "id": "m7aPLHwsLr",
+    "filePath": "data/ICLR/2024/m7aPLHwsLr.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "DRSM: De-Randomized Smoothing on Malware Classifier Providing Certified Robustness",
+    "abstract": "Machine Learning (ML) models have been utilized for malware detection for over two decades. Consequently, this ignited an ongoing arms race between malware authors and antivirus systems, compelling researchers to propose defenses for malware-detection models against evasion attacks. However, most if not all existing defenses against evasion attacks suffer from sizable performance degradation and/or can defend against only specific attacks, which makes them less practical in real-world settings. In this work, we develop a certified defense, DRSM (De-Randomized Smoothed MalConv), by redesigning the *de-randomized smoothing* technique for the domain of malware detection. Specifically, we propose a *window ablation* scheme to provably limit the impact of adversarial bytes while maximally prese"
+  },
+  {
+    "id": "pEGSdJu52I",
+    "filePath": "data/ICLR/2024/pEGSdJu52I.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "On the Variance of Neural Network Training with respect to Test Sets and Distributions",
+    "abstract": "Neural network trainings are stochastic, causing the performance of trained networks to vary across repeated runs of training.\nWe contribute the following results towards understanding this variation.\n(1) Despite having significant variance on their test-sets, we demonstrate that standard CIFAR-10 and ImageNet trainings have little variance in their performance on the test-distributions from which their test-sets are sampled.\n(2) We introduce the independent errors assumption and show that it suffices to recover the structure and variance of the empirical accuracy distribution across repeated runs of training.\n(3) We prove that test-set variance is unavoidable given the observation that ensembles of identically trained networks are calibrated (Jiang et al., 2021), and demonstrate that the "
+  },
+  {
+    "id": "XKgTNCLqW9",
+    "filePath": "data/ICLR/2024/XKgTNCLqW9.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Identifying Drivers of Predictive Uncertainty using Variance Feature Attribution",
+    "abstract": "Explainability and uncertainty quantification are two pillars of trustable artificial intelligence. However, the reasoning behind uncertainty estimates is generally left unexplained. Identifying the drivers of uncertainty complements explanations of point predictions in recognizing potential biases and model limitations. It additionally facilitates the detection of oversimplification in the uncertainty estimation process. Explanations of uncertainty enhance communication of and trust in decisions. They allow for verifying whether the main drivers of model uncertainty are relevant and may impact model usage in certain applications. So far, the subject of explaining uncertainties has been rarely studied. The few exceptions in existing literature are tailored to Bayesian neural networks or re"
+  },
+  {
+    "id": "VaZa8zj0Yw",
+    "filePath": "data/ICLR/2024/VaZa8zj0Yw.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Lyfe Agents: generative agents for low-cost real-time social interactions",
+    "abstract": "Highly autonomous generative agents powered by large language models promise to simulate intricate social behaviors in virtual societies. However, achieving real-time interactions with humans at a low computational cost remains challenging. Here, we introduce Lyfe Agents. They combine low-cost with real-time responsiveness, all while remaining intelligent and goal-oriented. Key innovations include: (1) an option-action framework, reducing the cost of high-level decisions; (2) asynchronous self-monitoring for better self-consistency; and (3) a Summarize-and-Forget memory mechanism, prioritizing critical memory items at a low cost. We evaluate Lyfe Agents' self-motivation and sociability across several multi-agent scenarios in our custom LyfeGame 3D virtual environment platform. When equippe"
+  },
+  {
+    "id": "fpoAYV6Wsk",
+    "filePath": "data/ICLR/2024/fpoAYV6Wsk.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Circuit Component Reuse Across Tasks in Transformer Language Models",
+    "abstract": "Recent work in mechanistic interpretability has shown that behaviors in language models can be successfully reverse-engineered through circuit analysis. A common criticism, however, is that each circuit is task-specific, and thus such analysis cannot contribute to understanding the models at a higher level. In this work, we present evidence that insights (both low-level findings about specific heads and higher-level findings about general algorithms) can indeed generalize across tasks. Specifically, we study the circuit discovered in (Wang, 2022) for the Indirect Object Identification (IOI) task and 1.) show that it reproduces on a larger GPT2 model, and 2.) that it is mostly reused to solve a seemingly different task: Colored Objects (Ippolito & Callison-Burch, 2023). We provide evidence "
+  },
+  {
+    "id": "7em7Jl0qMm",
+    "filePath": "data/ICLR/2024/7em7Jl0qMm.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Fourier Ordinary Differential Equations",
+    "abstract": "Continuous models such as Neural Ordinary Differential Equations (NODEs) are powerful approaches for modeling time series data, known for their ability to capture underlying dynamics and generalization. Current continuous models focus on learning mappings within finite-dimensional Euclidean spaces, raising two critical questions for enhancing their effectiveness. First, Is Euclidean space the optimal representation for capturing the underlying patterns and features in time series data? Second, how can we maintain granularity while benefiting from the generalization capabilities of continuous models? To address the first question, we propose a novel approach for learning dynamics in the Fourier domain. In contrast to Euclidean space, each point in Fourier space summarizes the original signa"
+  },
+  {
+    "id": "iHSp6wvQmV",
+    "filePath": "data/ICLR/2024/iHSp6wvQmV.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "PhaseFusion: A Diffusion-based Periodic Parameterized Motion Generation Framework",
+    "abstract": "In this study, we introduce a learning-based method for generating high-quality human motion sequences from text descriptions (e.g., ``A person walks forward\"). Existing techniques struggle with motion diversity and smooth transitions due to limited text-to-motion datasets and reliance on full-body skeletal pose representations. To address this, we develop a network encoder that converts motion sequences into periodic signals, capturing the local periodicity of motions in time and space. We also propose a conditional diffusion model for predicting periodic motion parameters based on text descriptions and the starting pose. Our approach outperforms current methods, generating a broader variety of high-quality motions with natural transitions, especially in longer sequences."
+  },
+  {
+    "id": "VCnuSuDSHv",
+    "filePath": "data/ICLR/2024/VCnuSuDSHv.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias",
+    "abstract": "Neural networks trained with (stochastic) gradient descent have an inductive bias towards learning simpler solutions. This makes them highly prone to learning simple \\textit{spurious} features that are highly correlated with a label instead of the predictive but more complex core features. In this work, we show that, interestingly, the simplicity bias of gradient descent, can be leveraged to identify spurious correlations early in training. We provide theoretical insights on a two-layer neural network that subsets of data points where the spurious features strongly influence the label predictions are separable based on the model's output in the initial training iterations. We further show that if spurious features have a small enough noise-to-signal ratio, the network’s output on the major"
+  },
+  {
+    "id": "SkeoEFlF0E",
+    "filePath": "data/ICLR/2024/SkeoEFlF0E.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "NEURAL ADDITIVE TENSOR DECOMPOSITION FOR SPARSE TENSORS",
+    "abstract": "Canonical Polyadic Decomposition (CPD) is a fundamental technique for tensor analysis, discovering underlying multi-linear structures represented as rank-one tensors (components). The simplicity of the rank-one tensors facilitates the interpretation of hidden structures within tensors compared to other types of conventional tensor decomposition models. However, CPD has limitations in modeling nonlinear structures present in real-world tensors. Recent tensor decomposition models combined with neural networks have shown superior performance in tensor completion tasks compared to multi-linear tensor models. Nevertheless, one drawback of those nonlinear tensor models is the lack of interpretability since their black-box approaches entangle all interactions between latent components, unlike CPD"
+  },
+  {
+    "id": "OOxotBmGol",
+    "filePath": "data/ICLR/2024/OOxotBmGol.json",
+    "conference": "ICLR",
+    "year": 2024,
+    "title": "Large Language Models to Enhance Bayesian Optimization",
+    "abstract": "Bayesian optimization (BO) is a powerful approach for optimizing complex and expensive-to-evaluate black-box functions. Its importance is underscored in many applications, notably including hyperparameter tuning, but its efficacy depends on efficiently balancing exploration and exploitation. While there has been substantial progress in BO methods, striking this balance remains a delicate process. In this light, we present \\texttt{LLAMBO}, a novel approach that integrates the capabilities of Large Language Models (LLM) within BO. At a high level, we frame the BO problem in natural language, enabling LLMs to iteratively \\emph{propose} and \\emph{evaluate} promising solutions conditioned on historical evaluations. More specifically, we explore how combining contextual understanding, few-shot l"
   }
 ]

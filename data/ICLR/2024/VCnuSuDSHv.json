@@ -1,0 +1,34 @@
+{
+  "id": "VCnuSuDSHv",
+  "or_id": "VCnuSuDSHv",
+  "title": "Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias",
+  "title_zh": "",
+  "authors": [
+    "Yu Yang",
+    "Eric Gan",
+    "Gintare Karolina Dziugaite",
+    "Baharan Mirzasoleiman"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Neural networks trained with (stochastic) gradient descent have an inductive bias towards learning simpler solutions. This makes them highly prone to learning simple \\textit{spurious} features that are highly correlated with a label instead of the predictive but more complex core features. In this work, we show that, interestingly, the simplicity bias of gradient descent, can be leveraged to identify spurious correlations early in training. We provide theoretical insights on a two-layer neural network that subsets of data points where the spurious features strongly influence the label predictions are separable based on the model's output in the initial training iterations. We further show that if spurious features have a small enough noise-to-signal ratio, the network’s output on the majority of examples \ncontaining the spurious feature will be almost exclusively determined by the spurious features and will be nearly invariant to the core feature, leading to poor generalization performance for minority groups. Building on these findings, we propose SPARE, which separates groups with spurious features early in training and utilizes importance sampling to alleviate the spurious correlation by balancing the group sizes. \nThrough rigorous experiments, we first establish SPARE's effectiveness in discovering spurious correlations in the Restricted ImageNet dataset. We then demonstrate that SPARE outperforms state-of-the-art methods by up to 5.6\\% in worst-group accuracy, while being up to 12x faster.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "spurious correlations",
+    "simplicity bias"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=VCnuSuDSHv",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/ebf182a791caa3374260923deaaa622024643d09.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Neural networks trained with (stochastic) gradient descent have an inductive bias towards learning simpler solutions. This makes them highly prone to learning simple \\textit{spurious} features that are highly correlated with a label instead of the predictive but more complex core features. In this w"
+  },
+  "collected_at": "2026-03-15T18:11:16.937Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "ntUmktUfZg",
+  "or_id": "ntUmktUfZg",
+  "title": "Generate to Discriminate: Expert Routing for Continual Learning",
+  "title_zh": "",
+  "authors": [
+    "Yewon Byun",
+    "Sanket Vaibhav Mehta",
+    "Saurabh Garg",
+    "Emma Strubell",
+    "Bryan Wilder",
+    "Zachary Chase Lipton"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "In many real-world settings, norms, regulations, or economic incentives\npermit the sharing of models but not data across environments. \nProminent examples arise in healthcare \ndue to regulatory concerns. \nIn this scenario, the practitioner wishes to adapt the model to each new environment\nbut faces the danger of losing performance on previous environments\ndue to the well-known problem of catastrophic forgetting. \nIn this paper, we propose Generate-to-Discriminate (G2D), a novel approach that leverages recent advancements in generative models to alleviate the catastrophic forgetting problem in continual learning. \nUnlike previous approaches based on generative models \nthat primarily use synthetic data\nfor training the label classifier,\nwe use synthetic data to train a domain discriminator.\nOur method involves the following steps:\nFor each domain, (i) fine-tune the classifier and adapt a \ngenerative model to the current domain data;\n(ii) train a domain discriminator to distinguish synthetic samples \nfrom past versus current domain data; \nand (iii) during inference, route samples to the respective classifier.\nWe compare G2D to an alternative approach, where we simply replay the generated synthetic data, and, surprisingly, we find that training a domain discriminator is significantly more effective than augmenting the training data with the same synthetic samples. We consistently outperform previous state-of-the-art domain-incremental learning algorithms \nby up to $7.6$ and $6.2$ points across three standard \ndomain incremental learning benchmarks in the vision and language modalities, respectively,\nand $10.0$ points on a challenging real-world dermatology medical imaging task.",
+  "abstract_zh": "",
+  "tldr": "Expert routing for continual learning using generative models for domain discrimination",
+  "keywords": [
+    "Domain Incremental Learning",
+    "Continual Learning",
+    "Distribution Shift",
+    "Transfer Learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ntUmktUfZg",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/0b90b35ab972eb6b1fdb2f2b4bd7a431be0bee94.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Expert routing for continual learning using generative models for domain discrimination"
+  },
+  "collected_at": "2026-03-15T18:11:16.935Z"
+}

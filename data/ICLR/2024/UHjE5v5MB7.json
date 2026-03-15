@@ -1,0 +1,39 @@
+{
+  "id": "UHjE5v5MB7",
+  "or_id": "UHjE5v5MB7",
+  "title": "To Grok or not to Grok: Disentangling Generalization and Memorization on Corrupted Algorithmic Datasets",
+  "title_zh": "",
+  "authors": [
+    "Darshil Doshi",
+    "Aritra Das",
+    "Tianyu He",
+    "Andrey Gromov"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Robust generalization is a major challenge in deep learning, particularly when the number of trainable parameters is very large. In general, it is very difficult to know if the network has memorized a particular set of examples or understood the underlying rule (or both). Motivated by this challenge, we study an interpretable model where generalizing representations are understood analytically, and are easily distinguishable from the memorizing ones. Namely, we consider multi-layer perceptron (MLP) and Transformer architectures trained on modular arithmetic tasks, where ($\\xi \\cdot 100\\\\%$) of labels are corrupted (*i.e.* some results of the modular operations in the training set are incorrect). We show that (i) it is possible for the network to memorize the corrupted labels *and* achieve $100\\\\%$ generalization at the same time; (ii) the memorizing neurons can be identified and pruned, lowering the accuracy on corrupted data and improving the accuracy on uncorrupted data; (iii) regularization methods such as weight decay, dropout and BatchNorm force the network to ignore the corrupted data during optimization, and achieve $100\\\\%$ accuracy on the uncorrupted dataset; and (iv) the effect of these regularization methods is (\"mechanistically\") interpretable: weight decay and dropout force all the neurons to learn generalizing representations, while BatchNorm de-amplifies the output of memorizing neurons and amplifies the output of the generalizing ones. Finally, we show that in the presence of regularization, the training dynamics involves two consecutive stages: first, the network undergoes *grokking* dynamics reaching high train *and* test accuracy; second, it unlearns the memorizing representations, where the train accuracy suddenly jumps from $100\\\\%$ to $100 (1-\\xi)\\\\%$.",
+  "abstract_zh": "",
+  "tldr": "We study interpretable models+task where generalizing and memorizing representations are distinguishable. Training with corrupted data, we isolate the performance on corrupted and uncorrupted data; and explain the effect of explicit regularization.",
+  "keywords": [
+    "Interpretability",
+    "Grokking",
+    "Label noise",
+    "Generalization",
+    "Memorization",
+    "Representations",
+    "Modular Arithmetic"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=UHjE5v5MB7",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b5a7d2b34d54912009b544ef9c33ac0e3d8050a2.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We study interpretable models+task where generalizing and memorizing representations are distinguishable. Training with corrupted data, we isolate the performance on corrupted and uncorrupted data; and explain the effect of explicit regularization."
+  },
+  "collected_at": "2026-03-15T18:11:16.933Z"
+}

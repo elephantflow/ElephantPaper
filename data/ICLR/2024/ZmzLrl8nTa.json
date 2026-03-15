@@ -1,0 +1,37 @@
+{
+  "id": "ZmzLrl8nTa",
+  "or_id": "ZmzLrl8nTa",
+  "title": "A Mechanism for Solving Relational Tasks in Transformer Language Models",
+  "title_zh": "",
+  "authors": [
+    "Jack Merullo",
+    "Carsten Eickhoff",
+    "Ellie Pavlick"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "A primary criticism towards language models (LMs) is their inscrutability. This paper presents evidence that, despite their size and complexity, LMs sometimes exploit a simple computational mechanism to solve one-to-one relational tasks (e.g., capital\\_of(Poland)=Warsaw). We investigate a range of language model sizes (from 124M parameters to 176B parameters) in an in-context learning setting, and find that for a variety of tasks (involving capital cities, upper-casing, and past-tensing) a key part of the mechanism reduces to a simple linear update typically applied by the feedforward (FFN) networks. These updates also tend to promote the output of the relation in a content-independent way (e.g., encoding Poland:Warsaw::China:Beijing), revealing a predictable pattern that these models take in solving these tasks. We further show that this mechanism is specific to tasks that require retrieval from pretraining memory, rather than retrieval from local context. Our results contribute to a growing body of work on the mechanistic interpretability of LLMs, and offer reason to be optimistic that, despite the massive and non-linear nature of the models, the strategies they ultimately use to solve tasks can sometimes reduce to familiar and even intuitive algorithms.",
+  "abstract_zh": "",
+  "tldr": "We uncover an interesting and intuitive process used by LLMs to solve one-to-one relations that often supports causal interventions and helps explain the role of model components on different types of tasks.",
+  "keywords": [
+    "interpretability",
+    "llms",
+    "mechanistic interpretability",
+    "FFN",
+    "transformer",
+    "language model"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=ZmzLrl8nTa",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/b8dcf4abe906b0731f84c8895d9dae2646337e3a.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We uncover an interesting and intuitive process used by LLMs to solve one-to-one relations that often supports causal interventions and helps explain the role of model components on different types of tasks."
+  },
+  "collected_at": "2026-03-15T18:11:16.933Z"
+}

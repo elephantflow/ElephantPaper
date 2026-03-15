@@ -1,0 +1,36 @@
+{
+  "id": "Ol7RxVOet6",
+  "or_id": "Ol7RxVOet6",
+  "title": "Mitigating Accumulated Distribution Divergence in Batch Normalization for Unsupervised Domain Adaptation",
+  "title_zh": "",
+  "authors": [
+    "Zhenghan Chen",
+    "Mengzhu Wang",
+    "Nan Yin",
+    "Ye Wang",
+    "Junyang Chen"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Batch Normalization (BN) is a widely used technique in modern deep neural networks that has been proven to be effective in tasks such as Unsupervised Domain Adaptation (UDA) in cross-domain scenarios. However, existing BN variants tend to aggregate source and target domain knowledge in the same channel, which can lead to suboptimal transferability due to unaligned features between domains. To address this issue, we propose a new normalization method called Refined Batch Normalization (RBN), which leverages estimated shift to quantify the difference between estimated population statistics and expected statistics. Our key finding is that the estimated shift can accumulate due to BN stacking in the network, which can adversely affect target domain performance. We further demonstrate that RBN can prevent the accumulation of estimated shift and improve overall performance. To implement this technique, we introduce the RBNBlock, which replaces a BN with RBN in the bottleneck block of a residual network. Our comprehensive experiments on cross-domain benchmarks confirm the effectiveness of $\\mathrm{RBN}$ in improving transferability across domains.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Optimized Batch Normalization",
+    "Distribution Divergence",
+    "Unsupervised Domain Adaptation"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=Ol7RxVOet6",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/c17de0bd8e6da0b2f89164422079cd5c097d6ec9.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Batch Normalization (BN) is a widely used technique in modern deep neural networks that has been proven to be effective in tasks such as Unsupervised Domain Adaptation (UDA) in cross-domain scenarios. However, existing BN variants tend to aggregate source and target domain knowledge in the same chan"
+  },
+  "collected_at": "2026-03-15T18:11:16.936Z"
+}
