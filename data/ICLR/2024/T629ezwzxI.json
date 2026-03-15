@@ -1,0 +1,35 @@
+{
+  "id": "T629ezwzxI",
+  "or_id": "T629ezwzxI",
+  "title": "Out-of-domain Fact Checking",
+  "title_zh": "",
+  "authors": [
+    "Payam Karisani",
+    "Heng Ji"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Evaluating the veracity of everyday claims is time consuming and in some cases requires domain expertise. In this paper, we reveal that large commercial language models, e.g., ChatGPT or GPT4, are unable to successfully accomplish this task. We then empirically demonstrate that the commonly used fact checking pipeline, known as the retriever-reader, suffers from performance deterioration when it is trained on the labeled data from one topic (or domain) and used in another topic. Existing studies in this area mostly evaluate the transferability of fact checking systems across various platforms, e.g., Wikipedia to scientific repositories, or from one fact checking website to another one. Even in doing so, they do not step beyond pretraining models on one resource and evaluating on another resource.  This calls for developing methods and techniques to make fact checking models more generalizable. Therefore, we delve into each component of the pipeline and propose algorithms to achieve this goal. We propose an adversarial algorithm to make the retriever component robust against distribution shift. Our core idea is to initially train a bi-encoder on the labeled source data, and then, to adversarially train two separate document and claim encoders using unlabeled target data. Then, we focus on the reader component and propose to train it such that it is insensitive towards the order of claims and evidence documents. Our empirical evaluations support the hypothesis that such a reader shows a higher robustness against distribution shift. To our knowledge, there is no publicly available multi-topic fact checking dataset. Thus, we propose a straightforward method to re-purpose two well-known fact checking datasets. We construct eight fact checking scenarios from these datasets, and compare our model to a set of strong baseline models, including recent models that use GPT4 for generating pseudo-queries. Our results signify to the effectiveness of our model. Our code will be pu",
+  "abstract_zh": "",
+  "tldr": "We show that the commonly used fact checking pipeline is topic-sensitive (or domain-sensitive), and also propose a model to improve out-of-domain fact checking.",
+  "keywords": [
+    "fact checking",
+    "misinformation",
+    "natural language processing",
+    "distribution shift",
+    "text classification"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=T629ezwzxI",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/a10357260b8065998a6ee6c6c0acce41b755f325.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We show that the commonly used fact checking pipeline is topic-sensitive (or domain-sensitive), and also propose a model to improve out-of-domain fact checking."
+  },
+  "collected_at": "2026-03-15T16:11:36.855Z"
+}

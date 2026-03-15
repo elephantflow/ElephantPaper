@@ -1,0 +1,38 @@
+{
+  "id": "5PkgaUwiY0",
+  "or_id": "5PkgaUwiY0",
+  "title": "VideoDirectorGPT: Consistent Multi-Scene Video Generation via LLM-Guided Planning",
+  "title_zh": "",
+  "authors": [
+    "Han Lin",
+    "Abhay Zala",
+    "Jaemin Cho",
+    "Mohit Bansal"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 Conference Withdrawn Submission",
+  "abstract": "Although recent text-to-video (T2V) generation methods have seen significant advancements, the majority of these works focus on producing short video clips of a single event with a single background (i.e., single-scene videos). Meanwhile, recent large language models (LLMs) have demonstrated their capability in generating layouts and programs to control downstream visual modules such as image generation models. This prompts an important question: can we leverage the knowledge embedded in these LLMs for temporally consistent long video generation? In this paper, we propose VideoDirectorGPT, a novel framework for consistent multi-scene video generation that uses the knowledge of LLMs for video content planning and grounded video generation. Specifically, given a single text prompt, we first ask our video planner LLM (GPT-4) to expand it into a ‘video plan’, which involves generating the scene descriptions, the entities with their respective layouts, the background for each scene, and consistency groupings of the entities and backgrounds. Next, guided by this output from the video planner, our video generator, named Layout2Vid, has explicit control over spatial layouts and can maintain temporal consistency of entities/backgrounds across multiple scenes, while being trained only with image-level annotations. Our experiments demonstrate that our proposed VideoDirectorGPT framework substantially improves layout and movement control in both single- and multi-scene video generation and can generate multi-scene videos with visual consistency across scenes, while achieving competitive performance with SOTAs in open-domain single-scene text-to-video generation. We also demonstrate that our framework can dynamically control the strength for layout guidance and can also generate videos with user-provided images. We hope our framework can inspire future work on integrating the planning ability of LLMs into consistent long video generation.",
+  "abstract_zh": "",
+  "tldr": "",
+  "keywords": [
+    "Text-to-Video Generation",
+    "Large Language Models",
+    "Layout-Guided Video Generation",
+    "Temporal Consistency",
+    "Multi-Scene Video Generation",
+    "Layout Control"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=5PkgaUwiY0",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/9d973f83e02170c22c014e1e66434974b4c189de.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Although recent text-to-video (T2V) generation methods have seen significant advancements, the majority of these works focus on producing short video clips of a single event with a single background (i.e., single-scene videos). Meanwhile, recent large language models (LLMs) have demonstrated their c"
+  },
+  "collected_at": "2026-03-15T16:11:36.855Z"
+}

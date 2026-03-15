@@ -1,0 +1,37 @@
+{
+  "id": "WPZ2yPag4K",
+  "or_id": "WPZ2yPag4K",
+  "title": "Fine-Tuning Language Models for Factuality",
+  "title_zh": "",
+  "authors": [
+    "Katherine Tian",
+    "Eric Mitchell",
+    "Huaxiu Yao",
+    "Christopher D Manning",
+    "Chelsea Finn"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "The fluency and creativity of large pre-trained language models (LLMs) have led to their widespread use, sometimes even as a replacement for traditional search engines. Yet language models are prone to making convincing but factually inaccurate claims, often referred to as `hallucinations.' These errors can inadvertently spread misinformation or harmfully perpetuate misconceptions. Further, manual fact-checking of model responses is a time-consuming process, making human factuality labels expensive to acquire. In this work, we fine-tune language models to be more factual, without human labeling and targeting more open-ended generation settings than past work. We leverage two key recent innovations in NLP to do so. First, several recent works have proposed methods for judging the factuality of open-ended text by measuring consistency with an external knowledge base or simply a large model's confidence scores. Second, the Direct Preference Optimization algorithm enables straightforward fine-tuning of language models on objectives other than supervised imitation, using a preference ranking over possible model responses. We show that learning from automatically generated factuality preference rankings, generated either through existing retrieval systems or our novel retrieval-free approach, significantly improves the factuality (percent of generated claims that are correct) of Llama-2 on held-out topics compared with RLHF or decoding strategies targeted at factuality. At 7B scale, compared to Llama-2-Chat, we observe 53% and 50% reduction in factual error rate when generating biographies and answering medical questions, respectively. A reference implementation can be found at https://github.com/kttian/llm_factuality_tuning.",
+  "abstract_zh": "",
+  "tldr": "We fine-tune language models to significantly improve factuality without relying on human annotation, leveraging recent advances in learning from preferences and automated fact verification",
+  "keywords": [
+    "factuality",
+    "hallucination",
+    "language model",
+    "dpo"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=WPZ2yPag4K",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/f90a225c9859565a8e1ed01840ea046b406c7d4f.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We fine-tune language models to significantly improve factuality without relying on human annotation, leveraging recent advances in learning from preferences and automated fact verification"
+  },
+  "collected_at": "2026-03-15T16:11:33.449Z"
+}
