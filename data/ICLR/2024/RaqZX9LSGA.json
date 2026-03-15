@@ -1,0 +1,37 @@
+{
+  "id": "RaqZX9LSGA",
+  "or_id": "RaqZX9LSGA",
+  "title": "Tree Search-Based Policy Optimization under Stochastic Execution Delay",
+  "title_zh": "",
+  "authors": [
+    "David Valensi",
+    "Esther Derman",
+    "Shie Mannor",
+    "Gal Dalal"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "The standard formulation of Markov decision processes (MDPs) assumes that the agent's decisions are executed immediately.\nHowever, in numerous realistic applications such as robotics or healthcare, actions are performed with a delay whose value can even be stochastic. In this work, we introduce stochastic delayed execution MDPs, a new formalism addressing random delays without resorting to state augmentation. We show that given observed delay values, it is sufficient to perform a policy search in the class of Markov policies in order to reach optimal performance, thus extending the deterministic fixed delay case. Armed with this insight, we devise DEZ, a model-based algorithm that optimizes over the class of Markov policies. DEZ leverages Monte-Carlo tree search similar to its non-delayed variant EfficientZero to accurately infer future states from the action queue. Thus, it handles delayed execution while preserving the sample efficiency of EfficientZero. Through empirical analysis, we stress that none of the prior benchmarks consistently outperforms others across different delays. We demonstrate that our algorithm surpasses all benchmark methods in Atari games when dealing with constant or stochastic delays. The code is available at \\url{https://github.com/davidva1/Delayed-EZ}.",
+  "abstract_zh": "",
+  "tldr": "We prove results for Reinforcement Learning with stochastic delay, devise a corresponding tree-search based algorithm, and successfully test it on such environments.",
+  "keywords": [
+    "Reinforcement Learning",
+    "Delay",
+    "EfficientZero",
+    "Tree-search",
+    "Sample efficiency"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=RaqZX9LSGA",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8830f6b3cafc9913288b14d81260c6f589144619.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We prove results for Reinforcement Learning with stochastic delay, devise a corresponding tree-search based algorithm, and successfully test it on such environments."
+  },
+  "collected_at": "2026-03-15T17:51:12.048Z"
+}

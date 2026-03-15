@@ -1,0 +1,42 @@
+{
+  "id": "gDDW5zMKFe",
+  "or_id": "gDDW5zMKFe",
+  "title": "FIITED: Fine-grained embedding dimension optimization during training for recommender systems",
+  "title_zh": "",
+  "authors": [
+    "Qinyi Luo",
+    "Penghan Wang",
+    "Wei Zhang",
+    "Fan Lai",
+    "Jiachen Mao",
+    "Xiaohan Wei",
+    "Jun Song",
+    "Wei-Yu Tsai",
+    "Yuxi Hu",
+    "Xuehai Qian"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Huge embedding tables in modern Deep Learning Recommender Models (DLRM) require prohibitively large memory during training and inference. Aiming to reduce the memory footprint of training, this paper proposes FIne-grained\nIn-Training Embedding Dimension optimization (FIITED). Given the observation that embedding vectors are not equally important, FIITED adjusts the dimension of each individual embedding vector continuously during training, assigning longer dimensions to more important embeddings while adapting to dynamic changes in data. A novel embedding storage system based on virtually hashed physically indexed hash tables is designed to efficiently implement the embedding dimension adjustment and effectively enable memory saving. Experiments on two industry models show that FIITED is able to reduce the size of embeddings by more than 65% while maintaining the trained model’s quality, saving significantly more memory than a state-of-the-art in-training embedding pruning method. On public click-through rate prediction datasets, FIITED is able to prune up to 93.75%-99.75% embeddings without significant accuracy loss. Given the same embedding size reduction, FIITED is able to achieve better model quality than the baselines.",
+  "abstract_zh": "",
+  "tldr": "This paper proposes a during-training embedding dimension search method that adjusts the length of each embedding vector at the training time and is able to effectively reduce the training memory footprint of huge recommender models.",
+  "keywords": [
+    "Model Pruning",
+    "Embedding Dimension Search",
+    "Recommendation Models",
+    "Machine Learning Training"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=gDDW5zMKFe",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/e300f9a577abcc346e6a5762a41f648995452588.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "This paper proposes a during-training embedding dimension search method that adjusts the length of each embedding vector at the training time and is able to effectively reduce the training memory footprint of huge recommender models."
+  },
+  "collected_at": "2026-03-15T17:51:12.051Z"
+}

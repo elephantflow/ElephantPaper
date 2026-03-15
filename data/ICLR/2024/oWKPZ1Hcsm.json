@@ -1,0 +1,37 @@
+{
+  "id": "oWKPZ1Hcsm",
+  "or_id": "oWKPZ1Hcsm",
+  "title": "Efficient Offline Reinforcement Learning: The Critic is Critical",
+  "title_zh": "",
+  "authors": [
+    "Adam Jelley",
+    "Amos Storkey",
+    "Sam Devlin"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Recent work has demonstrated both benefits and limitations from using supervised approaches (without temporal-difference learning) for offline reinforcement learning. While off-policy reinforcement learning provides a promising approach for improving performance beyond supervised approaches, we observe that training is often inefficient and unstable due to temporal difference bootstrapping. In this paper we propose a best-of-both approach by first learning the behaviour policy and critic with supervised learning, before improving with off-policy reinforcement learning. Crucially, we demonstrate that the critic can be learned by pre-training with a supervised Monte-Carlo value-error, making use of commonly neglected downstream information from the provided offline trajectories. This provides consistent initial values for efficient improvement with temporal difference learning. We further generalise our approach to entropy-regularised reinforcement learning and apply our proposed pre-training to state-of-the-art hard and soft off-policy algorithms. We find that we are able to more than halve the training time of the considered offline algorithms on standard benchmarks, and surprisingly also achieve greater stability. We further build on our insight into the importance of having consistent policy and value functions to propose novel hybrid algorithms that regularise both the actor and the critic towards the behaviour policy. This maintains the benefits of pre-training when learning from limited human demonstrations.",
+  "abstract_zh": "",
+  "tldr": "Supervised pre-training offline reinforcement learning algorithms (crucially the critic) leads to more efficient subsequent temporal difference learning.",
+  "keywords": [
+    "Offline reinforcement learning",
+    "reinforcement learning",
+    "efficiency",
+    "temporal-difference learning",
+    "value error",
+    "Bellman error"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=oWKPZ1Hcsm",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/8e464445af913d615bd4cd8b08dea968fe1ba616.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Supervised pre-training offline reinforcement learning algorithms (crucially the critic) leads to more efficient subsequent temporal difference learning."
+  },
+  "collected_at": "2026-03-15T17:51:12.049Z"
+}

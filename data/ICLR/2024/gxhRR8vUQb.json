@@ -1,0 +1,39 @@
+{
+  "id": "gxhRR8vUQb",
+  "or_id": "gxhRR8vUQb",
+  "title": "Diffeomorphic Mesh Deformation via Efficient Optimal Transport for Cortical Surface Reconstruction",
+  "title_zh": "",
+  "authors": [
+    "Thanh Tung Le",
+    "Khai Nguyen",
+    "shanlin sun",
+    "Kun Han",
+    "Nhat Ho",
+    "Xiaohui Xie"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "ICLR 2024 poster",
+  "abstract": "Mesh deformation plays a pivotal role in many 3D vision tasks including dynamic simulations, rendering, and reconstruction. However, defining an efficient discrepancy between predicted and target meshes remains an open problem. A prevalent approach in current deep learning is the set-based approach which measures the discrepancy between two surfaces by comparing two randomly sampled point-clouds from the two meshes with Chamfer pseudo-distance. Nevertheless, the set-based approach still has limitations such as lacking a theoretical guarantee for choosing the number of points in sampled point-clouds, and the pseudo-metricity and the quadratic complexity of the Chamfer divergence. To address these issues, we propose a novel metric for learning mesh deformation. The metric is defined by sliced Wasserstein distance on meshes represented as probability measures that generalize the set-based approach. By leveraging probability measure space, we gain flexibility in encoding meshes using diverse forms of probability measures, such as continuous, empirical, and discrete measures via \\textit{varifold} representation. After having encoded probability measures, we can compare meshes by using the sliced Wasserstein distance which is an effective optimal transport distance with linear computational complexity and can provide a fast statistical rate for approximating the surface of meshes. To the end, we employ a neural ordinary differential equation (ODE) to deform the input surface into the target shape by modeling the trajectories of the points on the surface. Our experiments on cortical surface reconstruction demonstrate that our approach surpasses other competing methods in multiple datasets and metrics.",
+  "abstract_zh": "",
+  "tldr": "Our new approach for 3D mesh deformation outperforms other methods in cortical surface reconstruction by encoding a mesh into a probability measure, using sliced Wasserstein distance for comparison, and employing a neural ODE for deformation.",
+  "keywords": [
+    "Mesh deformation",
+    "optimal transport",
+    "cortical surface reconstruction",
+    "computer vision",
+    "medical imaging."
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=gxhRR8vUQb",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/57b2a95817608783ca78a3f2e620841dc4facc1e.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "Our new approach for 3D mesh deformation outperforms other methods in cortical surface reconstruction by encoding a mesh into a probability measure, using sliced Wasserstein distance for comparison, and employing a neural ODE for deformation."
+  },
+  "collected_at": "2026-03-15T17:51:12.052Z"
+}

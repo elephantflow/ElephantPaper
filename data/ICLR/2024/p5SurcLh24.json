@@ -1,0 +1,35 @@
+{
+  "id": "p5SurcLh24",
+  "or_id": "p5SurcLh24",
+  "title": "Unifying Model-Based and Model-Free Reinforcement Learning with Equivalent Policy Sets",
+  "title_zh": "",
+  "authors": [
+    "Benjamin Freed",
+    "Thomas Wei",
+    "Roberto Calandra",
+    "Jeff Schneider",
+    "Howie Choset"
+  ],
+  "conference": "ICLR",
+  "year": 2024,
+  "venue": "Submitted to ICLR 2024",
+  "abstract": "Model-based and model-free reinforcement learning (RL) each possess relative strengths that prevent either algorithm from strictly dominating the other.\nModel-based RL often offers greater data efficiency, as it can use models to evaluate many possible behaviors before choosing one to enact. However, because models cannot perfectly represent complex environments, agents that rely too heavily on models may suffer from poor asymptotic performance.  Model-free RL avoids this problem at the expense of data efficiency. In this work, we seek a unified approach to RL that combines the strengths of both algorithms. To this end, we propose *equivalent policy sets* (EPS), a novel tool for quantifying the limitations of models for the purposes of decision making.\nBased on this concept, we propose *Unified RL*, a novel RL algorithm that uses models to constrain model-free RL to the set of policies that are not provably suboptimal, according to model-based bounds on policy performance.\nWe demonstrate across a range of benchmarks that Unified RL effectively combines the relative strengths of both model-based and model-free RL, in that it achieves comparable data efficiency to model-based RL and exceeds the data efficiency of model-free RL, while achieving asymptotic performance similar or superior to that of model-free RL.  Additionally, we show that Unified RL outperforms a number of existing state-of-the-art model-based and model-free RL algorithms, and can learn effective policies in situations where either model-free or model-based RL alone fail.",
+  "abstract_zh": "",
+  "tldr": "We combine model-based and model-free RL by using model-free RL to search over the set of policies that are not provably suboptimal according to a model.",
+  "keywords": [
+    "model-based reinforcement learning",
+    "model-free reinforcement learning"
+  ],
+  "links": {
+    "openreview": "https://openreview.net/forum?id=p5SurcLh24",
+    "arxiv": null,
+    "dblp": null,
+    "pdf": "https://openreview.net/pdf/3b51e4cfcea0d0df814bf9d260731f165f53ef76.pdf"
+  },
+  "citationCount": 0,
+  "isHighQuality": false,
+  "sections": {
+    "method_summary": "We combine model-based and model-free RL by using model-free RL to search over the set of policies that are not provably suboptimal according to a model."
+  },
+  "collected_at": "2026-03-15T17:51:12.051Z"
+}
