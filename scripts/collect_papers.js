@@ -172,6 +172,14 @@ async function collectBatch() {
     const key = `${task.conference}_${task.year}`;
     if (!stats.progress[key]) stats.progress[key] = { offset: 0, collected: 0, done: false };
     const progress = stats.progress[key];
+    
+    // 修复CVPR和ICCV的done状态
+    if (task.conference === 'CVPR' || task.conference === 'ICCV') {
+      if (progress.done && progress.collected === 0) {
+        progress.done = false; // 重置done状态以便重新采集
+        console.log(`  🔄 重置 ${task.conference} ${task.year} 状态从done到进行中`);
+      }
+    }
     if (progress.done) continue;
 
     const remaining = BATCH_SIZE - collected;
