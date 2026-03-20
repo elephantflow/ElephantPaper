@@ -28,9 +28,9 @@ const COLLECT_QUEUE = [
   { conference: 'NeurIPS', year: 2023, method: 'openreview', invitation: 'NeurIPS.cc/2023/Conference/-/Submission' },
   { conference: 'ICLR', year: 2023, method: 'openreview', invitation: 'ICLR.cc/2023/Conference/-/Submission' },
   { conference: 'ICML', year: 2023, method: 'openreview', invitation: 'ICML.cc/2023/Conference/-/Submission' },
-  // CVPR 和 ICCV 只采 2024 作为示例（DBLP方式）
-  { conference: 'CVPR', year: 2024, method: 'dblp', dblpVenue: 'CVPR 2024' },
-  { conference: 'ICCV', year: 2024, method: 'dblp', dblpVenue: 'ICCV 2024' },
+  // CVPR 和 ICCV 尝试arXiv搜索作为替代方式
+  { conference: 'CVPR', year: 2024, method: 'arxiv_search', query: 'cat:cs.CV AND ti:CVPR' },
+  { conference: 'ICCV', year: 2024, method: 'arxiv_search', query: 'cat:cs.CV AND ti:ICCV' },
 ];
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
@@ -192,11 +192,49 @@ async function collectBatch() {
       const raw = curlGet(url);
       if (!raw) { console.warn('  ⚠️ API 请求失败'); continue; }
       try { notes = JSON.parse(raw).notes || []; } catch (e) { continue; }
-    } else if (task.method === 'dblp') {
-      const url = `https://api2.openreview.net/notes?invitation=DBLP.org%2F-%2FRecord&content.venue=${encodeURIComponent(task.dblpVenue)}&limit=${remaining}&offset=${progress.offset}`;
+    } else if (task.method === 'arxiv_search') {
+      // arXiv搜索采集方式
+      const url = `https://export.arxiv.org/api/query?search_query=${encodeURIComponent(task.query)}&start=${progress.offset}&max_results=${remaining}`;
       const raw = curlGet(url);
-      if (!raw) { console.warn('  ⚠️ DBLP API 请求失败'); continue; }
-      try { notes = JSON.parse(raw).notes || []; } catch (e) { continue; }
+      if (!raw) { console.warn('  ⚠️ arXiv API 请求失败'); continue; }
+      
+      try {
+        // 解析arXiv XML响应
+        const entries = [];
+        const entryMatches = raw.match(/<entry[\s\S]*?<\/entry>/g) || [];
+        
+        for (const entryXml of entryMatches) {
+          const titleMatch = entryXml.match(/<title[^>]*>([\s\S]*?)<\/title>/);
+          const abstractMatch = entryXml.match(/<summary[^>]*>([\s\S]*?)<\/summary>/);
+          const idMatch = entryXml.match(/<id>https?:\/\/arxiv\.org\/abs\/([\d.]+)/);
+          const authorsMatches = entryXml.match(/<author>[\s\S]*?<name>([^<]+)<\/name>[\s\S]*?<\/author>/g) || [];
+          
+          if (titleMatch) {
+            const authors = authorsMatches.map(a => {
+              const nameMatch = a.match(/<name>([^<]+)<\/name>/);
+              return nameMatch ? nameMatch[1] : '';
+            }).filter(Boolean);
+            
+            const arxivId = idMatch ? idMatch[1] : `arxiv${Date.now()}${Math.random().toString(36).slice(2)}`;
+            entries.push({
+              id: arxivId,
+              content: {
+                title: { value: titleMatch[1].trim().replace(/\n/g, ' ') },
+                abstract: { value: abstractMatch ? abstractMatch[1].trim().replace(/\s+/g, ' ') : '' },
+                authors: { value: authors },
+                venue: { value: `${task.conference} ${task.year}` },
+                keywords: { value: [] }
+              },
+              externalIds: [`arxiv:${arxivId}`]
+            });
+          }
+        }
+        
+        notes = entries;
+      } catch (e) {
+        console.log('  ⚠️ arXiv XML解析失败:', e.message);
+        continue;
+      }
     }
 
     if (notes.length === 0) {
@@ -226,8 +264,10 @@ async function collectBatch() {
         if (!arxivId && ax.arxivId) arxivId = ax.arxivId;
       }
 
+      const sourceType = task.method === 'openreview' ? 'openreview' : 
+                         task.method === 'dblp' ? 'dblp' : 'arxiv';
       const { paperId, record } = buildRecord(
-        task.method === 'openreview' ? 'openreview' : 'dblp',
+        sourceType,
         note, task.conference, task.year, citationCount, arxivId, arxivAbstract
       );
 
