@@ -30,7 +30,7 @@ const COLLECT_QUEUE = [
   { conference: 'ICML', year: 2023, method: 'openreview', invitation: 'ICML.cc/2023/Conference/-/Submission' },
   // CVPR 和 ICCV 尝试arXiv搜索作为替代方式
   { conference: 'CVPR', year: 2024, method: 'arxiv_search', query: 'cat:cs.CV AND ti:CVPR' },
-  { conference: 'ICCV', year: 2024, method: 'arxiv_search', query: 'cat:cs.CV AND ti:ICCV' },
+  { conference: 'ICCV', year: 2024, method: 'arxiv_search', query: 'ti:ICCV' },
 ];
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
@@ -175,8 +175,8 @@ async function collectBatch() {
     
     // 修复CVPR和ICCV的done状态
     if (task.conference === 'CVPR' || task.conference === 'ICCV') {
-      if (progress.done && progress.collected === 0) {
-        progress.done = false; // 重置done状态以便重新采集
+      if (progress.done) {
+        progress.done = false; // 重置done状态以便重新采集（无论collected数量）
         console.log(`  🔄 重置 ${task.conference} ${task.year} 状态从done到进行中`);
       }
     }
