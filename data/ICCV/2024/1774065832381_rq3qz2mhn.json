@@ -1,0 +1,20 @@
+{
+  "id": "2403.17342v1",
+  "title": "The Solution for the ICCV 2023 1st Scientific Figure Captioning Challenge",
+  "abstract": "In this paper, we propose a solution for improving the quality of captions generated for figures in papers. We adopt the approach of summarizing the textual content in the paper to generate image captions. Throughout our study, we encounter discrepancies in the OCR information provided in the official dataset. To rectify this, we employ the PaddleOCR toolkit to extract OCR information from all images. Moreover, we observe that certain textual content in the official paper pertains to images that are not relevant for captioning, thereby introducing noise during caption generation. To mitigate this issue, we leverage LLaMA to extract image-specific information by querying the textual content based on image mentions, effectively filtering out extraneous information. Additionally, we recognize a discrepancy between the primary use of maximum likelihood estimation during text generation and the evaluation metrics such as ROUGE employed to assess the quality of generated captions. To bridge this gap, we integrate the BRIO model framework, enabling a more coherent alignment between the generation and evaluation processes. Our approach ranked first in the final test with a score of 4.49.",
+  "authors": [
+    "Dian Chao",
+    "Xin Song",
+    "Shupeng Zhong",
+    "Boyuan Wang",
+    "Xiangyu Wu",
+    "Chen Zhu",
+    "Yang Yang"
+  ],
+  "venue": "arXiv",
+  "source": "arxiv",
+  "timestamp": "2024-03-26T03:03:50Z",
+  "metadata": {
+    "arxivId": "2403.17342v1"
+  }
+}

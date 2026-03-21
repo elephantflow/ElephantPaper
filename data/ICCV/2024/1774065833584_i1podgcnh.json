@@ -1,0 +1,19 @@
+{
+  "id": "2310.06440v1",
+  "title": "Solution for SMART-101 Challenge of ICCV Multi-modal Algorithmic Reasoning Task 2023",
+  "abstract": "In this paper, we present our solution to a Multi-modal Algorithmic Reasoning Task: SMART-101 Challenge. Different from the traditional visual question-answering datasets, this challenge evaluates the abstraction, deduction, and generalization abilities of neural networks in solving visuolinguistic puzzles designed specifically for children in the 6-8 age group. We employed a divide-and-conquer approach. At the data level, inspired by the challenge paper, we categorized the whole questions into eight types and utilized the llama-2-chat model to directly generate the type for each question in a zero-shot manner. Additionally, we trained a yolov7 model on the icon45 dataset for object detection and combined it with the OCR method to recognize and locate objects and text within the images. At the model level, we utilized the BLIP-2 model and added eight adapters to the image encoder VIT-G to adaptively extract visual features for different question types. We fed the pre-constructed question templates as input and generated answers using the flan-t5-xxl decoder. Under the puzzle splits configuration, we achieved an accuracy score of 26.5 on the validation set and 24.30 on the private test set.",
+  "authors": [
+    "Xiangyu Wu",
+    "Yang Yang",
+    "Shengdong Xu",
+    "Yifeng Wu",
+    "Qingguo Chen",
+    "Jianfeng Lu"
+  ],
+  "venue": "arXiv",
+  "source": "arxiv",
+  "timestamp": "2023-10-10T09:12:27Z",
+  "metadata": {
+    "arxivId": "2310.06440v1"
+  }
+}

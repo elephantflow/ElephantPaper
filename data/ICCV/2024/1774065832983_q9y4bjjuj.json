@@ -1,0 +1,19 @@
+{
+  "id": "2310.13533v1",
+  "title": "Technical Report for ICCV 2023 Visual Continual Learning Challenge: Continuous Test-time Adaptation for Semantic Segmentation",
+  "abstract": "The goal of the challenge is to develop a test-time adaptation (TTA) method, which could adapt the model to gradually changing domains in video sequences for semantic segmentation task. It is based on a synthetic driving video dataset - SHIFT. The source model is trained on images taken during daytime in clear weather. Domain changes at test-time are mainly caused by varying weather conditions and times of day. The TTA methods are evaluated in each image sequence (video) separately, meaning the model is reset to the source model state before the next sequence. Images come one by one and a prediction has to be made at the arrival of each frame. Each sequence is composed of 401 images and starts with the source domain, then gradually drifts to a different one (changing weather or time of day) until the middle of the sequence. In the second half of the sequence, the domain gradually shifts back to the source one. Ground truth data is available only for the validation split of the SHIFT dataset, in which there are only six sequences that start and end with the source domain. We conduct an analysis specifically on those sequences. Ground truth data for test split, on which the developed TTA methods are evaluated for leader board ranking, are not publicly available.   The proposed solution secured a 3rd place in a challenge and received an innovation award. Contrary to the solutions that scored better, we did not use any external pretrained models or specialized data augmentations, to keep the solutions as general as possible. We have focused on analyzing the distributional shift and developing a method that could adapt to changing data dynamics and generalize across different scenarios.",
+  "authors": [
+    "Damian Sójka",
+    "Yuyang Liu",
+    "Dipam Goswami",
+    "Sebastian Cygert",
+    "Bartłomiej Twardowski",
+    "Joost van de Weijer"
+  ],
+  "venue": "arXiv",
+  "source": "arxiv",
+  "timestamp": "2023-10-20T14:20:21Z",
+  "metadata": {
+    "arxivId": "2310.13533v1"
+  }
+}
